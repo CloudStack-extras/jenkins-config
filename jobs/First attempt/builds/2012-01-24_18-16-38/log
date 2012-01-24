@@ -1,10 +1,10 @@
-Started on Jan 24, 2012 6:16:14 PM
+Started by an SCM change
+Checkout:First attempt / /var/lib/jenkins/workspace/First attempt - hudson.remoting.LocalChannel@1192b0c
 Using strategy: Default
-[poll] Last Build : #2
-[poll] Last Built Revision: Revision 32ce8003cb44323acdce628a9a47f2dc5fa3d25f (origin/2.1.banana)
-Fetching changes from the remote Git repositories
+Last Built Revision: Revision 32ce8003cb44323acdce628a9a47f2dc5fa3d25f (origin/2.1.banana)
+Checkout:First attempt / /var/lib/jenkins/workspace/First attempt - hudson.remoting.LocalChannel@1192b0c
+Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack.git
-Polling for changes in
 Seen branch in repository origin/2.1.10
 Seen branch in repository origin/2.1.4.kumquat
 Seen branch in repository origin/2.1.6.kumquat
@@ -89,5 +89,32 @@ Seen branch in repository origin/ui-install-wizard
 Seen branch in repository origin/ui-lb-sticky-fixes
 Seen branch in repository origin/ui-lb-sticky-policy
 Seen branch in repository origin/zonesfeature
-Done. Took 19 sec
-Changes found
+Commencing build of Revision 7c62667c4603028db486f9b3355416af159ead97 (origin/fedorawork)
+Checking out Revision 7c62667c4603028db486f9b3355416af159ead97 (origin/fedorawork)
+No change to record in branch origin/fedorawork
+[First attempt] $ ant clean-all build-all
+FATAL: command execution failed.Maybe you need to configure the job to choose one of your Ant installations?
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot run program "ant" (in directory "/var/lib/jenkins/workspace/First attempt"): java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:475)
+	at hudson.Proc$LocalProc.<init>(Proc.java:244)
+	at hudson.Proc$LocalProc.<init>(Proc.java:216)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:707)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:338)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:345)
+	at hudson.tasks.Ant.perform(Ant.java:217)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:19)
+	at hudson.model.AbstractBuild$AbstractRunner.perform(AbstractBuild.java:697)
+	at hudson.model.Build$RunnerImpl.build(Build.java:178)
+	at hudson.model.Build$RunnerImpl.doRun(Build.java:139)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:467)
+	at hudson.model.Run.run(Run.java:1404)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)
+Caused by: java.io.IOException: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:164)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:81)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:468)
+	... 15 more
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

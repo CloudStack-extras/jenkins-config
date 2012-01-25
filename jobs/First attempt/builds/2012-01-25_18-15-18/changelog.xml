@@ -1,0 +1,100 @@
+Changes in branch origin/master, between 7211ee39efb2afad67fd407de2924b5baf46c6e5 and ea87fc84a62b66395756a10a2be85361d4a5afd0
+commit ea87fc84a62b66395756a10a2be85361d4a5afd0
+tree ae9a4a3977d1b612d5fa86ee3259cd28449a472a
+parent 193a0a382913562f46c40714bbbf9b37c9a89a1a
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327532596 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327532626 -0800
+
+    bug 13282: release elastic IP of the vm on vmStop
+    status 13282: resolved fixed
+
+:100755 100755 56955da16017be9f1221fd5120a240797e184239 ea5a3c6ee377bc879354cd4a30608e708df237f4 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 193a0a382913562f46c40714bbbf9b37c9a89a1a
+tree b75003ee0493c776d62758249b677dfa38c04543
+parent 10a6ac7840e057ea94a208e7f44cfb816dce1b54
+author Jessica Wang <jessica@cloud.com> 1327531337 -0800
+committer Jessica Wang <jessica@cloud.com> 1327531354 -0800
+
+    Add zone wizard - cluster - hypervisor: VMware - should skip calling addHost.
+
+:100644 100644 11beed6ae98cb72c68e51edcc4314a44ebb12994 8b340ffa52041043f0f89832000b6d440fd19352 M	ui/scripts/zoneWizard.js
+
+commit 10a6ac7840e057ea94a208e7f44cfb816dce1b54
+tree 4735de66d03b3bda5cefb4003da10e00d1b6e75a
+parent fee080592e6190bf3cc220552d73fe6cd3d24511
+author Kelven Yang <kelven@cloud.com> 1327529981 -0800
+committer Kelven Yang <kelven@cloud.com> 1327529993 -0800
+
+    relax the host/VM relationship check, IPAssoc command may be sent to a wrong host when domR is taken over from other host
+
+:100755 100755 adbf50f8d8057be48eef2a50cd34d2eebb744e53 8c8850e607f1f2071a5b0d2e75a8de3308c3b89d M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java
+
+commit fee080592e6190bf3cc220552d73fe6cd3d24511
+tree c61b155177790bbc2efe86536e507d1da8a39a29
+parent b52f1ac619765e0466cf8c34fc66fca3e1320970
+author Jessica Wang <jessica@cloud.com> 1327529075 -0800
+committer Jessica Wang <jessica@cloud.com> 1327529075 -0800
+
+    fix a JS error "args.groupedData is undefined" (which caused "Adding cluster...." message as hanging in last step in new zone wizard)
+
+:100644 100644 3985e69c440f2925ce554705ff86a3c1cd8e51a7 11beed6ae98cb72c68e51edcc4314a44ebb12994 M	ui/scripts/zoneWizard.js
+
+commit b52f1ac619765e0466cf8c34fc66fca3e1320970
+tree b7401b57669d67f495ff137e3490132d3f5af981
+parent 4cd5a554cc461f2a23ca608cf1f4b7f0113c56b6
+author bfederle <bfederle@gmail.com> 1327528705 -0800
+committer bfederle <bfederle@gmail.com> 1327528713 -0800
+
+    Network section: IP address action updates
+    
+    Prompt user to close details/refresh list view after these actions are
+    performed:
+    
+    -Enable static NAT
+    -Disable static NAT
+    
+    Always do a full refresh after releasing an IP.
+
+:100644 100644 8fd3df45cdaa59bab2c9b15a08fde1b96e05153a f5093addf74527989fc29c5cd0ba92c89190cbeb M	ui/scripts/network.js
+
+commit 4cd5a554cc461f2a23ca608cf1f4b7f0113c56b6
+tree 166ab7c4a167f7fdac2cf47004e0a1dc9c5af1c1
+parent 1fa45d5bd094131b8fcbff101561a46f1f7efe33
+author bfederle <bfederle@gmail.com> 1327528630 -0800
+committer bfederle <bfederle@gmail.com> 1327528713 -0800
+
+    Support custom action after new panel is selected
+
+:100644 100644 03e249a8ef99825610483613b98c284c9c617671 53e53ccfe783bcf631824e72b6b13bcff12d2d36 M	ui/scripts/ui/widgets/cloudBrowser.js
+
+commit 1fa45d5bd094131b8fcbff101561a46f1f7efe33
+tree 75257fd4e48abbe9fdf7556876f6f31f4371a4ba
+parent ac544a974128c2a448de8df92a88b6c62b041d41
+author bfederle <bfederle@gmail.com> 1327528611 -0800
+committer bfederle <bfederle@gmail.com> 1327528713 -0800
+
+    Support on completion callback
+
+:100644 100644 0f82ef7a09c4d829cefc20dcd8e76449c5a52e92 f9e03256e65f4b25a0ee82dfa5d313c754a46485 M	ui/scripts/sharedFunctions.js
+
+commit ac544a974128c2a448de8df92a88b6c62b041d41
+tree ba565eb8147a2a4b4c9e5c2608aadb635ebf9460
+parent 9a4fd9556e235bee764dd7608cbcbf0f618b626c
+author David Nalley <david@gnsa.us> 1327528532 -0500
+committer David Nalley <david@gnsa.us> 1327528532 -0500
+
+    fixing more whitespace issues
+
+:100755 100755 b9f28747d963e221c48c17db701ee3bb302ed8c0 a542ce6a0bd9bd65af67e1e2d3ac049a1c6e5bbd M	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java
+
+commit 9a4fd9556e235bee764dd7608cbcbf0f618b626c
+tree 7dc4e9b20eeecea1c1c71b666d18f7e8104eac56
+parent 7211ee39efb2afad67fd407de2924b5baf46c6e5
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327527398 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327527439 -0800
+
+    bug 13308: list networks belonging to subdomains when listAll=true is passed to listNetworks
+    status 13308: resolved fixed
+
+:100755 100755 d78b463af99456e9863d81a588183f252e29b2d5 547edcc994506d7d0c000e7bd34b0b60bd3616cf M	server/src/com/cloud/network/NetworkManagerImpl.java

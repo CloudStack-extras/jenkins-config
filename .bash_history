@@ -87,3 +87,25 @@ locate
 sun_checks.xml
 locate sun_checks.xml
 exit
+cd workspace/First\ attempt/
+ls
+locate sun_checks.xml
+checkstyle
+checkstyle -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r ./
+ls
+checkstyle -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r ./usage
+checkstyle -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r ./ *.java
+checkstyle -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r ./usage/src/com/cloud/usage/*
+ls
+ls api/
+checkstyle -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r ./api
+ls
+cd agent
+ls
+cd src
+ls
+cd com/cloud/agent/
+pwd
+cd /usr/share/doc/checkstyle-5.4/
+ls
+exit

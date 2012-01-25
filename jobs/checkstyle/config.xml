@@ -46,7 +46,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>checkstyle -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r agent/src/com/cloud/agent</command>
+      <command>checkstyle -f xml -o ./checkstyle_errors.xml -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r agent/src/com/cloud/agent &amp;&amp; exit 1</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
@@ -70,7 +70,7 @@
       </thresholds>
       <shouldDetectModules>false</shouldDetectModules>
       <dontComputeNew>true</dontComputeNew>
-      <pattern>**/checkstyle-result.xml</pattern>
+      <pattern>**/checkstyle_errors.xml</pattern>
     </hudson.plugins.checkstyle.CheckStylePublisher>
   </publishers>
   <buildWrappers/>

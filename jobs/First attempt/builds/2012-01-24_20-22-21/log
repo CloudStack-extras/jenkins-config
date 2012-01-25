@@ -1,0 +1,537 @@
+Started by user [8mha:AAAAjB+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADJ4Shh49EuLU4v0s1NNCgsLAYYg/s+RAAAA[0mDavid Nalley
+Checkout:First attempt / /var/lib/jenkins/workspace/First attempt - hudson.remoting.LocalChannel@1192b0c
+Using strategy: Default
+Last Built Revision: Revision 5bfe349783b60d7729e409f5054c1dfb0b3fcce7 (origin/2.1.4.kumquat)
+Checkout:First attempt / /var/lib/jenkins/workspace/First attempt - hudson.remoting.LocalChannel@1192b0c
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack.git
+Seen branch in repository origin/2.1.10
+Seen branch in repository origin/2.1.4.kumquat
+Seen branch in repository origin/2.1.6.kumquat
+Seen branch in repository origin/2.1.7.zucchini
+Seen branch in repository origin/2.1.9.kumqua
+Seen branch in repository origin/2.1.9.kumquat
+Seen branch in repository origin/2.1.banana
+Seen branch in repository origin/2.1.refactor
+Seen branch in repository origin/2.1.vanilla
+Seen branch in repository origin/2.1.x
+Seen branch in repository origin/2.1.x.217
+Seen branch in repository origin/2.2.1
+Seen branch in repository origin/2.2.10
+Seen branch in repository origin/2.2.10.banana
+Seen branch in repository origin/2.2.11
+Seen branch in repository origin/2.2.11.honeydew
+Seen branch in repository origin/2.2.12
+Seen branch in repository origin/2.2.12.coconut
+Seen branch in repository origin/2.2.12.demo
+Seen branch in repository origin/2.2.12.nectarine
+Seen branch in repository origin/2.2.12.strawberry
+Seen branch in repository origin/2.2.12.zucchini
+Seen branch in repository origin/2.2.13
+Seen branch in repository origin/2.2.13.indianfig
+Seen branch in repository origin/2.2.13.tangerine
+Seen branch in repository origin/2.2.2
+Seen branch in repository origin/2.2.2.honeydew
+Seen branch in repository origin/2.2.3
+Seen branch in repository origin/2.2.3-guava
+Seen branch in repository origin/2.2.3.mango
+Seen branch in repository origin/2.2.4
+Seen branch in repository origin/2.2.4.nectarine
+Seen branch in repository origin/2.2.4.nectarine.elb
+Seen branch in repository origin/2.2.6.date
+Seen branch in repository origin/2.2.8
+Seen branch in repository origin/2.2.8.kumquat
+Seen branch in repository origin/2.2.8.mango
+Seen branch in repository origin/2.2.8.mango2
+Seen branch in repository origin/2.2.8.nectarine
+Seen branch in repository origin/2.2.8.zucchini
+Seen branch in repository origin/2.2.8.zucchini.sgperf
+Seen branch in repository origin/2.2.beta1
+Seen branch in repository origin/2.2.beta1.9
+Seen branch in repository origin/2.2.beta2
+Seen branch in repository origin/2.2.beta3
+Seen branch in repository origin/2.2.beta4
+Seen branch in repository origin/2.2.x
+Seen branch in repository origin/2.2.y
+Seen branch in repository origin/2.2.y-clvm
+Seen branch in repository origin/2.2.y-new-ui
+Seen branch in repository origin/3.0.0.salmon
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/acton-beta2
+Seen branch in repository origin/acton-beta3
+Seen branch in repository origin/acton-new-ui-pre-merge
+Seen branch in repository origin/b-2.2.2
+Seen branch in repository origin/baremetal
+Seen branch in repository origin/bfederle-cloudstack3-ui
+Seen branch in repository origin/bug-12277-naas-details
+Seen branch in repository origin/bug10617
+Seen branch in repository origin/bug10796
+Seen branch in repository origin/bug11845
+Seen branch in repository origin/cloudstack3-ui
+Seen branch in repository origin/cloudstack3-ui-new-browser
+Seen branch in repository origin/cvm
+Seen branch in repository origin/dashboardWork
+Seen branch in repository origin/davidscratch
+Seen branch in repository origin/defaultnetwork
+Seen branch in repository origin/fedorawork
+Seen branch in repository origin/foo
+Seen branch in repository origin/hybrid
+Seen branch in repository origin/mango
+Seen branch in repository origin/master
+Seen branch in repository origin/master.lime
+Seen branch in repository origin/networkasservice
+Seen branch in repository origin/new-zone-details
+Seen branch in repository origin/new-zone-wizard
+Seen branch in repository origin/newagentmgr
+Seen branch in repository origin/origin-cloudstack3-ui
+Seen branch in repository origin/rrouter
+Seen branch in repository origin/ui-install-wizard
+Seen branch in repository origin/ui-lb-sticky-fixes
+Seen branch in repository origin/ui-lb-sticky-policy
+Seen branch in repository origin/zonesfeature
+Commencing build of Revision b89beda6f5ff0e0141d506dcb31e9ae8ac6e8444 (origin/2.1.vanilla)
+Checking out Revision b89beda6f5ff0e0141d506dcb31e9ae8ac6e8444 (origin/2.1.vanilla)
+No change to record in branch origin/2.1.vanilla
+[First attempt] $ ant clean-all build-all
+Buildfile: /var/lib/jenkins/workspace/First attempt/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/First attempt/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/First attempt/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/First attempt/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean:
+   [delete] Deleting: /var/lib/jenkins/workspace/First attempt/target/ant_verbose.txt
+   [delete] Deleting directory /var/lib/jenkins/workspace/First attempt/target/classes
+   [delete] Deleting directory /var/lib/jenkins/workspace/First attempt/target/jar
+   [delete] Deleting directory /var/lib/jenkins/workspace/First attempt/dist
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean-all:
+   [delete] Deleting directory /var/lib/jenkins/workspace/First attempt/target
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/First attempt/dist
+    [mkdir] Created dir: /var/lib/jenkins/workspace/First attempt/target
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-01-25T01:22:31Z
+     [echo] Build number is 1.9.1.2012-01-25T01:22:31Z
+    [mkdir] Created dir: /var/lib/jenkins/workspace/First attempt/target/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/First attempt/target/docs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/First attempt/target/dep-cache
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/First attempt/target/classes/cloud-utils.jar
+     [echo] Compiling /var/lib/jenkins/workspace/First attempt/utils/src
+    [javac] Compiling 136 source files to /var/lib/jenkins/workspace/First attempt/target/classes/cloud-utils.jar
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/ProcessUtil.java:30: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/ProcessUtil.java:40: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.ProcessUtil
+    [javac]     private static final Logger s_logger = Logger.getLogger(ProcessUtil.class.getName());
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:45: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.Callback;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:46: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.CallbackFilter;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:47: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.Enhancer;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:48: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.Factory;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:49: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.NoOp;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:51: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:52: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.PropertyConfigurator;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:53: package org.apache.log4j.xml does not exist
+    [javac] import org.apache.log4j.xml.DOMConfigurator;
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:74: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]     protected static final Logger                      s_logger     = Logger.getLogger(ComponentLocator.class);
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:85: cannot find symbol
+    [javac] symbol  : class Callback
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]     protected static final Callback[] s_callbacks = new Callback[] { NoOp.INSTANCE, new DatabaseCallback() };
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:86: cannot find symbol
+    [javac] symbol  : class CallbackFilter
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]     protected static final CallbackFilter s_callbackFilter = new DatabaseCallbackFilter();
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/SearchBuilder.java:25: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.Factory;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/SearchBuilder.java:26: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.MethodInterceptor;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/SearchBuilder.java:27: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.MethodProxy;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/SearchBuilder.java:76: cannot find symbol
+    [javac] symbol: class MethodInterceptor
+    [javac] public class SearchBuilder<T> implements MethodInterceptor {
+    [javac]                                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:783: cannot find symbol
+    [javac] symbol  : class Factory
+    [javac] location: class com.cloud.utils.component.ComponentLocator.InjectInfo
+    [javac]         public Factory factory;
+    [javac]                ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:784: cannot find symbol
+    [javac] symbol  : class Enhancer
+    [javac] location: class com.cloud.utils.component.ComponentLocator.InjectInfo
+    [javac]         public Enhancer enhancer;
+    [javac]                ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:786: cannot find symbol
+    [javac] symbol  : class Enhancer
+    [javac] location: class com.cloud.utils.component.ComponentLocator.InjectInfo
+    [javac]         public InjectInfo(Enhancer enhancer, Factory factory) {
+    [javac]                           ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:786: cannot find symbol
+    [javac] symbol  : class Factory
+    [javac] location: class com.cloud.utils.component.ComponentLocator.InjectInfo
+    [javac]         public InjectInfo(Enhancer enhancer, Factory factory) {
+    [javac]                                              ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/SearchBuilder.java:99: cannot find symbol
+    [javac] symbol  : class MethodProxy
+    [javac] location: class com.cloud.utils.db.SearchBuilder<T>
+    [javac]     public Object intercept(Object object, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
+    [javac]                                                                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DatabaseCallback.java:22: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.MethodInterceptor;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DatabaseCallback.java:23: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.MethodProxy;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DatabaseCallback.java:25: cannot find symbol
+    [javac] symbol: class MethodInterceptor
+    [javac] public class DatabaseCallback implements MethodInterceptor {
+    [javac]                                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DatabaseCallback.java:28: cannot find symbol
+    [javac] symbol  : class MethodProxy
+    [javac] location: class com.cloud.utils.db.DatabaseCallback
+    [javac]     public Object intercept(Object object, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
+    [javac]                                                                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DatabaseCallbackFilter.java:22: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.CallbackFilter;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DatabaseCallbackFilter.java:24: cannot find symbol
+    [javac] symbol: class CallbackFilter
+    [javac] public class DatabaseCallbackFilter implements CallbackFilter {
+    [javac]                                                ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DbUtil.java:44: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/DbUtil.java:47: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.DbUtil
+    [javac]     protected final static Logger s_logger = Logger.getLogger(DbUtil.class);
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:46: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.Enhancer;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:47: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.Factory;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:48: package net.sf.ehcache does not exist
+    [javac] import net.sf.ehcache.Cache;
+    [javac]                      ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:49: package net.sf.ehcache does not exist
+    [javac] import net.sf.ehcache.CacheManager;
+    [javac]                      ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:50: package net.sf.ehcache does not exist
+    [javac] import net.sf.ehcache.Element;
+    [javac]                      ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:52: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:95: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.GenericDaoBase<T,ID>
+    [javac]     private final static Logger s_logger = Logger.getLogger(GenericDaoBase.class);
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:122: cannot find symbol
+    [javac] symbol  : class Enhancer
+    [javac] location: class com.cloud.utils.db.GenericDaoBase<T,ID>
+    [javac]     protected Enhancer _enhancer;
+    [javac]               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:123: cannot find symbol
+    [javac] symbol  : class Factory
+    [javac] location: class com.cloud.utils.db.GenericDaoBase<T,ID>
+    [javac]     protected Factory _factory;
+    [javac]               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/SequenceFetcher.java:31: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/UpdateBuilder.java:27: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.MethodInterceptor;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/UpdateBuilder.java:28: package net.sf.cglib.proxy does not exist
+    [javac] import net.sf.cglib.proxy.MethodProxy;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/UpdateBuilder.java:34: cannot find symbol
+    [javac] symbol: class MethodInterceptor
+    [javac] public class UpdateBuilder implements MethodInterceptor {
+    [javac]                                       ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GenericDaoBase.java:1209: cannot find symbol
+    [javac] symbol  : class Cache
+    [javac] location: class com.cloud.utils.db.GenericDaoBase<T,ID>
+    [javac]     protected Cache _cache;
+    [javac]               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/SequenceFetcher.java:46: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.SequenceFetcher
+    [javac]     private final static Logger s_logger = Logger.getLogger(SequenceFetcher.class);
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/UpdateBuilder.java:43: cannot find symbol
+    [javac] symbol  : class MethodProxy
+    [javac] location: class com.cloud.utils.db.UpdateBuilder
+    [javac]     public Object intercept(Object object, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
+    [javac]                                                                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GlobalLock.java:24: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/GlobalLock.java:55: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.GlobalLock
+    [javac]     protected final static Logger s_logger = Logger.getLogger(GlobalLock.class);
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Merovingian.java:35: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Merovingian.java:44: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.Merovingian
+    [javac] 	private static final Logger s_logger = Logger.getLogger(Merovingian.class);
+    [javac] 	                     ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:34: package org.apache.commons.dbcp does not exist
+    [javac] import org.apache.commons.dbcp.ConnectionFactory;
+    [javac]                               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:35: package org.apache.commons.dbcp does not exist
+    [javac] import org.apache.commons.dbcp.DriverManagerConnectionFactory;
+    [javac]                               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:36: package org.apache.commons.dbcp does not exist
+    [javac] import org.apache.commons.dbcp.PoolableConnectionFactory;
+    [javac]                               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:37: package org.apache.commons.dbcp does not exist
+    [javac] import org.apache.commons.dbcp.PoolingDataSource;
+    [javac]                               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:38: package org.apache.commons.pool does not exist
+    [javac] import org.apache.commons.pool.KeyedObjectPoolFactory;
+    [javac]                               ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:39: package org.apache.commons.pool.impl does not exist
+    [javac] import org.apache.commons.pool.impl.GenericObjectPool;
+    [javac]                                    ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:40: package org.apache.commons.pool.impl does not exist
+    [javac] import org.apache.commons.pool.impl.StackKeyedObjectPoolFactory;
+    [javac]                                    ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:41: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:62: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.Transaction
+    [javac]     private static final Logger s_logger = Logger.getLogger(Transaction.class.getName() + "." + "Transaction");
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:63: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.Transaction
+    [javac]     private static final Logger s_stmtLogger = Logger.getLogger(Transaction.class.getName() + "." + "Statement");
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/db/Transaction.java:64: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.db.Transaction
+    [javac]     private static final Logger s_lockLogger = Logger.getLogger(Transaction.class.getName() + "." + "Lock");
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/events/SubscriptionMgr.java:28: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/events/SubscriptionMgr.java:31: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.events.SubscriptionMgr
+    [javac]     protected final static Logger s_logger = Logger.getLogger(SubscriptionMgr.class);
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/net/NetUtils.java:36: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/net/NetUtils.java:37: package org.apache.log4j.xml does not exist
+    [javac] import org.apache.log4j.xml.DOMConfigurator;
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/net/NetUtils.java:43: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.net.NetUtils
+    [javac]     protected final static Logger s_logger = Logger.getLogger(NetUtils.class);
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/Task.java:20: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/Link.java:31: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/Task.java:30: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.nio.Task
+    [javac] 	private static final Logger s_logger = Logger.getLogger(Task.class);
+    [javac] 	                     ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/Link.java:37: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.nio.Link
+    [javac]     private static final Logger s_logger = Logger.getLogger(Link.class);
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/NioConnection.java:38: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/NioConnection.java:49: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.nio.NioConnection
+    [javac]     private static final Logger s_logger = Logger.getLogger(NioConnection.class);;
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/NioClient.java:26: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/NioClient.java:29: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.nio.NioClient
+    [javac]     private static final Logger s_logger = Logger.getLogger(NioClient.class);
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/NioServer.java:28: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/nio/NioServer.java:31: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.nio.NioServer
+    [javac]     private final static Logger s_logger = Logger.getLogger(NioServer.class);
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Executor.java:20: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Script.java:37: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/OutputInterpreter.java:23: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Executor.java:27: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: interface com.cloud.utils.script.Executor
+    [javac]     String execute(Script script, long timeout, Logger logger);
+    [javac]                                                 ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Script.java:44: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.Script
+    [javac]     private static final Logger s_logger = Logger.getLogger(Script.class);
+    [javac]                          ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Script.java:46: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.Script
+    [javac]     private final Logger _logger;
+    [javac]                   ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/ScriptBuilder.java:23: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Script.java:62: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.Script
+    [javac]     public Script(String command, long timeout, Logger logger) {
+    [javac]                                                 ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Script.java:74: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.Script
+    [javac]     public Script(boolean runWithSudo, String command, long timeout, Logger logger) {
+    [javac]                                                                      ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/Script.java:81: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.Script
+    [javac]     public Script(String command, Logger logger) {
+    [javac]                                   ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/ScriptBuilder.java:30: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.ScriptBuilder
+    [javac]     Logger _logger;
+    [javac]     ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/ScriptBuilder.java:36: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.ScriptBuilder
+    [javac]     public ScriptBuilder(String command, Executor executor, long timeout, Logger logger) {
+    [javac]                                                                           ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/ScriptBuilder.java:68: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.ScriptBuilder
+    [javac]     public Logger getLogger() {
+    [javac]            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/OutputInterpreter.java:87: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.OutputInterpreter.OutputLogger
+    [javac]         Logger _logger;
+    [javac]         ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/script/OutputInterpreter.java:88: cannot find symbol
+    [javac] symbol  : class Logger
+    [javac] location: class com.cloud.utils.script.OutputInterpreter.OutputLogger
+    [javac]         public OutputLogger(Logger logger) {
+    [javac]                             ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/testcase/Log4jEnabledTestCase.java:26: package org.apache.log4j.xml does not exist
+    [javac] import org.apache.log4j.xml.DOMConfigurator;
+    [javac]                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/testcase/Log4jEnabledTestCase.java:28: package junit.framework does not exist
+    [javac] import junit.framework.TestCase;
+    [javac]                       ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/testcase/Log4jEnabledTestCase.java:30: cannot find symbol
+    [javac] symbol: class TestCase
+    [javac] public class Log4jEnabledTestCase extends TestCase {
+    [javac]                                           ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/ProcessUtil.java:40: cannot find symbol
+    [javac] symbol  : variable Logger
+    [javac] location: class com.cloud.utils.ProcessUtil
+    [javac]     private static final Logger s_logger = Logger.getLogger(ProcessUtil.class.getName());
+    [javac]                                            ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/commandlinetool/BuildCommandLineInputFile.java:125: warning: [unchecked] unchecked cast
+    [javac] found   : java.lang.Object
+    [javac] required: java.util.List<com.cloud.utils.Pair<java.lang.Enum,java.lang.Boolean>>
+    [javac] 		            		List<Pair<Enum, Boolean>> properties = (List<Pair<Enum, Boolean>>) m[i].get(null);
+    [javac] 		            		                                                                           ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/commandlinetool/BuildCommandLineInputFile.java:131: warning: [unchecked] unchecked call to getMethod(java.lang.String,java.lang.Class<?>...) as a member of the raw type java.lang.Class
+    [javac] 			            			Method m2 = clas2.getMethod("getName");
+    [javac] 			            			                           ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:74: cannot find symbol
+    [javac] symbol  : variable Logger
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]     protected static final Logger                      s_logger     = Logger.getLogger(ComponentLocator.class);
+    [javac]                                                                       ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:85: cannot find symbol
+    [javac] symbol  : class Callback
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]     protected static final Callback[] s_callbacks = new Callback[] { NoOp.INSTANCE, new DatabaseCallback() };
+    [javac]                                                         ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:85: cannot find symbol
+    [javac] symbol  : variable NoOp
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]     protected static final Callback[] s_callbacks = new Callback[] { NoOp.INSTANCE, new DatabaseCallback() };
+    [javac]                                                                      ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:205: cannot find symbol
+    [javac] symbol  : class Factory
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]         Factory factory = null;
+    [javac]         ^
+    [javac] /var/lib/jenkins/workspace/First attempt/utils/src/com/cloud/utils/component/ComponentLocator.java:209: cannot find symbol
+    [javac] symbol  : class Enhancer
+    [javac] location: class com.cloud.utils.component.ComponentLocator
+    [javac]                 Enhancer enhancer = new Enhancer();
+    [javac]                 ^
+    [javac] 100 errors
+    [javac] 2 warnings
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/First attempt/build/build-cloud.xml:166: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/First attempt/build/build-common.xml:48: Compile failed; see the compiler error output for details.
+
+Total time: 5 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

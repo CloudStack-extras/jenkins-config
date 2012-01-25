@@ -70,3 +70,20 @@ ls
 git commit -a -m "cleaning up a bit"
 git push 
 exit
+ls
+cd workspace/
+ls
+cd First\ attempt/
+ls
+java com.puppycrawl.tools.checkstyle.Main -c docs/sun_checks.xml -r ./
+checkstyle
+exit
+ls
+cd workspace/
+ls
+cd First\ attempt/
+ls
+locate 
+sun_checks.xml
+locate sun_checks.xml
+exit

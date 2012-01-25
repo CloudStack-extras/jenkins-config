@@ -109,3 +109,31 @@ pwd
 cd /usr/share/doc/checkstyle-5.4/
 ls
 exit
+ls
+cd workspace/
+ls
+cd checkstyle/
+ls
+ checkstyle -f xml -o ./checkstyle_errors.xml -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r agent/src/com/cloud/agent
+ls
+vim checkstyle_errors.xml 
+vi checkstyle_errors.xml 
+ checkstyle -f xml -o ./checkstyle_errors.xml -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r agent/src/com/cloud/agent
+echo $0
+ checkstyle -f xml -o ./checkstyle_errors.xml -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r agent/src/com/cloud/agent
+$?
+ checkstyle -f xml -o ./checkstyle_errors.xml -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r agent/src/com/cloud/agent
+echo $?
+wc -l checkstyle_errors.xml 
+ checkstyle -f xml -o ./checkstyle_errors.xml -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r api/src/com/cloud/
+echo $?
+man checkstyle
+pwd
+cd agent
+ls
+cd src
+ls
+cd com/cloud/agent/dao/
+ls
+vim StorageComponent.java 
+vi StorageComponent.java 

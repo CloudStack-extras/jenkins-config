@@ -1,0 +1,16 @@
+Changes in branch origin/master, between a339a7b38f7ef2fd4a94f75d66251c117f01fb54 and f8c887ca728d02eba43f78b354e37aa715b18d04
+commit f8c887ca728d02eba43f78b354e37aa715b18d04
+tree 74779f1f9592aace2fe4d8331844da2f62148dfa
+parent a339a7b38f7ef2fd4a94f75d66251c117f01fb54
+author bfederle <bfederle@gmail.com> 1327508079 -0800
+committer bfederle <bfederle@gmail.com> 1327508079 -0800
+
+    bug 13274
+    
+    Fix error handling for zone/quick install wizard
+    
+    status 13274: resolved fixed
+
+:100644 100644 908a863bc5f6c26c5d864d76539ff18f8f50c872 9619944715a01811c8988f348f1f3cd2d49f3bac M	ui/scripts/installWizard.js
+:100644 100644 f07835a426702d5dbfd55a5bab369fe6ae62d856 9013a41b6caaca7a3f2ddcc4ed56aeeca514d2dc M	ui/scripts/ui-custom/zoneWizard.js
+:100644 100644 d68bdca075726c65e5b1f66e014710872cf5c2ea f547c9117e4448b95c7ba26f2604912a26456173 M	ui/scripts/zoneWizard.js

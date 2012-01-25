@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl>
   <helpRedirect/>
-  <defaultSuffix>cloudstack.org</defaultSuffix>
+  <defaultSuffix>@cloudstack.org</defaultSuffix>
   <hudsonUrl>http://jenkins.cloudstack.org:8080/</hudsonUrl>
   <adminAddress>jenkins@cloudstack.org</adminAddress>
   <smtpHost>localhost</smtpHost>

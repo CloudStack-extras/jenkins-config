@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.google.analytics.GoogleAnalyticsPageDecorator>
+  <helpRedirect/>
+  <profileId></profileId>
+  <domainName></domainName>
+</hudson.plugins.google.analytics.GoogleAnalyticsPageDecorator>

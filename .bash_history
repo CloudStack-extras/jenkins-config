@@ -40,3 +40,33 @@ vi README
 exot
 pwd
 exit
+ls
+cp identity.key /tmp/
+git rm identity.key 
+ls
+cp /tmp/identity.key ./
+git rm --cached identity.key 
+ls
+git rm --cached ./identity.key 
+git rm --cached ./secret.key 
+git rm --cached secret.key 
+cd jobs/
+ls
+cd First\ attempt/
+l
+ls
+cd builds/
+ls
+df -h
+du --max-depth=1 -h ./
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd jenkins/
+ls
+git commit -a -m "cleaning up a bit"
+git push 
+exit

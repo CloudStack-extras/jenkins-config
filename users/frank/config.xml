@@ -9,9 +9,6 @@
     <jenkins.security.ApiTokenProperty>
       <apiToken>bB3hkmFHtheu1prZcFosp37Gxr1qeOju6w00HjLr7hkUVLZc6P1xLpmJqbn5OKsW</apiToken>
     </jenkins.security.ApiTokenProperty>
-    <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>frank.zhang@citrix.com</emailAddress>
-    </hudson.tasks.Mailer_-UserProperty>
     <hudson.model.MyViewsProperty>
       <primaryViewName></primaryViewName>
       <views>
@@ -27,5 +24,8 @@
     <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
       <authorizedKeys></authorizedKeys>
     </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+    <hudson.tasks.Mailer_-UserProperty>
+      <emailAddress>frank.zhang@citrix.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

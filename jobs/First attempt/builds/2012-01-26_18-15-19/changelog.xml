@@ -1,0 +1,68 @@
+Changes in branch origin/master, between 14a7f1593837e73bbca3a804ff997ebd150dcf6e and d42f779c5e31b6dbb21438cf9e5fea113679dc5d
+commit d42f779c5e31b6dbb21438cf9e5fea113679dc5d
+tree 9f3c699fbcd99d10da02459829b632e3cfd3a5a0
+parent ae0a1fec227b13dad465992f64616a859d1907d9
+author bfederle <bfederle@gmail.com> 1327618820 -0800
+committer bfederle <bfederle@gmail.com> 1327618841 -0800
+
+    Fix missing <tr> from list view thead (broke IE7)
+
+:100644 100644 64c5518223e806098953feb12d4befd88971b683 d43a0d9df21e3fc4348303b667f7255f8a7314c3 M	ui/scripts/ui/widgets/listView.js
+
+commit ae0a1fec227b13dad465992f64616a859d1907d9
+tree dc691c53072d6da83d2ee4b8da422b54c69adc25
+parent 81e0ca5e9b904f82e9b4fcb8bf8873c82c6a0e68
+author frank <frank.zhang@citrix.com> 1327615483 -0800
+committer frank <frank.zhang@citrix.com> 1327615594 -0800
+
+    Bug 13250 - Not able to start System Vms when 2 physical networks are configured
+    
+    if admin didn't specify storage traffic type before enabling zone, create default
+    storage traffic type with the same configuration of mgmt traffic type.
+    
+    UI need a warning to admin, will file another bug for this
+    
+    status 13250: resolved fixed
+
+:100755 100755 b7ab4db11dd31d8a54994440353539f466ced852 35006d07fe641ea18c1b6377df717882fb78a32b M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit 81e0ca5e9b904f82e9b4fcb8bf8873c82c6a0e68
+tree e075e47519e325d61b67961a18320db27d8f643e
+parent faa23b8dee54cff2ab535c7dd1ae8a6a7b979bee
+author Jessica Wang <jessica@cloud.com> 1327612954 -0800
+committer Jessica Wang <jessica@cloud.com> 1327612970 -0800
+
+    add zone wizard - seperate addNetscalerDevice code out from configurePhysicalNetwork code. So, addNetscalerDevice can have its own error handling.
+
+:100644 100644 44fbe265f670c4ddc61f89189ce9e64be0eafb1e a9d5b1441ff217516dd2ed4c158997b497d9cecd M	ui/index.jsp
+:100644 100644 9c8ea3db01fe83f97f782fea16daa4203be70fb8 55a3f16c6f9451c78486bc2872735d290d63ed65 M	ui/scripts-test/zoneWizard.js
+:100644 100644 30d8485f6ee656921e9ec3ac1fddd56cf2aa2bbe 54b8ada0635df09a5eeced3968d4628aabdd086c M	ui/scripts/zoneWizard.js
+
+commit faa23b8dee54cff2ab535c7dd1ae8a6a7b979bee
+tree 84ef2613a45dcf42cddacf2b69f41a5d7a20d43b
+parent 51f02f878fcd96da40b05f8d78cd8eea603c2d11
+author bfederle <bfederle@gmail.com> 1327610679 -0800
+committer bfederle <bfederle@gmail.com> 1327610687 -0800
+
+    IE7 fixes
+
+:100644 100644 921b493197a8a4bcec63bdc20ec135d7c5231434 aece82cff736a2bf63401d5db7c68e0d48d048f0 M	ui/css/cloudstack3-ie7.css
+:100644 100644 d5dba941e6cacdc5f682c71cf52cf49ef70e5347 140a0b2be5223034961ef0331eaf87d897f51cad M	ui/css/cloudstack3.css
+
+commit 51f02f878fcd96da40b05f8d78cd8eea603c2d11
+tree a6f66f34093e9ecd3386c29aa1c5b824b8d56718
+parent 14a7f1593837e73bbca3a804ff997ebd150dcf6e
+author anthony <anthony@cloud.com> 1327609215 -0800
+committer anthony <anthony@cloud.com> 1327609344 -0800
+
+    bug 13338:
+    increate timeout for sshcheck to 10 minutes
+    if sshcheck fails, finalizeCommandsOnStart fails, no exception
+    
+    status 13338: resolved fixed
+
+:100644 100644 b36c5a9dee44962029cc4976d68ddba0741e2690 718d2e5e08f9a3e759538f5b83d481718cbb1795 M	api/src/com/cloud/agent/api/check/CheckSshCommand.java
+:100755 100755 26ff82b89afc8491b577cef4de8139238760a736 78ef13ae12cb1d112f647bae5f1988f6ec8772a9 M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:100644 100644 c67810978f6d87b9e819fe90f61c4688fad7309d 1309e260aa6a79613277c40f44c155b96a53d573 M	server/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java
+:100755 100755 4fde78c1b54fab58e4d7d957323d6a2a2f6572eb a85dcdfb6ebc46d68cd89392fdaca191d28bc10a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100755 100755 34a4f4c99292d88a48354f8b585b8c1a5234e358 0cc8e217cf528312edab531ad356ab52830947b2 M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java

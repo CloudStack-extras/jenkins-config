@@ -8,42 +8,62 @@
   <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
     <permission>hudson.model.Computer.Configure:frank</permission>
     <permission>hudson.model.Computer.Configure:ke4qqq</permission>
+    <permission>hudson.model.Computer.Configure:sam</permission>
     <permission>hudson.model.Computer.Connect:frank</permission>
     <permission>hudson.model.Computer.Connect:ke4qqq</permission>
+    <permission>hudson.model.Computer.Connect:sam</permission>
     <permission>hudson.model.Computer.Create:frank</permission>
     <permission>hudson.model.Computer.Create:ke4qqq</permission>
+    <permission>hudson.model.Computer.Create:sam</permission>
     <permission>hudson.model.Computer.Delete:frank</permission>
     <permission>hudson.model.Computer.Delete:ke4qqq</permission>
+    <permission>hudson.model.Computer.Delete:sam</permission>
     <permission>hudson.model.Computer.Disconnect:frank</permission>
     <permission>hudson.model.Computer.Disconnect:ke4qqq</permission>
+    <permission>hudson.model.Computer.Disconnect:sam</permission>
     <permission>hudson.model.Hudson.Administer:frank</permission>
     <permission>hudson.model.Hudson.Administer:ke4qqq</permission>
+    <permission>hudson.model.Hudson.Administer:sam</permission>
     <permission>hudson.model.Hudson.Read:anonymous</permission>
     <permission>hudson.model.Hudson.Read:frank</permission>
     <permission>hudson.model.Hudson.Read:ke4qqq</permission>
+    <permission>hudson.model.Hudson.Read:sam</permission>
     <permission>hudson.model.Hudson.RunScripts:frank</permission>
     <permission>hudson.model.Hudson.RunScripts:ke4qqq</permission>
+    <permission>hudson.model.Hudson.RunScripts:sam</permission>
     <permission>hudson.model.Item.Build:frank</permission>
     <permission>hudson.model.Item.Build:ke4qqq</permission>
+    <permission>hudson.model.Item.Build:sam</permission>
     <permission>hudson.model.Item.Configure:frank</permission>
     <permission>hudson.model.Item.Configure:ke4qqq</permission>
+    <permission>hudson.model.Item.Configure:sam</permission>
     <permission>hudson.model.Item.Create:frank</permission>
     <permission>hudson.model.Item.Create:ke4qqq</permission>
+    <permission>hudson.model.Item.Create:sam</permission>
     <permission>hudson.model.Item.Delete:frank</permission>
     <permission>hudson.model.Item.Delete:ke4qqq</permission>
+    <permission>hudson.model.Item.Delete:sam</permission>
     <permission>hudson.model.Item.Read:anonymous</permission>
     <permission>hudson.model.Item.Read:frank</permission>
     <permission>hudson.model.Item.Read:ke4qqq</permission>
+    <permission>hudson.model.Item.Read:sam</permission>
     <permission>hudson.model.Item.Workspace:frank</permission>
     <permission>hudson.model.Item.Workspace:ke4qqq</permission>
+    <permission>hudson.model.Item.Workspace:sam</permission>
+    <permission>hudson.model.Run.Delete:sam</permission>
+    <permission>hudson.model.Run.Update:sam</permission>
     <permission>hudson.model.View.Configure:frank</permission>
     <permission>hudson.model.View.Configure:ke4qqq</permission>
+    <permission>hudson.model.View.Configure:sam</permission>
     <permission>hudson.model.View.Create:frank</permission>
     <permission>hudson.model.View.Create:ke4qqq</permission>
+    <permission>hudson.model.View.Create:sam</permission>
     <permission>hudson.model.View.Delete:frank</permission>
     <permission>hudson.model.View.Delete:ke4qqq</permission>
+    <permission>hudson.model.View.Delete:sam</permission>
     <permission>hudson.scm.SCM.Tag:frank</permission>
     <permission>hudson.scm.SCM.Tag:ke4qqq</permission>
+    <permission>hudson.scm.SCM.Tag:sam</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>

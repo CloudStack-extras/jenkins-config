@@ -1,0 +1,109 @@
+Changes in branch origin/master, between ea87fc84a62b66395756a10a2be85361d4a5afd0 and 4084b9804fd82a310ca086e845bc416fa560e9ee
+commit 4084b9804fd82a310ca086e845bc416fa560e9ee
+tree 07d2de2e67b7bf4b577eea44fae38e25b3a1bfdc
+parent 522a586bf78280191d41f489d1a8e46b8275ee85
+author anthony <anthony@cloud.com> 1327542639 -0800
+committer anthony <anthony@cloud.com> 1327542675 -0800
+
+    remove host.enable from XenServerConnectionPool
+
+:100644 100644 3d7e08d8d38a4a0c8d67e56c58ade359f8f94cd7 ccac8c341a5a886674b4269ec19e813bdfa9297d M	core/src/com/cloud/hypervisor/xen/resource/XenServerConnectionPool.java
+
+commit 522a586bf78280191d41f489d1a8e46b8275ee85
+tree 52315d4de1f0e4e0b3bdb39cdeade6fcaf3936f3
+parent 9f0b05481cbd3b1c86ebfae1fe1a70963cd5d9af
+author Jessica Wang <jessica@cloud.com> 1327542371 -0800
+committer Jessica Wang <jessica@cloud.com> 1327542387 -0800
+
+    network page - detail view - Add Load Balancer tab - use a network's networkOffering's services instead of network's own services to determine whether or not to show Add Load Balancer tab
+
+:100644 100644 568db03b213fd2dfc16824451c64dd53fcb0a3e2 0c5022df7eab8b562a846a4db5ffdf7e460440d0 M	ui/scripts/network.js
+
+commit 9f0b05481cbd3b1c86ebfae1fe1a70963cd5d9af
+tree 8d4fec1cd5f0d9c4eefa0eee07940e48f206965b
+parent 60a644d5c9881c42fdd8bfcb115d277a3ac98383
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327541447 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327541513 -0800
+
+    bug 13232: listPublicIpAddresses by staticNat/sourceNat properties
+    status 13232: resolved fixed
+
+:100755 100755 e0f30fc85547dac34ba68ecfacb2d54ce83eefa9 510a743120ed779a38162ea905ca74acdef4e584 M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 f5f28bdf4b94b6dd700905434a7905bfa3440456 ae1e37bbc65a0f0d38247b120f1423424ed11b99 M	api/src/com/cloud/api/commands/ListNetworksCmd.java
+:100644 100644 0df343e0481baa647ef02d68413ff004e8195a48 91de3add717a2564a1bacfab1cbd75b778de0794 M	api/src/com/cloud/api/commands/ListPublicIpAddressesCmd.java
+:100755 100755 1565be1ed9a4afbbdf4217da11587486d7cad453 901af658e1a3a07b041f46010db6ebcf7002c0c6 M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 60a644d5c9881c42fdd8bfcb115d277a3ac98383
+tree 18af5c90eb8ac366b1481c512f6ab427c62ca301
+parent 31853706e2d2c184995dd9330f2b40d38259903d
+author Kelven Yang <kelven@cloud.com> 1327540548 -0800
+committer Kelven Yang <kelven@cloud.com> 1327540581 -0800
+
+    bug 13306: remove sensive DB id info from VM display name
+
+:100644 100644 5df6ee0b38cb19f77562da57a28806c745645565 3a080d5ce652b5e0d3122743ca083c3d12067908 M	core/src/com/cloud/vm/ConsoleProxyVO.java
+:100755 100755 b341a37f28a8cd531693342c72c68b6e8772ebab bc29df8df3cca68ffa10691eeb5cd1e8197fe2b0 M	core/src/com/cloud/vm/DomainRouterVO.java
+:100644 100644 4724bb37d16fc813c501989ee5dc3c2ef67c7d6a 10c161b911fc6fafbccfb0c1dc92bdfa2bbbbb2a M	core/src/com/cloud/vm/SecondaryStorageVmVO.java
+:100755 100755 3cd1bbf4cae86b0674e9da1855d29756f120c808 8f8b815936a53356a834fade0b58b120f9bf6ec6 M	core/src/com/cloud/vm/UserVmVO.java
+:100644 100644 8691a9c6349daf801f26fdc0c6bee32f90bb8628 90c3afdeeb6ae62f2f940b684c0c21246cb63c83 M	core/src/com/cloud/vm/VMInstanceVO.java
+:100755 100755 ea5a3c6ee377bc879354cd4a30608e708df237f4 17027424440f76ceb02ba38a70a7fc81e7a5c2fa M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 31853706e2d2c184995dd9330f2b40d38259903d
+tree f502c3f36f4275db0e4c97781e29fed64bd2a9c6
+parent 2b445b9fccb916846959ee40d10178cf2d7054b2
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327537622 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327538971 -0800
+
+    bug 13203: removed firewall.rule.ui.enabled global config
+    status 13203: resolved fixed
+
+:100644 100644 166a72c57ae0b04f4969dc2e73193b3175b03836 421757a217d30de77cddd65468c3f4f40b2acc15 M	api/src/com/cloud/api/commands/ListCapabilitiesCmd.java
+:100644 100644 2aad4254b6899ee61e4a4b596f023cfdd6eb6ec1 3fbda935a50c4e8da01e476be3a56fff814d4280 M	api/src/com/cloud/api/response/CapabilitiesResponse.java
+:100755 100755 3c6396b3697ab5a703e95b6063cb59a47d145ea2 ae890e6b574d4485bae28ad93cf96edf3a76baef M	server/src/com/cloud/configuration/Config.java
+:100755 100755 27fc6fd70d1ab472973687211b194100f22989c9 1565be1ed9a4afbbdf4217da11587486d7cad453 M	server/src/com/cloud/server/ManagementServerImpl.java
+:100755 100755 4115f289e95ac300df6c18f94b1b2e3660be9cc0 01b4905cc99dbef03694f57e31267d9bfbb41b27 M	setup/db/db/schema-2214to30.sql
+
+commit 2b445b9fccb916846959ee40d10178cf2d7054b2
+tree 79d0848868e7dad3a2ab3ad960b21b8aa9536b87
+parent 0e1faa887c4766f3601b372b2925f99a1939541d
+author Jessica Wang <jessica@cloud.com> 1327538747 -0800
+committer Jessica Wang <jessica@cloud.com> 1327538747 -0800
+
+    firewallRuleUiEnabled has been removed from listcapabilitiesresponse API. Here is related UI change. In network page, we now use listnetworksresponse to determine whether or not to show firewall section.
+
+:100644 100644 cbc0d3406d4214456cd0e7754df3126b240342fb 5f4cd52250baecde866f39514e8c8b99c0448891 M	ui/old/scripts/cloud.core.init.js
+:100644 100644 83f5ec4fc8c8836df1d5ff3c817713804497578e df26e4fcdb73e0212b4a0ff6c501ca8d419505eb M	ui/old/scripts/cloud.core.ipaddress.js
+:100644 100644 bc2ad77ab155921560543989c9268bf7bd099c19 39aa2f059052ace35eaccc9714ec6e892b3fccd2 M	ui/old/scripts/cloud.core.js
+:100644 100644 b70320c8903bd0b6169194f73465f47a0d04de08 4ef6473bade66c839b67523c6b5b498f3802a2ea M	ui/scripts/cloudStack.js
+:100644 100644 f5093addf74527989fc29c5cd0ba92c89190cbeb 568db03b213fd2dfc16824451c64dd53fcb0a3e2 M	ui/scripts/network.js
+:100644 100644 f9e03256e65f4b25a0ee82dfa5d313c754a46485 14d13a2087459dcaa50af241c6911a36abc10aaf M	ui/scripts/sharedFunctions.js
+
+commit 0e1faa887c4766f3601b372b2925f99a1939541d
+tree 62b6da1235294d18c4f882a023999515d791bd71
+parent c5a65fdfc313c5a7557b934ca2e124b9eb829083
+author Edison Su <Edison.Su@citrix.com> 1327536128 -0800
+committer Edison Su <Edison.Su@citrix.com> 1327536128 -0800
+
+    detect centos 6.2
+
+:100755 100755 89c57b0242825b4b39ea62b5a3a7257b98f08855 a1739b880f3bc6a81c1ad1849c33349ca4b72975 M	python/lib/cloudutils/utilities.py
+
+commit c5a65fdfc313c5a7557b934ca2e124b9eb829083
+tree 93729d5d0bd5aaff4eac67e270d7a956dc051d4a
+parent f945f9fc1967a5a53deddf64f92bb72cc84ab16b
+author Jessica Wang <jessica@cloud.com> 1327534723 -0800
+committer Jessica Wang <jessica@cloud.com> 1327534723 -0800
+
+    System page - zone detail chart - compute tab - pods listView - JS error "selectedZoneObj is undefined"
+
+:100644 100644 f1c69d15f51fef7c2ac4acba089c2e27462136d2 57a8fa25b0852983e12d2e3ad78db4132c053472 M	ui/scripts/system.js
+
+commit f945f9fc1967a5a53deddf64f92bb72cc84ab16b
+tree d3bf300b3d87146968481f0505f561be36dad78a
+parent ea87fc84a62b66395756a10a2be85361d4a5afd0
+author Jessica Wang <jessica@cloud.com> 1327533601 -0800
+committer Jessica Wang <jessica@cloud.com> 1327533618 -0800
+
+    Add zone wizard - Basic zone - implement error handling when creating a guest netowrk fails.
+
+:100644 100644 8b340ffa52041043f0f89832000b6d440fd19352 30d8485f6ee656921e9ec3ac1fddd56cf2aa2bbe M	ui/scripts/zoneWizard.js

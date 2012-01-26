@@ -137,3 +137,29 @@ cd com/cloud/agent/dao/
 ls
 vim StorageComponent.java 
 vi StorageComponent.java 
+ls
+git rm --cached workspace/*
+git commit -a -m "removing workspace so we don't have useless commits"
+git push origin master
+ls
+vim .gitignore 
+pwd
+vim .gitignore 
+vi .gitignore 
+git commit -a -m "adding workspace to gitignore"
+git push origin master
+ls
+cd war
+ls
+cd ../
+cd workspace/
+ls
+cd checkstyle/
+ls
+git rm --cached ./*
+git rm -r --cached ./*
+cd ..
+git rm -r --cached checkstyle
+cd ..
+ls
+exit

@@ -1,13 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>This simply builds the master branch of CloudStack</description>
-  <logRotator>
-    <daysToKeep>30</daysToKeep>
-    <numToKeep>50</numToKeep>
-    <artifactDaysToKeep>-1</artifactDaysToKeep>
-    <artifactNumToKeep>-1</artifactNumToKeep>
-  </logRotator>
+  <description>This runs the unit tests for CloudStack</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.plugins.git.GitSCM">
@@ -49,16 +43,18 @@
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector">
-    <hudson.triggers.SCMTrigger>
-      <spec>15 */3 * * *</spec>
-    </hudson.triggers.SCMTrigger>
+    <hudson.triggers.TimerTrigger>
+      <spec>45 */3 * * *</spec>
+    </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Ant>
-      <targets>clean-all build-all</targets>
+      <targets>unittest</targets>
     </hudson.tasks.Ant>
   </builders>
-  <publishers/>
+  <publishers>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsPublisher/>
+  </publishers>
   <buildWrappers/>
 </project>

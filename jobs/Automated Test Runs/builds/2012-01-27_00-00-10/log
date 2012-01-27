@@ -1,0 +1,254 @@
+Started by timer
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Using strategy: Default
+Last Built Revision: Revision 812e4f0e2a96e7a0a90ed206838d68a63e94ccdb (origin/2.2.12.demo)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
+Seen branch in repository origin/2.1.10
+Seen branch in repository origin/2.1.4.kumquat
+Seen branch in repository origin/2.1.6.kumquat
+Seen branch in repository origin/2.1.7.zucchini
+Seen branch in repository origin/2.1.9.kumqua
+Seen branch in repository origin/2.1.9.kumquat
+Seen branch in repository origin/2.1.banana
+Seen branch in repository origin/2.1.refactor
+Seen branch in repository origin/2.1.vanilla
+Seen branch in repository origin/2.1.x
+Seen branch in repository origin/2.1.x.217
+Seen branch in repository origin/2.2.1
+Seen branch in repository origin/2.2.10
+Seen branch in repository origin/2.2.10.banana
+Seen branch in repository origin/2.2.11
+Seen branch in repository origin/2.2.11.honeydew
+Seen branch in repository origin/2.2.12
+Seen branch in repository origin/2.2.12.coconut
+Seen branch in repository origin/2.2.12.demo
+Seen branch in repository origin/2.2.12.nectarine
+Seen branch in repository origin/2.2.12.strawberry
+Seen branch in repository origin/2.2.12.zucchini
+Seen branch in repository origin/2.2.13
+Seen branch in repository origin/2.2.13.indianfig
+Seen branch in repository origin/2.2.13.tangerine
+Seen branch in repository origin/2.2.2
+Seen branch in repository origin/2.2.2.honeydew
+Seen branch in repository origin/2.2.3
+Seen branch in repository origin/2.2.3-guava
+Seen branch in repository origin/2.2.3.mango
+Seen branch in repository origin/2.2.4
+Seen branch in repository origin/2.2.4.nectarine
+Seen branch in repository origin/2.2.4.nectarine.elb
+Seen branch in repository origin/2.2.6.date
+Seen branch in repository origin/2.2.8
+Seen branch in repository origin/2.2.8.kumquat
+Seen branch in repository origin/2.2.8.mango
+Seen branch in repository origin/2.2.8.mango2
+Seen branch in repository origin/2.2.8.nectarine
+Seen branch in repository origin/2.2.8.zucchini
+Seen branch in repository origin/2.2.8.zucchini.sgperf
+Seen branch in repository origin/2.2.beta1
+Seen branch in repository origin/2.2.beta1.9
+Seen branch in repository origin/2.2.beta2
+Seen branch in repository origin/2.2.beta3
+Seen branch in repository origin/2.2.beta4
+Seen branch in repository origin/2.2.x
+Seen branch in repository origin/2.2.y
+Seen branch in repository origin/2.2.y-clvm
+Seen branch in repository origin/2.2.y-new-ui
+Seen branch in repository origin/3.0.0.salmon
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/acton-beta2
+Seen branch in repository origin/acton-beta3
+Seen branch in repository origin/acton-new-ui-pre-merge
+Seen branch in repository origin/b-2.2.2
+Seen branch in repository origin/baremetal
+Seen branch in repository origin/bfederle-cloudstack3-ui
+Seen branch in repository origin/bug-12277-naas-details
+Seen branch in repository origin/bug10617
+Seen branch in repository origin/bug10796
+Seen branch in repository origin/bug11845
+Seen branch in repository origin/cloudstack3-ui
+Seen branch in repository origin/cloudstack3-ui-new-browser
+Seen branch in repository origin/cvm
+Seen branch in repository origin/dashboardWork
+Seen branch in repository origin/davidscratch
+Seen branch in repository origin/defaultnetwork
+Seen branch in repository origin/fedorawork
+Seen branch in repository origin/foo
+Seen branch in repository origin/hybrid
+Seen branch in repository origin/mango
+Seen branch in repository origin/master
+Seen branch in repository origin/master.lime
+Seen branch in repository origin/networkasservice
+Seen branch in repository origin/new-zone-details
+Seen branch in repository origin/new-zone-wizard
+Seen branch in repository origin/newagentmgr
+Seen branch in repository origin/origin-cloudstack3-ui
+Seen branch in repository origin/rrouter
+Seen branch in repository origin/ui-install-wizard
+Seen branch in repository origin/ui-lb-sticky-fixes
+Seen branch in repository origin/ui-lb-sticky-policy
+Seen branch in repository origin/zonesfeature
+Commencing build of Revision 4005e95c5dc0018b5be17299fd35c4c04242baed (origin/cloudstack3-ui)
+Checking out Revision 4005e95c5dc0018b5be17299fd35c4c04242baed (origin/cloudstack3-ui)
+No change to record in branch origin/cloudstack3-ui
+[Automated Test Runs] $ ant build-all
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-01-27T05:00:25Z
+     [echo] Build number is 2.2.8.2012-01-27T05:00:25Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+   [depend] Deleted 29 out of date files in 1 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
+    [javac] Compiling 21 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+   [depend] The class com.cloud.agent.api.BumpUpPriorityCommand in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/agent/api/BumpUpPriorityCommand.class is out of date due to com.cloud.agent.api.routing.NetworkElementCommand but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.DestroyRouterCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/DestroyRouterCmd.class is out of date due to com.cloud.api.ResponseGenerator but has not been deleted because its source file could not be determined
+   [depend] Deleted 318 out of date files in 4 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/api/src
+    [javac] Compiling 305 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+   [depend] Deleted 8 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/vmware-base/src
+    [javac] Compiling 6 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+   [depend] Deleted 50 out of date files in 3 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/core/src
+    [javac] Compiling 38 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-core.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-core.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
+   [depend] Deleted 13 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/agent/src
+    [javac] Compiling 5 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-agent.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-agent.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
+   [depend] The class com.cloud.network.element.ExternalLoadBalancerElement in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar/com/cloud/network/element/ExternalLoadBalancerElement.class is out of date due to com.cloud.network.NetworkManager but has not been deleted because its source file could not be determined
+   [depend] Deleted 370 out of date files in 14 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/server/src
+    [javac] Compiling 310 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-server.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+     [copy] Copying 20 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
+     [copy] Copying 49 files to /var/lib/jenkins/workspace/Automated Test Runs/target/db
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/target/apidoc
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-console-viewer:
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
+    [javac] warning: [path] bad path element "/var/lib/jenkins/workspace/Automated Test Runs/deps/xercesImpl.jar": no such file or directory
+    [javac] warning: [path] bad path element "/var/lib/jenkins/workspace/Automated Test Runs/deps/xml-apis.jar": no such file or directory
+    [javac] warning: [path] bad path element "/var/lib/jenkins/workspace/Automated Test Runs/target/jar/xercesImpl.jar": no such file or directory
+    [javac] warning: [path] bad path element "/var/lib/jenkins/workspace/Automated Test Runs/target/jar/xml-apis.jar": no such file or directory
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/console/src/com/cloud/console/ConsoleCanvas.java:1578: warning: [deprecation] KeyEvent(java.awt.Component,int,long,int,int) in java.awt.event.KeyEvent has been deprecated
+    [javac]   		KeyEvent evt = new KeyEvent(this, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 
+    [javac]   		               ^
+    [javac] 5 warnings
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/VMOpsConsoleApplet.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-common:
+   [depend] Deleted 2 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console/src
+    [javac] Compiling 2 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-common.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console/src/com/cloud/console/ConsoleCanvas.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-common.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-proxy:
+   [depend] Deleted 9 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src
+    [javac] Compiling 9 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-proxy.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcopy-console-proxy:
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/applet
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-console-proxy:
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-agent:
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/conf
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/conf
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
+     [copy] Copying 15 files to /var/lib/jenkins/workspace/Automated Test Runs/target/scripts
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
+     [copy] Copying 35 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+   [depend] Deleted 1 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/ovm/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-ovm.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-ovm.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ovm:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-package:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm:
+      [zip] Updating zip: /var/lib/jenkins/workspace/Automated Test Runs/dist/systemvm.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-systemvm-patch:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch/usr/sbin
+     [copy] Copying 68 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch/usr/sbin
+      [tar] Building tar: /var/lib/jenkins/workspace/Automated Test Runs/dist/patch.tar
+     [gzip] Building: /var/lib/jenkins/workspace/Automated Test Runs/dist/cloud-scripts.tgz
+   [delete] Deleting: /var/lib/jenkins/workspace/Automated Test Runs/dist/patch.tar
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm-iso:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-opensource:
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/dist
+     [copy] Copying 16 files to /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-war-oss:
+      [war] Updating war: /var/lib/jenkins/workspace/Automated Test Runs/dist/client/client.war
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-test:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-testclient:
+     [echo] src is /var/lib/jenkins/workspace/Automated Test Runs/test
+   [depend] Deleted 49 out of date files in 1 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/test/src
+    [javac] Compiling 37 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-test.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-test.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 1 minute 18 seconds
+Finished: SUCCESS

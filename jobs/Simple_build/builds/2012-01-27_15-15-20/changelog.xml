@@ -1,0 +1,35 @@
+Changes in branch origin/master, between 2d5e06ea36b80f66b78d12de72b58963d5248b4e and 13020f2a461a9af732a7044e04c144f566d0adeb
+commit 13020f2a461a9af732a7044e04c144f566d0adeb
+tree 9e8f33e0ffaeb55807f9629a1f48faacc3dd9cd8
+parent bc93a80c9214fc60d675b66381c9799e8a6f4a29
+author bfederle <bfederle@gmail.com> 1327690547 -0800
+committer bfederle <bfederle@gmail.com> 1327690547 -0800
+
+    bug 13364: Fix security group listing when in projects mode
+    
+    status 13364: resolved fixed
+
+:100644 100644 706d545db26a00259049e9309cb3ec7f2b2089db 047d8e81c7eb3f0807e59bcc91ff798757355f1c M	ui/scripts/instances.js
+:100644 100644 5dc046300fdf66c91bf315ebb14c87626b991fec ccee3f2ef183a6fe2d10f41912e8381a55da21a6 M	ui/scripts/network.js
+
+commit bc93a80c9214fc60d675b66381c9799e8a6f4a29
+tree 095eb2db9dd23c89265f83ffeb0db3348b94acf0
+parent 0621f51e806fd8a7815229581c3b37a0b064e9f0
+author Kelven Yang <kelven@cloud.com> 1327687192 -0800
+committer Kelven Yang <kelven@cloud.com> 1327687192 -0800
+
+    Let system VM still use the old naming convention for host names
+
+:100644 100644 3a080d5ce652b5e0d3122743ca083c3d12067908 5df6ee0b38cb19f77562da57a28806c745645565 M	core/src/com/cloud/vm/ConsoleProxyVO.java
+:100755 100755 bc29df8df3cca68ffa10691eeb5cd1e8197fe2b0 b341a37f28a8cd531693342c72c68b6e8772ebab M	core/src/com/cloud/vm/DomainRouterVO.java
+:100644 100644 10c161b911fc6fafbccfb0c1dc92bdfa2bbbbb2a 4724bb37d16fc813c501989ee5dc3c2ef67c7d6a M	core/src/com/cloud/vm/SecondaryStorageVmVO.java
+
+commit 0621f51e806fd8a7815229581c3b37a0b064e9f0
+tree 956304eb42bce610357019c32b7bdb1612798073
+parent 2d5e06ea36b80f66b78d12de72b58963d5248b4e
+author Kelven Yang <kelven@cloud.com> 1327619484 -0800
+committer Kelven Yang <kelven@cloud.com> 1327685648 -0800
+
+    More protective cleanup when exporting snaphost to reduce chances of leaving intermediate files behind under soft error conditions
+
+:100755 100755 4890ee5ea0cc63bfa3bf5d3bf36f4367308a1c70 4a2624426bfbd0e0dab53cf35835cf713acd2fab M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VirtualMachineMO.java

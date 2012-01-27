@@ -1,0 +1,80 @@
+Changes in branch origin/master, between d42f779c5e31b6dbb21438cf9e5fea113679dc5d and a5d0ed31a666ab638356bc438bb110a754772255
+commit a5d0ed31a666ab638356bc438bb110a754772255
+tree 200c1645c9011b1338bd2b33571dbacfab53995e
+parent 6bd8e1be440e399c923f1e82024b7ef73c4e1216
+author anthony <anthony@cloud.com> 1327628627 -0800
+committer anthony <anthony@cloud.com> 1327628732 -0800
+
+    bug 13086: remove host tag from VDI after rset_power a VM
+    
+    status 13086: resolved fixed
+
+:100644 100644 c7298d06c4afd422a8d68327e429108002bc2198 3e132fc1623125fb196adaad93e847a52bbba322 M	core/src/com/cloud/hypervisor/xen/resource/XenServer600Resource.java
+
+commit 6bd8e1be440e399c923f1e82024b7ef73c4e1216
+tree c6281e8f92a8c954165d25a127c46f10463ff90f
+parent f41a11ab8e82a3fd5638d4e9902c9ec3d827fabd
+author Jessica Wang <jessica@cloud.com> 1327626430 -0800
+committer Jessica Wang <jessica@cloud.com> 1327626430 -0800
+
+    Add zone wizard - configure public - fix a bug that configureGuestTraffic() was being called more than once when multiple public VLAN IP Ranges are entered in configure public screen.
+
+:100644 100644 54b8ada0635df09a5eeced3968d4628aabdd086c d22968272454cd6988b8775c000f6d90119afd90 M	ui/scripts/zoneWizard.js
+
+commit f41a11ab8e82a3fd5638d4e9902c9ec3d827fabd
+tree 4256d2cee8c92355812568ed7d8830a232cf4637
+parent 276eb68cbb04cc3254039b0adc82006ade6aef31
+author prachi <prachi@cloud.com> 1327624799 -0800
+committer prachi <prachi@cloud.com> 1327624816 -0800
+
+    Bug 13239 - java.lang.NullPointerException seen in management server logs when netscaler instance is unreachable whenever network usage thread is executed
+    
+    Changes:
+    - Added Null check for lbvserver
+    - Need not process the usage answer when we get some error.
+
+:100644 100644 c6430c5b094e5c2152b77161efe79ff043584aad 7d6840753f959ff5d9785fa54f7135a3336fe841 M	core/src/com/cloud/network/resource/NetscalerResource.java
+:100644 100644 e092ec5bdf0dd0a89aced8f92bbf3d42a4f9a4b1 3dc115ae68d394585b0625100142030a00e99a7a M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java
+
+commit 276eb68cbb04cc3254039b0adc82006ade6aef31
+tree 9bb92f2310f9d1d1611e5471c5b5d3109c8608a6
+parent cc97a121b320d8869edca2c8e1d0fa62a1e5a62a
+author bfederle <bfederle@gmail.com> 1327623051 -0800
+committer bfederle <bfederle@gmail.com> 1327623057 -0800
+
+    bug 13285: Fix confirm password validation
+    
+    status 13285: resolved fixed
+
+:100644 100644 176f19d330aa48667e8b2d5cbed761320010c1c0 26c7225ee39941196d112eb5a841c09c47f5e04b M	ui/scripts/ui-custom/installWizard.js
+
+commit cc97a121b320d8869edca2c8e1d0fa62a1e5a62a
+tree 5a473355e2bc05563099dd4fd26e93990d27638d
+parent 6ee5f1b3b3e2ce5afa4713e090088405061b505c
+author prachi <prachi@cloud.com> 1327544273 -0800
+committer prachi <prachi@cloud.com> 1327622572 -0800
+
+    Bug 13314 - acton-bet3:vmware/xen:fail to attach "VMware Tools Installer ISO" to instance
+    
+    Changes:
+    - 'sameOwner' check cannot be used for ISO's
+    - So need to make two access checks: See if caller has access to VM and ISO and also check if the VM's owner has access to the ISO.
+
+:100755 100755 7c2be4793ae1c17cdb34334769438baf1c0a1109 ac9c203765b5d284e299c75bab956a761e7a8014 M	server/src/com/cloud/template/TemplateManagerImpl.java
+
+commit 6ee5f1b3b3e2ce5afa4713e090088405061b505c
+tree ec78461eb6ed7752b3db20af6050624e3ab96bbd
+parent d42f779c5e31b6dbb21438cf9e5fea113679dc5d
+author bfederle <bfederle@gmail.com> 1327620685 -0800
+committer bfederle <bfederle@gmail.com> 1327620685 -0800
+
+    Fix syntax errors which break IE7
+
+:100644 100644 7c8dbd07d4343cb4ec5458192bc38e11e7b51e55 2fe0278280ef9a46d1ea2dbeb21ea60005f5a89c M	ui/scripts-test/dashboard.js
+:100644 100644 1d70bbd416b392e67a77bffa055565849bbf7d3b f36b4bad4acb340a3796e4bb413ab306cf2bf6f2 M	ui/scripts-test/system.js
+:100644 100644 8331b84da64ccce06ef58973674d833bcebcfd38 8c531a9b5938d44d2929e18a2e14735bf9a611c5 M	ui/scripts-test/test-data.js
+:100644 100644 55a3f16c6f9451c78486bc2872735d290d63ed65 990fea1c3c6b00c2067dcf6292bd9caf1e67b8e7 M	ui/scripts-test/zoneWizard.js
+:100644 100644 3c1f080f783d66c11f9d8c0dd0375978a0a77749 a2f695e0874436d96be48b10950327ce4028a573 M	ui/scripts/configuration.js
+:100644 100644 c8685fa466b95e2da9037d9df1ea3e84c883716f bf88c6e7cb5aafec730b2679935a820f4a4d0063 M	ui/scripts/network.js
+:100644 100644 10c6b9e6df1247dd83bc30fc720d91e94505f279 24547360c547eadeb3001c7a1c8038abf8c5df83 M	ui/scripts/system.js
+:100644 100644 bfc2bc4d577b52bca676e4194358e6f7117678d7 83f13dd390427375a1cf12a1f5a7aceca9236b64 M	ui/scripts/ui-custom/zoneChart.js

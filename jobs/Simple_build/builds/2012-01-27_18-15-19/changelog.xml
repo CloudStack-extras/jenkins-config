@@ -1,0 +1,42 @@
+Changes in branch origin/master, between 13020f2a461a9af732a7044e04c144f566d0adeb and 184478f076cb513e88d7d5cd07281caa92f2d86d
+commit 184478f076cb513e88d7d5cd07281caa92f2d86d
+tree 4a88e005d96efe04ff5d30726b998e9ad472a6aa
+parent 239dcde79435267456c7b0ce3f8f713991c753a1
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327700519 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327704274 -0800
+
+    Fixed broken unittest
+
+:100755 100755 fb42122d8aa5aabc81df10ba5d74665eb4a73c16 67a88c1753186a1f36391cfb0afe84ee25f1f765 M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+:100644 100644 8e7aaf9c430762326434d93cddc4b0162260d4ed 705508b8942034dae118fd64f6e9062ed2f9d951 M	server/test/com/cloud/user/MockAccountManagerImpl.java
+
+commit 239dcde79435267456c7b0ce3f8f713991c753a1
+tree c463b87872d278efeec43289fa52cd7b47af34f7
+parent 4abe3e5d713169144546aa609f9b952393738288
+author Jessica Wang <jessica@cloud.com> 1327703351 -0800
+committer Jessica Wang <jessica@cloud.com> 1327703368 -0800
+
+    bug 12869: system page - advanced zone - create guest network - network offerings dropdown - when scope is account, display all network offerings regardless of shared/isolated.
+
+:100644 100644 98284a13895a709f02e0c603a407ccae4f7954f1 9ddccf69c497b33b4368d6838f7846777b7acda5 M	ui/scripts/system.js
+
+commit 4abe3e5d713169144546aa609f9b952393738288
+tree 830ae9d950509abb8d05e8dbfe4e9fb4540b8c81
+parent 7e1ce45bd54788c9b2bb06a65d08729ab4a3d3fc
+author Edison Su <Edison.Su@citrix.com> 1327701992 -0800
+committer Edison Su <Edison.Su@citrix.com> 1327702094 -0800
+
+    bug 13357: startupanswer is advanced before agentmonitor got processed, so it's possible that pingcommand received by mgt server ahead of agentmonitor initializes pingmap
+    status 13357: resolved fixed
+
+:100755 100755 a7121e86d53c5799388cd1433e40544c82ac741e 88c299b4f91269d0f6eef469acb93e52135eba0f M	server/src/com/cloud/agent/manager/AgentMonitor.java
+
+commit 7e1ce45bd54788c9b2bb06a65d08729ab4a3d3fc
+tree 8d2fdd5e3e35fc1de6f715ac879c89fcbebc1bb4
+parent 13020f2a461a9af732a7044e04c144f566d0adeb
+author Jessica Wang <jessica@cloud.com> 1327699668 -0800
+committer Jessica Wang <jessica@cloud.com> 1327699668 -0800
+
+    bug 12869: (1) create Network Offering dialog - add new checkbox "Sepcify IP Ranges". (2) network offering detail view - add "Sepcify IP Ranges" row.
+
+:100644 100644 ebd97f53e98fc05ab31aa1b470f3947bfe42c43c 4af43a33602dd74dde4a5780d7cca52e23871a88 M	ui/scripts/configuration.js

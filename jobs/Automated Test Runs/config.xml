@@ -50,11 +50,15 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector">
     <hudson.triggers.TimerTrigger>
-      <spec>* */6 * * *</spec>
+      <spec>0 */6 * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Ant>
+      <targets>build-all</targets>
+    </hudson.tasks.Ant>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>

@@ -1,0 +1,95 @@
+Started by timer
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Using strategy: Default
+Last Built Revision: Revision bebaf7b448613d824f7cbf9e7306a4e129b17f36 (origin/2.1.x)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
+Seen branch in repository origin/2.1.10
+Seen branch in repository origin/2.1.4.kumquat
+Seen branch in repository origin/2.1.6.kumquat
+Seen branch in repository origin/2.1.7.zucchini
+Seen branch in repository origin/2.1.9.kumqua
+Seen branch in repository origin/2.1.9.kumquat
+Seen branch in repository origin/2.1.banana
+Seen branch in repository origin/2.1.refactor
+Seen branch in repository origin/2.1.vanilla
+Seen branch in repository origin/2.1.x
+Seen branch in repository origin/2.1.x.217
+Seen branch in repository origin/2.2.1
+Seen branch in repository origin/2.2.10
+Seen branch in repository origin/2.2.10.banana
+Seen branch in repository origin/2.2.11
+Seen branch in repository origin/2.2.11.honeydew
+Seen branch in repository origin/2.2.12
+Seen branch in repository origin/2.2.12.coconut
+Seen branch in repository origin/2.2.12.demo
+Seen branch in repository origin/2.2.12.nectarine
+Seen branch in repository origin/2.2.12.strawberry
+Seen branch in repository origin/2.2.12.zucchini
+Seen branch in repository origin/2.2.13
+Seen branch in repository origin/2.2.13.indianfig
+Seen branch in repository origin/2.2.13.tangerine
+Seen branch in repository origin/2.2.2
+Seen branch in repository origin/2.2.2.honeydew
+Seen branch in repository origin/2.2.3
+Seen branch in repository origin/2.2.3-guava
+Seen branch in repository origin/2.2.3.mango
+Seen branch in repository origin/2.2.4
+Seen branch in repository origin/2.2.4.nectarine
+Seen branch in repository origin/2.2.4.nectarine.elb
+Seen branch in repository origin/2.2.6.date
+Seen branch in repository origin/2.2.8
+Seen branch in repository origin/2.2.8.kumquat
+Seen branch in repository origin/2.2.8.mango
+Seen branch in repository origin/2.2.8.mango2
+Seen branch in repository origin/2.2.8.nectarine
+Seen branch in repository origin/2.2.8.zucchini
+Seen branch in repository origin/2.2.8.zucchini.sgperf
+Seen branch in repository origin/2.2.beta1
+Seen branch in repository origin/2.2.beta1.9
+Seen branch in repository origin/2.2.beta2
+Seen branch in repository origin/2.2.beta3
+Seen branch in repository origin/2.2.beta4
+Seen branch in repository origin/2.2.x
+Seen branch in repository origin/2.2.y
+Seen branch in repository origin/2.2.y-clvm
+Seen branch in repository origin/2.2.y-new-ui
+Seen branch in repository origin/3.0.0.salmon
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/acton-beta2
+Seen branch in repository origin/acton-beta3
+Seen branch in repository origin/acton-new-ui-pre-merge
+Seen branch in repository origin/b-2.2.2
+Seen branch in repository origin/baremetal
+Seen branch in repository origin/bfederle-cloudstack3-ui
+Seen branch in repository origin/bug-12277-naas-details
+Seen branch in repository origin/bug10617
+Seen branch in repository origin/bug10796
+Seen branch in repository origin/bug11845
+Seen branch in repository origin/cloudstack3-ui
+Seen branch in repository origin/cloudstack3-ui-new-browser
+Seen branch in repository origin/cvm
+Seen branch in repository origin/dashboardWork
+Seen branch in repository origin/davidscratch
+Seen branch in repository origin/defaultnetwork
+Seen branch in repository origin/fedorawork
+Seen branch in repository origin/foo
+Seen branch in repository origin/hybrid
+Seen branch in repository origin/mango
+Seen branch in repository origin/master
+Seen branch in repository origin/master.lime
+Seen branch in repository origin/networkasservice
+Seen branch in repository origin/new-zone-details
+Seen branch in repository origin/new-zone-wizard
+Seen branch in repository origin/newagentmgr
+Seen branch in repository origin/origin-cloudstack3-ui
+Seen branch in repository origin/rrouter
+Seen branch in repository origin/ui-install-wizard
+Seen branch in repository origin/ui-lb-sticky-fixes
+Seen branch in repository origin/ui-lb-sticky-policy
+Seen branch in repository origin/zonesfeature
+Commencing build of Revision cef8b02f78ba5d52e7194abb3e387f8a08df0c19 (origin/davidscratch)
+Checking out Revision cef8b02f78ba5d52e7194abb3e387f8a08df0c19 (origin/davidscratch)
+No change to record in branch origin/davidscratch
+Finished: SUCCESS

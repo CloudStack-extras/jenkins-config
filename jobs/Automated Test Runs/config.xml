@@ -59,6 +59,8 @@
       <targets>build-all</targets>
     </hudson.tasks.Ant>
   </builders>
-  <publishers/>
+  <publishers>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsPublisher/>
+  </publishers>
   <buildWrappers/>
 </project>

@@ -1,0 +1,57 @@
+Changes in branch origin/master, between 184478f076cb513e88d7d5cd07281caa92f2d86d and 807d057b09ede48becd3d680d939dd896161651e
+commit 807d057b09ede48becd3d680d939dd896161651e
+tree 5881967cbd0ab51355b02913c38c5c8b0c43cc85
+parent 2fc7cd7ac5a06e39b439c192bb15e94e96cef5d0
+author Jessica Wang <jessica@cloud.com> 1327715243 -0800
+committer Jessica Wang <jessica@cloud.com> 1327715243 -0800
+
+    bug 12869: system page - advanced zone - create guest network - when selected network offering is Isolated and Specify IP Ranges is false, hide Start IP, End IP field. Show them otherwise.
+
+:100644 100644 be1315aeb55ccb5614b71bcb0361440153586fad 297a5f2ae63b8ef51b1d6e72960f52909edb3fc9 M	ui/scripts/system.js
+
+commit 2fc7cd7ac5a06e39b439c192bb15e94e96cef5d0
+tree b6fc556b4bc248a2745c16b7d0a3325de247c2a4
+parent 36e7800c2576eef489f0eac966b76d4aaca599b9
+author Jessica Wang <jessica@cloud.com> 1327710830 -0800
+committer Jessica Wang <jessica@cloud.com> 1327710847 -0800
+
+    system page - zone detail - guest network - network tab - this tab only shows for advanced zone now. So, remove things related to basic zone in this tab.
+
+:100644 100644 9ddccf69c497b33b4368d6838f7846777b7acda5 be1315aeb55ccb5614b71bcb0361440153586fad M	ui/scripts/system.js
+
+commit 36e7800c2576eef489f0eac966b76d4aaca599b9
+tree 6660f605abe75806048cf9812ef90302ba320a10
+parent 8056dd270fcb7c08a8f89a567ee745ad9ddaec8d
+author Chiradeep Vittal <chiradeep@cloud.com> 1327710387 -0800
+committer Chiradeep Vittal <chiradeep@cloud.com> 1327710439 -0800
+
+    allow Mac OS developers to run management server natively
+
+:100755 100755 536d9b7e071bc25bbeebf609b9de5fd3c423b38c ecd492cda943154a90fc1c6cf08a645f9729b3ed M	server/src/com/cloud/hypervisor/vmware/VmwareManagerImpl.java
+
+commit 8056dd270fcb7c08a8f89a567ee745ad9ddaec8d
+tree 7c7b294559027378e153d08c581249391d74f58b
+parent 5d51adbd7b32e8c8bdaaa579b6f235eb0a567e52
+author Chiradeep Vittal <chiradeep@cloud.com> 1327710326 -0800
+committer Chiradeep Vittal <chiradeep@cloud.com> 1327710439 -0800
+
+    bug 13160: blacklist aesni_intel module to avoid crash
+
+:000000 100644 0000000000000000000000000000000000000000 1c140f0a9b4b94e135423c5e1929d200ccb7ac8e A	patches/systemvm/debian/config/etc/modprobe.d/aesni_intel
+
+commit 5d51adbd7b32e8c8bdaaa579b6f235eb0a567e52
+tree fa474dab698b410581ade2a746c9f1e66cfe8bfe
+parent 184478f076cb513e88d7d5cd07281caa92f2d86d
+author bfederle <bfederle@gmail.com> 1327710418 -0800
+committer bfederle <bfederle@gmail.com> 1327710425 -0800
+
+    bug 12091
+    
+    UI support for adding/removing of VMs from LB rules
+    
+    status 12091: resolved fixed
+
+:100644 100644 aece82cff736a2bf63401d5db7c68e0d48d048f0 5b783f55c322cb521dc570398b1b64177073986d M	ui/css/cloudstack3-ie7.css
+:100644 100644 140a0b2be5223034961ef0331eaf87d897f51cad 5267b49b06f101a83a0eb002c5ea02e527ff9ec5 M	ui/css/cloudstack3.css
+:100644 100644 ccee3f2ef183a6fe2d10f41912e8381a55da21a6 750942240f17fce883b40c8419cd6185870cca14 M	ui/scripts/network.js
+:100644 100644 28a0f32ea0a6649cddf59b2d730e75b1995cfcb7 f7204cd878b711be803ba29d4f705637cc1212ae M	ui/scripts/ui/widgets/multiEdit.js

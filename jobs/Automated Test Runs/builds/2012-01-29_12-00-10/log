@@ -1,7 +1,7 @@
 Started by timer
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
 Using strategy: Default
-Last Built Revision: Revision bebaf7b448613d824f7cbf9e7306a4e129b17f36 (origin/2.1.x)
+Last Built Revision: Revision 64eb91b5415a1b61ea81ef1fd955e28b5cf40d7c (origin/2.2.12.strawberry)
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
@@ -89,7 +89,36 @@ Seen branch in repository origin/ui-install-wizard
 Seen branch in repository origin/ui-lb-sticky-fixes
 Seen branch in repository origin/ui-lb-sticky-policy
 Seen branch in repository origin/zonesfeature
-Commencing build of Revision cef8b02f78ba5d52e7194abb3e387f8a08df0c19 (origin/davidscratch)
-Checking out Revision cef8b02f78ba5d52e7194abb3e387f8a08df0c19 (origin/davidscratch)
-No change to record in branch origin/davidscratch
-Finished: SUCCESS
+Commencing build of Revision c22c3b1b0d236b9171527524269d71282efd5edc (origin/newagentmgr)
+Checking out Revision c22c3b1b0d236b9171527524269d71282efd5edc (origin/newagentmgr)
+No change to record in branch origin/newagentmgr
+[Automated Test Runs] $ ant build-all
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-01-29T17:00:25Z
+     [echo] Build number is 2.2.8.2012-01-29T17:00:25Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+   [depend] Deleted 43 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
+    [javac] Compiling 29 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/utils/src/com/cloud/utils/component/ComponentLocator.java:166: cannot find symbol
+    [javac] symbol  : method putAll(java.util.Map<java.lang.String,com.cloud.utils.component.ComponentLocator.ComponentInfo<com.cloud.utils.db.GenericDao<?,?>>>)
+    [javac] location: class java.util.LinkedHashMap<java.lang.String,com.cloud.utils.component.ComponentLocator.ComponentInfo<com.cloud.utils.db.GenericDao<?,? extends java.io.Serializable>>>
+    [javac]                 _daoMap.putAll(library.getDaos());
+    [javac]                        ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 error
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.xml:186: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-common.xml:49: Compile failed; see the compiler error output for details.
+
+Total time: 5 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

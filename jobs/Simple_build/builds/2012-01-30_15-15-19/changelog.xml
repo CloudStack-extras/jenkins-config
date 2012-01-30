@@ -1,0 +1,34 @@
+Changes in branch origin/master, between 2e04ed7ecc5e5bb0aff84e256007e2f892d18677 and c8178eca8f661d00ebf93bd4c94e23ae3a097615
+commit c8178eca8f661d00ebf93bd4c94e23ae3a097615
+tree ce2300c4ba1718b30677b655687cba781d25a8a4
+parent 56d59035dc588e48c7ae1c900d995ef4b6ea90f7
+author Jessica Wang <jessica@cloud.com> 1327953845 -0800
+committer Jessica Wang <jessica@cloud.com> 1327953845 -0800
+
+    bug 12869: system page - advanced zone - create guest network - when network offering whose specifyvlan is false is selected, hide VLAN ID field. Show it otherwise.
+
+:100644 100644 796e7dd4f52ddc12f3919b4d0fb8672bca277f8b cd319601ac53f0e621e8a84315e276e8dd5b0b68 M	ui/scripts/system.js
+
+commit 56d59035dc588e48c7ae1c900d995ef4b6ea90f7
+tree d7f3df323d19f0c1f6dee61260d678871b18a05f
+parent 9b1186c19e7bc2004dffc52f1d3ffe5e98464daf
+author Jessica Wang <jessica@cloud.com> 1327951417 -0800
+committer Jessica Wang <jessica@cloud.com> 1327951435 -0800
+
+    bug 12869: system page - advanced zone - create guest network - when network offering whose specifyIpRanges is false is selected, not pass startIp/endIp to API call.
+
+:100644 100644 297a5f2ae63b8ef51b1d6e72960f52909edb3fc9 796e7dd4f52ddc12f3919b4d0fb8672bca277f8b M	ui/scripts/system.js
+
+commit 9b1186c19e7bc2004dffc52f1d3ffe5e98464daf
+tree a8fbc2057ce2a95feb528621c5c3e9729baaa442
+parent 2e04ed7ecc5e5bb0aff84e256007e2f892d18677
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327704738 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327951213 -0800
+
+    bug 12361: more fixes to DB upgrade for network_offerings table
+    
+    Added unittest for testing network offerings db upgrade
+
+:100644 100644 0804781e6a61df6fd482dda880562e7b42497920 46629032685b018e2bf808c61da0ed2e17df034c M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100644 100644 efd8c54e53b812cef3485b1feebd26992b47a298 75ae246fc5b3c93e9ee40701365bd69716d0b1c1 M	server/test/com/cloud/upgrade/Test2214To30DBUpgrade.java
+:100755 100755 01b4905cc99dbef03694f57e31267d9bfbb41b27 ce9716f1805684c1af81e0538003aaa8e1790345 M	setup/db/db/schema-2214to30.sql

@@ -1,0 +1,180 @@
+Changes in branch origin/master, between c8178eca8f661d00ebf93bd4c94e23ae3a097615 and c0f686de1c5e2f6825ea29f6e4d49aba846f7963
+commit c0f686de1c5e2f6825ea29f6e4d49aba846f7963
+tree 28eb2035a53acebe9f004659e2b6456c93216470
+parent fc15525314575e28264a10ec95f4565dceca9dd8
+author bfederle <bfederle@gmail.com> 1327964632 -0800
+committer bfederle <bfederle@gmail.com> 1327964638 -0800
+
+    bug 13245: Fix VM listing 'mine' filter when in project
+    
+    status 13245: resolved fixed
+
+:100644 100644 047d8e81c7eb3f0807e59bcc91ff798757355f1c a1eb60155e893313faad9b5d56eb1290e2f62cc0 M	ui/scripts/instances.js
+
+commit fc15525314575e28264a10ec95f4565dceca9dd8
+tree d472995077bc7ab3d5e7236e0e8d1abb3c540464
+parent 41df47cc6873b4d8acd0503b16535051a3cbde14
+author Jessica Wang <jessica@cloud.com> 1327964325 -0800
+committer Jessica Wang <jessica@cloud.com> 1327964344 -0800
+
+    bug 12869: network page - add guest network dialog - add gateway field, netmask field.
+
+:100644 100644 43d5459eb2e7c92133d952af2ffb55002dc31aee bf0099d3ee247e2ca65b89e3a67161d9d9e7b023 M	ui/scripts/network.js
+:100644 100644 d5c546d78ab87a1acab465d4de162e2c62b4e371 0ab23cd1364b99711c2c94f84d38671e92784ef5 M	ui/scripts/system.js
+
+commit 41df47cc6873b4d8acd0503b16535051a3cbde14
+tree 53f6fa93414d215e9d23fcf80cc8b55c4d89c8c4
+parent 4570006dbddd6c9cd94cf70ab3c1b3048164db32
+author Kelven Yang <kelven@cloud.com> 1327964261 -0800
+committer Kelven Yang <kelven@cloud.com> 1327964270 -0800
+
+    do not default display name from null to other name like host name
+
+:100755 100755 425340f5f00ae1047e9edabfefea76159c8194ce 861224ae93a8fb0648a4013becce6f217a59e13a M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 3634ee3c2edfac47a5cb0f6b43b1973270d8eb1b 8f92adeaa1d3303b4610909530a8145d8f64a778 M	server/src/com/cloud/servlet/ConsoleProxyServlet.java
+
+commit 4570006dbddd6c9cd94cf70ab3c1b3048164db32
+tree bdca5a2844f51d9d0933ba57735eb12c1103ef45
+parent ae6686d1f642801a2469d61fcda95c53645cff40
+author bfederle <bfederle@gmail.com> 1327964146 -0800
+committer bfederle <bfederle@gmail.com> 1327964146 -0800
+
+    Multi-edit: Increase length of poll interval, to prevent choppy UI
+
+:100644 100644 9fd61bf9df017798601fcdb39abdb9f96c1b56fc cdfae9d7f270a7018bf55b0a6c6a13c8a0a5de9d M	ui/scripts/ui/widgets/multiEdit.js
+
+commit ae6686d1f642801a2469d61fcda95c53645cff40
+tree 11216c555bf02e407718c6c299af0491b441aa34
+parent fc5d75a39657c620752be7e46fbb2d3bb7b74d47
+author bfederle <bfederle@gmail.com> 1327964039 -0800
+committer bfederle <bfederle@gmail.com> 1327964039 -0800
+
+    bug 13356
+    
+    Clear out sticky/custom data drop-down after adding policy
+    
+    status 13356: resolved fixed
+
+:100644 100644 f7204cd878b711be803ba29d4f705637cc1212ae 9fd61bf9df017798601fcdb39abdb9f96c1b56fc M	ui/scripts/ui/widgets/multiEdit.js
+
+commit fc5d75a39657c620752be7e46fbb2d3bb7b74d47
+tree b22737358c9172a8f8dbc9d15554a410217f4d43
+parent 3bbfd17c9820a54ee8c44fa12cd80b71116fc74f
+author bfederle <bfederle@gmail.com> 1327963545 -0800
+committer bfederle <bfederle@gmail.com> 1327963551 -0800
+
+    Network section: LB/PF fixes
+    
+    -Fix async poll never clearing when creating LB w/ sticky policy
+    
+    -Append listAll=true to LB/PF listings, to allow admin to alter other
+     users' rules
+
+:100644 100644 34a8975ae85d5cbfa1f4dbf5473cc6e9f797cbd2 43d5459eb2e7c92133d952af2ffb55002dc31aee M	ui/scripts/network.js
+
+commit 3bbfd17c9820a54ee8c44fa12cd80b71116fc74f
+tree 33dfd06c94671a36045acb1de6d4ea525af54d56
+parent c37483549870b3ca11d664e96822e7d17c7dbdb7
+author Kelven Yang <kelven@cloud.com> 1327706218 -0800
+committer Kelven Yang <kelven@cloud.com> 1327962116 -0800
+
+    bug 13369: recycle roger hung worker VMs in vCenter
+
+:100755 100755 8c8850e607f1f2071a5b0d2e75a8de3308c3b89d cc4a09458f9163f0ed550212cc215b0d9b97e4e7 M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java
+:100755 100755 125d0592b5473a23bbc7042cf6d29493da756f3a 5f9c0c714da4d3814327449bac45d37508df200f M	core/test/com/cloud/hypervisor/vmware/mo/TestVmwareMO.java
+:100755 100755 dc280469ef8e08fe372bc38ad7418c686d8e3e7a e06e384d6b0ff9ee23e67990b445aab5c620dff4 M	server/src/com/cloud/configuration/Config.java
+:100755 100755 ecd492cda943154a90fc1c6cf08a645f9729b3ed 157665acc6ddbdd111a229a5c5c435c594e4ac35 M	server/src/com/cloud/hypervisor/vmware/VmwareManagerImpl.java
+:100644 100644 3ce08669123915c7d5a03540c7a06d518d67eaea a4f3f2b918cb1134f9403485776ce080b8a19184 M	setup/db/db/schema-2213to2214.sql
+
+commit c37483549870b3ca11d664e96822e7d17c7dbdb7
+tree 25e3e5fca721520751c994d54d0a377f7e95e86b
+parent 620828536896a72fda55cead44a58f61c44f0443
+author Jessica Wang <jessica@cloud.com> 1327961904 -0800
+committer Jessica Wang <jessica@cloud.com> 1327961922 -0800
+
+    bug 12869: network page - add guest network dialog - network offerings dropdown - populate Isolated networks with SourceNat service and specifyvlan is false.
+
+:100644 100644 38e5a5ee68fefe8ac3ab21eaeba1b62f7c1abe2b 34a8975ae85d5cbfa1f4dbf5473cc6e9f797cbd2 M	ui/scripts/network.js
+
+commit 620828536896a72fda55cead44a58f61c44f0443
+tree 22ff8d5663b29673213ece97e3475986858a496a
+parent 1d62928a8382aeb05e3ef3620e96707979c473f2
+author bfederle <bfederle@gmail.com> 1327959985 -0800
+committer bfederle <bfederle@gmail.com> 1327959985 -0800
+
+    Network section: VM listing fix
+    
+    Fix admin not being able to assign VMs for port forward/LB to networks
+    not assigned to them
+
+:100644 100644 3b521abf9d2553079f494f632d48a30804c2a7c0 38e5a5ee68fefe8ac3ab21eaeba1b62f7c1abe2b M	ui/scripts/network.js
+
+commit 1d62928a8382aeb05e3ef3620e96707979c473f2
+tree 988d8c4a6180f1fae983c85716df9e1dee0cd0f7
+parent 14a05d4995ed6042e39678e32c6f26c095273a3e
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327959908 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327959916 -0800
+
+    bug 13290: fixed listNetworks for the domain admin in Basic zone
+    status 13290: resolved fixed
+
+:100755 100755 547edcc994506d7d0c000e7bd34b0b60bd3616cf 0c1dcd0613ffeb62822d0dfb80c287d460c47cf7 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit 14a05d4995ed6042e39678e32c6f26c095273a3e
+tree ae2896aa7f1731359c6af021d1bb36edfb1c04cb
+parent b9b031a373f7ef9c0ff526835bf3f4c2ae7ce516
+author bfederle <bfederle@gmail.com> 1327959602 -0800
+committer bfederle <bfederle@gmail.com> 1327959602 -0800
+
+    Fix account column in network listing
+
+:100644 100644 750942240f17fce883b40c8419cd6185870cca14 3b521abf9d2553079f494f632d48a30804c2a7c0 M	ui/scripts/network.js
+
+commit b9b031a373f7ef9c0ff526835bf3f4c2ae7ce516
+tree 34ff5dfe003cac011acfe91fdf050e0a858044b5
+parent 5dbe96eddf2eea48fe72f35974126c7264a0a0fa
+author bfederle <bfederle@gmail.com> 1327959311 -0800
+committer bfederle <bfederle@gmail.com> 1327959311 -0800
+
+    bug 12415
+    
+    Don't pass projectID for templates or ISOs, unless listing 'My'
+    templates/ISOs
+    
+    status 12415: Resolved fixed
+
+:100644 100644 ba4858e0f7106e3f8e675c9f044024f1795724f1 ebf40bffc9f9b23326cc293f0f18d7c27d1c2a98 M	ui/scripts/templates.js
+
+commit 5dbe96eddf2eea48fe72f35974126c7264a0a0fa
+tree 7c2cba63504f0acd85ddfa143a2bcd670935161a
+parent 61d0fc83e3e31f1debb6a9fe7e63f5b3830914e4
+author bfederle <bfederle@gmail.com> 1327958792 -0800
+committer bfederle <bfederle@gmail.com> 1327958798 -0800
+
+    bug 13288: Concatenate long zone names in dashboard UI
+    
+    status 13288: resolved fixed
+
+:100644 100644 b3b254b6683ada5421804c87fab6a8162d478446 e19d5ec9a794d2a2920f0ccffaacd736783ed373 M	ui/index.jsp
+:100644 100644 9799d3dc59018afd4002703b51c9d42131d5abdc bd850b500155642efdada23b9b4e236571b07307 M	ui/scripts/ui-custom/dashboard.js
+
+commit 61d0fc83e3e31f1debb6a9fe7e63f5b3830914e4
+tree 3866a821d19e8bafc89cdd2bf61c0611e9492f74
+parent b65b0d6b76db666a710a084eb6ec8fc8b5c26500
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327955463 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1327955689 -0800
+
+    SpecifyVlan should always be true for shared network offerings and for network offerings with specifyIpRanges=true
+    SpecifyIpRanges should always be true for Shared network offerings
+
+:100755 100755 137a64c59ed31820cb55ddc947c9c44de6a39409 a2211b5ecb8d86f1114cbb8595a82ace110722ee M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit b65b0d6b76db666a710a084eb6ec8fc8b5c26500
+tree fce9d8e0c0ba6ca88f5b1c1a0a4ee2f6f37dc0b3
+parent c8178eca8f661d00ebf93bd4c94e23ae3a097615
+author Jessica Wang <jessica@cloud.com> 1327955384 -0800
+committer Jessica Wang <jessica@cloud.com> 1327955384 -0800
+
+    bug 12869: system page - advanced zone - create guest network - when scope is account-specific, exclude Isolated network offerings with SourceNat service from network offering dropdown.
+
+:100644 100644 cd319601ac53f0e621e8a84315e276e8dd5b0b68 d5c546d78ab87a1acab465d4de162e2c62b4e371 M	ui/scripts/system.js

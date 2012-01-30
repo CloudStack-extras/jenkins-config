@@ -1,7 +1,7 @@
 Started by timer
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
 Using strategy: Default
-Last Built Revision: Revision 2eabc212d721092fe26ddd07e4433ce4fbd34bd2 (origin/2.2.y-clvm)
+Last Built Revision: Revision 317d2d801abfe5feb437f8052d512eabde256518 (origin/2.2.13.indianfig)
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
@@ -30,6 +30,7 @@ Seen branch in repository origin/2.2.12.zucchini
 Seen branch in repository origin/2.2.13
 Seen branch in repository origin/2.2.13.indianfig
 Seen branch in repository origin/2.2.13.tangerine
+Seen branch in repository origin/2.2.14
 Seen branch in repository origin/2.2.2
 Seen branch in repository origin/2.2.2.honeydew
 Seen branch in repository origin/2.2.3
@@ -89,7 +90,36 @@ Seen branch in repository origin/ui-install-wizard
 Seen branch in repository origin/ui-lb-sticky-fixes
 Seen branch in repository origin/ui-lb-sticky-policy
 Seen branch in repository origin/zonesfeature
-Commencing build of Revision d3f9173da9b3855c53226b04bc99681d3da46953 (origin/2.2.10)
-Checking out Revision d3f9173da9b3855c53226b04bc99681d3da46953 (origin/2.2.10)
-No change to record in branch origin/2.2.10
-Finished: SUCCESS
+Commencing build of Revision 317ac322b2667932b433233ac23adc8bd6fdc07e (origin/2.2.12.nectarine)
+Checking out Revision 317ac322b2667932b433233ac23adc8bd6fdc07e (origin/2.2.12.nectarine)
+No change to record in branch origin/2.2.12.nectarine
+[Automated Test Runs] $ ant build-all
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-01-30T23:00:25Z
+     [echo] Build number is 2.2.8.2012-01-30T23:00:25Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+   [depend] The class com.cloud.utils.db.SearchCriteria2 in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar/com/cloud/utils/db/SearchCriteria2.class is out of date due to com.cloud.utils.db.GenericDao but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.utils.db.SearchCriteriaService in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar/com/cloud/utils/db/SearchCriteriaService.class is out of date due to com.cloud.utils.db.SearchCriteria but has not been deleted because its source file could not be determined
+   [depend] Deleted 28 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
+    [javac] Compiling 17 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/utils/src/com/cloud/utils/component/ComponentLocator.java:166: cannot find symbol
+    [javac] symbol  : method putAll(java.util.Map<java.lang.String,com.cloud.utils.component.ComponentLocator.ComponentInfo<com.cloud.utils.db.GenericDao<?,?>>>)
+    [javac] location: class java.util.LinkedHashMap<java.lang.String,com.cloud.utils.component.ComponentLocator.ComponentInfo<com.cloud.utils.db.GenericDao<?,? extends java.io.Serializable>>>
+    [javac]                 _daoMap.putAll(library.getDaos());
+    [javac]                        ^
+    [javac] 1 error
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.xml:186: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-common.xml:49: Compile failed; see the compiler error output for details.
+
+Total time: 5 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

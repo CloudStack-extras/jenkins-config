@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 089e72d927f30a82855fd9ed6b24285a75e6b9e4 and 02c781987bfccc7ea9933d63d30a2f3e4ea37f75
+commit 02c781987bfccc7ea9933d63d30a2f3e4ea37f75
+tree f73c56167042d584aa21574689c99f5b5b12956e
+parent 089e72d927f30a82855fd9ed6b24285a75e6b9e4
+author Nitin Mehta <nitin.mehta@citrix.com> 1328027754 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328027754 +0530
+
+    Bug 13389: updatetemplate- Add the identity mapper for guest os id param.
+    Reviewed-By: Kishan
+
+:100755 100755 7b50df7bb232b9aff9f4474d02704da31254e236 2910fd1b2d41841faa2daf03dceede6a9683b4f5 M	api/src/com/cloud/api/commands/UpdateTemplateOrIsoCmd.java

@@ -1,0 +1,53 @@
+Changes in branch origin/master, between 34cc684f94b982b34a828fa514ab8290531a57d7 and 089e72d927f30a82855fd9ed6b24285a75e6b9e4
+commit 089e72d927f30a82855fd9ed6b24285a75e6b9e4
+tree a022dd961e91dc4d27aa316324475006836f86fb
+parent 71e87d106a8cb666b7f2b5dd549fc4fb75721607
+author Nitin Mehta <nitin.mehta@citrix.com> 1327996137 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1327996137 +0530
+
+    Bug 11789: The calculation for storage allocated capacity would go through the the common function throught which dashboard calculates the capacity as well.
+    Reviewed-By: Prachi
+
+:100755 100755 ad659c8052bb03c5e94b52a3539b2b28123a4bd4 688bddfae7169d4b596ac3e1cd4fd0467ae78193 M	server/src/com/cloud/storage/allocator/AbstractStoragePoolAllocator.java
+
+commit 71e87d106a8cb666b7f2b5dd549fc4fb75721607
+tree f9623b0a23b45cd21dae1f4df86a51d005edb312
+parent 160d7e43833210eaeb1770ba67942c014151f1dd
+author Nitin Mehta <nitin.mehta@citrix.com> 1327993278 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1327993278 +0530
+
+    Bug 11789: Created a function for calculation of allocated primary storage. The dashboard calculation would go through this.
+    Reviewed-By: Kishan
+
+:100755 100755 eb38c695f503ac8512b5fbb258dc973062e493c9 4dc7f8279dddfd23e297ee7fbb9746bba9a7cf27 M	server/src/com/cloud/alert/AlertManagerImpl.java
+:100755 100755 5edbd77d25b6ec3b517e8ba8f5177a86efa2685d 6eca36027eed999b97e12877ac97b403341a148e M	server/src/com/cloud/capacity/CapacityManager.java
+:100755 100755 f13503c7ce7653e73f363d559bcc63193ad86f3f 7563a0ebfa9b52888cd85d0b2cdb4d654a3cf1d7 M	server/src/com/cloud/capacity/CapacityManagerImpl.java
+
+commit 160d7e43833210eaeb1770ba67942c014151f1dd
+tree 066a056e22b1f61085b89881198eb4aeed9edd1d
+parent 804c2658897dfdde0c3e0fde336c58a407c714a5
+author Murali reddy <Murali.Reddy@citrix.com> 1327553154 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1327991056 +0530
+
+    bug 13332: Not able to access Lb rules created on VPX instances ( that were created by SDX)
+    Reviewed-by:Prasanna.Santhanam@citrix.com
+    status 13332: resolved fixed
+    
+    fixing the regression because of the fix done for NetScaler in basic zone deployment. ELB does
+    not need USIP to be set as 0.0.0.0/0 port ingress security group rule need to be configured
+
+:100644 100644 9c90cc2e2719c41a12a2b1be496ff34c50ce1754 f15a39f58614ebd1844174795a960e1a5e45ead9 M	core/src/com/cloud/network/resource/NetscalerResource.java
+
+commit 804c2658897dfdde0c3e0fde336c58a407c714a5
+tree 2d570068e5803b2a4523bbc8a9e3963ad258b8ed
+parent 34cc684f94b982b34a828fa514ab8290531a57d7
+author Murali reddy <Murali.Reddy@citrix.com> 1327494529 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1327991037 +0530
+
+    bug 13276: Static NAT on Elastic Ip does not respect the Ingress rules that are set on the VM
+    Reviewed-by:Prasanna.Santhanam@citrix.com
+    
+    This fix configures Inat and LB rules on the NetScaler device to send the source IP recived on the packets
+    as is, so that security groups configured can take affect
+
+:100644 100644 7d6840753f959ff5d9785fa54f7135a3336fe841 9c90cc2e2719c41a12a2b1be496ff34c50ce1754 M	core/src/com/cloud/network/resource/NetscalerResource.java

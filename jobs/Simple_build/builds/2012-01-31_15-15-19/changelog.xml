@@ -1,0 +1,50 @@
+Changes in branch origin/master, between 02c781987bfccc7ea9933d63d30a2f3e4ea37f75 and e21fd77053403f2ebcd0e706a1a7db0b74cd9203
+commit e21fd77053403f2ebcd0e706a1a7db0b74cd9203
+tree 18458da60fa44a8de60fa861326e8bfaad27c763
+parent 8e40f5b5af62c96609f7689750c33126cfb57adc
+author bfederle <bfederle@gmail.com> 1328040074 -0800
+committer bfederle <bfederle@gmail.com> 1328040079 -0800
+
+    bug 12730
+    
+    Wait for builtin templates before install wizard completes
+    
+    status 12730: resolved fixed
+
+:100644 100644 42a92509e52542dd200e839857b81b357069e60d dc5b277b93c763011a25e8b62c9545fcac241579 M	ui/scripts/installWizard.js
+
+commit 8e40f5b5af62c96609f7689750c33126cfb57adc
+tree cace451388952a116556567a8f82d4d6039f2a72
+parent 562cd7630d980956f32cf074ba7181e27f739123
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328039349 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328039349 -0800
+
+    bug 13381: fixed update availablity for network offering
+    status 13381: resolved fixed
+
+:100755 100755 2a911c7cfb842a0e4debe3e54a01de432aa628af e009c482994e02e014ea357ec5e3bb8e8b21a755 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit 562cd7630d980956f32cf074ba7181e27f739123
+tree ea5b028ad6442682b631fc2de7a265bd9cf4e276
+parent 51b33d92f0eb09b09653418ac7a052d7b58b2697
+author bfederle <bfederle@gmail.com> 1328034172 -0800
+committer bfederle <bfederle@gmail.com> 1328034176 -0800
+
+    bug 12460
+    
+    Only show availability field if isolated source NAT configuration
+    selected
+    
+    status 12460: resolved fixed
+
+:100644 100644 1a12f93eb25a9f48c3902e6f458b495dc682a8cc fa6665ec9a43a7d9c0accf21e2cd990992cd3c79 M	ui/scripts/configuration.js
+
+commit 51b33d92f0eb09b09653418ac7a052d7b58b2697
+tree d193b5987d4fab2e87fce917a107ebd4fe6de00d
+parent 02c781987bfccc7ea9933d63d30a2f3e4ea37f75
+author Jessica Wang <jessica@cloud.com> 1328032686 -0800
+committer Jessica Wang <jessica@cloud.com> 1328032705 -0800
+
+    network offering page - Provide Enable/Disable action to system-generated network offerings.
+
+:100644 100644 98cc4196ce18fb0bc25d15adf16dcebd8f6fecd1 1a12f93eb25a9f48c3902e6f458b495dc682a8cc M	ui/scripts/configuration.js

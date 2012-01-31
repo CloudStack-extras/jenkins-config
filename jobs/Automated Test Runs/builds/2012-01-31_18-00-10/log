@@ -1,0 +1,172 @@
+Started by timer
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Using strategy: Default
+Last Built Revision: Revision c273c90f2dde5c46b8c8bece92af0f49825fc0dc (origin/2.2.13.tangerine)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
+Seen branch in repository origin/2.1.10
+Seen branch in repository origin/2.1.4.kumquat
+Seen branch in repository origin/2.1.6.kumquat
+Seen branch in repository origin/2.1.7.zucchini
+Seen branch in repository origin/2.1.9.kumqua
+Seen branch in repository origin/2.1.9.kumquat
+Seen branch in repository origin/2.1.banana
+Seen branch in repository origin/2.1.refactor
+Seen branch in repository origin/2.1.vanilla
+Seen branch in repository origin/2.1.x
+Seen branch in repository origin/2.1.x.217
+Seen branch in repository origin/2.2.1
+Seen branch in repository origin/2.2.10
+Seen branch in repository origin/2.2.10.banana
+Seen branch in repository origin/2.2.11
+Seen branch in repository origin/2.2.11.honeydew
+Seen branch in repository origin/2.2.12
+Seen branch in repository origin/2.2.12.coconut
+Seen branch in repository origin/2.2.12.demo
+Seen branch in repository origin/2.2.12.nectarine
+Seen branch in repository origin/2.2.12.strawberry
+Seen branch in repository origin/2.2.12.zucchini
+Seen branch in repository origin/2.2.13
+Seen branch in repository origin/2.2.13.indianfig
+Seen branch in repository origin/2.2.13.tangerine
+Seen branch in repository origin/2.2.14
+Seen branch in repository origin/2.2.2
+Seen branch in repository origin/2.2.2.honeydew
+Seen branch in repository origin/2.2.3
+Seen branch in repository origin/2.2.3-guava
+Seen branch in repository origin/2.2.3.mango
+Seen branch in repository origin/2.2.4
+Seen branch in repository origin/2.2.4.nectarine
+Seen branch in repository origin/2.2.4.nectarine.elb
+Seen branch in repository origin/2.2.6.date
+Seen branch in repository origin/2.2.8
+Seen branch in repository origin/2.2.8.kumquat
+Seen branch in repository origin/2.2.8.mango
+Seen branch in repository origin/2.2.8.mango2
+Seen branch in repository origin/2.2.8.nectarine
+Seen branch in repository origin/2.2.8.zucchini
+Seen branch in repository origin/2.2.8.zucchini.sgperf
+Seen branch in repository origin/2.2.beta1
+Seen branch in repository origin/2.2.beta1.9
+Seen branch in repository origin/2.2.beta2
+Seen branch in repository origin/2.2.beta3
+Seen branch in repository origin/2.2.beta4
+Seen branch in repository origin/2.2.x
+Seen branch in repository origin/2.2.y
+Seen branch in repository origin/2.2.y-clvm
+Seen branch in repository origin/2.2.y-new-ui
+Seen branch in repository origin/3.0.0.salmon
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/acton-beta2
+Seen branch in repository origin/acton-beta3
+Seen branch in repository origin/acton-new-ui-pre-merge
+Seen branch in repository origin/b-2.2.2
+Seen branch in repository origin/baremetal
+Seen branch in repository origin/bfederle-cloudstack3-ui
+Seen branch in repository origin/bug-12277-naas-details
+Seen branch in repository origin/bug10617
+Seen branch in repository origin/bug10796
+Seen branch in repository origin/bug11845
+Seen branch in repository origin/cloudstack3-ui
+Seen branch in repository origin/cloudstack3-ui-new-browser
+Seen branch in repository origin/cvm
+Seen branch in repository origin/dashboardWork
+Seen branch in repository origin/davidscratch
+Seen branch in repository origin/defaultnetwork
+Seen branch in repository origin/fedorawork
+Seen branch in repository origin/foo
+Seen branch in repository origin/hybrid
+Seen branch in repository origin/mango
+Seen branch in repository origin/master
+Seen branch in repository origin/master.lime
+Seen branch in repository origin/networkasservice
+Seen branch in repository origin/new-zone-details
+Seen branch in repository origin/new-zone-wizard
+Seen branch in repository origin/newagentmgr
+Seen branch in repository origin/origin-cloudstack3-ui
+Seen branch in repository origin/rrouter
+Seen branch in repository origin/ui-install-wizard
+Seen branch in repository origin/ui-lb-sticky-fixes
+Seen branch in repository origin/ui-lb-sticky-policy
+Seen branch in repository origin/zonesfeature
+Commencing build of Revision 3f2d0f16311d2fe1691479c42c63470033749409 (origin/acton-beta2)
+Checking out Revision 3f2d0f16311d2fe1691479c42c63470033749409 (origin/acton-beta2)
+No change to record in branch origin/acton-beta2
+[Automated Test Runs] $ ant build-all
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-01-31T23:00:24Z
+     [echo] Build number is 2.2.8.2012-01-31T23:00:24Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+   [depend] Deleted 2 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
+    [javac] Compiling 2 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+   [depend] The class com.cloud.api.commands.JoinProjectCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/JoinProjectCmd.class is out of date due to com.cloud.projects.ProjectService but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.listStorageNetworkIpRangeCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/listStorageNetworkIpRangeCmd.class is out of date due to com.cloud.api.ResponseGenerator but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.CreateStorageNetworkIpRangeCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/CreateStorageNetworkIpRangeCmd.class is out of date due to com.cloud.api.ResponseGenerator but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.ListSwiftsCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/ListSwiftsCmd.class is out of date due to com.cloud.api.ResponseGenerator but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.UpdateStorageNetworkIpRangeCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/UpdateStorageNetworkIpRangeCmd.class is out of date due to com.cloud.api.ResponseGenerator but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.ListCapacityByTypeCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/ListCapacityByTypeCmd.class is out of date due to com.cloud.api.ResponseGenerator but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.MoveUserVMCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/MoveUserVMCmd.class is out of date due to com.cloud.api.ResponseGenerator but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.ListTrafficTypeImplementorsCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/ListTrafficTypeImplementorsCmd.class is out of date due to com.cloud.network.NetworkService but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.BaseListDomainResourcesCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/BaseListDomainResourcesCmd.class is out of date due to com.cloud.api.BaseListCmd but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.BaseListProjectAndAccountResourcesCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/BaseListProjectAndAccountResourcesCmd.class is out of date due to com.cloud.api.BaseCmd but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.BaseListAccountResourcesCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/BaseListAccountResourcesCmd.class is out of date due to com.cloud.api.BaseCmd but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.DeleteStorageNetworkIpRangeCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/DeleteStorageNetworkIpRangeCmd.class is out of date due to com.cloud.api.BaseCmd but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.network.element.IpDeployer in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/network/element/IpDeployer.class is out of date due to com.cloud.network.Network but has not been deleted because its source file could not be determined
+   [depend] Deleted 339 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/api/src
+    [javac] Compiling 305 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+   [depend] Deleted 9 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/vmware-base/src
+    [javac] Compiling 6 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+   [depend] Deleted 27 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/core/src
+    [javac] Compiling 39 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-core.jar
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:37: com.cloud.storage.SwiftVO is not abstract and does not override abstract method getToken() in com.cloud.storage.Swift
+    [javac] public class SwiftVO implements Swift, Identity {
+    [javac]        ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:71: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:75: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:87: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:96: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 5 errors
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.xml:202: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-common.xml:49: Compile failed; see the compiler error output for details.
+
+Total time: 19 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

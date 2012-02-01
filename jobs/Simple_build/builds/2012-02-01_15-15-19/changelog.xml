@@ -1,0 +1,173 @@
+Changes in branch origin/master, between 0728c5b53e3b64b135b83b23a1b7974207313d4c and fa8ed50310a63cc71eb496cf1b5fd1e2f256d294
+commit fa8ed50310a63cc71eb496cf1b5fd1e2f256d294
+tree e7e411cc899acf0fb48560f4786dffa00bfbe355
+parent 7fb2304a7adef91e5599ba55dc38b3e091e86b32
+author Jessica Wang <jessica@cloud.com> 1328126341 -0800
+committer Jessica Wang <jessica@cloud.com> 1328126356 -0800
+
+    bug 12686: add guest network, edit guest network - network offering dropdown - pass zoneId to listNetworkOfferings API
+
+:100644 100644 b91f4eb211e973b591df14a0933fb507112daff2 76152dc100c2352935c94e03645734be3a1a2f67 M	ui/scripts/system.js
+
+commit 7fb2304a7adef91e5599ba55dc38b3e091e86b32
+tree dcbb2700179172b3337f6f4143658aef0f58b87c
+parent cf054a0ce061efb3838cc04134b476a3c3b29f3d
+author bfederle <bfederle@gmail.com> 1328124953 -0800
+committer bfederle <bfederle@gmail.com> 1328124959 -0800
+
+    bug 12933: Support subdomain access for guest networks
+    
+    status 12933: resolved fixed
+
+:100644 100644 e7737a5eff3e7b4665623d94738f69af14b04fde b91f4eb211e973b591df14a0933fb507112daff2 M	ui/scripts/system.js
+
+commit cf054a0ce061efb3838cc04134b476a3c3b29f3d
+tree 4f028068f15f71b1578219120d185d6e28c071d8
+parent d5f4ec439592a75e68ca6540115ec2aacc7e4627
+author Jessica Wang <jessica@cloud.com> 1328124907 -0800
+committer Jessica Wang <jessica@cloud.com> 1328124924 -0800
+
+    zone detail page - add domain name.
+
+:100644 100644 f8c2e61f35886297ab295ca52b8c22f1da74ad17 e7737a5eff3e7b4665623d94738f69af14b04fde M	ui/scripts/system.js
+
+commit d5f4ec439592a75e68ca6540115ec2aacc7e4627
+tree edf91a568fb1abfee693c792f9364c704de511dc
+parent 5f873b62462a4539db12c663f17bcddcbaa89727
+author Kelven Yang <kelven@cloud.com> 1328124369 -0800
+committer Kelven Yang <kelven@cloud.com> 1328124602 -0800
+
+    bug 13129: remove unused vmware lib jars
+
+:100755 100755 9acbcab2d62a063b6092908d1cb5f373eaa799e7 a819fb488eb43f21f792c7402e6516efe6ab313d M	build/package.xml
+:100755 100755 cf404a69ae241fda64ed793fb932f0559eef3bb3 9e74253e89f541d842c3bf3c66fd056cf378dfb6 M	deps/.classpath
+:100644 000000 b661fd878b62ed5538c30e6ac26071f66857855f 0000000000000000000000000000000000000000 D	deps/vmware-credstore.jar
+:100644 000000 8cbef16f4854422c3444748a21f8033b8f862e82 0000000000000000000000000000000000000000 D	deps/vmware-lib-activation.jar
+:100644 000000 e52bf679cc0421d790d10ee523100a2245921065 0000000000000000000000000000000000000000 D	deps/vmware-lib-jaxen-core.jar
+:100644 000000 978bd0269190c48e06811d93f1a728c3962df1fb 0000000000000000000000000000000000000000 D	deps/vmware-lib-jaxen-jdom.jar
+:100644 000000 288e64cb5c435f34499a58b234c2106f9d9f0783 0000000000000000000000000000000000000000 D	deps/vmware-lib-jdom.jar
+:100644 000000 2b43955babc5c62dd29c6aa082b2b8cf76e13902 0000000000000000000000000000000000000000 D	deps/vmware-lib-saxpath.jar
+:100644 000000 a4b806df469a336c0e3aad37852173f1643880e7 0000000000000000000000000000000000000000 D	deps/vmware-lib-wbem.jar
+:100644 000000 b8f2575326068cc8a4d3fb63ed20171c31ae2188 0000000000000000000000000000000000000000 D	deps/vmware-lib-xalan.jar
+:100644 000000 e9fe08ad45251172bc1f4f025bb4263851db979b 0000000000000000000000000000000000000000 D	deps/vmware-lib-xerces.jar
+:100644 000000 2dd83771445c00b3f11ece7aa2cb7dc947a8e2c1 0000000000000000000000000000000000000000 D	deps/vmware-lib-xml-apis.jar
+
+commit 5f873b62462a4539db12c663f17bcddcbaa89727
+tree 73e626f3c762c92fe9c3af4759d0a27ce2109976
+parent 9c7a67f2ddbfb29361ebce40112fe2e1e64c28f5
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328124346 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328124360 -0800
+
+    Add domain name info for private zones in listZones api response
+
+:100755 100755 942dd31f44e5f49b493775e08044275a05c57db9 47032fb241b43cc8cac4f2696711a3bd41a22e87 M	api/src/com/cloud/api/response/ZoneResponse.java
+:100755 100755 487c0eb958708cdedb7053a925ee66337aac221a 46d785909b9b549a7b0df4210d5585549dbb01e8 M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit 9c7a67f2ddbfb29361ebce40112fe2e1e64c28f5
+tree f3f199e2d88bf161d1ae92bc9db6f6a4240e0b2f
+parent e8741fadb953fddd58469d378ed116a93eca84cc
+author Jessica Wang <jessica@cloud.com> 1328124139 -0800
+committer Jessica Wang <jessica@cloud.com> 1328124154 -0800
+
+    zone wizard - make isPublic checked as default since public zone is more popular.
+
+:100644 100644 51420e3841a882f38471143b106b6ebdee808748 43985e6de8c06f441eca3f6866651255c145f292 M	ui/scripts/zoneWizard.js
+
+commit e8741fadb953fddd58469d378ed116a93eca84cc
+tree aba9e02c77a580960f0e0f0dd7ccda3e7a4d8d01
+parent af4e32f739ce9389e0d0ebb145bfa9b45b93104c
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328123233 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328123233 -0800
+
+    More logging to domain checker
+
+:100755 100755 e009c482994e02e014ea357ec5e3bb8e8b21a755 786f24bd01ca36dcd370bed80175fb3eeb595b42 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit af4e32f739ce9389e0d0ebb145bfa9b45b93104c
+tree 55184c5c69b1225f3c2ce18abc07fee9e6a8ef1d
+parent 31666fa732e164e58faa283e730ada405b35e8f0
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328122971 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328122992 -0800
+
+    Fixed deploy vm for Project in private zone
+
+:100755 100755 d06befeaafa5097497c98e1484504d60fc2fd31d 7a605e595d9fdfd2ec13b280e1066a064c77c6e1 M	server/src/com/cloud/acl/DomainChecker.java
+
+commit 31666fa732e164e58faa283e730ada405b35e8f0
+tree 77f21eba97abe7673e3ef70babba95bd4a688619
+parent 172d5075dd988c599ab0285b570e34b5b552428e
+author bfederle <bfederle@gmail.com> 1328122515 -0800
+committer bfederle <bfederle@gmail.com> 1328122520 -0800
+
+    Fix swift dialog
+
+:100644 100644 19d88d5505927cf84a85d7683a59d22de8ceb945 f8c2e61f35886297ab295ca52b8c22f1da74ad17 M	ui/scripts/system.js
+
+commit 172d5075dd988c599ab0285b570e34b5b552428e
+tree f8ad5fa9d595fdbf110eca1457f90878babc5af3
+parent f14410b20d2f8ebbd96c2416f6c0cbde3592f6db
+author Jessica Wang <jessica@cloud.com> 1328121562 -0800
+committer Jessica Wang <jessica@cloud.com> 1328121577 -0800
+
+    network offering page - after updating availability from Required to Optional, or from Optional to Required, refresh add network offering dialog to show/hide availability dropdown.
+
+:100644 100644 13b84bcc87ceb1c91735ddace56fe05b913c805e df30776903137822bdf9e5b169b157f792c196e8 M	ui/scripts/configuration.js
+
+commit f14410b20d2f8ebbd96c2416f6c0cbde3592f6db
+tree 8e3c64ccf97c4b2d13e4b5ef6c630a22edd68b8e
+parent 665ac8c0593ac3b2d5ca6e3da9d22751bc5a24ff
+author bfederle <bfederle@gmail.com> 1328121528 -0800
+committer bfederle <bfederle@gmail.com> 1328121540 -0800
+
+    bug 12806
+    
+    After configuring swift, disable (hide) swift button after leaving
+    zone page. Note that the button will still be visble until them, in
+    case the user needs to re-configure (i.e., because of a typo)
+    
+    status 12806: resolved fixed
+
+:100644 100644 751a655ae74109c80352893420c8f29ab6e4749a 53ad9feab8563559c04416451b9d9f51c9ab2f84 M	ui/scripts/cloudStack.js
+:100644 100644 c1bdb4483b09b32740cb80a5aa80c48508a701cc 19d88d5505927cf84a85d7683a59d22de8ceb945 M	ui/scripts/system.js
+
+commit 665ac8c0593ac3b2d5ca6e3da9d22751bc5a24ff
+tree edacbbf045d77bd8d823c8bbe9924f7f8215d4c1
+parent 0ec759edef12938c5663559b8fac59a8c7c4cc8f
+author bfederle <bfederle@gmail.com> 1328121018 -0800
+committer bfederle <bfederle@gmail.com> 1328121540 -0800
+
+    List view: fix for header actions
+
+:100644 100644 d43a0d9df21e3fc4348303b667f7255f8a7314c3 3f85fe7c812b4762a600e9b62beb1a22269cf245 M	ui/scripts/ui/widgets/listView.js
+
+commit 0ec759edef12938c5663559b8fac59a8c7c4cc8f
+tree ae4387e56a5e24feedac75d9cd21dc7cf1445776
+parent 9af4b57230d6779fa91a1c2c6ae97d607fcec951
+author Jessica Wang <jessica@cloud.com> 1328120899 -0800
+committer Jessica Wang <jessica@cloud.com> 1328120899 -0800
+
+    add network offering dialog - availability field depends on not only 'service.SourceNat.isEnabled', but also requiredNetworkOfferingExists variable. This line will make the dependency between availability field and requiredNetworkOfferingExists variable disappear (incorrectly).
+
+:100644 100644 408d38104d2596497af4403896ed2bab341ef340 13b84bcc87ceb1c91735ddace56fe05b913c805e M	ui/scripts/configuration.js
+
+commit 9af4b57230d6779fa91a1c2c6ae97d607fcec951
+tree 6750bfd282f7ae7dc87146f43629bbf19ce05337
+parent 519929ac76f89741f8e850ed700af16c977f7848
+author Jessica Wang <jessica@cloud.com> 1328119003 -0800
+committer Jessica Wang <jessica@cloud.com> 1328119019 -0800
+
+    system page - guest network page - optimize code of collection guest networks.
+
+:100644 100644 2b91479a1e71d814591338935d9386ff8860b58c c1bdb4483b09b32740cb80a5aa80c48508a701cc M	ui/scripts/system.js
+
+commit 519929ac76f89741f8e850ed700af16c977f7848
+tree 6c24966bc4d541e604a81a01a1074ddd794167d1
+parent 0728c5b53e3b64b135b83b23a1b7974207313d4c
+author bfederle <bfederle@gmail.com> 1328118892 -0800
+committer bfederle <bfederle@gmail.com> 1328118892 -0800
+
+    bug 12792: Fix restore VM action
+    
+    status 12792: resolved fixed
+
+:100644 100644 8e333b46bc5466b2f7643a09382925172ea37aab 81e0d23c0ae7c5ae142c778dc3c7591ab8f6e1a1 M	ui/scripts/instances.js

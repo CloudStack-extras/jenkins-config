@@ -1,0 +1,80 @@
+Started by user [8mha:AAAAjB+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADJ4Shh49EuLU4v0s1NNCgsLAYYg/s+RAAAA[0mDavid Nalley
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Using strategy: Default
+Last Built Revision: Revision 6e6ad0ba6f099b171b0d01e1d584c8ae07c2a1c7 (origin/3.0.0.salmon)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
+Commencing build of Revision 148230f23c890f981785fdb1b5614ced87216f66 (origin/master)
+Checking out Revision 148230f23c890f981785fdb1b5614ced87216f66 (origin/master)
+No change to record in branch origin/master
+[Automated Test Runs] $ ant build-all deploy-server deploydb start-tomcat xmltest-hudson stop-tomcat clean-tomcat
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-01T00:35:19Z
+     [echo] Build number is 3.0.0.2012-02-01T00:35:19Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+   [depend] Deleted 4 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
+    [javac] Compiling 4 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/utils/src/com/cloud/utils/db/GenericDaoBase.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+   [depend] The class com.cloud.api.commands.JoinProjectCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/JoinProjectCmd.class is out of date due to com.cloud.projects.ProjectService but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.ListCapacityByTypeCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/ListCapacityByTypeCmd.class is out of date due to com.cloud.api.commands.ListCapacityCmd but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.CreateCfgCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/CreateCfgCmd.class is out of date due to com.cloud.configuration.ConfigurationService but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.MoveUserVMCmd in file /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar/com/cloud/api/commands/MoveUserVMCmd.class is out of date due to com.cloud.api.BaseCmd but has not been deleted because its source file could not be determined
+   [depend] Deleted 321 out of date files in 4 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/api/src
+    [javac] Compiling 296 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+   [depend] Deleted 24 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/vmware-base/src
+    [javac] Compiling 19 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareContext.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+   [depend] Deleted 36 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/core/src
+    [javac] Compiling 41 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-core.jar
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:37: com.cloud.storage.SwiftVO is not abstract and does not override abstract method getToken() in com.cloud.storage.Swift
+    [javac] public class SwiftVO implements Swift, Identity {
+    [javac]        ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:71: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:75: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:87: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/storage/SwiftVO.java:96: method does not override or implement a method from a supertype
+    [javac]     @Override
+    [javac]     ^
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 5 errors
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.xml:202: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-common.xml:49: Compile failed; see the compiler error output for details.
+
+Total time: 23 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

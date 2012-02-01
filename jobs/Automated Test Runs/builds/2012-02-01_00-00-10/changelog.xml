@@ -1,0 +1,81 @@
+Changes in branch origin/master, between 148230f23c890f981785fdb1b5614ced87216f66 and 9e7e07658c83c3771585757b8dcdad492f53625c
+commit 9e7e07658c83c3771585757b8dcdad492f53625c
+tree 6df9fdfccb4a97ead18e7101edf15df61d891436
+parent 82a85f19a267eca9af5adedfa3b1df0cc193a0b7
+author prachi <prachi@cloud.com> 1328063327 -0800
+committer prachi <prachi@cloud.com> 1328063347 -0800
+
+    Bug 13224 - Network Usage - Netscaler - External device is being queried multiple times (up to 8 times) whenever the Network Usage task is run.
+    
+    Reviewed-By: Kishan
+    
+    Changes:
+    - Added local cache to store the usage answer per LB device per zone
+    - Also there can be multiple domainRouters for an account. We can avoid processing the same account for usage by maintaining accounts already processed.
+
+:100644 100644 3dc115ae68d394585b0625100142030a00e99a7a 3d616be2e29d15e885504aa3e95fff5a58fbd672 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java
+
+commit 82a85f19a267eca9af5adedfa3b1df0cc193a0b7
+tree 409cc6da8cf6433951e9b7c9dd6f64e83553fc32
+parent fa27be798e819da56dbb7474a7ca193d2932b75a
+author Kelven Yang <kelven@cloud.com> 1328061823 -0800
+committer Kelven Yang <kelven@cloud.com> 1328061823 -0800
+
+    bug 10355: let detachIso failure message be bubbled up
+
+:100755 100755 d4f8a6b33cf672534281886e67746ab085396b20 427478ba98dc00716abbb222b1e33d28e7bd689f M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java
+
+commit fa27be798e819da56dbb7474a7ca193d2932b75a
+tree 1e09381a2bbf2c2f31a0d917168dfaa4bee617f6
+parent 935c47b5f08aa1372d842879b5f65b93e3823ecb
+author Kelven Yang <kelven@cloud.com> 1328059201 -0800
+committer Kelven Yang <kelven@cloud.com> 1328059216 -0800
+
+    bug 12017: when owner host is not in UP state, mark VM state as UNKNOWN
+
+:100755 100755 e1ae59d7ca9fd6920fa45be5ffec46c436a833c6 487c0eb958708cdedb7053a925ee66337aac221a M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit 935c47b5f08aa1372d842879b5f65b93e3823ecb
+tree b2410ca9c0346f46440d0fd60122f93569a59fdc
+parent f3cbae9c53ccb74a78da835b36a24ac4ddf59f99
+author anthony <anthony@cloud.com> 1328058769 -0800
+committer anthony <anthony@cloud.com> 1328058769 -0800
+
+    bug 12844: fixed a regression
+       reviewed-by : edison
+    
+    Conflicts:
+    
+    	server/src/com/cloud/agent/manager/AgentManagerImpl.java
+
+:100755 100755 431bf0c2deb602982420fc41a6c929777237cf2a e2bf7f4f67478eab0c66ba522377e011629f4774 M	server/src/com/cloud/agent/manager/AgentManagerImpl.java
+
+commit f3cbae9c53ccb74a78da835b36a24ac4ddf59f99
+tree ef0a7605a21435842d0178b9d3eeab777933a437
+parent 43b12099445c2731f414eea8fbab413a45e5694c
+author Jessica Wang <jessica@cloud.com> 1328058700 -0800
+committer Jessica Wang <jessica@cloud.com> 1328058716 -0800
+
+    bug 12519: system page - guest network - need to make 2 listNetworks API call to get all networks.
+
+:100644 100644 e8c6e5ff46c951995192c419baf9b93083569574 2b91479a1e71d814591338935d9386ff8860b58c M	ui/scripts/system.js
+
+commit 43b12099445c2731f414eea8fbab413a45e5694c
+tree e957648ad5434ec6fc1995b3b309166f91240be5
+parent e091142cc6cba3e81c9e4f9002f94067f29c7daf
+author Kelven Yang <kelven@cloud.com> 1328057216 -0800
+committer Kelven Yang <kelven@cloud.com> 1328057233 -0800
+
+    rootDiskController option should only be applied to root volumes
+
+:100755 100755 cc4a09458f9163f0ed550212cc215b0d9b97e4e7 d4f8a6b33cf672534281886e67746ab085396b20 M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java
+
+commit e091142cc6cba3e81c9e4f9002f94067f29c7daf
+tree d7ed2767dd09d023ae2daa6ceb3ad1148e911174
+parent 148230f23c890f981785fdb1b5614ced87216f66
+author Jessica Wang <jessica@cloud.com> 1328057154 -0800
+committer Jessica Wang <jessica@cloud.com> 1328057170 -0800
+
+    bug 12519: system page - guest network - fix a bug that project-specific networks didn't show.
+
+:100644 100644 2b33b4cdb0643752b28eb3f2f1b188f258b85f3e e8c6e5ff46c951995192c419baf9b93083569574 M	ui/scripts/system.js

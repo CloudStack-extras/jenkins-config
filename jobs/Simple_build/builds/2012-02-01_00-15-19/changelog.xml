@@ -1,0 +1,16 @@
+Changes in branch origin/master, between 82a85f19a267eca9af5adedfa3b1df0cc193a0b7 and 9e7e07658c83c3771585757b8dcdad492f53625c
+commit 9e7e07658c83c3771585757b8dcdad492f53625c
+tree 6df9fdfccb4a97ead18e7101edf15df61d891436
+parent 82a85f19a267eca9af5adedfa3b1df0cc193a0b7
+author prachi <prachi@cloud.com> 1328063327 -0800
+committer prachi <prachi@cloud.com> 1328063347 -0800
+
+    Bug 13224 - Network Usage - Netscaler - External device is being queried multiple times (up to 8 times) whenever the Network Usage task is run.
+    
+    Reviewed-By: Kishan
+    
+    Changes:
+    - Added local cache to store the usage answer per LB device per zone
+    - Also there can be multiple domainRouters for an account. We can avoid processing the same account for usage by maintaining accounts already processed.
+
+:100644 100644 3dc115ae68d394585b0625100142030a00e99a7a 3d616be2e29d15e885504aa3e95fff5a58fbd672 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java

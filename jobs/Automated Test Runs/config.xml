@@ -56,7 +56,13 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Ant>
-      <targets>build-all</targets>
+      <targets>build-all
+deploy-server
+deploydb
+start-tomcat
+xmltest-hudson
+stop-tomcat
+clean-tomcat</targets>
     </hudson.tasks.Ant>
   </builders>
   <publishers>

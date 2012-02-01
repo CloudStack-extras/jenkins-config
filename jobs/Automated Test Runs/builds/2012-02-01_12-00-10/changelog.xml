@@ -1,0 +1,55 @@
+Changes in branch origin/master, between bd193d7d279043b4cb7e0e6bdb2ab7e43e818cd0 and 0728c5b53e3b64b135b83b23a1b7974207313d4c
+commit 0728c5b53e3b64b135b83b23a1b7974207313d4c
+tree 47c01f4714ccf8021b62af3e8e7c7583d0dadf44
+parent 89c25a79abcbeeaf2c5d1b504c72d183c623f420
+author abhi <abhinandan.prateek@citrix.com> 1328102125 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1328102125 +0530
+
+    bug 13408: added more loggin to assignVM
+
+:100755 100755 27b7a44e1b79016fcdf24ce35dc82632f7da291d abe19cc530a1ca7c1041d72df9e8c11cba0b4580 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 89c25a79abcbeeaf2c5d1b504c72d183c623f420
+tree cf6ce339927fd7be7b3a5c0697abef758473c6f6
+parent 309c6581ce2240900367df6abc00ad8376f3762c
+author abhi <abhinandan.prateek@citrix.com> 1328099912 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1328099912 +0530
+
+    bug 12899: checking if static nat rule is in place, throw error if there. Let the caller clear it first before assigning VM to another account
+
+:100755 100755 c3742f12c812423991011d78d94f3e5462cd4fab 27b7a44e1b79016fcdf24ce35dc82632f7da291d M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 309c6581ce2240900367df6abc00ad8376f3762c
+tree 0974892d9c6cdf364237348542881c9010178343
+parent 18994037567df75652075b2817568eff83588f92
+author Naredula Janardhana Reddy <jana@cloud.com> 1328099471 +0530
+committer Naredula Janardhana Reddy <jana@cloud.com> 1328099471 +0530
+
+    Bug 11845:
+      Summary of Changes:
+        - created a generic way for LB rule validations, so as LB device(like Haproxy) specific validations can be done syncronously.
+        - Removed asyncronous validations from Haproxy and done syncronously.
+
+:100644 100644 d1f3dc65de99d5c6a61addc4b627d220600cfc91 f0afa460de65120bce440828b82bccafabe4b4da M	api/src/com/cloud/network/element/LoadBalancingServiceProvider.java
+:100644 100644 2f871f6d4c8857f595f7fed1bbc80cda3fc05396 a9fb5ca5465a5fe7e974dcca61dd00dbe6e8afe0 M	api/src/com/cloud/network/lb/LoadBalancingRule.java
+:100644 100644 63e1227a4b1f95175bbf00555d85a9e8172794f1 2b5efd7b9e98f5dbe914c0fa89c010c6e38a7d99 M	core/src/com/cloud/network/HAProxyConfigurator.java
+:000000 100644 0000000000000000000000000000000000000000 9e53d02b5f50c58d108386bbc42f8826badbe572 A	core/src/com/cloud/network/LoadBalancerValidator.java
+:100755 100755 54f03416ace95fb1c8679c33a05c0b524a96c1eb 0bb629150028c773da4eda68678430c933870df6 M	server/src/com/cloud/network/NetworkManager.java
+:100644 100644 1eb86b677ff79b42110db8f6c2d31b9e24c9058a 0eea6385022c6b18c3a09b82bf27c0ac3bb56498 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 ba40ee73602c4d4e8886ad97da1f020caba236ac e72fffdab8b5a183199c7a834ce5deb205a865fa M	server/src/com/cloud/network/element/ElasticLoadBalancerElement.java
+:100644 100644 be62b4dd246930b8f11cc8c818905fee4d72cf92 4d3fca11fc236656066e6cae8117a9eba642fd6b M	server/src/com/cloud/network/element/F5ExternalLoadBalancerElement.java
+:100644 100644 296e8045e66b6783cb1d105398b7f1f54de23d46 68f890eed259c6f3a48b0c3e9cd39513459c0a2b M	server/src/com/cloud/network/element/NetscalerElement.java
+:100644 100644 8a59a5c9bd63bda108f9d8f499f598798f31b82f 8604180f4b8921648e1f4a43b9b729345d4ac718 M	server/src/com/cloud/network/element/VirtualRouterElement.java
+:100755 100755 6f7e7096938aa8f6794636746d658fe83a0123b5 d24c7806d5c734de6a8f1737a4a94e018d820d8d M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+
+commit 18994037567df75652075b2817568eff83588f92
+tree bf20810b37bdd7041d978da0c222a9ed463a6d7f
+parent bd193d7d279043b4cb7e0e6bdb2ab7e43e818cd0
+author kishan <kishan@cloud.com> 1328096144 +0530
+committer kishan <kishan@cloud.com> 1328096248 +0530
+
+    Bug 12071: Drop and re-create usage event created index in cloud_usage DB
+    Status 12071: resolved fixed
+    Reviewed-By: Nitin
+
+:100644 100644 a91b6c26beb800bcce629bf27aefac791227ab83 d5068aacf159b9e4b3bfc9420c1ac792df18e88a M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java

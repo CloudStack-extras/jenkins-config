@@ -56,7 +56,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Ant>
-      <targets>build-all
+      <targets>clean-all
+build-all
 deploy-server
 deploydb
 start-tomcat

@@ -1,0 +1,67 @@
+Changes in branch origin/master, between 9b668a6d9b5cefa88414ef47e07f9454dbf382fa and 8c90915affd6beff4157b4db48956e9d75286736
+commit 8c90915affd6beff4157b4db48956e9d75286736
+tree d54fffc36a9d3d5963a7145d3dada7eda6f75c01
+parent ea44a4d2956a1af8d257d61229c2805b8deafc6d
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328222460 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328222617 -0800
+
+    bug 12361: 2214-3.0 db upgrade for redundant routers
+
+:100644 100644 a6862a5c7d03d2dba362398ac660617e41584bc1 47736a56253d0ad3a735f0d2b096d7be5f0c7846 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 cf9dcbb8d67fac77006bf1d20213e96429684525 5584a6f51d4667dad4346359b8462c2a90426cec M	setup/db/db/schema-2214to30.sql
+
+commit ea44a4d2956a1af8d257d61229c2805b8deafc6d
+tree 223e9a037ef46e8f7faad0213cf40ad16b85013e
+parent fae4135a580b2fe63e588d3e463250e725965f64
+author Jessica Wang <jessica@cloud.com> 1328219636 -0800
+committer Jessica Wang <jessica@cloud.com> 1328219656 -0800
+
+    bug 13412: Quick install - add cluster - hypervisor - add KVM option
+
+:100644 100644 a63fba0c1692eb4bb8b802df96dfdde2ec2c5bdf 74a59a63100baf1c607e1d0fa378256b8c218c94 M	ui/scripts/ui-custom/installWizard.js
+
+commit fae4135a580b2fe63e588d3e463250e725965f64
+tree f85aba5fd9f5c8f3e13620195650084b8cf692b2
+parent 494050836f0137f35162bcca110b991ec42c3b49
+author bfederle <bfederle@gmail.com> 1328219265 -0800
+committer bfederle <bfederle@gmail.com> 1328219265 -0800
+
+    bug 13210: User dashboard layout cleanup
+    
+    -Replace broken 'My projects' with latest events listing
+    
+    -Show real network stats; replace with 'Owned networks' and 'Owned IP
+    addresses'
+    
+    status 13210: resolved fixed
+
+:100644 100644 72790d2b0641a5ff1520a960fefdf9c63a113618 50d1ece16eeb4bf4f4e07f726e536c0715337ba9 M	ui/css/cloudstack3.css
+:100644 100644 2e1d6242cf488847f0cc46a7928bda8bd7bb0a58 85d42b403483543e4b3cf89711c6c4345406f98c M	ui/index.jsp
+:100644 100644 5169945b84210b7527102a102cafb71abbe1b404 dbfe2de3054c6179e11b1b8270ec98b8497f8b6a M	ui/scripts/dashboard.js
+:100644 100644 bd850b500155642efdada23b9b4e236571b07307 45c447a57bbf8c7bc65329e3e9bd4a8497934dd5 M	ui/scripts/ui-custom/dashboard.js
+
+commit 494050836f0137f35162bcca110b991ec42c3b49
+tree bf63b4579f33bd4be82fb540d14d92d74d4b8319
+parent ef37935352009ca629c05cad1e6346218f158990
+author bfederle <bfederle@gmail.com> 1328214610 -0800
+committer bfederle <bfederle@gmail.com> 1328214610 -0800
+
+    bug 13261: Display pod name for cluster-level capacities
+    
+    status 13261: resolved fixed
+
+:100644 100644 31187c917d7e42e8c2b4b38a4b14a79e05f74741 5169945b84210b7527102a102cafb71abbe1b404 M	ui/scripts/dashboard.js
+
+commit ef37935352009ca629c05cad1e6346218f158990
+tree e6603e5603bf6db1e61e3e230df6f0e4c5b67fb2
+parent 9b668a6d9b5cefa88414ef47e07f9454dbf382fa
+author bfederle <bfederle@gmail.com> 1328214298 -0800
+committer bfederle <bfederle@gmail.com> 1328214304 -0800
+
+    bug 11790
+    
+    Fix naming for capacity types to be up-to-date with API
+    
+    status 11790: resolved fixed
+
+:100644 100644 14d13a2087459dcaa50af241c6911a36abc10aaf 03328deef826d20e4b677592994e12d19aa51be0 M	ui/scripts/sharedFunctions.js

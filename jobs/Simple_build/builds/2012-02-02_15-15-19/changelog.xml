@@ -1,0 +1,67 @@
+Changes in branch origin/master, between df09a1f8d1000a17b68637fe16bcf3c4f4ea8a04 and 9b668a6d9b5cefa88414ef47e07f9454dbf382fa
+commit 9b668a6d9b5cefa88414ef47e07f9454dbf382fa
+tree 02ddeb0304cf77b2d6e6b5e2baa646f82a60be8a
+parent cfcd3a3ba85e7c34aeb8e89a9b9c1a2080b8031c
+author Kelven Yang <kelven@cloud.com> 1328211859 -0800
+committer Kelven Yang <kelven@cloud.com> 1328212160 -0800
+
+    bug 13428: upgrade newly issued realhostip certificate. Reviewed by: Anthony
+
+:100755 100755 78ef13ae12cb1d112f647bae5f1988f6ec8772a9 b85e4262f52696249352d3e2429aca5156f8bcee M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+
+commit cfcd3a3ba85e7c34aeb8e89a9b9c1a2080b8031c
+tree 313c7ab522ecb92f70cb9de452c516fde81d1d7a
+parent c246c8934a0bc09f5d8c6b0814aa2252a9db4cbe
+author frank <frank.zhang@citrix.com> 1328211071 -0800
+committer frank <frank.zhang@citrix.com> 1328211103 -0800
+
+    avoid both PodBaseNetworkGuru and StorageNetworkGuru reply to storage network
+    design call
+
+:100755 100755 0087cbac7f5bc5b4082783f5f295d67c16286e83 8f088fd97434978bdb3fc5e6a843311d44818ae2 M	server/src/com/cloud/network/guru/PodBasedNetworkGuru.java
+:100755 100755 700f0e60374fda3f7042f9ce49dff1a1f98fc324 ad58018853d11ffbb93fb0103f63d4bf241b3e0e M	server/src/com/cloud/network/guru/StorageNetworkGuru.java
+
+commit c246c8934a0bc09f5d8c6b0814aa2252a9db4cbe
+tree 5d99b174566d8c070e9dab3fdc2789a2992a5e2a
+parent f1ed98b975d3bb472e3cf0652a3db2e23b604ad6
+author bfederle <bfederle@gmail.com> 1328209797 -0800
+committer bfederle <bfederle@gmail.com> 1328209803 -0800
+
+    bug 13246: Fix attach volume when in project mode
+    
+    status 13246: resolved fixed
+
+:100644 100644 cd985620e23d4e2c9beef93612be815e3cc22119 0c66fbd6e6d1948b9183044eea51b42dbbd105b2 M	ui/scripts/storage.js
+
+commit f1ed98b975d3bb472e3cf0652a3db2e23b604ad6
+tree cf0dd5a8e03c9374845447870a6f1866d26365a6
+parent f85c080ca060cf0493fbf3a788a6220d889bf632
+author frank <frank.zhang@citrix.com> 1328208720 -0800
+committer frank <frank.zhang@citrix.com> 1328208738 -0800
+
+    Bug 13185 - CloudStack UI shows incorrect info for SSVM public IP
+    
+    status 13185: resolved fixed
+
+:100755 100755 46d785909b9b549a7b0df4210d5585549dbb01e8 d0079df516b95631c0bcef856f92571109e6f2ae M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit f85c080ca060cf0493fbf3a788a6220d889bf632
+tree 734017a722346cbf41877eb6428a5f38ddf2d866
+parent a6fa8e02976c623d1e0ab0616b1659118567c04e
+author Jessica Wang <jessica@cloud.com> 1328207649 -0800
+committer Jessica Wang <jessica@cloud.com> 1328207667 -0800
+
+    bug 13030: IP address page - Make EnableVPN action available in any type of IP, instead of only sourceNAT IP.
+
+:100644 100644 25a496ff97d947c78bb4da927abeccf4b6d5500a ea81ad4559f7ee6aa8350a23e37d6a3c3ac47db4 M	ui/scripts/network.js
+
+commit a6fa8e02976c623d1e0ab0616b1659118567c04e
+tree 5311b8f67619e5820c1285034da884309b484a8b
+parent df09a1f8d1000a17b68637fe16bcf3c4f4ea8a04
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328207646 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328207646 -0800
+
+    bug 13335: fixed name/displayText network update
+    status 13335: resolved fixed
+
+:100644 100644 0eea6385022c6b18c3a09b82bf27c0ac3bb56498 742c72f35b73cc92ed8416a6aa2b69e8fde463ee M	server/src/com/cloud/network/NetworkManagerImpl.java

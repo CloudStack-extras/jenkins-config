@@ -1,0 +1,48 @@
+Changes in branch origin/master, between f1ed98b975d3bb472e3cf0652a3db2e23b604ad6 and ef37935352009ca629c05cad1e6346218f158990
+commit ef37935352009ca629c05cad1e6346218f158990
+tree e6603e5603bf6db1e61e3e230df6f0e4c5b67fb2
+parent 9b668a6d9b5cefa88414ef47e07f9454dbf382fa
+author bfederle <bfederle@gmail.com> 1328214298 -0800
+committer bfederle <bfederle@gmail.com> 1328214304 -0800
+
+    bug 11790
+    
+    Fix naming for capacity types to be up-to-date with API
+    
+    status 11790: resolved fixed
+
+:100644 100644 14d13a2087459dcaa50af241c6911a36abc10aaf 03328deef826d20e4b677592994e12d19aa51be0 M	ui/scripts/sharedFunctions.js
+
+commit 9b668a6d9b5cefa88414ef47e07f9454dbf382fa
+tree 02ddeb0304cf77b2d6e6b5e2baa646f82a60be8a
+parent cfcd3a3ba85e7c34aeb8e89a9b9c1a2080b8031c
+author Kelven Yang <kelven@cloud.com> 1328211859 -0800
+committer Kelven Yang <kelven@cloud.com> 1328212160 -0800
+
+    bug 13428: upgrade newly issued realhostip certificate. Reviewed by: Anthony
+
+:100755 100755 78ef13ae12cb1d112f647bae5f1988f6ec8772a9 b85e4262f52696249352d3e2429aca5156f8bcee M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+
+commit cfcd3a3ba85e7c34aeb8e89a9b9c1a2080b8031c
+tree 313c7ab522ecb92f70cb9de452c516fde81d1d7a
+parent c246c8934a0bc09f5d8c6b0814aa2252a9db4cbe
+author frank <frank.zhang@citrix.com> 1328211071 -0800
+committer frank <frank.zhang@citrix.com> 1328211103 -0800
+
+    avoid both PodBaseNetworkGuru and StorageNetworkGuru reply to storage network
+    design call
+
+:100755 100755 0087cbac7f5bc5b4082783f5f295d67c16286e83 8f088fd97434978bdb3fc5e6a843311d44818ae2 M	server/src/com/cloud/network/guru/PodBasedNetworkGuru.java
+:100755 100755 700f0e60374fda3f7042f9ce49dff1a1f98fc324 ad58018853d11ffbb93fb0103f63d4bf241b3e0e M	server/src/com/cloud/network/guru/StorageNetworkGuru.java
+
+commit c246c8934a0bc09f5d8c6b0814aa2252a9db4cbe
+tree 5d99b174566d8c070e9dab3fdc2789a2992a5e2a
+parent f1ed98b975d3bb472e3cf0652a3db2e23b604ad6
+author bfederle <bfederle@gmail.com> 1328209797 -0800
+committer bfederle <bfederle@gmail.com> 1328209803 -0800
+
+    bug 13246: Fix attach volume when in project mode
+    
+    status 13246: resolved fixed
+
+:100644 100644 cd985620e23d4e2c9beef93612be815e3cc22119 0c66fbd6e6d1948b9183044eea51b42dbbd105b2 M	ui/scripts/storage.js

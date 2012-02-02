@@ -64,6 +64,7 @@ start-tomcat
 xmltest-hudson
 stop-tomcat
 clean-tomcat</targets>
+      <properties>CATALINA_HOME=/usr/share/cloud</properties>
     </hudson.tasks.Ant>
   </builders>
   <publishers>

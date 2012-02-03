@@ -84,6 +84,21 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/bug-12277-naas-details</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>59be452c68e419cb0f2edad5e2e0da07fd1fc35d</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/bug-12277-naas-details</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>56</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/master.lime</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -111,6 +126,21 @@
               </branches>
             </revision>
             <hudsonBuildNumber>20</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/3.0.0.salmon</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>6e6ad0ba6f099b171b0d01e1d584c8ae07c2a1c7</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/3.0.0.salmon</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>63</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -234,6 +264,21 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/2.2.13.tangerine</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>c273c90f2dde5c46b8c8bece92af0f49825fc0dc</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.2.13.tangerine</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>59</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/2.1.7.zucchini</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -294,6 +339,21 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/acton-beta2</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>3f2d0f16311d2fe1691479c42c63470033749409</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/acton-beta2</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>62</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/2.1.4.kumquat</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -351,6 +411,21 @@
               </branches>
             </revision>
             <hudsonBuildNumber>2</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/2.2.12.nectarine</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>317ac322b2667932b433233ac23adc8bd6fdc07e</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.2.12.nectarine</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>58</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -534,6 +609,21 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/2.2.13.indianfig</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>317d2d801abfe5feb437f8052d512eabde256518</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.2.13.indianfig</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>57</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/2.2.1</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -624,6 +714,21 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/bug11845</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>38cacbc54a0a9ad521ab38011f2a8e3a7c25633f</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/bug11845</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>55</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/zonesfeature</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -636,6 +741,21 @@
               </branches>
             </revision>
             <hudsonBuildNumber>16</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>e017445c5a4aee150bfc9217e98ce11073c1cf06</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>78</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -819,7 +939,7 @@
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry[8]/hudson.plugins.git.util.Build"/>
+      <lastBuild reference="../buildsByBranchName/entry[50]/hudson.plugins.git.util.Build"/>
       <scmName></scmName>
     </hudson.plugins.git.util.BuildData>
     <hudson.plugins.git.GitTagAction>
@@ -827,7 +947,7 @@
       <tags class="hudson.util.CopyOnWriteMap$Tree">
         <no-comparator/>
         <entry>
-          <string>origin/defaultnetwork</string>
+          <string>origin/master</string>
           <list/>
         </entry>
       </tags>
@@ -835,12 +955,12 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
-      <result>FAILURE</result>
+      <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>54</number>
-  <result>FAILURE</result>
-  <duration>34161</duration>
+  <number>78</number>
+  <result>SUCCESS</result>
+  <duration>75829</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -849,5 +969,8 @@
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
-  <culprits/>
+  <culprits>
+    <string>Murali.Reddy</string>
+    <string>Alena.Prokharchyk</string>
+  </culprits>
 </build>

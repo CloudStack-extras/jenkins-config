@@ -3,11 +3,12 @@
   <actions>
     <hudson.model.CauseAction>
       <causes>
-        <hudson.model.Cause_-UserIdCause>
-          <userId>ke4qqq</userId>
-        </hudson.model.Cause_-UserIdCause>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
       </causes>
     </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
     <hudson.plugins.git.util.BuildData>
       <buildsByBranchName>
         <entry>
@@ -26,6 +27,21 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>9c3f847cf30d5a9059e7f1eabfb1506acfce9a2c</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>54</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/master.lime</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -38,6 +54,51 @@
               </branches>
             </revision>
             <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/2.1.vanilla</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>b89beda6f5ff0e0141d506dcb31e9ae8ac6e8444</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.1.vanilla</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>7</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/2.2.beta1</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>0dd7816906a857297d1b402d550af9150d4d8b97</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.2.beta1</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>5</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/2.1.4.kumquat</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>5bfe349783b60d7729e409f5054c1dfb0b3fcce7</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.1.4.kumquat</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -71,7 +132,7 @@
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry[4]/hudson.plugins.git.util.Build"/>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
       <scmName></scmName>
     </hudson.plugins.git.util.BuildData>
     <hudson.plugins.git.GitTagAction>
@@ -79,24 +140,26 @@
       <tags class="hudson.util.CopyOnWriteMap$Tree">
         <no-comparator/>
         <entry>
-          <string>origin/hybrid</string>
+          <string>origin/master</string>
           <list/>
         </entry>
       </tags>
-      <ws>/var/lib/jenkins/workspace/First attempt</ws>
+      <ws>/var/lib/jenkins/workspace/Simple_build</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>4</number>
-  <result>FAILURE</result>
-  <duration>17630</duration>
+  <number>54</number>
+  <result>SUCCESS</result>
+  <duration>65595</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/First attempt</workspace>
+  <workspace>/var/lib/jenkins/workspace/Simple_build</workspace>
   <hudsonVersion>1.447</hudsonVersion>
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
-  <culprits/>
+  <culprits>
+    <string>jessica</string>
+  </culprits>
 </build>

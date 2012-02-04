@@ -56,15 +56,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Ant>
-      <targets>clean-all
-build-all
-deploy-server
-deploydb
-start-tomcat
-xmltest-hudson
-stop-tomcat
-clean-tomcat</targets>
-      <properties>CATALINA_HOME=/usr/share/cloud</properties>
+      <targets>automated-test-run</targets>
     </hudson.tasks.Ant>
   </builders>
   <publishers>

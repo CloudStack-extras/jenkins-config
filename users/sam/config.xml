@@ -20,7 +20,7 @@
       <passwordHash>OfIKNH:d43b3595f62774a9018d403c9c22d892094ba61391e5660f723b15a3b1d49001</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>sam.robertson@citrix.com</emailAddress>
+      <emailAddress>sam@cloud.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

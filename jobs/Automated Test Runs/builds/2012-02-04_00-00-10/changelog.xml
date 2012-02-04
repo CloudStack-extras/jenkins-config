@@ -1,0 +1,11 @@
+Changes in branch origin/master, between e92f0f4ee7aadeab93a2bc695702a19a98f85a2a and 7e493725267d633f59cc95b00fa6526a92e7b597
+commit 7e493725267d633f59cc95b00fa6526a92e7b597
+tree b9d62272f1babf9d93e83b9c20c9ce5ef70e99de
+parent e92f0f4ee7aadeab93a2bc695702a19a98f85a2a
+author frank <frank.zhang@citrix.com> 1328319596 -0800
+committer frank <frank.zhang@citrix.com> 1328319607 -0800
+
+    DB upgrade for  Bug 6849 - Randomize systemvm passwords
+
+:100755 100755 b725f7c8c1a70807d0a2b9e305b4566e2c6501a6 51046983778452b0b72096f4884ca2bd90ab5f82 M	server/src/com/cloud/configuration/Config.java
+:100755 100755 28258ca23d7eb683afa6c53d7bc7f2f648772509 fb8bb61de1e3f323d47b824a2c9c1dd5500e75c1 M	setup/db/db/schema-2214to30.sql

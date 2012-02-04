@@ -1,0 +1,27 @@
+Changes in branch origin/master, between a4fd4f55afadef7d52726d02b537f7da359df9a5 and e92f0f4ee7aadeab93a2bc695702a19a98f85a2a
+commit 326401be41f22d164e9cba281c606864a00ba543
+tree fd375545110bfc8c973ed16da286c873bf090c63
+parent e2406aa57ce71e44ecdab76abd1e1d188c828454
+author Sam Robertson <sam@cloud.com> 1328319169 -0800
+committer Sam Robertson <sam@cloud.com> 1328319169 -0800
+
+    moved automated.xml to automated directory in testClient.
+
+:100755 100755 4a7f8f2b9a670b25d7f771539b001b5df1abd90c fdfc2d959da20d46c00b0bd11a024f7765815400 M	build/build-tests.xml
+
+commit a1315f6f5ab2c97ba1571d1cb4734421316e9641
+tree 5614866cbadcbb6276e986669a3f16f707e0ed66
+parent a4fd4f55afadef7d52726d02b537f7da359df9a5
+author frank <frank.zhang@citrix.com> 1328318877 -0800
+committer frank <frank.zhang@citrix.com> 1328318938 -0800
+
+    Bug 6849 - Randomize systemvm passwords (edit)
+    
+    status 6849: resolved fixed
+
+:100755 100755 82ec7098fe2c88bac5da1ed9da50bcaed589ae43 f3df6c08857fa04347a6d349c0966a8d28b43a7c M	patches/systemvm/debian/config/etc/init.d/cloud-early-config
+:100755 100755 e06e384d6b0ff9ee23e67990b445aab5c620dff4 b725f7c8c1a70807d0a2b9e305b4566e2c6501a6 M	server/src/com/cloud/configuration/Config.java
+:100755 100755 b85e4262f52696249352d3e2429aca5156f8bcee 5254cf7c3b2fc4593c32d339e763fede27cfebc7 M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:100755 100755 8e14ee29e1f06f69304585c8a00378368ed7ee1b 680ca763bacdca91915fd17dc64cc27feaf21f82 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100755 100755 586e009274d3cad0a386161bbfb80573ca125645 42a23b81deaae31f42d64fd74a6a13edf4c5ddf2 M	server/src/com/cloud/server/ConfigurationServerImpl.java
+:100755 100755 0d3802a5e2a7665e599a813fea49ff402085ee77 ee696ab6d7fdbfd245d0f5d489b7363e30c9fd00 M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java

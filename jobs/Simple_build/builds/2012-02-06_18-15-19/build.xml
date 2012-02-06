@@ -60,7 +60,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>640f5db44ba7f15199ccd55078c87dd15867bc16</sha1>
+              <sha1>03d5afaf269d682eb3bd14aeeb70e00623647a07</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -68,7 +68,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>9</hudsonBuildNumber>
+            <hudsonBuildNumber>59</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -144,25 +144,24 @@
           <list/>
         </entry>
       </tags>
-      <ws>/var/lib/jenkins/workspace/First attempt</ws>
+      <ws>/var/lib/jenkins/workspace/Simple_build</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>9</number>
+  <number>59</number>
   <result>SUCCESS</result>
-  <duration>83098</duration>
+  <duration>65106</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/First attempt</workspace>
+  <workspace>/var/lib/jenkins/workspace/Simple_build</workspace>
   <hudsonVersion>1.447</hudsonVersion>
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>anthony</string>
+    <string>frank</string>
     <string>jessica</string>
-    <string>david</string>
-    <string>kelven</string>
+    <string>Alena.Prokharchyk</string>
   </culprits>
 </build>

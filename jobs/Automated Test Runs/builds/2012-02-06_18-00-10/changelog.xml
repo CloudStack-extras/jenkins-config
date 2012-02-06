@@ -1,0 +1,118 @@
+Changes in branch origin/master, between 0bbcb6d602253c6dd985d5702b66f1609b54ee2a and 03d5afaf269d682eb3bd14aeeb70e00623647a07
+commit 03d5afaf269d682eb3bd14aeeb70e00623647a07
+tree 9bb17d10e0b172aa287281e3143d602832bf163d
+parent 188d4d576509a2e634d062454e3a200c1def8bce
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328569074 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328569120 -0800
+
+    bug 12361: db upgrade for Direct account specific networks
+
+:100644 100644 af5da1d36e9dbf3f97f857876cab98795cdd3db0 dfd285029f8d645172bdb13e4a025e744eb22be1 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100644 100644 a4d2e88b00deb5f2121f117629869bbe0960e166 3cc069b48327b79a7edac834b78a59890ba03573 M	server/test/resources/PreviousDatabaseSchema/2.2.14/advance_zone_2.2.14.sql
+
+commit 188d4d576509a2e634d062454e3a200c1def8bce
+tree f2ba4b23758f76c7a053c5d0e2037408d71f0067
+parent 0c0372a7300484880db100320d41bfbe66fa6b17
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328556197 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328569120 -0800
+
+    Fixed code formatting in 2214-30 upgrade
+
+:100644 100644 47736a56253d0ad3a735f0d2b096d7be5f0c7846 af5da1d36e9dbf3f97f857876cab98795cdd3db0 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+
+commit 0c0372a7300484880db100320d41bfbe66fa6b17
+tree 1de3850052fce66bebb26d09d8ee306fe6f728cf
+parent 96192e63476a81ea6d18847c92b873761e6e9d16
+author frank <frank.zhang@citrix.com> 1328567854 -0800
+committer frank <frank.zhang@citrix.com> 1328567876 -0800
+
+    return netmask in listStorageNetworkIpRangeCmd
+
+:100755 100755 8491674a2f102ae3a8726f1b5ec5d175265421d0 1506c828fc62b7a4f1abc162239d2b91ba5d5ef8 M	api/src/com/cloud/api/response/StorageNetworkIpRangeResponse.java
+:100755 100755 c24329b1731bbe31643ef6a475c94c11479e5e52 8cffa6ea0c690913187804d30dfc0fd3c3fcd0c5 M	api/src/com/cloud/dc/StorageNetworkIpRange.java
+:100755 100755 693c7197770741de6bed21113c49af88b6746c77 04b9d0cac02972133ba9bcae6186d273664056ed M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit 96192e63476a81ea6d18847c92b873761e6e9d16
+tree 7fcff9ffdfbd7a788d38a5988705c3f40bf54272
+parent c69baeec47ef361e0213362c6e239a86c4cd8623
+author Jessica Wang <jessica@cloud.com> 1328567534 -0800
+committer Jessica Wang <jessica@cloud.com> 1328567534 -0800
+
+    bug 13452: System page - Change UI to handle createStorageNetworkIpRange API as async.
+
+:100644 100644 4cb51e03e918957b0af091da85928e0d40f7c110 65b73afafd626813cebdecc19f6f95673a4bcef4 M	ui/scripts/system.js
+
+commit c69baeec47ef361e0213362c6e239a86c4cd8623
+tree 41ed23f3c92224989412bf3753c53dd3743f9ffd
+parent a57f400f91a48d23f07f6f6663fed5c4a6ef30f2
+author Jessica Wang <jessica@cloud.com> 1328566637 -0800
+committer Jessica Wang <jessica@cloud.com> 1328566637 -0800
+
+    storage traffic page - IP Ranges tab - correct embedded object name.
+
+:100644 100644 a85e167ebd74e7991c724bbcf2e40e77ce591083 4cb51e03e918957b0af091da85928e0d40f7c110 M	ui/scripts/system.js
+
+commit a57f400f91a48d23f07f6f6663fed5c4a6ef30f2
+tree 0948f11b2cf48cacfa21dfff37ea74ce9963eb9a
+parent 771335338bb6a6759021d023fbd3278a5dde9715
+author frank <frank.zhang@citrix.com> 1328565662 -0800
+committer frank <frank.zhang@citrix.com> 1328565677 -0800
+
+    fix typo in listStorageNetworkIpRangeCmd
+
+:100755 100755 7d80904b59805739689aeb56a24d39823c7f9bfa efefc69fb1493b9308c4bbba3fe6ec6168f3b66f M	api/src/com/cloud/api/commands/listStorageNetworkIpRangeCmd.java
+
+commit 771335338bb6a6759021d023fbd3278a5dde9715
+tree 02818ebb70692b1055d3e7ae5e17ed6f0a07cc6a
+parent 1935d2c52ef13bfc401e1533711070ff7eb0c66f
+author Jessica Wang <jessica@cloud.com> 1328564980 -0800
+committer Jessica Wang <jessica@cloud.com> 1328564980 -0800
+
+    bug 13452: System page - Storage traffic type - IP Ranges tab - add Pod dropdown.
+
+:100644 100644 c57a0d14b9fb0e8ddfd8e793061b93e327f1efc2 a85e167ebd74e7991c724bbcf2e40e77ce591083 M	ui/scripts/system.js
+
+commit 1935d2c52ef13bfc401e1533711070ff7eb0c66f
+tree b732125be5c27a6e94263a4ffa0dc9f20ac41818
+parent 6cc49f6ebb3127b1d1126267c15dd5b3b1333694
+author Jessica Wang <jessica@cloud.com> 1328558617 -0800
+committer Jessica Wang <jessica@cloud.com> 1328558617 -0800
+
+    bug 13452: System page - Storage traffic type - IP Ranges tab - storage network's IP range does not have gateway. Remove gateway field.
+
+:100644 100644 9bfb5ea7d08f6ba5ce273bc869fd5b1df6055842 c57a0d14b9fb0e8ddfd8e793061b93e327f1efc2 M	ui/scripts/system.js
+
+commit 6cc49f6ebb3127b1d1126267c15dd5b3b1333694
+tree 688a98b8794a53044ed2a35bf510ab40afd49d08
+parent a65cb5aab51e88e03dc5207d3716c6e776c7882c
+author Jessica Wang <jessica@cloud.com> 1328556659 -0800
+committer Jessica Wang <jessica@cloud.com> 1328556685 -0800
+
+    bug 13461: deploy VM wizard - step 2 (select template/ISO step) - correct label "My ISOs" to be "All ISOs" because that's what really show here.
+
+:100644 100644 324d91c6208d5b9c8856df7eb76fa4378a08b2e7 74e72cd825f4dc0c926ea2bb459c83112c262833 M	ui/index.jsp
+:100644 100644 1f4dd1bb1137fde48e224cf496b58450411a6763 68bac444b8c14c990d8aa9127a9fb9638f3f3ff9 M	ui/scripts/ui-custom/instanceWizard.js
+
+commit a65cb5aab51e88e03dc5207d3716c6e776c7882c
+tree d714ffab6b63f65dd2ef4069b60257c12361867e
+parent 6779c6e6ed1b3a4e15878b69e0a4bea518ed19ab
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328551552 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328551613 -0800
+
+    Removed port ranges from createPortForwardingRule API
+
+:100644 100644 52bf11176b6bf301ff6eb2b0a2399b2bf454f64b 159eb8f24171e08580ff9f462324920768a13f1d M	api/src/com/cloud/api/commands/CreatePortForwardingRuleCmd.java
+
+commit 6779c6e6ed1b3a4e15878b69e0a4bea518ed19ab
+tree 312b8ce89ecc7e1065aa769fa7fb012e319215a2
+parent 0bbcb6d602253c6dd985d5702b66f1609b54ee2a
+author bfederle <bfederle@gmail.com> 1328548995 -0800
+committer bfederle <bfederle@gmail.com> 1328548995 -0800
+
+    UI form dialog fix
+    
+    Fix form elements not being removed from DOM after closing dialog on
+    save/cancel -- this may cause issues with conditional fields if
+    re-launching the form dialog.
+
+:100644 100644 0134acab634af6e04a881b0a7871b7bf9a443172 5fe3d085649390154696f3d0b69daaba0954c2ce M	ui/scripts/ui/dialog.js

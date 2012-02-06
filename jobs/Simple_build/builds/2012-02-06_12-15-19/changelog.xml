@@ -1,0 +1,20 @@
+Changes in branch origin/master, between bebe7936018ff86ae867e4ebda1058742f674404 and 0bbcb6d602253c6dd985d5702b66f1609b54ee2a
+commit 0bbcb6d602253c6dd985d5702b66f1609b54ee2a
+tree 752e3084aa518b55d84094f4c5555ca452a6203d
+parent bebe7936018ff86ae867e4ebda1058742f674404
+author Nitin Mehta <nitin.mehta@citrix.com> 1328540560 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328540560 +0530
+
+    Bug 13059: Introduce a new api to list top consumed resources in cloudstack.
+    Reviewed-By: Kishan
+
+:100755 100755 e179b2d293fa63ba8f698a2ea701759c609d87cb ce4b09564a8931c7c702936791c0da6ed7d81b1c M	api/src/com/cloud/api/commands/ListCapacityCmd.java
+:000000 100755 0000000000000000000000000000000000000000 c4681f0f3097cc883ae838dd07d3d1d82699836a A	api/src/com/cloud/api/commands/ListTopConsumedResources.java
+:100755 100755 61fc7c39b1f646788ad315ff7227c664f7cd4417 306e0ee4de20199a7d172929bac850d8f5dc4b3f M	api/src/com/cloud/capacity/Capacity.java
+:100755 100755 a6b3534b70dad9a287d36b3c958a52cfe629a94c 0bf3188f1d3b3a495a31c180d0f80d4df60f4f0f M	api/src/com/cloud/server/ManagementService.java
+:100755 100755 3870a512e171e97ffd85c53127d76e4d305ffd4f caa74cefd18feb3a741cb8b720d08362e7966682 M	client/tomcatconf/commands.properties.in
+:100755 100755 4944c2b464660d0782610be6911675eec9fbc8a6 ecfcc8c3b905ade181ac7958547e3a22bf342b74 M	core/src/com/cloud/capacity/CapacityVO.java
+:100755 100755 16510a8aa206c28ea5d73c0ae451b7f98731c980 693c7197770741de6bed21113c49af88b6746c77 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 79325b6f48b2519f18547bd74fbac9e61f04840d 3bab9012ccb163097e6929928535a3723c8aa9ba M	server/src/com/cloud/capacity/dao/CapacityDao.java
+:100755 100755 48f0c97503765702e1c8a1f029eaacee6e210921 b55ce91efc2631f1d1cab18b308111fdeebfcb19 M	server/src/com/cloud/capacity/dao/CapacityDaoImpl.java
+:100755 100755 901af658e1a3a07b041f46010db6ebcf7002c0c6 94714988734ddd7c39228dd4ec5fba911fd3af06 M	server/src/com/cloud/server/ManagementServerImpl.java

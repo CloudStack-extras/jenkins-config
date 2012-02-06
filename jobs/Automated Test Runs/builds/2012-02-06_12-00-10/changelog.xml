@@ -1,0 +1,54 @@
+Changes in branch origin/master, between 2b48c1b40f939b5aeea067ce0d1cfa34dc239a8c and 0bbcb6d602253c6dd985d5702b66f1609b54ee2a
+commit 0bbcb6d602253c6dd985d5702b66f1609b54ee2a
+tree 752e3084aa518b55d84094f4c5555ca452a6203d
+parent bebe7936018ff86ae867e4ebda1058742f674404
+author Nitin Mehta <nitin.mehta@citrix.com> 1328540560 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328540560 +0530
+
+    Bug 13059: Introduce a new api to list top consumed resources in cloudstack.
+    Reviewed-By: Kishan
+
+:100755 100755 e179b2d293fa63ba8f698a2ea701759c609d87cb ce4b09564a8931c7c702936791c0da6ed7d81b1c M	api/src/com/cloud/api/commands/ListCapacityCmd.java
+:000000 100755 0000000000000000000000000000000000000000 c4681f0f3097cc883ae838dd07d3d1d82699836a A	api/src/com/cloud/api/commands/ListTopConsumedResources.java
+:100755 100755 61fc7c39b1f646788ad315ff7227c664f7cd4417 306e0ee4de20199a7d172929bac850d8f5dc4b3f M	api/src/com/cloud/capacity/Capacity.java
+:100755 100755 a6b3534b70dad9a287d36b3c958a52cfe629a94c 0bf3188f1d3b3a495a31c180d0f80d4df60f4f0f M	api/src/com/cloud/server/ManagementService.java
+:100755 100755 3870a512e171e97ffd85c53127d76e4d305ffd4f caa74cefd18feb3a741cb8b720d08362e7966682 M	client/tomcatconf/commands.properties.in
+:100755 100755 4944c2b464660d0782610be6911675eec9fbc8a6 ecfcc8c3b905ade181ac7958547e3a22bf342b74 M	core/src/com/cloud/capacity/CapacityVO.java
+:100755 100755 16510a8aa206c28ea5d73c0ae451b7f98731c980 693c7197770741de6bed21113c49af88b6746c77 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 79325b6f48b2519f18547bd74fbac9e61f04840d 3bab9012ccb163097e6929928535a3723c8aa9ba M	server/src/com/cloud/capacity/dao/CapacityDao.java
+:100755 100755 48f0c97503765702e1c8a1f029eaacee6e210921 b55ce91efc2631f1d1cab18b308111fdeebfcb19 M	server/src/com/cloud/capacity/dao/CapacityDaoImpl.java
+:100755 100755 901af658e1a3a07b041f46010db6ebcf7002c0c6 94714988734ddd7c39228dd4ec5fba911fd3af06 M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit bebe7936018ff86ae867e4ebda1058742f674404
+tree fd01386ad6b121e7c75a134f524410eb6389a92b
+parent 110b96adf55a206ef19d465ffd2cab7ee68ab6a2
+author Naredula Janardhana Reddy <jana@cloud.com> 1328535994 +0530
+committer Naredula Janardhana Reddy <jana@cloud.com> 1328535994 +0530
+
+    Bug 12812:
+    Summary of changes:  Database changes will be rollbacked while applying the LB rule to the Netscaler device.
+       - Database changes will be rollbacked to previous state during the following Lb API's:
+          1) assignVM to LB rule
+          2) remove VM from LB rule
+          3) updateLb rule
+          4) deleteLb rule
+          5) create/attach sticky policy to Lb rule
+          6) delete sticky policy from Lb rule
+       - Database changes of the Lb rule will be not be rolledback during:
+           1) Removing IP
+           2) removing VM
+
+:100644 100644 e81ca25c661f5381f30da6d871e97060e0af461f a84db0a51474616a659e38957a631a0a4dc30211 M	api/src/com/cloud/api/commands/DeleteLBStickinessPolicyCmd.java
+:100644 100644 c2906fd2089d19474eda7202d84a650c15ec33c1 f2ce048dcc9a3f84068322ae8c4de1dc02b4201e M	api/src/com/cloud/network/lb/LoadBalancingRulesService.java
+:100755 100755 2ca817fd70317b437e4b602025b5df44fc99c069 a9b0c10dc508de2512a465f769f67cd1ac22b24b M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+
+commit 110b96adf55a206ef19d465ffd2cab7ee68ab6a2
+tree 064134eb1bfc3760829a6926d5592710e0e56a5f
+parent 2b48c1b40f939b5aeea067ce0d1cfa34dc239a8c
+author abhi <abhinandan.prateek@citrix.com> 1328526118 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1328526118 +0530
+
+    bug 13134: added encryption for ldap password
+
+:100755 100755 f626ff23b95480a721ab15b8acd1c7b0f2833c8b f57ab1b93e5a6cd2c15a79a9022fe000f94a1036 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 20d0a6e46d88cb136fc9393b19287c85b528c979 5b1d417d93cf5b485acf0eb10b30a4da46393bce M	server/src/com/cloud/server/auth/LDAPUserAuthenticator.java

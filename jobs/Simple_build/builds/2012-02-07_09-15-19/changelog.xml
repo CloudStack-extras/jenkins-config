@@ -1,0 +1,33 @@
+Changes in branch origin/master, between 16838128dae9632c5c45dd091542b5bf1edbdb8b and 858af18efacdd387adf696c804ab0ecb11ba9bea
+commit 858af18efacdd387adf696c804ab0ecb11ba9bea
+tree 730a8ed00b8bb9ecaa9acb7a1a742b27b46a932e
+parent 2f6b4bd4ab5e30872a76db3e88ffa44134480a7c
+author Murali reddy <Murali.Reddy@citrix.com> 1328622336 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1328622336 +0530
+
+    bug 12488: Netscaler - Invalid error message presented to the user when deployVm fails to implement network becasue of insuffucient capacity in Netscaler.
+    status 12488: resolved fixed
+
+:100644 100644 e3150e68edd43e9219b6931f3fd259bdc947b8cf bd37ccc844ca9a956c2d61bf9ef45c9e861921d9 M	server/src/com/cloud/network/element/NetscalerElement.java
+
+commit 2f6b4bd4ab5e30872a76db3e88ffa44134480a7c
+tree 10cfaad6f94b6fad5540d9777f223595b54e8438
+parent c4168e71f58ca5f1f37b85f4b65ebb6d3f039b91
+author Murali reddy <Murali.Reddy@citrix.com> 1328619094 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1328619094 +0530
+
+    bug 13180: Netscaler - SDX - Capacity field is not respected by the VPX instances that are created by SDX
+    status 13180: resolved fixed
+
+:100644 100644 2b5f7356152328bbff3d5908d04615b01eba3f46 edf4e8f7f4c6de2f114fb223c730e2b92cacf400 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java
+
+commit c4168e71f58ca5f1f37b85f4b65ebb6d3f039b91
+tree c8cf181004ba292f4ec0890fc6dd3816e97e407b
+parent 16838128dae9632c5c45dd091542b5bf1edbdb8b
+author Murali reddy <Murali.Reddy@citrix.com> 1328613684 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1328613684 +0530
+
+    bug 12432: Netscaler-Inspite of Network creation failing to implement guest Vlan , subsequent Vm creation succeeds.
+    status 12432: resolved fixed
+
+:100644 100644 af2b10e8bafa8c70c9c7a012a161cea6f7f22802 a6e72fe15358e85f06f492656bc6ebc982662f53 M	core/src/com/cloud/network/resource/NetscalerResource.java

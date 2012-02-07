@@ -1,0 +1,26 @@
+Changes in branch origin/master, between b2ce96af8590f24c7166087ba1edc96437c3c19c and b50da92f05a84689bbc4b5db1cba4d1d83f7c3f6
+commit b50da92f05a84689bbc4b5db1cba4d1d83f7c3f6
+tree 03dcf2018cfd9737dcc3526ced267847e1f307ea
+parent 4daf493f059252d5166a89d56f2527274d92b384
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328636647 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328636834 -0800
+
+    bug 13489: when add foreign key, index is created automatically
+    status 13489: resolved fixed
+    reviwed-by: Will Chan
+    
+    Conflicts:
+    
+    	setup/db/create-schema.sql
+
+:100755 100755 2317d194b001c35d47442f6e9df3a945821edb49 e91679b73758f2e2450f1a72ca6a46eb1d84134c M	setup/db/create-schema.sql
+
+commit 4daf493f059252d5166a89d56f2527274d92b384
+tree 8d05244c94912bd668b47efea4c289b411c39410
+parent b2ce96af8590f24c7166087ba1edc96437c3c19c
+author Sam Robertson <sam@cloud.com> 1328635803 -0800
+committer Sam Robertson <sam@cloud.com> 1328635803 -0800
+
+    use /usr/share/tomcat, not /usr/share/cloud
+
+:100644 100644 a348ff8c5d888f7a9b46d841d242c1fd814dfa02 df21f0ae334c7c4b27d24e9ccbec5ce84c332c30 M	tools/testClient/automated/automated.sh

@@ -30,7 +30,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>f8c887ca728d02eba43f78b354e37aa715b18d04</sha1>
+              <sha1>16838128dae9632c5c45dd091542b5bf1edbdb8b</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -38,7 +38,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>12</hudsonBuildNumber>
+            <hudsonBuildNumber>62</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -144,22 +144,22 @@
           <list/>
         </entry>
       </tags>
-      <ws>/var/lib/jenkins/workspace/First attempt</ws>
+      <ws>/var/lib/jenkins/workspace/Simple_build</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>12</number>
+  <number>62</number>
   <result>SUCCESS</result>
-  <duration>63292</duration>
+  <duration>65293</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/First attempt</workspace>
+  <workspace>/var/lib/jenkins/workspace/Simple_build</workspace>
   <hudsonVersion>1.447</hudsonVersion>
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>bfederle</string>
+    <string>Murali.Reddy</string>
   </culprits>
 </build>

@@ -1,0 +1,46 @@
+Changes in branch origin/master, between 858af18efacdd387adf696c804ab0ecb11ba9bea and b2ce96af8590f24c7166087ba1edc96437c3c19c
+commit b2ce96af8590f24c7166087ba1edc96437c3c19c
+tree f782dc234fc06ff68e971ba2a3f0c70c4c03f35d
+parent 496b67c8142b746e5507295b0bc5624b1283f4c7
+author Sam Robertson <sam@cloud.com> 1328633521 -0800
+committer Sam Robertson <sam@cloud.com> 1328633521 -0800
+
+    Adding automated.sh, removed failed attempt at setting CATALINA_HOME in ant build configuration
+
+:100755 100755 fdfc2d959da20d46c00b0bd11a024f7765815400 544a496c69af5db21f9a3db11f524c5526955358 M	build/build-tests.xml
+:000000 100644 0000000000000000000000000000000000000000 a348ff8c5d888f7a9b46d841d242c1fd814dfa02 A	tools/testClient/automated/automated.sh
+
+commit 496b67c8142b746e5507295b0bc5624b1283f4c7
+tree 9bb79e70561ad6bb3f1f9eef7c35195a71ce699e
+parent 48e7658b38a426038f66649df4d8b12acde5c581
+author Nitin Mehta <nitin.mehta@citrix.com> 1328628205 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328628205 +0530
+
+    Bug 13059: Make DB changes to list top consumed resources for enabled resources only. For this introdiuced a new state called capacity state in the op_host_capacity table and would be updated on every operation of zone pod cluster and host
+    Reviewed-By: Kishan
+
+:100755 100755 c4681f0f3097cc883ae838dd07d3d1d82699836a a26da14e679b88cb9a6d7bf4f8a269b9e921e74c M	api/src/com/cloud/api/commands/ListTopConsumedResources.java
+:000000 100755 0000000000000000000000000000000000000000 38c7c4547542b9b781b165fb50a4b32af177dd9d A	api/src/com/cloud/capacity/CapacityState.java
+:100755 100755 ecfcc8c3b905ade181ac7958547e3a22bf342b74 4ba9bb9b97db7df387b400109fd7a9a255caf695 M	core/src/com/cloud/capacity/CapacityVO.java
+:100755 100755 3bab9012ccb163097e6929928535a3723c8aa9ba 8d152fd52da1c637578bfbeb05539c1d1acb5e40 M	server/src/com/cloud/capacity/dao/CapacityDao.java
+:100755 100755 b55ce91efc2631f1d1cab18b308111fdeebfcb19 a8ea0208d289df07b2b87afa63c01c265ed5418f M	server/src/com/cloud/capacity/dao/CapacityDaoImpl.java
+:100755 100755 f57ab1b93e5a6cd2c15a79a9022fe000f94a1036 e537aade555c5c27d097b04fffacc92d001a1988 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 c26a8b529456d176539e78a5bdbae782e0d57234 9229dc11024a919c98390d86a4729f833e81479d M	server/src/com/cloud/resource/ResourceManagerImpl.java
+:100755 100755 b657321c125ee88829d80e417922fdf78bffc40d 2317d194b001c35d47442f6e9df3a945821edb49 M	setup/db/create-schema.sql
+:100755 100755 fb8bb61de1e3f323d47b824a2c9c1dd5500e75c1 72e2226d35cab6ef9da22850cfaaac8798adc2e4 M	setup/db/db/schema-2214to30.sql
+
+commit 48e7658b38a426038f66649df4d8b12acde5c581
+tree 5b037210ad744b51598115437631870ed3974685
+parent 858af18efacdd387adf696c804ab0ecb11ba9bea
+author kishan <kishan@cloud.com> 1328625119 +0530
+committer kishan <kishan@cloud.com> 1328625186 +0530
+
+    Bug 13384: Added utility to change MS and DB secret key. Both database and db.properties are updated.
+    Status 13384: resolved fixed
+    Reviewed-By: Nitin
+
+:100755 100755 9e74253e89f541d842c3bf3c66fd056cf378dfb6 b9eb504b959f2dc0517b35e14564eed67d32baed M	deps/.classpath
+:000000 100644 0000000000000000000000000000000000000000 ae9ae9969b634f7be3e04db3d129216d473ad798 A	deps/cloud-commons-configuration-1.8.jar
+:000000 100644 0000000000000000000000000000000000000000 98467d3a653ebad776ffa3542efeb9732fe0b482 A	deps/cloud-commons-lang-2.6.jar
+:000000 100755 0000000000000000000000000000000000000000 55d4913cff51e395fc70c89b59435ae7d12b6f61 A	utils/src/com/cloud/utils/crypt/EncryptionSecretKeyChanger.java
+:100755 100755 b5bc5e4c5041c7b1a87843faaa5fffe27e803be8 68a04e7e3450557fba177ba9941c346b6a171d3f M	utils/src/com/cloud/utils/crypt/EncryptionSecretKeyChecker.java

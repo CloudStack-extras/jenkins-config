@@ -1,0 +1,1231 @@
+Started by user [8mha:AAAAiR+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADJ4Sxg49UuLU4v0ixNzAWksXTqOAAAA[0mSam Robertson
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Using strategy: Default
+Last Built Revision: Revision b2ce96af8590f24c7166087ba1edc96437c3c19c (origin/master)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
+Commencing build of Revision b2ce96af8590f24c7166087ba1edc96437c3c19c (origin/master)
+Checking out Revision b2ce96af8590f24c7166087ba1edc96437c3c19c (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson2157553431890871679.sh
++ sh tools/testClient/automated/automated.sh
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+clean:
+   [delete] Deleting: /var/lib/jenkins/workspace/Automated Test Runs/target/ant_verbose.txt
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target/classes
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/dist
+
+clean-all:
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+automated-test-run:
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+-init:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-07T17:11:42Z
+     [echo] Build number is 3.0.0.2012-02-07T17:11:42Z
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
+
+compile-utils:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
+    [javac] Compiling 199 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-utils.jar
+
+compile-api:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/api/src
+    [javac] Compiling 704 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-api.jar
+
+compile-vmware-base:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-vmware-base.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/vmware-base/src
+    [javac] Compiling 34 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareContext.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-vmware-base.jar
+
+compile-core:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-core.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/core/src
+    [javac] Compiling 178 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-core.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-core.jar
+
+compile-agent:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-agent.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/agent/src
+    [javac] Compiling 42 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-agent.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/agent/src/com/cloud/agent/resource/computing/LibvirtVMDef.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-agent.jar
+
+compile-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/server/src
+    [javac] Compiling 818 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-server.jar
+
+build-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/client
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/client/lib
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
+     [copy] Copying 38 files to /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+     [copy] Copying 23 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
+     [copy] Copying 53 files to /var/lib/jenkins/workspace/Automated Test Runs/target/db
+
+build-console-viewer:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
+    [javac] Compiling 21 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/console/src/com/cloud/console/ConsoleCanvas.java:1578: warning: [deprecation] KeyEvent(java.awt.Component,int,long,int,int) in java.awt.event.KeyEvent has been deprecated
+    [javac]   		KeyEvent evt = new KeyEvent(this, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 
+    [javac]   		               ^
+    [javac] 1 warning
+    [javac] Compiling 8 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/VMOpsConsoleApplet.jar
+
+compile-console-common:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-common.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console/src
+    [javac] Compiling 21 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-common.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console/src/com/cloud/console/ConsoleCanvas.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-common.jar
+
+compile-console-proxy:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src
+    [javac] Compiling 16 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-proxy.jar
+
+copy-console-proxy:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/conf
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/logs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/applet
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/images
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/js
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/ui
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/css
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/certs
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/conf
+     [copy] Copying 22 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/images
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/applet
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/js
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/ui
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/css
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/certs
+
+build-console-proxy:
+     [copy] Copying 8 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/conf
+
+build-agent:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/agent
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/scripts
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/conf
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/logs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/db
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/storagehdpatch
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/conf
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/agent/conf
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/agent
+
+build-scripts:
+     [copy] Copying 153 files to /var/lib/jenkins/workspace/Automated Test Runs/target/scripts
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/target/scripts
+
+build-ui:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 135 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 516 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+
+compile-ovm:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-ovm.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/ovm/src
+    [javac] Compiling 18 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-ovm.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/ovm/src/com/cloud/ovm/object/OvmStoragePool.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-ovm.jar
+
+build-ovm:
+
+-init-package:
+
+package-oss-systemvm:
+      [zip] Building zip: /var/lib/jenkins/workspace/Automated Test Runs/dist/systemvm.zip
+
+build-systemvm-patch:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch/usr/sbin
+     [copy] Copying 75 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch/usr/sbin
+      [tar] Building tar: /var/lib/jenkins/workspace/Automated Test Runs/dist/patch.tar
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist
+     [gzip] Building: /var/lib/jenkins/workspace/Automated Test Runs/dist/cloud-scripts.tgz
+   [delete] Deleting: /var/lib/jenkins/workspace/Automated Test Runs/dist/patch.tar
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/dist/build-patch
+
+package-oss-systemvm-iso:
+
+build-opensource:
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/dist
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+
+build-war-oss:
+      [war] Building war: /var/lib/jenkins/workspace/Automated Test Runs/dist/client/client.war
+
+-init-test:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/test/classes
+
+compile-testclient:
+     [echo] src is /var/lib/jenkins/workspace/Automated Test Runs/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-test.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/test/src
+    [javac] Compiling 37 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-test.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-test.jar
+
+compile-usage:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-usage.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/usage/src
+    [javac] Compiling 15 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-usage.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-usage.jar
+
+build-all:
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+deploy-common:
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+unzip:
+    [unwar] Expanding: /var/lib/jenkins/workspace/Automated Test Runs/dist/client/client.war into /usr/share/cloud/webapps/client
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.volume.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_snapshoticon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_totalbg.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/login_button_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_template_linux.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_events_error.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_host.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dbbar_low.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/search_closeicon_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_networkoffering.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/setup_heartbeat_sr.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_language_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_leftmenu_highlighted.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.event.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-224to225.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-2212to2213.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/listvmtmplt.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/diskvolume_dbdomain.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/actionpanel_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/enableStaticNAT.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/access-profile-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenu_titlebg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_filter_uparrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-nav-item-active-project-view.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vm_console.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/bumpUpPriority.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-icons_888888_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/shrink_button.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/create_private_template.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenserver56fp1/patch
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginoptions_ddarrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_dashedborder.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_addicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/prev_midnav.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/data-22beta1to22beta2.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/overlay.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_adv_searchbg.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-2210to2211.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/cloud_logo.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-google-gson-1.7.1.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-level.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/temp_centosicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_template_centos.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/access-profile-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/cluster.jsp
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/add_button_hover.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-bg_flat_75_ffffff_40x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_ipicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-junit.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/alert_icon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_primarystorage.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/security-policy-group.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_flat_0_aaaaaa_40x100.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-email.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_networkgroupicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/gridbot_actionbutton.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-logging-1.1.1.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/upgrade_snapshot.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/network_ipadd_midmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-bg_flat_0_aaaaaa_40x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/securityRules.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-222to224-cleanup.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/logger.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/events.js
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/switch_top.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/close_button_hover.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/exdhcp/prepare_dhcpd.sh
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/cloud_custom.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery.md5.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_diskofferingicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/tick_review.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenserver60/NFSSR.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/template.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/util/prepare_linmin.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/multiEdit.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.crosshair.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_leftmenubg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/systemserviceoffering.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/open-configuration.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_sidearrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.resize.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/instance.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/cloud-propagate-vlan.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-icons_cd0a0a_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-21to22.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/delvm.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-what-is-cloudstack.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/secondary/installIso.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/call_firewall.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/data-217to218.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/kvm/rundomrpre.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/search_refreshicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_account_admin.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/actionpanel_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/css/custom2.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-222to224.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom_login_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_eventsicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/hostvmstats.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/css/cloudstack3.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/ovstunnel
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/css/jquery-ui.custom.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_header_bg.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/step1_bg_unselected.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/filter_downarrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_headerbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/network/security_group.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/create_privatetemplate_from_snapshot.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/ZoneWizard-AddHost.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vlan_add.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-2211to2212.sql
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/versions.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/action_ddarow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/sharedFunctions.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/deploy-db-dev.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_midmenu_selected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-manageontap.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/addingfailed_closeicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.diskoffering.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/infoerror_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_leftmenu_expanded.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/prev_midnav_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenu_emptymsg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/listvmdisk.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_actionpanel_border.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_totalicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/switch_end.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_network_networkgroup.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/shrink_button_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/destroyvm_actionicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_highlight-hard_75_a7c1d2_1x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Network.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenserver56/patch
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_template_windows.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/filter-term-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_midmenu_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_leftmenu_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_alerts.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/configuration_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/address-book-entry-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/swiftxen
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/destroy-anim.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/systemvm/injectkeys.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/util/qemu-ifup
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/host.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/templates.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/deploy-db-simulator.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-discovery.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.logger.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/startvm_actionicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/installIso.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/kvm/setup_agent.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_closedarrow_nonexp.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-collections-3.2.1.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/static-nat-rule-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/zone.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sample-project-view.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ike-gateway-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dbaccounts_headerbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1stepbox_slected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_account_domain.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_adv_searchbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_mgmtconsole_logo.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_loginbox_bot.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_podicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/address-pool-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/setupxenserver.sh
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/jquery-ui.custom.min.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/dashboard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.alert.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.primarystorage.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/zoneWizard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_glass_75_dadada_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-icons_cd0a0a_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/detailView.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenserver56fp1/NFSSR.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/offeringbox_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.secondarystorage.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/ajax-loader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/projects.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/css/cloudstack3-ie7.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/installer/installcentos.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/cross_review.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_loginbox_bot.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-mysql-connector-java-5.1.7-bin.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_loginbox_bot.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_highlighted.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.securitygroup.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dynamic-vpn-client-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_loader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/networkoffering.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-trilead-ssh2-build213.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/groupbox_top.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/contenttab_selected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.pie.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/create-database-premium.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/dialog.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/templatestitle_icons.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/date.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/public-ip-filter-term-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/white_overlay.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/network.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_actionpanel_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-icons_cd0a0a_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/sortable_leftarrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/fsimage.so
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-libvirt-0.4.5.jar
+    [unwar] Failed to change file modification time
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-axis.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-netscaler.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/revwiz_nonselectednumber.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dbbar_mid.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/instance-wizard-parts.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/vmware-lib-jaxrpc.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/getRouterStatus.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/classes/resources/messages_es.properties
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/infoerror_icon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/language_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/zone-interface-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_leftmenubg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-login.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/secondary/swift
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_glass_30_ffffff_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/templates_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_logo.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sample-wizard/step5.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_white_closedarrow_nonexp.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/ZoneWizard-AddSecondaryStorage.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/addingfailed_closeicon_hover.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/create-schema-premium.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/main.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/client_login_logo.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.network.js
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery.validate.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/ovsgre
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zonepopup_bot.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/info_icon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/submenu_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/login.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_actions.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/systemvm/id_rsa.cloud
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ike-policy-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_instanceicons.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/icons.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/listView.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_flat_75_ffffff_40x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-login.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_stoppedicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-21to22-premium.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_system_serviceoffering.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.colorhelpers.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vlan_barbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/pingtest.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/test_provisioning.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_glass_65_ffffff_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-22beta3to22beta4.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/cloud-prepare-upgrade.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sample-wizard/step2.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/gird_editicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/static-nat-rule-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/login_button.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/filter-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_editicon_hover.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/serviceoffering.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/client_login_logo.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/ZoneWizard-AddPrimaryStorage.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-xmlrpc-client-3.1.3.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-iControl.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/private-interface-with-filters-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.networkoffering.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/whiteopened_arrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.systemserviceoffering.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom_login_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vm_continuebutton_hover.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/pod.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginoptions_dropdownbutton_hover.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/pagination_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenu_selected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/content/tab_test.html
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/close_button.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_logo.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/sprite_leftmenu.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/stop_button.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/globalsetting.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/lbStickyPolicy.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xcpserver/patch
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/get_domr_kernel.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/ipRules.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/users_dbdomain.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.router.js
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dest-nat-rule-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/language_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/private-interface-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/login.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.iso.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/serach_textbox.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.cluster.js
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/reset.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/vmware-vim25.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_templatesicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/advancesearchpopup_bot.gif
+    [unwar] Failed to change file modification time
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/networkswitch_directicon.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-ehcache.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/secondary/createtmplt.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_volumeicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/grid_headerbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/language_ddarrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/cloudStack.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/templates.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/installer/run_installer.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-icons_454545_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_usedbox.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Projects-Details.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_errorglass_30_ffffff_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_midmenubg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-icons_222222_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/next_midnav.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/create-database.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginbox_top.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-section-switcher.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/temp_windowsicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.pod.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-breadcrumbs.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/kvm/kvmheartbeat.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/search_closeicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/check_heartbeat.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/networkswitch_virtualicon.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zonepopup_bot.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/guest-vlan-filter-term-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/adv_searchbutton_hover.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1menutab_off.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-ws-commons-util-1.0.2.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/status_green.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/status_gray.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/diskoffering.jsp
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_leftmenu_expanded.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/logo-login.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/mid_addingbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/play_button.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-nav-item-project-view.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/big_loading.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1menutab_off_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/zoneWizard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/js/jquery-ui.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/security-policy-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dialog_popupbuttonbg_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-system-network-traffic.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dialog_popupbuttonbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-header.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_account_user.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/volume.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/logo.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/ZoneWizard-AddCluster.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/ProjectDashboard.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sample-wizard/step4.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/l2tp_vpn.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/stop_button_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenserver60/patch
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.widget.tab.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-icons_2e83ff_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ipsec-vpn-getone.xml
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginbox_top.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/alert.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/add_vlanbutton.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/search_refreshicon_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/META-INF/MANIFEST.MF
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-log4j-extras.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/footer_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/templates.simulator.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_closedarrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/switch_mid.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/adding_loader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-21to22-cleanup.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1_vmopoup_left.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/actions_actionicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_serviceofficon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Dashboard2.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_flat_75_ffffff_40x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_language_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/templates.kvm.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/primarystorage.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/router.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/actiondd_bg.gif
+    [unwar] Failed to change file modification time
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/classes/resources/messages_ja.properties
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/temp_linuxicon.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/vhd-util
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-console-common.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ike-gateway-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/index.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/network_networkgroup_midmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/jquery-ui-1.8.2.custom.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginoptions_dropdownbutton.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1_popupbuttonbg_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/jquery.cookies.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_resourceicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/events_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/jquery.md5.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/favicon.ico
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_serviceofferingicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_secondarystorageicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/kill_copy_process.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/storage_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/utils.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/buttons.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/revwiz_nonselcted_tempbut_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/proxy-arp-add.xml
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-bcprov-jdk16-1.45.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_iso.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_accountsicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1admin_menutab_off.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-2213to2214.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/instance_dbdomain.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/network.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.instance.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/address-pool-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Templates.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_detailspointer.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-system-chart-lines.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/data-20to21.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/221to222upgrade.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/systemvm.jsp
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/installWizard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/filter_uparrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.account.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Network-Details.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_clustericon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/more_button.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/src-nat-rule-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/instance_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_events_info.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-dialog-header.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/cross_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_mgmtconsole_logo.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/exdhcp/dhcpd_edithosts.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/notifications.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_runninicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-api.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/network/vnet/modifyvlan.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dest-nat-pool-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sprites.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_glass_30_393939_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/ping/prepare_tftp_bootfile.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-snapshot-223to224.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-227to228.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/modifyvlan.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/itemheader_arrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenserver56/InterfaceReconfigure.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-panel-shadow.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/secondary/listvmtmplt.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/classes/resources/messages_zh_CN.properties
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_ipaddressicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-2214to30-cleanup.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-agent.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/src-nat-rule-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/resource_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_leftmenu_highlighted.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1_popupheaderbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-network.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_closedarrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-ovm.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_filter_uparrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_glass_55_fbf9ee_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/date.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_login_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/index-20to21.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/refresh_actionicon.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-222to224-premium.sql
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/poweredby.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_newloader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/templates.vmware.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_contenttab_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-221to222-premium.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vm_closebutton.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/src-nat-pool-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.dashboard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/vmops
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-icons_ffffff_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/install-wizard-parts.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.serviceoffering.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery.timers.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/src-nat-pool-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_hosticon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-221to222.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-snapshot-217to224.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/gridbot_actionbutton_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-status_box.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/copy_vhd_to_secondarystorage.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenu_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.systemvm.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/advance_highlighted.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-icons_454545_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dynamic-vpn-client-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-configuration-1.8.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.init.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_snapshotsicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_dashboardicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/clr_button_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/sortable_rightarrow_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_system_globalsettings.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/secondarystorage.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/projects.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_ipicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/logo.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-jstl-1.2.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-log4j.jar
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_headerleft.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_isoicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/jquery.timers.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1admin_menutab_on.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_contenttab_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-pool-1.5.6.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-217to218.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_bigloading.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_cproxyicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/minimize_button.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/network_zonecloud.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/globalSettings.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xcpserver/nfs.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/cloud.core.callbacks.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_alerticon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/login_logo.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.zone.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ipsec-vpn-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginbox_bot.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.callbacks.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-gradients.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_clustericon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/test.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/gird_editicon_hover.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_hosticon.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-icons_FFF_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/zone-interface-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/vmopsSnapshot
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/secondary/cloud-install-sys-tmplt
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dbbar_high.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/alert_icon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/setup_heartbeat_file.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-224to225-cleanup.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.navigate.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_selected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.threshold.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Storage-Details.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/add_domainbutton_hover.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_contenttab_ON.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_glass_75_000000_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-core.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/resource.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dest-nat-rule-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/consoletb_box.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/private-interface-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_systemvmicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/importmpl.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/memory_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/ajax-loader-small.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/vm_actionbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dialog_popupheaderbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_zoneicon.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/jquery-ui-1.7.2.custom.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_actionpanel_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/excanvas.js
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/cloudBrowser.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Templates-Details.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_flat_0_aaaaaa_40x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/adv_searchbutton.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/add_domainbutton.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/address-book-entry-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/dataTable.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/domain_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.globalsetting.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_domainicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/add_userbutton_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dest-nat-pool-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-httpclient-3.1.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/secondstoragetitle_icons.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_dashboardicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/adv_searchbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginbox_mid.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/installWizard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/classes/resources/messages.properties
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-breadcrumb.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/search_textbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/call_loadbalancer.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/citrix-logo-darkbg.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vmpopup_mid.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/managesnapshot.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/vmware-apputils.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.image.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_storage_volume.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_actionloader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-gradient-white-transparent.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_loginbox_bot.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dbrow_even.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-229to2210.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_storage_snapshots.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/application-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_search_textbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_openarrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-naas.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/account.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/cleanupmyvms.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/make_migratable.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_actions_hover.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/index.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ajax-loader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/storage.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.template.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/arrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/ZoneWizard-StorageTraffic.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_glass_55_fbf9ee_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_actions_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/snapshot.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Events.jpg
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Dashboard.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-225to226.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_systemvmicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-xenserver-5.6.100-1.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.domain.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Projects.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-nav-item.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-codec-1.5.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/createvm.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-dialog-body.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/next_midnav_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/systems_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/step2_selected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-install-wizard-header.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_filter_downarrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/securitygroup.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/selected_loader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/static-nat-rule-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_editicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenserver56/NFSSR.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/index.html
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/address-pool-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-20to21.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/css/logger.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/cloud-setup-bonding.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/get_iqn.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/copy_vhd_from_secondarystorage.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_events_warning.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/accounts_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/networkswitch_infoicon_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-netscaler-sdx.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-221to222-cleanup.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/physicalResources.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_maindownarrow.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/src-nat-rule-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zonepopup_top.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/jquery.min.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/close-configuration.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/proxy-arp-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-network-nat.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-nav-item-active.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/cpu_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/errormsg_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/comment_loader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/exdhcp/dnsmasq_edithosts.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/create-index-fk.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ike-policy-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Storage.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loginbox_mid.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/Events-Details.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_actionpanel_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-details-tab-gradient.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/index.html
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/reviewboxeven_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/dbrow_odd.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/advancesearchpopup_top.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/dashboard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/widget/tab-template.html
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1_popupbuttonbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xcpserver/NFSSR.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-utils.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/network_info.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/contenttab_unselected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-breadcrumbs-project-view.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/installer/createtmplt.sh
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/vmopspremium
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/domain.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/util/macgen.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_expanded.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-227to228-premium.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/server-setup.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_headerleft.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_secgroupicons.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_routersicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_loadnetworkicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xs_cleanup.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/getDomRVersion.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/system.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vmpopup_bot.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ike-gateway-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/sortable_rightarrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_midmenu_selected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vmpopup_bot.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/access-profile-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.ipaddress.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/loading_messagebg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-system-chart-compute.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/more_button_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/configuration.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/info_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-2211to2212-premium.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/domains.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_glass_75_212121_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_leftmenu_contentselected.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/revwiz_nonselcted_tempbut.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/minimize_button_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_stoppedbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/web.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.symbol.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_volumeicons.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_search_textbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/add_userbutton.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/step1_bg.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_actions.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1gridheader_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/private-interface-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/resources_totalbg.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_leftmenu_contentselected.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/server-setup.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-icons_222222_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.selection.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/events.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/addvm_actionicon.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/step2_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_filter_downarrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-2214to30.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/network_zoneconnect.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/dhcp_entry.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_glass_65_ffffff_1x400.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/routers_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_midmenu_hover.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vm_continuebutton.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1_vmopoup_mid.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/templates.xenserver.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/othersteps_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/proxy-arp-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/security-policy-rename.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_language_bg_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/vm_data.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/underconstructionbg.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/mgmtconsole_logo.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/checkchildren.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1header_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_securityGroup.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery.cookies.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-install-wizard-header.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/revwiz_selcted_tempbut.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-console-proxy.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sample-wizard/step6.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_language_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-bg_inset-soft_95_fef1ec_1x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/recurringSnapshots.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/mid_default.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/rollback.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.fillbetween.js
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/gridheader_loadingbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/MultiEdit.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/scripts/cloud.core.test.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/gradients.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenu_navbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dest-nat-rule-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenuicon_system_diskoffering.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-transparent-white.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/laststep_slectedbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/addvm_actionicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/firewall-filter-bytes-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/address-book-entry-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_openarrow.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/instances.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/flot/jquery.flot.stack.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-jsch-0.1.42.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/hostnetwork_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_popuploader.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1stepcontainer_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vlan_connect.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/event.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/contenttab_unselected_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/laststep_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_language_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/swift
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/ipassoc.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zonepopup_mid.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_accounticon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/hosts_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/db_runningbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-xstream-1.3.1.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-dbcp-1.4.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/postprocess-20to21.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/v1menutab_on.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/stopvm_actionicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/xenheartbeat.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/status_red.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/play_button_hover.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-cglib.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-table-head.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/instanceWizard.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/grid_detailspointer.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-wsdl4j.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-icons_222222_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/clr_button.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_storageicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_white_closedarrow.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/infomsg_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/createtmplt.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/vm-instance-screen-sample.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/header_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/css/main.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/22beta4to22GA.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_header_bg.jpg
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/networkswitch_infoicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/networkUsage.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/create-schema.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-22beta1to22beta2.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_language_bg_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/rebootvm_actionicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/images/submenu_linkbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/util/ipmi.py
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/offeringbox_destop.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_leftmenu_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/security-policy-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_loadicon.gif
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/vmware-vim.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-button-view-more.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_contenttab_ON.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/primestoragetitle_icons.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-vmware-base.jar
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_globalsettingsicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-icons_2e83ff_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/application-getone.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/network_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/images/ui-bg_inset-soft_95_fef1ec_1x100.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-httpcore-4.0.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/cloud-clean-vlan.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/core.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-xmlrpc-common-3.1.3.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/login_bg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vmpopup_nextbut.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/tick_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/create-schema-simulator.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-jasypt-1.8.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/managevolume.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-backport-util-concurrent-3.0.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-notifications.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sample-wizard/step1.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/sortable_leftarrow_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-jnetpcap.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/ipaddress.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_midmenubg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_white_openedarrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/screens/ZoneWizard-SetupGuestTraffic.jpg
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/ui-icons_2e83ff_256x240.png
+    [unwar] Failed to change file modification time
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/storage/qcow2/listvmdisksize.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vmpopup_top.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/css/custom1.css
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/exdhcp/prepare_dnsmasq.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui-custom/zoneChart.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/right_loadingbg.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/title_podicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom1/images/custom1_actionpanel_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-icons_454545_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/bg-breadcrumb-project-view.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/group_icon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/addingfailed_icon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/dashboard.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/midmenu_dashedborder.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-server.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/db/schema-228to229.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/images/sample-wizard/step3.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-icons_FFF_256x240.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/cloud-commons-lang-2.6.jar
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/accounts.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/tree_minusopen_icon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/help_actionicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/alert_leftmenuicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ike-policy-add.xml
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dynamic-vpn-client-getall.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.host.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/scripts/ui/widgets/treeView.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/actions_actionicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/actionpanel_border.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/network_managevmicon.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/ipsec-vpn-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/domr/save_password_to_domr.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/jsp/iso.jsp
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/launch_hb.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/zone_zoneicon.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/test/css/images/sortable_groupbox.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vm_closebutton_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/add_button.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/commit.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/ui-icons_ffffff_256x240.png
+    [unwar] Failed to change file modification time
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/dest-nat-pool-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/vmpopup_prevbut.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/login_textbg.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/language_bg_hover.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/setup_iscsi.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/advancesearchpopup_mid.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/db/index-212to213.sql
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/leftmenu_openarrow.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/networkswitch_detailsbox.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.snapshot.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/images/snapshots_dbdomain.png
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery.easing.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/scripts/cloud.core.resource.js
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/network/juniper/security-policy-add.xml
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/installer/installdomp.sh
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/old/custom/custom2/images/custom2_actionpanel_border.gif
+    [unwar] Unable to expand to file /usr/share/cloud/webapps/client/lib/jquery-ui/css/jquery-ui.css
+    [touch] Creating /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/version
+
+BUILD FAILED
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-tests.xml:270: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Automated Test Runs/build/developer.xml:173: Could not create /usr/share/cloud/webapps/client/WEB-INF/lib/scripts/vm/hypervisor/xenserver/version
+
+Total time: 59 seconds
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

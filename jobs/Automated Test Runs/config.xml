@@ -56,7 +56,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/tools/testClient/automated/automated.sh</command>
+      <command>sh tools/testClient/automated/automated.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>

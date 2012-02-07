@@ -3,7 +3,9 @@
   <actions>
     <hudson.model.CauseAction>
       <causes>
-        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>sam</userId>
+        </hudson.model.Cause_-UserIdCause>
       </causes>
     </hudson.model.CauseAction>
     <hudson.plugins.git.util.BuildData>
@@ -762,7 +764,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>bbe6b5f91946110251a6ed042ea92e4e22d46189</sha1>
+              <sha1>b2ce96af8590f24c7166087ba1edc96437c3c19c</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -770,7 +772,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>75</hudsonBuildNumber>
+            <hudsonBuildNumber>101</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -955,12 +957,12 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
-      <result>SUCCESS</result>
+      <result>FAILURE</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>75</number>
-  <result>SUCCESS</result>
-  <duration>74887</duration>
+  <number>101</number>
+  <result>FAILURE</result>
+  <duration>72829</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -969,9 +971,5 @@
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
-  <culprits>
-    <string>jessica</string>
-    <string>prachi</string>
-    <string>bfederle</string>
-  </culprits>
+  <culprits/>
 </build>

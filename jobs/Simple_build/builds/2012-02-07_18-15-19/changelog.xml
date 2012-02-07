@@ -1,0 +1,285 @@
+Changes in branch origin/master, between 8ca7918d03583064495f0378cd3b2fabd845d941 and 663f9bb5c24b15878e8d80183bbd4621c9d5d794
+commit 663f9bb5c24b15878e8d80183bbd4621c9d5d794
+tree 30e1555146748c41e8716dbbf601e73059756cb4
+parent 966c18cdefd10c3efef28e4f5e55615bc30957d2
+author Jessica Wang <jessica@cloud.com> 1328656188 -0800
+committer Jessica Wang <jessica@cloud.com> 1328656188 -0800
+
+    bug 13500: cloudstack 3.0 new UI - deployVM page - step 1 - provide description to zone, template, ISO.
+
+:100644 100644 0157f052bc636e9b6db938be19cc176ed9beb18e 93a4b16148d3b53562e8b9ef0cd480d4536da7f0 M	ui/index.jsp
+
+commit 966c18cdefd10c3efef28e4f5e55615bc30957d2
+tree 89ab6508244c59072a3e54bf7489e5747cc83f03
+parent 0fb27776fe8840897ae31b038b3562801b7bd58d
+author Jessica Wang <jessica@cloud.com> 1328654564 -0800
+committer Jessica Wang <jessica@cloud.com> 1328654583 -0800
+
+    bug 13427: network page - create port forwarding rule - don't allow specifying range for private port and public port field.
+
+:100644 100644 3784695c10b833858888c8d600de9a1aedcee126 8c83ac5d1642a05eb84ad87d0282ee2b842ec21f M	ui/scripts/network.js
+
+commit 0fb27776fe8840897ae31b038b3562801b7bd58d
+tree 00c5b289ece5089a5990105edbc25b2024eae20e
+parent 8eff5b97f5cea03fe2f65cd4f03c3c2feb6c1181
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328654282 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328654303 -0800
+
+    Fixed listTopConsumedResources to work w/o specifying page/pageSize
+
+:100755 100755 8d152fd52da1c637578bfbeb05539c1d1acb5e40 7e9d0809701f6bad309f0fe0cb6fed307b412584 M	server/src/com/cloud/capacity/dao/CapacityDao.java
+:100755 100755 a8ea0208d289df07b2b87afa63c01c265ed5418f d7c1ef2816e95929e0ca6dd5924314cd8f7ef80c M	server/src/com/cloud/capacity/dao/CapacityDaoImpl.java
+:100755 100755 164e33316116ebc378f62722fa8f53189c919af2 561228a8ca0dd25857d1c3bb1b508007e1f88c5c M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 1aa4048cb0f46e8c8e4e05afd665188f9f0608cd
+tree 8d979c429012f02f82486e27be7f1cd86605811c
+parent 1375a70f84847e13d490ac1bb59537930a81b970
+author bfederle <bfederle@gmail.com> 1328653879 -0800
+committer bfederle <bfederle@gmail.com> 1328653879 -0800
+
+    Don't show invitations tab if project invites are disabled
+
+:100644 100644 e07acdf3d7e14e3a718b673abd5178fbd17ffa32 c1b09f48716bfabb6da84eebfeb31bc067bdd2d8 M	ui/scripts/projects.js
+
+commit 1375a70f84847e13d490ac1bb59537930a81b970
+tree b758ed4eca36b468d8759b88ec1d6113f9c0070c
+parent cb678c2f21898b34740f3d682e32c4fdd4710274
+author bfederle <bfederle@gmail.com> 1328653861 -0800
+committer bfederle <bfederle@gmail.com> 1328653861 -0800
+
+    Only show enter token button if no invitations are present
+
+:100644 100644 35175c5b2b1bd7ff6d9eb5ffb49a87a180cd4e27 e07acdf3d7e14e3a718b673abd5178fbd17ffa32 M	ui/scripts/projects.js
+
+commit cb678c2f21898b34740f3d682e32c4fdd4710274
+tree 2a705b19e2ea869b9d691d185b87b04c7d489e7a
+parent 593af5868a67ff38b6c2db00bbaf850071b90ae6
+author bfederle <bfederle@gmail.com> 1328651770 -0800
+committer bfederle <bfederle@gmail.com> 1328651770 -0800
+
+    Add projects tab pre-filter; misc. fixes
+
+:100644 100644 5c954c710413f2bf2d471fb598e5ad38fc7abcfc 35175c5b2b1bd7ff6d9eb5ffb49a87a180cd4e27 M	ui/scripts/projects.js
+
+commit b5fa4d76cd475ef2554226a1405d4dfb1863dbb9
+tree b744abab64536adc0c6d8f72b48baba2029a8a9f
+parent beb4a518bc5e52ae41ae952bf7dd046fbc2f3fbb
+author Jessica Wang <jessica@cloud.com> 1328651581 -0800
+committer Jessica Wang <jessica@cloud.com> 1328651600 -0800
+
+    bug 13499: remove firewall rule - remove Rule ID from notification message.
+
+:100644 100644 9fcdd72724ae0f7033b3c24360f9c8e2a8ac158c 3784695c10b833858888c8d600de9a1aedcee126 M	ui/scripts/network.js
+
+commit beb4a518bc5e52ae41ae952bf7dd046fbc2f3fbb
+tree 6be09d663dc4ace985889b261c1845ba69e98117
+parent 3c54e8968d4d4b8276de6bd7696c3fdf15d2bd72
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328650323 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328650853 -0800
+
+    bug 13508: fixed inconsistencies in key names during db upgrade
+    status 13508: resolved fixed
+    Reviewed-by: Will Chan
+    
+    Conflicts:
+    
+    	setup/db/db/schema-2213to2214.sql
+
+:100644 100644 0922d3e830a42b1a919cec85d55d8445da6a1d24 d1e49d35a6d634261425e1a8465a45a84bcb448a M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+:100644 100644 ce76e73187c935a4c7e5040713f6cbf055318037 2a7d2527527eb5dc71b1637ae037a5531630eacf M	setup/db/db/schema-2213to2214.sql
+
+commit 3c54e8968d4d4b8276de6bd7696c3fdf15d2bd72
+tree e7041a9b7d7a4abf12531fee690cb5ac81c80999
+parent 29a8361395d0fd4fc7979195914f5f5509483ed3
+author Jessica Wang <jessica@cloud.com> 1328650106 -0800
+committer Jessica Wang <jessica@cloud.com> 1328650125 -0800
+
+    bug 13497: network page - detail view - add domain field, account field.
+
+:100644 100644 c0624d0b93131e0a21c9024f879aef8bfe262725 9fcdd72724ae0f7033b3c24360f9c8e2a8ac158c M	ui/scripts/network.js
+
+commit 29a8361395d0fd4fc7979195914f5f5509483ed3
+tree 614b1a75b26ea720034682e90d3e21af95e8e8d8
+parent 9c0273e6aa83ef17c6e58651452cd135807a06d1
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328649307 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328649387 -0800
+
+    bug 13335: fixed listProjectInvitations by projectId
+    status 13335: resolved fixed
+
+:100644 100644 5e4f8a090b94c9599171e28a11d8c6b128dd3c37 f8b70208f012a06a9516fce6fbee204ecd1f81a0 M	server/src/com/cloud/network/firewall/FirewallManagerImpl.java
+:100755 100755 a9b0c10dc508de2512a465f769f67cd1ac22b24b 6205ebba5ca07c26ff9a0018f49a66504ce9c1ed M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+:100755 100755 3a86aa70d5074070e68ad36c3d0cf81a28698578 fee773e9121d09584af32ad5b5a4fbfe2472dc62 M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+:100755 100755 2fbfe66fe64b5a5a83e8c3a6654061600df0b619 d9b0dc9ba37a0cfdcf10f89daad216a4cbf98bcd M	server/src/com/cloud/network/security/SecurityGroupManagerImpl.java
+:100755 100755 728370ecf92ced413294e11978b58809737886b5 806497b69d36f8059483e1ac073f5315a64df9c8 M	server/src/com/cloud/network/vpn/RemoteAccessVpnManagerImpl.java
+:100755 100755 7fd1c094a0a7bdec3ff165ecca69a104d18f0c4f 7ddcadb5c7204e1c87b9b7d1f7cafc78da3187d6 M	server/src/com/cloud/projects/ProjectManagerImpl.java
+:100755 100755 94714988734ddd7c39228dd4ec5fba911fd3af06 164e33316116ebc378f62722fa8f53189c919af2 M	server/src/com/cloud/server/ManagementServerImpl.java
+:100755 100755 a019d58fc89dc097622c8d00d213f428b7212f02 db6e41220de112b373af6c665d341834bef42ba4 M	server/src/com/cloud/storage/StorageManagerImpl.java
+:100755 100755 4bf908ad469a09d363ee4f5aafd916c719cb7748 0ede8d04fdb19bf4674850d9d934721f498c8d82 M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java
+:100755 100755 65005f44c8ff5310e7b228078648c07201bca477 b2b4cb55a836f19b74faefe89e5fb5de9269bc36 M	server/src/com/cloud/user/AccountManager.java
+:100755 100755 eba88911698bd4adf72d873c5b03a232a13464c2 a634c0ebcf4b9f574d56f6dcf566d05920e21f72 M	server/src/com/cloud/user/AccountManagerImpl.java
+:100755 100755 abe19cc530a1ca7c1041d72df9e8c11cba0b4580 b359c8d325a8755f45b9d2d2d9b26617313daa06 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100644 100644 705508b8942034dae118fd64f6e9062ed2f9d951 60c0f0c6ee718379c48a5bd3ff3d867bb725f2c0 M	server/test/com/cloud/user/MockAccountManagerImpl.java
+
+commit 9c0273e6aa83ef17c6e58651452cd135807a06d1
+tree 90ed0816dac6d8a8979755e3d56a359d46454e06
+parent 67eeb08b28de4eb89fd189cb45831fef2948e4ab
+author bfederle <bfederle@gmail.com> 1328648948 -0800
+committer bfederle <bfederle@gmail.com> 1328648948 -0800
+
+    Fix static NAT chart UI
+
+:100644 100644 50d1ece16eeb4bf4f4e07f726e536c0715337ba9 8b88880d35421f8527f6252e845500c114fa8a96 M	ui/css/cloudstack3.css
+
+commit 593af5868a67ff38b6c2db00bbaf850071b90ae6
+tree e432f12cbbebe7bde7f28c24129d91e5e077cba8
+parent e63a5d583f63f251820967aeaa8f1d6cb1407150
+author bfederle <bfederle@gmail.com> 1328647449 -0800
+committer bfederle <bfederle@gmail.com> 1328647449 -0800
+
+    Clear out input field when switching from account <-> e-mail fields
+
+:100644 100644 da3086d50dfc69825a3435f2840b06895e2ec1eb 8e00c32f1500a2224bf58001e868855d546cd9c7 M	ui/scripts/ui-custom/projects.js
+
+commit e63a5d583f63f251820967aeaa8f1d6cb1407150
+tree acb3e6c51b1e19773142c9d5af23f99be408e2e6
+parent 5e3f110682ee3efe40a69810ccfa571ddc514784
+author bfederle <bfederle@gmail.com> 1328647422 -0800
+committer bfederle <bfederle@gmail.com> 1328647422 -0800
+
+    Add validation
+
+:100644 100644 6e20dbd4dabaa5a95c9a0d14000107182904cb9e 5c954c710413f2bf2d471fb598e5ad38fc7abcfc M	ui/scripts/projects.js
+
+commit 5e3f110682ee3efe40a69810ccfa571ddc514784
+tree 11c4bfc55f713252926fc37fe95c0725c11ba10d
+parent 1562125eadbcd217f0c54d47e65ae3ffe705614f
+author bfederle <bfederle@gmail.com> 1328646975 -0800
+committer bfederle <bfederle@gmail.com> 1328646975 -0800
+
+    Better handling for list view header actions
+
+:100644 100644 ff2d42299df3f1876c00394cb4beb94baf5b54ee 1ecb4275242cfaf03624fdcb5eb1ea201b0b978c M	ui/scripts/ui/widgets/listView.js
+
+commit 67eeb08b28de4eb89fd189cb45831fef2948e4ab
+tree e7fc0d0adc42a19c3163730b13cd8a65361cfaae
+parent 8ca7918d03583064495f0378cd3b2fabd845d941
+author Jessica Wang <jessica@cloud.com> 1328646630 -0800
+committer Jessica Wang <jessica@cloud.com> 1328646630 -0800
+
+    cloudstack 3.0 new UI - localization - add template action.
+
+:100644 100644 aa7d2fe48411dae723d51f4a8950e919508c8a9d 7a7b5f65bc4080b389cef683032ad9a536de0ec0 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 5c85b30b47e996581a16b8df93f1c2b2f2648547 226e6f3d8df844a1baa995b84b4000ee5a3e2835 M	client/WEB-INF/classes/resources/messages_es.properties
+:100644 100644 8dca7e006448ade2cad856c44d2fff63aa35d759 71dcc24d4b20a8fd75544c89f5caedc9de676d16 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 8bfac32f54a1574e035b0713b53fafa04fa80b78 6c223d0c1c0fcb893bdee50a2a7dca94e404ff7e M	client/WEB-INF/classes/resources/messages_zh_CN.properties
+:100644 100644 99b73f66e07250c2b238b90c862c023a1449e133 0157f052bc636e9b6db938be19cc176ed9beb18e M	ui/index.jsp
+:100644 100644 ebf40bffc9f9b23326cc293f0f18d7c27d1c2a98 78599461e353f8f8270fddbe0dd6c5c30d392784 M	ui/scripts/templates.js
+
+commit 1562125eadbcd217f0c54d47e65ae3ffe705614f
+tree 23c74d51fe1e7637fe076a515ba9a5e9bbb2c2b9
+parent 05b6cbee4bac217e2509d8656b4c2d12f213b491
+author bfederle <bfederle@gmail.com> 1328645754 -0800
+committer bfederle <bfederle@gmail.com> 1328645754 -0800
+
+    Don't hide thead
+
+:100644 100644 320dba1f3550485264adff8a5a001fa373d5e252 3d4f1373ba76584c2369cce06e8458e321b40c5b M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 05b6cbee4bac217e2509d8656b4c2d12f213b491
+tree 5837d52d2d0426c4c73a379a67216c9d1064c2c8
+parent 3218f2ef79ce73012c740b662dd50631c9048523
+author bfederle <bfederle@gmail.com> 1328645737 -0800
+committer bfederle <bfederle@gmail.com> 1328645737 -0800
+
+    Add enter token form
+
+:100644 100644 1b834f6836964cf1a3f74854d5e4edc4f8e66606 6e20dbd4dabaa5a95c9a0d14000107182904cb9e M	ui/scripts/projects.js
+
+commit 3218f2ef79ce73012c740b662dd50631c9048523
+tree 9e02f76dd702d11ce14ddf8e88ca3ba12c4e8f17
+parent eabe1135c545556b0c39224318a702427ecc91e6
+author bfederle <bfederle@gmail.com> 1328575808 -0800
+committer bfederle <bfederle@gmail.com> 1328575808 -0800
+
+    Add invitation check; dialog for pending invites; misc. fixes
+
+:100644 100644 593884341009c6f47a86fc5bcfbea1b8027b6135 54683975e364c837466738eedfd630fa901f60da M	ui/css/cloudstack3.css
+:100644 100644 6c7a15b4874f3f52ae306344b49f48442befa21b 1b834f6836964cf1a3f74854d5e4edc4f8e66606 M	ui/scripts/projects.js
+:100644 100644 e99585b0aa55a48f6ea637a721798cea58228b5b da3086d50dfc69825a3435f2840b06895e2ec1eb M	ui/scripts/ui-custom/projects.js
+:100644 100644 75b0c595a90d2bcb845c651a83df2f7b5a783c54 912d3d1110fd5f9dfbac3381be026321fa277348 M	ui/scripts/ui/core.js
+
+commit eabe1135c545556b0c39224318a702427ecc91e6
+tree 2adc0790d496ab8b4893446d74ecb8540b8fc295
+parent 60d5d5132e3f2065e9081fddff199927a33aba8a
+author bfederle <bfederle@gmail.com> 1328573111 -0800
+committer bfederle <bfederle@gmail.com> 1328573111 -0800
+
+    Add updated invite form
+
+:100644 100644 9b24892c716d3b86f2345db35823058961370db2 593884341009c6f47a86fc5bcfbea1b8027b6135 M	ui/css/cloudstack3.css
+:100644 100644 fc1a95f6d52d6da828467b4667a788accb413a2e 6c7a15b4874f3f52ae306344b49f48442befa21b M	ui/scripts/projects.js
+:100644 100644 269b6f7717ce851f185486a4e39b9d4c474e08eb e99585b0aa55a48f6ea637a721798cea58228b5b M	ui/scripts/ui-custom/projects.js
+:100644 100644 883ba671973a1d807189822d7c50489cd92c2011 320dba1f3550485264adff8a5a001fa373d5e252 M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 60d5d5132e3f2065e9081fddff199927a33aba8a
+tree 422100e7d87dce5705677f32b340b2d040d082a9
+parent 0f5e242fef0b1836f57b5745760a4070d880918f
+author bfederle <bfederle@gmail.com> 1328565224 -0800
+committer bfederle <bfederle@gmail.com> 1328565224 -0800
+
+    Fix action filter
+
+:100644 100644 8ef2f79f2d919d8a22f3da9e46c59c65bc78ee64 fc1a95f6d52d6da828467b4667a788accb413a2e M	ui/scripts/projects.js
+
+commit 0f5e242fef0b1836f57b5745760a4070d880918f
+tree 56323c3bdedba8e5b495c1d79b2d8d3ff4c96ecb
+parent d62ac816a1e0453a5938ab07915d740c90e79212
+author bfederle <bfederle@gmail.com> 1328564964 -0800
+committer bfederle <bfederle@gmail.com> 1328564964 -0800
+
+    Use listAll true to fix detail view
+
+:100644 100644 96f9921c6792b46d23da418842e863103a85c3b3 8ef2f79f2d919d8a22f3da9e46c59c65bc78ee64 M	ui/scripts/projects.js
+
+commit d62ac816a1e0453a5938ab07915d740c90e79212
+tree 9cb48e9d4d4bd9480bf9bbfa1c53c514dda7cccd
+parent ff8939c673127aff7d98e3641aea08c99e1a8019
+author bfederle <bfederle@gmail.com> 1328564139 -0800
+committer bfederle <bfederle@gmail.com> 1328564139 -0800
+
+    Add accounts management to detail view
+
+:100644 100644 84e0874b1b95089d7d937aff316d9f9e3bc77ef2 96f9921c6792b46d23da418842e863103a85c3b3 M	ui/scripts/projects.js
+
+commit ff8939c673127aff7d98e3641aea08c99e1a8019
+tree b66ca4bda0862ba95e228b629cde477f0f3e78ce
+parent 671afc4989e363131cf7ea432276942cee034420
+author bfederle <bfederle@gmail.com> 1328562839 -0800
+committer bfederle <bfederle@gmail.com> 1328562839 -0800
+
+    Move actions to detail view
+
+:100644 100644 6c3315ea26bb5aefc2bc3c86502a3bf2ec03a868 84e0874b1b95089d7d937aff316d9f9e3bc77ef2 M	ui/scripts/projects.js
+
+commit 671afc4989e363131cf7ea432276942cee034420
+tree 4d628c8f45fc6705e46c936b79f33369302219cc
+parent ec29f5131d6f2150b1d2a1701002ba4ab44e012d
+author bfederle <bfederle@gmail.com> 1328562236 -0800
+committer bfederle <bfederle@gmail.com> 1328562236 -0800
+
+    Integrate resources form into project detail view
+
+:100644 100644 50d1ece16eeb4bf4f4e07f726e536c0715337ba9 9b24892c716d3b86f2345db35823058961370db2 M	ui/css/cloudstack3.css
+:100644 100644 adb40b51c9606188dfc464eed2c01312d86b05df 6c3315ea26bb5aefc2bc3c86502a3bf2ec03a868 M	ui/scripts/projects.js
+:100644 100644 7d1121be39a840e611cbf8fcd8c0b538a47a88ea 269b6f7717ce851f185486a4e39b9d4c474e08eb M	ui/scripts/ui-custom/projects.js
+
+commit ec29f5131d6f2150b1d2a1701002ba4ab44e012d
+tree 440d01f2a4fb2b65a15dc8189815f7960a7c8836
+parent 1935d2c52ef13bfc401e1533711070ff7eb0c66f
+author bfederle <bfederle@gmail.com> 1328560359 -0800
+committer bfederle <bfederle@gmail.com> 1328560359 -0800
+
+    Add project detail view
+
+:100644 100644 5c83fbe4a7396d51eecb88e9c563e30825c61f86 adb40b51c9606188dfc464eed2c01312d86b05df M	ui/scripts/projects.js

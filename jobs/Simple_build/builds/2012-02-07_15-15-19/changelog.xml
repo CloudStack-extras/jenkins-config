@@ -1,0 +1,82 @@
+Changes in branch origin/master, between b2ce96af8590f24c7166087ba1edc96437c3c19c and 8ca7918d03583064495f0378cd3b2fabd845d941
+commit 8ca7918d03583064495f0378cd3b2fabd845d941
+tree 993e665eb3f1e3088bec08c3364883062a4ab789
+parent c65fbc44b4ad5786b5c24adddcbb9667e4976fdd
+author Jessica Wang <jessica@cloud.com> 1328644974 -0800
+committer Jessica Wang <jessica@cloud.com> 1328644974 -0800
+
+    cloudstack 3.0 new UI - add Java core library, Java fmt library to index.jsp (for localization)
+
+:100644 100644 74e72cd825f4dc0c926ea2bb459c83112c262833 99b73f66e07250c2b238b90c862c023a1449e133 M	ui/index.jsp
+
+commit c65fbc44b4ad5786b5c24adddcbb9667e4976fdd
+tree 9a212bc8f2d584470a56421a44c1a37e3124f84b
+parent 37410259b6a94804016f1f7c3bc4d7ed2d01f2ec
+author Jessica Wang <jessica@cloud.com> 1328642516 -0800
+committer Jessica Wang <jessica@cloud.com> 1328642533 -0800
+
+    network page - remove zoneName, state from listView, add zoneName to detailView.
+
+:100644 100644 ea81ad4559f7ee6aa8350a23e37d6a3c3ac47db4 c0624d0b93131e0a21c9024f879aef8bfe262725 M	ui/scripts/network.js
+
+commit 37410259b6a94804016f1f7c3bc4d7ed2d01f2ec
+tree 5d4541f5132a418bddb9c79930675d8b27f238b5
+parent 93eb4d8572b4dd2072297f889adf2e4ad27a6907
+author anthony <anthony@cloud.com> 1328640104 -0800
+committer anthony <anthony@cloud.com> 1328640984 -0800
+
+    bug 13478: check null
+    
+    status 13478: resolved fixed
+    
+    reviewed-by: edison
+
+:100644 100644 31944fc5537db6530fd506ad4153892877476fd8 12d748c462a8f19e9d53013f0e4c6a26d5572b38 M	server/src/com/cloud/ha/UserVmDomRInvestigator.java
+
+commit 93eb4d8572b4dd2072297f889adf2e4ad27a6907
+tree e761cdaed5ee93db27878d4669d3a70caf255bac
+parent a8f4148e42984527ad9d6d99d2b9d0f551166c73
+author frank <frank.zhang@citrix.com> 1328641077 -0800
+committer frank <frank.zhang@citrix.com> 1328641091 -0800
+
+    Bug 13476 - Public IP's are not shown in the UI for the System VMs
+    
+    status 13476: resolved fixed
+
+:100755 100755 04b9d0cac02972133ba9bcae6186d273664056ed 502a0247568cea1dc60ebe0b8efc6e73a686be11 M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit a8f4148e42984527ad9d6d99d2b9d0f551166c73
+tree 4585c19e5b2d41e9285089ab23d330739f7adfeb
+parent b50da92f05a84689bbc4b5db1cba4d1d83f7c3f6
+author Jessica Wang <jessica@cloud.com> 1328639899 -0800
+committer Jessica Wang <jessica@cloud.com> 1328639899 -0800
+
+    bug 13490: Add Zone wizard - hypervisor KVM - add primary storage - show CLVM in protocol dropdown
+
+:100644 100644 2f0cc1c6a7fdf5fcc096ddeac843bda18af0c2cd da5458ba4b72093cb97582ce0341534035f1dbf0 M	ui/scripts/zoneWizard.js
+
+commit b50da92f05a84689bbc4b5db1cba4d1d83f7c3f6
+tree 03dcf2018cfd9737dcc3526ced267847e1f307ea
+parent 4daf493f059252d5166a89d56f2527274d92b384
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328636647 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328636834 -0800
+
+    bug 13489: when add foreign key, index is created automatically
+    status 13489: resolved fixed
+    reviwed-by: Will Chan
+    
+    Conflicts:
+    
+    	setup/db/create-schema.sql
+
+:100755 100755 2317d194b001c35d47442f6e9df3a945821edb49 e91679b73758f2e2450f1a72ca6a46eb1d84134c M	setup/db/create-schema.sql
+
+commit 4daf493f059252d5166a89d56f2527274d92b384
+tree 8d05244c94912bd668b47efea4c289b411c39410
+parent b2ce96af8590f24c7166087ba1edc96437c3c19c
+author Sam Robertson <sam@cloud.com> 1328635803 -0800
+committer Sam Robertson <sam@cloud.com> 1328635803 -0800
+
+    use /usr/share/tomcat, not /usr/share/cloud
+
+:100644 100644 a348ff8c5d888f7a9b46d841d242c1fd814dfa02 df21f0ae334c7c4b27d24e9ccbec5ce84c332c30 M	tools/testClient/automated/automated.sh

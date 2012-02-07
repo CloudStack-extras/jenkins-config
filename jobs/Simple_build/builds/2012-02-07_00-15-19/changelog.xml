@@ -1,0 +1,50 @@
+Changes in branch origin/master, between 81d9fdbdb29d6adbed493e7ff0f5f7da373e960b and 815ca4a717907b72c9f392e9b8837a87a31f0456
+commit 815ca4a717907b72c9f392e9b8837a87a31f0456
+tree 9a5a47a0bff4665a28d5e3aa1d92023dc34bbeee
+parent 9c64079474dcb628243d7d1eb32e4ebaff1c4fe3
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328585914 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328587037 -0800
+
+    bug 13474: fixed 3)
+    status 13474: resolved fixed
+    reviewed-by: Will Chan
+
+:100644 100644 5d336a9c8987a7a967014db06f050fab7afce4f7 0922d3e830a42b1a919cec85d55d8445da6a1d24 M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+
+commit 9c64079474dcb628243d7d1eb32e4ebaff1c4fe3
+tree 5932e7ecdf9b5f63eb7afe3c389167f598f6023e
+parent 5b70c337b961415fce26fe34573fac840266c5ec
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328578846 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328582151 -0800
+
+    bug 13474: fixed 1) 2) and 4)
+    reviewed-by: Frank
+    
+    Conflicts:
+    
+    	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+    	setup/db/db/schema-2213to2214.sql
+
+:100644 100644 2948cfab15b7edf4ac75d109cd353002094d9309 5d336a9c8987a7a967014db06f050fab7afce4f7 M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+:100755 100755 45c232fb5fa6a977c8575c1e8303ab536bd86e6c f32d049d0887071c7f70e3c84fbcfa9713f53f2f M	setup/db/create-index-fk.sql
+:100644 100644 ff0c580e3db616bb1a1814dfaaeb7c4ccadb7b6a ce76e73187c935a4c7e5040713f6cbf055318037 M	setup/db/db/schema-2213to2214.sql
+
+commit 5b70c337b961415fce26fe34573fac840266c5ec
+tree 697310fa9b347e44f30637ac87eaf4d6d0665f12
+parent e88f20d2ff807acfb52bd443a414198fe07bb0d0
+author Jessica Wang <jessica@cloud.com> 1328581767 -0800
+committer Jessica Wang <jessica@cloud.com> 1328581806 -0800
+
+    bug 13466: volume page - only show "take snapshot/recurring snapshot" action when volume state is Ready. Hide them otherwise.
+
+:100644 100644 0c66fbd6e6d1948b9183044eea51b42dbbd105b2 1a82f729b78a23d2742f7b8f3347ec2c26596a78 M	ui/scripts/storage.js
+
+commit e88f20d2ff807acfb52bd443a414198fe07bb0d0
+tree f83c49083ef0884e0da7b9c625ab57930ed92100
+parent 81d9fdbdb29d6adbed493e7ff0f5f7da373e960b
+author abhi <abhinandan.prateek@citrix.com> 1328581762 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1328581762 +0530
+
+    bug 13473: fixed the concurrent access to vms hashmap
+
+:100644 100644 57a8945b19d01fa6bac6d880d07e2a25b0117908 e8eeeb09c24b608a2ad193494de1a379fa472116 M	core/src/com/cloud/hypervisor/xen/resource/XenServerPoolVms.java

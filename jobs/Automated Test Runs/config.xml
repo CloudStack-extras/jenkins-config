@@ -55,9 +55,9 @@
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.Ant>
-      <targets>automated-test-run</targets>
-    </hudson.tasks.Ant>
+    <hudson.tasks.Shell>
+      <command>${WORKSPACE}/tools/testClient/automated/automated.sh</command>
+    </hudson.tasks.Shell>
   </builders>
   <publishers>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsPublisher/>

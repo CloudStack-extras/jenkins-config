@@ -1,0 +1,66 @@
+Changes in branch origin/master, between 3c9a5439396dc87fda88e5dff28886369a6671b1 and 126ed1434c1303fdf16b78ca61324ddd7e66eb8c
+commit 126ed1434c1303fdf16b78ca61324ddd7e66eb8c
+tree e9601dde998a023909571e44e25babe2156e13fe
+parent 6b73dc559065cd724156fbb2aedfabe2accf92bd
+author Nitin Mehta <nitin.mehta@citrix.com> 1328695496 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328695496 +0530
+
+    Bug 13059: For listing top consumed resources only uyse enabled zone for sec storage Also improve the transaction logic.
+    Reviewed-By: Kishan
+
+:100755 100755 a2551f9bfe13d95cb62e768907b1dcdab475705c b11425b9f39a111566d06ecf0450f080f4e79c59 M	api/src/com/cloud/api/commands/ListCapacityCmd.java
+:100755 100755 d7c1ef2816e95929e0ca6dd5924314cd8f7ef80c a5c0a3d2dc3b6b8a93657cc062f0b32b253a8796 M	server/src/com/cloud/capacity/dao/CapacityDaoImpl.java
+:100755 100755 f9d26482aa523a3748be2b7c13e3d7ec8f95eb2e 35978b569daa0f919c90e8d5073807b337177f4b M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 6b73dc559065cd724156fbb2aedfabe2accf92bd
+tree fb5bd3fc2aefc1ec546d7002f18761e98c8f869e
+parent a537f836e7f17ecace6da4cbe7f705a1ef79f64c
+author kishan <kishan@cloud.com> 1328694880 +0530
+committer kishan <kishan@cloud.com> 1328694981 +0530
+
+    Bug 13454: Drop both foreign keys, indexes of ssh_keypairs and add again
+    Status 13454: resolved fixed
+    Reviewed-By: Nitin
+
+:100644 100644 d1e49d35a6d634261425e1a8465a45a84bcb448a b61fdea14a312d216dab6309b419eb6dfb96af99 M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+
+commit a537f836e7f17ecace6da4cbe7f705a1ef79f64c
+tree 365d507de5fb41c3ed3dfe9ad94ec6b1d1d79019
+parent cc41b8e162a83e14b75f15f620164641452c1424
+author Naredula Janardhana Reddy <jana@cloud.com> 1328693201 +0530
+committer Naredula Janardhana Reddy <jana@cloud.com> 1328693201 +0530
+
+    Summary of HAProxy stickines param changes:
+      - converted all mandatory params to optional, and internally fill with default value before sending to haproxy. default value is available through description.
+      - accept holdtime without units.
+
+:100644 100644 2b5efd7b9e98f5dbe914c0fa89c010c6e38a7d99 22f33cdc320b81b96142573789bcc4035bd38508 M	core/src/com/cloud/network/HAProxyConfigurator.java
+:100644 100644 41e65465f8510a01b8fa95b950ef436bf122e506 d6f1fb5b14fc3d03db131032a6ded93f9dd97ee4 M	server/src/com/cloud/network/element/VirtualRouterElement.java
+
+commit cc41b8e162a83e14b75f15f620164641452c1424
+tree c553becd8b7a9e0b8975865070e9aa16e80e5013
+parent c444ebfaeb41257476ac4f8560df01d8749a34e4
+author abhi <abhinandan.prateek@citrix.com> 1328686639 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1328686639 +0530
+
+    bug 12980: added trust store for ssl
+
+:100755 100755 8a4df5bbc3f116708e13a02368f1229d54103db0 f00ab2d6c5decb8165b4e22ae10005e0801ba73e M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 620b6d4da67ce1b74d38dbd04d9951632f051384 a79734b5e2759e8fe95bd065b3f884461b833a47 M	api/src/com/cloud/api/commands/LDAPConfigCmd.java
+:100755 100755 e537aade555c5c27d097b04fffacc92d001a1988 25557067f0fdd2418487c87b006636fa68de0b21 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 5b1d417d93cf5b485acf0eb10b30a4da46393bce 47bfd5dee359c3bad0371ece52b2317668bd9fb8 M	server/src/com/cloud/server/auth/LDAPUserAuthenticator.java
+
+commit c444ebfaeb41257476ac4f8560df01d8749a34e4
+tree 609c09b34d918ac16cc8864e2b68ad3d64fd1a1b
+parent 3c9a5439396dc87fda88e5dff28886369a6671b1
+author Nitin Mehta <nitin.mehta@citrix.com> 1328682055 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328682055 +0530
+
+    Bug 13059: Remove the listTipConsumedResources api and introduced a sortbyusage flag in the listCapacity call.
+    Reviewed-By: Kishan
+
+:100755 100755 510a743120ed779a38162ea905ca74acdef4e584 8a4df5bbc3f116708e13a02368f1229d54103db0 M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 ce4b09564a8931c7c702936791c0da6ed7d81b1c a2551f9bfe13d95cb62e768907b1dcdab475705c M	api/src/com/cloud/api/commands/ListCapacityCmd.java
+:100755 000000 a26da14e679b88cb9a6d7bf4f8a269b9e921e74c 0000000000000000000000000000000000000000 D	api/src/com/cloud/api/commands/ListTopConsumedResources.java
+:100755 100755 0bf3188f1d3b3a495a31c180d0f80d4df60f4f0f 74d69fec09f6de6ad172ff5bbdb28f8673377284 M	api/src/com/cloud/server/ManagementService.java
+:100755 100755 561228a8ca0dd25857d1c3bb1b508007e1f88c5c f9d26482aa523a3748be2b7c13e3d7ec8f95eb2e M	server/src/com/cloud/server/ManagementServerImpl.java

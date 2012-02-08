@@ -1,0 +1,112 @@
+Changes in branch origin/master, between 6645bed89728a59090842d7139fe559c2cb09c31 and 0237dd43b222c10abb56b5d03eaa0189fd0953d4
+commit 0237dd43b222c10abb56b5d03eaa0189fd0953d4
+tree 4713de1c06ff1090e9b864b6c2e5f14fdf682df9
+parent 5007635c6a405c763b4bc93a857ba9740f8990f4
+author Jessica Wang <jessica@cloud.com> 1328739986 -0800
+committer Jessica Wang <jessica@cloud.com> 1328740004 -0800
+
+    bug 13099: global settings page - when name is xennetworklabel/kvmnetworklabel/vmwarenetworklabel and value is null, show "Use default gateway" instead of null.
+
+:100644 100644 e543b5926beb622864781b2974b95bdaa3e7b220 e8067981678f6347e0faa7e5e88cbd4b8c6f2e19 M	ui/scripts/globalSettings.js
+
+commit 5007635c6a405c763b4bc93a857ba9740f8990f4
+tree 40e9839562770535c3caeb0539de500775002688
+parent 62ef78211b82f28190f5d622630253442af5f768
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328736734 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328736786 -0800
+
+    bug 13522: mark network for GC when domR starts with startRouter command, not as a part of user vm start/deploy
+    status 13522: resolved fixed
+
+:100644 100644 6fdbf94bf33e56d014307c027fa63bd7c86d7cb3 2d65531f7d70384e3b554a60a76630e95806ed1e M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 28e0f103ace29e6f18f283d8247bcba9336c21c1 9990d350a8390bcde1a8a1c302d5dec6ba200d03 M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 00f12634abb23183df1316c8a4cb7a2b9777385e fac6128d7c88340309f88f5d74338806fc989a55 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java
+:100644 100644 b6626c64942495e4f9c65cd2db3223668c2ce9cd f238fca03172ea2876f5f22db8c7abc075cb04fc M	server/src/com/cloud/network/dao/NetworkOpDaoImpl.java
+
+commit 62ef78211b82f28190f5d622630253442af5f768
+tree 5fbd8c3e50f02872430668a55d5a5077cd933315
+parent 9437250e1f88736867302d29bd2d5b1479f0f04f
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328655968 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328736786 -0800
+
+    Merged listCapacity and ListTopConsumedResources calls. To list most consumed resources, pass sortBy=usage to listCapacity api
+
+:100755 100755 adf47679416b3d96e44555dcbd8696ab578fe436 28f1dbfc5eeb59106543306b56a19b7da3081f34 M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 8890a403f13fef36b69ba1fd15abeba95224c5aa 4324ddbc45afacfc9ad4b36186247136c8568fb7 M	api/src/com/cloud/api/commands/ListCapacityCmd.java
+:100755 100755 caa74cefd18feb3a741cb8b720d08362e7966682 3870a512e171e97ffd85c53127d76e4d305ffd4f M	client/tomcatconf/commands.properties.in
+
+commit 9437250e1f88736867302d29bd2d5b1479f0f04f
+tree 039d935417e13533a5e0acc61136bd013bd755f5
+parent 26795c4c929eff17f2e704d21789339a3688e754
+author Jessica Wang <jessica@cloud.com> 1328735842 -0800
+committer Jessica Wang <jessica@cloud.com> 1328735842 -0800
+
+    add zone wizard - fix a typo.
+
+:100644 100644 4b43f890106a85bba88495874c2eeba961b3f0e7 37a297a2fea146a06ced56e60460c7bc71ca9962 M	ui/scripts/zoneWizard.js
+
+commit 26795c4c929eff17f2e704d21789339a3688e754
+tree 8e28fd20c7356a4ce5992628d273e83250dae6bc
+parent 25bc9b43cae15c9ebb10cf8cbae9933b8abffac9
+author Jessica Wang <jessica@cloud.com> 1328733097 -0800
+committer Jessica Wang <jessica@cloud.com> 1328733097 -0800
+
+    bug 13517: add zone wizard - advanced zone - configure guest traffic - make VLAN field optional instead of required.
+
+:100644 100644 a9b2ba18cafd82253b12b3cfcf8bd4d815206654 4b43f890106a85bba88495874c2eeba961b3f0e7 M	ui/scripts/zoneWizard.js
+
+commit 25bc9b43cae15c9ebb10cf8cbae9933b8abffac9
+tree f5019e52e88d88f4a087a77ad8f29dfa36318a14
+parent 03e61c3dc1be0b037ec1cbc518db3ae74d326871
+author Jessica Wang <jessica@cloud.com> 1328727931 -0800
+committer Jessica Wang <jessica@cloud.com> 1328727931 -0800
+
+    zone detail page - add Guest CIDR field.
+
+:100644 100644 3bcb8bc7aa836f3c88a4381aeca1e61878768f35 2abc1b2c1f13bb2b71d25091f479aeb7f9918866 M	ui/scripts/system.js
+
+commit 03e61c3dc1be0b037ec1cbc518db3ae74d326871
+tree e4aa68b69b222fe97776ebbeaa8ca8d6c54fc791
+parent 59b5625a7f9616f21562ae0209e6e855b2b11af2
+author Jessica Wang <jessica@cloud.com> 1328726004 -0800
+committer Jessica Wang <jessica@cloud.com> 1328726004 -0800
+
+    new zone wizard - hide Guest CIDR field when zone type is Basic. Show it when zone type is Advanced.
+
+:100644 100644 c5d0c39895450fad180d7669ebe333d401977527 a9b2ba18cafd82253b12b3cfcf8bd4d815206654 M	ui/scripts/zoneWizard.js
+
+commit 59b5625a7f9616f21562ae0209e6e855b2b11af2
+tree 7dc1a9912c3ce92fabcf3d287ac44897230edf69
+parent b0ab250f66a9a5e4332c521e5366aa2350251583
+author Jessica Wang <jessica@cloud.com> 1328725441 -0800
+committer Jessica Wang <jessica@cloud.com> 1328725459 -0800
+
+    Add Zone Wizard - pass guestcidraddress to createZone API only when zone type is Advanced.
+
+:100644 100644 000d87f22a9dcdf970e917f06d04b9d2d5415cfd c5d0c39895450fad180d7669ebe333d401977527 M	ui/scripts/zoneWizard.js
+
+commit b0ab250f66a9a5e4332c521e5366aa2350251583
+tree 65e4d2ee02090e5bc48acd1d20798b4689593f9d
+parent eee71abca0aa6b8df43f749c41a1b1a48c0ec798
+author Jessica Wang <jessica@cloud.com> 1328664164 -0800
+committer Jessica Wang <jessica@cloud.com> 1328725458 -0800
+
+    New zone wizard - add Guest CIDR field.
+
+:100644 100644 da5458ba4b72093cb97582ce0341534035f1dbf0 000d87f22a9dcdf970e917f06d04b9d2d5415cfd M	ui/scripts/zoneWizard.js
+
+commit eee71abca0aa6b8df43f749c41a1b1a48c0ec798
+tree d61891de6cf3752b256606560f9d3fc73f59bc93
+parent 6645bed89728a59090842d7139fe559c2cb09c31
+author bfederle <bfederle@gmail.com> 1328724629 -0800
+committer bfederle <bfederle@gmail.com> 1328724629 -0800
+
+    bug 13059: Dashboard UI
+    
+    -Use new API param 'listtopused' to get all capacities
+    
+    -As new API includes pod, cluster-level capacities, restore display of pod and cluster names on capacity label
+    
+    -Increase page size to 8, to fit into UI better
+
+:100644 100644 5399d42fb8b6c017c9340838a87e419ebfbf7cd5 32e19658731e5c426f69cf5cf63528430a005493 M	ui/scripts/dashboard.js

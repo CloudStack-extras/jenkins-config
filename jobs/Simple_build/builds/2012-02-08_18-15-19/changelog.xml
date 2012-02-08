@@ -1,0 +1,66 @@
+Changes in branch origin/master, between 25bc9b43cae15c9ebb10cf8cbae9933b8abffac9 and fca5227f00e5d5ab2eec029dccca25f50af4947a
+commit fca5227f00e5d5ab2eec029dccca25f50af4947a
+tree efe1e22ee770eba60f6ff482b75a860a1a87fd54
+parent 0237dd43b222c10abb56b5d03eaa0189fd0953d4
+author Sam Robertson <sam@cloud.com> 1328742362 -0800
+committer Sam Robertson <sam@cloud.com> 1328742362 -0800
+
+    Updating CATALINA_HOME used for automated testing environment
+
+:100644 100644 df21f0ae334c7c4b27d24e9ccbec5ce84c332c30 4f95cb3194a91c8c537cb55988c50d9a5c3f24b1 M	tools/testClient/automated/automated.sh
+
+commit 0237dd43b222c10abb56b5d03eaa0189fd0953d4
+tree 4713de1c06ff1090e9b864b6c2e5f14fdf682df9
+parent 5007635c6a405c763b4bc93a857ba9740f8990f4
+author Jessica Wang <jessica@cloud.com> 1328739986 -0800
+committer Jessica Wang <jessica@cloud.com> 1328740004 -0800
+
+    bug 13099: global settings page - when name is xennetworklabel/kvmnetworklabel/vmwarenetworklabel and value is null, show "Use default gateway" instead of null.
+
+:100644 100644 e543b5926beb622864781b2974b95bdaa3e7b220 e8067981678f6347e0faa7e5e88cbd4b8c6f2e19 M	ui/scripts/globalSettings.js
+
+commit 5007635c6a405c763b4bc93a857ba9740f8990f4
+tree 40e9839562770535c3caeb0539de500775002688
+parent 62ef78211b82f28190f5d622630253442af5f768
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328736734 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328736786 -0800
+
+    bug 13522: mark network for GC when domR starts with startRouter command, not as a part of user vm start/deploy
+    status 13522: resolved fixed
+
+:100644 100644 6fdbf94bf33e56d014307c027fa63bd7c86d7cb3 2d65531f7d70384e3b554a60a76630e95806ed1e M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 28e0f103ace29e6f18f283d8247bcba9336c21c1 9990d350a8390bcde1a8a1c302d5dec6ba200d03 M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 00f12634abb23183df1316c8a4cb7a2b9777385e fac6128d7c88340309f88f5d74338806fc989a55 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java
+:100644 100644 b6626c64942495e4f9c65cd2db3223668c2ce9cd f238fca03172ea2876f5f22db8c7abc075cb04fc M	server/src/com/cloud/network/dao/NetworkOpDaoImpl.java
+
+commit 62ef78211b82f28190f5d622630253442af5f768
+tree 5fbd8c3e50f02872430668a55d5a5077cd933315
+parent 9437250e1f88736867302d29bd2d5b1479f0f04f
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328655968 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328736786 -0800
+
+    Merged listCapacity and ListTopConsumedResources calls. To list most consumed resources, pass sortBy=usage to listCapacity api
+
+:100755 100755 adf47679416b3d96e44555dcbd8696ab578fe436 28f1dbfc5eeb59106543306b56a19b7da3081f34 M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 8890a403f13fef36b69ba1fd15abeba95224c5aa 4324ddbc45afacfc9ad4b36186247136c8568fb7 M	api/src/com/cloud/api/commands/ListCapacityCmd.java
+:100755 100755 caa74cefd18feb3a741cb8b720d08362e7966682 3870a512e171e97ffd85c53127d76e4d305ffd4f M	client/tomcatconf/commands.properties.in
+
+commit 9437250e1f88736867302d29bd2d5b1479f0f04f
+tree 039d935417e13533a5e0acc61136bd013bd755f5
+parent 26795c4c929eff17f2e704d21789339a3688e754
+author Jessica Wang <jessica@cloud.com> 1328735842 -0800
+committer Jessica Wang <jessica@cloud.com> 1328735842 -0800
+
+    add zone wizard - fix a typo.
+
+:100644 100644 4b43f890106a85bba88495874c2eeba961b3f0e7 37a297a2fea146a06ced56e60460c7bc71ca9962 M	ui/scripts/zoneWizard.js
+
+commit 26795c4c929eff17f2e704d21789339a3688e754
+tree 8e28fd20c7356a4ce5992628d273e83250dae6bc
+parent 25bc9b43cae15c9ebb10cf8cbae9933b8abffac9
+author Jessica Wang <jessica@cloud.com> 1328733097 -0800
+committer Jessica Wang <jessica@cloud.com> 1328733097 -0800
+
+    bug 13517: add zone wizard - advanced zone - configure guest traffic - make VLAN field optional instead of required.
+
+:100644 100644 a9b2ba18cafd82253b12b3cfcf8bd4d815206654 4b43f890106a85bba88495874c2eeba961b3f0e7 M	ui/scripts/zoneWizard.js

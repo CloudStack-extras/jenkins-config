@@ -1,0 +1,168 @@
+Changes in branch origin/master, between 966c18cdefd10c3efef28e4f5e55615bc30957d2 and 3c9a5439396dc87fda88e5dff28886369a6671b1
+commit 3c9a5439396dc87fda88e5dff28886369a6671b1
+tree 77d32911c11fdfd46b62498805c150fddfcadd0a
+parent 7516788a4620e7f20814887a9b1010ebc798e4ee
+author prachi <prachi@cloud.com> 1328668832 -0800
+committer prachi <prachi@cloud.com> 1328668889 -0800
+
+    Bug 13099 - table physical-network-traffic-types needs to be updated when xen network device setting is modified in the global settings
+    
+    Changes:
+    - DB upgrade changes
+    -- make the global setting hidden.
+    -- During upgrade set network labels from global config
+
+:100644 100644 dfd285029f8d645172bdb13e4a025e744eb22be1 202aa3d600a03c775fcfdbb0055dc312bd6a82a3 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 1a8a40ad229273358d4fa2e5769f48fd18e02ed2 98c852d8273f8b4a72d8bb767f9390a3d6b75682 M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+:100755 100755 72e2226d35cab6ef9da22850cfaaac8798adc2e4 5836d90221611fba2bf2ce9cc0d34493535dc9c4 M	setup/db/db/schema-2214to30.sql
+
+commit 7516788a4620e7f20814887a9b1010ebc798e4ee
+tree 8f1ae90a65445f9eff4b00419e2dac5d8dc809d2
+parent eafe80b56038fbe315d8dab11c233230fd0515dd
+author prachi <prachi@cloud.com> 1328657348 -0800
+committer prachi <prachi@cloud.com> 1328668883 -0800
+
+    Bug 13099 table physical-network-traffic-types needs to be updated when xen network device setting is modified in the global settings
+    
+    Changes:
+    - We do not need these global setting anymore. These will be hidden since 3.0
+    - The default traffic label will be picked from the global setting which is null by default. When traffic label is null it means the resource uses tag on the default gateway
+    - Changes to invoke discoverer to reload the resource object on host connection
+    - Since a zone can have many physical networks, there can be multiple guest, public networks. Only the zone wide storage and management traffic label will be stored in host_details henceforth.
+    - If traffic labels are updated, discoverer should update the host_details
+
+:100755 100755 ddb20c11c84c8e53579e53114d061e8c84743081 2a8626a33f7373f138f845c6d6bfebefa9f37f68 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100755 100755 e2bf7f4f67478eab0c66ba522377e011629f4774 07ea138d76cef3bf06cf79a4ed45ed9b2c7ddf41 M	server/src/com/cloud/agent/manager/AgentManagerImpl.java
+:100755 100755 bf8d784143fa2607468a684c618856d13c59a65e c074b6b5a471f4fcf8583eab7112aac94a7775ba M	server/src/com/cloud/configuration/Config.java
+:100755 100755 8866eb2dad600633345fdf66799434eb1bf67d1c bc1c09191e7e31332b25cfaca8c486025f53fa1f M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java
+:100755 100755 6852f1303b4084ed929d4989339b48c85f62cd9c 5dcb3bc50ba39fe5bbaf736dfc800191c89b6946 M	server/src/com/cloud/network/NetworkManager.java
+:100644 100644 2404d2d6f863a3d259e2fe735a65ac592e35b5fc 6fdbf94bf33e56d014307c027fa63bd7c86d7cb3 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 bd41d4c3b63a0a8c1aa380f7dec158d541c71360 1fdfbe472105c9415724a16a408c50a27e70f09d M	server/src/com/cloud/resource/Discoverer.java
+:100644 100644 03ac483a537273122ebfe7b6e007393dd28d7643 f9eef674277e147c6c6c87c0cced598e9178b49b M	server/src/com/cloud/resource/DiscovererBase.java
+:100755 100755 f1511dd4a2aa889247734e2a1dbfea29ec29512b 6181a00e456148f2eac5b8850f4c159627fe0249 M	server/src/com/cloud/resource/DummyHostDiscoverer.java
+:100755 100755 53bb21258b0e9cbd49399302fea200f62e0470f1 9d29dd073cb25e12b6fe35da08d0e9661e1de91b M	server/src/com/cloud/resource/ResourceManager.java
+:100755 100755 9229dc11024a919c98390d86a4729f833e81479d b0fe2b679da4d242466d35a2e50c5f200e57df1f M	server/src/com/cloud/resource/ResourceManagerImpl.java
+
+commit eafe80b56038fbe315d8dab11c233230fd0515dd
+tree 11d3933aeaedd2a4b87923f858c6390805e50f49
+parent 5d794758cbeff56d869ac5743fc890daceb6be33
+author Jessica Wang <jessica@cloud.com> 1328663041 -0800
+committer Jessica Wang <jessica@cloud.com> 1328663041 -0800
+
+    bug 13515: system page - network page - fix a bug that zoneId didn't get passed to listPhysicalNetworks API.
+
+:100644 100644 096b4244ab908a09295c53c48025d5f275627abe 3bcb8bc7aa836f3c88a4381aeca1e61878768f35 M	ui/scripts/system.js
+
+commit 5d794758cbeff56d869ac5743fc890daceb6be33
+tree 3890551de4de9ddcf59a6198e93730bbb9c81316
+parent d0fda27e3176f504dd1f0ce7554f34837b09fd10
+author Jessica Wang <jessica@cloud.com> 1328662243 -0800
+committer Jessica Wang <jessica@cloud.com> 1328662243 -0800
+
+    cloudstack 3.0 new UI - listcapabilitiesresponse.capability.securitygroupsenabled is obsolete. Remove it from UI code.
+
+:100644 100644 4a4ed6385352c716a6d3d181bc868e1c11dd056b b7f6b222b4f8337ef90933ae08869358143d1ab9 M	ui/scripts/cloudStack.js
+:100644 100644 a99fb3c4e9305403dcf6cd8ebfa6d4577e64d1ba ef574c0d72741475bfd2e9fa7ee99406761974ef M	ui/scripts/instances.js
+:100644 100644 03328deef826d20e4b677592994e12d19aa51be0 97e35597d22a412b5110b7bed258d981e2ccf515 M	ui/scripts/sharedFunctions.js
+
+commit d0fda27e3176f504dd1f0ce7554f34837b09fd10
+tree c7927685d31346645557e9be1b3f8206bb4bafe3
+parent 593d83cc6b00ccd6b390b6a20198be531d56c235
+author Jessica Wang <jessica@cloud.com> 1328661436 -0800
+committer Jessica Wang <jessica@cloud.com> 1328661451 -0800
+
+    cloudstack 3.0 new UI - Instance detail page - show/hide Security Group tab upon zone's networktype and guest network's including SecurityGroup service or not.
+
+:100644 100644 cabce11f21df24f6f6d457f745c622f8605ba9b3 a99fb3c4e9305403dcf6cd8ebfa6d4577e64d1ba M	ui/scripts/instances.js
+
+commit 593d83cc6b00ccd6b390b6a20198be531d56c235
+tree dcfa571795e568b918634cb5e7b3d6884b0aa91d
+parent 5645343c2a791cc47a86541d7cf96f8446cbd121
+author bfederle <bfederle@gmail.com> 1328660381 -0800
+committer bfederle <bfederle@gmail.com> 1328660381 -0800
+
+    Projects: add project UI fix
+    
+    Remove actions column from 'Review' users list view -- this was having
+    buggy behavior due to widget limitations. User can still add/remove
+    afterwards by going to project detail view.
+
+:100644 100644 9ebb5a38f46b63bfd8dbb61a3853921fc484b9fa e4f0725b5415480c82fe1bf9a41143b6e6db9498 M	ui/scripts/ui-custom/projects.js
+
+commit 5645343c2a791cc47a86541d7cf96f8446cbd121
+tree 64b84b46ec8247fb5f5b5e53515b49ff5f1367af
+parent f00bb706ec882fe0d03079ff0753caa91ab197a6
+author bfederle <bfederle@gmail.com> 1328660071 -0800
+committer bfederle <bfederle@gmail.com> 1328660079 -0800
+
+    bug 13115
+    
+    Show project name in header when project is active
+    
+    status 13115: resolved fixed
+
+:100644 100644 8e00c32f1500a2224bf58001e868855d546cd9c7 9ebb5a38f46b63bfd8dbb61a3853921fc484b9fa M	ui/scripts/ui-custom/projects.js
+:100644 100644 912d3d1110fd5f9dfbac3381be026321fa277348 9b1134fbd3eb0cfeaabd77c56f520f849a9043fa M	ui/scripts/ui/core.js
+
+commit f00bb706ec882fe0d03079ff0753caa91ab197a6
+tree edadbd97b4e183119d4ceaa1dbba4da5c10700de
+parent ca1ca98bac6f100af5b44269a5aee820be346ba2
+author Jessica Wang <jessica@cloud.com> 1328659095 -0800
+committer Jessica Wang <jessica@cloud.com> 1328659095 -0800
+
+    cloudstack 3.0 new UI - zone detail page - remove 'Security Groups Enabled' field which is no longer in use (will be removed from API soon)
+
+:100644 100644 65b73afafd626813cebdecc19f6f95673a4bcef4 096b4244ab908a09295c53c48025d5f275627abe M	ui/scripts/system.js
+
+commit ca1ca98bac6f100af5b44269a5aee820be346ba2
+tree c19d319e83ade8465e335916343f0c1076ac2d05
+parent 4e5807cd75deba0d0729fc17a642e92c89d55d57
+author Jessica Wang <jessica@cloud.com> 1328658918 -0800
+committer Jessica Wang <jessica@cloud.com> 1328658938 -0800
+
+    cloudstack 3.0 new UI - deployVM - step 5 - (1) Show network list if it's an advanced zone.  (2) Show security group list if it's a Basic zone with SecurityGroup service. (3) Show nothing if it's a Basic zone without SecurityGroup service.
+
+:100644 100644 4ca1028ac4cc6ccdf1f0f9a407460bf1df9df336 cabce11f21df24f6f6d457f745c622f8605ba9b3 M	ui/scripts/instances.js
+
+commit 4e5807cd75deba0d0729fc17a642e92c89d55d57
+tree 532457a8fe3722ac8af7b68ce83eb498b745b54f
+parent 1707e56c53fc618694adf0600e291c529827234e
+author bfederle <bfederle@gmail.com> 1328658894 -0800
+committer bfederle <bfederle@gmail.com> 1328658894 -0800
+
+    Admin dashboard update
+    
+    Use new API call to list capacities, ordered by usage and limited to
+    the top 5 capacites.
+    
+    --Note that, due to API limitations, the UI cannot display what
+    particular pod/cluster the capacity belongs to anymore, as that
+    information is not returned in the response. This can be added again
+    if relevant API changes are made.
+
+:100644 100644 dbfe2de3054c6179e11b1b8270ec98b8497f8b6a 5399d42fb8b6c017c9340838a87e419ebfbf7cd5 M	ui/scripts/dashboard.js
+
+commit 1707e56c53fc618694adf0600e291c529827234e
+tree 99e9832c348836565ad8ec45a70fd97f84ae50ec
+parent 663f9bb5c24b15878e8d80183bbd4621c9d5d794
+author bfederle <bfederle@gmail.com> 1328658676 -0800
+committer bfederle <bfederle@gmail.com> 1328658676 -0800
+
+    bug 12780:
+    
+    Add/update zone capacities to support updated capacity types
+    
+    status 12780: resolved fixed
+
+:100644 100644 9241ec9ceb440991fe8e7cce7b6b1d2f54c3ee93 e796ab454074ad0d88e7bf060121bcb6539dc0bf M	ui/css/cloudstack3.css
+:100644 100644 83f13dd390427375a1cf12a1f5a7aceca9236b64 eb6666b631f927354498e6932e733f3448b3d67c M	ui/scripts/ui-custom/zoneChart.js
+
+commit 663f9bb5c24b15878e8d80183bbd4621c9d5d794
+tree 30e1555146748c41e8716dbbf601e73059756cb4
+parent 966c18cdefd10c3efef28e4f5e55615bc30957d2
+author Jessica Wang <jessica@cloud.com> 1328656188 -0800
+committer Jessica Wang <jessica@cloud.com> 1328656188 -0800
+
+    bug 13500: cloudstack 3.0 new UI - deployVM page - step 1 - provide description to zone, template, ISO.
+
+:100644 100644 0157f052bc636e9b6db938be19cc176ed9beb18e 93a4b16148d3b53562e8b9ef0cd480d4536da7f0 M	ui/index.jsp

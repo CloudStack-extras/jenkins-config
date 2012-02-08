@@ -1,0 +1,44 @@
+Changes in branch origin/master, between eafe80b56038fbe315d8dab11c233230fd0515dd and 3c9a5439396dc87fda88e5dff28886369a6671b1
+commit 3c9a5439396dc87fda88e5dff28886369a6671b1
+tree 77d32911c11fdfd46b62498805c150fddfcadd0a
+parent 7516788a4620e7f20814887a9b1010ebc798e4ee
+author prachi <prachi@cloud.com> 1328668832 -0800
+committer prachi <prachi@cloud.com> 1328668889 -0800
+
+    Bug 13099 - table physical-network-traffic-types needs to be updated when xen network device setting is modified in the global settings
+    
+    Changes:
+    - DB upgrade changes
+    -- make the global setting hidden.
+    -- During upgrade set network labels from global config
+
+:100644 100644 dfd285029f8d645172bdb13e4a025e744eb22be1 202aa3d600a03c775fcfdbb0055dc312bd6a82a3 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 1a8a40ad229273358d4fa2e5769f48fd18e02ed2 98c852d8273f8b4a72d8bb767f9390a3d6b75682 M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+:100755 100755 72e2226d35cab6ef9da22850cfaaac8798adc2e4 5836d90221611fba2bf2ce9cc0d34493535dc9c4 M	setup/db/db/schema-2214to30.sql
+
+commit 7516788a4620e7f20814887a9b1010ebc798e4ee
+tree 8f1ae90a65445f9eff4b00419e2dac5d8dc809d2
+parent eafe80b56038fbe315d8dab11c233230fd0515dd
+author prachi <prachi@cloud.com> 1328657348 -0800
+committer prachi <prachi@cloud.com> 1328668883 -0800
+
+    Bug 13099 table physical-network-traffic-types needs to be updated when xen network device setting is modified in the global settings
+    
+    Changes:
+    - We do not need these global setting anymore. These will be hidden since 3.0
+    - The default traffic label will be picked from the global setting which is null by default. When traffic label is null it means the resource uses tag on the default gateway
+    - Changes to invoke discoverer to reload the resource object on host connection
+    - Since a zone can have many physical networks, there can be multiple guest, public networks. Only the zone wide storage and management traffic label will be stored in host_details henceforth.
+    - If traffic labels are updated, discoverer should update the host_details
+
+:100755 100755 ddb20c11c84c8e53579e53114d061e8c84743081 2a8626a33f7373f138f845c6d6bfebefa9f37f68 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100755 100755 e2bf7f4f67478eab0c66ba522377e011629f4774 07ea138d76cef3bf06cf79a4ed45ed9b2c7ddf41 M	server/src/com/cloud/agent/manager/AgentManagerImpl.java
+:100755 100755 bf8d784143fa2607468a684c618856d13c59a65e c074b6b5a471f4fcf8583eab7112aac94a7775ba M	server/src/com/cloud/configuration/Config.java
+:100755 100755 8866eb2dad600633345fdf66799434eb1bf67d1c bc1c09191e7e31332b25cfaca8c486025f53fa1f M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java
+:100755 100755 6852f1303b4084ed929d4989339b48c85f62cd9c 5dcb3bc50ba39fe5bbaf736dfc800191c89b6946 M	server/src/com/cloud/network/NetworkManager.java
+:100644 100644 2404d2d6f863a3d259e2fe735a65ac592e35b5fc 6fdbf94bf33e56d014307c027fa63bd7c86d7cb3 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 bd41d4c3b63a0a8c1aa380f7dec158d541c71360 1fdfbe472105c9415724a16a408c50a27e70f09d M	server/src/com/cloud/resource/Discoverer.java
+:100644 100644 03ac483a537273122ebfe7b6e007393dd28d7643 f9eef674277e147c6c6c87c0cced598e9178b49b M	server/src/com/cloud/resource/DiscovererBase.java
+:100755 100755 f1511dd4a2aa889247734e2a1dbfea29ec29512b 6181a00e456148f2eac5b8850f4c159627fe0249 M	server/src/com/cloud/resource/DummyHostDiscoverer.java
+:100755 100755 53bb21258b0e9cbd49399302fea200f62e0470f1 9d29dd073cb25e12b6fe35da08d0e9661e1de91b M	server/src/com/cloud/resource/ResourceManager.java
+:100755 100755 9229dc11024a919c98390d86a4729f833e81479d b0fe2b679da4d242466d35a2e50c5f200e57df1f M	server/src/com/cloud/resource/ResourceManagerImpl.java

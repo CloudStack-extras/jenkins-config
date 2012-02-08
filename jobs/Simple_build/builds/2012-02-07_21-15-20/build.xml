@@ -60,7 +60,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>14a7f1593837e73bbca3a804ff997ebd150dcf6e</sha1>
+              <sha1>eafe80b56038fbe315d8dab11c233230fd0515dd</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -68,7 +68,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>17</hudsonBuildNumber>
+            <hudsonBuildNumber>67</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -144,24 +144,23 @@
           <list/>
         </entry>
       </tags>
-      <ws>/var/lib/jenkins/workspace/First attempt</ws>
+      <ws>/var/lib/jenkins/workspace/Simple_build</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>17</number>
+  <number>67</number>
   <result>SUCCESS</result>
-  <duration>69233</duration>
+  <duration>66698</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/First attempt</workspace>
+  <workspace>/var/lib/jenkins/workspace/Simple_build</workspace>
   <hudsonVersion>1.447</hudsonVersion>
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
     <string>jessica</string>
-    <string>kelven</string>
     <string>bfederle</string>
   </culprits>
 </build>

@@ -1,0 +1,114 @@
+Changes in branch origin/master, between 663f9bb5c24b15878e8d80183bbd4621c9d5d794 and eafe80b56038fbe315d8dab11c233230fd0515dd
+commit eafe80b56038fbe315d8dab11c233230fd0515dd
+tree 11d3933aeaedd2a4b87923f858c6390805e50f49
+parent 5d794758cbeff56d869ac5743fc890daceb6be33
+author Jessica Wang <jessica@cloud.com> 1328663041 -0800
+committer Jessica Wang <jessica@cloud.com> 1328663041 -0800
+
+    bug 13515: system page - network page - fix a bug that zoneId didn't get passed to listPhysicalNetworks API.
+
+:100644 100644 096b4244ab908a09295c53c48025d5f275627abe 3bcb8bc7aa836f3c88a4381aeca1e61878768f35 M	ui/scripts/system.js
+
+commit 5d794758cbeff56d869ac5743fc890daceb6be33
+tree 3890551de4de9ddcf59a6198e93730bbb9c81316
+parent d0fda27e3176f504dd1f0ce7554f34837b09fd10
+author Jessica Wang <jessica@cloud.com> 1328662243 -0800
+committer Jessica Wang <jessica@cloud.com> 1328662243 -0800
+
+    cloudstack 3.0 new UI - listcapabilitiesresponse.capability.securitygroupsenabled is obsolete. Remove it from UI code.
+
+:100644 100644 4a4ed6385352c716a6d3d181bc868e1c11dd056b b7f6b222b4f8337ef90933ae08869358143d1ab9 M	ui/scripts/cloudStack.js
+:100644 100644 a99fb3c4e9305403dcf6cd8ebfa6d4577e64d1ba ef574c0d72741475bfd2e9fa7ee99406761974ef M	ui/scripts/instances.js
+:100644 100644 03328deef826d20e4b677592994e12d19aa51be0 97e35597d22a412b5110b7bed258d981e2ccf515 M	ui/scripts/sharedFunctions.js
+
+commit d0fda27e3176f504dd1f0ce7554f34837b09fd10
+tree c7927685d31346645557e9be1b3f8206bb4bafe3
+parent 593d83cc6b00ccd6b390b6a20198be531d56c235
+author Jessica Wang <jessica@cloud.com> 1328661436 -0800
+committer Jessica Wang <jessica@cloud.com> 1328661451 -0800
+
+    cloudstack 3.0 new UI - Instance detail page - show/hide Security Group tab upon zone's networktype and guest network's including SecurityGroup service or not.
+
+:100644 100644 cabce11f21df24f6f6d457f745c622f8605ba9b3 a99fb3c4e9305403dcf6cd8ebfa6d4577e64d1ba M	ui/scripts/instances.js
+
+commit 593d83cc6b00ccd6b390b6a20198be531d56c235
+tree dcfa571795e568b918634cb5e7b3d6884b0aa91d
+parent 5645343c2a791cc47a86541d7cf96f8446cbd121
+author bfederle <bfederle@gmail.com> 1328660381 -0800
+committer bfederle <bfederle@gmail.com> 1328660381 -0800
+
+    Projects: add project UI fix
+    
+    Remove actions column from 'Review' users list view -- this was having
+    buggy behavior due to widget limitations. User can still add/remove
+    afterwards by going to project detail view.
+
+:100644 100644 9ebb5a38f46b63bfd8dbb61a3853921fc484b9fa e4f0725b5415480c82fe1bf9a41143b6e6db9498 M	ui/scripts/ui-custom/projects.js
+
+commit 5645343c2a791cc47a86541d7cf96f8446cbd121
+tree 64b84b46ec8247fb5f5b5e53515b49ff5f1367af
+parent f00bb706ec882fe0d03079ff0753caa91ab197a6
+author bfederle <bfederle@gmail.com> 1328660071 -0800
+committer bfederle <bfederle@gmail.com> 1328660079 -0800
+
+    bug 13115
+    
+    Show project name in header when project is active
+    
+    status 13115: resolved fixed
+
+:100644 100644 8e00c32f1500a2224bf58001e868855d546cd9c7 9ebb5a38f46b63bfd8dbb61a3853921fc484b9fa M	ui/scripts/ui-custom/projects.js
+:100644 100644 912d3d1110fd5f9dfbac3381be026321fa277348 9b1134fbd3eb0cfeaabd77c56f520f849a9043fa M	ui/scripts/ui/core.js
+
+commit f00bb706ec882fe0d03079ff0753caa91ab197a6
+tree edadbd97b4e183119d4ceaa1dbba4da5c10700de
+parent ca1ca98bac6f100af5b44269a5aee820be346ba2
+author Jessica Wang <jessica@cloud.com> 1328659095 -0800
+committer Jessica Wang <jessica@cloud.com> 1328659095 -0800
+
+    cloudstack 3.0 new UI - zone detail page - remove 'Security Groups Enabled' field which is no longer in use (will be removed from API soon)
+
+:100644 100644 65b73afafd626813cebdecc19f6f95673a4bcef4 096b4244ab908a09295c53c48025d5f275627abe M	ui/scripts/system.js
+
+commit ca1ca98bac6f100af5b44269a5aee820be346ba2
+tree c19d319e83ade8465e335916343f0c1076ac2d05
+parent 4e5807cd75deba0d0729fc17a642e92c89d55d57
+author Jessica Wang <jessica@cloud.com> 1328658918 -0800
+committer Jessica Wang <jessica@cloud.com> 1328658938 -0800
+
+    cloudstack 3.0 new UI - deployVM - step 5 - (1) Show network list if it's an advanced zone.  (2) Show security group list if it's a Basic zone with SecurityGroup service. (3) Show nothing if it's a Basic zone without SecurityGroup service.
+
+:100644 100644 4ca1028ac4cc6ccdf1f0f9a407460bf1df9df336 cabce11f21df24f6f6d457f745c622f8605ba9b3 M	ui/scripts/instances.js
+
+commit 4e5807cd75deba0d0729fc17a642e92c89d55d57
+tree 532457a8fe3722ac8af7b68ce83eb498b745b54f
+parent 1707e56c53fc618694adf0600e291c529827234e
+author bfederle <bfederle@gmail.com> 1328658894 -0800
+committer bfederle <bfederle@gmail.com> 1328658894 -0800
+
+    Admin dashboard update
+    
+    Use new API call to list capacities, ordered by usage and limited to
+    the top 5 capacites.
+    
+    --Note that, due to API limitations, the UI cannot display what
+    particular pod/cluster the capacity belongs to anymore, as that
+    information is not returned in the response. This can be added again
+    if relevant API changes are made.
+
+:100644 100644 dbfe2de3054c6179e11b1b8270ec98b8497f8b6a 5399d42fb8b6c017c9340838a87e419ebfbf7cd5 M	ui/scripts/dashboard.js
+
+commit 1707e56c53fc618694adf0600e291c529827234e
+tree 99e9832c348836565ad8ec45a70fd97f84ae50ec
+parent 663f9bb5c24b15878e8d80183bbd4621c9d5d794
+author bfederle <bfederle@gmail.com> 1328658676 -0800
+committer bfederle <bfederle@gmail.com> 1328658676 -0800
+
+    bug 12780:
+    
+    Add/update zone capacities to support updated capacity types
+    
+    status 12780: resolved fixed
+
+:100644 100644 9241ec9ceb440991fe8e7cce7b6b1d2f54c3ee93 e796ab454074ad0d88e7bf060121bcb6539dc0bf M	ui/css/cloudstack3.css
+:100644 100644 83f13dd390427375a1cf12a1f5a7aceca9236b64 eb6666b631f927354498e6932e733f3448b3d67c M	ui/scripts/ui-custom/zoneChart.js

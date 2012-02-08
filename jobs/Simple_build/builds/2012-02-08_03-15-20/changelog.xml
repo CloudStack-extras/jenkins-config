@@ -1,0 +1,28 @@
+Changes in branch origin/master, between 3c9a5439396dc87fda88e5dff28886369a6671b1 and cc41b8e162a83e14b75f15f620164641452c1424
+commit cc41b8e162a83e14b75f15f620164641452c1424
+tree c553becd8b7a9e0b8975865070e9aa16e80e5013
+parent c444ebfaeb41257476ac4f8560df01d8749a34e4
+author abhi <abhinandan.prateek@citrix.com> 1328686639 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1328686639 +0530
+
+    bug 12980: added trust store for ssl
+
+:100755 100755 8a4df5bbc3f116708e13a02368f1229d54103db0 f00ab2d6c5decb8165b4e22ae10005e0801ba73e M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 620b6d4da67ce1b74d38dbd04d9951632f051384 a79734b5e2759e8fe95bd065b3f884461b833a47 M	api/src/com/cloud/api/commands/LDAPConfigCmd.java
+:100755 100755 e537aade555c5c27d097b04fffacc92d001a1988 25557067f0fdd2418487c87b006636fa68de0b21 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 5b1d417d93cf5b485acf0eb10b30a4da46393bce 47bfd5dee359c3bad0371ece52b2317668bd9fb8 M	server/src/com/cloud/server/auth/LDAPUserAuthenticator.java
+
+commit c444ebfaeb41257476ac4f8560df01d8749a34e4
+tree 609c09b34d918ac16cc8864e2b68ad3d64fd1a1b
+parent 3c9a5439396dc87fda88e5dff28886369a6671b1
+author Nitin Mehta <nitin.mehta@citrix.com> 1328682055 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328682055 +0530
+
+    Bug 13059: Remove the listTipConsumedResources api and introduced a sortbyusage flag in the listCapacity call.
+    Reviewed-By: Kishan
+
+:100755 100755 510a743120ed779a38162ea905ca74acdef4e584 8a4df5bbc3f116708e13a02368f1229d54103db0 M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 ce4b09564a8931c7c702936791c0da6ed7d81b1c a2551f9bfe13d95cb62e768907b1dcdab475705c M	api/src/com/cloud/api/commands/ListCapacityCmd.java
+:100755 000000 a26da14e679b88cb9a6d7bf4f8a269b9e921e74c 0000000000000000000000000000000000000000 D	api/src/com/cloud/api/commands/ListTopConsumedResources.java
+:100755 100755 0bf3188f1d3b3a495a31c180d0f80d4df60f4f0f 74d69fec09f6de6ad172ff5bbdb28f8673377284 M	api/src/com/cloud/server/ManagementService.java
+:100755 100755 561228a8ca0dd25857d1c3bb1b508007e1f88c5c f9d26482aa523a3748be2b7c13e3d7ec8f95eb2e M	server/src/com/cloud/server/ManagementServerImpl.java

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between a1c4e4d30592fbbb3401a3940d39cf34113725d3 and 64498c840c81176132260829ae8b6a3fa6b43097
+commit 64498c840c81176132260829ae8b6a3fa6b43097
+tree 111b810f6089a4081625bfe84e74c874577222a2
+parent a1c4e4d30592fbbb3401a3940d39cf34113725d3
+author Sam Robertson <sam@cloud.com> 1328747701 -0800
+committer Sam Robertson <sam@cloud.com> 1328747701 -0800
+
+    use temp tomcat directory for automated testing
+
+:100644 100644 4f95cb3194a91c8c537cb55988c50d9a5c3f24b1 57cdd2aadf6aeb2db8fe622682f727fb049b4f21 M	tools/testClient/automated/automated.sh

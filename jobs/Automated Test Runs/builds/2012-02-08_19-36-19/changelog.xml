@@ -1,0 +1,103 @@
+Changes in branch origin/master, between fca5227f00e5d5ab2eec029dccca25f50af4947a and a1c4e4d30592fbbb3401a3940d39cf34113725d3
+commit a1c4e4d30592fbbb3401a3940d39cf34113725d3
+tree 75faf34dd04648fd3611cef4b807cc344d3afaad
+parent 7a90a73519a088781c272bca14a6ab733823da92
+author Sheng Yang <sheng.yang@cloud.com> 1328742576 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328745470 -0800
+
+    Add "changecidr" parameter for updateNetwork API
+    
+    CIDR may be different after update to a service offering contained external
+    network element, user is required to acknowledge this, otherwise the update
+    won't process
+
+:100755 100755 28f1dbfc5eeb59106543306b56a19b7da3081f34 b531edc07fd1e3f1477a21a1731ef45b48a82fa0 M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 e734bd10d3339557fbbd63bd5e8b89c7c8bf4cec e8a7d4f3b78dd835f20f5c2a621cbb0cc2ad6e25 M	api/src/com/cloud/api/commands/UpdateNetworkCmd.java
+:100755 100755 d66c4eae61db474e8bdbddbd66e69b0e925257b5 07a15d5f6776b40dfb55c69eaf305d6d47182707 M	api/src/com/cloud/network/NetworkService.java
+:100755 100755 5dcb3bc50ba39fe5bbaf736dfc800191c89b6946 e253a41aeac0457acb84dc30a1459c5325d8f65d M	server/src/com/cloud/network/NetworkManager.java
+:100644 100644 1d56a8d9d1a7068b79d58a897959b5c3de371dab cb4f5531a3a1cd084ba2342c71d55c69f364584a M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit 7a90a73519a088781c272bca14a6ab733823da92
+tree 90854fc3ada7848bb00f02bf326bbe062aa85c85
+parent 90842f8ddb11fe207a02c46684ca7d0fcbd095fe
+author Sheng Yang <sheng.yang@cloud.com> 1328742575 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328745262 -0800
+
+    Revert dynamic cidr change
+
+:100644 100644 dc7daec2dff314fbf66b36b3bc280da47fed14e5 4e74b817a9951bb1b572906e1274cc5d4edec84e M	api/src/com/cloud/network/Network.java
+:100644 100644 c8a4fe014b253c8d71ab16658f50ef3592b7fe58 7c702cd994eb135145c51319dc4676af20e6185f M	api/src/com/cloud/network/NetworkProfile.java
+:100644 100644 3002ead091272a3feb99f5bd9649d3c6ed5eb76d 1d56a8d9d1a7068b79d58a897959b5c3de371dab M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 2441140915ce4ff53aa831f279f40dae86eaa437 4cd27cefcec09d64334c550f8c0e971104eed85b M	server/src/com/cloud/network/NetworkVO.java
+:100755 100755 c18730d69d6df7b45a2b502089dd6acc9969e25a b07f31cb4055a56b16677dce3b8c66db451880d5 M	server/src/com/cloud/network/guru/DirectNetworkGuru.java
+:100644 100644 62803eeae687063eeed3e95fe0007f0904d9f1b8 d11f15493b0806e2d18aca37803dd3f705f3b408 M	server/src/com/cloud/network/guru/ExternalGuestNetworkGuru.java
+:100755 100755 91f4e3772778b041fbf9350c2c62ab4380281631 995563d3b1f29b3c19926d0936592a35c1be9fa1 M	server/src/com/cloud/network/guru/GuestNetworkGuru.java
+:100755 100755 ec79740bf25257ecb6e22f8344cc1af1f567687a c1c8b9950d497675cbcf09a1454211f173cbc249 M	setup/db/create-schema.sql
+:100755 100755 105d92f6c38a13ee51363cd95531eb13615b0f0f 0e46e18fbd40c221bc75db8139f4e89ca493f26d M	setup/db/db/schema-2214to30.sql
+
+commit 90842f8ddb11fe207a02c46684ca7d0fcbd095fe
+tree 3fe6dce801ce003b8f0b76435330775600f634cb
+parent 49d2f91fbb2f089b336dfbc40a66a1e2a553c4b3
+author Sheng Yang <sheng.yang@cloud.com> 1328742575 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328745256 -0800
+
+    Revert zone guest cidr setting
+
+:100755 100755 493120ca4718f7e4c729363ff621f219f8a3be9a 755a25599fee210d7d57fd875198f15475c85069 M	api/src/com/cloud/api/commands/CreateZoneCmd.java
+:100755 100755 1f6cba8949a081865008b2c52363d6e75edfc62c 9b2a29519a9f98dc4da8af2ee8127b940cdeb991 M	api/src/com/cloud/api/commands/UpdateZoneCmd.java
+:100755 100755 47032fb241b43cc8cac4f2696711a3bd41a22e87 d8f8a6fbb31f593fa6951df69d21ec95a9af9451 M	api/src/com/cloud/api/response/ZoneResponse.java
+:100644 100644 7ccaefb4ef3060c67a3a55a3219ac7bc21aa0fc7 4d0affb1259b79da1ccd87936943f0e63d989204 M	api/src/com/cloud/dc/DataCenter.java
+:100755 100755 c04ac0275172aec66116fb4322c090e83d8f375f f2840486cb4d4d12875a94540993b18981138681 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 c043fbf0da92d797f0f486ee84db5438305d1770 daa64c082952eb394ea0d0c94b4b22b0b421af30 M	server/src/com/cloud/configuration/ConfigurationManager.java
+:100755 100755 25557067f0fdd2418487c87b006636fa68de0b21 ad27d44c2ecf1f0f5eb43c49a987634f5b786d5e M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 cd8cc46a369adbd10cbdc0d1275980f76a67a79c d0fcdcc3ace98e1ed3decc02d827422a22e73b96 M	server/src/com/cloud/dc/DataCenterVO.java
+:100644 100644 8d1c9d1e37ddd316a3fbd85b066c2a2eb65a91e3 3002ead091272a3feb99f5bd9649d3c6ed5eb76d M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 22afdcec5f12b9a1f550f38deadf9a0a502b6dbe 62803eeae687063eeed3e95fe0007f0904d9f1b8 M	server/src/com/cloud/network/guru/ExternalGuestNetworkGuru.java
+:100755 100755 809ee32e3ae2123a2967e22691e7c195463126f9 91f4e3772778b041fbf9350c2c62ab4380281631 M	server/src/com/cloud/network/guru/GuestNetworkGuru.java
+:100755 100755 2e71c6fc287c2b74ba2f9894adb2be8ec5ae3b66 85aa0ffd68c6803f0d98b47e071313e400da7237 M	server/src/com/cloud/test/DatabaseConfig.java
+:100644 100644 77c74d3a4f77ca4e2e111c26f46a7c287731c5c2 c14c034c5503d74e289d0875fdd39e8cbacc18c1 M	server/src/com/cloud/test/PodZoneConfig.java
+:100755 100755 e91679b73758f2e2450f1a72ca6a46eb1d84134c ec79740bf25257ecb6e22f8344cc1af1f567687a M	setup/db/create-schema.sql
+:100755 100755 5836d90221611fba2bf2ce9cc0d34493535dc9c4 105d92f6c38a13ee51363cd95531eb13615b0f0f M	setup/db/db/schema-2214to30.sql
+:100755 100755 490c19ccc3abaccc9a52d86e230e69bbca02f0c2 4035902d3276681624d377b7cab0546e2472740d M	setup/db/server-setup.xml
+
+commit 49d2f91fbb2f089b336dfbc40a66a1e2a553c4b3
+tree 06969be38194142357b21ee360ae797b49012059
+parent 55d2bd7e58aef8553b70a2e8cecebe82199dd8cb
+author Sheng Yang <sheng.yang@cloud.com> 1328667590 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328745249 -0800
+
+    bug 13475: Fix invalid char in the gson string
+    
+    Thanks fix provided by Frank. The reason is some invalid char in the json
+    message result in json parsing chaos.
+    
+    status 13475: resolved fixed
+
+:100755 100755 27fe9c548a05450253488aff62f4d8a590c18bfa 415eb5584b8ebedea8bb5aac5b6d5fa11c8fcda1 M	core/src/com/cloud/agent/transport/Request.java
+
+commit 55d2bd7e58aef8553b70a2e8cecebe82199dd8cb
+tree 4a0e89ad37e345ab80fb3e96ae9459a1ab516045
+parent 79d0eed8e7bfe46837e31c6ba1fb2c891864b257
+author Sheng Yang <sheng.yang@cloud.com> 1328652984 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328745243 -0800
+
+    bug 12747: release ip when no static nat rule existed
+    
+    status 12747: resolved fixed
+
+:100644 100644 27ecf212ef94e4443cc37b77412373c70c9d0212 8d1c9d1e37ddd316a3fbd85b066c2a2eb65a91e3 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 fee773e9121d09584af32ad5b5a4fbfe2472dc62 af5a70086bafbb348c85b30a7259e86ee9aee06e M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+
+commit 79d0eed8e7bfe46837e31c6ba1fb2c891864b257
+tree f3280feaacce7af7fd9c0daf8ab811f4861375d5
+parent fca5227f00e5d5ab2eec029dccca25f50af4947a
+author Sheng Yang <sheng.yang@cloud.com> 1328737966 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328745236 -0800
+
+    bug 13540: Fix release ip fail to clean up iptables rules
+    
+    The rule cleanup must be done before ip disassociated.
+    
+    status 13540: resolved fixed
+
+:100644 100644 2d65531f7d70384e3b554a60a76630e95806ed1e 27ecf212ef94e4443cc37b77412373c70c9d0212 M	server/src/com/cloud/network/NetworkManagerImpl.java

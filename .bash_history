@@ -163,3 +163,123 @@ git rm -r --cached checkstyle
 cd ..
 ls
 exit
+ls -alF
+pwd
+dir
+ls -alF
+pushd /usr/share/tomcat6
+ls -alF
+ls -alf
+man cp
+man bash
+echo ${HOME}
+ps -ef
+mail
+dir
+pwd
+popd
+dir
+ls -alF
+pwd
+cd workspace/
+dir
+cd Automated\ Test\ Runs/
+dir
+ls -alF
+pwd
+dir
+ls -alF
+cd build
+ls -alF
+pwd
+cd ../../../
+ls -alF
+pwd
+dir
+cd workspace/
+dir
+cd Automated\ Test\ Runs/
+dir
+vi tools/testClient/automated/automated.sh
+sh tools/testClient/automated/automated.sh
+mysql
+dir
+ls -alF
+cat build/developer.xml 
+cat build/build-tests.xml 
+:%
+:q
+and deploydb
+ant deploydb
+echo ${CATALINA_HOME}
+cat tools/testClient/automated/automated.sh
+export CATALINA_HOME=${HOME}/automated
+ant deploydb
+pushd ~/automated
+dir
+idr
+ls -alF
+cd logs
+ls -alF
+cat catalina.out 
+cd ..
+dir
+ls -alF bin/
+popd
+ant start-tomcat
+echo $CLASSPATH
+export CLASSPATH=~/automated/bin/tomcat-juli.jar 
+ant start-tomcat
+env
+which java
+env
+unset CLASSPATH
+env
+dir
+ls -alf
+cd tools/testClient
+cd automated
+dir
+vi automated.sh
+pwd
+cd ../../..
+dir
+ls -alF
+pwd
+git status
+git diff
+cd automated
+dir
+ls -alF
+pwd
+pushd ~/
+ls -alF
+cd automated
+ls -alF
+cd bin
+ls -alF
+mkdir t
+cd t
+dir
+cd ..
+pwd
+rmdir t
+ls -alF
+w
+pwd
+cd ..
+dir
+rm -rf automated/
+pwd
+cd workspace/Automated\ Test\ Runs/
+dir
+git status
+git checkout tools/testClient/automated/automated.sh
+git status
+cd tools/testClient
+dir
+vi automated.xml.py 
+dir
+ls -alF
+pwd
+whoami

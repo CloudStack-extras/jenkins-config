@@ -1,0 +1,37 @@
+Changes in branch origin/master, between 84de15a5d629d676f8764475b8a3ba4c157ead76 and 02b7489abed7385adde83e000380a2aec5f21900
+commit 02b7489abed7385adde83e000380a2aec5f21900
+tree 6a5818e0ba1b5e2dfdf059ac1ca0250ab1ec4cca
+parent faea305efb3b34a9fb01b385375323de38c60c5f
+author Murali reddy <Murali.Reddy@citrix.com> 1328797437 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1328801867 +0530
+
+    bug 13492: vmware:Template sizes are incorrectly reported
+    status 13492: resolved fixed
+    reviewed-by: Nitin
+    
+    virtual size of the private templated from size mentioned in the OVF file
+
+:100644 100644 4fbf3a6679ae018535bf24c36db3596f11c0fd1d 881a8fe04cbbcc21b31920db6b0fd0e5b8d0c53a M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+
+commit faea305efb3b34a9fb01b385375323de38c60c5f
+tree aef64a569e5ec1d442af76b3981da500c07a7ef9
+parent d1898d80fdf15e622fcca26caa450679194357d7
+author Nitin Mehta <nitin.mehta@citrix.com> 1328801151 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328801151 +0530
+
+    Bug 13059: Used and total capacity were not showing in some cases becuae the constructor was not setting it.
+    Reviewed-By: Kishan
+
+:100755 100755 e91070101ab32c87322ee915427998aee6a8f70d cfd72b4a186c8da87ef7bf364d62d6f5d649ce45 M	server/src/com/cloud/capacity/dao/CapacityDaoImpl.java
+:100755 100755 ebed373654d7c06c66000ae12536efc3f60086f8 6f13ff818e28277c43ed0b28eac2f5087955eeed M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit d1898d80fdf15e622fcca26caa450679194357d7
+tree 11afd9e9e709175d806373335aaa83a40ee6b994
+parent 84de15a5d629d676f8764475b8a3ba4c157ead76
+author Nitin Mehta <nitin.mehta@citrix.com> 1328798653 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328798653 +0530
+
+    Bug 13564: Incorrect format was coming for kvm since there was a ohardcoding on the extension to be of size 3 Instead take the format from the ENUM.
+    Reviewed-By: Kishan
+
+:100755 100755 b9b7d6cb759b3f41add71cd5c26005a4d029da49 867a9583fc15e227ea2be9fe5bdf27a77922cece M	server/src/com/cloud/storage/upload/UploadMonitorImpl.java

@@ -1,0 +1,263 @@
+Changes in branch origin/master, between 6a17a41fc82c9219cd14d5f760fd35105d521a7e and 355d11847276582f92c558a2027504a7469742b3
+commit 355d11847276582f92c558a2027504a7469742b3
+tree ad1a3f5cc4cbd04f1acd55bcdbc27a44a56d0748
+parent 994010606e05ad14f30dcaf0cc8087bb86a08e60
+author Brian Federle <brian.federle@citrix.com> 1328828947 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328828953 -0800
+
+    Localize storage->snapshots section
+
+:100644 100644 736f0ff1e6e351dcb40b46def8ce3eeda96b383d f60bf974b667a5b773fda79ed27f273094f213fc M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 5e0ab9eb43d2901e4331d60c61329da2e27dac23 4d6bc308040dc2e10d9babf21d8698629f1ad83e M	ui/index.jsp
+:100644 100644 24547f74247c227508bbb1888034f72b3915eeed 0d4bea9c81125c1e208bb5b527653583a3dbfe88 M	ui/scripts/storage.js
+
+commit 994010606e05ad14f30dcaf0cc8087bb86a08e60
+tree 30282ac0b3332b6b8ee8571e20e96760919c02dd
+parent d4ef172d028acca8736df28798f409e54acd384b
+author Jessica Wang <jessica@cloud.com> 1328828563 -0800
+committer Jessica Wang <jessica@cloud.com> 1328828579 -0800
+
+    bug 13578: system page - zone detail - provide list - remove SecurityGroup provider if it's advanced zone.
+
+:100644 100644 115b6b39964692851521b18c5876ff58be874807 c2c559a0aa760014487a121ee7737773c9517b83 M	ui/scripts/system.js
+
+commit d4ef172d028acca8736df28798f409e54acd384b
+tree 1b5154470ad136c83c208d18264e6f9433091b4c
+parent 3d980847909988fe55fcffd0e9cd690a2ddcbcd5
+author Edison Su <Edison.Su@citrix.com> 1328828281 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828281 -0800
+
+    fix build
+
+:100644 100644 a09473364ec6af2c26424186222bdbd6a0cf5013 2fcb19205ba8761432dacfca1ede1c9342a22803 M	agent/src/com/cloud/agent/storage/LibvirtStorageAdaptor.java
+
+commit 3d980847909988fe55fcffd0e9cd690a2ddcbcd5
+tree 9a262b93e37c1fe9378d168d76c6e3d36eba37ea
+parent 3ce96e015c2b19751a1a0b49bccc4080b5fd1312
+author Edison Su <Edison.Su@citrix.com> 1328828185 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828201 -0800
+
+    fix storage mount point is not available issue
+
+:100644 100644 e7ead90e4b41ed5396ac77272bd53ea94a56df97 a09473364ec6af2c26424186222bdbd6a0cf5013 M	agent/src/com/cloud/agent/storage/LibvirtStorageAdaptor.java
+
+commit 3ce96e015c2b19751a1a0b49bccc4080b5fd1312
+tree a621d6154a0d6a7f3b0805b67d589cebfc68b8e2
+parent 88417c2c85dfa45a6706ea1b9f4ed3981cae9905
+author Edison Su <Edison.Su@citrix.com> 1328826635 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828201 -0800
+
+    fix upgrade
+
+:100755 100755 b49df7fbb2c8ac9ef0f3e8e7f53ca2e8278dbea4 54f2b0ea654589ceaee56931789f4904dbac3988 M	core/src/com/cloud/storage/resource/NfsSecondaryStorageResource.java
+:100644 100644 a289e31bac411c62305a7d2b66f29db7a0204070 20abfc7e31f71d6da65741705849e421f391c29e M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+
+commit 88417c2c85dfa45a6706ea1b9f4ed3981cae9905
+tree 644e5f32345555e810e66d1fb7b1aa17d5a3f118
+parent 0f629b78039ca20ab81c02d270a1c3a55a595f7c
+author Edison Su <Edison.Su@citrix.com> 1328763305 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828201 -0800
+
+    bug 13470: check the correct old certificate
+    status 13470: resolved fixed
+    Reviewed-by: anthony
+
+:100644 100644 3e39c9db80909bc6e2ec50e9d8535e6bf1955c70 a289e31bac411c62305a7d2b66f29db7a0204070 M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+
+commit 0f629b78039ca20ab81c02d270a1c3a55a595f7c
+tree 9c46491e1302b5444534a6f2743a2302f5f049e5
+parent 01de7889e92c2b9a93806e681d5f59bf89f5fec0
+author Edison Su <Edison.Su@citrix.com> 1328825918 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828201 -0800
+
+    Agent disconnected due to so many Fencecommand send to agent, cause agent can't get pingaswer from mgt server, then agent thinks it's ping timeout, reconnect to mgt server.
+
+:100755 100755 521799f123aa39271c4394b798c19a85b4239380 626581a14864daa26f3e31b40d5a831287cac897 M	agent/src/com/cloud/agent/Agent.java
+:100755 100755 50acf5aa7e383cccd575444fc5c24dce6a735510 9f6804aeda14d62a040ea802fd4acd68aa47a2b1 M	server/src/com/cloud/ha/KVMFencer.java
+
+commit 01de7889e92c2b9a93806e681d5f59bf89f5fec0
+tree d563d7f584ef12ce16295a3d825273a767278f8b
+parent 81225cbcc740b2393216fbe08ca492d0019a0541
+author Edison Su <Edison.Su@citrix.com> 1328825836 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828200 -0800
+
+    cleanup
+
+:100644 100644 86d93e395a8a715d0977174bd8c09719a2ce6519 3e39c9db80909bc6e2ec50e9d8535e6bf1955c70 M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+
+commit 81225cbcc740b2393216fbe08ca492d0019a0541
+tree ebccb0c095dfa0e307548979ce3ff1151224823d
+parent 03acba1d43986cdbe288d7e90c9df4e69d270c6c
+author Edison Su <Edison.Su@citrix.com> 1328825711 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828200 -0800
+
+    add cert chain in db, and also open the api to upload a cert chain
+
+:100644 100644 73a9d4e350bb9bbf5d4b8097ad9633abbdc8bb99 aac0f4366aa6698072e7b9e3cadb2a0fa3c1e77d M	api/src/com/cloud/agent/api/SecStorageSetupCommand.java
+:100644 100644 5511a54d1b4539a0ce0aabbe5e90e2a5a8fbfb5f e94e31ea734c8948d73164ed344b829f399e256a M	api/src/com/cloud/api/commands/UploadCustomCertificateCmd.java
+:100755 100755 6f73572b59b07d519edfa65d2197ce0301a51fe4 a42e85f97c04fbbaa86a953a763d634ee5aba818 M	console-proxy/scripts/config_ssl.sh
+:100644 100644 e5aa7af1d91849751b0edbb55d08bad127f9a443 42e5787c8950f458204dbdec614f309f43e1ee75 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxySecureServerFactoryImpl.java
+:100755 100755 9d01d45f316b5296ff6d55af8235c3977b0d204a b49df7fbb2c8ac9ef0f3e8e7f53ca2e8278dbea4 M	core/src/com/cloud/storage/resource/NfsSecondaryStorageResource.java
+:100755 100755 5254cf7c3b2fc4593c32d339e763fede27cfebc7 0455e60bccba9a86c54b5bc73ab9437af3ebcbcd M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:100644 100644 d1b2889eb9eaa5a22dc0e945a6c27e1a0ffb12fc 4206730aa6e4ccdfb68bf9657f9383aec901f58b M	server/src/com/cloud/keystore/KeystoreDao.java
+:100644 100644 22421a9c55c1fc151ac460506f151f26960f708c 6399caf3aa6e6747c04fc054d2ce01eefd27c68d M	server/src/com/cloud/keystore/KeystoreDaoImpl.java
+:100644 100644 44491af07e8b2757d6f76baa8b9320fb4bfdc0f1 78ab6fd2118226f8c33a0a840101198dca7c8cd4 M	server/src/com/cloud/keystore/KeystoreManager.java
+:100644 100644 6fa2a690cfcedef20279f372596099fd08afd8f0 9495812b59ba02cea8ff1a3c80791c67907832eb M	server/src/com/cloud/keystore/KeystoreManagerImpl.java
+:100644 100644 52e10b85fe1dab951f6da631e95b28dba55ee4b0 4b252adfb56283a49ebc2545057585eac539b101 M	server/src/com/cloud/keystore/KeystoreVO.java
+:100755 100755 6f13ff818e28277c43ed0b28eac2f5087955eeed 83d6603406fd300b56d4bd72cf817bfe49b8fab8 M	server/src/com/cloud/server/ManagementServerImpl.java
+:100755 100755 326b8e2c39c2665775f6640d92108706d060455c ee8e5b2e3a6448c7ffb95f6dba5f8b323daefb30 M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+:100644 100644 b61fdea14a312d216dab6309b419eb6dfb96af99 86d93e395a8a715d0977174bd8c09719a2ce6519 M	server/src/com/cloud/upgrade/dao/Upgrade2213to2214.java
+:100755 100755 c1c8b9950d497675cbcf09a1454211f173cbc249 c3c2725bdaed6b5345768c9089f50a26c58d9501 M	setup/db/create-schema.sql
+:100644 100644 2a7d2527527eb5dc71b1637ae037a5531630eacf ad8a755bf7b2573efd2948e4b3dd3fc8312168bf M	setup/db/db/schema-2213to2214.sql
+:100644 100644 8ba7c99154cb155d6c633859d47f4ed4ce64f549 3d3deff0b5555545d467dba609335d73f7c9b260 M	utils/src/com/cloud/utils/security/CertificateHelper.java
+
+commit 03acba1d43986cdbe288d7e90c9df4e69d270c6c
+tree f62b4cb5866d2972efc92b7f7fac56be7023618b
+parent 774a7f064f70e4fd81e5ebfc449f460ba105a0a6
+author Edison Su <Edison.Su@citrix.com> 1328308972 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328828200 -0800
+
+    add realhostip.crs/key/crt
+
+:100644 100644 686be4c837d59f69dcf8c29628e027b5363d74c5 7520b0ca6c476eada3a496a26b2a1f15fcdbdc9f M	console-proxy/certs/realhostip.crt
+:100644 100644 5602b96241621eeefd0286cbc1f922713706ac23 0684141d23716b1f25052e91c50cadfec1fff70b M	console-proxy/certs/realhostip.csr
+:100644 100644 40d9fd164d50fa0368376401ccd067c36b9eac5e 53bdc86e273a42ac0a6f98f8783e2cd1d9ce8bb2 M	console-proxy/certs/realhostip.key
+
+commit 774a7f064f70e4fd81e5ebfc449f460ba105a0a6
+tree 7af454fab9188d446b85f870eb4a181550fd1b4f
+parent 784b31d93a2c63ce3af905e2c7ab10bba1311f81
+author Brian Federle <brian.federle@citrix.com> 1328827933 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328827935 -0800
+
+    Fix some message labels
+
+:100644 100644 12702af1f570ae7551c08b7383e44be74761d62b 736f0ff1e6e351dcb40b46def8ce3eeda96b383d M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 5007137c806a6c3794aa2e313386c4fdb512a887 ca087cc32618da02eaa6e1a6fb821bb180df22f9 M	ui/scripts/ui/core.js
+:100644 100644 3b18bcc1d06067e22eebdc71459d6a2b6b41ba1a 1ea1252c4eba98748f77613a954adea11213caf9 M	ui/scripts/ui/dialog.js
+
+commit 784b31d93a2c63ce3af905e2c7ab10bba1311f81
+tree a5335608707dd75497560030526d6d0f21b7afd0
+parent f422b207c5ab73854bfffe6cafb9e00e57f07f6c
+author Sheng Yang <sheng.yang@cloud.com> 1328827218 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328827218 -0800
+
+    Better error message for changeCidr
+
+:100644 100644 56883b88b6ef2ac9135bca8daaf1bfb41d2f95b3 b0d74be91d2c1e527ad889cf5131c49caaa8c52e M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit f422b207c5ab73854bfffe6cafb9e00e57f07f6c
+tree 2972e2e2864724128a2c426a3a57d3770f31da46
+parent ee998a7cf24d64846833c8f63915624438ff1d57
+author Brian Federle <brian.federle@citrix.com> 1328826334 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328826339 -0800
+
+    bug 13574: Hide 'max projects' from resources
+    
+    status 13574: resolved fixed
+
+:100644 100644 df35191e1417eedcc4a5c77208e59ae3fb72c36f 8960b9a3d1b654e59378442123dfab2091819830 M	ui/scripts/projects.js
+
+commit ee998a7cf24d64846833c8f63915624438ff1d57
+tree 124cb7db280e00f73ce37cab945adfc9a2eb7518
+parent 2cbe343baadce4b42ab2b98470c63d0cca06436c
+author frank <frank.zhang@citrix.com> 1328825934 -0800
+committer frank <frank.zhang@citrix.com> 1328825948 -0800
+
+    port copy template fix to acton
+
+:100644 100755 d1e23b2dc5acd21d3fd286bf147fe6e0e4115126 e0b043fdbdac5751547a8f803b599ed365c11758 M	api/src/com/cloud/agent/api/SecStorageFirewallCfgCommand.java
+:100755 100755 a2201e4936802dde7f4ba4ae64120ac990cb1af9 41ae6b6ddc3bfa32f1bc60917e91d2f46a9271d2 M	console-proxy/scripts/ipfirewall.sh
+:100755 100755 10240c1f56cdde2b684e1a6853e529c844899e37 9d01d45f316b5296ff6d55af8235c3977b0d204a M	core/src/com/cloud/storage/resource/NfsSecondaryStorageResource.java
+:100755 100755 ee696ab6d7fdbfd245d0f5d489b7363e30c9fd00 326b8e2c39c2665775f6640d92108706d060455c M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+
+commit 2cbe343baadce4b42ab2b98470c63d0cca06436c
+tree 86677a2990516c04f372b681ce96916b1061915d
+parent c801ac9e75115a23008de6e1037aef803de27aa6
+author Brian Federle <brian.federle@citrix.com> 1328825706 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328825706 -0800
+
+    Localization for storage->volumes section
+
+:100644 100644 c0f9664f5e3e20f329843ba886ddfe6c9573b2af 12702af1f570ae7551c08b7383e44be74761d62b M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 3d5aa349e7d5472c8ae162e12eec9f53f2812053 5e0ab9eb43d2901e4331d60c61329da2e27dac23 M	ui/index.jsp
+:100644 100644 eae8e0f60e805dfba81fef3e77f10594a12e5751 24547f74247c227508bbb1888034f72b3915eeed M	ui/scripts/storage.js
+:100644 100644 fd58de1502da7296b138db5ac8d1206575689aaf 521bebfdca94989f17d437d7e6dbc4c75baa4ebe M	ui/scripts/ui-custom/recurringSnapshots.js
+
+commit c801ac9e75115a23008de6e1037aef803de27aa6
+tree 37aec3b1500f4754191b97fea5b6c9a4ee34a2b4
+parent 2ff975b78ba6748667e518228cd6d93de6c94922
+author Jessica Wang <jessica@cloud.com> 1328824944 -0800
+committer Jessica Wang <jessica@cloud.com> 1328824944 -0800
+
+    bug 13534: template page - remove "All" drop down choice from domain-admin user because API doesn't support it yet. (no templatefilter is for domain-admin to see all templates in his domain).
+
+:100644 100644 6f76bb16b9a5b0ad1c6a9b436403efa1c7167ec9 69f48d4d8fe88ce9b2c72bdfae30c5186cc3648d M	ui/scripts/templates.js
+
+commit 2ff975b78ba6748667e518228cd6d93de6c94922
+tree 56266b51c1b478fe6a69b4d8154f14b5a9faf0aa
+parent 8168956bcb5644ed1cf95933ddb036f1157ebf10
+author Jessica Wang <jessica@cloud.com> 1328824214 -0800
+committer Jessica Wang <jessica@cloud.com> 1328824230 -0800
+
+    bug 13553: network page - Display "View IP adresses" option only for (1) Isolated networks with SourceNat (2) Shared networks with ELB/EIP/SecurityGroup.
+
+:100644 100644 b56dd9b0e889ac5473521b7db317b112fea57aea 23c0e5a2b29149cc2478ce687806a88dee7524b7 M	ui/scripts/network.js
+
+commit 8168956bcb5644ed1cf95933ddb036f1157ebf10
+tree afec6a8466aef89faa4003ff28866b238f1277e7
+parent 1f13ac101b2dabc2cf4aea3317a51cd759e2a363
+author Brian Federle <brian.federle@citrix.com> 1328822165 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328822170 -0800
+
+    Localize admin dashboard
+
+:100644 100644 abcd37b7ca2e1eb52115187253518023ad1464ab c0f9664f5e3e20f329843ba886ddfe6c9573b2af M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 424ea7844de2689709a776c79d051458fa48a413 3d5aa349e7d5472c8ae162e12eec9f53f2812053 M	ui/index.jsp
+:100644 100644 32e19658731e5c426f69cf5cf63528430a005493 6adfd98ec9072efb56ff70a1d1aee2d9929b3d5b M	ui/scripts/dashboard.js
+:100644 100644 97e35597d22a412b5110b7bed258d981e2ccf515 fefad46eb957d0e4d78bf596d2052453fe967969 M	ui/scripts/sharedFunctions.js
+:100644 100644 45c447a57bbf8c7bc65329e3e9bd4a8497934dd5 43e51ac7bf3e687d2cd66f410aadb2bf0a912602 M	ui/scripts/ui-custom/dashboard.js
+
+commit 1f13ac101b2dabc2cf4aea3317a51cd759e2a363
+tree 969f3ef8db50ad80139bbb3e23eed63e09a10be1
+parent 8297d37e6f7f3879a9cc94b3f003321b2d423b98
+author Jessica Wang <jessica@cloud.com> 1328821624 -0800
+committer Jessica Wang <jessica@cloud.com> 1328821643 -0800
+
+    bug 13553: network page - display all networks instead of only isolated networks with SourceNAT, shared networks with LB, StaticNat,SecurityGroup.
+
+:100644 100644 5c0866d853f4f96017d038b6a90589851ea45c7a b56dd9b0e889ac5473521b7db317b112fea57aea M	ui/scripts/network.js
+
+commit 8297d37e6f7f3879a9cc94b3f003321b2d423b98
+tree 64133a8b6a3d58a8fc724d0346ac88ab6b8a0061
+parent b0761066f891173a47953782319772c7aa628644
+author Brian Federle <brian.federle@citrix.com> 1328819599 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328819599 -0800
+
+    Localize more VM states
+
+:100644 100644 13c1f0ac3c901b9156011f6de7f2df1f4195c5a3 abcd37b7ca2e1eb52115187253518023ad1464ab M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 e11498fd9ff8923204dc46a6f58159e96fe4a533 424ea7844de2689709a776c79d051458fa48a413 M	ui/index.jsp
+
+commit b0761066f891173a47953782319772c7aa628644
+tree 6b6047033219f3bbe51b0b5df0828fa5169b9bb8
+parent 6457d65c50afb83efb08218dba3c3e9fbe346b6b
+author Brian Federle <brian.federle@citrix.com> 1328819456 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328819456 -0800
+
+    Localize 'Expunging' state
+
+:100644 100644 25154ff6050695c73ee2bfedf2deb23f9d04414b 13c1f0ac3c901b9156011f6de7f2df1f4195c5a3 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 5650809b08e63e7e67abc6244faf437dfe3c22e9 e11498fd9ff8923204dc46a6f58159e96fe4a533 M	ui/index.jsp
+
+commit 6457d65c50afb83efb08218dba3c3e9fbe346b6b
+tree dc2f9d099db43efc486df505cb875f969907569e
+parent 6a17a41fc82c9219cd14d5f760fd35105d521a7e
+author Brian Federle <brian.federle@citrix.com> 1328818921 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328818930 -0800
+
+    Localization for projects UI
+
+:100644 100644 d70e65c727fb452a1708b81f5a56e2c745d77064 25154ff6050695c73ee2bfedf2deb23f9d04414b M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 4141c04ee7386166b413d168abb522dc006c4fc5 5650809b08e63e7e67abc6244faf437dfe3c22e9 M	ui/index.jsp
+:100644 100644 e2604f543eff76fddbfadb3de0a409c232dfb6c1 df35191e1417eedcc4a5c77208e59ae3fb72c36f M	ui/scripts/projects.js
+:100644 100644 e4f0725b5415480c82fe1bf9a41143b6e6db9498 1215db094b436642a9c00c1fac7055e3b4eb2ef8 M	ui/scripts/ui-custom/projects.js

@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <user>
   <fullName>Sam Robertson</fullName>
+  <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
       <apiToken>WQl8vk/315Xhpf70KEJCwM7rZ2gHxA7he9GhCTFzYNMUVLZc6P1xLpmJqbn5OKsW</apiToken>
     </jenkins.security.ApiTokenProperty>
     <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
@@ -17,8 +19,11 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>OfIKNH:d43b3595f62774a9018d403c9c22d892094ba61391e5660f723b15a3b1d49001</passwordHash>
+      <passwordHash>EIIxJQ:0aac801bc1c0aab9abb61dcfa788bc7cb75114878bb73a7c2a62c6f2520641d2</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys></authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
     <hudson.tasks.Mailer_-UserProperty>
       <emailAddress>sam@cloud.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>

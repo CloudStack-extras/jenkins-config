@@ -1,0 +1,94 @@
+Changes in branch origin/master, between 355d11847276582f92c558a2027504a7469742b3 and 16ab048accea0c5eb865bf34f2622910b662bfff
+commit 16ab048accea0c5eb865bf34f2622910b662bfff
+tree 398be4f51534dbb8ba6847a303b28aa36a5cfca4
+parent 8c55ac979143bae4125fe16ea4aefd4b2b3e6e23
+author Jessica Wang <jessica@cloud.com> 1328835265 -0800
+committer Jessica Wang <jessica@cloud.com> 1328835265 -0800
+
+    bug 13580: create zone wizard - advanced zone - make Guest CIDR field optional instead of required.
+
+:100644 100644 37a297a2fea146a06ced56e60460c7bc71ca9962 26ec9486038d1d0b726673a6800709947a30ca61 M	ui/scripts/zoneWizard.js
+
+commit 8c55ac979143bae4125fe16ea4aefd4b2b3e6e23
+tree d8e4b0758ef36af9e6873a3ff86a329b6006d5e9
+parent 9e3d6cd3cd23df830fb6c8a52ba8005e0ff15bc9
+author Jessica Wang <jessica@cloud.com> 1328835030 -0800
+committer Jessica Wang <jessica@cloud.com> 1328835047 -0800
+
+    bug 13554: system menu - zone detail - guest network page - Edit network - if network type is Isolated and network offering is changed, pop up a dialog box "Do you want to keep the current guest network CIDR unchanged?". Choosing Yes button will send "changecidr=false" to updateNetwork API. Choosing Cancel button will send "changecidr=true" to updateNetwork API.
+
+:100644 100644 c2c559a0aa760014487a121ee7737773c9517b83 c7731b3ad43d57876dcdadb531de48774b2db795 M	ui/scripts/system.js
+
+commit 9e3d6cd3cd23df830fb6c8a52ba8005e0ff15bc9
+tree 999489a6be80da8145af9db3d28e082b7f14b504
+parent 4ef3679cc5365721ba52ab1ea01f2cd69fed9242
+author Alex Huang <alex.huang@citrix.com> 1328834868 -0800
+committer Alex Huang <alex.huang@citrix.com> 1328835027 -0800
+
+    bug 13478: added exception printing.  Reviewed-by: Anthony
+
+:100644 100644 12d748c462a8f19e9d53013f0e4c6a26d5572b38 cf3c7954d1bdb7c2cb7708e9b9ec2f8eade86b34 M	server/src/com/cloud/ha/UserVmDomRInvestigator.java
+
+commit 4ef3679cc5365721ba52ab1ea01f2cd69fed9242
+tree c034cc28ac0db340391dbe63b38bc9515e60e0aa
+parent 458485c23993afb4454344277af7c3d4e17e10b9
+author Edison Su <Edison.Su@citrix.com> 1328834919 -0800
+committer Edison Su <Edison.Su@citrix.com> 1328834990 -0800
+
+    bug 13579: set default timeout to -1
+    status 13579: resolved fixed
+
+:100755 100755 f7f59ba8d34a74b7a799b3095f30a12121e00a57 6b64ea645af7fc544adc6403143136621bf6e097 M	server/src/com/cloud/network/SshKeysDistriMonitor.java
+
+commit 458485c23993afb4454344277af7c3d4e17e10b9
+tree 0ba7b9e5d91882435b3d25d46c991cd6ce9590b4
+parent 0c93ddedd84309ecfc1486192e3b21a5888402d0
+author Alex Huang <alex.huang@citrix.com> 1328834491 -0800
+committer Alex Huang <alex.huang@citrix.com> 1328834695 -0800
+
+    propagate fix from 2.2.14
+
+:100755 100755 79c9f748287efacc8017753a8c2d8f8c1a8bd880 5ae6226fd5b460cb4e203447e593041bbf87164b M	server/src/com/cloud/configuration/DefaultComponentLibrary.java
+
+commit 0c93ddedd84309ecfc1486192e3b21a5888402d0
+tree 67c6f555b06537b517d04775e79be77c4e0c5489
+parent 1caaaa1157993132d97559aacc4197486b3d698e
+author Jessica Wang <jessica@cloud.com> 1328834475 -0800
+committer Jessica Wang <jessica@cloud.com> 1328834492 -0800
+
+    bug 13554: network menu - network page - Edit network - if network type is Isolated and network offering is changed, pop up a dialog box "Do you want to keep the current guest network CIDR unchanged?". Choosing Yes button will send "changecidr=false" to updateNetwork API. Choosing Cancel button will send "changecidr=true" to updateNetwork API.
+
+:100644 100644 809bb351a2b809564a94bf317df08b5d9b8699a8 699bf5df7ab4c81b57803a9d05deae0bdfebb99e M	ui/scripts/network.js
+
+commit 1caaaa1157993132d97559aacc4197486b3d698e
+tree 6bf98e8332d8fe779976cb0a9015a9b9fb3e7c6e
+parent bead5ad76bc677f637cad7238e6c79c555e897e2
+author Brian Federle <brian.federle@citrix.com> 1328832273 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328832273 -0800
+
+    multiEdit localization
+
+:100644 100644 3d4f1373ba76584c2369cce06e8458e321b40c5b 1df259a7d702b3ded4afcfe9755aad53283770f9 M	ui/scripts/ui/widgets/multiEdit.js
+
+commit bead5ad76bc677f637cad7238e6c79c555e897e2
+tree 491567dc4db28038f59ba38a59acdf559cb6c545
+parent 0aaa7bca2b6dc0e11c54e88d4ad3007dc93b99c3
+author Brian Federle <brian.federle@citrix.com> 1328831880 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328831880 -0800
+
+    Localization for network->networks section
+
+:100644 100644 f60bf974b667a5b773fda79ed27f273094f213fc 10d5b0f849528f09cd47c5ad55608cfde8900812 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 4d6bc308040dc2e10d9babf21d8698629f1ad83e e6049f4ed7cdacbf108abb48c1efe72f135bde54 M	ui/index.jsp
+:100644 100644 23c0e5a2b29149cc2478ce687806a88dee7524b7 809bb351a2b809564a94bf317df08b5d9b8699a8 M	ui/scripts/network.js
+:100644 100644 0ff4026fef20e02038bdd1750c26073026d86292 9ac4e129cc27c6e0ca6efe162ecc06e6c82cabf1 M	ui/scripts/ui/widgets/detailView.js
+
+commit 0aaa7bca2b6dc0e11c54e88d4ad3007dc93b99c3
+tree 84f2f0da53f16c072574edbd3419c676b5f0afa7
+parent 355d11847276582f92c558a2027504a7469742b3
+author Jessica Wang <jessica@cloud.com> 1328830410 -0800
+committer Jessica Wang <jessica@cloud.com> 1328830426 -0800
+
+    bug 13577: volume page - show "Download volume" option only when corresponding vm is stopped
+
+:100644 100644 0d4bea9c81125c1e208bb5b527653583a3dbfe88 683858d49fca0b8680fc80c2bb2746b1e65b31d4 M	ui/scripts/storage.js

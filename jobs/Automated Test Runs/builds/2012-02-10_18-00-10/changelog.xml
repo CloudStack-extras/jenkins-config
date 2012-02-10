@@ -1,0 +1,211 @@
+Changes in branch origin/master, between d7f34bd17df66f3ad3731b68730978f724cf25d5 and b4f335f7d8c83c4626760a0601d47beddce535b5
+commit b4f335f7d8c83c4626760a0601d47beddce535b5
+tree 58d41e820b44c640e8745c77a43279829dccf5a8
+parent e7304624ad15d8252a001f62ef3c926fcf1e519b
+author Brian Federle <brian.federle@citrix.com> 1328914513 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328914513 -0800
+
+    Dashboard IE8 fixes
+
+:100644 100644 f05b650a093957e8eac719adee230cf22ffa8e75 90adbd219da6abd0ab33bc58fbc40c48631101d9 M	ui/css/cloudstack3.css
+:100644 100644 c0cbd02f51ce84dd72316b298145f75bd9b271a1 4bebf2d768f9bd63ed3e5022062c49ae7315ec3a M	ui/scripts/ui-custom/dashboard.js
+
+commit e7304624ad15d8252a001f62ef3c926fcf1e519b
+tree de5c3517d601efd3adff4ad86f11e1ef636d897f
+parent d3b9f60aeb063e42391b58d017fd2d3821f5d58c
+author Brian Federle <brian.federle@citrix.com> 1328912572 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328912572 -0800
+
+    bug 13581
+    
+    Hide NetScaler sub-nav text when not using ELB/EIP network offering
+    
+    status 13581: resolved fixed
+
+:100644 100644 5695cf1c0e3f3785308ba405b875addd84953d35 df81cdbd9e9b65588de4e9684bdf97e02ed9b716 M	ui/index.jsp
+:100644 100644 471ad2421688f2d9e02a3deb1d5ac23581064ffd 2114a8d6ddbf6826ec126744586510ab02c82ce8 M	ui/scripts/zoneWizard.js
+
+commit d3b9f60aeb063e42391b58d017fd2d3821f5d58c
+tree a0d468cfa934fbbd372c1e7855d9cda6bd923223
+parent 33f3c3ace659dbe46d079b7b6709da71632b9c7e
+author Brian Federle <brian.federle@citrix.com> 1328911776 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328911776 -0800
+
+    Remove dashboard scrollbar
+
+:100644 100644 e796ab454074ad0d88e7bf060121bcb6539dc0bf f05b650a093957e8eac719adee230cf22ffa8e75 M	ui/css/cloudstack3.css
+
+commit 33f3c3ace659dbe46d079b7b6709da71632b9c7e
+tree e8f10f30700023a58cce487141269ebb4e339eb1
+parent 3fd0dba7c7d145098e9652b957a55b2b8d0866d1
+author Brian Federle <brian.federle@citrix.com> 1328911548 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328911548 -0800
+
+    bug 13587
+    
+    Better ordering of zone resources dashboard items by type
+    
+    status 13587: resolved fixed
+
+:100644 100644 eb6666b631f927354498e6932e733f3448b3d67c c6c331f30a6c1165d160e44df4f2935eb5093bc7 M	ui/scripts/ui-custom/zoneChart.js
+
+commit 3fd0dba7c7d145098e9652b957a55b2b8d0866d1
+tree 8551ca7f9aa66fe113f2e443ef8390c3a933aac0
+parent 3df675f14ae40ca7f020880ff429da24db9e82eb
+author Brian Federle <brian.federle@citrix.com> 1328910908 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328910908 -0800
+
+    Dashboard: update listCapacity params per API change
+
+:100644 100644 6adfd98ec9072efb56ff70a1d1aee2d9929b3d5b 4ca44f2738e4f72945baf020e02cc0fe113d3a56 M	ui/scripts/dashboard.js
+
+commit 3df675f14ae40ca7f020880ff429da24db9e82eb
+tree 58bcd0aef02e31d8b12c123a22a44c26cdadabbc
+parent a89e1ea87235a9d4cdcfbbab79a62eaad26adb05
+author Brian Federle <brian.federle@citrix.com> 1328910323 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328910323 -0800
+
+    bug 13601
+    
+    Pass correct VPN state to details panel for non-admin IPs
+    
+    status 13601: resolved fixed
+
+:100644 100644 037a67242e2a81fee052788e366c535fbff0e0ba 7d7974d48d1afdb0f92188369a953471b7cf2249 M	ui/scripts/network.js
+
+commit a89e1ea87235a9d4cdcfbbab79a62eaad26adb05
+tree 13e2c385f0633f9597e18b2135a1f3db9d4e6719
+parent 146ff7c728221e115d655265a1ac6c2c4d360f84
+author Brian Federle <brian.federle@citrix.com> 1328909972 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328909972 -0800
+
+    Localize LB algorithm select
+
+:100644 100644 f78e45143f22866ac4f27bfb1e1023d062e485bb 037a67242e2a81fee052788e366c535fbff0e0ba M	ui/scripts/network.js
+
+commit 146ff7c728221e115d655265a1ac6c2c4d360f84
+tree 7933ec5d0222ba38e43aa803df78749e7445eba8
+parent 5bcd28dcc564899ac9434a2f48f53b89fed7595c
+author Brian Federle <brian.federle@citrix.com> 1328909783 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328909788 -0800
+
+    Localization for network->ip, security group sections
+
+:100644 100644 b1ca15cd2a00c40a652c4de8b0a8f3746f971295 0797c746dd9cd592f6c5716c541584da33c5e5b1 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 71dcc24d4b20a8fd75544c89f5caedc9de676d16 9f38df604746320df9dbd603749552ca2cef070d M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 582e20b818b498914769290429dbdb662939c6e1 5695cf1c0e3f3785308ba405b875addd84953d35 M	ui/index.jsp
+:100644 100644 699bf5df7ab4c81b57803a9d05deae0bdfebb99e f78e45143f22866ac4f27bfb1e1023d062e485bb M	ui/scripts/network.js
+
+commit 5bcd28dcc564899ac9434a2f48f53b89fed7595c
+tree f3a90822a8e127619ed3adf132798162e0bc6ec9
+parent 52d64bcbae098b1ef2d13495f14bc02e772e7668
+author Brian Federle <brian.federle@citrix.com> 1328908706 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328909788 -0800
+
+    Support UTF-8 charset
+
+:100644 100644 24a677838ee3cbd6457f394f5f150fd44dc013ad 582e20b818b498914769290429dbdb662939c6e1 M	ui/index.jsp
+
+commit 52d64bcbae098b1ef2d13495f14bc02e772e7668
+tree b47499abca89401ff4c62dfb15dc9ce99456bd16
+parent c96e9249dfe5370b1e596e68ed66d4277ba61d21
+author Jessica Wang <jessica@cloud.com> 1328908042 -0800
+committer Jessica Wang <jessica@cloud.com> 1328908042 -0800
+
+    Revert "bug 13099: global settings page - when name is xennetworklabel/kvmnetworklabel/vmwarenetworklabel and value is null, show "Use default gateway" instead of null."
+    
+    This reverts commit 0237dd43b222c10abb56b5d03eaa0189fd0953d4.
+
+:100644 100644 e8067981678f6347e0faa7e5e88cbd4b8c6f2e19 e543b5926beb622864781b2974b95bdaa3e7b220 M	ui/scripts/globalSettings.js
+
+commit c96e9249dfe5370b1e596e68ed66d4277ba61d21
+tree c1f5a8a035277c453398a715794a460f74c1d770
+parent 346cbc0dbb745757156c51f0fee58fda527dfcb7
+author Jessica Wang <jessica@cloud.com> 1328907905 -0800
+committer Jessica Wang <jessica@cloud.com> 1328907923 -0800
+
+    bug 13099: system - traffic type detail page - display "Use default gateway" when network label is blank.
+
+:100644 100644 c7731b3ad43d57876dcdadb531de48774b2db795 7fe772451365f2f93d204d3a18338eeffc879678 M	ui/scripts/system.js
+
+commit 346cbc0dbb745757156c51f0fee58fda527dfcb7
+tree f3bfdd5af0be6daae29147411d3c0515f6652dba
+parent b80335a898769418e3387e820e92b9fa255b243f
+author Brian Federle <brian.federle@citrix.com> 1328905831 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328905837 -0800
+
+    Add all existing messages codes to index.jsp dictionary
+
+:100644 100644 10d5b0f849528f09cd47c5ad55608cfde8900812 b1ca15cd2a00c40a652c4de8b0a8f3746f971295 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 19dab16aed62776a41018747c3350f0fd3ec4cc7 24a677838ee3cbd6457f394f5f150fd44dc013ad M	ui/index.jsp
+
+commit b80335a898769418e3387e820e92b9fa255b243f
+tree 6da25dfbfd9e4cdfd150ab23e1dcc83b30564803
+parent 49da3d807d28860e5bb3f364087ff4681abecd18
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328900546 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328900546 -0800
+
+    Don't allow guest network creation when guestCidr is not configured in corresponding zone
+
+:100644 100644 d11f15493b0806e2d18aca37803dd3f705f3b408 e89dbc6f43d43a559a268b821c09abe7f6b551b0 M	server/src/com/cloud/network/guru/ExternalGuestNetworkGuru.java
+:100755 100755 995563d3b1f29b3c19926d0936592a35c1be9fa1 50b89f3b1c167a5fb0d1586001665d14668bacea M	server/src/com/cloud/network/guru/GuestNetworkGuru.java
+
+commit 49da3d807d28860e5bb3f364087ff4681abecd18
+tree 94e9fb31cdae5b77757d8a800be8a80a2b3ee2fb
+parent 80ffb3854378ea1de82304aff96bdef8276c9287
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328899442 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328899505 -0800
+
+    Guest cidr is optional for Advance zone (zone can have just Shared networks)
+
+:100755 100755 ad27d44c2ecf1f0f5eb43c49a987634f5b786d5e 01d5a6e0b7dafefc7c8da874880eaa1106a9d10b M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit 80ffb3854378ea1de82304aff96bdef8276c9287
+tree fd1d98fc6551f33d60a1ef43c216c0833f129701
+parent 38bba89215ea9d6b8d61a79aa55b1920f1069080
+author Brian Federle <brian.federle@citrix.com> 1328899355 -0800
+committer Brian Federle <brian.federle@citrix.com> 1328899360 -0800
+
+    bug 13589
+    
+    -Fix 'view all' alerts to open up a new panel with the Alerts listing
+    
+    -Remove 'view all' for host alerts, as there is no relevant section to
+     go to for this
+    
+    -Fix some localization codes
+    
+    status 13589: resolved fixed
+
+:100644 100644 e6049f4ed7cdacbf108abb48c1efe72f135bde54 19dab16aed62776a41018747c3350f0fd3ec4cc7 M	ui/index.jsp
+:100644 100644 43e51ac7bf3e687d2cd66f410aadb2bf0a912602 c0cbd02f51ce84dd72316b298145f75bd9b271a1 M	ui/scripts/ui-custom/dashboard.js
+
+commit 38bba89215ea9d6b8d61a79aa55b1920f1069080
+tree 0a195102aa9d53ab30a6e5f99accdc0287b6646c
+parent 070d802f6d470f7d5dcb92f18a053c969d691724
+author Jessica Wang <jessica@cloud.com> 1328898934 -0800
+committer Jessica Wang <jessica@cloud.com> 1328898934 -0800
+
+    add zone wizard - not pass guestcidraddress to createZoen API call when Guest CIDR field is empty.
+
+:100644 100644 b45f86d3fd8e7723661ac13fb572f42385c9eddf 471ad2421688f2d9e02a3deb1d5ac23581064ffd M	ui/scripts/zoneWizard.js
+
+commit 070d802f6d470f7d5dcb92f18a053c969d691724
+tree e34af5508da0531a1d4368310e6b3746f80903f3
+parent e909247baf07c9c4c050d4b8ed8f5a97585e4c76
+author Jessica Wang <jessica@cloud.com> 1328898411 -0800
+committer Jessica Wang <jessica@cloud.com> 1328898428 -0800
+
+    bug 13584: Add Zone wizard - make "add primary storage" step optional since user can use local storage instead of primary storage.
+
+:100644 100644 26ec9486038d1d0b726673a6800709947a30ca61 b45f86d3fd8e7723661ac13fb572f42385c9eddf M	ui/scripts/zoneWizard.js
+
+commit e909247baf07c9c4c050d4b8ed8f5a97585e4c76
+tree a277608772ccb2046568efc4b05bd35551e8c0d7
+parent d7f34bd17df66f3ad3731b68730978f724cf25d5
+author frank <frank.zhang@citrix.com> 1328897825 -0800
+committer frank <frank.zhang@citrix.com> 1328897825 -0800
+
+    fix build
+
+:100644 100644 7e86fa945dca2ea9dfeda18a8def0dffb815b097 3c8c3fb1c18534168195f898598fb0b7584d3247 M	cloud.spec

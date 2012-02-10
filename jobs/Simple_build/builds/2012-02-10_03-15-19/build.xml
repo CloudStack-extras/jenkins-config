@@ -30,7 +30,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>02c781987bfccc7ea9933d63d30a2f3e4ea37f75</sha1>
+              <sha1>ded1a888838bd9dcc35a72f962ccc03587a2ab7c</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -38,7 +38,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>32</hudsonBuildNumber>
+            <hudsonBuildNumber>82</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -148,9 +148,9 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>32</number>
+  <number>82</number>
   <result>SUCCESS</result>
-  <duration>68787</duration>
+  <duration>65991</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -160,6 +160,7 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
+    <string>kishan</string>
     <string>nitin.mehta</string>
   </culprits>
 </build>

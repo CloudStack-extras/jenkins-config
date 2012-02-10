@@ -1,0 +1,24 @@
+Changes in branch origin/master, between 16ab048accea0c5eb865bf34f2622910b662bfff and ded1a888838bd9dcc35a72f962ccc03587a2ab7c
+commit ded1a888838bd9dcc35a72f962ccc03587a2ab7c
+tree aff9b1dd7da09a817a69f3636754691fd5f8ec7e
+parent bba19217f58b6f11b6d2fdb92823f425215e8c2e
+author kishan <kishan@cloud.com> 1328855382 +0530
+committer kishan <kishan@cloud.com> 1328855414 +0530
+
+    Bug 12802: Updated generate usage records API description
+    Status 12802: resolved fixed
+    Reviewed-By: Nitin
+
+:100644 100644 889281aa1dd2ac6f6176400c9ef36977a01878ae 765252931001ba4f3299beaf1a9bd6c21ecb40dd M	server/src/com/cloud/api/commands/GenerateUsageRecordsCmd.java
+
+commit bba19217f58b6f11b6d2fdb92823f425215e8c2e
+tree e48c91404b70173a64456d3d00f20aa713fed805
+parent 16ab048accea0c5eb865bf34f2622910b662bfff
+author Nitin Mehta <nitin.mehta@citrix.com> 1328852507 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1328852507 +0530
+
+    Bug 13059: Using Float instead of float for percentage.
+    Reviewed-By: Kishan
+
+:100755 100755 4ba9bb9b97db7df387b400109fd7a9a255caf695 cfe0dfec41b9a2afeedf35aa134963c7e31aabb4 M	core/src/com/cloud/capacity/CapacityVO.java
+:100755 100755 f2840486cb4d4d12875a94540993b18981138681 910c09202b886ba05759fb2a229be7bb76710c5b M	server/src/com/cloud/api/ApiResponseHelper.java

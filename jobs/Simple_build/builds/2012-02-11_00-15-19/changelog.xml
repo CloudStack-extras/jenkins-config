@@ -1,0 +1,21 @@
+Changes in branch origin/master, between 95e6b05c703b0881e40f393fd4c7f78083a27d37 and 85393408e7ca15bb1ba0856554526408cb01552c
+commit 85393408e7ca15bb1ba0856554526408cb01552c
+tree e5f24f9c8aee57d429c92a189eb9816f4e4e266a
+parent 95e6b05c703b0881e40f393fd4c7f78083a27d37
+author Sheng Yang <sheng.yang@cloud.com> 1328928482 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1328928735 -0800
+
+    bug 13606: Fix releasing of the first IP of second public nic
+    
+    The problem is remove_first_ip() in ipassoc.sh can't be called more than one.
+    The call after the first time would result in iptable and ip command failure,
+    thus result in failure of execution of IpAssocCommand.
+    
+    Use the same way to detect already disassociated ip address of non-first
+    IP(remove_an_ip()) to fix the issue.
+    
+    reviewed-by: Edison Su
+    
+    status 13606: resolved fixed
+
+:100644 100644 c5bcbf5211ec0bfff7b61b3dfa741db1e963b120 0ea90004405740f9a499bbf083a7a3825d45288a M	patches/systemvm/debian/config/root/ipassoc.sh

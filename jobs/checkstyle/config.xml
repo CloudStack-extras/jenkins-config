@@ -46,7 +46,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>checkstyle -f xml -o ./checkstyle_errors.xml -c /usr/share/doc/checkstyle-5.4/sun_checks.xml -r agent/src/com/cloud/agent &gt; /dev/null || exit 0 </command>
+      <command>checkstyle -f xml -o ./checkstyle_errors.xml -c /var/lib/jenkins/cs_checks.xml -r agent/src/com/cloud/agent &gt; /dev/null || exit 0 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>

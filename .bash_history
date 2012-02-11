@@ -283,3 +283,38 @@ dir
 ls -alF
 pwd
 whoami
+ls -alF
+which jenkins-cli
+ls -alF
+pwd
+find . -name "*.jar"
+find . -name "*.jar" | grep -v workspace
+java pwd
+dir
+pwd
+ls -alF
+java -jar var/WEB-INF/jenkins-cli.jar 
+cd var
+dir
+pwd
+cd var
+dir
+ls -alF
+java -jar war/WEB-INF/jenkins-cli.jar 
+env
+export JENKINS_URL=http://jenkins.cloudstack.org:8080/
+java -jar war/WEB-INF/jenkins-cli.jar 
+export JENKINS_URL=http://localhost:8080/
+java -jar war/WEB-INF/jenkins-cli.jar 
+java -jar war/WEB-INF/jenkins-cli.jar who-am-i
+java -jar war/WEB-INF/jenkins-cli.jar version
+ps -ef | grep mysql
+ps -ef
+ls -alF
+java -jar war/WEB-INF/jenkins-cli.jar -i identity.key 
+
+java -jar war/WEB-INF/jenkins-cli.jar -i identity.key 
+java -jar war/WEB-INF/jenkins-cli.jar -i identity.key login
+clear
+dir
+ps -ef

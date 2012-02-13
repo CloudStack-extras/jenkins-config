@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 305f653d70176644ecdecb98e8d86debd36e3a4c and 885790878023c8510605722246701d5d47f3fbef
+commit 885790878023c8510605722246701d5d47f3fbef
+tree 847a57c6f50280e1d7b911f72e03831b5dc39247
+parent 305f653d70176644ecdecb98e8d86debd36e3a4c
+author Brian Federle <brian.federle@citrix.com> 1329175100 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329175100 -0800
+
+    bug 13634
+    
+    Don't allow 'inline' mode to be set for external devices in UI
+    
+    status 13634: resolved fixed
+
+:100644 100644 f1ec24e5a8fcc17f646813675f6390dca109832d 798a4d0112150e059c3a0abf7201c0cdfe301af6 M	ui/scripts/system.js

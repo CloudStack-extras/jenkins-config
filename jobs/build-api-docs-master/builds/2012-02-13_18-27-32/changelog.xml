@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 885790878023c8510605722246701d5d47f3fbef and ccaf54a838125f1e923d1eb04ba3fec22792e80a
+commit ccaf54a838125f1e923d1eb04ba3fec22792e80a
+tree 17d93bfc7aa42e0dc8d4b596571d45d31f1cccef
+parent 885790878023c8510605722246701d5d47f3fbef
+author Brian Federle <brian.federle@citrix.com> 1329175471 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329175471 -0800
+
+    bug 13636
+    
+    Don't allow 'dedicated' option in add F5 UI
+    
+    status 13636: resolved fixed
+
+:100644 100644 798a4d0112150e059c3a0abf7201c0cdfe301af6 4fb15bb2a8866f153f468bcd4f2ae4b1f9d28db6 M	ui/scripts/system.js

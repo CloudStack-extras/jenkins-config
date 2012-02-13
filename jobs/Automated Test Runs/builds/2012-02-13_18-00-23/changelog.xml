@@ -1,0 +1,101 @@
+Changes in branch origin/master, between 5b88786df9973fea43caf3a5fc5012fbbd7a1b3b and 0742bdda8d439e1f0cc7cdaa494de994f4e16c7a
+commit 0742bdda8d439e1f0cc7cdaa494de994f4e16c7a
+tree db88c2bb935d7e83dde9c8e5e05f24609ad9fb80
+parent f338c5f93d6a77c336a3980e1f596725dbd01c17
+author Brian Federle <brian.federle@citrix.com> 1329173844 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329173844 -0800
+
+    Localize accounts/users
+
+:100644 100644 8b5ec095feef81ea3b9ec3c56fdd656d20ec6db2 f58b6fcff3042ca01d649307cf3c50455791e90e M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 b5b61555241a0519b36d0e0cba58717e1d3d1563 88ed022cecb0c78c70244bc0183dafddd4ecdddc M	ui/index.jsp
+:100644 100644 782ab69826966b417d93a229323552ba7f66289b 4f619eda90ff6b417dea4afe0b6521df077e56b5 M	ui/scripts/accounts.js
+
+commit f338c5f93d6a77c336a3980e1f596725dbd01c17
+tree 87d0751f0d32ab7f69fd16e7de5c901fa6601688
+parent 5fbdd5376dbb7318e6215bbd8b499aadd6ac96dc
+author Jessica Wang <jessica@cloud.com> 1329171782 -0800
+committer Jessica Wang <jessica@cloud.com> 1329171799 -0800
+
+    3.0 UI - localize disk offering page.
+
+:100644 100644 309de3ae78059c0845b51fac6f7531a1b2a38bc7 86e8b5337ae514e05148b9bd8c1cde175fa6456b M	ui/scripts/configuration.js
+:100644 100644 9f1744cecbca84b5b7e57e199eb721c929d5ac6a f1ec24e5a8fcc17f646813675f6390dca109832d M	ui/scripts/system.js
+
+commit 5fbdd5376dbb7318e6215bbd8b499aadd6ac96dc
+tree e2d01dec4f36e3f55e2dbb0f02d4dfca8820d261
+parent b2f796e787d0064b6436fa06ce394510feaff8b2
+author Brian Federle <brian.federle@citrix.com> 1329171643 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329171643 -0800
+
+    Localize events/alerts
+
+:100644 100644 1aba60c81da0ce2a65e00067c972d1b98a6addeb e1d95addbc691a9790a1cf678cbf854d31513772 M	ui/scripts/events.js
+
+commit b2f796e787d0064b6436fa06ce394510feaff8b2
+tree 18070cf477c2896920e8681b7e305759f6358b4b
+parent 0f3814191446d13a7d0e881c6cb8d889cb7b312c
+author Jessica Wang <jessica@cloud.com> 1329170137 -0800
+committer Jessica Wang <jessica@cloud.com> 1329170137 -0800
+
+    3.0 UI - localize system service offering page.
+
+:100644 100644 1fa8b944a7e1a248eb76e4491e3d9e27902865ed 8b5ec095feef81ea3b9ec3c56fdd656d20ec6db2 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 b9a9f2fe41fd5c0f128190d3fc3cba97d1d9855f 309de3ae78059c0845b51fac6f7531a1b2a38bc7 M	ui/scripts/configuration.js
+:100644 100644 7fe772451365f2f93d204d3a18338eeffc879678 9f1744cecbca84b5b7e57e199eb721c929d5ac6a M	ui/scripts/system.js
+
+commit 0f3814191446d13a7d0e881c6cb8d889cb7b312c
+tree 9a740913c0bdcb3c3e23226ecb65ced8c694ae32
+parent 1e64b4b7a58a5a7882fadac055cccb6d7fcf06f7
+author Jessica Wang <jessica@cloud.com> 1329161956 -0800
+committer Jessica Wang <jessica@cloud.com> 1329161977 -0800
+
+    3.0 UI - localize service offering page.
+
+:100644 100644 0932f361efba66a603684fcd7613d2050f4c4d11 b9a9f2fe41fd5c0f128190d3fc3cba97d1d9855f M	ui/scripts/configuration.js
+
+commit 1e64b4b7a58a5a7882fadac055cccb6d7fcf06f7
+tree 7798b0385648ce04b00c7ce5d0754db1e2c5d019
+parent 1da09c3fdfa79f364c152e88a44528d1fe770f31
+author Brian Federle <brian.federle@citrix.com> 1329161789 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329161789 -0800
+
+    Localize download ISO
+
+:100644 100644 f549ea1c73f0f7ccc5b00d675f8dee0c4682db97 231abeb412bbf1179e1b612505b70223438f3483 M	ui/scripts/templates.js
+
+commit 1da09c3fdfa79f364c152e88a44528d1fe770f31
+tree 1f0a6d1be7edd0730ba6f92f3d4043845147971a
+parent 909a5a31ec2c77d79f5ff3801effa3876c9d360a
+author Brian Federle <brian.federle@citrix.com> 1329161616 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329161622 -0800
+
+    Localize Templates/ISOs
+
+:100644 100644 0797c746dd9cd592f6c5716c541584da33c5e5b1 1fa8b944a7e1a248eb76e4491e3d9e27902865ed M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 df81cdbd9e9b65588de4e9684bdf97e02ed9b716 b5b61555241a0519b36d0e0cba58717e1d3d1563 M	ui/index.jsp
+:100644 100644 69f48d4d8fe88ce9b2c72bdfae30c5186cc3648d f549ea1c73f0f7ccc5b00d675f8dee0c4682db97 M	ui/scripts/templates.js
+
+commit 909a5a31ec2c77d79f5ff3801effa3876c9d360a
+tree 05b7195c9a06ed4cf023512fbca521ce9ceb0976
+parent 1c19be59322fbab03b8ad8baf1524a9b6a5b98e4
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1328918928 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329160316 -0800
+
+    Update apikey/secretkey in transaction
+
+:100755 100755 a634c0ebcf4b9f574d56f6dcf566d05920e21f72 dd4e49b647dd885d80cc541772bbc8fb69ddf5d6 M	server/src/com/cloud/user/AccountManagerImpl.java
+
+commit 1c19be59322fbab03b8ad8baf1524a9b6a5b98e4
+tree 2449e8f54ddcbb7212c7fbb24ab6ce9814af3077
+parent 5b88786df9973fea43caf3a5fc5012fbbd7a1b3b
+author Brian Federle <brian.federle@citrix.com> 1329158017 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329158017 -0800
+
+    bug 13618
+    
+    Fix instance wizard zone name display issue in IE9 compat.
+    
+    status 13618: resolved fixed
+
+:100644 100644 5894780f69f7b90a098042beb4be59fe9e299bee afe32b9d44e10d1a44f644fc8c4c70dae6c854b8 M	ui/scripts/instances.js

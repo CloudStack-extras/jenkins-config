@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 0742bdda8d439e1f0cc7cdaa494de994f4e16c7a and 305f653d70176644ecdecb98e8d86debd36e3a4c
+commit 305f653d70176644ecdecb98e8d86debd36e3a4c
+tree 4284001993908f961a1c99e451ea030e19cfeff2
+parent 0742bdda8d439e1f0cc7cdaa494de994f4e16c7a
+author Brian Federle <brian.federle@citrix.com> 1329174671 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329174671 -0800
+
+    Localize domains section
+
+:100644 100644 f58b6fcff3042ca01d649307cf3c50455791e90e 244ce2457c3178b5bee9bb479be0ed69c20f5848 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 88ed022cecb0c78c70244bc0183dafddd4ecdddc 92784db48f8176afacaab32bacf460fddcceff5b M	ui/index.jsp
+:100644 100644 78c89d407296d70bf3a36ba75357992d82b24652 53ab54744a9ae665335549381d405a8e75b2464c M	ui/scripts/domains.js
+:100644 100644 1ea1252c4eba98748f77613a954adea11213caf9 38e781085b82fbe95661b5882e70a6ddee9c7578 M	ui/scripts/ui/dialog.js

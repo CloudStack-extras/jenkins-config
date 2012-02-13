@@ -1,0 +1,10 @@
+Changes in branch origin/master, between b2f796e787d0064b6436fa06ce394510feaff8b2 and 5fbdd5376dbb7318e6215bbd8b499aadd6ac96dc
+commit 5fbdd5376dbb7318e6215bbd8b499aadd6ac96dc
+tree e2d01dec4f36e3f55e2dbb0f02d4dfca8820d261
+parent b2f796e787d0064b6436fa06ce394510feaff8b2
+author Brian Federle <brian.federle@citrix.com> 1329171643 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329171643 -0800
+
+    Localize events/alerts
+
+:100644 100644 1aba60c81da0ce2a65e00067c972d1b98a6addeb e1d95addbc691a9790a1cf678cbf854d31513772 M	ui/scripts/events.js

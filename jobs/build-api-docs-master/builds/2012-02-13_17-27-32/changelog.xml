@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 5fbdd5376dbb7318e6215bbd8b499aadd6ac96dc and f338c5f93d6a77c336a3980e1f596725dbd01c17
+commit f338c5f93d6a77c336a3980e1f596725dbd01c17
+tree 87d0751f0d32ab7f69fd16e7de5c901fa6601688
+parent 5fbdd5376dbb7318e6215bbd8b499aadd6ac96dc
+author Jessica Wang <jessica@cloud.com> 1329171782 -0800
+committer Jessica Wang <jessica@cloud.com> 1329171799 -0800
+
+    3.0 UI - localize disk offering page.
+
+:100644 100644 309de3ae78059c0845b51fac6f7531a1b2a38bc7 86e8b5337ae514e05148b9bd8c1cde175fa6456b M	ui/scripts/configuration.js
+:100644 100644 9f1744cecbca84b5b7e57e199eb721c929d5ac6a f1ec24e5a8fcc17f646813675f6390dca109832d M	ui/scripts/system.js

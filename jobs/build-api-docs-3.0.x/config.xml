@@ -15,13 +15,13 @@
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
         <name></name>
-        <refspec>+refs/heads/2.2.y:refs/remotes/origin/2.2.y</refspec>
+        <refspec>+refs/heads/3.0.x:refs/remotes/origin/3.0.x</refspec>
         <url>git://github.com/CloudStack/CloudStack</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>remotes/origin/2.2.y</name>
+        <name>3.0.x</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <disableSubmodules>false</disableSubmodules>
@@ -50,7 +50,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector">
     <hudson.triggers.SCMTrigger>
-      <spec>@hourly</spec>
+      <spec>* * * * *</spec>
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>

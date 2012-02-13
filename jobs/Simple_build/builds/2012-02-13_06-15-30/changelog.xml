@@ -1,0 +1,24 @@
+Changes in branch origin/master, between 8be91c2c93a32ed5a20c330f8c4399180e67a7dd and 5b88786df9973fea43caf3a5fc5012fbbd7a1b3b
+commit 5b88786df9973fea43caf3a5fc5012fbbd7a1b3b
+tree c1bce4fb99b383feb5dd6c2b42743cdd85bab779
+parent 9211a13a1c05b0246b06d65f2a03a50602f94390
+author Nitin Mehta <nitin.mehta@citrix.com> 1329131032 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1329131032 +0530
+
+    Bug 13591: Remove unwarranted log messages that we are printing with every answer recieved from the agent.
+    Reviewed-By: Kishan
+
+:100755 100755 590924040e7f9850e1d84492992b5395e7b635ae 1fc95a8bc0d99745e8646ae3a3a3265bf67e1161 M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+
+commit 9211a13a1c05b0246b06d65f2a03a50602f94390
+tree 533a488f56a1ba21f39a2a2ab86d07d11f061f35
+parent 8be91c2c93a32ed5a20c330f8c4399180e67a7dd
+author Naredula Janardhana Reddy <jana@cloud.com> 1329125904 +0530
+committer Naredula Janardhana Reddy <jana@cloud.com> 1329125904 +0530
+
+    Bug 12808:
+    Summary of Changes:   Using multiple routing tables to send the packets on the public NIC's based on source IP for the following type of connections:
+      - Inbound connections of Static NAT ip .
+      - Outbound connections of static-NAT (using static NAT-ip for SNAT).
+
+:100755 100755 0a33dcbd371821f5832c9c72c1e5d0893aa0d445 eb728592fcd7a69342035a1c7f591e5ec0929d48 M	patches/systemvm/debian/config/root/firewall.sh

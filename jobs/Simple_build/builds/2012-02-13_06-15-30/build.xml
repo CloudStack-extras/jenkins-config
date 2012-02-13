@@ -30,7 +30,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>7f44395ede611a3d422e1788607366c76c47c9ad</sha1>
+              <sha1>5b88786df9973fea43caf3a5fc5012fbbd7a1b3b</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -38,7 +38,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>40</hudsonBuildNumber>
+            <hudsonBuildNumber>90</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -148,9 +148,9 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>40</number>
+  <number>90</number>
   <result>SUCCESS</result>
-  <duration>65485</duration>
+  <duration>65277</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -160,8 +160,7 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>jessica</string>
-    <string>Alena.Prokharchyk</string>
-    <string>bfederle</string>
+    <string>jana</string>
+    <string>nitin.mehta</string>
   </culprits>
 </build>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>ewanm</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+      <result>ABORTED</result>
+    </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+  </actions>
+  <number>2</number>
+  <result>ABORTED</result>
+  <duration>12970</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <hudsonVersion>1.447</hudsonVersion>
+  <scm class="hudson.scm.CVSChangeLogParser"/>
+  <culprits/>
+</build>

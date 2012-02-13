@@ -1,0 +1,22 @@
+Started by an SCM change
+Checkout:build-api-docs-2.2.x / /var/lib/jenkins/workspace/build-api-docs-2.2.x - hudson.remoting.LocalChannel@f7e5d1
+Using strategy: Default
+Last Built Revision: Revision b8c2745aa9459b5a6c3b2cb75f0f24161c72c41d (remotes/origin/2.2.y)
+Checkout:build-api-docs-2.2.x / /var/lib/jenkins/workspace/build-api-docs-2.2.x - hudson.remoting.LocalChannel@f7e5d1
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack
+Commencing build of Revision b8c2745aa9459b5a6c3b2cb75f0f24161c72c41d (remotes/origin/2.2.y)
+Checking out Revision b8c2745aa9459b5a6c3b2cb75f0f24161c72c41d (remotes/origin/2.2.y)
+[build-api-docs-2.2.x] $ ant build-apidocs-zip
+Buildfile: /var/lib/jenkins/workspace/build-api-docs-2.2.x/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-2.2.x/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-2.2.x/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-2.2.x/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+Target "build-apidocs-zip" does not exist in the project "Cloud.com Cloud Stack Build Dispatch". 
+
+Total time: 2 seconds
+Build step 'Invoke Ant' marked build as failure
+Archiving artifacts
+Finished: FAILURE

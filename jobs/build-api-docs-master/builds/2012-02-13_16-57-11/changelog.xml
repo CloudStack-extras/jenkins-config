@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 0f3814191446d13a7d0e881c6cb8d889cb7b312c and b2f796e787d0064b6436fa06ce394510feaff8b2
+commit b2f796e787d0064b6436fa06ce394510feaff8b2
+tree 18070cf477c2896920e8681b7e305759f6358b4b
+parent 0f3814191446d13a7d0e881c6cb8d889cb7b312c
+author Jessica Wang <jessica@cloud.com> 1329170137 -0800
+committer Jessica Wang <jessica@cloud.com> 1329170137 -0800
+
+    3.0 UI - localize system service offering page.
+
+:100644 100644 1fa8b944a7e1a248eb76e4491e3d9e27902865ed 8b5ec095feef81ea3b9ec3c56fdd656d20ec6db2 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 b9a9f2fe41fd5c0f128190d3fc3cba97d1d9855f 309de3ae78059c0845b51fac6f7531a1b2a38bc7 M	ui/scripts/configuration.js
+:100644 100644 7fe772451365f2f93d204d3a18338eeffc879678 9f1744cecbca84b5b7e57e199eb721c929d5ac6a M	ui/scripts/system.js

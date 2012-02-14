@@ -1,0 +1,23 @@
+Changes in branch origin/master, between 9b36cb8d00a482894d53efe9721e8cabd8d1ef79 and 16171222009142a7510cff54af81e5ba9dcaba68
+commit 16171222009142a7510cff54af81e5ba9dcaba68
+tree 36e5f699b30ab982e672c1e5d952f55183d4d819
+parent aa1ec3a5b8abbeeec4adb51bd66c9db40bfcc89f
+author Kelven Yang <kelven@cloud.com> 1329250084 -0800
+committer Kelven Yang <kelven@cloud.com> 1329250130 -0800
+
+    bug 13679: cosmetic fix to remove NPE warning message from log. Reviewed-By: anthony
+
+:100755 100755 0455e60bccba9a86c54b5bc73ab9437af3ebcbcd 66eadd837a8ff8f8ee00593c298f69f72f23f5ab M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+
+commit aa1ec3a5b8abbeeec4adb51bd66c9db40bfcc89f
+tree 62d4e958bc36fc4d96b455314a24c39c71e8fffd
+parent 9b36cb8d00a482894d53efe9721e8cabd8d1ef79
+author Jessica Wang <jessica@cloud.com> 1329250056 -0800
+committer Jessica Wang <jessica@cloud.com> 1329250076 -0800
+
+    cloudstack 3.0 new UI - system page - localize storage traffic type, public traffic type section.
+
+:100644 100644 579d505a648e5c6647a7244e5fe373428dec58b5 64fdc1cc9fcf163203c6187304398f8af1a36e24 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 671467ef43872c0fcdf6498d4dc85a3357d4b4ca 9f1c044def530994a9e2b1f6a7cf9492697329aa M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 2d488eff93819012af731088ef9cd0d0a713c069 26c6d05c5d6fb5bb8f26beb744bf914b6f6cc4de M	ui/index.jsp
+:100644 100644 c45c249db60d406756fe4b0b81b2ed845c18055b 20d1ee259e4f9f4414d37ca76d0b34d0765f8bb0 M	ui/scripts/system.js

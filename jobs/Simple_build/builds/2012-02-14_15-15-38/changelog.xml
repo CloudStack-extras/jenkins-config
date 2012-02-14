@@ -1,0 +1,140 @@
+Changes in branch origin/master, between 76d78142e9c7f25d48ed7de61d68038bb690a5a4 and 16171222009142a7510cff54af81e5ba9dcaba68
+commit 16171222009142a7510cff54af81e5ba9dcaba68
+tree 36e5f699b30ab982e672c1e5d952f55183d4d819
+parent aa1ec3a5b8abbeeec4adb51bd66c9db40bfcc89f
+author Kelven Yang <kelven@cloud.com> 1329250084 -0800
+committer Kelven Yang <kelven@cloud.com> 1329250130 -0800
+
+    bug 13679: cosmetic fix to remove NPE warning message from log. Reviewed-By: anthony
+
+:100755 100755 0455e60bccba9a86c54b5bc73ab9437af3ebcbcd 66eadd837a8ff8f8ee00593c298f69f72f23f5ab M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+
+commit aa1ec3a5b8abbeeec4adb51bd66c9db40bfcc89f
+tree 62d4e958bc36fc4d96b455314a24c39c71e8fffd
+parent 9b36cb8d00a482894d53efe9721e8cabd8d1ef79
+author Jessica Wang <jessica@cloud.com> 1329250056 -0800
+committer Jessica Wang <jessica@cloud.com> 1329250076 -0800
+
+    cloudstack 3.0 new UI - system page - localize storage traffic type, public traffic type section.
+
+:100644 100644 579d505a648e5c6647a7244e5fe373428dec58b5 64fdc1cc9fcf163203c6187304398f8af1a36e24 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 671467ef43872c0fcdf6498d4dc85a3357d4b4ca 9f1c044def530994a9e2b1f6a7cf9492697329aa M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 2d488eff93819012af731088ef9cd0d0a713c069 26c6d05c5d6fb5bb8f26beb744bf914b6f6cc4de M	ui/index.jsp
+:100644 100644 c45c249db60d406756fe4b0b81b2ed845c18055b 20d1ee259e4f9f4414d37ca76d0b34d0765f8bb0 M	ui/scripts/system.js
+
+commit 9b36cb8d00a482894d53efe9721e8cabd8d1ef79
+tree 2f89c9c2d83a6a7a39e2e246d0ba2f1a73702c6c
+parent 8080a46bf8a8d99bc8d01af2b368a78488251a5a
+author Brian Federle <brian.federle@citrix.com> 1329249659 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329249665 -0800
+
+    Add missing labels to list view widget
+
+:100644 100644 8ba6fd79ca75bb6573593deb4662514af1817de8 579d505a648e5c6647a7244e5fe373428dec58b5 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 dff1eec96385996ec0cc44eb07be225bfedaee4c 671467ef43872c0fcdf6498d4dc85a3357d4b4ca M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 4f328435184a4244fd8c6f308f28ddd44ec43c39 2d488eff93819012af731088ef9cd0d0a713c069 M	ui/index.jsp
+:100644 100644 c90001c663d6b9a865bbac884325071766257cb9 f75bde7e265811f32b0a0db59630cba3a96fda4c M	ui/scripts/ui/widgets/listView.js
+
+commit 8080a46bf8a8d99bc8d01af2b368a78488251a5a
+tree 6fbf41ec6405c9330c2b5e79d84c6d1e365ebfe1
+parent 3faed35dba2e7d97a736e4881907ade094276de7
+author Brian Federle <brian.federle@citrix.com> 1329249630 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329249664 -0800
+
+    bug 13649
+    
+    Recenter add network offering dialog on change, to prevent form from going off page
+    
+    status 13649: resolved fixed
+
+:100644 100644 5c94fe893e117e8758ca44abe0ea644677ef1c5e 96fffd58c196585f4bf1e05cd3192b96812bea41 M	ui/scripts/configuration.js
+
+commit 3faed35dba2e7d97a736e4881907ade094276de7
+tree abcbfbc01f5a91c018225d50bef3beb314d6d720
+parent 19b7cd8d714ebf2fedba4eabe1cad18e71dbce82
+author Brian Federle <brian.federle@citrix.com> 1329248793 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329249664 -0800
+
+    Add missing localization for dialogs
+
+:100644 100644 38e781085b82fbe95661b5882e70a6ddee9c7578 240dcac8512bde17ecbd71adf9bc29d268c51383 M	ui/scripts/ui/dialog.js
+
+commit 19b7cd8d714ebf2fedba4eabe1cad18e71dbce82
+tree f999cc57fb38bc7f4852a228ef6a78d73c4bc9d3
+parent 8db066c97c1739a0768b3ee26b35a1c093efed8a
+author Brian Federle <brian.federle@citrix.com> 1329248725 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329249664 -0800
+
+    Localize global settings
+
+:100644 100644 07c8c3e4f2f7c5c24caabfc116a9e583efac13d2 8ba6fd79ca75bb6573593deb4662514af1817de8 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 26506900b76be5897a60216c854f22037b5461d0 dff1eec96385996ec0cc44eb07be225bfedaee4c M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 1f7ce1b31ba9ca49ec1c468662573626fdfa9ea1 4f328435184a4244fd8c6f308f28ddd44ec43c39 M	ui/index.jsp
+:100644 100644 e543b5926beb622864781b2974b95bdaa3e7b220 c315ca148fe885ad5557c9518116f1c59207683e M	ui/scripts/globalSettings.js
+
+commit 8db066c97c1739a0768b3ee26b35a1c093efed8a
+tree 282ba25af30774cb15d038f83ad69cd4876035a8
+parent 14f117c04d1ccdc19ac852769b7b43c2c48fb6c7
+author Brian Federle <brian.federle@citrix.com> 1329248413 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329249664 -0800
+
+    Add missing localization for notifications labels
+
+:100644 100644 8ab0922ca6a1f4ae9dcf97823619f559355ea4d4 07c8c3e4f2f7c5c24caabfc116a9e583efac13d2 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 b567a13d752d2cef07a4509b9852244cdc077350 26506900b76be5897a60216c854f22037b5461d0 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 c361f55d3a8e71e9a009b30dbb9cb15fe02dbdd6 1f7ce1b31ba9ca49ec1c468662573626fdfa9ea1 M	ui/index.jsp
+:100644 100644 09db85f42f19a3f0c49f2918948cded08748271e 245c1229d3b7b8ff20d2cbba46e6635910c24afe M	ui/scripts/ui/widgets/notifications.js
+
+commit 14f117c04d1ccdc19ac852769b7b43c2c48fb6c7
+tree 5265ec06e118359823fe516ee5e438a3ea4c0769
+parent 95ea2839f09859a9d0eabebb45db74ecaa84848d
+author Brian Federle <brian.federle@citrix.com> 1329247941 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329249664 -0800
+
+    Localize dashboard capacity labels
+
+:100644 100644 4ca44f2738e4f72945baf020e02cc0fe113d3a56 6a712e0e0abe4e71d9870c5dcd7ebe3097d7cf82 M	ui/scripts/dashboard.js
+
+commit 95ea2839f09859a9d0eabebb45db74ecaa84848d
+tree f2afad6dc28c8e3d00dc49690d31a1d963138808
+parent 1f562aef3b24119360ca13eff04b15b896a6904a
+author Kelven Yang <kelven@cloud.com> 1329248956 -0800
+committer Kelven Yang <kelven@cloud.com> 1329249009 -0800
+
+    bug 13537: use --no-same-owner when we untar OVA file to work with NFSv4. Reviewed-By: Anthony
+
+:100644 100644 02f444ec78efc7906bfb1fda8f760029171524d4 b699cbc31e74e38b9c519cc995e2dd18384bcb9c M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+:100644 100644 bd354642fdd67e1ffb16c3212e6aecfb55f788d5 f3dbbda3fea9ba2b72df4c2c2334810d25068042 M	core/src/com/cloud/storage/template/VmdkProcessor.java
+
+commit 1f562aef3b24119360ca13eff04b15b896a6904a
+tree 060362142af50fde7c0f3d2c1d785dad2e78a9a8
+parent 9c290f72cd627dc360d5473d21fe1bd0dbb8f25e
+author Jessica Wang <jessica@cloud.com> 1329247283 -0800
+committer Jessica Wang <jessica@cloud.com> 1329247301 -0800
+
+    3.0 UI - system page - localize KVM/XenServer/VMWare network label default display value.
+
+:100644 100644 903ba929a29600637117bcd0b84a43db2cd3f0ee 8ab0922ca6a1f4ae9dcf97823619f559355ea4d4 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 a8a46d0e2a936323018afcceadb11165d4bb6bba b567a13d752d2cef07a4509b9852244cdc077350 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 25ec11f2d7fbeb9df9896d5649b8bf1bf8000a71 c361f55d3a8e71e9a009b30dbb9cb15fe02dbdd6 M	ui/index.jsp
+:100644 100644 db96119f71bac232e252b2b082865c4ec6b53917 c45c249db60d406756fe4b0b81b2ed845c18055b M	ui/scripts/system.js
+
+commit 9c290f72cd627dc360d5473d21fe1bd0dbb8f25e
+tree 88179a7d5d2a6ddcfb9e7d0c54cc608a6f161d7f
+parent 7650faa468c2b965988978af0d2af650e8d3809c
+author Brian Federle <brian.federle@citrix.com> 1329247225 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329247225 -0800
+
+    Translate new message properties
+
+:100644 100644 9bc629af93e4326217ec616f84f762cfb190e91c a8a46d0e2a936323018afcceadb11165d4bb6bba M	client/WEB-INF/classes/resources/messages_ja.properties
+
+commit 7650faa468c2b965988978af0d2af650e8d3809c
+tree f3cd62dbb3e80057de52c9fee0cf22d5adc9ee06
+parent 76d78142e9c7f25d48ed7de61d68038bb690a5a4
+author Jessica Wang <jessica@cloud.com> 1329244453 -0800
+committer Jessica Wang <jessica@cloud.com> 1329244453 -0800
+
+    bug 13583: Add Zone Wizard - Guest Traffic - change description of Guest Traffic.
+
+:100644 100644 eefd5b9f6303d7a410409e612f5dea961fce6520 25ec11f2d7fbeb9df9896d5649b8bf1bf8000a71 M	ui/index.jsp

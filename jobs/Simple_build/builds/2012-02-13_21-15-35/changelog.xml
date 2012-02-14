@@ -1,0 +1,151 @@
+Changes in branch origin/master, between 305f653d70176644ecdecb98e8d86debd36e3a4c and 2a78d6e7415659616632336a371f156995f3849c
+commit 2a78d6e7415659616632336a371f156995f3849c
+tree b694c7a9e18675fa6b3bca07c4b2560dc5bbb4e5
+parent 70ecb4c6f6365f3f0ed44ee5e6ac6b7c09aff2d6
+author Brian Federle <brian.federle@citrix.com> 1329185158 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329185158 -0800
+
+    bug 13651
+    
+    Don't allow normal user to update project resources
+    
+    status 13651: resolved fixed
+
+:100644 100644 8960b9a3d1b654e59378442123dfab2091819830 0185b3a6b693468b6cef702caafdd829cb15911f M	ui/scripts/projects.js
+
+commit 70ecb4c6f6365f3f0ed44ee5e6ac6b7c09aff2d6
+tree be966359f3b85e1edac43d301583d69db08fedb6
+parent b9f43da0fc8ab938cddbac62c01e5165bb1e90b3
+author Jessica Wang <jessica@cloud.com> 1329183626 -0800
+committer Jessica Wang <jessica@cloud.com> 1329183645 -0800
+
+    3.0 UI - localize Add network offering dialog.
+
+:100644 100644 de46afdbb70c7e0b0a18e1f079a55d47e5d9ca97 903ba929a29600637117bcd0b84a43db2cd3f0ee M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 521656640afa73412e8171f589012861bf7c1df9 9bc629af93e4326217ec616f84f762cfb190e91c M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 81d056312b2f7140b95fc2278c81dc4b4f0b9e49 eefd5b9f6303d7a410409e612f5dea961fce6520 M	ui/index.jsp
+:100644 100644 a8ae7fe64a9e762848f1cb6c2f22d39c150a9cf1 5c94fe893e117e8758ca44abe0ea644677ef1c5e M	ui/scripts/configuration.js
+:100644 100644 d2767e5b0e2e9ce609b310677ebbced6a312672a db96119f71bac232e252b2b082865c4ec6b53917 M	ui/scripts/system.js
+
+commit b9f43da0fc8ab938cddbac62c01e5165bb1e90b3
+tree c431270795e87383bad48aefb356e4a4f6cabe57
+parent 315b0a0c5be99e48ac8832421c4aeea0629381c6
+author Brian Federle <brian.federle@citrix.com> 1329182925 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329182987 -0800
+
+    bug 13638
+    
+    Hide VLAN/CIDR on network details when zone type = basic
+    
+    status 13638: resolved fixed
+
+:100644 100644 6b4906b4268863a12889cc9578679d4ac1cff04e 1acd708f109aab039e920b29c58fa1e0f9011c76 M	ui/scripts/network.js
+
+commit 315b0a0c5be99e48ac8832421c4aeea0629381c6
+tree 55eac620f491dd86b76c6eac1ebf0c4f1502b015
+parent 1ff16ef5c335af2972ed3c229ccbc9fed28c59f6
+author Brian Federle <brian.federle@citrix.com> 1329182436 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329182987 -0800
+
+    bug 13650
+    
+    Add missing localization label on PF UI
+    
+    status 13650: resolved fixed
+
+:100644 100644 f7fc918b43d7be9901de9ec17a0aad36bbcc8e0b 81d056312b2f7140b95fc2278c81dc4b4f0b9e49 M	ui/index.jsp
+
+commit 1ff16ef5c335af2972ed3c229ccbc9fed28c59f6
+tree f409036f53225cefb02198e31225655823417090
+parent b5400656d88d357066b6fd828fe478ffcbb5be01
+author Brian Federle <brian.federle@citrix.com> 1329182292 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329182987 -0800
+
+    bug 13653
+    
+    Always use context for network object, to avoid bug when network
+    response is empty
+    
+    status 13653: resolved fixed
+
+:100644 100644 7d7974d48d1afdb0f92188369a953471b7cf2249 6b4906b4268863a12889cc9578679d4ac1cff04e M	ui/scripts/network.js
+
+commit b5400656d88d357066b6fd828fe478ffcbb5be01
+tree 8595bafb30d224be635e5cf5e10b390d7c90c7a9
+parent a1edfb880659e67d7fdd4e8b51aa1fa4f5f78b6a
+author Jessica Wang <jessica@cloud.com> 1329182877 -0800
+committer Jessica Wang <jessica@cloud.com> 1329182894 -0800
+
+    3.0 UI - localize network offering page.
+
+:100644 100644 7ee58324d188c680499407e73b52b2623c4939aa de46afdbb70c7e0b0a18e1f079a55d47e5d9ca97 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 9f38df604746320df9dbd603749552ca2cef070d 521656640afa73412e8171f589012861bf7c1df9 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 92784db48f8176afacaab32bacf460fddcceff5b f7fc918b43d7be9901de9ec17a0aad36bbcc8e0b M	ui/index.jsp
+:100644 100644 29bccb22116fe761a9114020fdbf9d6a34eceb16 a8ae7fe64a9e762848f1cb6c2f22d39c150a9cf1 M	ui/scripts/configuration.js
+
+commit a1edfb880659e67d7fdd4e8b51aa1fa4f5f78b6a
+tree 93dba06058e86c9843267370a087c222e778b705
+parent f5915ee455f7ad727df5c141d6fa82515688f28e
+author Sheng Yang <sheng.yang@cloud.com> 1329179042 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329181810 -0800
+
+    bug 13643: Fix assigned router gateway IP
+    
+    The ExternalGuestNetworkGuru need to respect some of existed IP assignment,
+    especially router. Otherwise router can't get correct IP address(gateway IP).
+    
+    status 13643: resolved fixed
+    
+    Reviewed-by: Alex
+
+:100644 100644 e89dbc6f43d43a559a268b821c09abe7f6b551b0 d5fdb089adb7226e6e16059b94600261e7346187 M	server/src/com/cloud/network/guru/ExternalGuestNetworkGuru.java
+
+commit f5915ee455f7ad727df5c141d6fa82515688f28e
+tree 9b459ea5ed490eeeaf11c11c52e3981d1a6b1e58
+parent e22ad23e4822d02b500c3a041fdde89d727d99cb
+author Jessica Wang <jessica@cloud.com> 1329180167 -0800
+committer Jessica Wang <jessica@cloud.com> 1329180185 -0800
+
+    3.0 UI - localize hypervisor capabilities page.
+
+:100644 100644 244ce2457c3178b5bee9bb479be0ed69c20f5848 7ee58324d188c680499407e73b52b2623c4939aa M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 86e8b5337ae514e05148b9bd8c1cde175fa6456b 29bccb22116fe761a9114020fdbf9d6a34eceb16 M	ui/scripts/configuration.js
+:100644 100644 4fb15bb2a8866f153f468bcd4f2ae4b1f9d28db6 d2767e5b0e2e9ce609b310677ebbced6a312672a M	ui/scripts/system.js
+
+commit e22ad23e4822d02b500c3a041fdde89d727d99cb
+tree b56d0332c354b151533f248097d8f07b3c0ce113
+parent ccaf54a838125f1e923d1eb04ba3fec22792e80a
+author Chiradeep Vittal <chiradeep@cloud.com> 1329177214 -0800
+committer Chiradeep Vittal <chiradeep@cloud.com> 1329177225 -0800
+
+    it appears xs 6.0 allows iptables rules across the bridge without csp
+
+:100755 100755 0ff999670ae259c00adf1538f8c6fb8449d1f8b7 973df43b16df2e74922244d2c97b7c8b05661875 M	scripts/vm/hypervisor/xenserver/vmops
+
+commit ccaf54a838125f1e923d1eb04ba3fec22792e80a
+tree 17d93bfc7aa42e0dc8d4b596571d45d31f1cccef
+parent 885790878023c8510605722246701d5d47f3fbef
+author Brian Federle <brian.federle@citrix.com> 1329175471 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329175471 -0800
+
+    bug 13636
+    
+    Don't allow 'dedicated' option in add F5 UI
+    
+    status 13636: resolved fixed
+
+:100644 100644 798a4d0112150e059c3a0abf7201c0cdfe301af6 4fb15bb2a8866f153f468bcd4f2ae4b1f9d28db6 M	ui/scripts/system.js
+
+commit 885790878023c8510605722246701d5d47f3fbef
+tree 847a57c6f50280e1d7b911f72e03831b5dc39247
+parent 305f653d70176644ecdecb98e8d86debd36e3a4c
+author Brian Federle <brian.federle@citrix.com> 1329175100 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329175100 -0800
+
+    bug 13634
+    
+    Don't allow 'inline' mode to be set for external devices in UI
+    
+    status 13634: resolved fixed
+
+:100644 100644 f1ec24e5a8fcc17f646813675f6390dca109832d 798a4d0112150e059c3a0abf7201c0cdfe301af6 M	ui/scripts/system.js

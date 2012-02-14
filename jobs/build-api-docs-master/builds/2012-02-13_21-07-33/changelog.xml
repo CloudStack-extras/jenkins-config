@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 70ecb4c6f6365f3f0ed44ee5e6ac6b7c09aff2d6 and 2a78d6e7415659616632336a371f156995f3849c
+commit 2a78d6e7415659616632336a371f156995f3849c
+tree b694c7a9e18675fa6b3bca07c4b2560dc5bbb4e5
+parent 70ecb4c6f6365f3f0ed44ee5e6ac6b7c09aff2d6
+author Brian Federle <brian.federle@citrix.com> 1329185158 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329185158 -0800
+
+    bug 13651
+    
+    Don't allow normal user to update project resources
+    
+    status 13651: resolved fixed
+
+:100644 100644 8960b9a3d1b654e59378442123dfab2091819830 0185b3a6b693468b6cef702caafdd829cb15911f M	ui/scripts/projects.js

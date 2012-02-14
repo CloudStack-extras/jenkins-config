@@ -1,0 +1,10 @@
+Changes in branch origin/master, between ccaf54a838125f1e923d1eb04ba3fec22792e80a and e22ad23e4822d02b500c3a041fdde89d727d99cb
+commit e22ad23e4822d02b500c3a041fdde89d727d99cb
+tree b56d0332c354b151533f248097d8f07b3c0ce113
+parent ccaf54a838125f1e923d1eb04ba3fec22792e80a
+author Chiradeep Vittal <chiradeep@cloud.com> 1329177214 -0800
+committer Chiradeep Vittal <chiradeep@cloud.com> 1329177225 -0800
+
+    it appears xs 6.0 allows iptables rules across the bridge without csp
+
+:100755 100755 0ff999670ae259c00adf1538f8c6fb8449d1f8b7 973df43b16df2e74922244d2c97b7c8b05661875 M	scripts/vm/hypervisor/xenserver/vmops

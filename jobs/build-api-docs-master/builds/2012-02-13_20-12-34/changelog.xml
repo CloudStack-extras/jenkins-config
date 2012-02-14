@@ -1,0 +1,17 @@
+Changes in branch origin/master, between f5915ee455f7ad727df5c141d6fa82515688f28e and a1edfb880659e67d7fdd4e8b51aa1fa4f5f78b6a
+commit a1edfb880659e67d7fdd4e8b51aa1fa4f5f78b6a
+tree 93dba06058e86c9843267370a087c222e778b705
+parent f5915ee455f7ad727df5c141d6fa82515688f28e
+author Sheng Yang <sheng.yang@cloud.com> 1329179042 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329181810 -0800
+
+    bug 13643: Fix assigned router gateway IP
+    
+    The ExternalGuestNetworkGuru need to respect some of existed IP assignment,
+    especially router. Otherwise router can't get correct IP address(gateway IP).
+    
+    status 13643: resolved fixed
+    
+    Reviewed-by: Alex
+
+:100644 100644 e89dbc6f43d43a559a268b821c09abe7f6b551b0 d5fdb089adb7226e6e16059b94600261e7346187 M	server/src/com/cloud/network/guru/ExternalGuestNetworkGuru.java

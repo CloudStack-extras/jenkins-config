@@ -1,0 +1,30 @@
+Changes in branch origin/master, between a17af88089bf55ae64392edcd062c84df64e2b22 and e59fa8b0e178f67d68fe37693a04cde1837d14b0
+commit e59fa8b0e178f67d68fe37693a04cde1837d14b0
+tree 0568fe9e1ac233d7887d538e8e2a0b62d3a7ab7d
+parent ed25020dcecf52da70dbe7455524acfe0333624e
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329252146 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329252453 -0800
+
+    bug 13708: make a search by traffic type when locate physical network in the zone
+    status 13708: resolved fixed
+    reviewed-by: Prachi Damle
+
+:100644 100644 87e5a2d3aaddb26b5d4693d626cb2abf80978eb6 d3fa4b4dc5f1d7596b848152de6d2cd4820f06d7 M	api/src/com/cloud/api/commands/CreateNetworkCmd.java
+:100755 100755 07a15d5f6776b40dfb55c69eaf305d6d47182707 bbb102c6f46a8d2b62342653853ad491810e8f01 M	api/src/com/cloud/network/NetworkService.java
+:100644 100644 b0d74be91d2c1e527ad889cf5131c49caaa8c52e 2af5519cda5fa95024585e3d734f5095a37a4127 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 51f0e146f2ed2f75b3ca8fd735d2c43847e64733 6334871d801b9a3d423c191d55dd2b22a92c0dc7 M	server/src/com/cloud/network/dao/PhysicalNetworkDaoImpl.java
+:100755 100755 50b89f3b1c167a5fb0d1586001665d14668bacea 6d08d3ceefefd62014cefcc28e608eee0d5d1f9f M	server/src/com/cloud/network/guru/GuestNetworkGuru.java
+:100755 100755 98c852d8273f8b4a72d8bb767f9390a3d6b75682 a09a5a7af94e21710e21ef88d0f19db7bf9822ed M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+
+commit ed25020dcecf52da70dbe7455524acfe0333624e
+tree 759770953ebec64cc8523888c80594ae07e5096a
+parent a17af88089bf55ae64392edcd062c84df64e2b22
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329244831 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329252446 -0800
+
+    Added instanceType to some physical network async commands
+    Reviewed-by: Kelven Yang
+
+:100644 100644 6e6270a7e1285135323f9b2aea82d814f6d45a8d 0581edf0a72a2b5fbf33b1792d30da084bf4bdb8 M	api/src/com/cloud/api/commands/CreatePhysicalNetworkCmd.java
+:100644 100644 7a3bc06862506ad3aa434d0126973be691c198d1 50aec0935814f1c2c92108b65d50f19802a37984 M	api/src/com/cloud/api/commands/DeletePhysicalNetworkCmd.java
+:100644 100644 d314114f56647c64f03d14c6c2112768f81ce480 b19d3c17da57776acbd476b2736922bcce5f4f20 M	api/src/com/cloud/api/commands/UpdatePhysicalNetworkCmd.java

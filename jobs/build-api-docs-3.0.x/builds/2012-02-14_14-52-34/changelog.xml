@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 787a6c12aeecd0fdfcb62ab6af1fd03ffe736e8f and f60013795900e38a6ef41d1a5b1e2f6f0ac81adb
+commit f60013795900e38a6ef41d1a5b1e2f6f0ac81adb
+tree 2eb6d378d5639d426f03a173ed8399b700f1a44c
+parent 787a6c12aeecd0fdfcb62ab6af1fd03ffe736e8f
+author Kelven Yang <kelven@cloud.com> 1329248956 -0800
+committer Kelven Yang <kelven@cloud.com> 1329248964 -0800
+
+    bug 13537: use --no-same-owner when we untar OVA file to work with NFSv4. Reviewed-By: Anthony
+
+:100644 100644 02f444ec78efc7906bfb1fda8f760029171524d4 b699cbc31e74e38b9c519cc995e2dd18384bcb9c M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+:100644 100644 bd354642fdd67e1ffb16c3212e6aecfb55f788d5 f3dbbda3fea9ba2b72df4c2c2334810d25068042 M	core/src/com/cloud/storage/template/VmdkProcessor.java

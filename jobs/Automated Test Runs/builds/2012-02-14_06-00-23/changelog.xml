@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 2a78d6e7415659616632336a371f156995f3849c and 76d78142e9c7f25d48ed7de61d68038bb690a5a4
+commit 76d78142e9c7f25d48ed7de61d68038bb690a5a4
+tree 02cf574544567d602ec04dd705704758ca3371fc
+parent 2a78d6e7415659616632336a371f156995f3849c
+author Naredula Janardhana Reddy <jana@cloud.com> 1329200907 +0530
+committer Naredula Janardhana Reddy <jana@cloud.com> 1329200907 +0530
+
+    Bug 12808: ignoring errors on delete.
+
+:100755 100755 eb728592fcd7a69342035a1c7f591e5ec0929d48 7cc9ab5a30a5cfc2a16beb8e0595066aeccfc3ed M	patches/systemvm/debian/config/root/firewall.sh

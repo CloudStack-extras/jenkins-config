@@ -50,7 +50,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector">
     <hudson.triggers.SCMTrigger>
-      <spec>@hourly</spec>
+      <spec>* * * * *</spec>
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>

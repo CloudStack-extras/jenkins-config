@@ -1,0 +1,21 @@
+Changes in branch origin/master, between d94b030537cc636546aa22158cd04bebdb271dee and 65b76fc8fd5c48bbda2eacd82097b54a74dfb8a0
+commit 65b76fc8fd5c48bbda2eacd82097b54a74dfb8a0
+tree b12a30db0fff56be2c1d0e7f82df36273693dbaa
+parent 3c8a1327823b4595fa28a3a074743adcff0c3bea
+author Brian Federle <brian.federle@citrix.com> 1329253595 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329253603 -0800
+
+    Localize header bar drop-down
+
+:100644 100644 ca087cc32618da02eaa6e1a6fb821bb180df22f9 fab46d296b81c68612f1b6345ef5027ab32e2a66 M	ui/scripts/ui/core.js
+
+commit 3c8a1327823b4595fa28a3a074743adcff0c3bea
+tree 8f267cda11f8605d29f757a2d92794f029308513
+parent d94b030537cc636546aa22158cd04bebdb271dee
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329253519 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329253559 -0800
+
+    bug 13699: use correct way of checking VM permission during the service offering upgrade
+    status 13699: resolved fixed
+
+:100755 100755 25e8a10a32a37508a9a330c87eedef129265ae9e da2e7cad53937c5e232d6e50d01e17dd791166a8 M	server/src/com/cloud/server/ManagementServerImpl.java

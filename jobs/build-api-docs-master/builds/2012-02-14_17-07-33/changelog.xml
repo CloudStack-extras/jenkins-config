@@ -1,0 +1,14 @@
+Changes in branch origin/master, between adcaff8c95a839cfb9f43340cb0a71cdaf46bba7 and 97c7341c46c51db1047dedaa9198377c31098fa1
+commit 97c7341c46c51db1047dedaa9198377c31098fa1
+tree d86149550780bae3426cd8eec051c4029fc18a19
+parent adcaff8c95a839cfb9f43340cb0a71cdaf46bba7
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329256482 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329257209 -0800
+
+    bug 13695: deleteAccount - remove account from projects as a part of account cleanup process
+    status 13695: resolved fixed
+    Reviewed-by: Frank
+
+:100644 100644 3e72eee9974be2465be1ca9f20856616a0b36788 f113d283c395788b4a8f6b8211d60131a9093319 M	server/src/com/cloud/projects/dao/ProjectAccountDao.java
+:100644 100644 1eb28cae1f96ee878255e96b326014d7d1ead85a 49e31114bb16bb173c467d53b2104a34952a3d5f M	server/src/com/cloud/projects/dao/ProjectAccountDaoImpl.java
+:100755 100755 dd4e49b647dd885d80cc541772bbc8fb69ddf5d6 e56e0e140b3f0a4544b6a2a23cdd5a8c7d1999e4 M	server/src/com/cloud/user/AccountManagerImpl.java

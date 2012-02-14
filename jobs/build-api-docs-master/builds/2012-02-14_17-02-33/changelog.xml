@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 1272540fcb988ddf3fccbda20470cdf14d2e8033 and adcaff8c95a839cfb9f43340cb0a71cdaf46bba7
+commit adcaff8c95a839cfb9f43340cb0a71cdaf46bba7
+tree 8b0932fa4788cb975c6e82fccd1515ac6feb5d37
+parent 1272540fcb988ddf3fccbda20470cdf14d2e8033
+author Brian Federle <brian.federle@citrix.com> 1329256880 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329256900 -0800
+
+    Fix missing labels for attach/detach iso action
+
+:100644 100644 2743aa209f1c50e87276f15401394d94dd62aed4 11b385453faa509777e721df3817bd0f771964d1 M	ui/scripts/instances.js

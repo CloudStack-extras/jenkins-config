@@ -1,0 +1,37 @@
+Changes in branch origin/master, between 97c7341c46c51db1047dedaa9198377c31098fa1 and ddbcc36a84ffe5801f285e0de11315c00487cb9b
+commit ddbcc36a84ffe5801f285e0de11315c00487cb9b
+tree fe838d8ed1521a6eab26cc3c8fd5453c44490331
+parent dcbcc8432d6d32a449db48ed02ccd097c903b29c
+author Brian Federle <brian.federle@citrix.com> 1329259570 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329259581 -0800
+
+    Localization for instance wizard
+
+:100644 100644 7d3fcd78cfdbdcea5a2d171cd21eaba59511e639 8c88a237f5550880319553684d80b4ad66068b4f M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 b5678ecdb7750f1f047e1a02eb6412a82753aa50 4b1d47fa12ea40a9759a2f87c8a5a1aaaad437a1 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 09493d46a6ebee2ff845fb1fc13866e7ed92631f d8a88d2d567611003801402ff460722ab1b30e98 M	ui/index.jsp
+:100644 100644 511a06a31ca325475db3c2f13b02b68bda2b0dea 4302206f236bf703df9fc71db0cea491f2343093 M	ui/scripts/ui-custom/instanceWizard.js
+
+commit dcbcc8432d6d32a449db48ed02ccd097c903b29c
+tree 69d75c17eecf9de3c4951f6ac23694efa8a21616
+parent 3c90a8c06cc32db3b7c80d629022fbbf071af31b
+author Brian Federle <brian.federle@citrix.com> 1329259196 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329259580 -0800
+
+    bug 13717
+    
+    Rename 'Cancel' -> 'No' for confirm dialog
+    
+    status 13717: resolved fixed
+
+:100644 100644 240dcac8512bde17ecbd71adf9bc29d268c51383 6008226c4db22f5deffd0b6233590dd13ba7996d M	ui/scripts/ui/dialog.js
+
+commit 3c90a8c06cc32db3b7c80d629022fbbf071af31b
+tree d31ec01dd9af047455758e486aad56dedf35c8dd
+parent 97c7341c46c51db1047dedaa9198377c31098fa1
+author Brian Federle <brian.federle@citrix.com> 1329259012 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329259580 -0800
+
+    Fix localization for instances filter drop-down
+
+:100644 100644 11b385453faa509777e721df3817bd0f771964d1 7f371c8aa566be661facc632c6282f68bb08b621 M	ui/scripts/instances.js

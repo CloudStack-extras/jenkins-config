@@ -1,0 +1,224 @@
+Changes in branch origin/master, between 16171222009142a7510cff54af81e5ba9dcaba68 and 4fd4ead50d06215032cc35310ecc63f881f78c1c
+commit 4fd4ead50d06215032cc35310ecc63f881f78c1c
+tree e7d89a1c826a1775943a2c89322570f208e2606d
+parent 644e81c4a41389617d7b2318c367e5e32b864651
+author frank <frank.zhang@citrix.com> 1329261022 -0800
+committer frank <frank.zhang@citrix.com> 1329261166 -0800
+
+    Bug 13662 - OVM host remain in Alert state, Unable to create deployment for OVM instance
+    Bug 13641 - OVM add host to OVM cluster results in host remaining in state: Alert
+    Bug 13652 - OVM add primary storage to OVM cluster FAIL
+    
+    making Ovm work on Acton
+    
+    status 13662: resolved fixed
+    status 13641: resolved fixed
+    status 13652: resolved fixed
+    
+    reviewed-by: edison
+
+:100755 100755 4f0fda62e2e4b57a90dda89bcd5700ca4f7e846b 9c840c459cfea98653ed4ab8edb7eeb8cbe8c300 M	ovm/src/com/cloud/ovm/hypervisor/OvmDiscoverer.java
+:100755 100755 6ff983d942f7d6bf7fd9f8e979c8f1bc2f9de195 b7ab51e21f145da5f7e73eeb5b9735cc020aeaae M	ovm/src/com/cloud/ovm/hypervisor/OvmResourceBase.java
+:100644 100755 ceaacaa5d903c1b0de324cf0bebf1ddbfb5bfeda 9da2e5c34345c6f154c963a92e0b9691dfdc18f8 M	server/src/com/cloud/network/dao/PhysicalNetworkTrafficTypeDaoImpl.java
+:100755 100755 c3c2725bdaed6b5345768c9089f50a26c58d9501 ed39d73b994855374c6841b5d12a45d5a098d23f M	setup/db/create-schema.sql
+:100755 100755 f32a0a05eda3f9efa0a100451892f8e20d51ec77 91009305d14fe0dc9b44a96174087038229937b3 M	setup/db/db/schema-2214to30.sql
+
+commit ddbcc36a84ffe5801f285e0de11315c00487cb9b
+tree fe838d8ed1521a6eab26cc3c8fd5453c44490331
+parent dcbcc8432d6d32a449db48ed02ccd097c903b29c
+author Brian Federle <brian.federle@citrix.com> 1329259570 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329259581 -0800
+
+    Localization for instance wizard
+
+:100644 100644 7d3fcd78cfdbdcea5a2d171cd21eaba59511e639 8c88a237f5550880319553684d80b4ad66068b4f M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 b5678ecdb7750f1f047e1a02eb6412a82753aa50 4b1d47fa12ea40a9759a2f87c8a5a1aaaad437a1 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 09493d46a6ebee2ff845fb1fc13866e7ed92631f d8a88d2d567611003801402ff460722ab1b30e98 M	ui/index.jsp
+:100644 100644 511a06a31ca325475db3c2f13b02b68bda2b0dea 4302206f236bf703df9fc71db0cea491f2343093 M	ui/scripts/ui-custom/instanceWizard.js
+
+commit dcbcc8432d6d32a449db48ed02ccd097c903b29c
+tree 69d75c17eecf9de3c4951f6ac23694efa8a21616
+parent 3c90a8c06cc32db3b7c80d629022fbbf071af31b
+author Brian Federle <brian.federle@citrix.com> 1329259196 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329259580 -0800
+
+    bug 13717
+    
+    Rename 'Cancel' -> 'No' for confirm dialog
+    
+    status 13717: resolved fixed
+
+:100644 100644 240dcac8512bde17ecbd71adf9bc29d268c51383 6008226c4db22f5deffd0b6233590dd13ba7996d M	ui/scripts/ui/dialog.js
+
+commit 3c90a8c06cc32db3b7c80d629022fbbf071af31b
+tree d31ec01dd9af047455758e486aad56dedf35c8dd
+parent 97c7341c46c51db1047dedaa9198377c31098fa1
+author Brian Federle <brian.federle@citrix.com> 1329259012 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329259580 -0800
+
+    Fix localization for instances filter drop-down
+
+:100644 100644 11b385453faa509777e721df3817bd0f771964d1 7f371c8aa566be661facc632c6282f68bb08b621 M	ui/scripts/instances.js
+
+commit 97c7341c46c51db1047dedaa9198377c31098fa1
+tree d86149550780bae3426cd8eec051c4029fc18a19
+parent adcaff8c95a839cfb9f43340cb0a71cdaf46bba7
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329256482 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329257209 -0800
+
+    bug 13695: deleteAccount - remove account from projects as a part of account cleanup process
+    status 13695: resolved fixed
+    Reviewed-by: Frank
+
+:100644 100644 3e72eee9974be2465be1ca9f20856616a0b36788 f113d283c395788b4a8f6b8211d60131a9093319 M	server/src/com/cloud/projects/dao/ProjectAccountDao.java
+:100644 100644 1eb28cae1f96ee878255e96b326014d7d1ead85a 49e31114bb16bb173c467d53b2104a34952a3d5f M	server/src/com/cloud/projects/dao/ProjectAccountDaoImpl.java
+:100755 100755 dd4e49b647dd885d80cc541772bbc8fb69ddf5d6 e56e0e140b3f0a4544b6a2a23cdd5a8c7d1999e4 M	server/src/com/cloud/user/AccountManagerImpl.java
+
+commit adcaff8c95a839cfb9f43340cb0a71cdaf46bba7
+tree 8b0932fa4788cb975c6e82fccd1515ac6feb5d37
+parent 1272540fcb988ddf3fccbda20470cdf14d2e8033
+author Brian Federle <brian.federle@citrix.com> 1329256880 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329256900 -0800
+
+    Fix missing labels for attach/detach iso action
+
+:100644 100644 2743aa209f1c50e87276f15401394d94dd62aed4 11b385453faa509777e721df3817bd0f771964d1 M	ui/scripts/instances.js
+
+commit 1272540fcb988ddf3fccbda20470cdf14d2e8033
+tree 0a82fa7f22120fb077ed1accebec4ebb2a31283a
+parent 202c690f973222826a123bb0d41556a4fffafae6
+author Jessica Wang <jessica@cloud.com> 1329256089 -0800
+committer Jessica Wang <jessica@cloud.com> 1329256109 -0800
+
+    cloudstack 3.0 new UI - system page - (1) localize management traffic type (2) remove createVlanIPRange after creating guest network for basic zone. Because this AddGuestNetwork dialog is not available in basic zone any more.
+
+:100644 100644 ab789ba3efc337bc0214e0f008f54ed7abff9a38 7d3fcd78cfdbdcea5a2d171cd21eaba59511e639 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 df2b472941d7b58fd41b2ce2262a24bebd2329ef b5678ecdb7750f1f047e1a02eb6412a82753aa50 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 30cc9726c726709da030a21f891a56881aeec31b 09493d46a6ebee2ff845fb1fc13866e7ed92631f M	ui/index.jsp
+:100644 100644 20d1ee259e4f9f4414d37ca76d0b34d0765f8bb0 1a290a89566d620d5e587ff68d402d93d830dad7 M	ui/scripts/system.js
+
+commit 202c690f973222826a123bb0d41556a4fffafae6
+tree e038d390d4291b7c6feb0f5d15fc9b72b9075d43
+parent 65b76fc8fd5c48bbda2eacd82097b54a74dfb8a0
+author Brian Federle <brian.federle@citrix.com> 1329254661 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329254661 -0800
+
+    Localization for 'Allocated' state
+
+:100644 100644 9c3b276b57131bb6bbce7bc7c5cc3d8a6c07ce99 ab789ba3efc337bc0214e0f008f54ed7abff9a38 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 b0db64cb5e52b0bdc930369a4cad509ee6a9e0f2 df2b472941d7b58fd41b2ce2262a24bebd2329ef M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 dd057204c4f61918e99f19cc535d5e152a92753c 30cc9726c726709da030a21f891a56881aeec31b M	ui/index.jsp
+
+commit 65b76fc8fd5c48bbda2eacd82097b54a74dfb8a0
+tree b12a30db0fff56be2c1d0e7f82df36273693dbaa
+parent 3c8a1327823b4595fa28a3a074743adcff0c3bea
+author Brian Federle <brian.federle@citrix.com> 1329253595 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329253603 -0800
+
+    Localize header bar drop-down
+
+:100644 100644 ca087cc32618da02eaa6e1a6fb821bb180df22f9 fab46d296b81c68612f1b6345ef5027ab32e2a66 M	ui/scripts/ui/core.js
+
+commit 3c8a1327823b4595fa28a3a074743adcff0c3bea
+tree 8f267cda11f8605d29f757a2d92794f029308513
+parent d94b030537cc636546aa22158cd04bebdb271dee
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329253519 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329253559 -0800
+
+    bug 13699: use correct way of checking VM permission during the service offering upgrade
+    status 13699: resolved fixed
+
+:100755 100755 25e8a10a32a37508a9a330c87eedef129265ae9e da2e7cad53937c5e232d6e50d01e17dd791166a8 M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit d94b030537cc636546aa22158cd04bebdb271dee
+tree 0ea80249f569de7fe547b187c410695c0ae0e48c
+parent e91c3b2e5716c2ef6377eb726528a1292ddbe780
+author Brian Federle <brian.federle@citrix.com> 1329252872 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329252879 -0800
+
+    Missing detail view widget localization
+
+:100644 100644 3398dc54019a0a438e918c909cdf69aefeaaed47 9c3b276b57131bb6bbce7bc7c5cc3d8a6c07ce99 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 6addd7f3ca411d9c8f1ee39d6942c9e075d04c3d b0db64cb5e52b0bdc930369a4cad509ee6a9e0f2 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 12713eb915f621071c54e2b7b4ef295db2b004dd dd057204c4f61918e99f19cc535d5e152a92753c M	ui/index.jsp
+:100644 100644 9ac4e129cc27c6e0ca6efe162ecc06e6c82cabf1 7cca1cb81c163e5ee94a086a104329fe7de12bcf M	ui/scripts/ui/widgets/detailView.js
+
+commit e91c3b2e5716c2ef6377eb726528a1292ddbe780
+tree c04878d65d2184fb9da54c70e16beaa88d674b23
+parent e59fa8b0e178f67d68fe37693a04cde1837d14b0
+author Brian Federle <brian.federle@citrix.com> 1329252451 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329252879 -0800
+
+    Add missing instance detail tab localization
+
+:100644 100644 64fdc1cc9fcf163203c6187304398f8af1a36e24 3398dc54019a0a438e918c909cdf69aefeaaed47 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 9f1c044def530994a9e2b1f6a7cf9492697329aa 6addd7f3ca411d9c8f1ee39d6942c9e075d04c3d M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 26c6d05c5d6fb5bb8f26beb744bf914b6f6cc4de 12713eb915f621071c54e2b7b4ef295db2b004dd M	ui/index.jsp
+:100644 100644 afe32b9d44e10d1a44f644fc8c4c70dae6c854b8 2743aa209f1c50e87276f15401394d94dd62aed4 M	ui/scripts/instances.js
+
+commit e59fa8b0e178f67d68fe37693a04cde1837d14b0
+tree 0568fe9e1ac233d7887d538e8e2a0b62d3a7ab7d
+parent ed25020dcecf52da70dbe7455524acfe0333624e
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329252146 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329252453 -0800
+
+    bug 13708: make a search by traffic type when locate physical network in the zone
+    status 13708: resolved fixed
+    reviewed-by: Prachi Damle
+
+:100644 100644 87e5a2d3aaddb26b5d4693d626cb2abf80978eb6 d3fa4b4dc5f1d7596b848152de6d2cd4820f06d7 M	api/src/com/cloud/api/commands/CreateNetworkCmd.java
+:100755 100755 07a15d5f6776b40dfb55c69eaf305d6d47182707 bbb102c6f46a8d2b62342653853ad491810e8f01 M	api/src/com/cloud/network/NetworkService.java
+:100644 100644 b0d74be91d2c1e527ad889cf5131c49caaa8c52e 2af5519cda5fa95024585e3d734f5095a37a4127 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 51f0e146f2ed2f75b3ca8fd735d2c43847e64733 6334871d801b9a3d423c191d55dd2b22a92c0dc7 M	server/src/com/cloud/network/dao/PhysicalNetworkDaoImpl.java
+:100755 100755 50b89f3b1c167a5fb0d1586001665d14668bacea 6d08d3ceefefd62014cefcc28e608eee0d5d1f9f M	server/src/com/cloud/network/guru/GuestNetworkGuru.java
+:100755 100755 98c852d8273f8b4a72d8bb767f9390a3d6b75682 a09a5a7af94e21710e21ef88d0f19db7bf9822ed M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+
+commit ed25020dcecf52da70dbe7455524acfe0333624e
+tree 759770953ebec64cc8523888c80594ae07e5096a
+parent a17af88089bf55ae64392edcd062c84df64e2b22
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329244831 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329252446 -0800
+
+    Added instanceType to some physical network async commands
+    Reviewed-by: Kelven Yang
+
+:100644 100644 6e6270a7e1285135323f9b2aea82d814f6d45a8d 0581edf0a72a2b5fbf33b1792d30da084bf4bdb8 M	api/src/com/cloud/api/commands/CreatePhysicalNetworkCmd.java
+:100644 100644 7a3bc06862506ad3aa434d0126973be691c198d1 50aec0935814f1c2c92108b65d50f19802a37984 M	api/src/com/cloud/api/commands/DeletePhysicalNetworkCmd.java
+:100644 100644 d314114f56647c64f03d14c6c2112768f81ce480 b19d3c17da57776acbd476b2736922bcce5f4f20 M	api/src/com/cloud/api/commands/UpdatePhysicalNetworkCmd.java
+
+commit a17af88089bf55ae64392edcd062c84df64e2b22
+tree db87bf10a56309ca4e96d23b9b9a069355680bb6
+parent 16171222009142a7510cff54af81e5ba9dcaba68
+author prachi <prachi@cloud.com> 1329249431 -0800
+committer prachi <prachi@cloud.com> 1329250645 -0800
+
+    Bug 13703 - [External Service Providers] Unable to find a Discoverer to load the resource: 1 for hypervisor type : null
+    
+    Changes:
+    - in case of external service providers, there is no discoverer that could load the resource.
+    - So we have to rely on agentMgr to load the resource as earlier.
+
+:100755 100755 07ea138d76cef3bf06cf79a4ed45ed9b2c7ddf41 563a42cdbe71bdf4f3c1773c7c7febc70d3052ce M	server/src/com/cloud/agent/manager/AgentManagerImpl.java
+
+commit 545ef998d43279799cd967e7aa98565b98031e96
+tree b09c145f647354d134919f83f5e10143e431f49c
+parent 2a78d6e7415659616632336a371f156995f3849c
+author Jessica Tomechak <jtomechak@cloud.com> 1329200049 -0800
+committer Jessica Tomechak <jtomechak@cloud.com> 1329200049 -0800
+
+    Update documentation source files.
+
+:100644 100644 b5d17403a0d13bd8b0c5085e16259a2e093966d5 0c69dc65365c914cceb9c880666b12ef8484daf8 M	docs/2.2/CloudStack2.2.11InstallGuide.docx
+:100644 100644 8f44215d91642a6986b4bfb86415cb84d7273f52 71531498cc68217c3bb8fa6d5fc9eb574d3d680d M	docs/2.2/CloudStack2.2.12AdminGuide.docx
+:100644 100644 d0b5d03a50b265b2a3b5cf379b7dea320baeb3ef 3392490eec3956b1d8b9f9c51a21b4bea46fba48 M	docs/2.2/CloudStack2.2.12InstallGuide.docx
+:100644 100644 2b9de8c7b97da098ee206d14e97d550b6e3dc83c a4530e3a8b0de1682c452a1a7691546ab3de0f83 M	docs/2.2/CloudStack2.2.12ReleaseNotes.docx
+:100644 100644 4de302f6aa7c5a766a32fe4ec8e2d58833d1b51a e434a8f364dab07d6506c2e5ee32d4f98f684876 M	docs/2.2/CloudStack2.2.13AdminGuide.docx
+:100644 100644 1d046a45e1f3870a4cce4bcab4953973d083cfb7 57f061e808d0e0194478bd6193a2847a8fd573a7 M	docs/2.2/CloudStack2.2.13InstallGuide.docx
+:100644 100644 ea63f1ed93850bf878153d08eac09d6844994501 38a0f7a01d192f0a797e435ec070882b22f8f451 M	docs/2.2/CloudStack2.2.13ReleaseNotes.docx
+:000000 100644 0000000000000000000000000000000000000000 ab1610d743c1866f733edf7d3963b4f4598b2f84 A	docs/2.2/CloudStack2.2.14ReleaseNotes.docx
+:100644 100644 f521f64377c042183d72255c0c8f1497cc44cae7 55d2621cb410ea36db8dcbdd5007336701625000 M	docs/2.2/CloudStack2.2.8InstallGuide.docx
+:100644 100644 cf0502f20c227f6476a37971901969684b6ab98a 69c05c288376e53bfe1508758d6865c5b950db95 M	docs/2.2/CloudStack2.2DeveloperGuide.docx
+:000000 100644 0000000000000000000000000000000000000000 fee80aa379a26360446bb9c4b9cc18516e7cf19b A	docs/2.2/CloudStack3.0AdminGuide.docx
+:100644 100644 aaf7a0d7740e6d3ba5ad0a312915eba4435818ca 1052d621848c68f3af9af3734526083608d9468e M	docs/2.2/CloudStack3.0InstallGuide.docx
+:100644 100644 5c45eecfc7eaf926142d43833816d4a23f93ca91 ed16ab2dfb4dc4c89d9d32e7e230d2f7d59ea2e6 M	docs/2.2/CloudStack3.0QuickInstallGuide.docx
+:100644 100644 da813e2d37284b52d914d7303553cdbf40af42ed 50eb07da36ab614f5d40487c182c3140dee1ecb9 M	docs/2.2/downloads.html

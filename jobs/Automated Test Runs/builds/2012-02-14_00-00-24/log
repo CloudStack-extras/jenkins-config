@@ -1,13 +1,13 @@
-Started by user [8mha:AAAAiR+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADJ4Sxg49UuLU4v0ixNzAWksXTqOAAAA[0mSam Robertson
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Started by timer
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision a1c4e4d30592fbbb3401a3940d39cf34113725d3 (origin/master)
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Last Built Revision: Revision 0742bdda8d439e1f0cc7cdaa494de994f4e16c7a (origin/master)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision 64498c840c81176132260829ae8b6a3fa6b43097 (origin/master)
-Checking out Revision 64498c840c81176132260829ae8b6a3fa6b43097 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson7009218758105174073.sh
+Commencing build of Revision 2a78d6e7415659616632336a371f156995f3849c (origin/master)
+Checking out Revision 2a78d6e7415659616632336a371f156995f3849c (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson8363505822537917883.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -34,7 +34,7 @@ clean-all:
    [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target
 
 BUILD SUCCESSFUL
-Total time: 2 seconds
+Total time: 3 seconds
 Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-09T00:39:15Z
-     [echo] Build number is 3.0.0.2012-02-09T00:39:15Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-14T05:00:48Z
+     [echo] Build number is 3.0.0.2012-02-14T05:00:48Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -367,5 +367,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 1 minute 14 seconds
+Total time: 1 minute 44 seconds
 Finished: SUCCESS

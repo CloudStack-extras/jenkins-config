@@ -1,0 +1,22 @@
+Changes in branch origin/3.0.x, between f29e43245531072bb4161cae7cc7377e7435be1e and c4f344a402c846fd1ea2ad1fc22eec5286646adc
+commit c4f344a402c846fd1ea2ad1fc22eec5286646adc
+tree a0f4cad611d57544c4604f23380205d8362fd6ba
+parent f29e43245531072bb4161cae7cc7377e7435be1e
+author Brian Federle <brian.federle@citrix.com> 1329183458 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329183458 -0800
+
+    Update UI with latest fixes and localization
+    
+    reviewed-by: jessica
+
+:100644 100644 0797c746dd9cd592f6c5716c541584da33c5e5b1 de46afdbb70c7e0b0a18e1f079a55d47e5d9ca97 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 9f38df604746320df9dbd603749552ca2cef070d 521656640afa73412e8171f589012861bf7c1df9 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 df81cdbd9e9b65588de4e9684bdf97e02ed9b716 81d056312b2f7140b95fc2278c81dc4b4f0b9e49 M	ui/index.jsp
+:100644 100644 782ab69826966b417d93a229323552ba7f66289b 4f619eda90ff6b417dea4afe0b6521df077e56b5 M	ui/scripts/accounts.js
+:100644 100644 0932f361efba66a603684fcd7613d2050f4c4d11 a8ae7fe64a9e762848f1cb6c2f22d39c150a9cf1 M	ui/scripts/configuration.js
+:100644 100644 78c89d407296d70bf3a36ba75357992d82b24652 53ab54744a9ae665335549381d405a8e75b2464c M	ui/scripts/domains.js
+:100644 100644 1aba60c81da0ce2a65e00067c972d1b98a6addeb e1d95addbc691a9790a1cf678cbf854d31513772 M	ui/scripts/events.js
+:100644 100644 7d7974d48d1afdb0f92188369a953471b7cf2249 1acd708f109aab039e920b29c58fa1e0f9011c76 M	ui/scripts/network.js
+:100644 100644 c57ba364e337416a2da97b0414d05af38ed7eb3a d2767e5b0e2e9ce609b310677ebbced6a312672a M	ui/scripts/system.js
+:100644 100644 69f48d4d8fe88ce9b2c72bdfae30c5186cc3648d 231abeb412bbf1179e1b612505b70223438f3483 M	ui/scripts/templates.js
+:100644 100644 1ea1252c4eba98748f77613a954adea11213caf9 38e781085b82fbe95661b5882e70a6ddee9c7578 M	ui/scripts/ui/dialog.js

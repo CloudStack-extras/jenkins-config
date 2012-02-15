@@ -1,0 +1,28 @@
+Changes in branch origin/3.0.x, between 464256510654805961840de13cbdf452a82dfc28 and 4fb25eab3a0bc8bc1e84098f1a0956bf9794a2e1
+commit 4fb25eab3a0bc8bc1e84098f1a0956bf9794a2e1
+tree b141be25753f133920839d37f82e55824222adf0
+parent d9887febc10d57d788f41e43265be02e390ef281
+author Murali reddy <Murali.Reddy@citrix.com> 1329306419 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1329307476 +0530
+
+    bug 13664: F5 device can be added in "Dedicated" mode but Network offering allows for only "shared" LB isolation to be set.
+    Reviewed-By: nitin.mehta@citrix.com
+    status 13664: resolved fixed
+    
+    added dedicated mode as capability to F5 load balancer element
+
+:100644 100644 924daa6510aa84d7a57a222383d28bde7927f570 2a18f9cc0dbe39a5acb7e37459574b48c220ba2c M	server/src/com/cloud/network/element/F5ExternalLoadBalancerElement.java
+
+commit d9887febc10d57d788f41e43265be02e390ef281
+tree bb93d2cc58a4cda3ca1307581a3239257ddc36e3
+parent 464256510654805961840de13cbdf452a82dfc28
+author Murali reddy <Murali.Reddy@citrix.com> 1329306271 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1329307463 +0530
+
+    bug 13626: Able to add a F5 device successfully even when invalid username/password was provided
+    Reviewed-By:nitin.mehta@citrix.com
+    status 13626: resolved fixed
+    
+    added a fake call during to login to force validate the credentails
+
+:100644 100644 ce94037d720d2164c830e1292643d0e8f79e6a01 27745aedd2f1faaf02ba5763c8396cf875b60763 M	core/src/com/cloud/network/resource/F5BigIpResource.java

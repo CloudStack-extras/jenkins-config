@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between 1902e6e0db42fda54bbb1389c19a24d2afd630d6 and a4308185cf09d8cf612c8b589da7dab0dff240cf
+commit a4308185cf09d8cf612c8b589da7dab0dff240cf
+tree 334fde1345f00f41bca8e3244dccb1382c6b138c
+parent 1902e6e0db42fda54bbb1389c19a24d2afd630d6
+author anthony <anthony@cloud.com> 1329273148 -0800
+committer anthony <anthony@cloud.com> 1329273509 -0800
+
+    bug 13712: do not download removed template
+    
+    status 12712: resolved fixed
+    
+    reviewed-by: edison
+
+:100755 100755 f3a77b8d548e3e9e80ae134985d8d78dc785dbdd 2acdce3fb80ac672f2807c01d20a788a4131ccbe M	server/src/com/cloud/storage/dao/VMTemplateDaoImpl.java

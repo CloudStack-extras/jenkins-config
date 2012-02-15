@@ -1,0 +1,13 @@
+Changes in branch origin/master, between a6b4039cd633932bff31a7826c0f76320326c45d and 86f55c856137f3f90c9e840b748fcce4b0f9bd0f
+commit 86f55c856137f3f90c9e840b748fcce4b0f9bd0f
+tree eba4599ec1aa4323b3b4ed653d397da845247e45
+parent a6b4039cd633932bff31a7826c0f76320326c45d
+author Jessica Wang <jessica@cloud.com> 1329341949 -0800
+committer Jessica Wang <jessica@cloud.com> 1329341949 -0800
+
+    cloudstack 3.0 new UI - system page - localize zone actions.
+
+:100644 100644 b4ca8960f1a33e992b7320fe181095308644a4d7 5e23d0dd86b9c119682f89889ccee98cfdc426b8 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 6f6a1da4ce3cc9328667ee3b26f6cc2fa62edf08 be0dc2a536374fb54fc2daa878f49c22247e2d8c M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 7363b23b966a0707a221b267e8fb1c0f75d495bb 5d9ddf2c5c461d0d2783257ecfb6055bece0b118 M	ui/index.jsp
+:100644 100644 1294d97cc49b7f43f57e99b91cc56358c4a0dbd6 c796c3b85f6d68f91aeb6de769c275b3a8e2026a M	ui/scripts/system.js

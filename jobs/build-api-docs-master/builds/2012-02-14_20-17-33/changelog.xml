@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 3349e167c0d4b8df3d27c05d727de6852617ca17 and 2b734242a08a2bd822684a707bfd4fcb390b2683
+commit 2b734242a08a2bd822684a707bfd4fcb390b2683
+tree b47d64e8e9e84db0413baaa841c9da1fa70d7325
+parent 3349e167c0d4b8df3d27c05d727de6852617ca17
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329268498 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329268630 -0800
+
+    Don't change the domain state when the domain can't be removed (cleanup=false and there are resources referencing it)
+    Reviewed-by: Edison Su
+
+:100644 100644 d88d2c4bc301841cdc2b4ead171d061e919869af 599bbb404e83d4e2e38f81c6ec744ddec3f7c27f M	server/src/com/cloud/user/DomainManagerImpl.java

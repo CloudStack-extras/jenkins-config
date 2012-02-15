@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 3350a6b5ab9e3dce6123b8c6f75399f67199603a and 3349e167c0d4b8df3d27c05d727de6852617ca17
+commit 3349e167c0d4b8df3d27c05d727de6852617ca17
+tree 02d1db58d855919eb17ec111803535436dbbdb86
+parent 3350a6b5ab9e3dce6123b8c6f75399f67199603a
+author Jessica Wang <jessica@cloud.com> 1329268162 -0800
+committer Jessica Wang <jessica@cloud.com> 1329268186 -0800
+
+    cloudstack 3.0 new UI - system page - localize network providers section.
+
+:100644 100644 ad4e91329aaf66387a952206fb543ac83328ca05 bd08b0185c626091d57e907de1fed41154294275 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 485702494ef38eb5f824757b79aa6e21193cd25e cb8abb65926935cea6ece25a3f88386dc915f1bb M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 681c1701a513b208ca70583a460dfd28d3eba91f 4a449767651e2294a5503b9de1f7ec576d5dc28a M	ui/index.jsp
+:100644 100644 1a290a89566d620d5e587ff68d402d93d830dad7 28e1633bde5957223df29afe9948d6fe7f830c9d M	ui/scripts/system.js

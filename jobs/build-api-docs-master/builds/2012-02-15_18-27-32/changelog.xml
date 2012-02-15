@@ -1,0 +1,10 @@
+Changes in branch origin/master, between c35b17630a3749d6e51a0a5d772155d162281e97 and b7e862ee8d7405eaacfcf5f475d2e3bff12baac3
+commit b7e862ee8d7405eaacfcf5f475d2e3bff12baac3
+tree 736a98c2757bee8ad29dc1ac8d2582b38987e8d2
+parent c35b17630a3749d6e51a0a5d772155d162281e97
+author Jessica Wang <jessica@cloud.com> 1329348322 -0800
+committer Jessica Wang <jessica@cloud.com> 1329348322 -0800
+
+    cloudstack 3.0 new UI - system page - localize secondary storage section.
+
+:100644 100644 58d4024f58359efd407be419976059dae67ce264 c5f48703aa25ad5499f74f8e3c290a37ecb582d2 M	ui/scripts/system.js

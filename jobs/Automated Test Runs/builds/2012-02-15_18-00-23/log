@@ -1,13 +1,13 @@
 Started by timer
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision d7f34bd17df66f3ad3731b68730978f724cf25d5 (origin/master)
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Last Built Revision: Revision dfe445dd4c6f2f16d298924fac0385d766f32eac (origin/master)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision b4f335f7d8c83c4626760a0601d47beddce535b5 (origin/master)
-Checking out Revision b4f335f7d8c83c4626760a0601d47beddce535b5 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson575853764534408101.sh
+Commencing build of Revision 54bb6ee38e95eb979fc0bf83a4cfd41a6c4fd192 (origin/master)
+Checking out Revision 54bb6ee38e95eb979fc0bf83a4cfd41a6c4fd192 (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson7557514471418230225.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-10T23:00:26Z
-     [echo] Build number is 3.0.0.2012-02-10T23:00:26Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-15T23:00:44Z
+     [echo] Build number is 3.0.0.2012-02-15T23:00:44Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -367,5 +367,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 1 minute 14 seconds
+Total time: 1 minute 19 seconds
 Finished: SUCCESS

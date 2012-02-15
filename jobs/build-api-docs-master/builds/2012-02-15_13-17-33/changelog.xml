@@ -1,0 +1,13 @@
+Changes in branch origin/master, between dfe445dd4c6f2f16d298924fac0385d766f32eac and 81f6b37287a68d118eecbe7c83e88572bbc1d854
+commit 81f6b37287a68d118eecbe7c83e88572bbc1d854
+tree e3c6905385d908c552c18c7c6cfc962cae3b68c6
+parent dfe445dd4c6f2f16d298924fac0385d766f32eac
+author Brian Federle <brian.federle@citrix.com> 1329329768 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329329768 -0800
+
+    WIP: Install wizard localization
+
+:100644 100644 bd08b0185c626091d57e907de1fed41154294275 b4ca8960f1a33e992b7320fe181095308644a4d7 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 cb8abb65926935cea6ece25a3f88386dc915f1bb 6f6a1da4ce3cc9328667ee3b26f6cc2fa62edf08 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 4a449767651e2294a5503b9de1f7ec576d5dc28a 7363b23b966a0707a221b267e8fb1c0f75d495bb M	ui/index.jsp
+:100644 100644 74a59a63100baf1c607e1d0fa378256b8c218c94 990cf82ff712bff2dd92a2e1b4d2715d05cfe633 M	ui/scripts/ui-custom/installWizard.js

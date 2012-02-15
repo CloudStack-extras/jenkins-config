@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between f8e5222acab236338bd6d1e640fe1242901cff54 and 9acc0404466d4d3e6911ea8bccc338114456b459
+commit 9acc0404466d4d3e6911ea8bccc338114456b459
+tree 5378900682b53b31e72f77ae5f24be471e1d055b
+parent f8e5222acab236338bd6d1e640fe1242901cff54
+author Edison Su <Edison.Su@citrix.com> 1329346228 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329346284 -0800
+
+    bug 13647: adding iptables rules failed, sleep and retry
+    status 13647: resolved fixed
+    Reviewed-by: Frank
+
+:100755 100755 afa49c885680837128108701206d43c583067627 a5e90bcc75181e74bbaac73ae9d1a762e929d3cb M	python/lib/cloudutils/serviceConfig.py

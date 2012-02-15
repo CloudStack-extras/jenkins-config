@@ -1,0 +1,12 @@
+Changes in branch remotes/origin/2.2.y, between f3b11f24e64d4eed220f4f5b03355832deae631b and aff4d01eae8805af5dc6581aaaf8b71fc2e0ecef
+commit aff4d01eae8805af5dc6581aaaf8b71fc2e0ecef
+tree 674563da9c6b1cebdb69ed6a8aca1190cc930325
+parent f3b11f24e64d4eed220f4f5b03355832deae631b
+author Edison Su <Edison.Su@citrix.com> 1329346228 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329346368 -0800
+
+    bug 13647: adding iptables rules failed, sleep and retry
+    status 13647: resolved fixed
+    Reviewed-by: Frank
+
+:100755 100755 e8f5f9bdbba7606613856e14a679a2a862ffab54 f93790204909110a9ceda4a48aeeb999d137fb2b M	python/lib/cloudutils/serviceConfig.py

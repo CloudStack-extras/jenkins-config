@@ -1,0 +1,39 @@
+Changes in branch origin/master, between 4fd4ead50d06215032cc35310ecc63f881f78c1c and 72d2f24d9776fa9dc338bf2cf3d873537194e07c
+commit 72d2f24d9776fa9dc338bf2cf3d873537194e07c
+tree 9e9ffc6e0a8f019d49f5d293bd3095b93fdb83e6
+parent 825d049b02eb3ad8d0b1f8e730076e02e5320349
+author Kelven Yang <kelven@cloud.com> 1329264080 -0800
+committer Kelven Yang <kelven@cloud.com> 1329264140 -0800
+
+    bug 13637: don't send ENTER/BACKSPACE in javascript KEY-PRESS event. Reviewed-By: Anthony
+
+:100644 100644 14c80fde5c11e3411c6800f15ca3f698b9dff1e0 3c49f9a701d1e9337002526485cee204d99cfc80 M	console-proxy/js/ajaxviewer.js
+
+commit 825d049b02eb3ad8d0b1f8e730076e02e5320349
+tree 4c927aa3e840ee56260f8becb43b5ff7e60dd45a
+parent 2df24a25755476e3bdab5967b352329a2a55cb89
+author Brian Federle <brian.federle@citrix.com> 1329264040 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329264052 -0800
+
+    Projects UI localization
+    
+    -Dashboard
+    -New project wizard
+    -Misc. missing localized strings
+
+:100644 100644 8c88a237f5550880319553684d80b4ad66068b4f ad4e91329aaf66387a952206fb543ac83328ca05 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 4b1d47fa12ea40a9759a2f87c8a5a1aaaad437a1 485702494ef38eb5f824757b79aa6e21193cd25e M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 d8a88d2d567611003801402ff460722ab1b30e98 681c1701a513b208ca70583a460dfd28d3eba91f M	ui/index.jsp
+:100644 100644 0185b3a6b693468b6cef702caafdd829cb15911f 440479801fe9baf58ad582643ff808bb7452abc8 M	ui/scripts/projects.js
+:100644 100644 1215db094b436642a9c00c1fac7055e3b4eb2ef8 856f2a1d1cb156c2912825748443e6b31c4bb41f M	ui/scripts/ui-custom/projects.js
+
+commit 2df24a25755476e3bdab5967b352329a2a55cb89
+tree 72f4917fa84162f41c59d1850573863e48cdbde5
+parent 4fd4ead50d06215032cc35310ecc63f881f78c1c
+author Brian Federle <brian.federle@citrix.com> 1329264018 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329264052 -0800
+
+    More UI widget localization
+
+:100644 100644 1df259a7d702b3ded4afcfe9755aad53283770f9 3c073ab6b80713af6f028efbc9d97b48515cad39 M	ui/scripts/ui/widgets/multiEdit.js
+:100644 100644 245c1229d3b7b8ff20d2cbba46e6635910c24afe e44fc654702a71e895f3931078a8bdaf96438ed0 M	ui/scripts/ui/widgets/notifications.js

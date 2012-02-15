@@ -1,0 +1,12 @@
+Changes in branch remotes/origin/2.2.y, between 6955bf1bd76f356ed5f254aeb6c5ac5d6435900b and f3b11f24e64d4eed220f4f5b03355832deae631b
+commit f3b11f24e64d4eed220f4f5b03355832deae631b
+tree d7214dd3e853bdfcf857e1ea49a19c7b11e00008
+parent 6955bf1bd76f356ed5f254aeb6c5ac5d6435900b
+author Edison Su <Edison.Su@citrix.com> 1329264988 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329265429 -0800
+
+    bug 13698: set max processes per user is ulimited
+    status 13698: resolved fixed
+    Reviewed-by: alex
+
+:100644 100644 e80b1ed71bda202a8faa449389a51c51a2388aaa 3e4c5931b7fdc4e1798f5219f4e6d043009520c4 M	python/lib/cloudutils/serviceConfigServer.py

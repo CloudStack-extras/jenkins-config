@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 76b452eac163af8ae9c041ff2bb592dae53ce90c and d0ab6329d36e6e7bba6b866cd421a7864310c7bc
+commit d0ab6329d36e6e7bba6b866cd421a7864310c7bc
+tree 01404b312c6d5852384884527edc91f6af70d915
+parent 76b452eac163af8ae9c041ff2bb592dae53ce90c
+author Kelven Yang <kelven@cloud.com> 1329264080 -0800
+committer Kelven Yang <kelven@cloud.com> 1329264095 -0800
+
+    bug 13637: don't send ENTER/BACKSPACE in javascript KEY-PRESS event. Reviewed-By: Anthony
+
+:100644 100644 14c80fde5c11e3411c6800f15ca3f698b9dff1e0 3c49f9a701d1e9337002526485cee204d99cfc80 M	console-proxy/js/ajaxviewer.js

@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between d24f42f98ec015bcce8f0ded48d14ae5dba314a5 and 464256510654805961840de13cbdf452a82dfc28
+commit 464256510654805961840de13cbdf452a82dfc28
+tree e6d793b27df589a683ff0793ea0e249318ee11d3
+parent d24f42f98ec015bcce8f0ded48d14ae5dba314a5
+author Nitin Mehta <nitin.mehta@citrix.com> 1329294759 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1329295014 +0530
+
+    Bug 13684: Remove .vhd that we were appending for backupSnapshot UUID and keep it only in teh case of swift.
+    Reviewed-By: Kishan
+
+:100755 100755 2a8626a33f7373f138f845c6d6bfebefa9f37f68 9078d5ed1ad5beac718e2520c129cd53a7e2f129 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java

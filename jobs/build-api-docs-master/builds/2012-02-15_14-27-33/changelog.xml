@@ -1,0 +1,11 @@
+Changes in branch origin/master, between b7bd68601c146416ad96d8fb1ebc58bd3301b5c5 and a6b4039cd633932bff31a7826c0f76320326c45d
+commit a6b4039cd633932bff31a7826c0f76320326c45d
+tree 7cb1a1a8e01157cbfcab4dc226b8fbab91ab14d3
+parent b7bd68601c146416ad96d8fb1ebc58bd3301b5c5
+author Jessica Wang <jessica@cloud.com> 1329333906 -0800
+committer Jessica Wang <jessica@cloud.com> 1329333927 -0800
+
+    bug 13697:  title in window.open() can't have space nor longer than 8 characters. Otherwise, IE browser will have error.
+
+:100644 100644 7f371c8aa566be661facc632c6282f68bb08b621 9256c36e30341197cbe077071a0f49db83412adf M	ui/scripts/instances.js
+:100644 100644 11421f0b747cc0b38a290083b5a5fd78b03fc28d 1294d97cc49b7f43f57e99b91cc56358c4a0dbd6 M	ui/scripts/system.js

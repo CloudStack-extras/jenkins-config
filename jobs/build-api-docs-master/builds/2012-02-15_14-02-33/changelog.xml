@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 81f6b37287a68d118eecbe7c83e88572bbc1d854 and b5795119f91d3844d4a4aba060312784d42fa4a9
+commit b5795119f91d3844d4a4aba060312784d42fa4a9
+tree 2d5617a5a69c3c4ccc6a37963fcf6daf63eb01dc
+parent 81f6b37287a68d118eecbe7c83e88572bbc1d854
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329330888 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329332553 -0800
+
+    bug 13742: check only for Pending invitations while inviting the same account to the project again
+    status 13742: resolved fixed
+
+:100755 100755 7ddcadb5c7204e1c87b9b7d1f7cafc78da3187d6 c4eebf2e1db77dad78e5446da060f873023b7b5d M	server/src/com/cloud/projects/ProjectManagerImpl.java

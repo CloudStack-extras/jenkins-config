@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 70036a0a50e9766ff359bf65ed4a486cc3144ee8 and 47bd4abb3dfa16a5ad453d1d7ba39408741de9fb
+commit 47bd4abb3dfa16a5ad453d1d7ba39408741de9fb
+tree 85d1a8b4e8394cd1c2ef0821494ae9ba69d8e238
+parent 70036a0a50e9766ff359bf65ed4a486cc3144ee8
+author abhi <abhinandan.prateek@citrix.com> 1329288143 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1329288143 +0530
+
+    Bug 13471: disabling agent lb
+
+:100755 100755 5d48dfcfe4e500430a8ba42195be6f3939f714cf e9190a41931bb0994842de49cdcf7fe95df3fb10 M	server/src/com/cloud/configuration/Config.java

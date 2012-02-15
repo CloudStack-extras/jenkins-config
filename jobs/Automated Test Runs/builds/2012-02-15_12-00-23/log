@@ -1,13 +1,13 @@
 Started by timer
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision ded1a888838bd9dcc35a72f962ccc03587a2ab7c (origin/master)
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@16acd4a
+Last Built Revision: Revision bfe34e37e1a1758d74af1730b2598c8bc01ac350 (origin/master)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision d7f34bd17df66f3ad3731b68730978f724cf25d5 (origin/master)
-Checking out Revision d7f34bd17df66f3ad3731b68730978f724cf25d5 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson3522264853146891515.sh
+Commencing build of Revision dfe445dd4c6f2f16d298924fac0385d766f32eac (origin/master)
+Checking out Revision dfe445dd4c6f2f16d298924fac0385d766f32eac (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson8453467700132465057.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-10T17:00:25Z
-     [echo] Build number is 3.0.0.2012-02-10T17:00:25Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-15T17:00:40Z
+     [echo] Build number is 3.0.0.2012-02-15T17:00:40Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -270,9 +270,9 @@ deploy-server:
 deploydb:
      [echo] deploydb server-setup.xml templates.sql ${DBROOTPW}
      [exec] Recreating Database cloud.
-     [exec] Please enter root password for MySQL.
+     [exec] Enter password: Please enter root password for MySQL.
+     [exec] ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
      [exec] Error: Cannot execute create-database.sql
-     [exec] Enter password: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
      [exec] Result: 10
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -367,5 +367,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 1 minute 10 seconds
+Total time: 1 minute 17 seconds
 Finished: SUCCESS

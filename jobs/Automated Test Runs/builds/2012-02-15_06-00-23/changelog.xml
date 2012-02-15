@@ -1,0 +1,21 @@
+Changes in branch origin/master, between 70036a0a50e9766ff359bf65ed4a486cc3144ee8 and bfe34e37e1a1758d74af1730b2598c8bc01ac350
+commit bfe34e37e1a1758d74af1730b2598c8bc01ac350
+tree 4170181c2376ce05d0017fca05d58817c48f3b5d
+parent 47bd4abb3dfa16a5ad453d1d7ba39408741de9fb
+author Nitin Mehta <nitin.mehta@citrix.com> 1329294759 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1329294759 +0530
+
+    Bug 13684: Remove .vhd that we were appending for backupSnapshot UUID and keep it only in teh case of swift.
+    Reviewed-By: Kishan
+
+:100755 100755 2a8626a33f7373f138f845c6d6bfebefa9f37f68 9078d5ed1ad5beac718e2520c129cd53a7e2f129 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+
+commit 47bd4abb3dfa16a5ad453d1d7ba39408741de9fb
+tree 85d1a8b4e8394cd1c2ef0821494ae9ba69d8e238
+parent 70036a0a50e9766ff359bf65ed4a486cc3144ee8
+author abhi <abhinandan.prateek@citrix.com> 1329288143 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1329288143 +0530
+
+    Bug 13471: disabling agent lb
+
+:100755 100755 5d48dfcfe4e500430a8ba42195be6f3939f714cf e9190a41931bb0994842de49cdcf7fe95df3fb10 M	server/src/com/cloud/configuration/Config.java

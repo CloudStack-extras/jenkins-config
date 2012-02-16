@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 2dab37d3b1333f6c7fbd7d163429606b0c3411d9 and f0c911d275c925fdc1bea2833c18ec5d989e7426
+commit f0c911d275c925fdc1bea2833c18ec5d989e7426
+tree 3afa5a32b5ecbb2fbea58722e2cac9dc099f351f
+parent 2dab37d3b1333f6c7fbd7d163429606b0c3411d9
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329417345 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329417600 -0800
+
+    bug 13813: fixed network offering search to use traffic type when locate physical network in the zone
+    status 13813: resolved fixed
+    Reviewed-by: Frank
+
+:100755 100755 01d5a6e0b7dafefc7c8da874880eaa1106a9d10b 923d7846b6fcf337610c5d4d86463d8e09e707c2 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 431a9f0977eed54b26d873d5689368b116ebdf36 3948b3045d3441a295e0fc74fa48f86fe3079bba M	server/src/com/cloud/network/NetworkManager.java
+:100644 100644 c0044fab0cffd6efb8b1a4652db4f5931dbe2ae7 1baa2c79196483ce6fff9b4db2879c3b271275a7 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 5e050eee823e6883bdfa54f18c3d0750150fc6d9 50c130e7c79a8557f5066e63bbca7b66fc133087 M	server/test/com/cloud/network/MockNetworkManagerImpl.java

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 262504b6d77ee86969a971ed0cbfc352c83cbc1a and e9741a50f8e9346eca84aace96bf28f4e1375906
+commit e9741a50f8e9346eca84aace96bf28f4e1375906
+tree 8471f471eb28c2c5c4a2b19b874a9cac9b538cc9
+parent 262504b6d77ee86969a971ed0cbfc352c83cbc1a
+author Kelven Yang <kelven@cloud.com> 1329356139 -0800
+committer Kelven Yang <kelven@cloud.com> 1329356147 -0800
+
+    add a debian 5.0 32 bit guest os mapping
+
+:100755 100755 a2791054f146926a0789287c0e216170cfee66d4 e9da1a75eb45f28b375ff18f1668bcfdc06ef470 M	vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareGuestOsMapper.java

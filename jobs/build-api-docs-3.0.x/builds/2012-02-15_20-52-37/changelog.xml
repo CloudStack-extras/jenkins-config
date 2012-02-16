@@ -1,0 +1,24 @@
+Changes in branch origin/3.0.x, between 2ff2177b84f6487c665a141dccea13473f16fa93 and 539754394b402188d717a1f6014a3bdd493cb24b
+commit 539754394b402188d717a1f6014a3bdd493cb24b
+tree 805a8f2992b6092757341d9eaedf58e429458934
+parent 0b2d72a5fdb54724c32906f4f3c763a4bb580c39
+author Kelven Yang <kelven@cloud.com> 1329356139 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329356990 -0800
+
+    add a debian 5.0 32 bit guest os mapping
+    
+    Reviewed-by: Sheng Yang
+
+:100755 100755 a2791054f146926a0789287c0e216170cfee66d4 e9da1a75eb45f28b375ff18f1668bcfdc06ef470 M	vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareGuestOsMapper.java
+
+commit 0b2d72a5fdb54724c32906f4f3c763a4bb580c39
+tree 06a5542a6423e592e250c9a84044193c7d354ccb
+parent 2ff2177b84f6487c665a141dccea13473f16fa93
+author Edison Su <Edison.Su@citrix.com> 1329356865 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329356931 -0800
+
+    bug 13609: libvirt-java doesn't handle error 72, rebuild the jar
+    status 13609: resolved fixed
+    Reviewed-by: frank
+
+:100644 100644 a8ae3f2605d422955ea3fb3a50182ca66a53fb5d 9d0a1dfbe609c5a428071eccec25a4565cbcf9d4 M	deps/cloud-libvirt-0.4.5.jar

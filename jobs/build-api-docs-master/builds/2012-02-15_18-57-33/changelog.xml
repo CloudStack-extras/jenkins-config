@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 77bb18492e251d80d67f4292e7b02cf862f91ccb and 288edd45e9bb71315cf90c536cfa81952ae3a9ef
+commit 288edd45e9bb71315cf90c536cfa81952ae3a9ef
+tree 289814245f4a49b588d9b3064ed63e951d9685f1
+parent 77bb18492e251d80d67f4292e7b02cf862f91ccb
+author Jessica Wang <jessica@cloud.com> 1329349970 -0800
+committer Jessica Wang <jessica@cloud.com> 1329349970 -0800
+
+    cloudstack 3.0 new UI - system page - localize IP Ranges sections.
+
+:100644 100644 e91e507a06f2378a38d2cf12b17bdfa223f990f9 4012fc7d3c2a6de81120b3e0b755d1f6db64b06e M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 7cbdf48fbf929b513991f06edf21ecc734245c67 336d6e5c2bfa6be9b0881c587d683de15d093292 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 943fb8c2f752a064ded8310e9403b1bf8dabedcf 38b1b3a4f7f309a36c393802d9e36841071d412d M	ui/index.jsp
+:100644 100644 7ec52a514b83c7c8cbb5f1adecaf85f590216835 2d0dd115b6d9b670d96166982b48a42d25086ba3 M	ui/scripts/system.js

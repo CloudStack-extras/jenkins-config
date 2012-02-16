@@ -1,0 +1,10 @@
+Changes in branch origin/master, between b7e862ee8d7405eaacfcf5f475d2e3bff12baac3 and 8d30fc06b72dd7094a6db3c066f090fabee37563
+commit 8d30fc06b72dd7094a6db3c066f090fabee37563
+tree 1dda60115ce32c4fef566341f5d0fba2f2f8da68
+parent b7e862ee8d7405eaacfcf5f475d2e3bff12baac3
+author Chiradeep Vittal <chiradeep@cloud.com> 1329348721 -0800
+committer Chiradeep Vittal <chiradeep@cloud.com> 1329348888 -0800
+
+    bug 13734: allow dhcp requests and responses all the time
+
+:100755 100755 973df43b16df2e74922244d2c97b7c8b05661875 d738377061072ba9aa6ca647aadcb7ea28ff3f7e M	scripts/vm/hypervisor/xenserver/vmops

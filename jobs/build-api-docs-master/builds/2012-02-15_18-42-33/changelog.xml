@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 8d30fc06b72dd7094a6db3c066f090fabee37563 and 77bb18492e251d80d67f4292e7b02cf862f91ccb
+commit 77bb18492e251d80d67f4292e7b02cf862f91ccb
+tree b72cfa41aafb5b7b868549b0ae9d9c435234271e
+parent 8d30fc06b72dd7094a6db3c066f090fabee37563
+author Jessica Wang <jessica@cloud.com> 1329349343 -0800
+committer Jessica Wang <jessica@cloud.com> 1329349358 -0800
+
+    cloudstack 3.0 new UI - system page - Advanced zone - Guest traffic type - Network tab - Network detailView - View IP Ranges - remove obsolete code for Basic zone since this section is only available for Advanced zone now.
+
+:100644 100644 c5f48703aa25ad5499f74f8e3c290a37ecb582d2 7ec52a514b83c7c8cbb5f1adecaf85f590216835 M	ui/scripts/system.js

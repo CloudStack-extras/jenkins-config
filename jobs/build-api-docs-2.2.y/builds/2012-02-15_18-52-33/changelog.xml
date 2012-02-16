@@ -1,0 +1,10 @@
+Changes in branch remotes/origin/2.2.y, between aff4d01eae8805af5dc6581aaaf8b71fc2e0ecef and 9622d621fd57092360dfe76f18ed039d7dbf34e0
+commit 9622d621fd57092360dfe76f18ed039d7dbf34e0
+tree 8bce92d344169cc25fdf1bdcbe4c139503dfb2dc
+parent aff4d01eae8805af5dc6581aaaf8b71fc2e0ecef
+author Chiradeep Vittal <chiradeep@cloud.com> 1329348721 -0800
+committer Chiradeep Vittal <chiradeep@cloud.com> 1329349815 -0800
+
+    bug 13733: allow dhcp requests and responses all the time
+
+:100755 100755 4e650b7709fefe2a776eafc435e6c9797e9f810a 150f44e09776a560ab28abcbe1a0912f17ba49f7 M	scripts/vm/hypervisor/xenserver/vmops

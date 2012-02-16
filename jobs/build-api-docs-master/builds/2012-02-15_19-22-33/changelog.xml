@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 288edd45e9bb71315cf90c536cfa81952ae3a9ef and c910992afbce571cdaec1eeeff1688dfc928e23c
+commit c910992afbce571cdaec1eeeff1688dfc928e23c
+tree 264d5a3c6b083a4e761e11e92fe1f7bcde2f5575
+parent 288edd45e9bb71315cf90c536cfa81952ae3a9ef
+author Kelven Yang <kelven@cloud.com> 1329351505 -0800
+committer Kelven Yang <kelven@cloud.com> 1329351603 -0800
+
+    bug 13777: propagate snapshot packaging failures up. Reviewed-By: Anthony
+
+:100755 100755 4a2624426bfbd0e0dab53cf35835cf713acd2fab 382d1eb8cb05c22fd061217fd780729780fc436d M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VirtualMachineMO.java

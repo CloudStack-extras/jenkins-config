@@ -1,0 +1,18 @@
+Changes in branch origin/master, between 6a51100f1bacf793690f59b795cc3a6380ebce59 and 972eddf3663f874d63173323829d265ccb5b8381
+commit 972eddf3663f874d63173323829d265ccb5b8381
+tree 131f1610de65da20b092f044b071210ec9a32679
+parent 6a51100f1bacf793690f59b795cc3a6380ebce59
+author Brian Federle <brian.federle@citrix.com> 1329432282 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329432310 -0800
+
+    Complete localization for quick install wizard
+    
+    -- Also separates EULA into an iframe-embedded HTML file
+
+:100644 100644 1523b6f5b07bfca5e8be9a33d3965bc1b50f7abb 9a29e96451084adeca3978e101bf12416f7e5495 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 17f3418135460fcaa9205b0c49ebec2b8930db7e 99ef7c9e078115d69ff7cef1b001777f0ed4d595 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 b59269b54867f775f01f8e52d6ad5da82a5857ec a66c8984935450c2c5181d7c08c3ebee34ae1072 M	ui/css/cloudstack3.css
+:000000 100644 0000000000000000000000000000000000000000 c30161da2a122d69dafd346a6da9a4ddff157e57 A	ui/eula.html
+:100644 100644 569a7e45ae00630b5d69ac46becfdf25ca54432e 8aad951e8c77efcbd0ebdb24ec7a03374657abae M	ui/index.jsp
+:100644 100644 f496ed76727bfcb2b395b272f4150560ace1d4f9 e394e54ac0187895d61e96b2bb4a1df9551667ac M	ui/scripts/installWizard.js
+:100644 100644 990cf82ff712bff2dd92a2e1b4d2715d05cfe633 9ec054208835e7ae8da7e026f8a9900958e5ddaa M	ui/scripts/ui-custom/installWizard.js

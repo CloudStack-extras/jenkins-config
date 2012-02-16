@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between ec83ed1637a444a6547be1a01904c9bda92b005a and 9dfdbd1fb38c4cba1571ce5010fd2d7add7c4bd2
+commit 9dfdbd1fb38c4cba1571ce5010fd2d7add7c4bd2
+tree 62e1c29109005b269032a710cd68774d06c963b1
+parent ec83ed1637a444a6547be1a01904c9bda92b005a
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329433039 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329433131 -0800
+
+    bug 13041: in Basic zone just restart all exising domRs in the zone during the networkRestart, don't try to create a new one
+    status 13041: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 680ca763bacdca91915fd17dc64cc27feaf21f82 fe79cd871d0edc58adf8dbbb54c8b1317e708712 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

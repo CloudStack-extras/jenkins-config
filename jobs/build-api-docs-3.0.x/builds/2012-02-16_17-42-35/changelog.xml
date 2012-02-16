@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between 502ad1d261ea3c9d7e9bccb162109a279f6b3f90 and ec83ed1637a444a6547be1a01904c9bda92b005a
+commit ec83ed1637a444a6547be1a01904c9bda92b005a
+tree 6bf66b8c535498f913504675a882568281204919
+parent 502ad1d261ea3c9d7e9bccb162109a279f6b3f90
+author Sheng Yang <sheng.yang@cloud.com> 1329430249 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329432127 -0800
+
+    bug 13821: Shutdown interface with ip 0.0.0.0
+    
+    status 13821: resolved fixed
+    
+    Reviewed-by: Frank
+
+:100755 100755 f3df6c08857fa04347a6d349c0966a8d28b43a7c ae164e33b04a4e01c0aafefd8268d92dc2074c44 M	patches/systemvm/debian/config/etc/init.d/cloud-early-config

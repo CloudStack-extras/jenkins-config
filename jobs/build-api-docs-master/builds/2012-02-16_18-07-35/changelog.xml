@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 3c89000560f23bca7c1047eccf21abc68aa80243 and 8e3514c5c53920396d8aef859d7e704e354ebdc9
+commit 8e3514c5c53920396d8aef859d7e704e354ebdc9
+tree 7bf173063362b944668cfd8b55e631d5f4f9259b
+parent 3c89000560f23bca7c1047eccf21abc68aa80243
+author frank <frank.zhang@citrix.com> 1329433563 -0800
+committer frank <frank.zhang@citrix.com> 1329433563 -0800
+
+    move eula.html to build/
+
+:100644 100644 c30161da2a122d69dafd346a6da9a4ddff157e57 c30161da2a122d69dafd346a6da9a4ddff157e57 R100	ui/eula.html	build/eula.html
+:100644 000000 004d7daca25b58496554b8ebaad4c0060a8bec44 0000000000000000000000000000000000000000 D	cloud-selenium-server.jar

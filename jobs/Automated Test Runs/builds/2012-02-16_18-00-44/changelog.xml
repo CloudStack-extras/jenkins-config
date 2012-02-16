@@ -1,0 +1,116 @@
+Changes in branch origin/master, between 00be03045947956e41c3df5cd7d3770fbe1dc1c9 and f03b6be36627b1cba5908a1ee461fd7b376b90df
+commit f03b6be36627b1cba5908a1ee461fd7b376b90df
+tree 4386f517ba3d8341daf1e1567effeb1aaa06a516
+parent 972eddf3663f874d63173323829d265ccb5b8381
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329433039 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329433096 -0800
+
+    bug 13041: in Basic zone just restart all exising domRs in the zone during the networkRestart, don't try to create a new one
+    status 13041: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 680ca763bacdca91915fd17dc64cc27feaf21f82 fe79cd871d0edc58adf8dbbb54c8b1317e708712 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit 972eddf3663f874d63173323829d265ccb5b8381
+tree 131f1610de65da20b092f044b071210ec9a32679
+parent 6a51100f1bacf793690f59b795cc3a6380ebce59
+author Brian Federle <brian.federle@citrix.com> 1329432282 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329432310 -0800
+
+    Complete localization for quick install wizard
+    
+    -- Also separates EULA into an iframe-embedded HTML file
+
+:100644 100644 1523b6f5b07bfca5e8be9a33d3965bc1b50f7abb 9a29e96451084adeca3978e101bf12416f7e5495 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 17f3418135460fcaa9205b0c49ebec2b8930db7e 99ef7c9e078115d69ff7cef1b001777f0ed4d595 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 b59269b54867f775f01f8e52d6ad5da82a5857ec a66c8984935450c2c5181d7c08c3ebee34ae1072 M	ui/css/cloudstack3.css
+:000000 100644 0000000000000000000000000000000000000000 c30161da2a122d69dafd346a6da9a4ddff157e57 A	ui/eula.html
+:100644 100644 569a7e45ae00630b5d69ac46becfdf25ca54432e 8aad951e8c77efcbd0ebdb24ec7a03374657abae M	ui/index.jsp
+:100644 100644 f496ed76727bfcb2b395b272f4150560ace1d4f9 e394e54ac0187895d61e96b2bb4a1df9551667ac M	ui/scripts/installWizard.js
+:100644 100644 990cf82ff712bff2dd92a2e1b4d2715d05cfe633 9ec054208835e7ae8da7e026f8a9900958e5ddaa M	ui/scripts/ui-custom/installWizard.js
+
+commit 6a51100f1bacf793690f59b795cc3a6380ebce59
+tree 148c7f1f3b9973cb7daa50d366cc030a14454964
+parent e34b57aa75410fd730d34202dce97928a2ffd2f8
+author Sheng Yang <sheng.yang@cloud.com> 1329430249 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329432166 -0800
+
+    bug 13821: Shutdown interface with ip 0.0.0.0
+    
+    status 13821: resolved fixed
+    
+    Reviewed-by: Frank
+
+:100755 100755 f3df6c08857fa04347a6d349c0966a8d28b43a7c ae164e33b04a4e01c0aafefd8268d92dc2074c44 M	patches/systemvm/debian/config/etc/init.d/cloud-early-config
+
+commit e34b57aa75410fd730d34202dce97928a2ffd2f8
+tree c2b58cde233254aeb7c7b9804ddbef31e1b60efd
+parent 42cd5147c346ee78fc62e0013c010c18f6cccb43
+author Jessica Wang <jessica@cloud.com> 1329429356 -0800
+committer Jessica Wang <jessica@cloud.com> 1329429356 -0800
+
+    cloudstack 3.0 new UI - add more localization labels.
+
+:100644 100644 27423be68024f911bba399a5f6a5f5adfee8f776 1523b6f5b07bfca5e8be9a33d3965bc1b50f7abb M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 c2a54d8f480abb1077d810574c158433b1f31656 17f3418135460fcaa9205b0c49ebec2b8930db7e M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 67b6a7e34b358e87af1e27eac1ddfa46fbe3e5ec 569a7e45ae00630b5d69ac46becfdf25ca54432e M	ui/index.jsp
+:100644 100644 b9d1e1faea6793818775b6ff8be56b9e8b9dcea9 a8a4cea3cec6ee85a5ae975098d09a00d6eae61b M	ui/scripts/configuration.js
+:100644 100644 9256c36e30341197cbe077071a0f49db83412adf ff27b8b15e25d48c69283ad046fd97dd250d904c M	ui/scripts/instances.js
+:100644 100644 2b5931f91de2033d3605eb0d942c132c6dff6167 119da5c9621b9fa7ba25023f451c2d92b5022873 M	ui/scripts/system.js
+:100644 100644 87e5fceb92016c134a5332b8629afc3d518ae6a8 ac2437c7a7527c1878ac8a9d8de9935da733dc5e M	ui/scripts/zoneWizard.js
+
+commit 42cd5147c346ee78fc62e0013c010c18f6cccb43
+tree 2a098397c8ef7f00d772b7b30430569b133f2e99
+parent 4c2b0505aaffc49256260712150a8d37c44b95e8
+author Jessica Wang <jessica@cloud.com> 1329423733 -0800
+committer Jessica Wang <jessica@cloud.com> 1329423733 -0800
+
+    cloudstack 3.0 new UI - correct localization label format
+
+:100644 100644 f159d8b33a1dbedc58432831dbbdec90c7bca13c 27423be68024f911bba399a5f6a5f5adfee8f776 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 cbce3652b23cfe6115e53361c086d8d0bf908505 c2a54d8f480abb1077d810574c158433b1f31656 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 7a7cd4fe52802c4d49f7a4cd2b5ef6c79db7b491 67b6a7e34b358e87af1e27eac1ddfa46fbe3e5ec M	ui/index.jsp
+:100644 100644 96fffd58c196585f4bf1e05cd3192b96812bea41 b9d1e1faea6793818775b6ff8be56b9e8b9dcea9 M	ui/scripts/configuration.js
+:100644 100644 c23f38eacad4e60cfedae6419502477ab0a2fbbb 2b5931f91de2033d3605eb0d942c132c6dff6167 M	ui/scripts/system.js
+:100644 100644 ee37632b02be0682a520c0a2f2f909e497b06d68 87e5fceb92016c134a5332b8629afc3d518ae6a8 M	ui/scripts/zoneWizard.js
+
+commit 4c2b0505aaffc49256260712150a8d37c44b95e8
+tree bfa44c2bf282432c853bae7752118db1b34cc3dd
+parent f0c911d275c925fdc1bea2833c18ec5d989e7426
+author Jessica Wang <jessica@cloud.com> 1329420184 -0800
+committer Jessica Wang <jessica@cloud.com> 1329420202 -0800
+
+    cloudstack 3.0 new UI - localize messages during zone creation.
+
+:100644 100644 6ac2806a4d2462dcf0dc3fa59bafcef1b1e034df f159d8b33a1dbedc58432831dbbdec90c7bca13c M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 4b4bd555f76584f5cce1dfb6b949ffeaec28c186 cbce3652b23cfe6115e53361c086d8d0bf908505 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 72fa6bb442bcee7f0ad2ca8eb12d8f8c1f6cce80 7a7cd4fe52802c4d49f7a4cd2b5ef6c79db7b491 M	ui/index.jsp
+:100644 100644 27a5386a267a9187800656dd54f8c3b34a490deb eddec69c335f6b678eac8774095251910a8db124 M	ui/scripts/ui-custom/zoneWizard.js
+:100644 100644 98fc3838a8fc2ec8b2a6ff3ebe836a6a59a2996d ee37632b02be0682a520c0a2f2f909e497b06d68 M	ui/scripts/zoneWizard.js
+
+commit f0c911d275c925fdc1bea2833c18ec5d989e7426
+tree 3afa5a32b5ecbb2fbea58722e2cac9dc099f351f
+parent 2dab37d3b1333f6c7fbd7d163429606b0c3411d9
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329417345 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329417600 -0800
+
+    bug 13813: fixed network offering search to use traffic type when locate physical network in the zone
+    status 13813: resolved fixed
+    Reviewed-by: Frank
+
+:100755 100755 01d5a6e0b7dafefc7c8da874880eaa1106a9d10b 923d7846b6fcf337610c5d4d86463d8e09e707c2 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 431a9f0977eed54b26d873d5689368b116ebdf36 3948b3045d3441a295e0fc74fa48f86fe3079bba M	server/src/com/cloud/network/NetworkManager.java
+:100644 100644 c0044fab0cffd6efb8b1a4652db4f5931dbe2ae7 1baa2c79196483ce6fff9b4db2879c3b271275a7 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 5e050eee823e6883bdfa54f18c3d0750150fc6d9 50c130e7c79a8557f5066e63bbca7b66fc133087 M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+
+commit 2dab37d3b1333f6c7fbd7d163429606b0c3411d9
+tree b50744fdfb4b9b47d0155cddc8d9b3637c246cc5
+parent 00be03045947956e41c3df5cd7d3770fbe1dc1c9
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329415110 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329415267 -0800
+
+    bug 13801: fixed broken check for extending vnet ranges during physical network update
+    status 13801: resolved fixed
+    Reviwed-by: Kelven Yang
+
+:100644 100644 d333a3b0ea44c1e74b591aa4b6c5986e3b95f51f c0044fab0cffd6efb8b1a4652db4f5931dbe2ae7 M	server/src/com/cloud/network/NetworkManagerImpl.java

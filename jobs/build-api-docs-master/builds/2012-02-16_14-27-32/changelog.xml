@@ -1,0 +1,14 @@
+Changes in branch origin/master, between f0c911d275c925fdc1bea2833c18ec5d989e7426 and 4c2b0505aaffc49256260712150a8d37c44b95e8
+commit 4c2b0505aaffc49256260712150a8d37c44b95e8
+tree bfa44c2bf282432c853bae7752118db1b34cc3dd
+parent f0c911d275c925fdc1bea2833c18ec5d989e7426
+author Jessica Wang <jessica@cloud.com> 1329420184 -0800
+committer Jessica Wang <jessica@cloud.com> 1329420202 -0800
+
+    cloudstack 3.0 new UI - localize messages during zone creation.
+
+:100644 100644 6ac2806a4d2462dcf0dc3fa59bafcef1b1e034df f159d8b33a1dbedc58432831dbbdec90c7bca13c M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 4b4bd555f76584f5cce1dfb6b949ffeaec28c186 cbce3652b23cfe6115e53361c086d8d0bf908505 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 72fa6bb442bcee7f0ad2ca8eb12d8f8c1f6cce80 7a7cd4fe52802c4d49f7a4cd2b5ef6c79db7b491 M	ui/index.jsp
+:100644 100644 27a5386a267a9187800656dd54f8c3b34a490deb eddec69c335f6b678eac8774095251910a8db124 M	ui/scripts/ui-custom/zoneWizard.js
+:100644 100644 98fc3838a8fc2ec8b2a6ff3ebe836a6a59a2996d ee37632b02be0682a520c0a2f2f909e497b06d68 M	ui/scripts/zoneWizard.js

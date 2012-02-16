@@ -1,0 +1,16 @@
+Changes in branch origin/master, between 42cd5147c346ee78fc62e0013c010c18f6cccb43 and e34b57aa75410fd730d34202dce97928a2ffd2f8
+commit e34b57aa75410fd730d34202dce97928a2ffd2f8
+tree c2b58cde233254aeb7c7b9804ddbef31e1b60efd
+parent 42cd5147c346ee78fc62e0013c010c18f6cccb43
+author Jessica Wang <jessica@cloud.com> 1329429356 -0800
+committer Jessica Wang <jessica@cloud.com> 1329429356 -0800
+
+    cloudstack 3.0 new UI - add more localization labels.
+
+:100644 100644 27423be68024f911bba399a5f6a5f5adfee8f776 1523b6f5b07bfca5e8be9a33d3965bc1b50f7abb M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 c2a54d8f480abb1077d810574c158433b1f31656 17f3418135460fcaa9205b0c49ebec2b8930db7e M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 67b6a7e34b358e87af1e27eac1ddfa46fbe3e5ec 569a7e45ae00630b5d69ac46becfdf25ca54432e M	ui/index.jsp
+:100644 100644 b9d1e1faea6793818775b6ff8be56b9e8b9dcea9 a8a4cea3cec6ee85a5ae975098d09a00d6eae61b M	ui/scripts/configuration.js
+:100644 100644 9256c36e30341197cbe077071a0f49db83412adf ff27b8b15e25d48c69283ad046fd97dd250d904c M	ui/scripts/instances.js
+:100644 100644 2b5931f91de2033d3605eb0d942c132c6dff6167 119da5c9621b9fa7ba25023f451c2d92b5022873 M	ui/scripts/system.js
+:100644 100644 87e5fceb92016c134a5332b8629afc3d518ae6a8 ac2437c7a7527c1878ac8a9d8de9935da733dc5e M	ui/scripts/zoneWizard.js

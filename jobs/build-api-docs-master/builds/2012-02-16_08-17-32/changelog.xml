@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 76d61a25c789d5ea4f99464cdafe3cea71dd9a2f and 00be03045947956e41c3df5cd7d3770fbe1dc1c9
+commit 00be03045947956e41c3df5cd7d3770fbe1dc1c9
+tree bee57f9493d8dc2d050addaeb7441f5467b365d6
+parent 76d61a25c789d5ea4f99464cdafe3cea71dd9a2f
+author Murali reddy <Murali.Reddy@citrix.com> 1329398257 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1329398257 +0530
+
+    bug 13625:  F5 - NullPointerException seen when trying to delete/restart a network that was failed to implement properly during implement network
+    Reviewed-By: Abhi
+    status 13625: resolved fixed
+    
+    adding logic to gracefully exit shutdown operation, if earlier network failed to implement
+
+:100644 100644 196a153021d99f1aedac1ce8e5241f02d8d5cc14 499b8db5579b0200cb235c300a6ff05f71110ebf M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java

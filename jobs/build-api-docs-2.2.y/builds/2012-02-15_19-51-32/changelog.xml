@@ -1,0 +1,21 @@
+Changes in branch remotes/origin/2.2.y, between 9622d621fd57092360dfe76f18ed039d7dbf34e0 and fed41a5f8a9aef0ecdd790f72bebe8f8a39e2e92
+commit fed41a5f8a9aef0ecdd790f72bebe8f8a39e2e92
+tree 65d759f03d290973cd3e874d7f38b69c601e8a7c
+parent 1f556cba5075700290727398680da509691f6b5f
+author Kelven Yang <kelven@cloud.com> 1329351505 -0800
+committer Kelven Yang <kelven@cloud.com> 1329351505 -0800
+
+    bug 13777: propagate snapshot packaging failures up. Reviewed-By: Anthony
+
+:100755 100755 4a2624426bfbd0e0dab53cf35835cf713acd2fab 382d1eb8cb05c22fd061217fd780729780fc436d M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VirtualMachineMO.java
+
+commit 1f556cba5075700290727398680da509691f6b5f
+tree 5916d80357cdac45b3459058a34c36cadf7c7bdb
+parent 9622d621fd57092360dfe76f18ed039d7dbf34e0
+author Kelven Yang <kelven@cloud.com> 1329248956 -0800
+committer Kelven Yang <kelven@cloud.com> 1329350341 -0800
+
+    bug 13537: use --no-same-owner when we untar OVA file to work with NFSv4. Reviewed-By: Anthony
+
+:100644 100644 4a8b107efd85d47a3b6005b3ef1a97a4404ac3ed 30d11a8bbf526a44c76e83ec5cb1669e8ec4df97 M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+:100644 100644 bd354642fdd67e1ffb16c3212e6aecfb55f788d5 f3dbbda3fea9ba2b72df4c2c2334810d25068042 M	core/src/com/cloud/storage/template/VmdkProcessor.java

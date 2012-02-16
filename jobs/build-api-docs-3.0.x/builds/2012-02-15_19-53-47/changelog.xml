@@ -1,0 +1,26 @@
+Changes in branch origin/3.0.x, between 4504fcaf396633efc6e54890ff90ea4274a567b8 and b958a6ec42858970bda0947c0432069f5a19e97e
+commit b958a6ec42858970bda0947c0432069f5a19e97e
+tree 6d749663dcf00f97bd9ff2ce340daa17449b0c6a
+parent e11ab2ab6bfe9df40113aac5ba05ec5bb7808538
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329352347 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329352658 -0800
+
+    bug 13700: delete projects as a part of domain cleanup
+    status 13700: resolved fixed
+    Reviewed-by: Frank
+
+:100644 100644 050b5d4ed5aa2c2b87be5429a2ac39554102387b e522255609f1fc890fb65fa13d8b4f167231120e M	server/src/com/cloud/projects/ProjectAccountVO.java
+:100644 100644 358635424f9d9463053ee0aa5c94257a83dc6eda 635c3f91c0d29bd5e76a96c60a688aa51f27eac3 M	server/src/com/cloud/projects/ProjectManager.java
+:100755 100755 c4eebf2e1db77dad78e5446da060f873023b7b5d 5d22a05d6edcf7ebf4cbe3017aa5b5f2ab03eb5c M	server/src/com/cloud/projects/ProjectManagerImpl.java
+:100755 100755 9773fb5eb18be2fb66c408a59da810578e901c19 f701e8a545c2bfe76e80bec11ecde603f4b50c86 M	server/src/com/cloud/user/AccountManagerImpl.java
+:100644 100644 599bbb404e83d4e2e38f81c6ec744ddec3f7c27f 4f814fae34e24d65767c4418fffdae4aaa7c0179 M	server/src/com/cloud/user/DomainManagerImpl.java
+
+commit e11ab2ab6bfe9df40113aac5ba05ec5bb7808538
+tree 8902b11db871dcb19bc00d73f356536e2b0b3c63
+parent 4504fcaf396633efc6e54890ff90ea4274a567b8
+author Jessica Wang <jessica@cloud.com> 1329351971 -0800
+committer Jessica Wang <jessica@cloud.com> 1329351987 -0800
+
+    bug 13629: system page - network providers section - no F5 and SRX for Basic zone. [Reviewed-By: Brian]
+
+:100644 100644 80d87520e8562597dbff2c18d34653356ab943a2 0c62af9964ca3675f3e6ce9701bb63753761dd8f M	ui/scripts/system.js

@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between af05ca5e37b0f7df473a73faa52630639d630735 and 498088661d41187274a15903a27f0298d6a8e8e0
+commit 498088661d41187274a15903a27f0298d6a8e8e0
+tree e71e9e17d08cf37c3cf59791902e471dc8d99f7a
+parent af05ca5e37b0f7df473a73faa52630639d630735
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329512265 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329512315 -0800
+
+    bug 13854: don't allow to remove network offerings if its in use by existing networks
+    status 13854: resolved fixed
+    Reviewed-by: Alex Huang
+
+:100755 100755 923d7846b6fcf337610c5d4d86463d8e09e707c2 6468a7bebf76b69098e3e996cda8596d1b15771d M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 9990d350a8390bcde1a8a1c302d5dec6ba200d03 561b48c8d544977735c173d3181c183c2d1593bd M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 fac6128d7c88340309f88f5d74338806fc989a55 080307bcb4b8deb8f600ededb5f6a645c09a7da6 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java

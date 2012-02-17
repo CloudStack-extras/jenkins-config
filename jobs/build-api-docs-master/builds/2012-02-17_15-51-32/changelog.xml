@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 1d1bd5a55f5926fed21dfb87f0a42a510cbaeb51 and f8bd0645bbd8e0da02dd40abff213195b3239b06
+commit f8bd0645bbd8e0da02dd40abff213195b3239b06
+tree 172b94c15f5fe267cee2ca117889d59d0b2e9fca
+parent 1d1bd5a55f5926fed21dfb87f0a42a510cbaeb51
+author Jessica Wang <jessica@cloud.com> 1329511756 -0800
+committer Jessica Wang <jessica@cloud.com> 1329511756 -0800
+
+    add zone wizard - preFilters - addPublicNetwork - consolidate conditinal statement
+
+:100644 100644 93408e1a2efb0cfe9288e87e3c6c8113841f77f1 00bead9dd8aee25073c144e528c9948d9ca80725 M	ui/scripts/zoneWizard.js

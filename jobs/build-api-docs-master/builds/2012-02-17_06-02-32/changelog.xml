@@ -1,0 +1,21 @@
+Changes in branch origin/master, between a94709846ab9648afd0d948f816ff1b9bf681776 and b45171b36ddcf13d9ed97baea902f371c138c98a
+commit b45171b36ddcf13d9ed97baea902f371c138c98a
+tree 60673d5030e0535513828e26965fe39601b2a2d8
+parent 96f91cf50d55598b5530359c67a9c4cf27d573e3
+author Nitin Mehta <nitin.mehta@citrix.com> 1329476389 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1329476389 +0530
+
+    Bug 13836: NPE fix. If snapshot is already removed say so-do not try and delete it again.
+    Reviewed-By: Kishan
+
+:100755 100755 ab59eb54cddfa4700672b36b184a28f3462f76e1 f4c9d1f8ff3796e47838047d097434d36c57c2a8 M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java
+
+commit 96f91cf50d55598b5530359c67a9c4cf27d573e3
+tree f3fdd0ebc3b31a92563adf39e7628e2f7102b4ed
+parent a94709846ab9648afd0d948f816ff1b9bf681776
+author abhi <abhinandan.prateek@citrix.com> 1329476175 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1329476249 +0530
+
+    bug 13812: throw error if addition of host fails
+
+:100755 100755 a71f672288fe7a759453b88a2f629158e955af06 f931fe61f7781590bdcddb695e4e770b1efd240c M	api/src/com/cloud/api/commands/AddHostCmd.java

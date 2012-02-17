@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between be5c2d9d6f5ace70d85d9854edf179aa27b2119a and b48bd02e16125ecc704b48dde89e787b79615a4b
+commit b48bd02e16125ecc704b48dde89e787b79615a4b
+tree 06e0feb56a55a0682636d385d40f6ee242003aaa
+parent be5c2d9d6f5ace70d85d9854edf179aa27b2119a
+author abhi <abhinandan.prateek@citrix.com> 1329476510 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1329476510 +0530
+
+    bug 13812: throw error if addition of host fails
+    reviewed-by: kishan
+
+:100755 100755 a71f672288fe7a759453b88a2f629158e955af06 f931fe61f7781590bdcddb695e4e770b1efd240c M	api/src/com/cloud/api/commands/AddHostCmd.java

@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between b48bd02e16125ecc704b48dde89e787b79615a4b and 77a0fdfa500069cac256f92908d735957ee6e508
+commit 77a0fdfa500069cac256f92908d735957ee6e508
+tree 1c0fce08c5fc4c4e48aa6748bb6b66c921aa5d27
+parent b48bd02e16125ecc704b48dde89e787b79615a4b
+author Nitin Mehta <nitin.mehta@citrix.com> 1329476657 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1329476657 +0530
+
+    Bug 13836: NPE fix. If snapshot is already removed say so-do not try and delete it again.
+    Reviewed-By: Kishan
+
+:100755 100755 0ffec94516a54b0feaebd5fe41722b31b967669e 9179a70aae64cd313d2d09d801bf41deb55de053 M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java

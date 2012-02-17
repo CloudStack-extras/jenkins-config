@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 5d2ea42933edb901603e2aca341807fd1c7912b0 and 49deb9c70e25b114b7b05f163371bc1b4b8333ea
+commit 49deb9c70e25b114b7b05f163371bc1b4b8333ea
+tree e457e00cbfdd4f54bbe5f1489db6f54a937b1dab
+parent 5d2ea42933edb901603e2aca341807fd1c7912b0
+author Jessica Wang <jessica@cloud.com> 1329441805 -0800
+committer Jessica Wang <jessica@cloud.com> 1329441824 -0800
+
+    cloudstack 3.0 new UI - add zone wizard - localize text in html code.
+
+:100644 100644 108f50a776a6f873fe398957cd47d88725427526 a7c4087c3ad278b1fda58be21a319a69256599f5 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 2ff98a4be5222f0c449827a346d4a034c7d33c76 62809080d8dc99cfced47eddcea2e5e499aa8472 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 b3bc7fb1f997ff29e7ca90fb15b018d59845eb10 0cca3f53f9bd76a3acf0fa371d0416aa92252bb7 M	ui/index.jsp

@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 01f52f01314753afbdc9b7af7f59e6e602c73e2a and 70ae9a8845fde7afc1924a3cb4d38b81f43652ab
+commit 70ae9a8845fde7afc1924a3cb4d38b81f43652ab
+tree 94505dfdc4d725bef6a44c34cbb73861ea8ae4a8
+parent 01f52f01314753afbdc9b7af7f59e6e602c73e2a
+author Edison Su <Edison.Su@citrix.com> 1329440468 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329440537 -0800
+
+    bug 13771: Long.equals is not ==
+    status 13771: resolved fixed
+    Reviewed-by: anthony
+
+:100755 100755 0ede8d04fdb19bf4674850d9d934721f498c8d82 0ffec94516a54b0feaebd5fe41722b31b967669e M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java

@@ -1,0 +1,31 @@
+Changes in branch origin/master, between 0ae57a8ec3d0a9e87a565b6234cca647ee1acf47 and 5d2ea42933edb901603e2aca341807fd1c7912b0
+commit 5d2ea42933edb901603e2aca341807fd1c7912b0
+tree 62d12dc02fc95659d4a70348ab061a9b899f58a6
+parent 2041906aa178421954a79b6f63905b6c248438af
+author prachi <prachi@cloud.com> 1329439962 -0800
+committer prachi <prachi@cloud.com> 1329440665 -0800
+
+    Bug 13824 - VM deployment fails due to volume not being recreatable
+    
+    Reviewed-By: Alex
+    
+    Changes:
+    - Reuse the same storagepool where the Volume is ready on each retry of VM deployment until the cluster where the volume is has capacity
+    - After the cluster is out of capacity, we look in other clusters and find a new storagepool.
+    - At this point if the volume is recreatable on the new storagepool, depoyment will succeed provided everytyhing else goes through
+    - But if the volume is not recreatable and its cluster is out of capacity, we will still fail to deploy the VM
+
+:100755 100755 25f8d417bce62ca8b73d7169c4eb763d68875053 1424f75333787488203e8fe670e4c46104db9c0e M	server/src/com/cloud/deploy/FirstFitPlanner.java
+:100755 100755 0dea9ea9456414e16fd9aab865183fd9700b8ca7 199b6ae6fa2fbfc0f125971da298689bb7982a91 M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+
+commit 2041906aa178421954a79b6f63905b6c248438af
+tree 7b130e2f29690327e05e29907ea3f05e75ad18c2
+parent 0ae57a8ec3d0a9e87a565b6234cca647ee1acf47
+author Edison Su <Edison.Su@citrix.com> 1329440468 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329440575 -0800
+
+    bug 13771: Long.equals is not ==
+    status 13771: resolved fixed
+    Reviewed-by: anthony
+
+:100755 100755 0ede8d04fdb19bf4674850d9d934721f498c8d82 0ffec94516a54b0feaebd5fe41722b31b967669e M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java

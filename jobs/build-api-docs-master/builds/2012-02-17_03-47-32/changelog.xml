@@ -1,0 +1,12 @@
+Changes in branch origin/master, between eaae59a909cc193b1fd08d9744c4fc5bb9c9ce09 and 0deea87b4c1c4436eb66b6a9f45b7a35c87749c1
+commit 0deea87b4c1c4436eb66b6a9f45b7a35c87749c1
+tree 40f6ba7de8e6846f859a08188fd4f760121b9faf
+parent eaae59a909cc193b1fd08d9744c4fc5bb9c9ce09
+author kishan <kishan@cloud.com> 1329468448 +0530
+committer kishan <kishan@cloud.com> 1329468448 +0530
+
+    Bug 13802: Log VPN user remove usage event when user fails to get applied
+    Status 13802: resolved fixed
+    Reviewed-By: Nitin
+
+:100755 100755 90e7e4f68efb46e7dbb1e41271c1785fe29885e1 557fd03a49599e9c4c3e8589a5e43db918f7ea66 M	server/src/com/cloud/network/vpn/RemoteAccessVpnManagerImpl.java

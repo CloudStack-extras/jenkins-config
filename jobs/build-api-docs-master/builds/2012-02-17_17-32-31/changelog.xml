@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 88f695733a8817d3354f120d3ce1fd7c8438d80a and 264957c7201e53a4af7ad7f320097e821dd524ee
+commit 264957c7201e53a4af7ad7f320097e821dd524ee
+tree 6389bcc7ac655ce29ec29ac27b88711742bdd120
+parent 88f695733a8817d3354f120d3ce1fd7c8438d80a
+author Brian Federle <brian.federle@citrix.com> 1329517949 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329517959 -0800
+
+    bug 13727
+    
+    Show network offering name (read-only) for shared network types (i.e.,
+    in basic zone)
+    
+    status 13727: resolved fixed
+
+:100644 100644 993c4b2c0fafb5db2334f806c9cc1c79c0743f68 63317b014a6f4149d27c6eba7ff2a9536c8a7480 M	ui/scripts/network.js

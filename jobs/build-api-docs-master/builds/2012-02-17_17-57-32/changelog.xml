@@ -1,0 +1,15 @@
+Changes in branch origin/master, between f9b5e161dec784bdda9fed58c635383d1b488abc and a738afbf02c65264ecfc9f8c1de913fa4c0e10a0
+commit a738afbf02c65264ecfc9f8c1de913fa4c0e10a0
+tree bed756360441144bb426cb9653e72261b0c48522
+parent f9b5e161dec784bdda9fed58c635383d1b488abc
+author Brian Federle <brian.federle@citrix.com> 1329519286 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329519323 -0800
+
+    bug 13726
+    
+    Don't show destroy action on network details for shared networks or
+    networks w/o Source NAT service
+    
+    status 13726: resolved fixed
+
+:100644 100644 63317b014a6f4149d27c6eba7ff2a9536c8a7480 32db4da7105c5570e2dbfe15e8a806e371b269da M	ui/scripts/network.js

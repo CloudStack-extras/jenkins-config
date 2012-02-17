@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between c6578230996e690fb7969308943401814d28d0b0 and af1a4968f74b363e543922f15af757caf435cdd7
+commit af1a4968f74b363e543922f15af757caf435cdd7
+tree 1195e894597a62c908e7450f0564ee2000c3f2be
+parent c6578230996e690fb7969308943401814d28d0b0
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329519032 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329519072 -0800
+
+    Return hostName as displayName in the listvms api resonse, just the way it was before 41df47cc6873b4d8acd0503b16535051a3cbde14)
+    Reviewed-by: Kelven Yang
+
+:100755 100755 910c09202b886ba05759fb2a229be7bb76710c5b 0a226b6b57d5836c7b0d9111b1a577ee3e28cfa0 M	server/src/com/cloud/api/ApiResponseHelper.java

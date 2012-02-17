@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 264957c7201e53a4af7ad7f320097e821dd524ee and 34508ca2fa274bd1ee0304499c22bfd3c7c62b86
+commit 34508ca2fa274bd1ee0304499c22bfd3c7c62b86
+tree 4913d82fff50fc95965347be645f1ddf302c6141
+parent 264957c7201e53a4af7ad7f320097e821dd524ee
+author Brian Federle <brian.federle@citrix.com> 1329518096 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329518096 -0800
+
+    bug 13863: Fix typo in delete SRX firewall API command
+    
+    status 13863: resolved fixed
+
+:100644 100644 d6e02de4926e301c72bf65d858ead1979a533d05 be5623e0bfff3aa9b6c7ef40ec94c319fc73ab6b M	ui/scripts/system.js

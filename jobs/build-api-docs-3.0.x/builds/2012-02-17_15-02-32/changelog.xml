@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 19be9d4ddee2349b1b1ff2e931f507b491d598f2 and e51ab9c48ecc921a9d994c90e7128d9a048498fa
+commit e51ab9c48ecc921a9d994c90e7128d9a048498fa
+tree 1ab34030fc9308873cf23af227847cb546d64cd9
+parent 19be9d4ddee2349b1b1ff2e931f507b491d598f2
+author Brian Federle <brian.federle@citrix.com> 1329508914 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329508914 -0800
+
+    Zone wizard: fix public traffic description
+    
+    reviewed-by: jessica
+
+:100644 100644 b6217633209bc6dbb17529d4f152289e6baf53b1 93408e1a2efb0cfe9288e87e3c6c8113841f77f1 M	ui/scripts/zoneWizard.js

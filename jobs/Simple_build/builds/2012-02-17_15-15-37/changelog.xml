@@ -1,0 +1,58 @@
+Changes in branch origin/master, between df148e339589763576870d8253bbda1874734410 and 1d1bd5a55f5926fed21dfb87f0a42a510cbaeb51
+commit 1d1bd5a55f5926fed21dfb87f0a42a510cbaeb51
+tree 158cabe05d829ce5b6c28605a4242dcab9ae54ef
+parent 6a5a9b8cdc0fbd7911d90c1380cab1cb71f8616a
+author Brian Federle <brian.federle@citrix.com> 1329508367 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329508367 -0800
+
+    Zone wizard: fix public traffic description
+
+:100644 100644 b6217633209bc6dbb17529d4f152289e6baf53b1 93408e1a2efb0cfe9288e87e3c6c8113841f77f1 M	ui/scripts/zoneWizard.js
+
+commit 6a5a9b8cdc0fbd7911d90c1380cab1cb71f8616a
+tree a7fbdeabf22b26e1ef0863afe7d8c4bd70fc56be
+parent 2a9f83a590bb586166c01153907fb91f226b37a3
+author Jessica Wang <jessica@cloud.com> 1329507737 -0800
+committer Jessica Wang <jessica@cloud.com> 1329507754 -0800
+
+    bug 13628: add zone wizard - show different description of public traffic, guest traffic for basic zone and advanced zone.
+
+:100644 100644 3de8c16664e53c0a6dda5a7b36187313f0095747 b6217633209bc6dbb17529d4f152289e6baf53b1 M	ui/scripts/zoneWizard.js
+
+commit 2a9f83a590bb586166c01153907fb91f226b37a3
+tree 6342d01fbc42988ed4bd6dd806de930910e40442
+parent 9ff4a4aec9c053957073c466ac472fc34950c2bf
+author Brian Federle <brian.federle@citrix.com> 1329506894 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329506894 -0800
+
+    bug 13815
+    
+    Add language drop-down to login screen
+    
+    status 13815: resolved fixed
+
+:100644 100644 515552e069a66a9cdc3bbcf574aefd4d329a332d d9c6d1ebee6a42f6271f4c505974642f509987ae M	ui/css/cloudstack3.css
+:100644 100644 d8845bead86777421641a879fa5b8566fbb70763 7085f4800bc651ba3020c837fd733732285bb599 M	ui/index.jsp
+:100644 100644 e110e799c0b0d548e5f3a5b406d12a79c83abf93 800b7bb29618c989c8ef3de613cd56bd8b3aa5ed M	ui/scripts/ui-custom/login.js
+
+commit 9ff4a4aec9c053957073c466ac472fc34950c2bf
+tree bd92b01070132c9b43f2141fd1276f6da2a18b22
+parent 96b590bc108cd28375744596cadc99fd0750889c
+author Jessica Wang <jessica@cloud.com> 1329505810 -0800
+committer Jessica Wang <jessica@cloud.com> 1329505810 -0800
+
+    cloudstack 3.0 new UI - add zone wizard - public traffic - show different description for basic zone and advanced zone.
+
+:100644 100644 f194e5d597626a820cc981d94c9a349c7c14ee1f d8845bead86777421641a879fa5b8566fbb70763 M	ui/index.jsp
+:100644 100644 53221bd6ef9abab09cc947814cc0faf1e2bbb42c 3de8c16664e53c0a6dda5a7b36187313f0095747 M	ui/scripts/zoneWizard.js
+
+commit 96b590bc108cd28375744596cadc99fd0750889c
+tree 9d42eea16c1477d7601b534e1430c33e4153537c
+parent df148e339589763576870d8253bbda1874734410
+author Jessica Wang <jessica@cloud.com> 1329504850 -0800
+committer Jessica Wang <jessica@cloud.com> 1329504877 -0800
+
+    cloudstack 3.0 new UI - add zone wizard - guest traffic - show different description for basic zone and advanced zone.
+
+:100644 100644 ee1e6ca02296871350ce285114a77ab0c5efacff f194e5d597626a820cc981d94c9a349c7c14ee1f M	ui/index.jsp
+:100644 100644 49c9a06795aea95732b6ae3ecd856797dc665313 53221bd6ef9abab09cc947814cc0faf1e2bbb42c M	ui/scripts/zoneWizard.js

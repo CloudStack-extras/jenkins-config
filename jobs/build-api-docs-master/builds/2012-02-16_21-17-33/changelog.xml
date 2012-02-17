@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 0aee99d6cf09c35d24a3a3641681ecdff6caada6 and 1f9e390e3fc31fe3df477c5988c2b0ef864dea60
+commit 1f9e390e3fc31fe3df477c5988c2b0ef864dea60
+tree 630cb0a9829f63afb715273a403db70eeff1578b
+parent 0aee99d6cf09c35d24a3a3641681ecdff6caada6
+author Brian Federle <brian.federle@citrix.com> 1329445005 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329445014 -0800
+
+    bug 13367
+    
+    Fix elems undefined error
+
+:100644 100644 1acd708f109aab039e920b29c58fa1e0f9011c76 6b43ddba2549d1a88c7fd9f104cbeefc9020cd31 M	ui/scripts/network.js

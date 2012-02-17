@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 4ecfd709653d204778cdaea189615d620c85fddb and 0ae57a8ec3d0a9e87a565b6234cca647ee1acf47
+commit 0ae57a8ec3d0a9e87a565b6234cca647ee1acf47
+tree 865e0106bfc747412a731f0706e197c2497ddc95
+parent 4ecfd709653d204778cdaea189615d620c85fddb
+author Brian Federle <brian.federle@citrix.com> 1329438143 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329438143 -0800
+
+    Hide Citrix logo if no EULA is present (i.e., is OSS version)
+
+:100644 100644 52bb7930cadbfe3dcd8540bdc8e731f1946acfe1 515552e069a66a9cdc3bbcf574aefd4d329a332d M	ui/css/cloudstack3.css
+:000000 100644 0000000000000000000000000000000000000000 0366d3a73ec2fd331ccc669bab07287222437c33 A	ui/images/logo-login-oss.png
+:100644 100644 8450e5d121ddb2f630dd61c3e440a95b4de905f8 4d1f1f97e4e7be0797e95dd88b3f92abd67ff5e9 M	ui/scripts/cloudStack.js
+:100644 100644 8997fb62afcba65c7c463800b8394d463692e73c e110e799c0b0d548e5f3a5b406d12a79c83abf93 M	ui/scripts/ui-custom/login.js
+:100644 100644 fab46d296b81c68612f1b6345ef5027ab32e2a66 b869f337bb1d9e05a81d5d8e4705fa8860e4f99c M	ui/scripts/ui/core.js

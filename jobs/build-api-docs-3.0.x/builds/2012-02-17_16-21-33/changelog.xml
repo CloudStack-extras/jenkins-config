@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between a6bb59b072e47c7dbd28ef2c246089b69095f003 and 667490211cc31d434cf5753027778d05e264dbdd
+commit 667490211cc31d434cf5753027778d05e264dbdd
+tree ecbb2e8412bffc5e642ba3837bc549ae71c00b11
+parent a6bb59b072e47c7dbd28ef2c246089b69095f003
+author Edison Su <Edison.Su@citrix.com> 1329513471 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329513600 -0800
+
+    bug 13845: as you can't add physical devices name from UI when you create zone, use kvm.{guest|public|private}.devices in the global configuration.
+    status 13845: resolved fixed
+    Reviewed-by: frank
+
+:100755 100755 a19f821e0055cae495b870af72cfa792470699d4 bbf5dd5e2fa1defff0784b9bc842f5f7bde2d2ea M	server/src/com/cloud/hypervisor/kvm/discoverer/KvmServerDiscoverer.java

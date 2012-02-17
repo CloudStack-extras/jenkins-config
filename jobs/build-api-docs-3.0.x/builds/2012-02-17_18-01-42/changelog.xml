@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 9f6334099e994498a884483de0e413545e26c1bf and 70baeeb5f05ee20f7d65480e9ad3741736350c74
+commit 70baeeb5f05ee20f7d65480e9ad3741736350c74
+tree 0b454f065cd47b28a38d0e45789bd68ccbb4b70f
+parent 9f6334099e994498a884483de0e413545e26c1bf
+author Kelven Yang <kelven@cloud.com> 1329519010 -0800
+committer Kelven Yang <kelven@cloud.com> 1329519713 -0800
+
+    bug 13777: propagate snapshot packaging failures up. Reviewed-By: Anthony
+    
+    tar command random failure may occur due to linux kernal bug (or feature) that tar can't handle well. The failuar happens when tar wants to package a newly created file before file system has fully synced
+
+:100755 100755 382d1eb8cb05c22fd061217fd780729780fc436d 227054169f8940e6845e035accf18f3bbf330ec5 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VirtualMachineMO.java

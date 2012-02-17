@@ -1,0 +1,32 @@
+Changes in branch origin/master, between a738afbf02c65264ecfc9f8c1de913fa4c0e10a0 and c7e3b36425b21ed3a3117fed0e260bf4efea5663
+commit c7e3b36425b21ed3a3117fed0e260bf4efea5663
+tree 1ef11a556e6b7f563f0c88bd54d150f92ca31710
+parent 6218de5a8cec7b5fb1d58cfcc8a91dd849a9e57f
+author Jessica Wang <jessica@cloud.com> 1329519991 -0800
+committer Jessica Wang <jessica@cloud.com> 1329519991 -0800
+
+    bug 13666: account page - add account - correct account type for admin account in Root domain.
+
+:100644 100644 4f619eda90ff6b417dea4afe0b6521df077e56b5 73b2d0e92a831ea3ef1cb076089f2b75fc576c44 M	ui/scripts/accounts.js
+
+commit 6218de5a8cec7b5fb1d58cfcc8a91dd849a9e57f
+tree d4afdc2c604cfdcaf4a205da4dc2d6597b5de263
+parent 9c41678faf3c54b745617ddcdeb7adfc598ba936
+author Brian Federle <brian.federle@citrix.com> 1329519777 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329519786 -0800
+
+    UI: fix broken multiEdit context on actions
+
+:100644 100644 0fd68bef95b0996b68383ab1a1569a93eaa96f4a c884d2e883a11c21720f6e027e92ec959e1ad27e M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 9c41678faf3c54b745617ddcdeb7adfc598ba936
+tree 8438ee7692f84bc5ec27c35be11e128db4535506
+parent a738afbf02c65264ecfc9f8c1de913fa4c0e10a0
+author Kelven Yang <kelven@cloud.com> 1329519010 -0800
+committer Kelven Yang <kelven@cloud.com> 1329519752 -0800
+
+    bug 13777: propagate snapshot packaging failures up. Reviewed-By: Anthony
+    
+    tar command random failure may occur due to linux kernal bug (or feature) that tar can't handle well. The failuar happens when tar wants to package a newly created file before file system has fully synced
+
+:100755 100755 382d1eb8cb05c22fd061217fd780729780fc436d 227054169f8940e6845e035accf18f3bbf330ec5 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VirtualMachineMO.java

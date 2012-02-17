@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 85e5e391f07190ceb5c5e7b002ffa85e661bd83d and c9672505e48f2b8d82e2065a16dc4e4306eca49f
+commit c9672505e48f2b8d82e2065a16dc4e4306eca49f
+tree d777aa621908c65d9ec4a7fb8944ae0f6a129580
+parent 85e5e391f07190ceb5c5e7b002ffa85e661bd83d
+author Brian Federle <brian.federle@citrix.com> 1329520736 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329520747 -0800
+
+    bug 13793
+    
+    Fix show security group dropdown/listing in project view
+    
+    status 13793: resolved fixed
+
+:100644 100644 32db4da7105c5570e2dbfe15e8a806e371b269da 645196661894e2c27fb04d1679b782c8cb02059e M	ui/scripts/network.js

@@ -1,0 +1,19 @@
+Changes in branch origin/3.0.x, between ba32214564b6c683a4e6ab89f85364376827bd83 and 01f52f01314753afbdc9b7af7f59e6e602c73e2a
+commit 01f52f01314753afbdc9b7af7f59e6e602c73e2a
+tree 8ce55bf781e0bcd35c6786beb4bbda51b4c087c1
+parent ba32214564b6c683a4e6ab89f85364376827bd83
+author prachi <prachi@cloud.com> 1329439962 -0800
+committer prachi <prachi@cloud.com> 1329440020 -0800
+
+    Bug 13824 - VM deployment fails due to volume not being recreatable
+    
+    Reviewed-By: Alex
+    
+    Changes:
+    - Reuse the same storagepool where the Volume is ready on each retry of VM deployment until the cluster where the volume is has capacity
+    - After the cluster is out of capacity, we look in other clusters and find a new storagepool.
+    - At this point if the volume is recreatable on the new storagepool, depoyment will succeed provided everytyhing else goes through
+    - But if the volume is not recreatable and its cluster is out of capacity, we will still fail to deploy the VM
+
+:100755 100755 25f8d417bce62ca8b73d7169c4eb763d68875053 1424f75333787488203e8fe670e4c46104db9c0e M	server/src/com/cloud/deploy/FirstFitPlanner.java
+:100755 100755 590924040e7f9850e1d84492992b5395e7b635ae 98fbe914bf09aa7d27e857e929ac4505f27d1b2b M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java

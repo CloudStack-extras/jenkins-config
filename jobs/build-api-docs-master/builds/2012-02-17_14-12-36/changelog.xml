@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 96b590bc108cd28375744596cadc99fd0750889c and 9ff4a4aec9c053957073c466ac472fc34950c2bf
+commit 9ff4a4aec9c053957073c466ac472fc34950c2bf
+tree bd92b01070132c9b43f2141fd1276f6da2a18b22
+parent 96b590bc108cd28375744596cadc99fd0750889c
+author Jessica Wang <jessica@cloud.com> 1329505810 -0800
+committer Jessica Wang <jessica@cloud.com> 1329505810 -0800
+
+    cloudstack 3.0 new UI - add zone wizard - public traffic - show different description for basic zone and advanced zone.
+
+:100644 100644 f194e5d597626a820cc981d94c9a349c7c14ee1f d8845bead86777421641a879fa5b8566fbb70763 M	ui/index.jsp
+:100644 100644 53221bd6ef9abab09cc947814cc0faf1e2bbb42c 3de8c16664e53c0a6dda5a7b36187313f0095747 M	ui/scripts/zoneWizard.js

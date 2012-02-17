@@ -1,0 +1,64 @@
+Changes in branch origin/3.0.x, between 77a0fdfa500069cac256f92908d735957ee6e508 and 8c5d9b1f00638b8e03926825f712fa0e1b643f48
+commit 8c5d9b1f00638b8e03926825f712fa0e1b643f48
+tree 33fc07e45c32d7740f94ee28814b5125349e5fd4
+parent 62ab7134724e582da6e23ae0f7ad97882d0eaf72
+author kishan <kishan@cloud.com> 1329477098 +0530
+committer kishan <kishan@cloud.com> 1329480359 +0530
+
+    Bug 13741: Added new Config category Secure. Any config in secure category will encrypted along with the Hidden category configs
+    Status 13741: resolved fixed
+    Reviewed-By: Nitin
+
+:100644 100644 3ddcbe1e30717e17ffe8949241ac8baa56816d37 2e9cf3d6b41cc1ff784d33755ff71fac6d34c521 M	core/src/com/cloud/configuration/ConfigurationVO.java
+:100755 100755 e9190a41931bb0994842de49cdcf7fe95df3fb10 6a071bb47903fb9ca78163fe71cddc38de9e442a M	server/src/com/cloud/configuration/Config.java
+:100644 100644 88b615edddae9e6ea7be8894598580e328c7f7c5 68ce1f39bd28e0373f3d9ff83ac428fd6f32bf05 M	server/src/com/cloud/configuration/dao/ConfigurationDaoImpl.java
+:100755 100755 42a23b81deaae31f42d64fd74a6a13edf4c5ddf2 43126b036cc1bfbf459dbef38fab3469bcdcaf15 M	server/src/com/cloud/server/ConfigurationServerImpl.java
+:100644 100644 8eea2304c6c7802f1b10f5c937a3d6bebacf1489 da6d0acbeb3e51ca87afccd63f4bfed655fc723c M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 55d4913cff51e395fc70c89b59435ae7d12b6f61 c2297b30f5eed57bfc88e15a03ad1ce81e8fbb2e M	utils/src/com/cloud/utils/crypt/EncryptionSecretKeyChanger.java
+
+commit 62ab7134724e582da6e23ae0f7ad97882d0eaf72
+tree 20572897239ad0e399d2031d4cbd9af4662a5a0d
+parent e0d4fe80df7ccad279e4561fc79917911ff212f8
+author kishan <kishan@cloud.com> 1329475623 +0530
+committer kishan <kishan@cloud.com> 1329480359 +0530
+
+    Bug 13794: When snapshot backup fails, snapshot.delete event is not required. Snapshot.create is logged only afetr successfull backup.
+    Status 13794: resolved fixed
+    Reviewed-By: Nitin
+
+:100755 100755 9179a70aae64cd313d2d09d801bf41deb55de053 f4c9d1f8ff3796e47838047d097434d36c57c2a8 M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java
+
+commit e0d4fe80df7ccad279e4561fc79917911ff212f8
+tree fe42dde35445e06cdc471b279e628c86ddc154e1
+parent a75d1b76ce53d548109cc94876ad95e304788b93
+author kishan <kishan@cloud.com> 1329468448 +0530
+committer kishan <kishan@cloud.com> 1329480359 +0530
+
+    Bug 13802: Log VPN user remove usage event when user fails to get applied
+    Status 13802: resolved fixed
+    Reviewed-By: Nitin
+
+:100755 100755 90e7e4f68efb46e7dbb1e41271c1785fe29885e1 557fd03a49599e9c4c3e8589a5e43db918f7ea66 M	server/src/com/cloud/network/vpn/RemoteAccessVpnManagerImpl.java
+
+commit a75d1b76ce53d548109cc94876ad95e304788b93
+tree 085bec23ad1cc04abfc924d67be26939201bf5d1
+parent 77a0fdfa500069cac256f92908d735957ee6e508
+author kishan <kishan@cloud.com> 1329466756 +0530
+committer kishan <kishan@cloud.com> 1329480359 +0530
+
+    Bug 12954: Added usage for security groups. Usage will be generated for each security group that is assigned to a Vm.
+    Status 12954: resolved fixed
+    Reviewed-By: Nitin
+
+:100755 100755 d4d40dbb1e8c52dfbdd361daa95a45b42dc1512e 2cb650005e41b61e589f07948fbebe5c555b940c M	api/src/com/cloud/event/EventTypes.java
+:100644 100644 e7c33a38410fa1ee2a40a003d7aa95a9898b86ae d717233e651b6941fa332babffe22b4f5d1fa20f M	core/src/com/cloud/event/UsageEventVO.java
+:100644 100644 183e7aed4c3380112ff18e80b4fb7b82b16fb83d 968c7792d62dd99bb85c638b72abdc350e0e9794 M	server/src/com/cloud/api/commands/GetUsageRecordsCmd.java
+:100755 100755 d9b0dc9ba37a0cfdcf10f89daad216a4cbf98bcd 04f3774dc1118a50f88cd13d103424ca7609e115 M	server/src/com/cloud/network/security/SecurityGroupManagerImpl.java
+:000000 100644 0000000000000000000000000000000000000000 70fb0e6285c8845d716261587e82b96347d9b9af A	server/src/com/cloud/usage/UsageSecurityGroupVO.java
+:000000 100644 0000000000000000000000000000000000000000 8390294d0c348936c2b5b98b12d9095b5da5562d A	server/src/com/cloud/usage/dao/UsageSecurityGroupDao.java
+:000000 100644 0000000000000000000000000000000000000000 e25ea69747daca7e5e4f1909bb8931c54e306868 A	server/src/com/cloud/usage/dao/UsageSecurityGroupDaoImpl.java
+:100644 100644 1c960a950886b3ec751f3cf10ede1998ad320052 2056005c4f8537ef59881e7d8ae41d587d59efea M	setup/db/create-schema-premium.sql
+:100755 100755 91009305d14fe0dc9b44a96174087038229937b3 a49bfd586ecc6b9b334ca8716bfef10352bc16d9 M	setup/db/db/schema-2214to30.sql
+:100644 100644 84eb526834c5abddc8022e6806cb9393e18f0c8f 271490b6ef48d593c80044564e6f888e29e7f101 M	usage/conf/usage-components.xml.in
+:100644 100644 fcee7d3d8c294a4429eff53617f81100e290c895 b6f59b4a993e3b2c3f2bf9709d77f01330645f83 M	usage/src/com/cloud/usage/UsageManagerImpl.java
+:000000 100644 0000000000000000000000000000000000000000 1568aeb4b94c39a708dae8138956620d82f85cbe A	usage/src/com/cloud/usage/parser/SecurityGroupUsageParser.java

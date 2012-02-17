@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 1f9e390e3fc31fe3df477c5988c2b0ef864dea60 and 0f07ffd51f0caafd36a6c3994c88fe0d22177090
+commit 0f07ffd51f0caafd36a6c3994c88fe0d22177090
+tree 6001bdd27e45f1a6f5b7f206c156b53f041f1959
+parent 1f9e390e3fc31fe3df477c5988c2b0ef864dea60
+author anthony <anthony@cloud.com> 1329445538 -0800
+committer anthony <anthony@cloud.com> 1329445660 -0800
+
+    bug 13810: by default, remove local storage when host is removed
+    
+    status 13810: resolved fixed
+    
+    reviewed-by : edison
+
+:100644 100644 bc53500c90884b42252a80ac28fd87eda24ce0e1 8eec2b2696e5b279c617b070995fcfa9644ae1c3 M	api/src/com/cloud/api/commands/DeleteHostCmd.java

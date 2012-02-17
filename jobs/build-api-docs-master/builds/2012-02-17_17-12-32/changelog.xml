@@ -1,0 +1,10 @@
+Changes in branch origin/master, between f86b67db40a90cdee287b38999a7a228d7c70e81 and ac18ddcb336179af89281258529577acfb22b7fd
+commit ac18ddcb336179af89281258529577acfb22b7fd
+tree 07d723eef899c3438223efeb640e8e740eabfa18
+parent f86b67db40a90cdee287b38999a7a228d7c70e81
+author Jessica Wang <jessica@cloud.com> 1329516617 -0800
+committer Jessica Wang <jessica@cloud.com> 1329516617 -0800
+
+    system - storage traffic - add IP Range - add geteway field.
+
+:100644 100644 10384aea57af6ecde58ff53b73f7b57e91d32a9f d6e02de4926e301c72bf65d858ead1979a533d05 M	ui/scripts/system.js

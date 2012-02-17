@@ -1,0 +1,17 @@
+Changes in branch origin/3.0.x, between 398ed51a31de67a253b20e94b0f2158669a62c91 and 2c9ecb9eaac8db1fa2fb74202e0e46d288b86a81
+commit 2c9ecb9eaac8db1fa2fb74202e0e46d288b86a81
+tree 1c20447798c170cb9ce835569de861d4bfdc1dec
+parent 398ed51a31de67a253b20e94b0f2158669a62c91
+author Brian Federle <brian.federle@citrix.com> 1329516769 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329516802 -0800
+
+    Add a few more missing localization labels
+    
+    reviewed-by: jessica
+
+:100644 100644 50c263261d590bbaebade2bedcc0a1c7aef232b7 c461a382272a018b9bee4c84d9aed5c32f2ce37a M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 f4eb4575deb840ffbd0fb3d5b19c6d3d6e1c388e 2dc4beb90ae0629e6e59985419b6f14dcf253ae1 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 c38e94181a5c66d795d7126a8a563d5c4bc5a6cc 6bedb94f7e7fd956d1c3493bca2ffb7cbe2492dd M	ui/index.jsp
+:100644 100644 265ac326a5f248d15fecc508b780f7a95c806611 993c4b2c0fafb5db2334f806c9cc1c79c0743f68 M	ui/scripts/network.js
+:100644 100644 6d3d46e1645941fad66a4539013fac755cd1d331 cc63e1dd29b2e5577aeae28894243da152db7c8c M	ui/scripts/ui-custom/enableStaticNAT.js
+:100644 100644 405b2781d7443c01be0aeb840d9b0a6c646dcb6e bb8c000308eddef7e2dc604dfac0b713a6b9ad08 M	ui/scripts/ui-custom/ipRules.js

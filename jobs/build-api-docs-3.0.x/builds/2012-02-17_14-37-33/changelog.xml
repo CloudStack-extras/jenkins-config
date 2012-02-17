@@ -1,0 +1,34 @@
+Changes in branch origin/3.0.x, between 8c5d9b1f00638b8e03926825f712fa0e1b643f48 and 04a2705700ee80f040210ef526dd818304a3c690
+commit 04a2705700ee80f040210ef526dd818304a3c690
+tree b73a6ab6d60da6815c095b77df4b78045918cb57
+parent 8c5d9b1f00638b8e03926825f712fa0e1b643f48
+author Brian Federle <brian.federle@citrix.com> 1329507165 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329507165 -0800
+
+    Update UI for 3.0.x
+    
+    -Complete localization for all UI elements, in en and ja
+    
+    -Hide logo/EULA for OSS version, when no eula.html is present
+    
+    -Language select on login screen
+    
+    -Misc. fixes
+    
+    reviewed-by: jessica
+
+:100644 100644 6ac2806a4d2462dcf0dc3fa59bafcef1b1e034df 6d845614eaf2cf81ac41612d7a1ebe5fce75c2c4 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 4b4bd555f76584f5cce1dfb6b949ffeaec28c186 cbc1266886248e6a0fd8fc7160d5bf7b53fc6948 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 b59269b54867f775f01f8e52d6ad5da82a5857ec d9c6d1ebee6a42f6271f4c505974642f509987ae M	ui/css/cloudstack3.css
+:000000 100644 0000000000000000000000000000000000000000 0366d3a73ec2fd331ccc669bab07287222437c33 A	ui/images/logo-login-oss.png
+:100644 100644 72fa6bb442bcee7f0ad2ca8eb12d8f8c1f6cce80 7085f4800bc651ba3020c837fd733732285bb599 M	ui/index.jsp
+:100644 100644 f40aaeba223128d1af618b6215a93a764a58b904 4d1f1f97e4e7be0797e95dd88b3f92abd67ff5e9 M	ui/scripts/cloudStack.js
+:100644 100644 96fffd58c196585f4bf1e05cd3192b96812bea41 a8a4cea3cec6ee85a5ae975098d09a00d6eae61b M	ui/scripts/configuration.js
+:100644 100644 f496ed76727bfcb2b395b272f4150560ace1d4f9 e394e54ac0187895d61e96b2bb4a1df9551667ac M	ui/scripts/installWizard.js
+:100644 100644 9256c36e30341197cbe077071a0f49db83412adf c40f2d94dbb59fe075b968da440d797da34dede5 M	ui/scripts/instances.js
+:100644 100644 c23f38eacad4e60cfedae6419502477ab0a2fbbb 10384aea57af6ecde58ff53b73f7b57e91d32a9f M	ui/scripts/system.js
+:100644 100644 990cf82ff712bff2dd92a2e1b4d2715d05cfe633 2bd28742f7af2a26395752a1493cf5e41e741727 M	ui/scripts/ui-custom/installWizard.js
+:100644 100644 8997fb62afcba65c7c463800b8394d463692e73c 800b7bb29618c989c8ef3de613cd56bd8b3aa5ed M	ui/scripts/ui-custom/login.js
+:100644 100644 27a5386a267a9187800656dd54f8c3b34a490deb eddec69c335f6b678eac8774095251910a8db124 M	ui/scripts/ui-custom/zoneWizard.js
+:100644 100644 fab46d296b81c68612f1b6345ef5027ab32e2a66 b869f337bb1d9e05a81d5d8e4705fa8860e4f99c M	ui/scripts/ui/core.js
+:100644 100644 98fc3838a8fc2ec8b2a6ff3ebe836a6a59a2996d 3de8c16664e53c0a6dda5a7b36187313f0095747 M	ui/scripts/zoneWizard.js

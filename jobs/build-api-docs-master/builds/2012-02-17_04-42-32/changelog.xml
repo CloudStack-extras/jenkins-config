@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 0deea87b4c1c4436eb66b6a9f45b7a35c87749c1 and 12f124d6a6d087d32fe35822a18f0a375ad3f112
+commit 12f124d6a6d087d32fe35822a18f0a375ad3f112
+tree c0234f78bdac4b7dbbbf2e0758f3ada0af62c4b9
+parent 0deea87b4c1c4436eb66b6a9f45b7a35c87749c1
+author Nitin Mehta <nitin.mehta@citrix.com> 1329471416 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1329471515 +0530
+
+    Bug 13059: cast the long to float else the fraction would be 0 - java basics :).
+    Reviewed-By: Kishan
+
+:100755 100755 da2e7cad53937c5e232d6e50d01e17dd791166a8 e0baf6859a197a732cdb24a3402c8e1b024eb2be M	server/src/com/cloud/server/ManagementServerImpl.java

@@ -1,0 +1,29 @@
+Changes in branch origin/master, between 7335bd5ced54022d494efd1544522b2cdb631ff9 and fada2b1c53a0e00ea821be61880c66645a229355
+commit fada2b1c53a0e00ea821be61880c66645a229355
+tree 37befcc1906eb2d87402953c088acbdeefe0a769
+parent 3b0de186f396ac400527b8b793a02d11e1138ef2
+author Brian Federle <brian.federle@citrix.com> 1329435704 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329435721 -0800
+
+    Install wizard: Conditionally load EULA
+    
+    Conditionally show EULA screen, only if eula.html is retrieved
+    successfully via AJAX call (i.e., doesn't return a 404). Otherwise,
+    bypass EULA and start with intro screen.
+
+:100644 100644 a66c8984935450c2c5181d7c08c3ebee34ae1072 52bb7930cadbfe3dcd8540bdc8e731f1946acfe1 M	ui/css/cloudstack3.css
+:100644 100644 f40aaeba223128d1af618b6215a93a764a58b904 8450e5d121ddb2f630dd61c3e440a95b4de905f8 M	ui/scripts/cloudStack.js
+:100644 100644 9ec054208835e7ae8da7e026f8a9900958e5ddaa 2bd28742f7af2a26395752a1493cf5e41e741727 M	ui/scripts/ui-custom/installWizard.js
+
+commit 3b0de186f396ac400527b8b793a02d11e1138ef2
+tree 5b60da955674b55d0e384c4cebacf1acd40da823
+parent 7335bd5ced54022d494efd1544522b2cdb631ff9
+author Brian Federle <brian.federle@citrix.com> 1329433801 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329435721 -0800
+
+    Add missing localization for instances.js
+
+:100644 100644 52b4f4f21961f91fd012089fbeb80448e852f978 66372b3f126f12fc04b4e96cdf3b355009b0dcf8 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 7be615649bb0fda28be774b859979df4f2f3ec1b c1e5e41d395988c2760daf5975a82c915f3fa3d4 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 cfa90e626ebad848920d05cd09ed2c0d207314a4 b3bc7fb1f997ff29e7ca90fb15b018d59845eb10 M	ui/index.jsp
+:100644 100644 ff27b8b15e25d48c69283ad046fd97dd250d904c c40f2d94dbb59fe075b968da440d797da34dede5 M	ui/scripts/instances.js

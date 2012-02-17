@@ -1,0 +1,11 @@
+Changes in branch origin/master, between fada2b1c53a0e00ea821be61880c66645a229355 and 4ecfd709653d204778cdaea189615d620c85fddb
+commit 4ecfd709653d204778cdaea189615d620c85fddb
+tree 4672755279a98eae85aed94b749ad0cec34b9cb2
+parent fada2b1c53a0e00ea821be61880c66645a229355
+author Jessica Wang <jessica@cloud.com> 1329436510 -0800
+committer Jessica Wang <jessica@cloud.com> 1329436510 -0800
+
+    cloudstack 3.0 new UI - localization - move new labels on the top.
+
+:100644 100644 66372b3f126f12fc04b4e96cdf3b355009b0dcf8 108f50a776a6f873fe398957cd47d88725427526 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 c1e5e41d395988c2760daf5975a82c915f3fa3d4 2ff98a4be5222f0c449827a346d4a034c7d33c76 M	client/WEB-INF/classes/resources/messages_ja.properties

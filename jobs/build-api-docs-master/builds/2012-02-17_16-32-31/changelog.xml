@@ -1,0 +1,12 @@
+Changes in branch origin/master, between c370f2dd39f5f62aaf1fb8fdbab428f1dc220521 and b845ee9766efe4bda1fa76fb07c8032f5b1dd9dc
+commit b845ee9766efe4bda1fa76fb07c8032f5b1dd9dc
+tree 28e2ef7d41e135032329b8ffc8a7a89c60e20a38
+parent c370f2dd39f5f62aaf1fb8fdbab428f1dc220521
+author Sheng Yang <sheng.yang@cloud.com> 1329513878 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329514208 -0800
+
+    bug 13829: Fix NPE in ExternalFirewallDeviceManagerImpl
+    
+    Reviewed-by: Edison
+
+:100644 100644 900ff1665e5e5eca8cb444651f12f3bcd688233c 2e6fa9f1091a22a45d6e66973fdecc30632a59df M	server/src/com/cloud/network/ExternalFirewallDeviceManagerImpl.java

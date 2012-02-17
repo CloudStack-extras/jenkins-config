@@ -1,0 +1,43 @@
+Changes in branch origin/3.0.x, between 667490211cc31d434cf5753027778d05e264dbdd and 92ced2775f2797e37897a012d766cf10ec6a4933
+commit 92ced2775f2797e37897a012d766cf10ec6a4933
+tree a2f442370684b6bcd270aa1b88b29f07939f6e4d
+parent 1f695084f6968b9a6fd8034d05ccdbd97affbb71
+author Brian Federle <brian.federle@citrix.com> 1329515756 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329515786 -0800
+
+    Add missing localization for LB UI
+    
+    reviewed-by: jessica
+
+:100644 100644 6d845614eaf2cf81ac41612d7a1ebe5fce75c2c4 50c263261d590bbaebade2bedcc0a1c7aef232b7 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 cbc1266886248e6a0fd8fc7160d5bf7b53fc6948 f4eb4575deb840ffbd0fb3d5b19c6d3d6e1c388e M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 7085f4800bc651ba3020c837fd733732285bb599 c38e94181a5c66d795d7126a8a563d5c4bc5a6cc M	ui/index.jsp
+:100644 100644 eca86dcd50f9eea74c4b0be3a37730981e0df24b 265ac326a5f248d15fecc508b780f7a95c806611 M	ui/scripts/network.js
+
+commit 1f695084f6968b9a6fd8034d05ccdbd97affbb71
+tree 1a9560568f209460af509710f8a6a6b9ebdaf94e
+parent 01dde29d3ce0fad273d6de42cee4133de4d9f930
+author Brian Federle <brian.federle@citrix.com> 1329515738 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329515786 -0800
+
+    bug 12253: Allow editing of LB rule name/algorithm
+    
+    -- This also introduced a new capability -- edit rule -- into the
+       multiEdit widget. If isEditable: true is set for any fields, then a
+       dialog will popup allowing editing of those properties.
+    
+    status 12253: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 1de821ee762e3ab06487f315e53b3adfe25c660b eca86dcd50f9eea74c4b0be3a37730981e0df24b M	ui/scripts/network.js
+:100644 100644 3c073ab6b80713af6f028efbc9d97b48515cad39 0fd68bef95b0996b68383ab1a1569a93eaa96f4a M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 01dde29d3ce0fad273d6de42cee4133de4d9f930
+tree 7f97f6a4ad96bb769ec081530b22a6692d8deb32
+parent 667490211cc31d434cf5753027778d05e264dbdd
+author Jessica Wang <jessica@cloud.com> 1329515760 -0800
+committer Jessica Wang <jessica@cloud.com> 1329515760 -0800
+
+    bug 13862: change detailView widget to show error text returned in API response. [reviewed-by: Brian]
+
+:100644 100644 7cca1cb81c163e5ee94a086a104329fe7de12bcf 12fe68679cedb0ed4c5fb5b0b3c8757081486796 M	ui/scripts/ui/widgets/detailView.js

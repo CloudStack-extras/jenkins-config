@@ -1,0 +1,13 @@
+Changes in branch origin/master, between f0fb9cdfcc3ea650b676c763795ea7750c040f02 and 5b6dc729c3548328df717cba2556030f13d7991f
+commit 5b6dc729c3548328df717cba2556030f13d7991f
+tree f1f51065afb8ee43c9db606ac05a9e1fbd12b1e6
+parent f0fb9cdfcc3ea650b676c763795ea7750c040f02
+author Brian Federle <brian.federle@citrix.com> 1329515663 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329515663 -0800
+
+    Add missing localization for LB UI
+
+:100644 100644 6d845614eaf2cf81ac41612d7a1ebe5fce75c2c4 50c263261d590bbaebade2bedcc0a1c7aef232b7 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 cbc1266886248e6a0fd8fc7160d5bf7b53fc6948 f4eb4575deb840ffbd0fb3d5b19c6d3d6e1c388e M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 7085f4800bc651ba3020c837fd733732285bb599 c38e94181a5c66d795d7126a8a563d5c4bc5a6cc M	ui/index.jsp
+:100644 100644 eca86dcd50f9eea74c4b0be3a37730981e0df24b 265ac326a5f248d15fecc508b780f7a95c806611 M	ui/scripts/network.js

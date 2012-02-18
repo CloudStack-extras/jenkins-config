@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between ae77aa291e0e7898a91e4f8a326a21954b9a35b8 and 9895eaa2bffe448bba046cbbb5ba35c79ecdc080
+commit 9895eaa2bffe448bba046cbbb5ba35c79ecdc080
+tree c3f42575ce63a5b5fc4055aad12911a99b380efd
+parent ae77aa291e0e7898a91e4f8a326a21954b9a35b8
+author Edison Su <Edison.Su@citrix.com> 1329522107 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329522202 -0800
+
+    bug 13857: set vm migration speed as the network speed
+    status 13857: resolved fixed
+    Reviewed-by: Frank
+
+:100644 100644 60222277f334674404ca740aabf8f020f6586f40 bff768f3f149176826ee3cfddf2396118f33ebe4 M	agent/conf/agent.properties
+:100755 100755 079c7b71dabfb76ba294ff580328a90ded95617d a43df2f3d371d1b83c4c6968635b7cab2d5f5964 M	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java

@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between 4328298c308a3fdeb21937d2729ef61fda97db65 and 663a3b5086daab69260e45c769292878b86c5eb5
+commit 663a3b5086daab69260e45c769292878b86c5eb5
+tree 1599e34c9824409bcf0c88092a8fd6ffa93a3013
+parent 4328298c308a3fdeb21937d2729ef61fda97db65
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329521037 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329521457 -0800
+
+    bug 13866: return publicIp info in listVms api response when vm is linked to public ip via static nat
+    Reviewed-by: Frank
+
+:100755 100755 151d45d0cc3a5f8109923bc55412e60a79e31d0e a7eef6215f560007d886d9c9dd1b4cc522380d5c M	api/src/com/cloud/api/response/UserVmResponse.java
+:100755 100755 eb7393641f9ffcbeaf2d2987e4ad9e0520019715 308d98a77bf1edfbaa9c57602a7901f19c683c77 M	server/src/com/cloud/api/ApiDBUtils.java
+:100755 100755 0a226b6b57d5836c7b0d9111b1a577ee3e28cfa0 abf5d5364eecbdb20f38f5142e90c8e4526e53af M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 9ad01476452f88ae0c6337c2b253f33b482e9553 a9a82753ae7ab6793ecffffd5a73ec6872d5793d M	server/src/com/cloud/vm/dao/UserVmDaoImpl.java
+:100644 100644 4cb014bd67fd043b85458827ccbc39a7be67ee3e e07beae0bec48442f410f7d8d9aa1c2ec4d2785e M	server/src/com/cloud/vm/dao/UserVmData.java

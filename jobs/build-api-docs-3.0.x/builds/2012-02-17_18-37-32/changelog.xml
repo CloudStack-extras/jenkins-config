@@ -1,0 +1,39 @@
+Changes in branch origin/3.0.x, between 663a3b5086daab69260e45c769292878b86c5eb5 and 07014a832d18d4c7a1d69e142a9af73d8ae1436a
+commit 07014a832d18d4c7a1d69e142a9af73d8ae1436a
+tree 1801a412c91fb6dbd77da48a43ab3906ce947f64
+parent 59dc85ae418ae87e122c98417a86b83b8a4b788d
+author Jessica Wang <jessica@cloud.com> 1329521795 -0800
+committer Jessica Wang <jessica@cloud.com> 1329521813 -0800
+
+    add zone wizard - advanced zone - storage traffic - add IP Range - add gateway field in ui-custom widget.  [reviewed-by: Brian]
+
+:100644 100644 eddec69c335f6b678eac8774095251910a8db124 33bf02ff8c2e48dbc937079179e5d639e85a62cf M	ui/scripts/ui-custom/zoneWizard.js
+
+commit 59dc85ae418ae87e122c98417a86b83b8a4b788d
+tree 71e2598e4fa8db491788285cfcdda21b39a888fc
+parent 15c866f784375d418d06a53fabf4f63b945bd621
+author Brian Federle <brian.federle@citrix.com> 1329521707 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329521707 -0800
+
+    bug 13795
+    
+    Allow domain admin to view domain users' projects
+    
+    status 13795: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 a18c4ab934a50d211707c168c8470200477d2919 34014f0147a1ea6fa0728ff30b79047a84b9dce9 M	ui/scripts/projects.js
+
+commit 15c866f784375d418d06a53fabf4f63b945bd621
+tree 4c214ae5343b81e808750aa3030b69879dd0ccdb
+parent 663a3b5086daab69260e45c769292878b86c5eb5
+author Sheng Yang <sheng.yang@cloud.com> 1329521206 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329521595 -0800
+
+    bug 13867: Pass hostId instead of external firewall device Id
+    
+    status 13867: resolved fixed
+    
+    Reviewed-by: Anthony
+
+:100644 100644 bf75e8f15f8d81b42a69c686e33f023380800785 37f07d72b26fcf9e9193bb444b1a81bd6f03dd98 M	server/src/com/cloud/network/element/JuniperSRXExternalFirewallElement.java

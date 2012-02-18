@@ -1,0 +1,245 @@
+Changes in branch origin/master, between c7e3b36425b21ed3a3117fed0e260bf4efea5663 and fe8ed4756943f6b7eb4bce0b5eb452ec26268599
+commit fe8ed4756943f6b7eb4bce0b5eb452ec26268599
+tree 5f482d63593c49a6432b3f53bd80be1834a0aabc
+parent 2039decc676aaccd757db3d2a046658d9f2622da
+author frank <frank.zhang@citrix.com> 1329524582 -0800
+committer frank <frank.zhang@citrix.com> 1329524687 -0800
+
+    Bug 13568 - secondary storage VM's static route for nfs server breaks things!
+    
+    add DB upgrade script.
+    Now storage network requires gateway when adding range
+    
+    reviewed-by: Sheng Yang
+
+:100755 100755 a49bfd586ecc6b9b334ca8716bfef10352bc16d9 d276bedb94158ea11fd402f50a79c496dddc7b43 M	setup/db/db/schema-2214to30.sql
+
+commit 2039decc676aaccd757db3d2a046658d9f2622da
+tree cbcbc197ff5b7d759394e2f479ffe5ff8703f1dc
+parent bf762f7d4d5bbfbc49ae4c58da31eea059d11bdd
+author frank <frank.zhang@citrix.com> 1329524363 -0800
+committer frank <frank.zhang@citrix.com> 1329524678 -0800
+
+    Bug 13809 - Unable to execute API command deletestoragenetworkiprange due to invalid value. Object dc_storage_network_ip_range(uuid: undefined) does not exist.
+    
+    status 13809: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 7703fdc0a3d8a218a09d5bc7a4fe42729c221fdb db8dfe123ef5b3ca8a83d57840378bd29414e88d M	api/src/com/cloud/api/response/StorageNetworkIpRangeResponse.java
+
+commit bf762f7d4d5bbfbc49ae4c58da31eea059d11bdd
+tree 1ccfdf83fd2f07f5e5c663fdc343616eab237419
+parent 43df2a2c913cad10e93542934170c7b3b7a37dec
+author frank <frank.zhang@citrix.com> 1329519259 -0800
+committer frank <frank.zhang@citrix.com> 1329524672 -0800
+
+    Bug 13568 - secondary storage VM's static route for nfs server breaks things!
+    
+    status 13568: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 7a5aae4cc6b8151cb997b52ddea7ff38f6fca185 de5a58a025f8f40fa3fc327cb3bd42a80deba072 M	api/src/com/cloud/api/commands/CreateStorageNetworkIpRangeCmd.java
+:100755 100755 1506c828fc62b7a4f1abc162239d2b91ba5d5ef8 7703fdc0a3d8a218a09d5bc7a4fe42729c221fdb M	api/src/com/cloud/api/response/StorageNetworkIpRangeResponse.java
+:100755 100755 8cffa6ea0c690913187804d30dfc0fd3c3fcd0c5 91d6b20d36f07313b87ce121d63aae6390ceadc5 M	api/src/com/cloud/dc/StorageNetworkIpRange.java
+:100755 100755 3870a512e171e97ffd85c53127d76e4d305ffd4f b0d286bd96775bb7b609df7171d6555b2a0b7d92 M	client/tomcatconf/commands.properties.in
+:100755 100755 54f2b0ea654589ceaee56931789f4904dbac3988 e320c71481ccfa2aae9b38aab0809e3f81944401 M	core/src/com/cloud/storage/resource/NfsSecondaryStorageResource.java
+:100755 100755 ebf29e715d515b4b4ee0b300301999746e0d38f6 0049a44cec02fc4223033494c2283017550e880b M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 13f52319e3f6608eca6fcd426eb5a2d36c2413e9 ca1d4411fceb43b4be983ee33334037b78d7423c M	server/src/com/cloud/baremetal/BareMetalResourceBase.java
+:100755 100755 8af9fe06d57a288d7b52cfbdafcb420680ccef57 9da8308e312147417ad487f7a3f86a86a1e65bcd M	server/src/com/cloud/dc/StorageNetworkIpAddressVO.java
+:100755 100755 ea9eed7a940980d574b179adcb89c6bf6cf2b578 473b34f6ed2b071179364355c017c39923073533 M	server/src/com/cloud/dc/StorageNetworkIpRangeVO.java
+:100755 100755 02d4b6357d88b488196672ade088a0facec550b4 d4d57b9f0660606b3a048c51891dda8974017234 M	server/src/com/cloud/deploy/BareMetalPlanner.java
+:100644 100755 ca561dacbb7402ccc79bc91a753ba899be5d13e9 c895825b8003f4869993673ffbb7c46f665136fd M	server/src/com/cloud/network/ExternalNetworkDeviceManagerImpl.java
+:100644 100755 1baa2c79196483ce6fff9b4db2879c3b271275a7 7c962c4ca67bf919b396e23cc185619af5b595e0 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 7cb2f50e1fa447c4f597259e791816fb22198e69 b8cdaff84cac2bc0c56cf5eb7c67d9cf35ba98a2 M	server/src/com/cloud/network/StorageNetworkManagerImpl.java
+:100755 100755 9da2e5c34345c6f154c963a92e0b9691dfdc18f8 f6e27a45892a5d966c0efed4317dc6b63d05109a M	server/src/com/cloud/network/dao/PhysicalNetworkTrafficTypeDaoImpl.java
+:100644 100755 19c147db461984f5283e60225e7bec1fc96c8311 fa041af30c37f4ebefc65675461b32f08ccc7539 M	server/src/com/cloud/network/element/ExternalDhcpElement.java
+:100644 100755 d6f1fb5b14fc3d03db131032a6ded93f9dd97ee4 c84b4e20a903f92313991c09fbb5277a7eab88a0 M	server/src/com/cloud/network/element/VirtualRouterElement.java
+:100755 100755 ad58018853d11ffbb93fb0103f63d4bf241b3e0e 197abe4a90adc32b1e4c0817da80a02450c85b36 M	server/src/com/cloud/network/guru/StorageNetworkGuru.java
+:100755 100755 ee8e5b2e3a6448c7ffb95f6dba5f8b323daefb30 c551f721c5fe11c351fda026278d63856e9bd7d1 M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+:100755 100755 ed39d73b994855374c6841b5d12a45d5a098d23f 44cb8ca3f11b25e7bbdc521f196d22be9d91e4f8 M	setup/db/create-schema.sql
+
+commit 43df2a2c913cad10e93542934170c7b3b7a37dec
+tree 9202f10f16dc8325634c9bde7d0d995f247e1562
+parent 708f6764ea1727f401fb3faf0a434c2f24fd9921
+author Brian Federle <brian.federle@citrix.com> 1329524108 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329524108 -0800
+
+    bug 13716
+    
+    Fix service offering list overflow
+    
+    status 13716: resolved fixed
+
+:100644 100644 d9c6d1ebee6a42f6271f4c505974642f509987ae c6cfc47e5243fc7f88a438eb5fefeb0f40c60e06 M	ui/css/cloudstack3.css
+
+commit 708f6764ea1727f401fb3faf0a434c2f24fd9921
+tree 273c9f5d83e57eb32d36178cf2bb4555c12657f0
+parent 6c74c1b89ffea67e5b31f0cb951d23a91118d0d8
+author Jessica Wang <jessica@cloud.com> 1329523285 -0800
+committer Jessica Wang <jessica@cloud.com> 1329523301 -0800
+
+    bug 13669: template page, ISO page - delete action is not allowed when owner is system.
+
+:100644 100644 231abeb412bbf1179e1b612505b70223438f3483 f85f3b9ba87af320e4e9df353a78ede446eb8b5e M	ui/scripts/templates.js
+
+commit 6c74c1b89ffea67e5b31f0cb951d23a91118d0d8
+tree 1948bc7ac19f4bd26c62df1f15790a5e2cd75668
+parent 8d80f9df0c37c57217baf77a197c911caee24d47
+author Brian Federle <brian.federle@citrix.com> 1329523264 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329523276 -0800
+
+    bug 13702
+    
+    Fix missing labels for instance state/actions
+
+:100644 100644 c461a382272a018b9bee4c84d9aed5c32f2ce37a 45b46b284b45b8ffb30affa77af6292c9c12e20e M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 2dc4beb90ae0629e6e59985419b6f14dcf253ae1 5dfb3db092d5af8db2f831ed323655c1f30b146a M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 6bedb94f7e7fd956d1c3493bca2ffb7cbe2492dd 684d3af61f3f0fac6d8cac8a24e430ddb1988687 M	ui/index.jsp
+:100644 100644 c40f2d94dbb59fe075b968da440d797da34dede5 243751e66e5a885000ff51118180ab355bc69c1b M	ui/scripts/instances.js
+
+commit 8d80f9df0c37c57217baf77a197c911caee24d47
+tree 78d40b83259b0f1955cfee7610c1d65f02606559
+parent 914a116b83ffe9ea6396cd7c5ab969cc995b5f23
+author Edison Su <Edison.Su@citrix.com> 1329522107 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329522232 -0800
+
+    bug 13857: set vm migration speed as the network speed
+    status 13857: resolved fixed
+    Reviewed-by: Frank
+
+:100644 100644 60222277f334674404ca740aabf8f020f6586f40 bff768f3f149176826ee3cfddf2396118f33ebe4 M	agent/conf/agent.properties
+:100755 100755 079c7b71dabfb76ba294ff580328a90ded95617d a43df2f3d371d1b83c4c6968635b7cab2d5f5964 M	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java
+
+commit 914a116b83ffe9ea6396cd7c5ab969cc995b5f23
+tree b48e48481abc798f6c716a7dfe033535600c20ab
+parent f84043bee8272112584bb20d0ce6f30ae245ecf9
+author prachi <prachi@cloud.com> 1329521822 -0800
+committer prachi <prachi@cloud.com> 1329522094 -0800
+
+    Added instanceType to some async commands related to physical network
+    
+    Reviewed-By: Alena Prokharchyk
+    
+    Conflicts:
+    
+    	api/src/com/cloud/api/response/AsyncJobResponse.java
+    	api/src/com/cloud/async/AsyncJob.java
+
+:100644 100644 131f6673a700db5604cc64add247bfc74bf4f2a0 88bb755937b11bfd132ff12d7a3a0fbe89450b80 M	api/src/com/cloud/api/commands/AddNetworkServiceProviderCmd.java
+:100644 100644 41117b596500cdaa7544f5655ee07d568285ac6b 747800835e92e5ed5c19da12639321eafedfcc54 M	api/src/com/cloud/api/commands/AddTrafficTypeCmd.java
+:100644 100644 1c03653940fb1633bdc296d0b506db145a6275df 60d0d191c75be25b3c772d92c6dbcebb7130b657 M	api/src/com/cloud/api/commands/DeleteNetworkServiceProviderCmd.java
+:100644 100644 f1bc2bebaac8ec8f673f91445fb1cc4dd3aa507e 81bc8bb22dcfc3f1dcec6ad7b1a4d36723aa68cc M	api/src/com/cloud/api/commands/DeleteTrafficTypeCmd.java
+:100644 100644 8ad3e5b9e9bcf6d731c65f4a7296ee931aa6198b f98a2fc6362b1c388535dd46b47ee53a49fac666 M	api/src/com/cloud/api/commands/UpdateNetworkServiceProviderCmd.java
+:100644 100644 d93654ea9a32c5e28992f1c9c4402fc42d9a318c 299aef0f429df9468a67df820123e0451728fb56 M	api/src/com/cloud/api/commands/UpdateTrafficTypeCmd.java
+:100644 100644 42382d702c2f287d4fe36051164f23e649759bf4 13be7f357396160643fbe3bc373fa4c51ef1c590 M	api/src/com/cloud/api/response/AsyncJobResponse.java
+:100644 100644 b191ecf0acba184beb0ae48008885b3271aebd12 9db25c742e9d17712d3ac49e11183df4cf548dcc M	api/src/com/cloud/async/AsyncJob.java
+
+commit f84043bee8272112584bb20d0ce6f30ae245ecf9
+tree 42a00df364eae1b510edc1505670eca2274a2295
+parent 8fcf63dfd3ba9901fda557baec7ce843e803c688
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329521992 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329522141 -0800
+
+    bug 13864: for elastic IP address return the purpose (staticNat or Lb) in listPublicIpAddresses api response
+    Reviewed-by: Frank
+
+:100755 100755 ad986c67350cdda6dbb2f0fb6ab3e5b3e2bda95a 4ed625c40f774c391bde9c5b3a3f2794b1364287 M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 40def18c65005e8cd6a4dad4ca76b3bfc2d299d8 0617aef844a82de28b98a65b29fdf5108acd8150 M	api/src/com/cloud/api/response/IPAddressResponse.java
+:100644 100644 7b1d06fd709872e52931389bac703d4ef36cab7a e4eefe89d6b26e5ea8f00db2537e4c3840dbe3d4 M	api/src/com/cloud/network/IpAddress.java
+:100755 100755 abf5d5364eecbdb20f38f5142e90c8e4526e53af ebf29e715d515b4b4ee0b300301999746e0d38f6 M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit 8fcf63dfd3ba9901fda557baec7ce843e803c688
+tree 2cb8d3b3e5d3b4a168f5cd5d6265b71f7385e08d
+parent 1da455a5d7ca33d4403daf32ec502498111cccf3
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329521037 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329522137 -0800
+
+    bug 13866: return publicIp info in listVms api response when vm is linked to public ip via static nat
+    Reviewed-by: Frank
+
+:100755 100755 151d45d0cc3a5f8109923bc55412e60a79e31d0e a7eef6215f560007d886d9c9dd1b4cc522380d5c M	api/src/com/cloud/api/response/UserVmResponse.java
+:100755 100755 eb7393641f9ffcbeaf2d2987e4ad9e0520019715 308d98a77bf1edfbaa9c57602a7901f19c683c77 M	server/src/com/cloud/api/ApiDBUtils.java
+:100755 100755 0a226b6b57d5836c7b0d9111b1a577ee3e28cfa0 abf5d5364eecbdb20f38f5142e90c8e4526e53af M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 9ad01476452f88ae0c6337c2b253f33b482e9553 a9a82753ae7ab6793ecffffd5a73ec6872d5793d M	server/src/com/cloud/vm/dao/UserVmDaoImpl.java
+:100644 100644 4cb014bd67fd043b85458827ccbc39a7be67ee3e e07beae0bec48442f410f7d8d9aa1c2ec4d2785e M	server/src/com/cloud/vm/dao/UserVmData.java
+
+commit 1da455a5d7ca33d4403daf32ec502498111cccf3
+tree 4e2b098188303b14b3dd50bee930e637c74904aa
+parent b3e94f99ec1f3b5a9e0f6282d53bd16f82ae7066
+author Jessica Wang <jessica@cloud.com> 1329521861 -0800
+committer Jessica Wang <jessica@cloud.com> 1329521861 -0800
+
+    add zone wizard - advanced zone - storage traffic - add IP Range - add gateway field in ui-custom widget.
+
+:100644 100644 eddec69c335f6b678eac8774095251910a8db124 33bf02ff8c2e48dbc937079179e5d639e85a62cf M	ui/scripts/ui-custom/zoneWizard.js
+
+commit b3e94f99ec1f3b5a9e0f6282d53bd16f82ae7066
+tree 7054a75186c519f6c6114f89327a42e274b8c4a9
+parent b1db805bb723505935b66719350070a5804c9a96
+author Brian Federle <brian.federle@citrix.com> 1329521675 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329521687 -0800
+
+    bug 13795
+    
+    Allow domain admin to view domain users' projects
+    
+    status 13795: resolved fixed
+
+:100644 100644 a18c4ab934a50d211707c168c8470200477d2919 34014f0147a1ea6fa0728ff30b79047a84b9dce9 M	ui/scripts/projects.js
+
+commit b1db805bb723505935b66719350070a5804c9a96
+tree accf8d7662174a375760a4d24ab3923182748441
+parent e59dce6c4c5c78f3514499ae9bd1768c7a91be22
+author Sheng Yang <sheng.yang@cloud.com> 1329521206 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329521286 -0800
+
+    bug 13867: Pass hostId instead of external firewall device Id
+    
+    status 13867: resolved fixed
+    
+    Reviewed-by: Anthony
+
+:100644 100644 bf75e8f15f8d81b42a69c686e33f023380800785 37f07d72b26fcf9e9193bb444b1a81bd6f03dd98 M	server/src/com/cloud/network/element/JuniperSRXExternalFirewallElement.java
+
+commit e59dce6c4c5c78f3514499ae9bd1768c7a91be22
+tree 078028551adc38f051412b9115bd3539b8337986
+parent c9672505e48f2b8d82e2065a16dc4e4306eca49f
+author Sheng Yang <sheng.yang@cloud.com> 1329520367 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329521141 -0800
+
+    bug 13829: Add default capacity for SRX
+    
+    And per Alex's request, add default value directly into the database, rather
+    than using it at last minute of implemention.
+    
+    status 13829: resolved fixed
+    
+    Reviewed-by: Alex
+
+:100644 100644 2e6fa9f1091a22a45d6e66973fdecc30632a59df 4b6a0d09bf673ce9653f94c4eb72c37d90dc8827 M	server/src/com/cloud/network/ExternalFirewallDeviceManagerImpl.java
+:100644 100644 499b8db5579b0200cb235c300a6ff05f71110ebf 86822b781c2e11b83d65e3057302701eaa3aaa05 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java
+:100644 100644 77f7f41f4dc57c49d1317b48093134eee01d70ea bf75e8f15f8d81b42a69c686e33f023380800785 M	server/src/com/cloud/network/element/JuniperSRXExternalFirewallElement.java
+
+commit c9672505e48f2b8d82e2065a16dc4e4306eca49f
+tree d777aa621908c65d9ec4a7fb8944ae0f6a129580
+parent 85e5e391f07190ceb5c5e7b002ffa85e661bd83d
+author Brian Federle <brian.federle@citrix.com> 1329520736 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329520747 -0800
+
+    bug 13793
+    
+    Fix show security group dropdown/listing in project view
+    
+    status 13793: resolved fixed
+
+:100644 100644 32db4da7105c5570e2dbfe15e8a806e371b269da 645196661894e2c27fb04d1679b782c8cb02059e M	ui/scripts/network.js
+
+commit 85e5e391f07190ceb5c5e7b002ffa85e661bd83d
+tree 15a4760da796510f343e2745427a187c69eebc2c
+parent c7e3b36425b21ed3a3117fed0e260bf4efea5663
+author Jessica Wang <jessica@cloud.com> 1329520445 -0800
+committer Jessica Wang <jessica@cloud.com> 1329520445 -0800
+
+    add zone wizard - advanced zone - storage traffic - add IP Range - add gateway field.
+
+:100644 100644 00bead9dd8aee25073c144e528c9948d9ca80725 7f535332e4c1916562196cc1bb23689df8637a7b M	ui/scripts/zoneWizard.js

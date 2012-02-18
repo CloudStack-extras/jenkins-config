@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 5c36c00a69d45bd82d1cce953d299d0c4bcbbd65 and d07da64997154b528db3e88887de118fc7dd1226
+commit d07da64997154b528db3e88887de118fc7dd1226
+tree abb7acd98f16fc336df37e104bd3d16abe6ae576
+parent 5c36c00a69d45bd82d1cce953d299d0c4bcbbd65
+author Jessica Wang <jessica@cloud.com> 1329592412 -0800
+committer Jessica Wang <jessica@cloud.com> 1329592412 -0800
+
+    bug 13736: volume page - take snapshot - after action completes, not return updated volume because volume is not changed at all from taking snapshot action. [reviewed-by: Brian]
+
+:100644 100644 683858d49fca0b8680fc80c2bb2746b1e65b31d4 bb6b6c63855fb0a2c08863740a1f6dd2152765f7 M	ui/scripts/storage.js

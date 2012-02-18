@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision a17af88089bf55ae64392edcd062c84df64e2b22 (origin/master)
+Last Built Revision: Revision 43df2a2c913cad10e93542934170c7b3b7a37dec (origin/master)
 Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision e59fa8b0e178f67d68fe37693a04cde1837d14b0 (origin/master)
-Checking out Revision e59fa8b0e178f67d68fe37693a04cde1837d14b0 (origin/master)
+Commencing build of Revision fe8ed4756943f6b7eb4bce0b5eb452ec26268599 (origin/master)
+Checking out Revision fe8ed4756943f6b7eb4bce0b5eb452ec26268599 (origin/master)
 [build-api-docs-master] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
@@ -14,17 +14,17 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-14T20:47:49Z
-     [echo] Build number is 3.0.0.2012-02-14T20:47:49Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-18T00:27:45Z
+     [echo] Build number is 3.0.0.2012-02-18T00:27:45Z
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-utils.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
-   [depend] Deleted 29 out of date files in 1 seconds
+   [depend] Deleted 5 out of date files in 0 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/api/src
-    [javac] Compiling 29 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-api.jar
+    [javac] Compiling 5 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-api.jar
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-api.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
@@ -32,7 +32,9 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-vmware-base.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+   [depend] Deleted 3 out of date files in 0 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/core/src
+    [javac] Compiling 3 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-core.jar
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-core.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
@@ -40,12 +42,12 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-agent.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
-   [depend] Deleted 9 out of date files in 2 seconds
+   [depend] Deleted 25 out of date files in 1 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/server/src
-    [javac] Compiling 6 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
+    [javac] Compiling 22 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
     [javac] Note: Some input files use or override a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
-    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/server/src/com/cloud/network/NetworkManagerImpl.java uses unchecked or unsafe operations.
+    [javac] Note: Some input files use unchecked or unsafe operations.
     [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-server.jar
 
@@ -131,13 +133,3 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
      [echo] build-apidocs
-     [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-master/dist/commands.xml
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
-   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.0.zip
-      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.0.zip
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 3 minutes 21 seconds
-Archiving artifacts
-Finished: SUCCESS

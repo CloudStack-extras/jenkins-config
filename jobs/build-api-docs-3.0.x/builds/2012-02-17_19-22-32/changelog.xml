@@ -1,0 +1,44 @@
+Changes in branch origin/3.0.x, between 7af0f581328466f21f515d2bfc7ff0ae4129cd68 and 0328e1e383728aaeb296a395b105928080787a79
+commit 0328e1e383728aaeb296a395b105928080787a79
+tree a1551e5b4603066985574468244091f4081d52df
+parent 5e1f8d38700c23822ad7ebffaf465e2cfaf618fa
+author frank <frank.zhang@citrix.com> 1329524363 -0800
+committer frank <frank.zhang@citrix.com> 1329524394 -0800
+
+    Bug 13809 - Unable to execute API command deletestoragenetworkiprange due to invalid value. Object dc_storage_network_ip_range(uuid: undefined) does not exist.
+    
+    status 13809: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 7703fdc0a3d8a218a09d5bc7a4fe42729c221fdb db8dfe123ef5b3ca8a83d57840378bd29414e88d M	api/src/com/cloud/api/response/StorageNetworkIpRangeResponse.java
+
+commit 5e1f8d38700c23822ad7ebffaf465e2cfaf618fa
+tree def639a0dc8ea221f21bd9fc9459b3ec0a59a75c
+parent 7af0f581328466f21f515d2bfc7ff0ae4129cd68
+author frank <frank.zhang@citrix.com> 1329519259 -0800
+committer frank <frank.zhang@citrix.com> 1329524378 -0800
+
+    Bug 13568 - secondary storage VM's static route for nfs server breaks things!
+    
+    status 13568: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 7a5aae4cc6b8151cb997b52ddea7ff38f6fca185 de5a58a025f8f40fa3fc327cb3bd42a80deba072 M	api/src/com/cloud/api/commands/CreateStorageNetworkIpRangeCmd.java
+:100755 100755 1506c828fc62b7a4f1abc162239d2b91ba5d5ef8 7703fdc0a3d8a218a09d5bc7a4fe42729c221fdb M	api/src/com/cloud/api/response/StorageNetworkIpRangeResponse.java
+:100755 100755 8cffa6ea0c690913187804d30dfc0fd3c3fcd0c5 91d6b20d36f07313b87ce121d63aae6390ceadc5 M	api/src/com/cloud/dc/StorageNetworkIpRange.java
+:100755 100755 3870a512e171e97ffd85c53127d76e4d305ffd4f b0d286bd96775bb7b609df7171d6555b2a0b7d92 M	client/tomcatconf/commands.properties.in
+:100755 100755 54f2b0ea654589ceaee56931789f4904dbac3988 e320c71481ccfa2aae9b38aab0809e3f81944401 M	core/src/com/cloud/storage/resource/NfsSecondaryStorageResource.java
+:100755 100755 ebf29e715d515b4b4ee0b300301999746e0d38f6 0049a44cec02fc4223033494c2283017550e880b M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 13f52319e3f6608eca6fcd426eb5a2d36c2413e9 ca1d4411fceb43b4be983ee33334037b78d7423c M	server/src/com/cloud/baremetal/BareMetalResourceBase.java
+:100755 100755 8af9fe06d57a288d7b52cfbdafcb420680ccef57 9da8308e312147417ad487f7a3f86a86a1e65bcd M	server/src/com/cloud/dc/StorageNetworkIpAddressVO.java
+:100755 100755 ea9eed7a940980d574b179adcb89c6bf6cf2b578 473b34f6ed2b071179364355c017c39923073533 M	server/src/com/cloud/dc/StorageNetworkIpRangeVO.java
+:100755 100755 02d4b6357d88b488196672ade088a0facec550b4 d4d57b9f0660606b3a048c51891dda8974017234 M	server/src/com/cloud/deploy/BareMetalPlanner.java
+:100644 100755 ca561dacbb7402ccc79bc91a753ba899be5d13e9 c895825b8003f4869993673ffbb7c46f665136fd M	server/src/com/cloud/network/ExternalNetworkDeviceManagerImpl.java
+:100644 100755 1baa2c79196483ce6fff9b4db2879c3b271275a7 7c962c4ca67bf919b396e23cc185619af5b595e0 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 7cb2f50e1fa447c4f597259e791816fb22198e69 b8cdaff84cac2bc0c56cf5eb7c67d9cf35ba98a2 M	server/src/com/cloud/network/StorageNetworkManagerImpl.java
+:100755 100755 9da2e5c34345c6f154c963a92e0b9691dfdc18f8 f6e27a45892a5d966c0efed4317dc6b63d05109a M	server/src/com/cloud/network/dao/PhysicalNetworkTrafficTypeDaoImpl.java
+:100644 100755 19c147db461984f5283e60225e7bec1fc96c8311 fa041af30c37f4ebefc65675461b32f08ccc7539 M	server/src/com/cloud/network/element/ExternalDhcpElement.java
+:100644 100755 d6f1fb5b14fc3d03db131032a6ded93f9dd97ee4 c84b4e20a903f92313991c09fbb5277a7eab88a0 M	server/src/com/cloud/network/element/VirtualRouterElement.java
+:100755 100755 ad58018853d11ffbb93fb0103f63d4bf241b3e0e 197abe4a90adc32b1e4c0817da80a02450c85b36 M	server/src/com/cloud/network/guru/StorageNetworkGuru.java
+:100755 100755 ee8e5b2e3a6448c7ffb95f6dba5f8b323daefb30 c551f721c5fe11c351fda026278d63856e9bd7d1 M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+:100755 100755 ed39d73b994855374c6841b5d12a45d5a098d23f 44cb8ca3f11b25e7bbdc521f196d22be9d91e4f8 M	setup/db/create-schema.sql

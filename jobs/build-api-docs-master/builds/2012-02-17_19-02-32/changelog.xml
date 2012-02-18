@@ -1,0 +1,25 @@
+Changes in branch origin/master, between 8d80f9df0c37c57217baf77a197c911caee24d47 and 708f6764ea1727f401fb3faf0a434c2f24fd9921
+commit 708f6764ea1727f401fb3faf0a434c2f24fd9921
+tree 273c9f5d83e57eb32d36178cf2bb4555c12657f0
+parent 6c74c1b89ffea67e5b31f0cb951d23a91118d0d8
+author Jessica Wang <jessica@cloud.com> 1329523285 -0800
+committer Jessica Wang <jessica@cloud.com> 1329523301 -0800
+
+    bug 13669: template page, ISO page - delete action is not allowed when owner is system.
+
+:100644 100644 231abeb412bbf1179e1b612505b70223438f3483 f85f3b9ba87af320e4e9df353a78ede446eb8b5e M	ui/scripts/templates.js
+
+commit 6c74c1b89ffea67e5b31f0cb951d23a91118d0d8
+tree 1948bc7ac19f4bd26c62df1f15790a5e2cd75668
+parent 8d80f9df0c37c57217baf77a197c911caee24d47
+author Brian Federle <brian.federle@citrix.com> 1329523264 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329523276 -0800
+
+    bug 13702
+    
+    Fix missing labels for instance state/actions
+
+:100644 100644 c461a382272a018b9bee4c84d9aed5c32f2ce37a 45b46b284b45b8ffb30affa77af6292c9c12e20e M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 2dc4beb90ae0629e6e59985419b6f14dcf253ae1 5dfb3db092d5af8db2f831ed323655c1f30b146a M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 6bedb94f7e7fd956d1c3493bca2ffb7cbe2492dd 684d3af61f3f0fac6d8cac8a24e430ddb1988687 M	ui/index.jsp
+:100644 100644 c40f2d94dbb59fe075b968da440d797da34dede5 243751e66e5a885000ff51118180ab355bc69c1b M	ui/scripts/instances.js

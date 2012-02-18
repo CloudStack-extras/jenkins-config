@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between 136f8a28e83276c12e72f6b2d8481493f4d6c811 and 7af0f581328466f21f515d2bfc7ff0ae4129cd68
+commit 7af0f581328466f21f515d2bfc7ff0ae4129cd68
+tree 6d544db5db4ec383bf475790603af552643e262b
+parent 136f8a28e83276c12e72f6b2d8481493f4d6c811
+author Brian Federle <brian.federle@citrix.com> 1329524126 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329524126 -0800
+
+    bug 13716
+    
+    Fix service offering list overflow
+    
+    status 13716: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 d9c6d1ebee6a42f6271f4c505974642f509987ae c6cfc47e5243fc7f88a438eb5fefeb0f40c60e06 M	ui/css/cloudstack3.css

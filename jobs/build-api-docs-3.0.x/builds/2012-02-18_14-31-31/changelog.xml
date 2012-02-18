@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between d07da64997154b528db3e88887de118fc7dd1226 and 64236c143dee7f87c46656378de1eb31944560a2
+commit 64236c143dee7f87c46656378de1eb31944560a2
+tree 5557788f36397190782be1e3442fe1042a886a7f
+parent d07da64997154b528db3e88887de118fc7dd1226
+author Jessica Wang <jessica@cloud.com> 1329593426 -0800
+committer Jessica Wang <jessica@cloud.com> 1329593426 -0800
+
+    instance page - remove name field from listView since name field has the same value of ID field (UUID). . [reviewed-by: Brian]
+
+:100644 100644 243751e66e5a885000ff51118180ab355bc69c1b 66f2aa63bf6f75cbe8a33a8ecfdfc01d4bc51b03 M	ui/scripts/instances.js

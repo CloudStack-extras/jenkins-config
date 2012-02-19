@@ -1,0 +1,10 @@
+Changes in branch origin/master, between f77500aac95ad5d719f9641c6ad40489ce2b45b1 and 82afb86d9efb84e4bcdf33327389a68d45057c16
+commit 82afb86d9efb84e4bcdf33327389a68d45057c16
+tree f3799295969c596ab47d7222c2820fb55f00d5e6
+parent f77500aac95ad5d719f9641c6ad40489ce2b45b1
+author Jessica Wang <jessica@cloud.com> 1329680651 -0800
+committer Jessica Wang <jessica@cloud.com> 1329680651 -0800
+
+    system page - guest traffic type - network tab - pass physical network ID to listNetworks API since there could be multiple physical networks in one zone.
+
+:100644 100644 2e349eb275ff55bbd1c783d6b6203e9d75532fa7 c07e2ab1567454b6a33419cd1f6540f0bc8f7373 M	ui/scripts/system.js

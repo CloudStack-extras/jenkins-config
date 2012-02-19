@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between fba9b29ec4d9a0c6d32390ebe119cffd24040a1f and c890a2095960e9540770f9021e0e27b8099e7537
+commit c890a2095960e9540770f9021e0e27b8099e7537
+tree 9e70036046783628bf47f973c23bd34a991d96de
+parent fba9b29ec4d9a0c6d32390ebe119cffd24040a1f
+author Jessica Wang <jessica@cloud.com> 1329630190 -0800
+committer Jessica Wang <jessica@cloud.com> 1329630190 -0800
+
+    bug 13800: remove restriction that only sourceNAT IP can show VPN tab.  [reviewed-by: Brian]
+
+:100644 100644 645196661894e2c27fb04d1679b782c8cb02059e bddd7778208175bba83283a3ed4184373cc1a01d M	ui/scripts/network.js

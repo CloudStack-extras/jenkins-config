@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 0d581299556b3bf1833210bd2de0ff3663836012 and 9b0efc846c0a7df2b47398f32925238ee1723fb4
+commit 9b0efc846c0a7df2b47398f32925238ee1723fb4
+tree efad59f9eb5329318064e6e4f49df238e4aa6d1d
+parent 0d581299556b3bf1833210bd2de0ff3663836012
+author Jessica Wang <jessica@cloud.com> 1329676750 -0800
+committer Jessica Wang <jessica@cloud.com> 1329676750 -0800
+
+    add zone wizard - fix a JS error "server is undefined" [reviewed-by: Brian]
+
+:100644 100644 33396e851b795ca6ffd9c217d77897c61bf3cb32 d64c66ebedb5f9a71ac9fc4977d199f38ad3a8d6 M	ui/scripts/zoneWizard.js

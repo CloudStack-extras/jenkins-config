@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 64236c143dee7f87c46656378de1eb31944560a2 and fba9b29ec4d9a0c6d32390ebe119cffd24040a1f
+commit fba9b29ec4d9a0c6d32390ebe119cffd24040a1f
+tree aa16f789597df13c536f443801d8d766a4855802
+parent 64236c143dee7f87c46656378de1eb31944560a2
+author Jessica Wang <jessica@cloud.com> 1329614122 -0800
+committer Jessica Wang <jessica@cloud.com> 1329614122 -0800
+
+    bug 13852:  no rendering network provider chart before a physical network is selected. [reviewed-by: Brian]
+
+:100644 100644 be5623e0bfff3aa9b6c7ef40ec94c319fc73ab6b 2e349eb275ff55bbd1c783d6b6203e9d75532fa7 M	ui/scripts/system.js

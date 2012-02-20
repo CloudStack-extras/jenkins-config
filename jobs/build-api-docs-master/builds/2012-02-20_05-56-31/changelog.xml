@@ -1,0 +1,14 @@
+Changes in branch origin/master, between abf4c2566a92749cfe5110f37574ead4d0c52f5c and b822eb47a7658ceccd7e31661a1b0666f4a2b326
+commit b822eb47a7658ceccd7e31661a1b0666f4a2b326
+tree 2f430be5160dfc06e173940a962a0fe6393997ee
+parent abf4c2566a92749cfe5110f37574ead4d0c52f5c
+author Naredula Janardhana Reddy <jana@cloud.com> 1329285707 +0530
+committer Naredula Janardhana Reddy <jana@cloud.com> 1329735164 +0530
+
+    Bug 13375:
+      Summary of changes:
+      - Fix the order of source nat ip's : Static Nat IP's will be on top of Router source nat IP's. means Static NAT ip will take higher preference when compare to router ip while picking ip for source nat.
+    
+    Reviewed-by: Abhi
+
+:100644 100644 0ea90004405740f9a499bbf083a7a3825d45288a 3fdc3f17d9fea99809de17aec1fbad6bc0a269d3 M	patches/systemvm/debian/config/root/ipassoc.sh

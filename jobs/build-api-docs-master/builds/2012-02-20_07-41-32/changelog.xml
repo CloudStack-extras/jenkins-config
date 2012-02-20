@@ -1,0 +1,12 @@
+Changes in branch origin/master, between b822eb47a7658ceccd7e31661a1b0666f4a2b326 and f3f892549fbb01ff5fe33853fda74d75f49b3795
+commit f3f892549fbb01ff5fe33853fda74d75f49b3795
+tree e56a3e5145f750f30b7d00cf2cd5b6a3c6d89c6f
+parent b822eb47a7658ceccd7e31661a1b0666f4a2b326
+author Murali reddy <Murali.Reddy@citrix.com> 1329741508 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1329741602 +0530
+
+    bug 13872: Implementation of Guest Network by JuniperSRX failed: NPE during the execution of IPAssoc
+    Reviewed-by: Jana
+    status 13872: resolved fixed
+
+:100644 100644 1fc5b1e9eef19a045dd61b0237f09e0b26b097d8 3d680c29a39891b9535e9d73cdb46cb91ddc80c2 M	core/src/com/cloud/network/resource/JuniperSrxResource.java

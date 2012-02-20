@@ -1,0 +1,62 @@
+Changes in branch origin/master, between f3f892549fbb01ff5fe33853fda74d75f49b3795 and 146f1e32b82962cc512f70cd0bd70312c7e33538
+commit 88ac21174025cef5d22b5e4f9fc02ead4f3e56ef
+tree 50f78c0f5809c97e3ef633b3638a0ed76ac2b015
+parent c30992dc34f6d99e0333d7f530e5d102bd85a18c
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329588507 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329742426 +0530
+
+    Multiple fixes to the testClient to accomodate further changes to 3.0 APIs
+    reviewed-by: Kishan
+    * Revert back to old guestCidrAddress
+    * Add default traffic types
+    * fixed typo when creating physical network, specifid wrong zone
+    * correctly specifying the guest VLAN as part of updating physical network
+
+:100644 100644 bc78d87b86e0277a2e1f0add590471fb1d319c51 f867ee173ae30bb064aa4d87205423cac9a6a1e7 M	tools/testClient/deployDataCenter.py
+:100644 100644 049787524af64616575b54adb3c2859a98640b42 ee87b0d1a756a039dddf7a97a042418e5cf219ce M	tools/testClient/sandbox/simulator/sandbox.cfg
+:100644 100644 3dda7d62a3b6ab76030512e764d973df1ff544aa 507df4c84f4bc67d6d1966c5365a8eb96c53fb72 M	tools/testClient/sandbox/simulator/setup.py
+
+commit c30992dc34f6d99e0333d7f530e5d102bd85a18c
+tree 0567a31fd32de490d5b9edc1fed25af59aa1eefb
+parent 1385bcd49965ebc327d2a1d827e371d37cc43a73
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329583348 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329742337 +0530
+
+    integrity checker loaded as parted of extended components.xml
+
+:100755 100755 c92c6420d4c4fff3d3e5691b304ee1c21a778d18 011bc71892bd1ed3a9854461bd81babc1c76a3c2 M	agent-simulator/tomcatconf/components-simulator.xml.in
+
+commit 1385bcd49965ebc327d2a1d827e371d37cc43a73
+tree a4c605d4bc97b66a081053341bac85d88fb3563c
+parent a300d52c965a11c2ac3144de7bb0b117fc20ae59
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329467090 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329742317 +0530
+
+    fixing the case when multiple zones are added. enable the right VR element
+    Reviewed-By: Kishan
+    (cherry picked from commit 23357f3b17ea87ae51b9be06a1c19ec782a661a6)
+
+:100644 100644 a0eeb67f0e68f9b932c6643c7a216b0dccbcb664 bc78d87b86e0277a2e1f0add590471fb1d319c51 M	tools/testClient/deployDataCenter.py
+
+commit a300d52c965a11c2ac3144de7bb0b117fc20ae59
+tree 995b95a034fc5bcd65539b3f78ee9f178bdb0dbd
+parent 66c494eaa9296dc9103cd094fcd6d227d1676253
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329575397 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329742305 +0530
+
+    Enable security groups in basic zones only
+    (cherry picked from commit 7ea0ace472f863374c9a0b8559065a90190e6f61)
+
+:100644 100644 3b94f5bc3dd61f6eb13b701662afb3de2ee5806f a0eeb67f0e68f9b932c6643c7a216b0dccbcb664 M	tools/testClient/deployDataCenter.py
+
+commit 66c494eaa9296dc9103cd094fcd6d227d1676253
+tree 8d3b2ec1c36e4471ab110ace6796ae1b9a75e70f
+parent 904c81de991ad5000e8ef2f28be6e5f181d3c3a2
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329289267 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1329742298 +0530
+
+    adding the integrity checker for simulator components
+    Reviewed-By: Kishan
+    (cherry picked from commit b6ecbd0ad6f705efdc1a514e9dd9a17e96df8415)
+
+:100755 100755 935925632da2dc26d7758661c6f601642b0ebc93 c92c6420d4c4fff3d3e5691b304ee1c21a778d18 M	agent-simulator/tomcatconf/components-simulator.xml.in

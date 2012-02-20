@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between f2c2ce14a23268ac52f1c2317e8968dfcb13c11f and 8a33ea8d8ce7641ff86664002f4dcbdeb1d79a95
+commit 8a33ea8d8ce7641ff86664002f4dcbdeb1d79a95
+tree 4a1e75eed96f74cc3623728758ab438e3b8fc77e
+parent f2c2ce14a23268ac52f1c2317e8968dfcb13c11f
+author Jessica Wang <jessica@cloud.com> 1329777836 -0800
+committer Jessica Wang <jessica@cloud.com> 1329777836 -0800
+
+    bug 13648: fix a bug in listView widget - $listView.length is 0 after calling $(window).trigger('cloudStack.fullRefresh'), calling $listView.listView will encounter an error when $listView.length is 0.  [reviewed-by: Brian]
+
+:100644 100644 c07e2ab1567454b6a33419cd1f6540f0bc8f7373 47f3a5ef93ead88ceb1ebb5888a66798fb003f02 M	ui/scripts/system.js
+:100644 100644 12fe68679cedb0ed4c5fb5b0b3c8757081486796 cbddc2b3e83ef0f78eda4cf4af314151ec99b974 M	ui/scripts/ui/widgets/detailView.js

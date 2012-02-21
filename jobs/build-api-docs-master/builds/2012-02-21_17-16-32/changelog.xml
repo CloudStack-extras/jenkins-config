@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 811575ab839a6a81120aa079ca41a212177a754a and 4971cccf333f83983a8242c36b16c5d37c291c1a
+commit 4971cccf333f83983a8242c36b16c5d37c291c1a
+tree 5cb3573a8e3c15f59c197ba20ccf01bf17f27a59
+parent 811575ab839a6a81120aa079ca41a212177a754a
+author frank <frank.zhang@citrix.com> 1329862521 -0800
+committer frank <frank.zhang@citrix.com> 1329862587 -0800
+
+    Bug 13895 - OVM zone z1 hosts went to Alert state, VMs in stopped state and stopping state
+    
+    status 13895: resolved fixed
+    reviewed-by: edison
+
+:100755 100755 7257b6b877825213672da9b993bcb18ba8ac65c8 d4f81d73f5a523ad31db1033f830d81b12b1884d M	ovm/scripts/vm/hypervisor/ovm/OvmVmModule.py

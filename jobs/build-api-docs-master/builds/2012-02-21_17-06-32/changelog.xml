@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 8f72196d9eed1169ba7801d6b233eeeccdacc35d and 811575ab839a6a81120aa079ca41a212177a754a
+commit 811575ab839a6a81120aa079ca41a212177a754a
+tree 58ed4e271f062b0c9bbc4439d205b2ff591a5f1e
+parent 8f72196d9eed1169ba7801d6b233eeeccdacc35d
+author Brian Federle <brian.federle@citrix.com> 1329861875 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329861875 -0800
+
+    bug 13754
+    
+    Display project routers in system list view
+
+:100644 100644 f8cd8f3e6a71acc3c84f542b48e877ac79a80a48 8c83d93365419d46bf48e943dead291e0bf8f8ad M	ui/scripts/system.js

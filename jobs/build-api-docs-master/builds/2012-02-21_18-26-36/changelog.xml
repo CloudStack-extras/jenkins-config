@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 82bf5079db45c9d9b47ec1cc54c4f8f8d79e3611 and c1734bb0f5217f38153d9f3ce91e84ae8838ec97
+commit c1734bb0f5217f38153d9f3ce91e84ae8838ec97
+tree eff0d369a0843f5fc7f3a3454bd3773deb30b0fc
+parent 82bf5079db45c9d9b47ec1cc54c4f8f8d79e3611
+author Sheng Yang <sheng.yang@cloud.com> 1329864528 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329866654 -0800
+
+    bug 13915: Fix VirtualRouter get gateway IP when others used as SourceNatServiceProvider
+    
+    status 13915: resolved fixed
+    
+    Reviewed-by: Edison
+
+:100755 100755 fe79cd871d0edc58adf8dbbb54c8b1317e708712 070e6a2b6114031438f2a8bce5f5bba4c9e2539a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

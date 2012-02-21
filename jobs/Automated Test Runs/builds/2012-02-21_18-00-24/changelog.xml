@@ -1,0 +1,226 @@
+Changes in branch origin/master, between 6922131507f5375746c745124614384145c8839a and ebfdd83d63704c74eb1905de026122eafc1382dc
+commit ebfdd83d63704c74eb1905de026122eafc1382dc
+tree 72a5b0ff4ad8e364d811460f44e68eabfa03e1fc
+parent 52bd9f1e88d5a9b8d26bad1cae279bef9ac2da67
+author Brian Federle <brian.federle@citrix.com> 1329863770 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329863770 -0800
+
+    bug 13746: Fix missing localization label
+
+:100644 100644 34014f0147a1ea6fa0728ff30b79047a84b9dce9 b444cd09e83fff56843c8ba3797e84e1c737a22b M	ui/scripts/projects.js
+
+commit 52bd9f1e88d5a9b8d26bad1cae279bef9ac2da67
+tree aaf1c26820dd3fd9120f8771212a968c073d1f67
+parent 4971cccf333f83983a8242c36b16c5d37c291c1a
+author Brian Federle <brian.federle@citrix.com> 1329863464 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329863474 -0800
+
+    IE CSS fixes
+    
+    -Fix alignment of listview-in-detailview table headers
+    
+    -Fix detail view toolbar display
+    
+    -Fix system charts
+
+:100644 100644 56d7256e998d6d4c0ef2343d9225b2afa9048b45 47166e1d20763dbf527a940c7538564e919e1a59 M	ui/css/cloudstack3-ie7.css
+
+commit 4971cccf333f83983a8242c36b16c5d37c291c1a
+tree 5cb3573a8e3c15f59c197ba20ccf01bf17f27a59
+parent 811575ab839a6a81120aa079ca41a212177a754a
+author frank <frank.zhang@citrix.com> 1329862521 -0800
+committer frank <frank.zhang@citrix.com> 1329862587 -0800
+
+    Bug 13895 - OVM zone z1 hosts went to Alert state, VMs in stopped state and stopping state
+    
+    status 13895: resolved fixed
+    reviewed-by: edison
+
+:100755 100755 7257b6b877825213672da9b993bcb18ba8ac65c8 d4f81d73f5a523ad31db1033f830d81b12b1884d M	ovm/scripts/vm/hypervisor/ovm/OvmVmModule.py
+
+commit 811575ab839a6a81120aa079ca41a212177a754a
+tree 58ed4e271f062b0c9bbc4439d205b2ff591a5f1e
+parent 8f72196d9eed1169ba7801d6b233eeeccdacc35d
+author Brian Federle <brian.federle@citrix.com> 1329861875 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329861875 -0800
+
+    bug 13754
+    
+    Display project routers in system list view
+
+:100644 100644 f8cd8f3e6a71acc3c84f542b48e877ac79a80a48 8c83d93365419d46bf48e943dead291e0bf8f8ad M	ui/scripts/system.js
+
+commit 8f72196d9eed1169ba7801d6b233eeeccdacc35d
+tree ff08188813f7212be80023cd0eb0f1425a4ff691
+parent 22d9f034a5b7ed58e6a78d22468f6fbf69420fc1
+author Brian Federle <brian.federle@citrix.com> 1329861023 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329861030 -0800
+
+    bug 13784: Fix missing status localization
+
+:100644 100644 ed3e6105ee91a2aa22460c5d25b49e275e8482d3 a0301060405a174776504af9a3dd29693cd78a7b M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 311dc4b9b0727af76aed23939b9d2ea061fcf345 28d2b9cf4103b7bdaaef823a6e6885c5db11cc44 M	ui/index.jsp
+
+commit 22d9f034a5b7ed58e6a78d22468f6fbf69420fc1
+tree a35320faaad02b67391c4b12a00e751518361b73
+parent 79e1b0a03d24d9e8fc1a9386296f7cfb888d40f3
+author Sheng Yang <sheng.yang@cloud.com> 1329860944 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329861017 -0800
+
+    bug 12974: Update system template info in templates.sql
+    
+    status 12974: resolved fixed
+    
+    Reviewed-by: Frank Zhang
+
+:100755 100755 716afbd82ee3d86d52d25e6a66196edb3af37379 ec02890c72ab4ac9e4bb3ada1a2b1cafc55c7ed5 M	setup/db/templates.sql
+
+commit 79e1b0a03d24d9e8fc1a9386296f7cfb888d40f3
+tree e5945d5cddba5c18c872c595db670c0ff0d76c19
+parent 170c110f536bfd98eab18e93bd288c779e299307
+author Brian Federle <brian.federle@citrix.com> 1329860875 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329860875 -0800
+
+    bug 13908: Fix localization label
+
+:100644 100644 3e090b86a682b40c48f570d96861b094f4ef059d 311dc4b9b0727af76aed23939b9d2ea061fcf345 M	ui/index.jsp
+:100644 100644 73b2d0e92a831ea3ef1cb076089f2b75fc576c44 46dd9ba992d339fd9b4ef29a64a5ccbabdea089b M	ui/scripts/accounts.js
+
+commit 170c110f536bfd98eab18e93bd288c779e299307
+tree c08be0c88e6e0a70a57cf168b4c7f93cfc70b44f
+parent b3426fb2b61e32962ddd2a22c07896b321d8df68
+author Brian Federle <brian.federle@citrix.com> 1329860660 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329860674 -0800
+
+    bug 13675
+    
+    Hide unused text fields for ICMP vs TCP selection
+
+:100644 100644 c26e789e809daac3d01a5ab3c6f45cc61959dac4 18c5aefe6526404b8b6e19907f8d09f52fadfc1d M	ui/scripts/network.js
+:100644 100644 c884d2e883a11c21720f6e027e92ec959e1ad27e baf32f8c458d17ae1d642ad6d0ec8261a1f3e41d M	ui/scripts/ui/widgets/multiEdit.js
+
+commit b3426fb2b61e32962ddd2a22c07896b321d8df68
+tree b151141b98f02c64d972962c8bb730cf3fe58aef
+parent fb271794e56e3a39098ffbbd1c419324f267e78c
+author Kelven Yang <kelven@cloud.com> 1329859243 -0800
+committer Kelven Yang <kelven@cloud.com> 1329859319 -0800
+
+    bug 13808: unpack OVA if OVF file does not exist (don't rely on template installation script to unpack it for us). Reviewed-By: Edison
+
+:100644 100644 b699cbc31e74e38b9c519cc995e2dd18384bcb9c 61d21bdc7df9934d78804e21c6dce47307e7be1e M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+
+commit fb271794e56e3a39098ffbbd1c419324f267e78c
+tree 7919f9704d080182b9b9ebf5881e72859a8a9a44
+parent a1f2f16d2e7346a02f1de6435e81537450a4bbb2
+author Brian Federle <brian.federle@citrix.com> 1329857813 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329857813 -0800
+
+    bug 13719
+    
+    Change 'management server'->'hypervisor' in physical network description
+    
+    status 13719: resolved fixed
+
+:100644 100644 c64ccc7498d9226ea6718c93e0ba1c275a1efcb9 ed3e6105ee91a2aa22460c5d25b49e275e8482d3 M	client/WEB-INF/classes/resources/messages.properties
+
+commit a1f2f16d2e7346a02f1de6435e81537450a4bbb2
+tree ed22379cbb3ebdc5e2f253c0ab1084436af4d063
+parent ac63890874ac9d201d533237136384dad087a42c
+author Brian Federle <brian.federle@citrix.com> 1329856308 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329856317 -0800
+
+    bug 13866
+    
+    Display public IP on VM details panel if static NAT is enabled for
+    that VM
+    
+    status 13866: resolved fixed
+
+:100644 100644 0faf58648cb24b6f9417cf1ee90187a83d1ea47c bb2bcacf96365cc3344f55daab51e173b644cb32 M	ui/scripts/instances.js
+
+commit ac63890874ac9d201d533237136384dad087a42c
+tree d0136944fea29664863f7c8b081b4cb91ad76456
+parent d14ea7299cbeb071ea873192d677fb3dcac7c997
+author kishan <kishan@cloud.com> 1329853427 +0530
+committer kishan <kishan@cloud.com> 1329853529 +0530
+
+    Bug 13823: Throw network conflict expection when LB rules conflict
+    Status 13823: resolved fixed
+    Reviewed-By: Nitin
+
+:100755 100755 660b5aeec61f515b0024a0653ea0ce80062cf662 21efb5923faf864a7d8b1adb43ed2da543d20cad M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+
+commit d14ea7299cbeb071ea873192d677fb3dcac7c997
+tree 9ec9ffcc1757511b2783961832c685f6b0c40774
+parent 8b25d7847fc696e0dd65a129f40903456935db42
+author Jessica Wang <jessica@cloud.com> 1329852991 -0800
+committer Jessica Wang <jessica@cloud.com> 1329853008 -0800
+
+    bug 13636: add 'dedicated' checkbox back to Add F5 dialog.
+
+:100644 100644 47f3a5ef93ead88ceb1ebb5888a66798fb003f02 f8cd8f3e6a71acc3c84f542b48e877ac79a80a48 M	ui/scripts/system.js
+
+commit 8b25d7847fc696e0dd65a129f40903456935db42
+tree 5e9ae21c0497805aeb2b6b2540c45bafe3773c5b
+parent 6f7b169271a0def297811cfd540fc022028c8948
+author Brian Federle <brian.federle@citrix.com> 1329852924 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329852924 -0800
+
+    bug 13731
+    
+    Add scrollbars and reduce width of tree view, to prevent large
+    subdomain lists from being unselectable
+
+:100644 100644 374363e89bb149cf2c96d7550a3152ff6ba6e265 21f5150106e9f8c75f155bd2f1ab047080407adf M	ui/css/cloudstack3.css
+
+commit 6f7b169271a0def297811cfd540fc022028c8948
+tree afdef6e31b5762adf58a3fb645cfe8681e0d3f91
+parent 895536181680692d6d8e8347dfa9cabf3895b32e
+author Brian Federle <brian.federle@citrix.com> 1329852310 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329852310 -0800
+
+    Don't show header bar for listView-in-detailView
+
+:100644 100644 c6cfc47e5243fc7f88a438eb5fefeb0f40c60e06 374363e89bb149cf2c96d7550a3152ff6ba6e265 M	ui/css/cloudstack3.css
+
+commit 895536181680692d6d8e8347dfa9cabf3895b32e
+tree bd93f4269f0a7b69fcb0d1dbdb0327cfa82d199f
+parent 1c96edace59fee4954d6018e1d558b4240d416f0
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329849520 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329849960 -0800
+
+    bug 13903: return vm's hostName as a displayName when displayName is null in bunch of api responses
+    status 13903: resolved fixed
+    Reviewed-by: Kelven Yang
+
+:100644 100644 692f923abebae680dc268177381adce84f963457 98ffe270d91dfc4375e2212fff3c88b6d99ac3cb M	api/src/com/cloud/api/commands/ListNetworkOfferingsCmd.java
+:100755 000000 1da14f9fdd7668b3510b9286beeb1eb0955b246b 0000000000000000000000000000000000000000 D	api/src/com/cloud/api/response/IsoVmResponse.java
+:100755 100755 0049a44cec02fc4223033494c2283017550e880b b55273c1e11bbdbc045c8a72b01bac6134f83b2e M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 b31c6a1dd838aa9de0ce63ca6082b2ffd0b77d48 d9c94dab2f32f3191f29197a93bff31aa27bf8b0 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit 1c96edace59fee4954d6018e1d558b4240d416f0
+tree f3e3be229c8efd2df9e55a160d6e73909d13a126
+parent 20b2179e612c79c351ba8504274f27de5ab56b75
+author kishan <kishan@cloud.com> 1329847760 +0530
+committer kishan <kishan@cloud.com> 1329847897 +0530
+
+    Bug 13619: Throw exception when not traffic sentinel host is not available. Update last_collection timestamp when atleast 1 IP has nonzero bytes
+    Status 13619: resolved fixed
+    Reviewed-By: Nitin
+
+:100644 100644 23ce64b0def04f8be485532a5366b496fc7ac5d9 18e33d0a3f32a5505c01e79a69bc175803932d50 M	core/src/com/cloud/network/resource/TrafficSentinelResource.java
+:100755 100755 fd8c7c11a833f9e9a09ba373c52aa67da67e3954 2501ca1cadd7def3c3219ab6026d8db6b50fcdf9 M	server/src/com/cloud/network/NetworkUsageManagerImpl.java
+
+commit 20b2179e612c79c351ba8504274f27de5ab56b75
+tree ded57f79c1d7ca03d68e0cc65c95f6afb0c6d97c
+parent 6922131507f5375746c745124614384145c8839a
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329847343 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329847589 -0800
+
+    bug 13871: use perzone and peraccount (no spaces in values) when compare source nat capabilities
+    status 13871: resolved fixed
+    Reviewed-by: Chiradeep Vittal
+
+:100755 100755 6468a7bebf76b69098e3e996cda8596d1b15771d b31c6a1dd838aa9de0ce63ca6082b2ffd0b77d48 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 37f07d72b26fcf9e9193bb444b1a81bd6f03dd98 d40ad6cd4b8e76185df900d844232f53bfc8d59a M	server/src/com/cloud/network/element/JuniperSRXExternalFirewallElement.java
+:100755 100755 c84b4e20a903f92313991c09fbb5277a7eab88a0 3766c16694edc04284fbcdf95cf62db20260404a M	server/src/com/cloud/network/element/VirtualRouterElement.java

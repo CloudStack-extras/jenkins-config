@@ -1,0 +1,29 @@
+Changes in branch origin/3.0.x, between 995171c0fd12a7a07428509f73d9ff180c218c3d and 3e794273de5270bb9d074dbc1614cf7d17f7cc1e
+commit 3e794273de5270bb9d074dbc1614cf7d17f7cc1e
+tree ba7573185f015db16e103a9a36d7db00b4ef8b90
+parent 9f0498a720bfddbe9a7f4e45f0e1c0a9f5000a8f
+author Sheng Yang <sheng.yang@cloud.com> 1329864528 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329866674 -0800
+
+    bug 13915: Fix VirtualRouter get gateway IP when others used as SourceNatServiceProvider
+    
+    status 13915: resolved fixed
+    
+    Reviewed-by: Edison
+
+:100755 100755 fe79cd871d0edc58adf8dbbb54c8b1317e708712 070e6a2b6114031438f2a8bce5f5bba4c9e2539a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit 9f0498a720bfddbe9a7f4e45f0e1c0a9f5000a8f
+tree e15581c9a1d4b12aa0c85a721bdf09700a60b578
+parent 995171c0fd12a7a07428509f73d9ff180c218c3d
+author Brian Federle <brian.federle@citrix.com> 1329866565 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329866584 -0800
+
+    bug 13828
+    
+    Fix add VM button disappearing if no VMs are present under LB rule
+    
+    status 13828: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 baf32f8c458d17ae1d642ad6d0ec8261a1f3e41d 44eecef0383709dbde4fe6c8b9aca4d9067dc970 M	ui/scripts/ui/widgets/multiEdit.js

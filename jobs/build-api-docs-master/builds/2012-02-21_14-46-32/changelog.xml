@@ -1,0 +1,12 @@
+Changes in branch origin/master, between d14ea7299cbeb071ea873192d677fb3dcac7c997 and ac63890874ac9d201d533237136384dad087a42c
+commit ac63890874ac9d201d533237136384dad087a42c
+tree d0136944fea29664863f7c8b081b4cb91ad76456
+parent d14ea7299cbeb071ea873192d677fb3dcac7c997
+author kishan <kishan@cloud.com> 1329853427 +0530
+committer kishan <kishan@cloud.com> 1329853529 +0530
+
+    Bug 13823: Throw network conflict expection when LB rules conflict
+    Status 13823: resolved fixed
+    Reviewed-By: Nitin
+
+:100755 100755 660b5aeec61f515b0024a0653ea0ce80062cf662 21efb5923faf864a7d8b1adb43ed2da543d20cad M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java

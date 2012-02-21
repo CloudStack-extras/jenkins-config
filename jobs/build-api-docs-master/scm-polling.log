@@ -1,9 +1,9 @@
-Started on Feb 21, 2012 2:29:23 PM
+Started on Feb 21, 2012 2:59:23 PM
 Using strategy: Default
-[poll] Last Build : #155
-[poll] Last Built Revision: Revision 6f7b169271a0def297811cfd540fc022028c8948 (origin/master)
+[poll] Last Build : #157
+[poll] Last Built Revision: Revision ac63890874ac9d201d533237136384dad087a42c (origin/master)
 Fetching changes from the remote Git repositories
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
 Polling for changes in
-Done. Took 3.4 sec
+Done. Took 2 sec
 No changes

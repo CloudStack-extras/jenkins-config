@@ -1,0 +1,16 @@
+Changes in branch origin/3.0.x, between f4f5362910b886bce169ddbc636b2c210cf099c6 and ed57a6b6ea443a1584bd9d4993835352ee7d6220
+commit ed57a6b6ea443a1584bd9d4993835352ee7d6220
+tree 26b366071f847e86f05a3c11b77512fa1a772de3
+parent f4f5362910b886bce169ddbc636b2c210cf099c6
+author Brian Federle <brian.federle@citrix.com> 1329860723 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329860723 -0800
+
+    bug 13675
+    
+    Hide unused text fields for ICMP vs TCP selection
+    
+    status 13675: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 c26e789e809daac3d01a5ab3c6f45cc61959dac4 18c5aefe6526404b8b6e19907f8d09f52fadfc1d M	ui/scripts/network.js
+:100644 100644 c884d2e883a11c21720f6e027e92ec959e1ad27e baf32f8c458d17ae1d642ad6d0ec8261a1f3e41d M	ui/scripts/ui/widgets/multiEdit.js

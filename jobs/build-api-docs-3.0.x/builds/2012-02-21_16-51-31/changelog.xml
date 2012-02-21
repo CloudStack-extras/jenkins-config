@@ -1,0 +1,42 @@
+Changes in branch origin/3.0.x, between ed57a6b6ea443a1584bd9d4993835352ee7d6220 and 02279ad87d977242aca5e76d364b1fbb7c0e1d9f
+commit 02279ad87d977242aca5e76d364b1fbb7c0e1d9f
+tree 611e408c77ec731cdaaec6731a85474cec9c1418
+parent 68a8e5eda5245ce007e05c1e5a176bebe54b3c1a
+author Brian Federle <brian.federle@citrix.com> 1329861051 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329861051 -0800
+
+    bug 13784: Fix missing status localization
+    
+    status 13784: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 ed3e6105ee91a2aa22460c5d25b49e275e8482d3 a0301060405a174776504af9a3dd29693cd78a7b M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 311dc4b9b0727af76aed23939b9d2ea061fcf345 28d2b9cf4103b7bdaaef823a6e6885c5db11cc44 M	ui/index.jsp
+
+commit 68a8e5eda5245ce007e05c1e5a176bebe54b3c1a
+tree 6c660fac04184039bf43debe1fcb1cb2d7a087f2
+parent b28f7169a3d6e6b8390cdf42459f90ecd4987160
+author Sheng Yang <sheng.yang@cloud.com> 1329860944 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329860997 -0800
+
+    bug 12974: Update system template info in templates.sql
+    
+    status 12974: resolved fixed
+    
+    Reviewed-by: Frank Zhang
+
+:100755 100755 716afbd82ee3d86d52d25e6a66196edb3af37379 ec02890c72ab4ac9e4bb3ada1a2b1cafc55c7ed5 M	setup/db/templates.sql
+
+commit b28f7169a3d6e6b8390cdf42459f90ecd4987160
+tree 0077b29254193af2faa0e11a1f25bb15ffa6b78b
+parent ed57a6b6ea443a1584bd9d4993835352ee7d6220
+author Brian Federle <brian.federle@citrix.com> 1329860893 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329860893 -0800
+
+    bug 13908: Fix localization label
+    
+    status 13908: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 3e090b86a682b40c48f570d96861b094f4ef059d 311dc4b9b0727af76aed23939b9d2ea061fcf345 M	ui/index.jsp
+:100644 100644 73b2d0e92a831ea3ef1cb076089f2b75fc576c44 46dd9ba992d339fd9b4ef29a64a5ccbabdea089b M	ui/scripts/accounts.js

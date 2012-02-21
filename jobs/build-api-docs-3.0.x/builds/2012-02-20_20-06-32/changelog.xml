@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 8a33ea8d8ce7641ff86664002f4dcbdeb1d79a95 and 75a64a41b56f87d4e0f776cb47dddaa4d8ec598e
+commit 75a64a41b56f87d4e0f776cb47dddaa4d8ec598e
+tree fa807287dee772bbd8e5bf7491a57a4fd81ea078
+parent 8a33ea8d8ce7641ff86664002f4dcbdeb1d79a95
+author Jessica Wang <jessica@cloud.com> 1329786257 -0800
+committer Jessica Wang <jessica@cloud.com> 1329786257 -0800
+
+    instance page - edit Instance - not pass displayname to API when displayname is equal to name. [reviewed-by: Brian]
+
+:100644 100644 66f2aa63bf6f75cbe8a33a8ecfdfc01d4bc51b03 0faf58648cb24b6f9417cf1ee90187a83d1ea47c M	ui/scripts/instances.js

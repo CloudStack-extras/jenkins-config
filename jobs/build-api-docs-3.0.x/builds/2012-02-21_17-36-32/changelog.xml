@@ -1,0 +1,26 @@
+Changes in branch origin/3.0.x, between 5a2b301721d5a8159cb2ceb79dcc27620d1f05fd and c5dd97e7c1d81958881a74130fdc9dcd34ccb807
+commit c5dd97e7c1d81958881a74130fdc9dcd34ccb807
+tree 806b34b7e15d7e73470fdb9ac85ac77b5c15f85d
+parent 6949ab777fc02c48973dd796ba8157f6bc5302fd
+author frank <frank.zhang@citrix.com> 1329863815 -0800
+committer frank <frank.zhang@citrix.com> 1329863858 -0800
+
+    Bug 13895 - OVM zone z1 hosts went to Alert state, VMs in stopped state and stopping state
+    
+    return VM in Error if it is no longer on primary storage
+    reviewed-by: edison
+
+:100755 100755 910eff24e4da9d32880e77348d147e24cba66832 10ae9760918da4fc915f7ef14cdf33e3a5e48961 M	ovm/scripts/vm/hypervisor/ovm/OvmHostModule.py
+
+commit 6949ab777fc02c48973dd796ba8157f6bc5302fd
+tree bbd5ae44c89efd365a8fefe662dd00a8fefe5039
+parent 5a2b301721d5a8159cb2ceb79dcc27620d1f05fd
+author Brian Federle <brian.federle@citrix.com> 1329863751 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329863751 -0800
+
+    bug 13746: Fix missing localization label
+    
+    status 13746: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 34014f0147a1ea6fa0728ff30b79047a84b9dce9 b444cd09e83fff56843c8ba3797e84e1c737a22b M	ui/scripts/projects.js

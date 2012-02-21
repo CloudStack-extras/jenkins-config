@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 11e6aa1bc6404d2e90e108b01442373d00dc2ff8 and 57cdeb6f8b4d265838ca92adcad38899e1e44607
+commit 57cdeb6f8b4d265838ca92adcad38899e1e44607
+tree aca142cd57845e897d58a7a2de3116bc58d7574b
+parent 11e6aa1bc6404d2e90e108b01442373d00dc2ff8
+author Brian Federle <brian.federle@citrix.com> 1329852459 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329852470 -0800
+
+    Don't show header bar for listView-in-detailView
+    
+    reviewed-by: sonny
+
+:100644 100644 c6cfc47e5243fc7f88a438eb5fefeb0f40c60e06 374363e89bb149cf2c96d7550a3152ff6ba6e265 M	ui/css/cloudstack3.css

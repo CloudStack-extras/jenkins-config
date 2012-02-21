@@ -1,0 +1,20 @@
+Changes in branch origin/master, between d9ab2f6ce33916606292774feb1a4c152985f2cf and 2b13d88803f6d570d0ba25bac64fdc9cd9527c17
+commit 2b13d88803f6d570d0ba25bac64fdc9cd9527c17
+tree 86dc7dfe4378a499f5c89b9875014c92ae597c1f
+parent 1cc016abd269d483253610a43dd8b0199bf42905
+author Jessica Wang <jessica@cloud.com> 1329788717 -0800
+committer Jessica Wang <jessica@cloud.com> 1329788717 -0800
+
+    check in Japanese translation.
+
+:100644 100644 c3c0146682bbdca033c80b400e53761e724a693b fafbcd6f2996665ec7e899d1f27e2cea2b46f97a M	client/WEB-INF/classes/resources/messages_ja.properties
+
+commit 1cc016abd269d483253610a43dd8b0199bf42905
+tree 79b975103314be4b1159efaf3a83a00d5271b8c0
+parent d9ab2f6ce33916606292774feb1a4c152985f2cf
+author Jessica Wang <jessica@cloud.com> 1329786304 -0800
+committer Jessica Wang <jessica@cloud.com> 1329786304 -0800
+
+    instance page - edit Instance - not pass displayname to API when displayname is equal to name.
+
+:100644 100644 66f2aa63bf6f75cbe8a33a8ecfdfc01d4bc51b03 0faf58648cb24b6f9417cf1ee90187a83d1ea47c M	ui/scripts/instances.js

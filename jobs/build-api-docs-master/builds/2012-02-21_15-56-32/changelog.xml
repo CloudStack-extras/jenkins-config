@@ -1,0 +1,14 @@
+Changes in branch origin/master, between a1f2f16d2e7346a02f1de6435e81537450a4bbb2 and fb271794e56e3a39098ffbbd1c419324f267e78c
+commit fb271794e56e3a39098ffbbd1c419324f267e78c
+tree 7919f9704d080182b9b9ebf5881e72859a8a9a44
+parent a1f2f16d2e7346a02f1de6435e81537450a4bbb2
+author Brian Federle <brian.federle@citrix.com> 1329857813 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329857813 -0800
+
+    bug 13719
+    
+    Change 'management server'->'hypervisor' in physical network description
+    
+    status 13719: resolved fixed
+
+:100644 100644 c64ccc7498d9226ea6718c93e0ba1c275a1efcb9 ed3e6105ee91a2aa22460c5d25b49e275e8482d3 M	client/WEB-INF/classes/resources/messages.properties

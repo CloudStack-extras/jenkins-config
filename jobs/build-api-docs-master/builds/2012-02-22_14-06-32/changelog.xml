@@ -1,0 +1,20 @@
+Changes in branch origin/master, between c2b8d57796fd7d2733838fd769331f8efde82e20 and 7296e82b3a6ffc2534f447ce827d7b9a1979ec4a
+commit 7296e82b3a6ffc2534f447ce827d7b9a1979ec4a
+tree ad7971177c3e1f172daec96e5edc5b66143ca382
+parent 1ecf45c1e01921491b8e8940a7436c38d2958ff1
+author Brian Federle <brian.federle@citrix.com> 1329937513 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329937520 -0800
+
+    Get EULA specific to selected language
+
+:100644 100644 4d1f1f97e4e7be0797e95dd88b3f92abd67ff5e9 c0dfc431d92f2cd106b73e4fa952a56db68e317a M	ui/scripts/cloudStack.js
+
+commit 1ecf45c1e01921491b8e8940a7436c38d2958ff1
+tree d685835a1ff5454dd5c09efea69927608d83634b
+parent c2b8d57796fd7d2733838fd769331f8efde82e20
+author Brian Federle <brian.federle@citrix.com> 1329937482 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329937520 -0800
+
+    Make default language English, if no cookie set
+
+:100644 100644 800b7bb29618c989c8ef3de613cd56bd8b3aa5ed 77130af3b8d2a88c74b4fde8e3e05cda6d19c8c0 M	ui/scripts/ui-custom/login.js

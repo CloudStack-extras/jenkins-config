@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 377810ff245c819b30e1e8d55644a85134c8ef6e and 8398688b1b48569f679ec334f7fb7dc9cdb544e0
+commit 8398688b1b48569f679ec334f7fb7dc9cdb544e0
+tree 1f9fd612356449fb050cdf7dd1be48e4f87eb95b
+parent 377810ff245c819b30e1e8d55644a85134c8ef6e
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329951977 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329952022 -0800
+
+    bug 13928: more description to migrateVm api
+    status 13928: resolved fixed
+    Reviewed-by: Jessica Tomechak
+
+:100644 100644 a51604e99d2b2bd7d545fb323bf45fbe67e6ab83 df612696b5cf888262a4e19aee0dfb4682cc15ec M	api/src/com/cloud/api/commands/MigrateVMCmd.java

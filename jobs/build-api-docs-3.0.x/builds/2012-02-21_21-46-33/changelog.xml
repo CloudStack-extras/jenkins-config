@@ -1,0 +1,16 @@
+Changes in branch origin/3.0.x, between f935fcbb0db2d2ab7c9ad4e4477e952802559350 and 67986a5454d0ed37b9ed0f148a0009454942b37a
+commit 67986a5454d0ed37b9ed0f148a0009454942b37a
+tree 97f6a3b33ce595410741626fd188db05148ebdc6
+parent f935fcbb0db2d2ab7c9ad4e4477e952802559350
+author Murali reddy <Murali.Reddy@citrix.com> 1329842077 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1329878937 +0530
+
+    bug 13855: F5 - Hold time paramS for sticky policies are not getting programmed in F5
+    Reviewed-by:Sam
+    status 13855: resolved fixed
+    
+      - configuring unique persistence profile for each LB rule with sticky method applied
+      - removing source based sticky method for source based LB method which is not supported by F5
+
+:100644 100644 27745aedd2f1faaf02ba5763c8396cf875b60763 e904117919de8b6f542e274a59a1d08f0afafbcb M	core/src/com/cloud/network/resource/F5BigIpResource.java
+:100644 100644 676f2b53c8ab492e550041da254c72ba56835280 0590298810c71e05a45e8b2b1648918ce0146e25 M	server/src/com/cloud/network/element/F5ExternalLoadBalancerElement.java

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between dfd93a5f3cc87eefc9c5b7b8787eeafcb77df4e9 and c2b8d57796fd7d2733838fd769331f8efde82e20
+commit c2b8d57796fd7d2733838fd769331f8efde82e20
+tree f86aa88091416f10f74da0e7b9a25cac27e994a6
+parent dfd93a5f3cc87eefc9c5b7b8787eeafcb77df4e9
+author Jessica Wang <jessica@cloud.com> 1329936842 -0800
+committer Jessica Wang <jessica@cloud.com> 1329936842 -0800
+
+    bug 13923: volume page - make download volume action available on volumes whose hypervisor is OVM.
+
+:100644 100644 bb6b6c63855fb0a2c08863740a1f6dd2152765f7 ac31cc0417a754c1cc6a3a3345736a89784de739 M	ui/scripts/storage.js

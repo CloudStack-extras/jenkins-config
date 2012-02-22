@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 67986a5454d0ed37b9ed0f148a0009454942b37a and 3215e94f9ad4ad51fcb0f66f83d75354e11ed108
+commit 3215e94f9ad4ad51fcb0f66f83d75354e11ed108
+tree cd19f553f91348c2fb198b2d3d1e30adbc591c5f
+parent 67986a5454d0ed37b9ed0f148a0009454942b37a
+author abhi <abhinandan.prateek@citrix.com> 1329880294 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1329880294 +0530
+
+    bug 13884: fixing spell vm.destroy.forcestop
+    reviewed-by: kishan
+
+:100755 100755 6a071bb47903fb9ca78163fe71cddc38de9e442a adea2ad2acd90c460dde326a787ab847c510980d M	server/src/com/cloud/configuration/Config.java

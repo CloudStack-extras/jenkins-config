@@ -1,0 +1,24 @@
+Changes in branch origin/3.0.x, between 05aa456114d95b571bf9253bc39b5d19b8b49f37 and 2610998bce6a0f0a1690051da69dbb9caf74abb5
+commit 2610998bce6a0f0a1690051da69dbb9caf74abb5
+tree c7d957381ffb5fce353f0d3342801cb156711b3e
+parent bebacfb6bb905d780acaa9beb885f7bb4db69894
+author Jessica Wang <jessica@cloud.com> 1329881131 -0800
+committer Jessica Wang <jessica@cloud.com> 1329881131 -0800
+
+    bug 13665: Quick Install wizard - pick the network offering that has SecurityGroups service (but no LB, StaticNat). Enable SecurityGroups provider before creating a guest work. [reviewed-by: Brian]
+
+:100644 100644 e394e54ac0187895d61e96b2bb4a1df9551667ac 902cb720a2a5ce7ae1d50f6bbfe056435fef40e2 M	ui/scripts/installWizard.js
+:100644 100644 d64c66ebedb5f9a71ac9fc4977d199f38ad3a8d6 fc812dd34674db9fd36281b5d947bfa540d09f2f M	ui/scripts/zoneWizard.js
+
+commit bebacfb6bb905d780acaa9beb885f7bb4db69894
+tree b0fc45c6f23542df409f817945fb602d71c79a45
+parent 05aa456114d95b571bf9253bc39b5d19b8b49f37
+author Jessica Wang <jessica@cloud.com> 1329872464 -0800
+committer Jessica Wang <jessica@cloud.com> 1329881040 -0800
+
+    localize new error message (for add guest network in multiple guest traffic types zone). [reviewed-by: Brian]
+
+:100644 100644 7671e0e2c202e96a5c13953a1cebf08a198f5d1a 66cd415b0e57e8fb42c41363c45eb40e24383791 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 2bb4dc10cd0cde31deeac560217d723a689e9e47 5eb8fcd8a22a8223b474b1b358748f860412455e M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 059c91903dfc5ee70e3726818f385ca9d29579d0 59dfa4dd203e2d450935dedf62bf72d9d0b566d0 M	ui/index.jsp
+:100644 100644 7c9b62e3bac934ad98cf4071e1563c1b95d0c91c a2c82dcd5b63507f4464c91e82e7f20b53dd769b M	ui/scripts/system.js

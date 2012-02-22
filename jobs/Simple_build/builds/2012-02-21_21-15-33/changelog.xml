@@ -1,0 +1,240 @@
+Changes in branch origin/master, between ebfdd83d63704c74eb1905de026122eafc1382dc and 3dcfb9b250a7e28ed8fbae6fbccfa786b0776e76
+commit 3dcfb9b250a7e28ed8fbae6fbccfa786b0776e76
+tree 7a09becc2b0a58b65203d7e12c8c7e0d93a1c41d
+parent 5f1d3903119090d1a4dece2d225653931ffe3731
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329875409 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329876164 -0800
+
+    bug 13919: do includingRemoved Nic search when remove firewall rules during the vm expunge
+    status 13919: resolved fixed
+    Reviewed-by: Sheng Yang
+
+:100644 100644 859144f775fe1ddfd78cfb0ff43e0d18bb21528e 1d3d38c86c6ab1951a723dab724d0a0d086bb3bb M	api/src/com/cloud/api/commands/CreateIpForwardingRuleCmd.java
+:100644 100644 e064c5bdec4d5f1ec1697637ffdae76ac6fba82d 692f341845a15ab116125bbf36b58319df20dec4 M	api/src/com/cloud/api/commands/ListIpForwardingRulesCmd.java
+:100644 100644 55439632be32a5e83802d3ca4f607c87d76bd1a1 c91b1263bbe0306f29a7a4885989cef8b06bc14f M	api/src/com/cloud/network/rules/RulesService.java
+:100755 100755 070e6a2b6114031438f2a8bce5f5bba4c9e2539a f0a4ae690bb093c877889b29dd71deac3adadb30 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 4d1cb113f350175c5f4895f5be303492aefe905e 3b3e6a1277b1fc2d74e591d23d140bdbc39a5e09 M	server/src/com/cloud/network/rules/RulesManager.java
+:100755 100755 3845840484265cfebad86afeb5cc686b7a4a6c67 a8fb6894d6100661840e754807a2c4bbe9818e2d M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+
+commit 5f1d3903119090d1a4dece2d225653931ffe3731
+tree b78ea8e55c80b117dccf6f2c8a5bf870a577ac6b
+parent 9cd8de41808c28416503a85cb54cc7c7b1323816
+author prachi <prachi@cloud.com> 1329871613 -0800
+committer prachi <prachi@cloud.com> 1329873367 -0800
+
+    Bug 13224 - Network Usage - Netscaler - External device is being queried multiple times (up to 8 times) whenever the Network Usage task is run.
+    
+    Reviewed-by: Kishan
+    
+    Changes:
+    - Separated out the External Network Usage task from the ExternalLBDeviceMgr because ExternalLbDeviceMgrImpl :: start() was getting multiple times during management server satrtup. The reason for this is that this is the baseclass for F5 and NetScalarElement.
+    - This caused us to schedule the ExternalNetworkUsageTask multiple times
+    - Also we have LBRulesMgr calling this ExternalLbDeviceMgrImpl  by creating an instance of this class which is declared abstract
+    - Hence having a separate implementation to manage the network usage stats should solve this.
+
+:100755 100755 5ae6226fd5b460cb4e203447e593041bbf87164b 6f0b0f073671a6ac2570babc32c06f10c13db42c M	server/src/com/cloud/configuration/DefaultComponentLibrary.java
+:100644 100644 075e94b21a392ecba6526c20dad9457131797add 6614d8455d7d1136d57b49c038a57129cad75fc6 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManager.java
+:100644 100644 86822b781c2e11b83d65e3057302701eaa3aaa05 9a05e575dc9ec9241da8aa8a3fe5935b814eda68 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java
+:000000 100644 0000000000000000000000000000000000000000 0d75d43998477cfb0da4a4af2b6700a044df6b19 A	server/src/com/cloud/network/ExternalLoadBalancerUsageManager.java
+:000000 100644 0000000000000000000000000000000000000000 488f64aaac351276769fd94eb6e49dffb0551a0a A	server/src/com/cloud/network/ExternalLoadBalancerUsageManagerImpl.java
+:100755 100755 3ea045dfbee77c5c0a79ad345bc6aeaf2f7f0574 ffbb35d329cac8b5d476d029a55d91c1f83a877d M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+
+commit 9cd8de41808c28416503a85cb54cc7c7b1323816
+tree 3a3e614e31f0352b564573b8f2bd411c4ee80dc3
+parent 0a06b7233732a97bec2b090d7591908c38907b7a
+author Jessica Wang <jessica@cloud.com> 1329872882 -0800
+committer Jessica Wang <jessica@cloud.com> 1329872882 -0800
+
+    localize new error message (for add guest network in multiple guest traffic types zone).
+
+:100644 100644 55bb04925a90508a95aa2c1df16d976c4af3b83a 3262e1c7206833f809aeefbfffc414caf240761c M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 2bb4dc10cd0cde31deeac560217d723a689e9e47 5eb8fcd8a22a8223b474b1b358748f860412455e M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 1fafa96598ea0a32944b6a7a85b39aace259d771 c87b699b5c29390f69534bf2e1f9e98d3ea62908 M	ui/index.jsp
+:100644 100644 3adc88539403718d23b7dcf98e39c3a3884232c9 91103df0e706b03f869e5280ca3c03ad7a09a32a M	ui/scripts/system.js
+
+commit 0a06b7233732a97bec2b090d7591908c38907b7a
+tree 7180cc598a749f4110ab2004512987622351611c
+parent 5b387c46ecc2c0ba177e04145e70374749bd91f1
+author Jessica Wang <jessica@cloud.com> 1329870243 -0800
+committer Jessica Wang <jessica@cloud.com> 1329870243 -0800
+
+    IP Address page - iselastic field has been renamed to issystem at server-side. Here is related UI change.
+
+:100644 100644 d78266ff58c6beb9167a695140547c8b3021ba5c 1590d9f44fcb1d1dfc927cb395044c1dd2f00c31 M	ui/scripts/network.js
+
+commit 5b387c46ecc2c0ba177e04145e70374749bd91f1
+tree 5f7cc20e8ded08effe7b7f7aa8c2d2d81d183ee7
+parent 90f9f7b47a0b2caa622e1291c5d705e0cfd7396d
+author Edison Su <Edison.Su@citrix.com> 1329869722 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329870169 -0800
+
+    bug 13910: release cpu/memory after expunged
+    status 13910: resolved fixed
+    Reviewed-by: prachi
+
+:100755 100755 7563a0ebfa9b52888cd85d0b2cdb4d654a3cf1d7 5f6dae15516922155689381e2c7c5754fe21939b M	server/src/com/cloud/capacity/CapacityManagerImpl.java
+
+commit 90f9f7b47a0b2caa622e1291c5d705e0cfd7396d
+tree 19dfe6f7209ee91ff21aaf6578846c5aef437f61
+parent 796a2a3ac8d1d348279bfb7b9bc96a2e18707944
+author Brian Federle <brian.federle@citrix.com> 1329870034 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329870044 -0800
+
+    UI: Browser widget fix
+    
+    Fix elems.undefined error, which happens when destroyed panel
+    continues to animate.
+    
+    -- This happened particularly in the domain section, when clicking
+    to/from another section while the details panel was sliding in.
+
+:100644 100644 53e53ccfe783bcf631824e72b6b13bcff12d2d36 31d900379c4630d3acbf9d93ec9e127f7bd8126c M	ui/scripts/ui/widgets/cloudBrowser.js
+
+commit 796a2a3ac8d1d348279bfb7b9bc96a2e18707944
+tree 5f6322d6e0202b332988dcfdb3f993e2270fb235
+parent ab4b5077c2b6fbf773fc60b39df890f332db9c5c
+author Brian Federle <brian.federle@citrix.com> 1329869522 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329870044 -0800
+
+    Use newer format for addPanel for nav items
+
+:100644 100644 b869f337bb1d9e05a81d5d8e4705fa8860e4f99c 1f39fcc0a28324fa568209863272054f29050308 M	ui/scripts/ui/core.js
+
+commit ab4b5077c2b6fbf773fc60b39df890f332db9c5c
+tree a3aa7b3866edb0b7c5523a33d297f45724ae8994
+parent bb2be9cf42c1c67efea439fb7404aea465f47dd6
+author frank <frank.zhang@citrix.com> 1329864985 -0800
+committer frank <frank.zhang@citrix.com> 1329869373 -0800
+
+    Bug 13895 - OVM zone z1 hosts went to Alert state, VMs in stopped state and stopping state
+    
+    mark VM as stopped when can not get its details
+    reviewed-by: edison
+
+:100755 100755 b7ab51e21f145da5f7e73eeb5b9735cc020aeaae 8782de9e8bedcf9e71cb03f2787b87a4183aaf40 M	ovm/src/com/cloud/ovm/hypervisor/OvmResourceBase.java
+
+commit bb2be9cf42c1c67efea439fb7404aea465f47dd6
+tree 59c1bbc99b99263d30f11af840eaaa6385b0a15d
+parent de9e9c8cf8bd486b8dd2378fa002be3785670069
+author frank <frank.zhang@citrix.com> 1329863815 -0800
+committer frank <frank.zhang@citrix.com> 1329869368 -0800
+
+    Bug 13895 - OVM zone z1 hosts went to Alert state, VMs in stopped state and stopping state
+    
+    return VM in Error if it is no longer on primary storage
+    reviewed-by: edison
+
+:100755 100755 910eff24e4da9d32880e77348d147e24cba66832 10ae9760918da4fc915f7ef14cdf33e3a5e48961 M	ovm/scripts/vm/hypervisor/ovm/OvmHostModule.py
+
+commit de9e9c8cf8bd486b8dd2378fa002be3785670069
+tree 225d7fbd8a43d750348ece34e4162727c024cd9d
+parent 841f19ed8057d7d648ba2b15681a0f2b17d2c343
+author frank <frank.zhang@citrix.com> 1329868430 -0800
+committer frank <frank.zhang@citrix.com> 1329869341 -0800
+
+    Bug 13893 - OVM volume migration of detached VM data disk or detached data disk fail (edit
+    
+    status 13893: resolved fixed
+    reviewed-by: edison
+
+:100755 100755 06cf38054ee6a58536ba67e181b9bb85594d1081 2da5312803984a33cfa89df0c1b81b1b71bb3a30 M	ovm/scripts/vm/hypervisor/ovm/OvmStoragePoolModule.py
+
+commit 841f19ed8057d7d648ba2b15681a0f2b17d2c343
+tree 66031f5df9e9160fd5c6e7253a15e4310af68a4e
+parent e45a0491f8d6db4ebcd85224ed9f893920cb4f13
+author Jessica Wang <jessica@cloud.com> 1329868522 -0800
+committer Jessica Wang <jessica@cloud.com> 1329868522 -0800
+
+    system page - create guest network -  in particular physicalNetworks when there are more than 1 physical network in the zone with Guest traffic type, call listNetworkOfferings&tags=<physicalNetworkTags> to populate network offerings dropdown.
+
+:100644 100644 8c83d93365419d46bf48e943dead291e0bf8f8ad 3adc88539403718d23b7dcf98e39c3a3884232c9 M	ui/scripts/system.js
+
+commit e45a0491f8d6db4ebcd85224ed9f893920cb4f13
+tree a7040e5a8b8bac85af497d73b9a1b894b00f18ca
+parent fb13711d7efa4620d506a6b8f5da2786b8093f61
+author Brian Federle <brian.federle@citrix.com> 1329867537 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329867641 -0800
+
+    bug 13918
+    
+    Don't show VPN actions if IP's network's offering doesn't support VPN
+
+:100644 100644 18c5aefe6526404b8b6e19907f8d09f52fadfc1d d78266ff58c6beb9167a695140547c8b3021ba5c M	ui/scripts/network.js
+
+commit fb13711d7efa4620d506a6b8f5da2786b8093f61
+tree 7a0877f1a5788d541ddcda7aab84295b3c3afd73
+parent c1734bb0f5217f38153d9f3ce91e84ae8838ec97
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329867133 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329867589 -0800
+
+    Changed isElastic to isSystem for the publicIpAddress assigned during the vm deployment in EIP enabled network
+    Reviewed-by: Chiradeep
+
+:100755 100755 4ed625c40f774c391bde9c5b3a3f2794b1364287 665bfac952791976678f843cdcdb9a71aa6253ed M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 0617aef844a82de28b98a65b29fdf5108acd8150 b78c16ead2dfbe7d9e3a1e6ed7eb8b49656c5eb0 M	api/src/com/cloud/api/response/IPAddressResponse.java
+:100644 100644 e4eefe89d6b26e5ea8f00db2537e4c3840dbe3d4 d60a43537b561fc24563dc755af9dd6b9faded1b M	api/src/com/cloud/network/IpAddress.java
+:100755 100755 bbb102c6f46a8d2b62342653853ad491810e8f01 4d7e6b681925dcd30456283afa5a286392b6eaa1 M	api/src/com/cloud/network/NetworkService.java
+:100644 100644 d717233e651b6941fa332babffe22b4f5d1fa20f 24d3801e4ac30d67ca2aefe16aa8c5350ef19e63 M	core/src/com/cloud/event/UsageEventVO.java
+:100755 100755 b55273c1e11bbdbc045c8a72b01bac6134f83b2e 071479b71fbbe05a75a31a909d196b5d8c2fa300 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 968c7792d62dd99bb85c638b72abdc350e0e9794 0e217b6e2f0023de949b5335da4f4f34d412605a M	server/src/com/cloud/api/commands/GetUsageRecordsCmd.java
+:100755 100755 d9c94dab2f32f3191f29197a93bff31aa27bf8b0 57cbe8ed28b05d8739334d09e7f22d0a93275fce M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 db0aa8b8060835eafa8145f83e0f2351c768e431 cc72aef50ac3a383f487d70fd4a39c264a51fece M	server/src/com/cloud/network/IPAddressVO.java
+:100755 100755 3948b3045d3441a295e0fc74fa48f86fe3079bba 6cff9ee8654998e827353cc1695f94ffe3b063f9 M	server/src/com/cloud/network/NetworkManager.java
+:100755 100755 7c962c4ca67bf919b396e23cc185619af5b595e0 9d4cd3d61b34b22df23abf22e86dd84c56f03716 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 91e1eea453feb234da0b8b1b12a218c63de37796 473764b27917d7abb1adfe3e5a4383a980edf0bc M	server/src/com/cloud/network/addr/PublicIp.java
+:100755 100755 eb897ca632ae5dd255ecd6b1052619b1d460fff0 3f5678bad897cd2fcec339caf49ae48fe358086b M	server/src/com/cloud/network/dao/IPAddressDaoImpl.java
+:100755 100755 21efb5923faf864a7d8b1adb43ed2da543d20cad 3ea045dfbee77c5c0a79ad345bc6aeaf2f7f0574 M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+:100644 100644 eee213785b2661d716aa1eac791306b6f7bb5c65 4d1cb113f350175c5f4895f5be303492aefe905e M	server/src/com/cloud/network/rules/RulesManager.java
+:100755 100755 af5a70086bafbb348c85b30a7259e86ee9aee06e 3845840484265cfebad86afeb5cc686b7a4a6c67 M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+:100644 100644 6f1aed58273af64750229e180d015a3342d7ecde 9ad62ba624d1bd9ad8a4c8ff4c04afbcf50a1673 M	server/src/com/cloud/server/api/response/UsageRecordResponse.java
+:100644 100644 cc6375a36265c0e56c3cfc927f262e19d6903942 478981b1b729a888eb8157aed5a41449dbd0542a M	server/src/com/cloud/usage/UsageIPAddressVO.java
+:100644 100644 29145ec49a4b5987d32e1a59237b062a48eda0aa aeac0da44a80e8ae9035762bff076aaace57413a M	server/src/com/cloud/usage/dao/UsageIPAddressDaoImpl.java
+:100755 100755 b359c8d325a8755f45b9d2d2d9b26617313daa06 d31b62d2c27061ffc9149c032a38c4892478ff1a M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100755 100755 50c130e7c79a8557f5066e63bbca7b66fc133087 2a2470a30af3c7830f46d1766bbc9fa9868b07da M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+:100644 100644 2056005c4f8537ef59881e7d8ae41d587d59efea b472699c70a25d5cedbb16f8d730057c3d9f2ac6 M	setup/db/create-schema-premium.sql
+:100755 100755 44cb8ca3f11b25e7bbdc521f196d22be9d91e4f8 875525ddc4348d1ca7fbe6a1d9cda13047dabb2c M	setup/db/create-schema.sql
+:100644 100644 b6f59b4a993e3b2c3f2bf9709d77f01330645f83 0879b22cb05f894be13b2f351097b992d0775e41 M	usage/src/com/cloud/usage/UsageManagerImpl.java
+:100644 100644 0eb30676b5b0835cc4992660c308754876259c97 309fa087d957e6b35ad5f3e8066cc7bfd8adc9bb M	usage/src/com/cloud/usage/parser/IPAddressUsageParser.java
+
+commit c1734bb0f5217f38153d9f3ce91e84ae8838ec97
+tree eff0d369a0843f5fc7f3a3454bd3773deb30b0fc
+parent 82bf5079db45c9d9b47ec1cc54c4f8f8d79e3611
+author Sheng Yang <sheng.yang@cloud.com> 1329864528 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1329866654 -0800
+
+    bug 13915: Fix VirtualRouter get gateway IP when others used as SourceNatServiceProvider
+    
+    status 13915: resolved fixed
+    
+    Reviewed-by: Edison
+
+:100755 100755 fe79cd871d0edc58adf8dbbb54c8b1317e708712 070e6a2b6114031438f2a8bce5f5bba4c9e2539a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit 82bf5079db45c9d9b47ec1cc54c4f8f8d79e3611
+tree b829dcc586b61243f8914dfce0d6f867df4648bd
+parent 97233946cad706547cd3cbbd43f844af6c55bd40
+author Brian Federle <brian.federle@citrix.com> 1329866547 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329866547 -0800
+
+    bug 13828
+    
+    Fix add VM button disappearing if no VMs are present under LB rule
+
+:100644 100644 baf32f8c458d17ae1d642ad6d0ec8261a1f3e41d 44eecef0383709dbde4fe6c8b9aca4d9067dc970 M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 97233946cad706547cd3cbbd43f844af6c55bd40
+tree 5c68c1dd3502b4fc05006872535f0ce0c5aef5d0
+parent ebfdd83d63704c74eb1905de026122eafc1382dc
+author Brian Federle <brian.federle@citrix.com> 1329866032 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329866032 -0800
+
+    bug 13765
+    
+    Properly sync returned sticky fields from the API with the UI form, by
+    dynamically generating createForm fields based on Lb sticky
+    capabilities object; this will keep the required and conditional
+    fields properly up to date with the API requirements.
+
+:100644 100644 a0301060405a174776504af9a3dd29693cd78a7b 55bb04925a90508a95aa2c1df16d976c4af3b83a M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 28d2b9cf4103b7bdaaef823a6e6885c5db11cc44 1fafa96598ea0a32944b6a7a85b39aace259d771 M	ui/index.jsp
+:100644 100644 2e8455a9c237cdfcc21be403a9eaf9507576c3b9 de2710545f8b66133fa30a18ff0ac2d5d82d8f6e M	ui/scripts/lbStickyPolicy.js

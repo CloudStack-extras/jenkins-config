@@ -1,0 +1,17 @@
+Changes in branch origin/master, between 5f1d3903119090d1a4dece2d225653931ffe3731 and 3dcfb9b250a7e28ed8fbae6fbccfa786b0776e76
+commit 3dcfb9b250a7e28ed8fbae6fbccfa786b0776e76
+tree 7a09becc2b0a58b65203d7e12c8c7e0d93a1c41d
+parent 5f1d3903119090d1a4dece2d225653931ffe3731
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329875409 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329876164 -0800
+
+    bug 13919: do includingRemoved Nic search when remove firewall rules during the vm expunge
+    status 13919: resolved fixed
+    Reviewed-by: Sheng Yang
+
+:100644 100644 859144f775fe1ddfd78cfb0ff43e0d18bb21528e 1d3d38c86c6ab1951a723dab724d0a0d086bb3bb M	api/src/com/cloud/api/commands/CreateIpForwardingRuleCmd.java
+:100644 100644 e064c5bdec4d5f1ec1697637ffdae76ac6fba82d 692f341845a15ab116125bbf36b58319df20dec4 M	api/src/com/cloud/api/commands/ListIpForwardingRulesCmd.java
+:100644 100644 55439632be32a5e83802d3ca4f607c87d76bd1a1 c91b1263bbe0306f29a7a4885989cef8b06bc14f M	api/src/com/cloud/network/rules/RulesService.java
+:100755 100755 070e6a2b6114031438f2a8bce5f5bba4c9e2539a f0a4ae690bb093c877889b29dd71deac3adadb30 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 4d1cb113f350175c5f4895f5be303492aefe905e 3b3e6a1277b1fc2d74e591d23d140bdbc39a5e09 M	server/src/com/cloud/network/rules/RulesManager.java
+:100755 100755 3845840484265cfebad86afeb5cc686b7a4a6c67 a8fb6894d6100661840e754807a2c4bbe9818e2d M	server/src/com/cloud/network/rules/RulesManagerImpl.java

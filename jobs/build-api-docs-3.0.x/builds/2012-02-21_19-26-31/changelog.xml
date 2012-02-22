@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 32fdc8a71c8081374db197e74b0e6dfbe0b7a382 and 84fa9de69c63056020e4a0a58d41fe8ce21cdd09
+commit 84fa9de69c63056020e4a0a58d41fe8ce21cdd09
+tree 61f0e3cd4aee795f644ec99d5bf607695e79e9a9
+parent 32fdc8a71c8081374db197e74b0e6dfbe0b7a382
+author Jessica Wang <jessica@cloud.com> 1329870166 -0800
+committer Jessica Wang <jessica@cloud.com> 1329870181 -0800
+
+    IP Address page - iselastic field has been renamed to issystem at server-side. Here is related UI change. [reviewed-by: Brian]
+
+:100644 100644 d78266ff58c6beb9167a695140547c8b3021ba5c 1590d9f44fcb1d1dfc927cb395044c1dd2f00c31 M	ui/scripts/network.js

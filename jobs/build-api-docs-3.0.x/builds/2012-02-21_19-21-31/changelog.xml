@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 46a2570392c5a67c800e3715673a41662217bfa2 and 32fdc8a71c8081374db197e74b0e6dfbe0b7a382
+commit 32fdc8a71c8081374db197e74b0e6dfbe0b7a382
+tree 926dea9500ae77bf84cc72191c2b1a220c105c81
+parent 46a2570392c5a67c800e3715673a41662217bfa2
+author Edison Su <Edison.Su@citrix.com> 1329869722 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329870055 -0800
+
+    bug 13910: release cpu/memory after expunged
+    status 13910: resolved fixed
+    Reviewed-by: prachi
+
+:100755 100755 7563a0ebfa9b52888cd85d0b2cdb4d654a3cf1d7 5f6dae15516922155689381e2c7c5754fe21939b M	server/src/com/cloud/capacity/CapacityManagerImpl.java

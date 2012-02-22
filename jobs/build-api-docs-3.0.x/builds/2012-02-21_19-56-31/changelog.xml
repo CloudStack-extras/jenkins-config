@@ -1,0 +1,23 @@
+Changes in branch origin/3.0.x, between 84fa9de69c63056020e4a0a58d41fe8ce21cdd09 and 93998a9ce60e943e9df9218d7207a753bb183263
+commit 93998a9ce60e943e9df9218d7207a753bb183263
+tree 7574d8dfb944f7899dd0e81417d87234d9a63c8a
+parent 84fa9de69c63056020e4a0a58d41fe8ce21cdd09
+author prachi <prachi@cloud.com> 1329871613 -0800
+committer prachi <prachi@cloud.com> 1329871772 -0800
+
+    Bug 13224 - Network Usage - Netscaler - External device is being queried multiple times (up to 8 times) whenever the Network Usage task is run.
+    
+    Reviewed-by: Kishan
+    
+    Changes:
+    - Separated out the External Network Usage task from the ExternalLBDeviceMgr because ExternalLbDeviceMgrImpl :: start() was getting multiple times during management server satrtup. The reason for this is that this is the baseclass for F5 and NetScalarElement.
+    - This caused us to schedule the ExternalNetworkUsageTask multiple times
+    - Also we have LBRulesMgr calling this ExternalLbDeviceMgrImpl  by creating an instance of this class which is declared abstract
+    - Hence having a separate implementation to manage the network usage stats should solve this.
+
+:100755 100755 5ae6226fd5b460cb4e203447e593041bbf87164b 6f0b0f073671a6ac2570babc32c06f10c13db42c M	server/src/com/cloud/configuration/DefaultComponentLibrary.java
+:100644 100644 075e94b21a392ecba6526c20dad9457131797add 6614d8455d7d1136d57b49c038a57129cad75fc6 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManager.java
+:100644 100644 86822b781c2e11b83d65e3057302701eaa3aaa05 9a05e575dc9ec9241da8aa8a3fe5935b814eda68 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java
+:000000 100644 0000000000000000000000000000000000000000 0d75d43998477cfb0da4a4af2b6700a044df6b19 A	server/src/com/cloud/network/ExternalLoadBalancerUsageManager.java
+:000000 100644 0000000000000000000000000000000000000000 488f64aaac351276769fd94eb6e49dffb0551a0a A	server/src/com/cloud/network/ExternalLoadBalancerUsageManagerImpl.java
+:100755 100755 3ea045dfbee77c5c0a79ad345bc6aeaf2f7f0574 ffbb35d329cac8b5d476d029a55d91c1f83a877d M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java

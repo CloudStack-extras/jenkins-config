@@ -1,0 +1,25 @@
+Changes in branch origin/3.0.x, between 95cca9721e245bf48facd2ace931987b540ea741 and 46a2570392c5a67c800e3715673a41662217bfa2
+commit 46a2570392c5a67c800e3715673a41662217bfa2
+tree 02e659759533a48c9ce0d9c4a61d01fb1bfa9558
+parent f40de2012f4679e1d9579169e02653ad27e08a65
+author Jessica Wang <jessica@cloud.com> 1329868417 -0800
+committer Jessica Wang <jessica@cloud.com> 1329868437 -0800
+
+    system page - create guest network -  in particular physicalNetworks when there are more than 1 physical network in the zone with Guest traffic type, call listNetworkOfferings&tags=<physicalNetworkTags> to populate network offerings dropdown.
+    
+    [reviewed-by: Brian]
+
+:100644 100644 8c83d93365419d46bf48e943dead291e0bf8f8ad 3adc88539403718d23b7dcf98e39c3a3884232c9 M	ui/scripts/system.js
+
+commit f40de2012f4679e1d9579169e02653ad27e08a65
+tree f70c5c7376c2d74ccee93438e1c805438f8cab87
+parent 95cca9721e245bf48facd2ace931987b540ea741
+author frank <frank.zhang@citrix.com> 1329868430 -0800
+committer frank <frank.zhang@citrix.com> 1329868463 -0800
+
+    Bug 13893 - OVM volume migration of detached VM data disk or detached data disk fail (edit
+    
+    status 13893: resolved fixed
+    reviewed-by: edison
+
+:100755 100755 06cf38054ee6a58536ba67e181b9bb85594d1081 2da5312803984a33cfa89df0c1b81b1b71bb3a30 M	ovm/scripts/vm/hypervisor/ovm/OvmStoragePoolModule.py

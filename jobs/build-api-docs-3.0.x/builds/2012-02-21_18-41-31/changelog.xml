@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between 83b64c115834017555d21bd5f82ba4f847bd7331 and 95cca9721e245bf48facd2ace931987b540ea741
+commit 95cca9721e245bf48facd2ace931987b540ea741
+tree dc02976de48b80d3942cf1705b81018fa0d1a73f
+parent 83b64c115834017555d21bd5f82ba4f847bd7331
+author Brian Federle <brian.federle@citrix.com> 1329867672 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329867672 -0800
+
+    bug 13918
+    
+    Don't show VPN actions if IP's network's offering doesn't support VPN
+    
+    status 13918: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 18c5aefe6526404b8b6e19907f8d09f52fadfc1d d78266ff58c6beb9167a695140547c8b3021ba5c M	ui/scripts/network.js

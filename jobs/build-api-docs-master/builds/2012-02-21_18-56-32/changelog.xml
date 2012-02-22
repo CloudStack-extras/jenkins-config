@@ -1,0 +1,10 @@
+Changes in branch origin/master, between e45a0491f8d6db4ebcd85224ed9f893920cb4f13 and 841f19ed8057d7d648ba2b15681a0f2b17d2c343
+commit 841f19ed8057d7d648ba2b15681a0f2b17d2c343
+tree 66031f5df9e9160fd5c6e7253a15e4310af68a4e
+parent e45a0491f8d6db4ebcd85224ed9f893920cb4f13
+author Jessica Wang <jessica@cloud.com> 1329868522 -0800
+committer Jessica Wang <jessica@cloud.com> 1329868522 -0800
+
+    system page - create guest network -  in particular physicalNetworks when there are more than 1 physical network in the zone with Guest traffic type, call listNetworkOfferings&tags=<physicalNetworkTags> to populate network offerings dropdown.
+
+:100644 100644 8c83d93365419d46bf48e943dead291e0bf8f8ad 3adc88539403718d23b7dcf98e39c3a3884232c9 M	ui/scripts/system.js

@@ -1,0 +1,27 @@
+Changes in branch origin/3.0.x, between a027d7420105f3378c0d33c16804d90290f59ce1 and 2c95de987beb046e46782393ab05e76f00fbe0d4
+commit 2c95de987beb046e46782393ab05e76f00fbe0d4
+tree 962d484e5b854902b643eaa9ccc653f4894afa0c
+parent 27fd6beb7338aa8d4e3cf37b392cf618558e40b7
+author Jessica Wang <jessica@cloud.com> 1329951127 -0800
+committer Jessica Wang <jessica@cloud.com> 1329951144 -0800
+
+    Fix for primary storage step prefilter in IE [reviewed-by: Jessica]
+
+:100644 100644 fc812dd34674db9fd36281b5d947bfa540d09f2f 5cbe76c2675989f1f2c2ecaffe1ff3448a0d0b50 M	ui/scripts/zoneWizard.js
+
+commit 27fd6beb7338aa8d4e3cf37b392cf618558e40b7
+tree 0e6f782d57d7fe4f8178338ba7513d5905bf7652
+parent a027d7420105f3378c0d33c16804d90290f59ce1
+author Brian Federle <brian.federle@citrix.com> 1329950908 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329950908 -0800
+
+    Zone wizard: UI: Review step
+    
+    Better final message before launch: make font size larger and
+    centered; include icon
+    
+    reviewed-by: sonny
+
+:100644 100644 66cd415b0e57e8fb42c41363c45eb40e24383791 ff7a39b30e1ed6798682a9aca6d04681d527e638 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 85e66a92884e71906eae2b6886e38bba1bd7d568 109505c7919938a3b1751adee82c358b4d7c8cae M	ui/css/cloudstack3.css
+:100644 100644 59dfa4dd203e2d450935dedf62bf72d9d0b566d0 b3f42709b79315661eb8397e51054859e2f5f917 M	ui/index.jsp

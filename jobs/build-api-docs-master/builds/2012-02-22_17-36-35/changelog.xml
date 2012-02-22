@@ -1,0 +1,10 @@
+Changes in branch origin/master, between b5437d17dbaada3c41f68d7be877290b8822f373 and 194e6a376fb8927c50aaffd5b76cdea660c879dc
+commit 194e6a376fb8927c50aaffd5b76cdea660c879dc
+tree e99cc4d4dd030f8b4dd62300eaafa6f65da93139
+parent b5437d17dbaada3c41f68d7be877290b8822f373
+author Brian Federle <brian.federle@citrix.com> 1329950124 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329950192 -0800
+
+    Fix for primary storage step prefilter in IE
+
+:100644 100644 fc812dd34674db9fd36281b5d947bfa540d09f2f 5cbe76c2675989f1f2c2ecaffe1ff3448a0d0b50 M	ui/scripts/zoneWizard.js

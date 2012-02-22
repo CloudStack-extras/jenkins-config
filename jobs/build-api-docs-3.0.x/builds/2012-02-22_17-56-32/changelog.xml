@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 2c95de987beb046e46782393ab05e76f00fbe0d4 and 377810ff245c819b30e1e8d55644a85134c8ef6e
+commit 377810ff245c819b30e1e8d55644a85134c8ef6e
+tree 621b4999a7c8021c65776f23e610f93bb154fe7d
+parent 2c95de987beb046e46782393ab05e76f00fbe0d4
+author Jessica Wang <jessica@cloud.com> 1329951229 -0800
+committer Jessica Wang <jessica@cloud.com> 1329951229 -0800
+
+    zone wizard - declare item before using it. [reviewed-by: Brian]
+
+:100644 100644 5cbe76c2675989f1f2c2ecaffe1ff3448a0d0b50 01259c2e417ae58388cd73465005a49a65c2dbf7 M	ui/scripts/zoneWizard.js

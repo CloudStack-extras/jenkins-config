@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between bc6a76c719072d01a35258b9738f2f2bf232a599 and 4a45942cd55e5986d17eb3aa0b70bc912721d9ca
+commit 4a45942cd55e5986d17eb3aa0b70bc912721d9ca
+tree 43cb8c729479847605989c4667804e5fddc81812
+parent bc6a76c719072d01a35258b9738f2f2bf232a599
+author Brian Federle <brian.federle@citrix.com> 1329941676 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329941676 -0800
+
+    Domain/tree view UI fix
+    
+    Render details only after panel is fully transitioned in, to prevent
+    lag from server calls while animation is happening.
+    
+    reviewed-by: sonny
+
+:100644 100644 5966304ce12f44b5e5ceaceaa850e76c8ad32351 0845ce1f03b8e1ac51587376640e66243c79b145 M	ui/scripts/ui/widgets/treeView.js

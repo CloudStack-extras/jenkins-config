@@ -1,0 +1,18 @@
+Changes in branch origin/master, between d9419ea388d4d07c60a1cbcf3bd48b2753646484 and ae4d636525ee27a211e33b9271676672286fba28
+commit ae4d636525ee27a211e33b9271676672286fba28
+tree 1d3bff33093c4b9eceda31691b0239ca074844f7
+parent d9419ea388d4d07c60a1cbcf3bd48b2753646484
+author Brian Federle <brian.federle@citrix.com> 1329941053 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329941058 -0800
+
+    bug 13922
+    
+    -Fix enable static NAT never completing if detail view was not visible
+     -- caused by JS error in widget
+    
+    -If detail view isn't visible anymore, don't show post-enable/disable
+     NAT dialog which refreshes list view
+
+:100644 100644 bfe582f5b104a89c92d20b3cec662ab99c9f2186 9c9bf2e6e91bfaae805c4793c7f25943de7d0e7b M	ui/scripts/network.js
+:100644 100644 fefad46eb957d0e4d78bf596d2052453fe967969 d054befb2462a4788eca16516d8e8dcdc8be8d47 M	ui/scripts/sharedFunctions.js
+:100644 100644 cbddc2b3e83ef0f78eda4cf4af314151ec99b974 149a18bcaf6980e016790f181410269e02fb0720 M	ui/scripts/ui/widgets/detailView.js

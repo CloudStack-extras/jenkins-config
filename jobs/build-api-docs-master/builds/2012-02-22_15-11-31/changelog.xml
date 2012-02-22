@@ -1,0 +1,20 @@
+Changes in branch origin/master, between ae4d636525ee27a211e33b9271676672286fba28 and 1bb2f4d1c74e04c2f81825d7ef4f5cfbb9119a4c
+commit 1bb2f4d1c74e04c2f81825d7ef4f5cfbb9119a4c
+tree 744e752f1c95667eb0e699a7d03f97f08fcff60a
+parent 37be6f5c6b4961b3ac917e8993f42651ed5d03a8
+author Jessica Wang <jessica@cloud.com> 1329941465 -0800
+committer Jessica Wang <jessica@cloud.com> 1329941481 -0800
+
+    system page - update embedded object of args.context.physicalNetworks[0] after a physical network is updated.
+
+:100644 100644 f356c5c3d41b38e51c915954e59174c7086c9cd5 bf726b7dbc0850270d2e61e364e260719d19dfb9 M	ui/scripts/system.js
+
+commit 37be6f5c6b4961b3ac917e8993f42651ed5d03a8
+tree d422621a33aee216c48caee354d1725658ddf784
+parent ae4d636525ee27a211e33b9271676672286fba28
+author Brian Federle <brian.federle@citrix.com> 1329941332 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329941332 -0800
+
+    Recurring snapshot UI: fix tab wrapping
+
+:100644 100644 3418c30da3d028583f584f31b7fef626d405b410 85e66a92884e71906eae2b6886e38bba1bd7d568 M	ui/css/cloudstack3.css

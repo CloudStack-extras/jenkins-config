@@ -1,0 +1,13 @@
+Changes in branch origin/master, between ced898859f0cbaf3c1f95012ed67f3dd97bc87be and a181d2f16279890cfac1acefe64e7e8cc5563366
+commit a181d2f16279890cfac1acefe64e7e8cc5563366
+tree 87d57f8dd80bf687e15659c15783522214990a78
+parent ced898859f0cbaf3c1f95012ed67f3dd97bc87be
+author Brian Federle <brian.federle@citrix.com> 1329942146 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329942146 -0800
+
+    Dashboard UI fix
+    
+    For the user dashboard, have events 'view all' button go to the Events
+    list view, as Alerts can only be viewed by admins.
+
+:100644 100644 db4ffeec7da197cd8f8c3222a1e31f98449afad3 9c5b19ccf41dac521715e26d7455de481dcb5bd9 M	ui/scripts/ui-custom/dashboard.js

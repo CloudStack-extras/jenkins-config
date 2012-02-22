@@ -1,0 +1,11 @@
+Changes in branch origin/master, between a181d2f16279890cfac1acefe64e7e8cc5563366 and b7761ec5f8ca447c5f57c7f108daf36b741654df
+commit b7761ec5f8ca447c5f57c7f108daf36b741654df
+tree 86dcbd99c291fbf8033d56455ee0088793651c66
+parent a181d2f16279890cfac1acefe64e7e8cc5563366
+author Jessica Wang <jessica@cloud.com> 1329947989 -0800
+committer Jessica Wang <jessica@cloud.com> 1329947989 -0800
+
+    bug 13813: Network Service Providers should be hidden when Guest traffic type is hidden. Network Service Providers should be shown when Guest traffic type is shown.
+
+:100644 100644 bf726b7dbc0850270d2e61e364e260719d19dfb9 77285aa090f55a349174895e87a9b35fd25dc0a4 M	ui/scripts/system.js
+:100644 100644 c6c331f30a6c1165d160e44df4f2935eb5093bc7 70e0da1f3c93cef4f1d20bb352747eee81ed88e2 M	ui/scripts/ui-custom/zoneChart.js

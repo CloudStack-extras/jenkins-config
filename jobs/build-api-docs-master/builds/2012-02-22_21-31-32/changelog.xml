@@ -1,0 +1,24 @@
+Changes in branch origin/master, between ce41b4860adb768e1f00afb25778c1c76b69435f and f0dbcf6c3385b4ab151d480a98a9c72ffd2c6f52
+commit f0dbcf6c3385b4ab151d480a98a9c72ffd2c6f52
+tree 307f5efc08789324a8e303829692c54142c8e859
+parent 6d68d836f0e87e9c592eb048f6f57ff72bd449ac
+author Jessica Wang <jessica@cloud.com> 1329964230 -0800
+committer Jessica Wang <jessica@cloud.com> 1329964230 -0800
+
+    check in new Japanese localization file.
+
+:100644 100644 9ea1585c4440d37e0d9ec74dfcaeb0eb3c61c94e 44e1ee83c3414fbd37ce75d5e5e5f87ace6d0f20 M	client/WEB-INF/classes/resources/messages_ja.properties
+
+commit 6d68d836f0e87e9c592eb048f6f57ff72bd449ac
+tree eaa531be33df3771b6730e9d230d3485f0ac0f3c
+parent ce41b4860adb768e1f00afb25778c1c76b69435f
+author Jessica Wang <jessica@cloud.com> 1329964175 -0800
+committer Jessica Wang <jessica@cloud.com> 1329964192 -0800
+
+    Revert "bug 13924: IP Address page - Static NAT IP always support "Firewall - Port Range" regardless whether network offerings includes Firewall service or not.  [reviewed-by: Brian]"
+    
+    This reverts commit 0d430d0cd810542e4885487b78afccec422360e2.
+    
+    [reviewed-by: Brian]
+
+:100644 100644 68d95dce908546615f847feadcf6f80bd3c9381b bb8c000308eddef7e2dc604dfac0b713a6b9ad08 M	ui/scripts/ui-custom/ipRules.js

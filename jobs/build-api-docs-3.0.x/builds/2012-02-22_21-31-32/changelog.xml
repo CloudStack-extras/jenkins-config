@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between f495aab42d32c774284c50727959f67a8387f38c and bdbcf0e92e37992a26e84824f31dcb347de9c70c
+commit bdbcf0e92e37992a26e84824f31dcb347de9c70c
+tree 3128558c69412a4bc8b2b536071f7540388aadeb
+parent f495aab42d32c774284c50727959f67a8387f38c
+author Jessica Wang <jessica@cloud.com> 1329964075 -0800
+committer Jessica Wang <jessica@cloud.com> 1329964075 -0800
+
+    check in new Japanese localization file.  [reviewed-by: Brian]
+
+:100644 100644 9ea1585c4440d37e0d9ec74dfcaeb0eb3c61c94e 44e1ee83c3414fbd37ce75d5e5e5f87ace6d0f20 M	client/WEB-INF/classes/resources/messages_ja.properties

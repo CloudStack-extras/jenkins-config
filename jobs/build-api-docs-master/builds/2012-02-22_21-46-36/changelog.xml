@@ -1,0 +1,27 @@
+Changes in branch origin/master, between f0dbcf6c3385b4ab151d480a98a9c72ffd2c6f52 and 37b2f5201447e7d32a905df886229a628da15cf8
+commit 37b2f5201447e7d32a905df886229a628da15cf8
+tree f5d5b69d0616924429b9e0ab922a0517cd3c1705
+parent 981c0a5b2a9e2e9dc5403665dbe46a40bb8abef3
+author anthony <anthony@cloud.com> 1329964746 -0800
+committer anthony <anthony@cloud.com> 1329964906 -0800
+
+    bug 13603: in XenServer 6.0, qemu-dm-wrapper listens on local host by fault
+    
+    status 13603: resolved fixed
+    
+    reviewed-by: edison
+
+:100644 100644 a3c1f91e31952fd3a7a13015607c8ac934308b33 344b4d3d5715a4aaca4d021f44fdbd42c74228d2 M	scripts/vm/hypervisor/xenserver/xenserver60/patch
+:000000 100755 0000000000000000000000000000000000000000 1ebdbaa46f1fb80b68b4f7125f98a642640f3be0 A	scripts/vm/hypervisor/xenserver/xenserver60/qemu-dm-wrapper
+
+commit 981c0a5b2a9e2e9dc5403665dbe46a40bb8abef3
+tree 972360f70a6805fada1f673f17a8b14af6682e2f
+parent f0dbcf6c3385b4ab151d480a98a9c72ffd2c6f52
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329965113 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329965164 -0800
+
+    bug 13924: default Firewall provider to Juniper when Juniper is a provider for Pf/StaticNat or source nat service
+    status 13924: resolved fixed
+    reviewed-by: Will Chan
+
+:100755 100755 d293ca809b6eafcfe3fdd75a0ad9beee514535fe 5b6526ff386f9a301a2a10b81e45088dd2032e96 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java

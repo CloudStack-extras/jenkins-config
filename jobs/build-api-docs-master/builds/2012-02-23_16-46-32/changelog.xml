@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 4ff867cbcd1f5951288033955d88468dff908764 and f29577dbd584116397298814b1d972f6699869c3
+commit f29577dbd584116397298814b1d972f6699869c3
+tree 9893138e08dc78e0e99d28c7ec1acd3640f127ed
+parent 4ff867cbcd1f5951288033955d88468dff908764
+author Brian Federle <brian.federle@citrix.com> 1330033618 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330033637 -0800
+
+    bug 13965
+    
+    Remove listPhysicalNetworks API altogether from network step
+
+:100644 100644 018d0c57058123124a0d721fd179e1325de45d3e 30521f201698d6fd413d01e5c798632b36ac1e48 M	ui/scripts/instances.js

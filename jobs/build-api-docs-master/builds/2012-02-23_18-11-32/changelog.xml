@@ -1,0 +1,30 @@
+Changes in branch origin/master, between 0eb30f26c2c291a37089475155f5e78c1fd0276a and 1c00769aef85ccca37319126cab3e2ff65cbc675
+commit 1c00769aef85ccca37319126cab3e2ff65cbc675
+tree 1a2a46f5b9044b6272fc3799e13b8731610adf83
+parent 666f08d9b470906f0cb45eee8a417ce7f7e90f04
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330038697 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330038827 -0800
+
+    bug 13966: cleanup the vm (stop it on the backend) when work step is Release. Also never retry when finalizeStart failed
+    status 13966: resolved fixed
+    reviewed-by: Alex Huang
+
+:100755 100755 d31b62d2c27061ffc9149c032a38c4892478ff1a 41129272a376767b00752fb92edba973584f4d3f M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100644 100644 94981ca1d6489bf3a64d9d332ea7d00d9fade693 6799bbe392d31ac298feaafa088080cd5c144590 M	server/src/com/cloud/vm/VirtualMachineGuru.java
+:100755 100755 0a7f09433f7a36bce4756062cc920875fe0b4900 674e8d2bb0b40d8264f837ad92b46d72d1e98aee M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+
+commit 666f08d9b470906f0cb45eee8a417ce7f7e90f04
+tree c2835f4bf45b39a4519b282c4df46ddafd9fabc9
+parent 0eb30f26c2c291a37089475155f5e78c1fd0276a
+author Brian Federle <brian.federle@citrix.com> 1330038463 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330038463 -0800
+
+    System, secondary storage UI fixes
+    
+    -Add state field ('resourcestate') to list view
+    
+    -Fix destroy action to have proper UI feedback
+
+:100644 100644 2735ac080d39dc67391fe3e5719580dd44d5efd4 4f84065c1c75f269097e8154a9e8d2f9a8ae726e M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 a5d937fb77be6f6f5ba904968b1d80e0076b5e91 8984a6b611651a81b298a2f08198db698ab48fb1 M	ui/index.jsp
+:100644 100644 958aeda9134a33728c7bab8caf767fe31fd762de 987c4458771fb22576e61b410f01ce760c760301 M	ui/scripts/system.js

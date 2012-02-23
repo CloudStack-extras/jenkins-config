@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between 9053a0ba8ad8e343e58d7c30233fa2594ae899f6 and 6b42e6c69c363d9d145f97323ad0268ef2bc9bc4
+commit 6b42e6c69c363d9d145f97323ad0268ef2bc9bc4
+tree 7625164bad78c14005b5d743e1bcd68702f598a6
+parent 9053a0ba8ad8e343e58d7c30233fa2594ae899f6
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330002177 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330002232 +0530
+
+    The HTTPConnection object times out too soon when status is being polled. This
+    depends on python's internal socket implementation. Added an explicit 3m
+    timeout. Test code MUST NOT induce sleeps longer than 3m, instead check status
+    periodically to keep the HTTPConnection alive.
+    reviewed-by: Chirag Jog <chirag@clogeny.com>
+
+:100644 100644 9b2aa1556586b9f2e7e9df5e6723de2892800a51 4dc90434de79aa8ccbc57c8675658b3fd5d7542a M	tools/testClient/cloudstackConnection.py

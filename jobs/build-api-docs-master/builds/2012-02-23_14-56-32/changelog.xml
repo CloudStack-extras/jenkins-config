@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d19ebf994df359245ff022fa9fa5e46d7f8b3e8c and a61eff27e12a0db20fb3f516cf2218f9c2b403b1
+commit a61eff27e12a0db20fb3f516cf2218f9c2b403b1
+tree 6cbab576b43257dc845ab83e1802580e3f578412
+parent d19ebf994df359245ff022fa9fa5e46d7f8b3e8c
+author Brian Federle <brian.federle@citrix.com> 1330026820 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330026861 -0800
+
+    bug 13953: Fix typo in SRX field
+
+:100644 100644 ae54805a23e7eaf4081002ab3d0163b9dbc6c804 a5d937fb77be6f6f5ba904968b1d80e0076b5e91 M	ui/index.jsp

@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 10c47f4e14a86ef41b0e1a4a3b7e948b2257fcd6 and 953274d1c85bd009af2dfc80c5d679c6cd585d95
+commit 953274d1c85bd009af2dfc80c5d679c6cd585d95
+tree 09e009ca21367cbd27d975d6845efde9f6fef04f
+parent 10c47f4e14a86ef41b0e1a4a3b7e948b2257fcd6
+author Brian Federle <brian.federle@citrix.com> 1330026972 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330026972 -0800
+
+    bug 13953: Fix typo in SRX field
+    
+    status 13953: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 ae54805a23e7eaf4081002ab3d0163b9dbc6c804 a5d937fb77be6f6f5ba904968b1d80e0076b5e91 M	ui/index.jsp

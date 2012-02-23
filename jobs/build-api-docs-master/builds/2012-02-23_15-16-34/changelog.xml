@@ -1,0 +1,13 @@
+Changes in branch origin/master, between a61eff27e12a0db20fb3f516cf2218f9c2b403b1 and 333013edc946884d5dadfc6e2df7f8a47904f835
+commit 333013edc946884d5dadfc6e2df7f8a47904f835
+tree 60eac72a1db5a23351196f3acd6b5a6ed97557fe
+parent a61eff27e12a0db20fb3f516cf2218f9c2b403b1
+author Brian Federle <brian.federle@citrix.com> 1330028087 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330028087 -0800
+
+    bug 13965
+    
+    For regular user, don't do list physical networks API call on instance
+    wizard
+
+:100644 100644 f79df3545e9f4d45f2e41677f2fb61c5e947b287 018d0c57058123124a0d721fd179e1325de45d3e M	ui/scripts/instances.js

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 159268298aefb0573b23709dc86f736c1b12b134 and 92fe7860c715557ea065a5f3b28382df0ced9dca
+commit 92fe7860c715557ea065a5f3b28382df0ced9dca
+tree d8dde1d682790e6f9afa81f1621aed7711430959
+parent 159268298aefb0573b23709dc86f736c1b12b134
+author Edison Su <Edison.Su@citrix.com> 1329959985 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329960084 -0800
+
+    bug 13771: don't send pre snapshot if it's migrated
+    status 13771: resolved fixed
+    Reviewed-by: anthony
+
+:100755 100755 f4c9d1f8ff3796e47838047d097434d36c57c2a8 02677213a8cb0b25e75fbe3b994d7905466b6c63 M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java

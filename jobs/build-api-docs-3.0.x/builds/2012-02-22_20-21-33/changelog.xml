@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 4c3924fec5ae8b147c6cd1afc6bf3e6076df1d1c and 0f7a8c6b0b4a783a6c4f34c982edf20686b82af2
+commit 0f7a8c6b0b4a783a6c4f34c982edf20686b82af2
+tree 5d8c57c277fcd60f645cafbd73030c8e1976911a
+parent 4c3924fec5ae8b147c6cd1afc6bf3e6076df1d1c
+author Edison Su <Edison.Su@citrix.com> 1329959985 -0800
+committer Edison Su <Edison.Su@citrix.com> 1329960040 -0800
+
+    bug 13771: don't send pre snapshot if it's migrated
+    status 13771: resolved fixed
+    Reviewed-by: anthony
+
+:100755 100755 f4c9d1f8ff3796e47838047d097434d36c57c2a8 02677213a8cb0b25e75fbe3b994d7905466b6c63 M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java

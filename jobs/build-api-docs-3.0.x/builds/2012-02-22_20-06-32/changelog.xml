@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between f45d7607ca9cc2881679daa336808ca4e08c40b9 and 4c3924fec5ae8b147c6cd1afc6bf3e6076df1d1c
+commit 4c3924fec5ae8b147c6cd1afc6bf3e6076df1d1c
+tree 486147001b8e2322c965db170dd2714eb57bc69c
+parent f45d7607ca9cc2881679daa336808ca4e08c40b9
+author prachi <prachi@cloud.com> 1329959020 -0800
+committer prachi <prachi@cloud.com> 1329959055 -0800
+
+    Bug 13850 - VM stuck in starting state if it is started during the HA-Work of the corresponding router
+    
+    Reviewed-By: Kelven
+    
+    Changes:
+    - Update the pending work Item to be DONE if we are changing the VM state during fullSync.
+
+:100755 100755 ace5f7559cf1db88222e5d1baa8f2004d70ebaab b9c332e9f8b3c2ff9154a997a240b87fa74af341 M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java

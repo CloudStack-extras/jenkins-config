@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 08ab80c686d9a68bcbbb7feb35044e2dd7a921a8 and f45d7607ca9cc2881679daa336808ca4e08c40b9
+commit f45d7607ca9cc2881679daa336808ca4e08c40b9
+tree 7beaa0df957d05b63d7275dc57d7f5d614efe8f6
+parent 08ab80c686d9a68bcbbb7feb35044e2dd7a921a8
+author Jessica Wang <jessica@cloud.com> 1329958665 -0800
+committer Jessica Wang <jessica@cloud.com> 1329958680 -0800
+
+    bug 13943: deployVM wizard - select network step - get network offerings - pass specifyvlan=false  [reviewed-by: Brian]
+
+:100644 100644 bea5a43f511a6fa8ca2fd88869cf96e102eeaefe f79df3545e9f4d45f2e41677f2fb61c5e947b287 M	ui/scripts/instances.js

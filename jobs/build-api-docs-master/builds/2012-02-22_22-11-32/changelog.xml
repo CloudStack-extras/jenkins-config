@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 09a61af8df10b091e11fd91fe67dec34639a58d4 and e32c4986bdbae0cb8646701554a1d550a5d5e964
+commit e32c4986bdbae0cb8646701554a1d550a5d5e964
+tree 5c363bef29f0e42c3066b5f13fe36a9092acfc52
+parent 09a61af8df10b091e11fd91fe67dec34639a58d4
+author Jessica Wang <jessica@cloud.com> 1329966582 -0800
+committer Jessica Wang <jessica@cloud.com> 1329966582 -0800
+
+    localization files - move translated labels out of new labels section
+
+:100644 100644 363f1d500f02390bf65e463573518166c3ae9784 2735ac080d39dc67391fe3e5719580dd44d5efd4 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 44e1ee83c3414fbd37ce75d5e5e5f87ace6d0f20 6fb747580510f3655f2dd330bf9dd0e36593ccb5 M	client/WEB-INF/classes/resources/messages_ja.properties

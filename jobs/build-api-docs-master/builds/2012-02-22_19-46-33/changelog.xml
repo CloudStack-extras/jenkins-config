@@ -1,0 +1,12 @@
+Changes in branch origin/master, between ebfb3952b3e1686fc45dafc5fdd10c6dddf3db62 and 6d64c71319a44e9479ce89debd688d298d49768c
+commit 6d64c71319a44e9479ce89debd688d298d49768c
+tree 4cc64114f18bf0fa45b64fb9f657cc97cbae725b
+parent ebfb3952b3e1686fc45dafc5fdd10c6dddf3db62
+author Brian Federle <brian.federle@citrix.com> 1329957785 -0800
+committer Brian Federle <brian.federle@citrix.com> 1329957791 -0800
+
+    bug 13940
+    
+    Patch for jQuery UI to fix IE for drag-and-drop
+
+:100755 100755 f9e4f1e840001850557fc95f918af50bc7628a7c 7ec85a5741b151ed2d12d84be3ce2b46330ae9db M	ui/lib/jquery-ui/js/jquery-ui.js

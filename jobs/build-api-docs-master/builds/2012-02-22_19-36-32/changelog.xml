@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 587ed2878f91d11f259eb7ef09be3e1818ef34d2 and ebfb3952b3e1686fc45dafc5fdd10c6dddf3db62
+commit ebfb3952b3e1686fc45dafc5fdd10c6dddf3db62
+tree 6ca1017654d45984763b0f0c443a9c18f6b28eaf
+parent 587ed2878f91d11f259eb7ef09be3e1818ef34d2
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329957532 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329957532 -0800
+
+    2.2.x-3.0 upgrade - column name change
+
+:100755 100755 d276bedb94158ea11fd402f50a79c496dddc7b43 964c3400af1c86f2ffb3e935d870def8e3e1d54a M	setup/db/db/schema-2214to30.sql

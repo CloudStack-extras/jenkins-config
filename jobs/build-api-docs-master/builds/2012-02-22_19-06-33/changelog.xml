@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 7b1e75102ea6e810a52fbcc791ae93405a011ccd and 587ed2878f91d11f259eb7ef09be3e1818ef34d2
+commit 587ed2878f91d11f259eb7ef09be3e1818ef34d2
+tree d899648ef0b07291e3737073f05a8d1b80b914b8
+parent 7b1e75102ea6e810a52fbcc791ae93405a011ccd
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329955715 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1329955775 -0800
+
+    Added isTagged parameter to listNetworkOfferings api. When set to true, it will return offerings with not null tag values
+    Reviewed-by: Jessica Wang
+
+:100755 100755 665bfac952791976678f843cdcdb9a71aa6253ed 49ef2b94ef54afe89d17b1916d897f0a0962c78a M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 98ffe270d91dfc4375e2212fff3c88b6d99ac3cb 533da004414e9d4af6491e2a1290024a7e020409 M	api/src/com/cloud/api/commands/ListNetworkOfferingsCmd.java
+:100755 100755 57cbe8ed28b05d8739334d09e7f22d0a93275fce d293ca809b6eafcfe3fdd75a0ad9beee514535fe M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java

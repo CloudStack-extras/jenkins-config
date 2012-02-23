@@ -1,0 +1,13 @@
+Changes in branch origin/master, between fa4e3e63c033c7b2fc54024ad7161c921456ae3b and 7b1e75102ea6e810a52fbcc791ae93405a011ccd
+commit 7b1e75102ea6e810a52fbcc791ae93405a011ccd
+tree 8c0cdb879e8c76e3812a098d7c23b33d361e30f9
+parent fa4e3e63c033c7b2fc54024ad7161c921456ae3b
+author frank <frank.zhang@citrix.com> 1329953413 -0800
+committer frank <frank.zhang@citrix.com> 1329953464 -0800
+
+    Bug 13875 - Adding a basic network zone fails during launch with "error: listVirtualRouterElements API doesn't return Virtual Router Element Id"
+    
+    status 13875: resolved fixed
+    reviewed-by: Sheng.Yang
+
+:100644 100644 7ebb8cb9235a27adfa77b36be8339c08a12d77a1 b5eb1872e2e17da5f9e32040429d51a6b92458f5 M	debian/cloud-client.install

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between f0fd72ff257d9460c29635a6503978b8d6a3c558 and 9cb7fa9aa0953278ed8018e3dec2cfc2c41e8107
+commit 9cb7fa9aa0953278ed8018e3dec2cfc2c41e8107
+tree ca4a2e16895c12923eb4850ab639a72ad3ab251f
+parent f0fd72ff257d9460c29635a6503978b8d6a3c558
+author Brian Federle <brian.federle@citrix.com> 1330036949 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330036949 -0800
+
+    Fix destroy system VM action
+
+:100644 100644 d8480039efcbd9cd3e6d10ee85803b0161ceacec 958aeda9134a33728c7bab8caf767fe31fd762de M	ui/scripts/system.js

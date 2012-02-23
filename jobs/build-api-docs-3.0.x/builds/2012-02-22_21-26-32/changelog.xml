@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between 651b02d765a77e3c0f1e7ad00079649acc4b0c50 and f495aab42d32c774284c50727959f67a8387f38c
+commit f495aab42d32c774284c50727959f67a8387f38c
+tree 313ebc5366b8d4587f1054b367442a487e33814d
+parent 651b02d765a77e3c0f1e7ad00079649acc4b0c50
+author Jessica Wang <jessica@cloud.com> 1329963918 -0800
+committer Jessica Wang <jessica@cloud.com> 1329963918 -0800
+
+    Revert "bug 13924: IP Address page - Static NAT IP always support "Firewall - Port Range" regardless whether network offerings includes Firewall service or not.  [reviewed-by: Brian]"
+    
+    This reverts commit 0d430d0cd810542e4885487b78afccec422360e2.
+    
+    [reviewed-by: Brian]
+
+:100644 100644 68d95dce908546615f847feadcf6f80bd3c9381b bb8c000308eddef7e2dc604dfac0b713a6b9ad08 M	ui/scripts/ui-custom/ipRules.js

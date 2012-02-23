@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 5315e6614dc1ee9a137cfe0df157cb6929d39ae9 and 8a6e1aa0f9278db40e5e55c3ce2a305d12aa464f
+commit 8a6e1aa0f9278db40e5e55c3ce2a305d12aa464f
+tree ca7adbcf2ee74a8a48779253cdbe754c666f6ebf
+parent 5315e6614dc1ee9a137cfe0df157cb6929d39ae9
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330024479 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330024538 -0800
+
+    bug 13961: always return NetworkUsageAnswer from the networkUsageCommand
+    status 13961: resolved fixed
+    Reviewed-by: Alex Huang
+
+:100644 100644 973bef0894682033fa40361c19faf3f0a270b293 00b84ee29e554b4322729ef7f75c3400340c4245 M	api/src/com/cloud/agent/api/NetworkUsageAnswer.java
+:100644 100644 02f08f02c5d4d01b201cd8f58cb940211373013e 5295de76d908dd982634ee3646becbc38f1c2291 M	core/src/com/cloud/hypervisor/xen/resource/XenServer56Resource.java
+:100644 100644 d2124fc9f5576f5ba4e17fd3e4ebb91eea35dc97 a9f7f61505d2e3e8b24fff18a096317365d22509 M	core/src/com/cloud/hypervisor/xen/resource/XenServerConnectionPool.java
+:100755 100755 f0a4ae690bb093c877889b29dd71deac3adadb30 e6a5f0249afd83ef0e1172860fd867ce15b3dc5a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 76ec25a1bd8f233acc1a14c4271041c25a5385d3 and 5315e6614dc1ee9a137cfe0df157cb6929d39ae9
+commit 5315e6614dc1ee9a137cfe0df157cb6929d39ae9
+tree 45a727752df3b9d2b1b38cb59a6eb6ad9144892d
+parent 76ec25a1bd8f233acc1a14c4271041c25a5385d3
+author Sheng Yang <sheng.yang@cloud.com> 1330023355 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1330023537 -0800
+
+    Fix debug messages in RulesManagerImpl
+    
+    Reviewed-by: Edison
+
+:100755 100755 a8fb6894d6100661840e754807a2c4bbe9818e2d 7a696d1b897a5354551d122cfd19a9aca8f37723 M	server/src/com/cloud/network/rules/RulesManagerImpl.java

@@ -1,0 +1,16 @@
+Changes in branch origin/master, between f29577dbd584116397298814b1d972f6699869c3 and f0fd72ff257d9460c29635a6503978b8d6a3c558
+commit f0fd72ff257d9460c29635a6503978b8d6a3c558
+tree 1e0ec6fc762253b076d62fd6a3d5cdcf82a12de0
+parent f29577dbd584116397298814b1d972f6699869c3
+author frank <frank.zhang@citrix.com> 1330034988 -0800
+committer frank <frank.zhang@citrix.com> 1330035113 -0800
+
+     Bug 13962 - CloudRuntimeException: Failed to update keypairs on disk: cannot create key file null/.ssh/id_rsa
+    
+     using a flag instead of calculating timeout value. The monitor thread may have inaccurate execution time which
+     may cause script forever hang
+    
+     status 13962: resolved fixed
+     reviewed-by: Alex, Edison
+
+:100755 100755 91835cb405c6c23bc2cf23a9ef373738be312755 31da66e4ac00d8436a513f286a72049793094550 M	utils/src/com/cloud/utils/script/Script.java

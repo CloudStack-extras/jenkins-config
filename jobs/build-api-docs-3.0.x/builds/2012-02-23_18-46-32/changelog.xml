@@ -1,0 +1,17 @@
+Changes in branch origin/3.0.x, between a3f3664b97ecbd023a0af2904964e05f4f5ef54d and 3be7325a9fc2e371f5ca09719c61a10c80633e02
+commit 3be7325a9fc2e371f5ca09719c61a10c80633e02
+tree b0548f3227ac7f85244d90a29724afb82971584c
+parent a3f3664b97ecbd023a0af2904964e05f4f5ef54d
+author Brian Federle <brian.federle@citrix.com> 1330040587 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330040587 -0800
+
+    bug 13941
+    
+    Add missing labels for user dashboard
+    
+    status 13941: resolved fixed
+    reviewed-by: sonny
+
+:100644 100644 4f84065c1c75f269097e8154a9e8d2f9a8ae726e b5f59f56c2ad5e8caa3ceb653aa8bbb83b11e022 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 6fb747580510f3655f2dd330bf9dd0e36593ccb5 0085e82b8d2fe9e2f3ce06171e489b2e06717f80 M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 8984a6b611651a81b298a2f08198db698ab48fb1 fb862626fb3f976cae8ed026fb4db26633944427 M	ui/index.jsp

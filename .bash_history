@@ -318,3 +318,24 @@ java -jar war/WEB-INF/jenkins-cli.jar -i identity.key login
 clear
 dir
 ps -ef
+ls -alF
+whoami
+cd workspace/
+dir
+cd Automated\ Test\ Runs/
+ls -alF
+cat README.html 
+cat readme.md
+cat README.md
+ls -alF
+cd setup
+dir
+cd ..
+dir
+ls -alF
+cd tools/testClient/
+dir
+cd automated
+dir
+ls -alF
+vi automated.sh

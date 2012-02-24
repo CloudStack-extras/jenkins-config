@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between 480649f72bbeeff694169fe80638f1d3cec8a680 and 4186d5e1149379bb425947d84a6b2bd961a3a91c
+commit 4186d5e1149379bb425947d84a6b2bd961a3a91c
+tree 3452ea9a2ff063431aff804fc6ef5ee6e1b7c6fe
+parent 480649f72bbeeff694169fe80638f1d3cec8a680
+author frank <frank.zhang@citrix.com> 1330108424 -0800
+committer frank <frank.zhang@citrix.com> 1330108424 -0800
+
+    Bug 13990 - Ubuntu packages install the wrong files
+    
+    contributed by Wido
+    reviewed-by: David N
+    
+    status 13990: resolved fixed
+
+:100644 100644 b5eb1872e2e17da5f9e32040429d51a6b92458f5 4be024dcae4ad405e6d31a9b3f5bb30363fd5f08 M	debian/cloud-client.install

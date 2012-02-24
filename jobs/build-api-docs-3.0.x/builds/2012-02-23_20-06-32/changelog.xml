@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 89f4e9b58f570f2e0d51f2710fbe8363ac4197f4 and b3e2f82a6ceab4979d56ce8e7ef974c2a0666d84
+commit b3e2f82a6ceab4979d56ce8e7ef974c2a0666d84
+tree 2c093745044268d7f692fcd9863dacf256408d4c
+parent 89f4e9b58f570f2e0d51f2710fbe8363ac4197f4
+author Jessica Wang <jessica@cloud.com> 1330045445 -0800
+committer Jessica Wang <jessica@cloud.com> 1330045445 -0800
+
+    bug 13971: network page - create network - pass new API parameter zoneId to listNetworkOfferings API. [Reviewed-by: Brian]
+
+:100644 100644 9c9bf2e6e91bfaae805c4793c7f25943de7d0e7b d2126d0f11e742f324464b641a8bef1a685fd1cf M	ui/scripts/network.js

@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between b3e2f82a6ceab4979d56ce8e7ef974c2a0666d84 and 3a6fa1e9646aae019741a1b1c1aebe96f28f21eb
+commit 3a6fa1e9646aae019741a1b1c1aebe96f28f21eb
+tree 44fb4a7a7b99f51efc45832a7c800f115fb7e911
+parent b3e2f82a6ceab4979d56ce8e7ef974c2a0666d84
+author anthony <anthony@cloud.com> 1330045475 -0800
+committer anthony <anthony@cloud.com> 1330045572 -0800
+
+    bug 13975: use correct hypervsor_version
+    
+    status 13975: resolved fixed
+    
+    reviewed-by : edison
+
+:100755 100755 875525ddc4348d1ca7fbe6a1d9cda13047dabb2c 771e0c7c867615194ec96c35d69e0923d7c22c78 M	setup/db/create-schema.sql

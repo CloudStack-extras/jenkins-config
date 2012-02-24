@@ -1,0 +1,20 @@
+Changes in branch origin/master, between d445f66758b86d80688dbea4f7a25a2652838b03 and 6279ca28d6e274fba980527f39b89e9af2bf588a
+commit 6279ca28d6e274fba980527f39b89e9af2bf588a
+tree 57728206bbcfc486e7a5606b894fa9009a8b9a88
+parent 98553f407636728726dc421809006554b04aabb4
+author Jessica Wang <jessica@cloud.com> 1330046330 -0800
+committer Jessica Wang <jessica@cloud.com> 1330046330 -0800
+
+    bug 13971: network page - create network - pass new API parameter zoneId to listNetworkOfferings API. [Reviewed-by: Brian]
+
+:100644 100644 9c9bf2e6e91bfaae805c4793c7f25943de7d0e7b d2126d0f11e742f324464b641a8bef1a685fd1cf M	ui/scripts/network.js
+
+commit 98553f407636728726dc421809006554b04aabb4
+tree b3a6a71933f668f241893b302a4e938188c35502
+parent d445f66758b86d80688dbea4f7a25a2652838b03
+author Jessica Wang <jessica@cloud.com> 1330046302 -0800
+committer Jessica Wang <jessica@cloud.com> 1330046302 -0800
+
+    bug 13971: deployVM wizard - select network step - pass new API parameter zoneId to listNetworkOfferings API.
+
+:100644 100644 30521f201698d6fd413d01e5c798632b36ac1e48 fae4e7a14e5a23ef31ca14030f519e34e9199a68 M	ui/scripts/instances.js

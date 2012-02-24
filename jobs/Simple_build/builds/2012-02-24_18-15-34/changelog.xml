@@ -1,0 +1,22 @@
+Changes in branch origin/master, between 04a2ff51c4e11dad1b9b24b610e06b65ee6adcf4 and efe4774cb8f5bc5731088ad019787c839927da95
+commit efe4774cb8f5bc5731088ad019787c839927da95
+tree c0e53333d108786bab8f6d9be97ba04c716168f6
+parent 63aeda1a1a19ff5ed4ff520f65e18aa9d5c0d4e8
+author anthony <anthony@cloud.com> 1330124593 -0800
+committer anthony <anthony@cloud.com> 1330124614 -0800
+
+    get fsimage from sp2 for XenServer 5.6 GA
+
+:100755 000000 05e0d041d916d32db1949d763de6e13395127ea4 0000000000000000000000000000000000000000 D	scripts/vm/hypervisor/xenserver/fsimage.so
+:000000 100755 0000000000000000000000000000000000000000 a9f1cf9d5fd7e58cb5fc606ed89715da1a0c6710 A	scripts/vm/hypervisor/xenserver/xenserver56/fsimage.so
+:100644 100644 20f622778a7101648fddeec7f3c99071f7dd5486 ab91d515231611b3079fee6914d57704f497ed02 M	scripts/vm/hypervisor/xenserver/xenserver56/patch
+
+commit 63aeda1a1a19ff5ed4ff520f65e18aa9d5c0d4e8
+tree d934e925fa1bc94d56824d1abe6eff40397e2edf
+parent 04a2ff51c4e11dad1b9b24b610e06b65ee6adcf4
+author Kelven Yang <kelven@cloud.com> 1330118935 -0800
+committer Kelven Yang <kelven@cloud.com> 1330118943 -0800
+
+    bug 13987: a regression  was caused by typo. Reviewed-By:Anthony
+
+:100644 100644 f3dbbda3fea9ba2b72df4c2c2334810d25068042 2e1e1f42d06d13ea611fd7c28c6f31d093fdd864 M	core/src/com/cloud/storage/template/VmdkProcessor.java

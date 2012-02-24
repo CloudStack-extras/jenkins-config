@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 63aeda1a1a19ff5ed4ff520f65e18aa9d5c0d4e8 and efe4774cb8f5bc5731088ad019787c839927da95
+commit efe4774cb8f5bc5731088ad019787c839927da95
+tree c0e53333d108786bab8f6d9be97ba04c716168f6
+parent 63aeda1a1a19ff5ed4ff520f65e18aa9d5c0d4e8
+author anthony <anthony@cloud.com> 1330124593 -0800
+committer anthony <anthony@cloud.com> 1330124614 -0800
+
+    get fsimage from sp2 for XenServer 5.6 GA
+
+:100755 000000 05e0d041d916d32db1949d763de6e13395127ea4 0000000000000000000000000000000000000000 D	scripts/vm/hypervisor/xenserver/fsimage.so
+:000000 100755 0000000000000000000000000000000000000000 a9f1cf9d5fd7e58cb5fc606ed89715da1a0c6710 A	scripts/vm/hypervisor/xenserver/xenserver56/fsimage.so
+:100644 100644 20f622778a7101648fddeec7f3c99071f7dd5486 ab91d515231611b3079fee6914d57704f497ed02 M	scripts/vm/hypervisor/xenserver/xenserver56/patch

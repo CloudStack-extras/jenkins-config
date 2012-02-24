@@ -1,0 +1,12 @@
+Changes in branch origin/master, between ad3018106c8508dad0e790735d5d7b0d73a8339e and 45a3fa31508a65fa44fe73d88c22d5712ecabd79
+commit 45a3fa31508a65fa44fe73d88c22d5712ecabd79
+tree de1d1412cfe898c603c569439dcd86453d53cafd
+parent ad3018106c8508dad0e790735d5d7b0d73a8339e
+author Sheng Yang <sheng.yang@cloud.com> 1328917899 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1330041050 -0800
+
+    bug 12706: Add broadcast address for the network interface
+    
+    status 12706: resolved fixed
+
+:100644 100644 3fdc3f17d9fea99809de17aec1fbad6bc0a269d3 0e2c57764a62998d2a60717516f0d42e8e48b03b M	patches/systemvm/debian/config/root/ipassoc.sh

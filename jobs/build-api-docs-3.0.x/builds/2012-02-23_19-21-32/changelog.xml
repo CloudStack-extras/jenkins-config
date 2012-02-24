@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between 3be7325a9fc2e371f5ca09719c61a10c80633e02 and 3141f62f82a84f639c4f58bab8b81dfec72fce8b
+commit 3141f62f82a84f639c4f58bab8b81dfec72fce8b
+tree 24834bf1e920f0b854ea8c01ccc2f2be46d10bd1
+parent 3be7325a9fc2e371f5ca09719c61a10c80633e02
+author Brian Federle <brian.federle@citrix.com> 1330042691 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330042691 -0800
+
+    bug 13974
+    
+    Fix table not including reorder column when switching filter
+    
+    status 13974: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 f75bde7e265811f32b0a0db59630cba3a96fda4c a93c5c0817bee0051e5a929784712bf95d41c3ec M	ui/scripts/ui/widgets/listView.js

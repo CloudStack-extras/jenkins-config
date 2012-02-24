@@ -1,0 +1,13 @@
+Changes in branch origin/master, between b9cd78d77496cba1ae550860c04164d31cc9c804 and 6ba669bd51b7416bd5d2e31e8971a99a970bce3e
+commit 6ba669bd51b7416bd5d2e31e8971a99a970bce3e
+tree c5fd4a5e8e22c4690942e8896b0cd462be34468a
+parent b9cd78d77496cba1ae550860c04164d31cc9c804
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330042907 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330044770 -0800
+
+    bug 13971: return only offerings with matching tags when zoneId is passed in and corresponding zone has more than 1 physical network
+    status 13971: resolved fixed
+    Reviewed-by: Prachi Damle
+
+:100755 100755 5b6526ff386f9a301a2a10b81e45088dd2032e96 ddd7b7c64eaeeb44ad715cc4df51af1da5b65480 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100644 100644 6334871d801b9a3d423c191d55dd2b22a92c0dc7 17b5feb5680736755c7bc75f20e0dbb9c63dcbbc M	server/src/com/cloud/network/dao/PhysicalNetworkDaoImpl.java

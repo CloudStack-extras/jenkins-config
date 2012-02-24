@@ -4,7 +4,6 @@
     <hudson.model.CauseAction>
       <causes>
         <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
-        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
       </causes>
     </hudson.model.CauseAction>
     <hudson.triggers.SCMTrigger_-BuildAction>
@@ -16,7 +15,7 @@
           <string>origin/3.0.x</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>70baeeb5f05ee20f7d65480e9ad3741736350c74</sha1>
+              <sha1>3865be80ca9cbd68cc663dfefe2d148530694961</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -24,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>68</hudsonBuildNumber>
+            <hudsonBuildNumber>168</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -47,9 +46,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>68</number>
+  <number>168</number>
   <result>SUCCESS</result>
-  <duration>185162</duration>
+  <duration>205341</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -59,6 +58,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>kelven</string>
+    <string>Alena.Prokharchyk</string>
   </culprits>
 </build>

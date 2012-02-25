@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 6dd6ff25c7276c4167120fe158225bc18f045e0e and 39ac79d64cb2d060bb407a5e9911871172e2a639
+commit 39ac79d64cb2d060bb407a5e9911871172e2a639
+tree 2ecda364cbceac34a38da2fa37234c770640733c
+parent 6dd6ff25c7276c4167120fe158225bc18f045e0e
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330126277 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330126408 -0800
+
+    Clone services map when do provider/service verification during network offering addition.
+    Reviewed-by: Prachi Damle
+
+:100755 100755 80e3820cc4b8556ca8e785fabd3bae081d0be198 9c8547a032a7936331a738f5a0444f518a7db704 M	server/src/com/cloud/network/NetworkManagerImpl.java

@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 880b2886768df38d6a3ac06d4e186f4e746cc8f5 and 496c427ddf6caa52e01fd4571b9cebb7e825a8c9
+commit 496c427ddf6caa52e01fd4571b9cebb7e825a8c9
+tree 28ba185fabd504038d2109ed072bc78e88d37949
+parent 880b2886768df38d6a3ac06d4e186f4e746cc8f5
+author anthony <anthony@cloud.com> 1330127908 -0800
+committer anthony <anthony@cloud.com> 1330128068 -0800
+
+    bug 13955: increase the retry time for checkssh
+    
+    status 13955: resolved fixed
+    
+    reviewed-by : edison
+
+:100755 100755 9078d5ed1ad5beac718e2520c129cd53a7e2f129 2f3ad9094d7871bfdc4cec802d5a0be2564364bd M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java

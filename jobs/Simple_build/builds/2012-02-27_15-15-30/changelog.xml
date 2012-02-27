@@ -1,0 +1,56 @@
+Changes in branch origin/master, between fe2dd99cd3e06cde92aa3736a954a71887e86214 and 53fd3318453b0ee14c1e334370b23f86ed26f374
+commit 53fd3318453b0ee14c1e334370b23f86ed26f374
+tree ae7f81ccb6c430d8601a83a1988944248de78ae0
+parent 1f32d31e7584ddf1e545bc8f1541500509ebc614
+author Brian Federle <brian.federle@citrix.com> 1330368325 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330368325 -0800
+
+    bug 14012
+    
+    Fix typo in shutdown provider message code
+    
+    status 14012: resolved fixed
+    reviewed-by: jessica
+
+:100644 100644 987c4458771fb22576e61b410f01ce760c760301 bad11c2aa6395b5c8e9db922f07ba8fa987f7b6e M	ui/scripts/system.js
+
+commit 1f32d31e7584ddf1e545bc8f1541500509ebc614
+tree a6691d75e5dcb37a7b2831de07aa1f2c0034cc52
+parent 08ef6fba574051a57dc6c63d3a7bfa8b0e462ca1
+author Brian Federle <brian.federle@citrix.com> 1330368122 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330368128 -0800
+
+    bug 14013
+    
+    Decrease height of details container to prevent apply button from
+    being hidden
+
+:100644 100644 8489e94f745965e6dc0fc7ed3862f795abfcca8c 80f80ebdaba84d5d4cc851f24708e8cfeac2f6e0 M	ui/css/cloudstack3.css
+
+commit 08ef6fba574051a57dc6c63d3a7bfa8b0e462ca1
+tree b655060f6d96ee90b423f3d487bdff42faf0922a
+parent c634619f75fc3418ded7b6c80346c75d486ff98d
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330366306 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330367777 -0800
+
+    bug 13860: Added async job types to Account/User Async api commands and more logging.
+    Reviewed-by: Kelven Yang
+
+:100755 100755 e24495726af43a6c206aa600f5dcc415ab7d1ff1 9e25e50207822585db4b0d7af1f757c8a9e8b976 M	api/src/com/cloud/api/commands/DeleteAccountCmd.java
+:100644 100644 a9f663c4928d2a2759fd94e083fb88b1cdd62fe8 7b2f988d83a094368555e375ffc92f4e4225bb80 M	api/src/com/cloud/api/commands/DisableAccountCmd.java
+:100644 100644 021b2d1d93387d1f0e0951f4b3157e70232f6716 e6b53ff797472e54f53b7071d70ca635a1422f64 M	api/src/com/cloud/api/commands/DisableUserCmd.java
+:100644 100644 13be7f357396160643fbe3bc373fa4c51ef1c590 985acf01969d46e80cc5c4496e6dcbdcf78da7d9 M	api/src/com/cloud/api/response/AsyncJobResponse.java
+:100644 100644 9db25c742e9d17712d3ac49e11183df4cf548dcc e8fbab8986a34aba7b9148befcefedc08fad15c2 M	api/src/com/cloud/async/AsyncJob.java
+
+commit c634619f75fc3418ded7b6c80346c75d486ff98d
+tree d159f70865be9487bf80f4470556e509e18257cd
+parent fe2dd99cd3e06cde92aa3736a954a71887e86214
+author Brian Federle <brian.federle@citrix.com> 1330367261 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330367261 -0800
+
+    bug 14011
+    
+    Fix to show install wizard when re-loading the page, so that the EULA
+    is always shown until installation is completed.
+
+:100644 100644 c0dfc431d92f2cd106b73e4fa952a56db68e317a 848665a608e6070449635b5924ea3ebc1a1b1d98 M	ui/scripts/cloudStack.js

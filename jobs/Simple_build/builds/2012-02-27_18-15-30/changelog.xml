@@ -1,0 +1,74 @@
+Changes in branch origin/master, between 53fd3318453b0ee14c1e334370b23f86ed26f374 and aca5f2ed39bdc32fdcc283a1d24e127387b44af5
+commit aca5f2ed39bdc32fdcc283a1d24e127387b44af5
+tree 68ec72de5fe1e3e712d944da1a8950ed3ac719a5
+parent bede50f81ecf9a61059c3c9634739f287718bbca
+author Kelven Yang <kelven@cloud.com> 1330370611 -0800
+committer Kelven Yang <kelven@cloud.com> 1330383934 -0800
+
+    bug 13989: correct the usage about the control IP in VMware resource, new command like GetDomRVersion command is not using the right control IP address under basic zone mode. Reviewed-By: Anthony
+
+:100755 100755 e0e2590f3341f0fac7d7861864eb029c2a9d7ae3 2013843a0d4e6e52e14590bb53adef3a1bc26419 M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java
+
+commit bede50f81ecf9a61059c3c9634739f287718bbca
+tree 36934bb8a328acfd71c73bd26457915cf5ccb3f8
+parent 4ee3a4d5fc37d41bddbb754243b3971ea72c4fb4
+author Kelven Yang <kelven@cloud.com> 1330369822 -0800
+committer Kelven Yang <kelven@cloud.com> 1330383918 -0800
+
+    bug 13989: get domr control IP from NIC table, the old private ip in domain_router table is no longer valid under basic zone configuration. Reviewed-By: Anthony
+
+:100755 100755 3f5eb9b67f6dcd1f92f2731a5e4dfc9e374dbf33 b37c8b5d24f7448cd8be20f019a68d88c46caad2 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit 4ee3a4d5fc37d41bddbb754243b3971ea72c4fb4
+tree edca425d6d1e7aa954852b63d6a9931e3089aeb0
+parent eb7c8a577f7e14b188250b556eb6c14c583a5560
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330381378 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330381378 -0800
+
+    Don't initialize the logger in AsyncJobResponse class
+
+:100644 100644 985acf01969d46e80cc5c4496e6dcbdcf78da7d9 466c3dc42eb98b1448c2cb4999b6fc2379bbc1f6 M	api/src/com/cloud/api/response/AsyncJobResponse.java
+
+commit eb7c8a577f7e14b188250b556eb6c14c583a5560
+tree b2aa514f7c35b05cb3fac9a66e34df7826120c93
+parent 81274c6542c84f7eb64fe99451c58d5a74cb890a
+author anthony <anthony@cloud.com> 1330379949 -0800
+committer anthony <anthony@cloud.com> 1330379949 -0800
+
+    removed unused files
+
+:100755 000000 3a8463e30c50cf686ffdb6b68381f1073528184e 0000000000000000000000000000000000000000 D	scripts/vm/hypervisor/xenserver/xcpserver/nfs.py
+:100644 100644 887ff6a77e79abae2f25fe278afb170a38d7a4f6 74338f76835f5bb21dec61c88a1463e4883fad45 M	scripts/vm/hypervisor/xenserver/xcpserver/patch
+:100755 000000 a9f1cf9d5fd7e58cb5fc606ed89715da1a0c6710 0000000000000000000000000000000000000000 D	scripts/vm/hypervisor/xenserver/xenserver56/fsimage.so
+:100644 100644 ab91d515231611b3079fee6914d57704f497ed02 b06f0ea3d3b369cf9c592d62f0917a0e1e33c9a7 M	scripts/vm/hypervisor/xenserver/xenserver56/patch
+
+commit 81274c6542c84f7eb64fe99451c58d5a74cb890a
+tree f01535270bb8f4760fc15f15af6af939bcba9fc6
+parent 98a925fa4207c3936b2c9299c40636ae8bdc8102
+author Jessica Wang <jessica@cloud.com> 1330375389 -0800
+committer Jessica Wang <jessica@cloud.com> 1330375406 -0800
+
+    Add Network Offering dialog - trigger change event to show/hide fields when the dialog box is opened.
+
+:100644 100644 0de26ed9a116673019d78b7218be402ee6d455dd 7e23b99a68c79c163abfbec7fe295266de805689 M	ui/scripts/configuration.js
+
+commit 98a925fa4207c3936b2c9299c40636ae8bdc8102
+tree cb6b6b9cc2a38e6460aef05a3068ea0305815095
+parent 46cdd2201eb35ea38d7bfb864a53ba3dad92d0ce
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330373574 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330375110 -0800
+
+    Fixed XML api writer
+    Reviewed-by: Alena
+
+:100644 100644 4171f319205d081b219d995c118310f4012ff213 3567f56fc3de9bd74cc24fe1e7fd233157f58835 M	server/src/com/cloud/api/doc/ApiXmlDocWriter.java
+
+commit 46cdd2201eb35ea38d7bfb864a53ba3dad92d0ce
+tree ce9cb6170cd8e9b57965073f126f6765946446ab
+parent 53fd3318453b0ee14c1e334370b23f86ed26f374
+author Jessica Wang <jessica@cloud.com> 1330374256 -0800
+committer Jessica Wang <jessica@cloud.com> 1330374256 -0800
+
+    bug 14030: ISO page - download ISO action - fix to show correct message ("url: ~~~") after ISO is downloaded.
+
+:100644 100644 f85f3b9ba87af320e4e9df353a78ede446eb8b5e d3867b1a251f00464c4981b35fa424265b9732ac M	ui/scripts/templates.js

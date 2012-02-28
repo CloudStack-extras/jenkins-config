@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 127ae187b0f64ab2e84de6530aec283bf3400730 and fbb9c631876f21796941b92fc914a48091255e1f
+commit fbb9c631876f21796941b92fc914a48091255e1f
+tree 14d67f8433b4f52cdd213871d31e0abb9a9cded4
+parent 127ae187b0f64ab2e84de6530aec283bf3400730
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330469048 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330471034 -0800
+
+    Fixed unittest and some issues with 2.2.14-3.0 upgrade
+
+:100644 100644 da6d0acbeb3e51ca87afccd63f4bfed655fc723c 2ddebfaa91b867d6b49431d9baeb1e54dba18214 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 2a2470a30af3c7830f46d1766bbc9fa9868b07da 6574cf96a8efd432b8efdb02b3d1cd34fabd4804 M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+:100644 100644 c5d555f6d2aaa10fbec806ea4962a8b52b2f373d c85340fb08d2935469a85321e287e77badb450e9 M	server/test/com/cloud/upgrade/Test2214To30DBUpgrade.java
+:000000 100644 0000000000000000000000000000000000000000 831e2e12c1eb4fa8ec811c0736d2eb9ad21c1bb4 A	server/test/resources/PreviousDatabaseSchema/2.2.14/alena_2214.sql
+:100755 100755 964c3400af1c86f2ffb3e935d870def8e3e1d54a 50ab1c95c1a69ddd1366f6245275ab9a19cef8b4 M	setup/db/db/schema-2214to30.sql

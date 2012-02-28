@@ -1,0 +1,10 @@
+Changes in branch origin/master, between c7fd647f2ccd0dd62f172a48185c88417e694d2c and 14f90716baf6e0d0df2afe6e5d6a2b4cc6779b48
+commit 14f90716baf6e0d0df2afe6e5d6a2b4cc6779b48
+tree 6070fcd8ea78ca3a55bf10215dbf19a9274f6998
+parent c7fd647f2ccd0dd62f172a48185c88417e694d2c
+author Jessica Wang <jessica@cloud.com> 1330392677 -0800
+committer Jessica Wang <jessica@cloud.com> 1330392725 -0800
+
+    cloudstack 3.0 new UI - clean up global variable and session cookie when logging out.
+
+:100644 100644 848665a608e6070449635b5924ea3ebc1a1b1d98 469b7fdd51dfcac22f415007d59760f004459c53 M	ui/scripts/cloudStack.js

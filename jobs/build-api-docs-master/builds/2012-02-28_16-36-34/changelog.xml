@@ -1,0 +1,10 @@
+Changes in branch origin/master, between a43480d71a9302afcafd26e1c5fb19a91980ac8e and 9e91095b3c1d9f32c0597f4e08b0871012a704f5
+commit 9e91095b3c1d9f32c0597f4e08b0871012a704f5
+tree b203b0f6dd9a3f26166215ab69f80bb786f2f80b
+parent a43480d71a9302afcafd26e1c5fb19a91980ac8e
+author Jessica Wang <jessica@cloud.com> 1330464887 -0800
+committer Jessica Wang <jessica@cloud.com> 1330464887 -0800
+
+    remove g_type that is no longer in use.
+
+:100644 100644 61e57eee29ad9b859eecb603bf891b903b2d42de 418d7cccd62aeb9fc2cad9185370f98bacdbed19 M	ui/scripts/cloudStack.js

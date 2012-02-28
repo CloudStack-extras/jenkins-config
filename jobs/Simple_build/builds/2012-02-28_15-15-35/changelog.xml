@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 2f6a7ac6dad92668f9c2cf1ebf09d28a2f74f11b and a43480d71a9302afcafd26e1c5fb19a91980ac8e
+commit a43480d71a9302afcafd26e1c5fb19a91980ac8e
+tree 113d965fb6a8347a341b87eacc0c8833f370fa8f
+parent 809ed7c2db807ac911ee2e2b8a4213164c3a2ec1
+author Brian Federle <bfederle@brianlaptop.citrite.net> 1330459726 -0800
+committer Brian Federle <bfederle@brianlaptop.citrite.net> 1330459785 -0800
+
+    Use user.role instead of user.type
+
+:100644 100644 6a712e0e0abe4e71d9870c5dcd7ebe3097d7cf82 36013a86f7d5538fc69199c076b32e8565434da2 M	ui/scripts/dashboard.js
+
+commit 809ed7c2db807ac911ee2e2b8a4213164c3a2ec1
+tree 8ed560c5e6aaf9fcbfb530f45358a1875c2ce113
+parent 2f6a7ac6dad92668f9c2cf1ebf09d28a2f74f11b
+author Jessica Wang <jessica@cloud.com> 1330457647 -0800
+committer Jessica Wang <jessica@cloud.com> 1330457664 -0800
+
+    cloudstack 3.0 new UI - check whether session is valid or not before sending API request. If session is invalid, pop up "session expired" dialog instead of send API request.
+
+:100644 100644 469b7fdd51dfcac22f415007d59760f004459c53 61e57eee29ad9b859eecb603bf891b903b2d42de M	ui/scripts/cloudStack.js

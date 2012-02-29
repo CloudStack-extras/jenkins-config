@@ -1,0 +1,10 @@
+Changes in branch remotes/origin/2.2.y, between 073f17688a10e3b777d00291f233cf636822a41c and de49db51dece79d592a05539512aace4400a114c
+commit de49db51dece79d592a05539512aace4400a114c
+tree 7aadca121533e45143d0f36790cbb8ac122912de
+parent 073f17688a10e3b777d00291f233cf636822a41c
+author Edison Su <Edison.Su@citrix.com> 1330482216 -0800
+committer Edison Su <Edison.Su@citrix.com> 1330482216 -0800
+
+    bug 13733: make sure dhcp request/response are always allowd. status 13733: resolved fixed
+
+:100755 100755 150f44e09776a560ab28abcbe1a0912f17ba49f7 2eb20377ea4438220604cfcdb08c4e7fde28ff89 M	scripts/vm/hypervisor/xenserver/vmops

@@ -1,0 +1,11 @@
+Changes in branch origin/master, between d4b8a8b059ce9d12d2fa6a006f7783ba2b789bcb and c35fc8f28fb5fef4dae1ad02b9197ff5abd08449
+commit c35fc8f28fb5fef4dae1ad02b9197ff5abd08449
+tree 924bab91a0e5e6b36c3d19c6bed17a6694ed0026
+parent d4b8a8b059ce9d12d2fa6a006f7783ba2b789bcb
+author Brian Federle <brian.federle@citrix.com> 1330545244 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330545280 -0800
+
+    Add tests for navigation and homepage; basic fixes
+
+:100644 100644 5a35b1e31f1cac2ec0782afee0543f59dff85942 3b6d8702337b020e546ecf2337c5e3a2861f6c90 M	ui/scripts/ui/core.js
+:100644 100644 4829b36a10c5dd76db37f5be13daf2eb10386fb4 38e385952b573642d65fc19b4ada59c6c34f6423 M	ui/tests/test.core.js

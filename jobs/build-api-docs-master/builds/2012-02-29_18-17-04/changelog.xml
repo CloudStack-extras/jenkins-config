@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 4f0dd8f562455dffe544f8cdac4d0aed5fd67e09 and 6ac86e5cf6423b1dedce86d884f45079113216d1
+commit 6ac86e5cf6423b1dedce86d884f45079113216d1
+tree 4f4084030f8b75db0cb2e8db7c9bf203af93052b
+parent 4f0dd8f562455dffe544f8cdac4d0aed5fd67e09
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330556981 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330557336 -0800
+
+    bug 14033: root/domain admin limits are always Unlimited. Return it as Unlimited in listResourceLimit response
+    status 14033: resolved fixed
+
+:100755 100755 b75bcd30992f312701bff9dae3e42a35e0524a40 7e884679107133c24d0de41dafa7d1ad828add8c M	server/src/com/cloud/resourcelimit/ResourceLimitManagerImpl.java

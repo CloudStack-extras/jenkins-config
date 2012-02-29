@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 6ac86e5cf6423b1dedce86d884f45079113216d1 and b4007cb379a5f7cc57091e35ac7ecd5756b08dd4
+commit b4007cb379a5f7cc57091e35ac7ecd5756b08dd4
+tree eca879c899956b81e852d0fa807d44d2e3bbf5d0
+parent 6ac86e5cf6423b1dedce86d884f45079113216d1
+author Jessica Wang <jessica@cloud.com> 1330557756 -0800
+committer Jessica Wang <jessica@cloud.com> 1330557756 -0800
+
+    bug 14073: Quick Installer - make zones created from Quick Installer to be public (not dedicated to any domain)
+
+:100644 100644 902cb720a2a5ce7ae1d50f6bbfe056435fef40e2 c4d4a3987ad6777a731168eceda4ea357f6d9eda M	ui/scripts/installWizard.js
+:100644 100644 01259c2e417ae58388cd73465005a49a65c2dbf7 20ebad7fc090f961e80e52e0b34e0fc723096c07 M	ui/scripts/zoneWizard.js

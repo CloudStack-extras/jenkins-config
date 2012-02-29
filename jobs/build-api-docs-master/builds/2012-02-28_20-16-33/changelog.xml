@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 3048ee6ad19e9f418517b0206abd4b469d3731b4 and 02863f0ca19525c5763cc716823e7b284ec75ff7
+commit 02863f0ca19525c5763cc716823e7b284ec75ff7
+tree 0203f1feb4fff7534d44dca35ec3343af93c464f
+parent 3048ee6ad19e9f418517b0206abd4b469d3731b4
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330478348 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330478357 -0800
+
+    DB upgrade: added missing account_details table
+
+:100755 100755 d6bf0d972d0b5b7667c9b8c65709b69b0201106c 526a5630af78483c5c2592cf586d18e41e98283b M	setup/db/db/schema-2214to30.sql

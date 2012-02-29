@@ -1,0 +1,10 @@
+Changes in branch origin/master, between b754ac91a6526436d8a7d8f27d7b68128b953283 and ad421cecbad0bd2783ceb24c8df8d69f66cfcccf
+commit ad421cecbad0bd2783ceb24c8df8d69f66cfcccf
+tree 6ab6e746c18d1df017749b87b95fd3e9cfced990
+parent b754ac91a6526436d8a7d8f27d7b68128b953283
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330475456 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330475456 -0800
+
+    Add is_system field to user_ip_address table during the db upgrade
+
+:100755 100755 bf0fac8c8df69808ad5da93a240b35ec51212f33 4894de6fcb12f6cfaea7e775f95cfef8c1f60e28 M	setup/db/db/schema-2214to30.sql

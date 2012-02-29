@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 3e5f4b77960a2129f678d463e498604b0531d487 and b754ac91a6526436d8a7d8f27d7b68128b953283
+commit b754ac91a6526436d8a7d8f27d7b68128b953283
+tree 681f2d15aadde06c2e1cdcdfefecb43c51f76a34
+parent 3e5f4b77960a2129f678d463e498604b0531d487
+author Sheng Yang <sheng.yang@cloud.com> 1330474677 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1330474778 -0800
+
+    Add element_id for 3.0 upgrade
+
+:100644 100644 2ddebfaa91b867d6b49431d9baeb1e54dba18214 556ecf380e436e326b4d16ea59a923956ea01626 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 260d7dc7e23e9fa967cfe53dbefabb605520b59a bf0fac8c8df69808ad5da93a240b35ec51212f33 M	setup/db/db/schema-2214to30.sql

@@ -1,0 +1,33 @@
+Changes in branch origin/3.0.x, between f89a860ec9df09991f5843f0861714858d08c3ea and 7528527323b18068687f0242a02541b1389f4f63
+commit 7528527323b18068687f0242a02541b1389f4f63
+tree 27430072435e4644f44685dea8bfd36e1d79596e
+parent 05e5945020a1b21527c35451347e1f21cebfa1fc
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330428692 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330497257 +0530
+
+    adding logging with level and timestamp
+
+:100644 100644 059e7556637ccabb0a3d11229190b4abb0ba524a cceed9ca8bd964a5325e1451558c2d569dc9e96a M	tools/testClient/TestCaseExecuteEngine.py
+:100644 100644 8625d683cb53903078d62217c7417613c1269237 4595aefaa42a801a4f43cafaa1ace88aa268166e M	tools/testClient/cloudstackTestCase.py
+:100644 100644 f628d29224e4acb215f75a3835e88afd452e9f6c 18684b37621ddc5c72e301c9ecafe8ab9b8153a6 M	tools/testClient/deployDataCenter.py
+
+commit 05e5945020a1b21527c35451347e1f21cebfa1fc
+tree 8e2ab7e16c9075cfd14fbac71adb66d0c9f2208f
+parent 2095e307f0764596e8feefc408b539c8851c0dc9
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330428669 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330497257 +0530
+
+    adding retry logic, error handling, and urllib2 used for managing connections
+
+:100644 100644 4dc90434de79aa8ccbc57c8675658b3fd5d7542a 4fcd109b41462d5240aac7119a3ceccdcaf2f352 M	tools/testClient/cloudstackConnection.py
+
+commit 2095e307f0764596e8feefc408b539c8851c0dc9
+tree fc91a994ead2a643164a8f5faa06a7bb0d2da5f8
+parent f89a860ec9df09991f5843f0861714858d08c3ea
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330065683 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1330497257 +0530
+
+    Wrong place to put a return
+    reviewed-by: kishan
+
+:100644 100644 0439cc827c18d22a90f4ff52119615fd44bfa9b8 f628d29224e4acb215f75a3835e88afd452e9f6c M	tools/testClient/deployDataCenter.py

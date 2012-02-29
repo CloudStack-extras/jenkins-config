@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 5f5d46a576be091360df84c2c4fdad965ba1245e and 3e5f4b77960a2129f678d463e498604b0531d487
+commit 3e5f4b77960a2129f678d463e498604b0531d487
+tree a3e3976e4fc25857857f5450bec9a460561ec32f
+parent 5f5d46a576be091360df84c2c4fdad965ba1245e
+author Edison Su <Edison.Su@citrix.com> 1330472372 -0800
+committer Edison Su <Edison.Su@citrix.com> 1330472372 -0800
+
+    fix db upgrade
+
+:100755 100755 9049ef8a590a86d2ae75174447db708feba5555c 260d7dc7e23e9fa967cfe53dbefabb605520b59a M	setup/db/db/schema-2214to30.sql

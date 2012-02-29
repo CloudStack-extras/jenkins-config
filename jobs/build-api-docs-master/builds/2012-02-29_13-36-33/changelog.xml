@@ -1,0 +1,21 @@
+Changes in branch origin/master, between 8341eba5eccf4cd869dbed68aed47ffb77db95f5 and d34faf1ee977a903b08b6c4ce8dac6ff8f5f6fa1
+commit d34faf1ee977a903b08b6c4ce8dac6ff8f5f6fa1
+tree ad9cde0673bbd569296714dbed066e5670ec932d
+parent e1928ceb7924fdf0afd6c7b6f4943c3028266d9e
+author Brian Federle <brian.federle@citrix.com> 1330540425 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330540425 -0800
+
+    Add some basic tests
+
+:100644 100644 d6fe4ced205eb7922420a4a9f7a39560690745e3 5b8baebb18f81d286a644e9e326358d235ab9154 M	ui/tests/index.html
+:000000 100644 0000000000000000000000000000000000000000 4829b36a10c5dd76db37f5be13daf2eb10386fb4 A	ui/tests/test.core.js
+
+commit e1928ceb7924fdf0afd6c7b6f4943c3028266d9e
+tree 5229c1b7b44c0df7a2803b4c21dd36fa96b596af
+parent 8341eba5eccf4cd869dbed68aed47ffb77db95f5
+author Brian Federle <brian.federle@citrix.com> 1330540385 -0800
+committer Brian Federle <brian.federle@citrix.com> 1330540385 -0800
+
+    Only show invitations if projects UI is initialized
+
+:100644 100644 1f39fcc0a28324fa568209863272054f29050308 5a35b1e31f1cac2ec0782afee0543f59dff85942 M	ui/scripts/ui/core.js

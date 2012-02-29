@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d34faf1ee977a903b08b6c4ce8dac6ff8f5f6fa1 and d4b8a8b059ce9d12d2fa6a006f7783ba2b789bcb
+commit d4b8a8b059ce9d12d2fa6a006f7783ba2b789bcb
+tree f0296f551dcb508cf6df5a4331dd7d4a09baa6ba
+parent d34faf1ee977a903b08b6c4ce8dac6ff8f5f6fa1
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330542141 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330542177 -0800
+
+    Wrap deletePhysicalNetwork in transaction
+
+:100755 100755 a7bbf7d89089f72fc778f6188486f3ceaa15e52f f6e8940eb75b89c9121a7387e6e9d6f1e2c4c722 M	server/src/com/cloud/network/NetworkManagerImpl.java

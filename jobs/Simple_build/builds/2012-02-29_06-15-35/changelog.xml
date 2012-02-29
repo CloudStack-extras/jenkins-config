@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 25906238898e2e51be02f1b769bfb29018a117b9 and a9995a424952a51e0ff3224314b6b8603393a144
+commit a9995a424952a51e0ff3224314b6b8603393a144
+tree d1b7aa3d2ef0aaadbb97f82a69aff12326a31e88
+parent 25906238898e2e51be02f1b769bfb29018a117b9
+author kishan <kishan@cloud.com> 1330506898 +0530
+committer kishan <kishan@cloud.com> 1330506898 +0530
+
+    Drop security group usage table and add again for upgrade
+
+:100755 100755 526a5630af78483c5c2592cf586d18e41e98283b 3a301fe34389c9ddb0d3a5a9eb531acbf791ea58 M	setup/db/db/schema-2214to30.sql

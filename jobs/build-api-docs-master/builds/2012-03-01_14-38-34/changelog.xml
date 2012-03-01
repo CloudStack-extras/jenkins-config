@@ -1,0 +1,10 @@
+Changes in branch origin/master, between dbd30174e6aa054749f5bb57dfa78ad64ab8b941 and c07bd13f8ad99f97f0f03701daab7011ce3bad04
+commit c07bd13f8ad99f97f0f03701daab7011ce3bad04
+tree 43f8c3f9a8fda71cd83251514e0ec02f401ac85f
+parent dbd30174e6aa054749f5bb57dfa78ad64ab8b941
+author Jessica Wang <jessica@cloud.com> 1330630609 -0800
+committer Jessica Wang <jessica@cloud.com> 1330630609 -0800
+
+    Network page - detail view - make API call to refresh data when Refresh button is clicked.
+
+:100644 100644 d2126d0f11e742f324464b641a8bef1a685fd1cf 8589f4c989f9146135ca830af18144301bd6ea87 M	ui/scripts/network.js

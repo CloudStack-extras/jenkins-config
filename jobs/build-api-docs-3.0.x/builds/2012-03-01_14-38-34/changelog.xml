@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 0fbd21cb146bd663134a442a9aafe8f150f877e8 and 797456d924d3f820226428cb5b4456e7b64d75a2
+commit 797456d924d3f820226428cb5b4456e7b64d75a2
+tree 83b5bd98cefc839965efed7b99c4facaba2f4f1e
+parent 0fbd21cb146bd663134a442a9aafe8f150f877e8
+author Jessica Wang <jessica@cloud.com> 1330630559 -0800
+committer Jessica Wang <jessica@cloud.com> 1330630559 -0800
+
+    Network page - detail view - make API call to refresh data when Refresh button is clicked. [reviewed-by: Brian]
+
+:100644 100644 d2126d0f11e742f324464b641a8bef1a685fd1cf 8589f4c989f9146135ca830af18144301bd6ea87 M	ui/scripts/network.js

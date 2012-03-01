@@ -1,0 +1,11 @@
+Changes in branch remotes/origin/2.2.y, between b0e56ab01f187e986ff0b72fc03b14c540fc9441 and 948414ac137630a3ce9b71148cfc4edd158bfb12
+commit 948414ac137630a3ce9b71148cfc4edd158bfb12
+tree 56d29bf9dd97bced87ceb9c58c5d31eda0ee00b0
+parent b0e56ab01f187e986ff0b72fc03b14c540fc9441
+author frank <frank.zhang@citrix.com> 1330637561 -0800
+committer frank <frank.zhang@citrix.com> 1330638388 -0800
+
+    Make direct agent pool size configurable
+
+:100644 100755 bfc02f9bbf6e0ae9a4b4ff3a61c422f174da6947 997ae35c736efc6d8bac2e01754969bce9d61c13 M	server/src/com/cloud/agent/manager/DirectAgentAttache.java
+:100755 100755 d90555910f33ee7598ba70532bef650cd76e48d0 83bdab0bb836d4ce2227ce8e2e754f98e9fd2787 M	server/src/com/cloud/configuration/Config.java

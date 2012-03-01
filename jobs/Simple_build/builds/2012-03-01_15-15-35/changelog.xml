@@ -1,0 +1,50 @@
+Changes in branch origin/master, between d89aed59d83f42e26837f6d37972a1a7b1eaded6 and c07bd13f8ad99f97f0f03701daab7011ce3bad04
+commit c07bd13f8ad99f97f0f03701daab7011ce3bad04
+tree 43f8c3f9a8fda71cd83251514e0ec02f401ac85f
+parent dbd30174e6aa054749f5bb57dfa78ad64ab8b941
+author Jessica Wang <jessica@cloud.com> 1330630609 -0800
+committer Jessica Wang <jessica@cloud.com> 1330630609 -0800
+
+    Network page - detail view - make API call to refresh data when Refresh button is clicked.
+
+:100644 100644 d2126d0f11e742f324464b641a8bef1a685fd1cf 8589f4c989f9146135ca830af18144301bd6ea87 M	ui/scripts/network.js
+
+commit dbd30174e6aa054749f5bb57dfa78ad64ab8b941
+tree 91c04e83fac1b7324b340de4b44498c07c8c7fcd
+parent f093b06ec0262c2868a6694e792418b9c8c0cdd3
+author Jessica Wang <jessica@cloud.com> 1330629237 -0800
+committer Jessica Wang <jessica@cloud.com> 1330629237 -0800
+
+    Snapshot page - detail view - make API call to refresh data when Refresh button is clicked.
+
+:100644 100644 e7c9f6c0dce8ec85039e5e458a14e34dd55eac32 602f0bee03a60acd94d13da818edee3caa2e458f M	ui/scripts/storage.js
+
+commit f093b06ec0262c2868a6694e792418b9c8c0cdd3
+tree 3bfe604d061f62ac630bc28d316f3af7e82d2466
+parent 8e07fd8ffea369a8ad33ccc7f9a21bd4faafb536
+author Jessica Wang <jessica@cloud.com> 1330629209 -0800
+committer Jessica Wang <jessica@cloud.com> 1330629209 -0800
+
+    Volume page - detail view - make API call to refresh data when Refresh button is clicked.
+
+:100644 100644 ac31cc0417a754c1cc6a3a3345736a89784de739 e7c9f6c0dce8ec85039e5e458a14e34dd55eac32 M	ui/scripts/storage.js
+
+commit 8e07fd8ffea369a8ad33ccc7f9a21bd4faafb536
+tree df1dde4041009e352e650f3dc238e17d25b59c9b
+parent 4a85624352ca26855c6bb77de49f47bddd663c2f
+author bfederle <brian.federle@citrix.com> 1330628274 -0800
+committer bfederle <brian.federle@citrix.com> 1330628274 -0800
+
+    Add more core UI tests
+
+:100644 100644 38e385952b573642d65fc19b4ada59c6c34f6423 5bdc969008c2ad9cfecf85db2e23311b5706d68a M	ui/tests/test.core.js
+
+commit 4a85624352ca26855c6bb77de49f47bddd663c2f
+tree fb8c85811a0f24310f1c9652ab15c3c3a1ddadf7
+parent d89aed59d83f42e26837f6d37972a1a7b1eaded6
+author Jessica Wang <jessica@cloud.com> 1330625598 -0800
+committer Jessica Wang <jessica@cloud.com> 1330625598 -0800
+
+    fix a JS error: $detailView.data("list-view-row") is undefined
+
+:100644 100644 84e2383609ef3d4e1c4bba792a186a9b3a8705f3 a0d11a2ff523814e0c8e64ff5eb095b9091cc2eb M	ui/scripts/ui/widgets/detailView.js

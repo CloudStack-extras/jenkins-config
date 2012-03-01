@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 85c11e85667aebad15e76edc9ca97a209ff1841f and 859a2dd275135488c326d5bdd6d930d6cdd007eb
+commit 859a2dd275135488c326d5bdd6d930d6cdd007eb
+tree f927eea82547063012cf7102f0f91e0ce1127ad7
+parent 85c11e85667aebad15e76edc9ca97a209ff1841f
+author Jessica Wang <jessica@cloud.com> 1330565016 -0800
+committer Jessica Wang <jessica@cloud.com> 1330565016 -0800
+
+    cloudstack 3.0 UI - detailView widget - refresh embedded data in corresponding list view row when dataProvider is called.
+
+:100644 100644 fae4e7a14e5a23ef31ca14030f519e34e9199a68 18f23c1d77352e9937cdbd4334d93720cf5162bc M	ui/scripts/instances.js
+:100644 100644 149a18bcaf6980e016790f181410269e02fb0720 84e2383609ef3d4e1c4bba792a186a9b3a8705f3 M	ui/scripts/ui/widgets/detailView.js

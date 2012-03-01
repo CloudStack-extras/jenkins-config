@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 1a39f9452db175b13add7ab09a365c894b5e783d and 0fbd21cb146bd663134a442a9aafe8f150f877e8
+commit 0fbd21cb146bd663134a442a9aafe8f150f877e8
+tree ab22afbd2c26e56b978f2d9ca94eb6c26d939a73
+parent 1a39f9452db175b13add7ab09a365c894b5e783d
+author Jessica Wang <jessica@cloud.com> 1330629152 -0800
+committer Jessica Wang <jessica@cloud.com> 1330629152 -0800
+
+    Snapshot page - detail view - make API call to refresh data when Refresh button is clicked. [reviewed-by: Brian]
+
+:100644 100644 e7c9f6c0dce8ec85039e5e458a14e34dd55eac32 602f0bee03a60acd94d13da818edee3caa2e458f M	ui/scripts/storage.js

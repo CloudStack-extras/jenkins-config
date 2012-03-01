@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 0d08213b0204cca6f027bb3683440252b034c8b9 and 4338e9db5ec4f4a24890bc92e2c2cc0c09859a12
+commit 4338e9db5ec4f4a24890bc92e2c2cc0c09859a12
+tree 6a8008906397dd4ba76da6207171a9d3b53a4626
+parent 0d08213b0204cca6f027bb3683440252b034c8b9
+author kishan <kishan@cloud.com> 1330615792 +0530
+committer kishan <kishan@cloud.com> 1330615792 +0530
+
+    Bug 14039: Changed SSO key category Secure
+    Status 14039: resolved fixed
+    Reviewed-By: Abhi
+
+:100755 100755 adea2ad2acd90c460dde326a787ab847c510980d 1562d7dbab901e118b399065c20fb36f6f886873 M	server/src/com/cloud/configuration/Config.java

@@ -1,0 +1,17 @@
+Changes in branch origin/master, between 1fd0bc245eac4f9b8f9fc9338282d40770081263 and 6b6b7f0b8e48f225cf202a04ff1a753922325bc4
+commit 6b6b7f0b8e48f225cf202a04ff1a753922325bc4
+tree a96323c82b06ff9264c83f1218bb1a78fd7b26ee
+parent 1fd0bc245eac4f9b8f9fc9338282d40770081263
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330643449 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330643506 -0800
+
+    bug 14080: do EQ instead of LIKE search when search for duplicated users during the user update
+    status 14080: resolved fixed
+
+:000000 100644 0000000000000000000000000000000000000000 b46080b686beabbed7a7be693dd07fa051721c34 A	file
+:100755 100755 5d22a05d6edcf7ebf4cbe3017aa5b5f2ab03eb5c 88a795be629bf372560f0a6b2970998c8cfd53f0 M	server/src/com/cloud/projects/ProjectManagerImpl.java
+:100755 100755 a00f9ae1d674cef32ff2a94aa1224832f09777b6 3513f646e83684e63352570f82529c69ee2a3354 M	server/src/com/cloud/user/AccountManagerImpl.java
+:100644 100644 1ec7eb214694dc39bdfea0bcb03a48cb25455c7f f4f221765748578750245561cfc042cc1028976e M	server/src/com/cloud/user/dao/UserDao.java
+:100644 100644 7af8ec7d9b924f6266dc2454f2b6ee11901fc2ee 259f895dbd436bc1e87e9ede2ada69b86cbf221d M	server/src/com/cloud/user/dao/UserDaoImpl.java
+:100644 100644 c85340fb08d2935469a85321e287e77badb450e9 31011ab71d759893048e155824fa008c8f568bf4 M	server/test/com/cloud/upgrade/Test2214To30DBUpgrade.java
+:000000 100644 0000000000000000000000000000000000000000 b0c4261106f01fa8e2fd9d1d23e9bcf51a3ca99d A	server/test/resources/PreviousDatabaseSchema/2.2.14/alena_2214_guestNetwork_advanceZone.sql

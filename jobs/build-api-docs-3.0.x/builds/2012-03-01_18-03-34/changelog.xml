@@ -1,0 +1,24 @@
+Changes in branch origin/3.0.x, between 797456d924d3f820226428cb5b4456e7b64d75a2 and 5c6e68112fe0d1b9fc63d17022c3db7e682e55ce
+commit 5c6e68112fe0d1b9fc63d17022c3db7e682e55ce
+tree d03742ddd267b2a482c707de60b66e74243ab42a
+parent 0953d26d68bec1c126661cd38dcf973be43ab831
+author Sheng Yang <sheng.yang@cloud.com> 1330640907 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1330642754 -0800
+
+    bug 14085: Upgrade: Update domain_router's Role
+    
+    status 14085: resolved fixed
+
+:100644 100644 ad3f30d24cbff001a7ac4aadd8498902eb0fc022 5c5fce8ee30e8c70d1aff93254c259e3e993575e M	setup/db/db/schema-2214to30-cleanup.sql
+
+commit 0953d26d68bec1c126661cd38dcf973be43ab831
+tree c44097ae054687c18d0f77dab04d0774af45456d
+parent 797456d924d3f820226428cb5b4456e7b64d75a2
+author Sheng Yang <sheng.yang@cloud.com> 1330570224 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1330642748 -0800
+
+    bug 14076: Fix the exception scope
+    
+    status 14076: resolved fixed
+
+:100755 100755 b37c8b5d24f7448cd8be20f019a68d88c46caad2 b21f4ffda0f66a589955dda746f44b81cece6a99 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

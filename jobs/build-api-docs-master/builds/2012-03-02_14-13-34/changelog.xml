@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 32e88a132ecf5e502bc822a03d5e69f24f323633 and eed26c5c1de638cc110699f01153c8b2c56114d6
+commit eed26c5c1de638cc110699f01153c8b2c56114d6
+tree 420c80869fdb0c9ccaa9a1f0ce7936b58a4864fe
+parent 32e88a132ecf5e502bc822a03d5e69f24f323633
+author Jessica Wang <jessica@cloud.com> 1330715303 -0800
+committer Jessica Wang <jessica@cloud.com> 1330715303 -0800
+
+    delete template action, delete ISO action - use 'remove' instead of 'destroy' since their definitions have been switched.
+
+:100644 100644 428921003428fac4fa712f620ae7e663fdf148e4 e99369ee713c044fe1702da14ea9934e3dfd9b87 M	ui/scripts/storage.js
+:100644 100644 d3867b1a251f00464c4981b35fa424265b9732ac c5be659ada294cd436f23a0c14c14d8649afad68 M	ui/scripts/templates.js

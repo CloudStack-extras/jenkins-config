@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 5457ad17ae5cbce84b8f7ff9c3bb3ba62316e520 and a51aee31a868a5586fabe85767530762e1d1c309
+commit a51aee31a868a5586fabe85767530762e1d1c309
+tree 2141edc90488cc2d2afdcf1e68b3d55977a835fb
+parent 5457ad17ae5cbce84b8f7ff9c3bb3ba62316e520
+author bfederle <brian.federle@citrix.com> 1330715207 -0800
+committer bfederle <brian.federle@citrix.com> 1330715232 -0800
+
+    UI: Networks section fix
+    
+    Fix broken detail view when viewing other users' networks as admin
+
+:100644 100644 d72f007be2de87110f4e3198a5c23bf3c8dbd7f9 921c1f9b0f855a769e87f0c6ed3d168f5b352f5d M	ui/scripts/network.js

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 1c30464f2ac6c44fcb1545b50749510b4b912abe and 32e88a132ecf5e502bc822a03d5e69f24f323633
+commit 32e88a132ecf5e502bc822a03d5e69f24f323633
+tree 49627dd801edfbb328012e825b39ee5104b68750
+parent 1c30464f2ac6c44fcb1545b50749510b4b912abe
+author bfederle <brian.federle@citrix.com> 1330715207 -0800
+committer bfederle <brian.federle@citrix.com> 1330715207 -0800
+
+    UI: Networks section fix
+    
+    Fix broken detail view when viewing other users' networks as admin
+
+:100644 100644 d72f007be2de87110f4e3198a5c23bf3c8dbd7f9 921c1f9b0f855a769e87f0c6ed3d168f5b352f5d M	ui/scripts/network.js

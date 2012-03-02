@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between b8fb2afe63484dac4e45598355fc9c641d62fd2a and 2256e0772a95915e24cb015d21fc52bb69e39bef
+commit 2256e0772a95915e24cb015d21fc52bb69e39bef
+tree f00f7edebed5e666412b787e62670b6bf81d178d
+parent b8fb2afe63484dac4e45598355fc9c641d62fd2a
+author Sheng Yang <sheng.yang@citrix.com> 1330715651 -0800
+committer Sheng Yang <sheng.yang@citrix.com> 1330715669 -0800
+
+    Fix element_id upgrade with network_id=0
+
+:100644 100644 6f4cb62ba156640bbed47b9084127a136e06ff44 c5c131959dc3b6462a344d2cf28e2c6134448669 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java

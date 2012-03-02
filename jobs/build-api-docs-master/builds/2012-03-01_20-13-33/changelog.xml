@@ -1,0 +1,16 @@
+Changes in branch origin/master, between e7992cd6923cad75d8ab487310dee9cf73461eaa and b8df7b8d222dedc0a2938372aee4683c9e57840c
+commit b8df7b8d222dedc0a2938372aee4683c9e57840c
+tree bf5255c1b1b8fbdcf5dbdb35776567fa8fae7a3a
+parent e7992cd6923cad75d8ab487310dee9cf73461eaa
+author Kelven Yang <kelven@cloud.com> 1330650149 -0800
+committer Kelven Yang <kelven@cloud.com> 1330650502 -0800
+
+    Console proxy refactoring incremental check-in - build in-memory VncClient contact between VNC client implementation and console proxy
+
+:000000 100644 0000000000000000000000000000000000000000 2c66ed091e23031370c3b9a2cc5e38ba800e6e4a A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyVncClient.java
+:000000 100644 0000000000000000000000000000000000000000 7e4d7b22458e83d2d55322e3d7f5c001d7fee751 A	console-proxy/src/com/cloud/consoleproxy/util/ImageHelper.java
+:100644 100644 cd9a8378ba4654fc6d03a41737411783d2b11e95 c21c422eb1611869b4308606401f81961628098c M	console-proxy/src/com/cloud/consoleproxy/vnc/BufferedImageCanvas.java
+:100644 100644 25035bda0ece2d364c6fe6ccfe644d504d758cea 1bdc114daeae5371f840d465c41a608f89bb1a89 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+:000000 100644 0000000000000000000000000000000000000000 f3934f10d7bbef72b85b20fab7c48969b3722b06 A	console-proxy/src/com/cloud/consoleproxy/vnc/VncClientListener.java
+:100644 100644 01d9cf887e6b7dd28588638b2d13fb7c17c4ef8a 669fb895c8aabc2dad7a2624901e2bba3558d411 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncServerPacketReceiver.java
+:100644 100644 aa2c2b19e9057fa063c65e87dbefdc4a5e732366 64c184c8e72f6bb7332ad11721b62c9a12cda578 M	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/FramebufferUpdatePacket.java

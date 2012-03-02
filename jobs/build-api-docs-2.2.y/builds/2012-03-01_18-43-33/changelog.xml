@@ -1,0 +1,12 @@
+Changes in branch remotes/origin/2.2.y, between 948414ac137630a3ce9b71148cfc4edd158bfb12 and 87bee1d301739279642790135bd3e3017855331c
+commit 87bee1d301739279642790135bd3e3017855331c
+tree eac97eb604923a54017b6ce29cf97200503f91a4
+parent 948414ac137630a3ce9b71148cfc4edd158bfb12
+author Sheng Yang <sheng.yang@cloud.com> 1330645172 -0800
+committer Sheng Yang <sheng.yang@cloud.com> 1330645172 -0800
+
+    bug 14076: Fix the exception scope
+    
+    status 14076: resolved fixed
+
+:100755 100755 dcd4c11db36cbc303191201cc9dafa88738d0bf7 f16da831a11dbdd123d2584928ef91e90dc16610 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

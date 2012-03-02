@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 6b6b7f0b8e48f225cf202a04ff1a753922325bc4 and 740ae1bca948acd522646c05d2d8ec3d676649dd
+commit 740ae1bca948acd522646c05d2d8ec3d676649dd
+tree 1092acd17d46922bfdd3ada1eb38c9c411e1fdfc
+parent 6b6b7f0b8e48f225cf202a04ff1a753922325bc4
+author Jessica Wang <jessica@cloud.com> 1330644963 -0800
+committer Jessica Wang <jessica@cloud.com> 1330644963 -0800
+
+    cloudstack 3.0 UI - After destroy action is finished, remove the row from listView.
+
+:100644 100644 a0d11a2ff523814e0c8e64ff5eb095b9091cc2eb 2d3bb7a47fd3bd33ef988f25066879019aec3fe7 M	ui/scripts/ui/widgets/detailView.js

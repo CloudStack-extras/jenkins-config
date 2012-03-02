@@ -1,13 +1,13 @@
 Started by timer
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision fe2dd99cd3e06cde92aa3736a954a71887e86214 (origin/master)
+Last Built Revision: Revision 8673746e9e01a47b053a2bb19726a3b92e01f620 (origin/master)
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision fe2dd99cd3e06cde92aa3736a954a71887e86214 (origin/master)
-Checking out Revision fe2dd99cd3e06cde92aa3736a954a71887e86214 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson1553323129603537254.sh
+Commencing build of Revision 1c30464f2ac6c44fcb1545b50749510b4b912abe (origin/master)
+Checking out Revision 1c30464f2ac6c44fcb1545b50749510b4b912abe (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson7219813555654681925.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-26T17:00:38Z
-     [echo] Build number is 3.0.0.2012-02-26T17:00:38Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-02T17:00:46Z
+     [echo] Build number is 3.0.0.2012-03-02T17:00:46Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -57,7 +57,7 @@ automated-test-run:
 compile-utils:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
-    [javac] Compiling 199 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+    [javac] Compiling 201 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
     [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
     [javac] Note: Some input files use unchecked or unsafe operations.
@@ -67,7 +67,7 @@ compile-utils:
 compile-api:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/api/src
-    [javac] Compiling 702 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+    [javac] Compiling 703 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
     [javac] Note: Some input files use unchecked or unsafe operations.
     [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-api.jar
@@ -139,7 +139,7 @@ compile-console-common:
 compile-console-proxy:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src
-    [javac] Compiling 16 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
+    [javac] Compiling 48 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
     [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java uses or overrides a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
       [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-proxy.jar
@@ -179,13 +179,13 @@ build-agent:
      [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/agent
 
 build-scripts:
-     [copy] Copying 154 files to /var/lib/jenkins/workspace/Automated Test Runs/target/scripts
-     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/target/scripts
+     [copy] Copying 153 files to /var/lib/jenkins/workspace/Automated Test Runs/target/scripts
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/target/scripts
 
 build-ui:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/ui
-     [copy] Copying 135 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
-     [copy] Copying 518 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 139 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 519 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
 
 compile-ovm:
@@ -271,8 +271,9 @@ deploydb:
      [echo] deploydb server-setup.xml templates.sql ${DBROOTPW}
      [exec] Recreating Database cloud.
      [exec] Please enter root password for MySQL.
+     [exec] Enter password: 
      [exec] Error: Cannot execute create-database.sql
-     [exec] Enter password: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+     [exec] ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
      [exec] Result: 10
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -367,5 +368,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 1 minute 23 seconds
+Total time: 1 minute 44 seconds
 Finished: SUCCESS

@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 740ae1bca948acd522646c05d2d8ec3d676649dd and 619ad4d519e5adef0abd1f87b3991e68480d9009
+commit 619ad4d519e5adef0abd1f87b3991e68480d9009
+tree 5d1ef645d9f19b49c09d18a200b00acfe3a9198c
+parent 740ae1bca948acd522646c05d2d8ec3d676649dd
+author bfederle <brian.federle@citrix.com> 1330646933 -0800
+committer bfederle <brian.federle@citrix.com> 1330646951 -0800
+
+    Add browser UI widget tests
+
+:100644 100644 5b8baebb18f81d286a644e9e326358d235ab9154 d0bad6696310ad291310639f1628c2834a915ab8 M	ui/tests/index.html
+:000000 100644 0000000000000000000000000000000000000000 fc44bb6ae0af194930c87ff338405d8cba0a53bf A	ui/tests/test.cloudBrowser.js

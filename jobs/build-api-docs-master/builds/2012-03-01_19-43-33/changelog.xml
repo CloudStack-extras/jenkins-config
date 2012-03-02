@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 681ba66c5584b8e34061a7942c351195a4012ff1 and 44434872be09fce751d4bd370b9e1e893c35e5de
+commit 44434872be09fce751d4bd370b9e1e893c35e5de
+tree ed976aa70f0b34abc5364ff1be715f8080024786
+parent 681ba66c5584b8e34061a7942c351195a4012ff1
+author Jessica Wang <jessica@cloud.com> 1330648903 -0800
+committer Jessica Wang <jessica@cloud.com> 1330648903 -0800
+
+    delete volume action, delete snapshot action, delete router action - use 'remove' instead of 'destroy' since their definitions have been switched.
+
+:100644 100644 602f0bee03a60acd94d13da818edee3caa2e458f 428921003428fac4fa712f620ae7e663fdf148e4 M	ui/scripts/storage.js
+:100644 100644 79542f663f2e7682fee4034759a29604b807ebee 23d7cf1500acd185360b74f7a7343a31cbd20b69 M	ui/scripts/system.js

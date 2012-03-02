@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 87ced2512f01af357475c142540917b0eb055a72 and 2c79f6f27452b08a112af36c7daf7667d07768df
+commit 2c79f6f27452b08a112af36c7daf7667d07768df
+tree 73081541d5f04183027aff1ec2e0d7ca57a23a86
+parent 87ced2512f01af357475c142540917b0eb055a72
+author bfederle <brian.federle@citrix.com> 1330722260 -0800
+committer bfederle <brian.federle@citrix.com> 1330722264 -0800
+
+    Add more browser tests
+
+:100644 100644 fc44bb6ae0af194930c87ff338405d8cba0a53bf 3de5eca7207baa735a98acfcb2ca8155d9a369de M	ui/tests/test.cloudBrowser.js

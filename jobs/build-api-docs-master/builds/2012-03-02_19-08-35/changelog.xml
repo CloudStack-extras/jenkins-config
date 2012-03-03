@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 2c79f6f27452b08a112af36c7daf7667d07768df and 295daa7544cc2680e1781293a564c287aba3707b
+commit 295daa7544cc2680e1781293a564c287aba3707b
+tree 69596feaecccfadd52eb88d6c23c04788db8797d
+parent 2c79f6f27452b08a112af36c7daf7667d07768df
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330733223 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330733262 -0800
+
+    Db upgrade for security group provider
+
+:100644 100644 1efbf6942ee7e97052601797fc1fea2d4ce3f0a3 3d279c13bbe9b99a924ebe61e95abdab73616713 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java

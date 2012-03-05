@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 849ddaefec4979740141d4bfa36e3efcac9a37cb and 95c1195eb62e9dc79e9adfca74470d3af63aee16
+commit 95c1195eb62e9dc79e9adfca74470d3af63aee16
+tree 1f16fc49163996219df9f93889e429febbafbdbe
+parent 849ddaefec4979740141d4bfa36e3efcac9a37cb
+author Jessica Wang <jessica@cloud.com> 1330975793 -0800
+committer Jessica Wang <jessica@cloud.com> 1330975810 -0800
+
+    cloudstack 3.0 UI - Make Account page/User page available to normal-user role. [reviewed-by: Brian]
+
+:100644 100644 3977379a8bf72feef9d5fa7b345e7359b663f4f8 8d8856416bc94d7c566525c7c5e8c7d29f837422 M	ui/scripts/accounts.js
+:100644 100644 566948b010251df38445e4331d3edc39c2f45a39 076bcd88f14be977fe10d8c2467bd7af43f9f833 M	ui/scripts/cloudStack.js

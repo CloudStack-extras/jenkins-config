@@ -1,0 +1,23 @@
+Changes in branch origin/master, between fdda6c45112ba86d6316dfc6dad2e4da7ed22442 and 58ab5a86b7c84fe06714acb53c257b654edfd8e7
+commit 58ab5a86b7c84fe06714acb53c257b654edfd8e7
+tree 885371d55a5fd5d90602d5ffcfd5bb05865994a2
+parent b2182307ad729dbc5cc6a88b5d89dec0e5e39010
+author Jessica Wang <jessica@cloud.com> 1330976026 -0800
+committer Jessica Wang <jessica@cloud.com> 1330976042 -0800
+
+    cloudstack 3.0 UI - Make Account page/User page available to normal-user role.
+
+:100644 100644 3977379a8bf72feef9d5fa7b345e7359b663f4f8 8d8856416bc94d7c566525c7c5e8c7d29f837422 M	ui/scripts/accounts.js
+:100644 100644 566948b010251df38445e4331d3edc39c2f45a39 076bcd88f14be977fe10d8c2467bd7af43f9f833 M	ui/scripts/cloudStack.js
+
+commit b2182307ad729dbc5cc6a88b5d89dec0e5e39010
+tree f1bad8cbc027183b59221fc56446fc4cf1506392
+parent fdda6c45112ba86d6316dfc6dad2e4da7ed22442
+author Sheng Yang <sheng.yang@citrix.com> 1330974139 -0800
+committer Sheng Yang <sheng.yang@citrix.com> 1330974139 -0800
+
+    bug 14110: Fix error message
+    
+    status 14110: resolved fixed
+
+:100755 100755 f6e8940eb75b89c9121a7387e6e9d6f1e2c4c722 86d8b269347a68f98ba9296084e89b0a4c21c1e6 M	server/src/com/cloud/network/NetworkManagerImpl.java

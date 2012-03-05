@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 728faac8f39f5471000e2eceecfe56c7aa7b70fb and e6755efc587068ee8b775a8a83f42b5e354fbd54
+commit e6755efc587068ee8b775a8a83f42b5e354fbd54
+tree 7361fc3cc9d993d6b5603569d29af8d898e6063a
+parent 728faac8f39f5471000e2eceecfe56c7aa7b70fb
+author frank <frank.zhang@citrix.com> 1330989314 -0800
+committer frank <frank.zhang@citrix.com> 1330989343 -0800
+
+    set xen.storage.network.device1 xen.storage.network.device2 to null when upgrade
+
+:100755 100755 99421b4024317e391bd06b98f3318330074393ef 5203159d7dbb4915f551331e96c63c48b71de0df M	setup/db/db/schema-2214to30.sql

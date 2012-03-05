@@ -1,13 +1,13 @@
 Started by timer
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision 127ae187b0f64ab2e84de6530aec283bf3400730 (origin/master)
+Last Built Revision: Revision edd91cae03546d768c0d9d3048b32e6d424be942 (origin/master)
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision 02863f0ca19525c5763cc716823e7b284ec75ff7 (origin/master)
-Checking out Revision 02863f0ca19525c5763cc716823e7b284ec75ff7 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson2317096657276492024.sh
+Commencing build of Revision edd91cae03546d768c0d9d3048b32e6d424be942 (origin/master)
+Checking out Revision edd91cae03546d768c0d9d3048b32e6d424be942 (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson2943009629639971529.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -34,7 +34,7 @@ clean-all:
    [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target
 
 BUILD SUCCESSFUL
-Total time: 4 seconds
+Total time: 2 seconds
 Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-29T05:00:53Z
-     [echo] Build number is 3.0.0.2012-02-29T05:00:53Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-05T05:00:38Z
+     [echo] Build number is 3.0.0.2012-03-05T05:00:38Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -139,7 +139,7 @@ compile-console-common:
 compile-console-proxy:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src
-    [javac] Compiling 45 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
+    [javac] Compiling 48 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
     [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java uses or overrides a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
       [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-proxy.jar
@@ -184,8 +184,8 @@ build-scripts:
 
 build-ui:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/ui
-     [copy] Copying 135 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
-     [copy] Copying 518 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 139 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 519 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
 
 compile-ovm:
@@ -367,5 +367,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 1 minute 27 seconds
+Total time: 1 minute 15 seconds
 Finished: SUCCESS

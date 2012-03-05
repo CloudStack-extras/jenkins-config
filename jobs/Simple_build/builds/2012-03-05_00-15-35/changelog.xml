@@ -1,0 +1,20 @@
+Changes in branch origin/master, between edd91cae03546d768c0d9d3048b32e6d424be942 and a0ea13389acaf8b85329ff8e3a073c3f704d8206
+commit 7350ca38bd47123d41bc9159e552cf88d8637f4d
+tree e6176c0c4c7511a46463e0cff37806753cb89cda
+parent d2b15c285963b5a1d8924bb09dc1f25a2d67464c
+author Likitha Shetty <likitha.shetty@citrix.com> 1330923421 +0530
+committer Likitha Shetty <likitha.shetty@citrix.com> 1330923421 +0530
+
+    Bug-14029 Lock account confirmation message is not entirely visible. [reviewed-by: Brian]
+
+:100644 100644 80f80ebdaba84d5d4cc851f24708e8cfeac2f6e0 82801e6125be080c66b3e4229c02996c4c3b782f M	ui/css/cloudstack3.css
+
+commit 21e5f64c2ae1bd7db8f28adb75303aa49462a61f
+tree 084a5822e11476ae8c46f2467e559a4edabd4bde
+parent 12f124d6a6d087d32fe35822a18f0a375ad3f112
+author Likitha Shetty <likitha.shetty@citrix.com> 1329473290 +0530
+committer Likitha Shetty <likitha.shetty@citrix.com> 1329473290 +0530
+
+    Bug 4644 (Pranav)
+
+:100755 100755 ee8e5b2e3a6448c7ffb95f6dba5f8b323daefb30 76e0c2ee533fd0ee9fd8039b1a0b8152394076ea M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java

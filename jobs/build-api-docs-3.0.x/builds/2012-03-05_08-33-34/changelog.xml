@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between e806c718c0d83208b1d9d8bddf1bf31459c7a69d and ef242d1dad6980d7c2a9ca1a44d92f54c311f473
+commit ef242d1dad6980d7c2a9ca1a44d92f54c311f473
+tree c5422bcf5b7226148c84b9228c8e03f5b22f7d6c
+parent e806c718c0d83208b1d9d8bddf1bf31459c7a69d
+author kishan <kishan@cloud.com> 1330954030 +0530
+committer kishan <kishan@cloud.com> 1330954030 +0530
+
+    Bug 13952: Changed category of Usage configs
+    Status 13952: resolved fixed
+    Reviewed-By: Abhi
+
+:100755 100755 1562d7dbab901e118b399065c20fb36f6f886873 9b30e60fe37eb8dd72b7db5fd0797b062bedf64a M	server/src/com/cloud/configuration/Config.java
+:100755 100755 484c8fb26ede03bf414e4107c6fce4f65ed01ea2 3fee7a5023aa20fad11eadb05e3b06261d0d8db3 M	setup/db/db/schema-2214to30.sql

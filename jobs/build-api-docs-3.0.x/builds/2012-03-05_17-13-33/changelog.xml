@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between d7b7532dc9aae173ebd9224a5d604372d8190998 and 1da37b030c9f90ab851e78d0217c13cdd4abb6f9
+commit 1da37b030c9f90ab851e78d0217c13cdd4abb6f9
+tree 2593e37b9d041e0129b412282520c4a9f120e226
+parent d7b7532dc9aae173ebd9224a5d604372d8190998
+author frank <frank.zhang@citrix.com> 1330985394 -0800
+committer frank <frank.zhang@citrix.com> 1330985394 -0800
+
+    Bug 14068 - Db upgrade: resource_state is incorrect for the host in UP state after the db upgrade from 2.2.x to 3.0
+    
+    fix typo
+
+:100755 100755 7b3f8871fda3ab0d2518ec79f0fde22caf498ac9 99421b4024317e391bd06b98f3318330074393ef M	setup/db/db/schema-2214to30.sql

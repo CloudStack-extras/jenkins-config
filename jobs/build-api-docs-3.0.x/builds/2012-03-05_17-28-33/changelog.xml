@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 1da37b030c9f90ab851e78d0217c13cdd4abb6f9 and 0484e13b8e04b5423c8a07a4cfa9c0825e09d60b
+commit 0484e13b8e04b5423c8a07a4cfa9c0825e09d60b
+tree e97b9a226015f0dbb79b00c3675cee024835cbef
+parent 1da37b030c9f90ab851e78d0217c13cdd4abb6f9
+author frank <frank.zhang@citrix.com> 1330986359 -0800
+committer frank <frank.zhang@citrix.com> 1330986359 -0800
+
+    allow SetupCommand when resource is in maintenance mode.
+    Since maintenance is resource state not agent status right now
+
+:100755 100755 56489ede88e178ec402c0ef703bb1aec7ff080ed 70575bca3a420766655b93a00719f97d24bd270f M	server/src/com/cloud/agent/manager/AgentAttache.java

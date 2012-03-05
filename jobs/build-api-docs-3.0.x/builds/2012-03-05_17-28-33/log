@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision f935fcbb0db2d2ab7c9ad4e4477e952802559350 (origin/3.0.x)
+Last Built Revision: Revision 1da37b030c9f90ab851e78d0217c13cdd4abb6f9 (origin/3.0.x)
 Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision 67986a5454d0ed37b9ed0f148a0009454942b37a (origin/3.0.x)
-Checking out Revision 67986a5454d0ed37b9ed0f148a0009454942b37a (origin/3.0.x)
+Commencing build of Revision 0484e13b8e04b5423c8a07a4cfa9c0825e09d60b (origin/3.0.x)
+Checking out Revision 0484e13b8e04b5423c8a07a4cfa9c0825e09d60b (origin/3.0.x)
 Cleaning workspace
 [build-api-docs-3.0.x] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
@@ -17,8 +17,8 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-22T02:46:41Z
-     [echo] Build number is 3.0.0.2012-02-22T02:46:41Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-05T22:28:41Z
+     [echo] Build number is 3.0.0.2012-03-05T22:28:41Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/dep-cache
@@ -148,13 +148,13 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
      [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/agent
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
-     [copy] Copying 153 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/scripts
+     [copy] Copying 154 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/scripts
      [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/scripts
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
      [copy] Copying 135 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
-     [copy] Copying 517 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
+     [copy] Copying 518 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
      [copy] Copying 4 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
@@ -207,30 +207,3 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-usage.jar
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/usage/src
     [javac] Compiling 16 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-usage.jar
-      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-usage.jar
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent-simulator:
-    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-agent-simulator.jar
-     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/agent-simulator/src
-    [javac] Compiling 47 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-agent-simulator.jar
-    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-3.0.x/agent-simulator/src/com/cloud/resource/SimulatorDiscoverer.java uses or overrides a deprecated API.
-    [javac] Note: Recompile with -Xlint:deprecation for details.
-      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-agent-simulator.jar
-     [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/client/conf
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all-with-simulator:
-      [war] Updating war: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/client/client.war
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
-     [echo] build-apidocs
-     [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/commands.xml
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
-      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/apidocs-3.0.0.zip
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 42 seconds
-Archiving artifacts
-Finished: SUCCESS

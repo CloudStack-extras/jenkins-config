@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between ef242d1dad6980d7c2a9ca1a44d92f54c311f473 and 849ddaefec4979740141d4bfa36e3efcac9a37cb
+commit 849ddaefec4979740141d4bfa36e3efcac9a37cb
+tree 4853cedaf8e37726229405c42f547fcdc026613a
+parent ef242d1dad6980d7c2a9ca1a44d92f54c311f473
+author Sheng Yang <sheng.yang@citrix.com> 1330974139 -0800
+committer Sheng Yang <sheng.yang@citrix.com> 1330974617 -0800
+
+    bug 14110: Fix error message
+    
+    status 14110: resolved fixed
+
+:100755 100755 fcc6c9dba37fd689a176c47220110064fe38ddc2 8645bcbc4c323234aee91ba517899f5282279d40 M	server/src/com/cloud/network/NetworkManagerImpl.java

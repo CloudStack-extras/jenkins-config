@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 0484e13b8e04b5423c8a07a4cfa9c0825e09d60b and e5e356415e53314ec8e5ab7ad5d8e081c5b5ee02
+commit e5e356415e53314ec8e5ab7ad5d8e081c5b5ee02
+tree 76c74db28a7c5a5b573ac16ef65b83e14766ca3c
+parent 0484e13b8e04b5423c8a07a4cfa9c0825e09d60b
+author frank <frank.zhang@citrix.com> 1330987127 -0800
+committer frank <frank.zhang@citrix.com> 1330987127 -0800
+
+    allow more commands when resource state in maintenance mode
+
+:100755 100755 70575bca3a420766655b93a00719f97d24bd270f 66e79f05598758eeda3ef2cdde0fdfd2d3b75de3 M	server/src/com/cloud/agent/manager/AgentAttache.java

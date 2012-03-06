@@ -1,0 +1,11 @@
+Changes in branch remotes/origin/2.2.y, between 87bee1d301739279642790135bd3e3017855331c and 5df1f791622fd3ffa9ddf2c4630069e23f4c3c9a
+commit 5df1f791622fd3ffa9ddf2c4630069e23f4c3c9a
+tree f17a0003872e1af20be3cb0c6e40556381810c77
+parent 87bee1d301739279642790135bd3e3017855331c
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330990890 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1330993006 -0800
+
+    bug 14103: mark account for cleanup only in cleanupAccount and disableAccount method, not in the callers methods
+    status 14103: resolved fixed
+
+:100755 100755 4839e482c3150086e1daecd0cc32b45adf4b4e09 8d71445b664b1fee9b0acfe00e12b433c92095e9 M	server/src/com/cloud/user/AccountManagerImpl.java

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between cc431fb1670d417666b6cff1b1af062d21166be4 and 87f4f2f1ef15e7310047ef4e73923cb33fea47ce
+commit 87f4f2f1ef15e7310047ef4e73923cb33fea47ce
+tree 965d0bbc8bf7f44d49469f969579b33dafba00f4
+parent cc431fb1670d417666b6cff1b1af062d21166be4
+author Brian Federle <brian.federle@citrix.com> 1331071706 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331071706 -0800
+
+    bug 14124: Fix remove host confirm dialog
+
+:100644 100644 a3269b400ea1630536cb7d9912e5d764842fe879 995a7676240a424ac2ece51370ab8e2883f68bcf M	ui/scripts/system.js

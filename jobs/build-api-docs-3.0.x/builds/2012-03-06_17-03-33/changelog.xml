@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between 3fcfbacfa0d25a2e1faad0c18178a8b5048c1cac and 758c0cd07398e12f159ef3ce801a81db08f2e96e
+commit 758c0cd07398e12f159ef3ce801a81db08f2e96e
+tree b67e075757bb51a758a53892a100feaed1539df6
+parent 3fcfbacfa0d25a2e1faad0c18178a8b5048c1cac
+author Brian Federle <brian.federle@citrix.com> 1331071165 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331071165 -0800
+
+    bug 14093
+    
+    Uncheck conditional fields to be hidden, to avoid hidden services from
+    accidentally being enabled
+    
+    status 14093: resolved fixed
+
+:100644 100644 5a9f467d49a5e145fbab43e54a8defdd036ab53a b47db231a28b2922d7269c822481621944fd8314 M	ui/scripts/configuration.js

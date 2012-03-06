@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 758c0cd07398e12f159ef3ce801a81db08f2e96e and ad400c859e1f26092571508cebef2e3c3b6d05f2
+commit ad400c859e1f26092571508cebef2e3c3b6d05f2
+tree 6e67082cb5cbcc6ec60457fd40153ce47af6e232
+parent 758c0cd07398e12f159ef3ce801a81db08f2e96e
+author Brian Federle <brian.federle@citrix.com> 1331071706 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331071743 -0800
+
+    bug 14124: Fix remove host confirm dialog
+    
+    status 14124: resolved fixed
+
+:100644 100644 1b05e7889a4214ee7af15d2c291117f7da128a5b 59a7b835ca70373f2486caaba93a20981673341e M	ui/scripts/system.js

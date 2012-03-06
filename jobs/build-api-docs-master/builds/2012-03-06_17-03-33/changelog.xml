@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 44f27fb132f55bd118e34aa463a92d490ede9978 and cc431fb1670d417666b6cff1b1af062d21166be4
+commit cc431fb1670d417666b6cff1b1af062d21166be4
+tree dc8c53a29d3cfbbf174ce3a56b3c3b18e0b22a23
+parent 44f27fb132f55bd118e34aa463a92d490ede9978
+author Brian Federle <brian.federle@citrix.com> 1331071080 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331071091 -0800
+
+    bug 14093
+    
+    Uncheck conditional fields to be hidden, to avoid hidden services from
+    accidentally being enabled
+
+:100644 100644 9687bc5a23bd7ceb97cacc7e52d8ca851ba33666 b47db231a28b2922d7269c822481621944fd8314 M	ui/scripts/configuration.js

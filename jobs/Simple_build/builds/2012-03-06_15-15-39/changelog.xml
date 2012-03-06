@@ -1,0 +1,25 @@
+Changes in branch origin/master, between 07dddea8e2d6d8e597e9b3d406a3893381273154 and d83a1635a6309623c56de35394b9022416368e08
+commit d83a1635a6309623c56de35394b9022416368e08
+tree d551b52fcd0bc41023c20c2d30a800f63dd677d2
+parent 9a94da5ba3a4bc145e981d24dd26efddad5f283c
+author frank <frank.zhang@citrix.com> 1331061022 -0800
+committer frank <frank.zhang@citrix.com> 1331061108 -0800
+
+    2214to30 DB upgrade:
+    directly put simulator_network_label, ovm_network_label when creating physical_network_traffic_types
+    table
+
+:100755 100755 2cd660cb7364b25eb144178a2320c16e1d192d8e 0006f2fb340a29eee7b65736cf4fb722aa05de83 M	setup/db/db/schema-2214to30.sql
+
+commit 9a94da5ba3a4bc145e981d24dd26efddad5f283c
+tree ae25d1c5df4cc6666cd99d274224bab74b52c31f
+parent 07dddea8e2d6d8e597e9b3d406a3893381273154
+author Brian Federle <brian.federle@citrix.com> 1331060526 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331060526 -0800
+
+    bug 14044
+    
+    Reduce width of level bar to prevent '100%' capacity text from
+    wrapping
+
+:100644 100644 56b1a410b1f77a9cd93f7ce2600ca472aa4e7022 f7efdebb9cb55ab94e37ab3e04a7305a6676a3ad M	ui/css/cloudstack3.css

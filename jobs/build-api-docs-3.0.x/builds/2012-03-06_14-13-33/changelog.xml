@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 01b5a5cb792779d83bd8b4c8e1e89e17eb719f0f and 9449b2d056fd0ec5bbb81bd8f83db83936d9356f
+commit 9449b2d056fd0ec5bbb81bd8f83db83936d9356f
+tree 597b7305ffcf3188a6dffa3d25d4203f6749cbda
+parent 01b5a5cb792779d83bd8b4c8e1e89e17eb719f0f
+author frank <frank.zhang@citrix.com> 1331061022 -0800
+committer frank <frank.zhang@citrix.com> 1331061022 -0800
+
+    2214to30 DB upgrade:
+    directly put simulator_network_label, ovm_network_label when creating physical_network_traffic_types
+    table
+
+:100755 100755 5203159d7dbb4915f551331e96c63c48b71de0df 6b34ec2e597217c5a38212f82b9da35ad6f1bcf4 M	setup/db/db/schema-2214to30.sql

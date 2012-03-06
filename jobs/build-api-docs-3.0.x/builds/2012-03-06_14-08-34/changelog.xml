@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between d43614734fd0ceb5589c9293a42e3c31bf7f3733 and 01b5a5cb792779d83bd8b4c8e1e89e17eb719f0f
+commit 01b5a5cb792779d83bd8b4c8e1e89e17eb719f0f
+tree 56c5c71ea77d345b8a6e15444a56fab70faa42da
+parent d43614734fd0ceb5589c9293a42e3c31bf7f3733
+author Brian Federle <brian.federle@citrix.com> 1331060559 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331060559 -0800
+
+    bug 14044
+    
+    Reduce width of level bar to prevent '100%' capacity text from
+    wrapping
+    
+    status 14044: resolved fixed
+
+:100644 100644 df7aa95ed1b11236b3ca4e9ea667d7e0d11ee3bd 17965696c638e70f3ff9529f5d9046f036acab0c M	ui/css/cloudstack3.css

@@ -1,0 +1,29 @@
+Changes in branch remotes/origin/2.2.y, between 488638ba62132ac4ad21dcb124eb5fe4e61dc98e and b47cb26cd8dd9be5739346db5fc40c54413b424a
+commit b47cb26cd8dd9be5739346db5fc40c54413b424a
+tree cc48febf0d7a9191daff0a44680fc23fb4370207
+parent 488638ba62132ac4ad21dcb124eb5fe4e61dc98e
+author Chirag Jog <chirag@clogeny.com> 1331054699 -0800
+committer Chirag Jog <chirag@clogeny.com> 1331054699 -0800
+
+    Fixes based on Prasanna's change to testframework
+    Additional logs/checks around all API calls and SSH calls.
+
+:100644 100644 082ccd535aede697c9c18ce26d51d29c272f8545 4c29affd4a83f50b4a30c3c714df96bda81c9b6e M	tools/testClient/testcase/BVT-tests/test_hosts.py
+:100644 100644 85d4886310c57b89d5257761a9419ddbbb05d715 7cfe30bb6f4efa49ec0fc54e737a07ac59689397 M	tools/testClient/testcase/BVT-tests/test_iso.py
+:100644 100644 40de263109437abf1bcec1f1a04355d85eef3710 1ad4a9f1504beaba20f37f48a71daec5f504ee13 M	tools/testClient/testcase/BVT-tests/test_network.py
+:100644 100644 aa1fe40cc202de87931f2ff18c45c9387b13db4a 875b929dfef38347e1bc2b62dcac7dbfba35c6e0 M	tools/testClient/testcase/BVT-tests/test_secondary_storage.py
+:100644 100644 510871661352e7822d9885ccd3f5f5d0ee9ccddd 15efca0caeede930940618d27012ce75a0fb2595 M	tools/testClient/testcase/BVT-tests/test_snapshots.py
+:100644 100644 3704772d757db2a13deabfab7c2d3734964f01c7 8e16f18ff1e0dfec038686c867db64bbe595bf42 M	tools/testClient/testcase/BVT-tests/test_ssvm.py
+:100644 100644 920053ae2e72b9c08cc2fa8c760928cfee2ff7fe 72316ee8f6f5ffa6e9a5587c5b1c3342cbbba083 M	tools/testClient/testcase/BVT-tests/test_templates.py
+:100644 100644 a3da62796bfaa725b1c4c44196157408310f9619 d3f2aeff5f08b5b39dcfb8d211316854734cd622 M	tools/testClient/testcase/BVT-tests/test_vm_life_cycle.py
+:100644 100644 ab68e52b591abce9cc915dafdb0122988b75ea03 c18824cb115e3b7cdc1c031e430a84e6a05a6ce1 M	tools/testClient/testcase/BVT-tests/test_volumes.py
+:100644 100644 2657a8e225200fed4db744e744a7aa0eb7fdd19f 073c3e68ef44f76609d865393bf3bfcd4b14e887 M	tools/testClient/testcase/P1-tests/test_accounts.py
+:000000 100644 0000000000000000000000000000000000000000 c20248810e96f7e0d175cd38b3937df53352b689 A	tools/testClient/testcase/P1-tests/test_blocker_bugs.py
+:100644 100644 0f39a3048e704358c8fcdf6944f1a6b51f8c4d31 4d369b69769df4ec5a7513679ea26b903536cd58 M	tools/testClient/testcase/P1-tests/test_resource_limits.py
+:100644 100644 2f650eba874e2959a661f8e82abdf9d8186372e9 cff0d95dd90b7f9ab52d94e6eb91e5f00b5079ec M	tools/testClient/testcase/P1-tests/test_routers.py
+:000000 100644 0000000000000000000000000000000000000000 9a6de3852892bdc6b1a67c48ebd0467b91307bcd A	tools/testClient/testcase/P1-tests/test_security_groups.py
+:100644 100644 b1cefb3296018036a7842372aed8d1e160b5b0b4 e26cb90ec91c9767d413ada25c32af8e05a4e40e M	tools/testClient/testcase/P1-tests/test_snapshots.py
+:100644 100644 823cf3635a5fedbc20bcee244c401cd8a86c86ff bb51c5d5943849b33e48971d91bbe7edd769150f M	tools/testClient/testcase/P1-tests/test_templates.py
+:100644 100644 7318b889dbc0a89b0f09caa73912208f2d687245 af776685ae39907cee4c6d2ef6c8e85603368b33 M	tools/testClient/testcase/P1-tests/test_usage.py
+:100644 100644 7ad18d9383b89be35152f0da7100544d88d40627 dd95623df40e2d46e29cf53302f6dca15d68eca7 M	tools/testClient/testcase/P1-tests/test_volumes.py
+:100644 100644 6da34d17b06c2be9618733d4197c7d0698f486f3 07c410f258ebbbc83f8991626315d2c9ac534419 M	tools/testClient/testcase/libs/base.py

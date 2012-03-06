@@ -1,0 +1,75 @@
+Changes in branch origin/master, between d83a1635a6309623c56de35394b9022416368e08 and a198b3fbed797b8f3e9ecc8cbabf166d78498b89
+commit a198b3fbed797b8f3e9ecc8cbabf166d78498b89
+tree c47f7d4bccc9a19d542b84c801c548bfc9ff9239
+parent 100830c2b6852ef90c4329bccf0ce65bfdeb8a62
+author Brian Federle <brian.federle@citrix.com> 1331074699 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331074699 -0800
+
+    Add list view tests
+
+:100644 100644 8a3ec5962f60685fdfc0146bc04d3331f959e40e 74a5555e6a1d3cf1da32d45df023d23474c69140 M	ui/tests/index.html
+:000000 100644 0000000000000000000000000000000000000000 77feedc26d3bf46e622c6cd1b39a2549eb055147 A	ui/tests/test.listView.js
+
+commit 100830c2b6852ef90c4329bccf0ce65bfdeb8a62
+tree 42e0279747680d029a6e71b8178724edd06d03e8
+parent 87f4f2f1ef15e7310047ef4e73923cb33fea47ce
+author Brian Federle <brian.federle@citrix.com> 1331074660 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331074680 -0800
+
+    Add field ID to list view <th>s
+
+:100644 100644 a93c5c0817bee0051e5a929784712bf95d41c3ec 3948ca34c112c8f9ad8240623c90ffb628ec7e73 M	ui/scripts/ui/widgets/listView.js
+
+commit 87f4f2f1ef15e7310047ef4e73923cb33fea47ce
+tree 965d0bbc8bf7f44d49469f969579b33dafba00f4
+parent cc431fb1670d417666b6cff1b1af062d21166be4
+author Brian Federle <brian.federle@citrix.com> 1331071706 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331071706 -0800
+
+    bug 14124: Fix remove host confirm dialog
+
+:100644 100644 a3269b400ea1630536cb7d9912e5d764842fe879 995a7676240a424ac2ece51370ab8e2883f68bcf M	ui/scripts/system.js
+
+commit cc431fb1670d417666b6cff1b1af062d21166be4
+tree dc8c53a29d3cfbbf174ce3a56b3c3b18e0b22a23
+parent 44f27fb132f55bd118e34aa463a92d490ede9978
+author Brian Federle <brian.federle@citrix.com> 1331071080 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331071091 -0800
+
+    bug 14093
+    
+    Uncheck conditional fields to be hidden, to avoid hidden services from
+    accidentally being enabled
+
+:100644 100644 9687bc5a23bd7ceb97cacc7e52d8ca851ba33666 b47db231a28b2922d7269c822481621944fd8314 M	ui/scripts/configuration.js
+
+commit 44f27fb132f55bd118e34aa463a92d490ede9978
+tree fd1fdcb93b9b57bf82f14098c7ec4c70962dc642
+parent de23a4f35b73afbe99b634572c6597dcf4dbe2c4
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331069907 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331069953 -0800
+
+    bug 14156: return instancename parameter in userVm response to ROOT admin only
+
+:100755 100755 49ef2b94ef54afe89d17b1916d897f0a0962c78a 7dea920715394f7a2b8df5c13d45fcbabf6dca0d M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 a415e552b786309413f88677aa15a2df3fee74cf 5bd68cf10f6075f9055d054a7824ab909b0a7593 M	api/src/com/cloud/api/response/UserVmResponse.java
+:100755 100755 071479b71fbbe05a75a31a909d196b5d8c2fa300 ff176499b215bae5f7323ea42d468791eeebff72 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 e07beae0bec48442f410f7d8d9aa1c2ec4d2785e 2f2b1d3e6fed099f343df0e2d07520c0f44b53fb M	server/src/com/cloud/vm/dao/UserVmData.java
+
+commit de23a4f35b73afbe99b634572c6597dcf4dbe2c4
+tree d83e3279e0210dc8f9fb50419e078d38f5ee61d9
+parent d83a1635a6309623c56de35394b9022416368e08
+author Brian Federle <brian.federle@citrix.com> 1331068942 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331068942 -0800
+
+    bug 14093
+    
+    Don't show specific provider fields on add network offering if in
+    Advanced/Shared configuration:
+    
+    -Source NAT
+    -Static NAT
+    -PF
+    -LB
+
+:100644 100644 5a9f467d49a5e145fbab43e54a8defdd036ab53a 9687bc5a23bd7ceb97cacc7e52d8ca851ba33666 M	ui/scripts/configuration.js

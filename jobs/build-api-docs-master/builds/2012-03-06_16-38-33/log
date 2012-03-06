@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision f0dbcf6c3385b4ab151d480a98a9c72ffd2c6f52 (origin/master)
+Last Built Revision: Revision de23a4f35b73afbe99b634572c6597dcf4dbe2c4 (origin/master)
 Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision 37b2f5201447e7d32a905df886229a628da15cf8 (origin/master)
-Checking out Revision 37b2f5201447e7d32a905df886229a628da15cf8 (origin/master)
+Commencing build of Revision 44f27fb132f55bd118e34aa463a92d490ede9978 (origin/master)
+Checking out Revision 44f27fb132f55bd118e34aa463a92d490ede9978 (origin/master)
 [build-api-docs-master] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
@@ -14,15 +14,19 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-23T02:46:50Z
-     [echo] Build number is 3.0.0.2012-02-23T02:46:50Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-06T21:38:47Z
+     [echo] Build number is 3.0.0.2012-03-06T21:38:47Z
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-utils.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+   [depend] Deleted 22 out of date files in 0 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/api/src
+    [javac] Compiling 19 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-api.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/api/src/com/cloud/api/commands/DeployVMCmd.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-api.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
@@ -38,10 +42,10 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-agent.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
-   [depend] Deleted 2 out of date files in 0 seconds
+   [depend] Deleted 6 out of date files in 1 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/server/src
-    [javac] Compiling 2 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
-    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/server/src/com/cloud/configuration/ConfigurationManagerImpl.java uses unchecked or unsafe operations.
+    [javac] Compiling 4 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
     [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-server.jar
 
@@ -71,7 +75,6 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/dist/agent/conf
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
-     [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-master/target/scripts
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
 
@@ -135,6 +138,6 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.0.zip
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 2 minutes 39 seconds
+Total time: 3 minutes 23 seconds
 Archiving artifacts
 Finished: SUCCESS

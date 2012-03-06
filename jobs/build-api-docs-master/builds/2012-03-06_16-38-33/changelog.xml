@@ -1,0 +1,13 @@
+Changes in branch origin/master, between de23a4f35b73afbe99b634572c6597dcf4dbe2c4 and 44f27fb132f55bd118e34aa463a92d490ede9978
+commit 44f27fb132f55bd118e34aa463a92d490ede9978
+tree fd1fdcb93b9b57bf82f14098c7ec4c70962dc642
+parent de23a4f35b73afbe99b634572c6597dcf4dbe2c4
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331069907 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331069953 -0800
+
+    bug 14156: return instancename parameter in userVm response to ROOT admin only
+
+:100755 100755 49ef2b94ef54afe89d17b1916d897f0a0962c78a 7dea920715394f7a2b8df5c13d45fcbabf6dca0d M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 a415e552b786309413f88677aa15a2df3fee74cf 5bd68cf10f6075f9055d054a7824ab909b0a7593 M	api/src/com/cloud/api/response/UserVmResponse.java
+:100755 100755 071479b71fbbe05a75a31a909d196b5d8c2fa300 ff176499b215bae5f7323ea42d468791eeebff72 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 e07beae0bec48442f410f7d8d9aa1c2ec4d2785e 2f2b1d3e6fed099f343df0e2d07520c0f44b53fb M	server/src/com/cloud/vm/dao/UserVmData.java

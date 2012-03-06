@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision 4a45942cd55e5986d17eb3aa0b70bc912721d9ca (origin/3.0.x)
+Last Built Revision: Revision 9449b2d056fd0ec5bbb81bd8f83db83936d9356f (origin/3.0.x)
 Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision 93785df1ff9bb5f9d554904c36845de44998c0de (origin/3.0.x)
-Checking out Revision 93785df1ff9bb5f9d554904c36845de44998c0de (origin/3.0.x)
+Commencing build of Revision 3fcfbacfa0d25a2e1faad0c18178a8b5048c1cac (origin/3.0.x)
+Checking out Revision 3fcfbacfa0d25a2e1faad0c18178a8b5048c1cac (origin/3.0.x)
 Cleaning workspace
 [build-api-docs-3.0.x] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
@@ -17,8 +17,8 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-22T20:26:39Z
-     [echo] Build number is 3.0.0.2012-02-22T20:26:39Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-06T21:38:51Z
+     [echo] Build number is 3.0.0.2012-03-06T21:38:51Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/dep-cache
@@ -148,13 +148,13 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
      [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/agent
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
-     [copy] Copying 153 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/scripts
+     [copy] Copying 154 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/scripts
      [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/scripts
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
      [copy] Copying 135 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
-     [copy] Copying 517 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
+     [copy] Copying 518 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
      [copy] Copying 4 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/ui
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
@@ -231,6 +231,6 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
       [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/apidocs-3.0.0.zip
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 42 seconds
+Total time: 3 minutes 45 seconds
 Archiving artifacts
 Finished: SUCCESS

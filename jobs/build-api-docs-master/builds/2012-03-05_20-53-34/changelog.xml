@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 53dbeb66ae38a1c00191312e79967dea81804194 and 07dddea8e2d6d8e597e9b3d406a3893381273154
+commit 07dddea8e2d6d8e597e9b3d406a3893381273154
+tree 5c135a32c656894bd40890a92c105e85e1fbc5be
+parent 53dbeb66ae38a1c00191312e79967dea81804194
+author prachi <prachi@cloud.com> 1330998382 -0800
+committer prachi <prachi@cloud.com> 1330998623 -0800
+
+    Bug 14028 - Add hostid parameter to StartVmCmd to enable admins to start VM on a particular host
+    
+    Changes:
+    - Added hostid to StartVMCmd. Only root admin can use it.
+
+:100644 100644 141ed3d30abf0ed3d3c20c95d7fa6ef68f20fe82 2e0d1fbb98edc14135a80d9162ee24bf7768eb23 M	api/src/com/cloud/api/commands/StartVMCmd.java
+:100755 100755 d4cc05eb4795284cc368b2e093d5399fa716ede9 e27c55387201d0f6f172ef76a87f223bd4a0fbb1 M	api/src/com/cloud/vm/UserVmService.java
+:100755 100755 41129272a376767b00752fb92edba973584f4d3f 439792e1772879c9b899095cae8a7796a82d328b M	server/src/com/cloud/vm/UserVmManagerImpl.java

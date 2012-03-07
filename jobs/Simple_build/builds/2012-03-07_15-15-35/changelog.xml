@@ -1,0 +1,25 @@
+Changes in branch origin/master, between 37c7e6d0e7f5ade462275fc8324af664e9d17a40 and 26e82329747bf5cc9be385369b9e56cef0983662
+commit 26e82329747bf5cc9be385369b9e56cef0983662
+tree f753d64e1ca36ddb460b1d9e9bcdcc4f630dfb44
+parent 8d2deaeb46ef1f75cc43964d0d1a9a6fd6e68080
+author Jessica Wang <jessica@cloud.com> 1331143457 -0800
+committer Jessica Wang <jessica@cloud.com> 1331143457 -0800
+
+    bug 14023: extend dialog widget to support textarea field.
+
+:100644 100644 efda1f3647381bfc4165f4d632b5b8036ab6dfdc b06ee4c43f82de9c9c822ebacff27592f2e938c4 M	ui/scripts/ui-custom/physicalResources.js
+:100644 100644 6008226c4db22f5deffd0b6233590dd13ba7996d 3b4a6ef6ebb7468d8dfd444af174518bff3da488 M	ui/scripts/ui/dialog.js
+
+commit 8d2deaeb46ef1f75cc43964d0d1a9a6fd6e68080
+tree 8a5975c28fddee685f45087167d301c025143237
+parent 37c7e6d0e7f5ade462275fc8324af664e9d17a40
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331143300 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331143344 -0800
+
+    bug 14173: add eip/elb network offering (if missing) during the management server start
+    status 14173: resolved fixed
+
+:100755 100755 f26bd6c78defb4dfe6fad0373baa11eb3e8e4ee6 2c2d6e595b107264ffa5096c30cfac7ca5fd188b M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 45493e1b04c3da89ea3e6b9842562b39b39b631c e28e4b8f7c6e078548c4fb210122e928b32d5a4c M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 f6393936e165b5f37bcfef8b6499fa608b5436da 27431645607647a6ece8b6eb472642cef89389f3 M	server/src/com/cloud/offerings/NetworkOfferingVO.java
+:100755 100755 e65feb7494632974c119b7558a2ab50592d82d96 4df39772d3b5d8e4196954945797946457064e95 M	server/src/com/cloud/server/ConfigurationServerImpl.java

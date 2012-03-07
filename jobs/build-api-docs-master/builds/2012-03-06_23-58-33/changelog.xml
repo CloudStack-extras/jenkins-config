@@ -1,0 +1,11 @@
+Changes in branch origin/master, between f93e76432eaa2954aa30541bc5b2e2a64aa8ae4d and 37c7e6d0e7f5ade462275fc8324af664e9d17a40
+commit 37c7e6d0e7f5ade462275fc8324af664e9d17a40
+tree 4cb812b1af6a790d67618d02e17065405d38d7d6
+parent f93e76432eaa2954aa30541bc5b2e2a64aa8ae4d
+author Likitha Shetty <likitha.shetty@citrix.com> 1331095812 +0530
+committer Likitha Shetty <likitha.shetty@citrix.com> 1331095812 +0530
+
+    Bug 13773 (Migrate volume to another primary storage icon is wrong)
+    reviewed-by: Brian
+
+:100644 100644 f7efdebb9cb55ab94e37ab3e04a7305a6676a3ad 11977876bc18e0590e300661f2c6689e2d8bda89 M	ui/css/cloudstack3.css

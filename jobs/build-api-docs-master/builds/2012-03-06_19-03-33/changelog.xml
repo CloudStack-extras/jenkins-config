@@ -1,0 +1,11 @@
+Changes in branch origin/master, between a198b3fbed797b8f3e9ecc8cbabf166d78498b89 and f93e76432eaa2954aa30541bc5b2e2a64aa8ae4d
+commit f93e76432eaa2954aa30541bc5b2e2a64aa8ae4d
+tree 2b381672bd1c07c46242c153b66750e9485900f1
+parent a198b3fbed797b8f3e9ecc8cbabf166d78498b89
+author Jessica Wang <jessica@cloud.com> 1331078410 -0800
+committer Jessica Wang <jessica@cloud.com> 1331078410 -0800
+
+    bug 14023: add "update SSL Certificate" button in the first screen in Infrastructure page.
+
+:100644 100644 d42dfa265cc59d424f48660207944e2bea93c3d7 a41509cf7580951ba188a94b0162378645aacfad M	ui/index.jsp
+:100644 100644 21bf89b4a814312162f8ad0d5a43cdf146167011 efda1f3647381bfc4165f4d632b5b8036ab6dfdc M	ui/scripts/ui-custom/physicalResources.js

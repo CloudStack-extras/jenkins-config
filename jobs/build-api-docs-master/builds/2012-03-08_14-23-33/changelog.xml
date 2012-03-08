@@ -1,0 +1,15 @@
+Changes in branch origin/master, between fc85c7df6b6b12d3072737e83df6bb73622d5276 and 8dab0767049e3490a9d461c4d9e35f72ced5f198
+commit 8dab0767049e3490a9d461c4d9e35f72ced5f198
+tree 5272e50fd4873ae583fe60b5d8a7db3f719f0c35
+parent fc85c7df6b6b12d3072737e83df6bb73622d5276
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331234353 -0800
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331234353 -0800
+
+    Bug 14060: Include a CloudStack error code in an Exception Response
+    
+    Description:
+    
+    	Missed fully qualifying ServerApiException in hashmap.
+    	Fixing it with this commit.
+
+:100755 100755 81b5ce4eb98023d88fa95e11a1d032d99bdc62ff 1e9939c2131adc4dbf8d576f7d634424c1951c60 M	utils/src/com/cloud/utils/exception/CSExceptionErrorCode.java

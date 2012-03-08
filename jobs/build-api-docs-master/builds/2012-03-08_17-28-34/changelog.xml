@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 606338dc1cc23a9ccb72f64fccbbb406a156575a and 42e13b9eb8768d6dcd78a72ea43719ea78142faf
+commit 42e13b9eb8768d6dcd78a72ea43719ea78142faf
+tree 3ce201b3a4c1c00bf7aae332fa385bcd168e3569
+parent 735396f8c009155d4fadcf64d3aa93b44e766dcc
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331245758 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331245779 -0800
+
+    bug 14199: added missing config values during the db upgrade
+
+:100755 100755 0b84ccec723111213f206e6040a9e8a1fab89238 cd80947633beb5cb9a29055ba37d56c00a32aba1 M	setup/db/db/schema-2214to30.sql
+
+commit 735396f8c009155d4fadcf64d3aa93b44e766dcc
+tree a9583f3810ccde77c189f4a4e041f2412e36f374
+parent 606338dc1cc23a9ccb72f64fccbbb406a156575a
+author Brian Federle <brian.federle@citrix.com> 1331245475 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331245480 -0800
+
+    Add list view section selector tests
+
+:100644 100644 baead8a030cd2f878363d77498dfd97a1458e37d f55a577847c8ac1099a6d4d4dba3de50066d5803 M	ui/tests/test.listView.js

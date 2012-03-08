@@ -1,0 +1,20 @@
+Changes in branch origin/3.0.x, between c0b0a80710e22b2856c2ee3c4fa392349f395c92 and fe1451f9921b680873100fdbfcbcea5cecaabb36
+commit fe1451f9921b680873100fdbfcbcea5cecaabb36
+tree 3884708723929435ea6801549cba4d3df30e1260
+parent 51aadbb031077defbc4babda11e41816855db37a
+author Jessica Wang <jessica@cloud.com> 1331244627 -0800
+committer Jessica Wang <jessica@cloud.com> 1331244643 -0800
+
+    cloudstack 3.0 UI - infrastructure page - update SSL Certificate - overlay loading image during action.
+
+:100644 100644 b06ee4c43f82de9c9c822ebacff27592f2e938c4 8216d02d8e6e9601a2970a86662cfb71da107422 M	ui/scripts/ui-custom/physicalResources.js
+
+commit 51aadbb031077defbc4babda11e41816855db37a
+tree 795e862b5b40ce6f062427ffb7cbfa1a3b9697ed
+parent c0b0a80710e22b2856c2ee3c4fa392349f395c92
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331244631 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331244730 -0800
+
+    bug 14200: remove skip.steps config param as a part of 2.2.x-3.0 upgrade. Fixed the name for vm.destroy.forcestop config as well
+
+:100755 100755 d8d681d6b6d1888cbc8ab87c59bf8076171814ec 83d408daec27c2249361bc554d006c06dc45d0e5 M	setup/db/db/schema-2214to30.sql

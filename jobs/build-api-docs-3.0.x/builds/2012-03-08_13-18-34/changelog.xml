@@ -1,0 +1,84 @@
+Changes in branch origin/3.0.x, between a043eb46fdb67f202f2212604734da103fa948aa and 7d5c11d49bccf62eb11209c2edfea67fc263744f
+commit 7d5c11d49bccf62eb11209c2edfea67fc263744f
+tree 0bb8c68d44bdf1013c34300b96b549b56d8f29b2
+parent 1c3cc8956cb007f834ceb662fb2849a46c7fb88f
+author Jessica Wang <jessica@cloud.com> 1331229754 -0800
+committer Jessica Wang <jessica@cloud.com> 1331229754 -0800
+
+    Network page - Add guest network dialog - network offering dropdown - pass guestiptype instead of type to listNetworkOfferings API.
+
+:100644 100644 921c1f9b0f855a769e87f0c6ed3d168f5b352f5d 32e5348cc12cf6802d66692ab1e4f4e46dd96a00 M	ui/scripts/network.js
+
+commit 1c3cc8956cb007f834ceb662fb2849a46c7fb88f
+tree 2be248685a00da2a637ad8f6242f4accf8c68ef1
+parent f9b6d4f1fd30dfbcd6c0de43a01988859197a975
+author Sheng Yang <sheng.yang@citrix.com> 1331167861 -0800
+committer Sheng Yang <sheng.yang@citrix.com> 1331168034 -0800
+
+    bug 14170: Fix issue #7
+
+:100755 100755 60d1a91ac495e2eb56f953303588352a0894aca3 d8d681d6b6d1888cbc8ab87c59bf8076171814ec M	setup/db/db/schema-2214to30.sql
+
+commit f9b6d4f1fd30dfbcd6c0de43a01988859197a975
+tree 432db20739dec4fd648793c5db41867eb5fecf00
+parent a09272710263f968b9d077638761ae3dabf023af
+author Jessica Wang <jessica@cloud.com> 1331167667 -0800
+committer Jessica Wang <jessica@cloud.com> 1331167686 -0800
+
+    bug 14194: Infrastructure page - guest traffic type - set traffic labels regardless of what vlan's value is.
+
+:100644 100644 b0243764f731fc8bb3316ac15f2e40e52f2a8c02 97fd833aebe8542b139fa8b3d91d5adc673bb32f M	ui/scripts/system.js
+
+commit a09272710263f968b9d077638761ae3dabf023af
+tree 4a99c4e92011d9b0b1032598f2b75b51c809557e
+parent 021b7a2aae67e04a3149950a0c612ec50112a6a0
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331166961 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331167002 -0800
+
+    bug 14170: fixed #4-6 and #9-13
+
+:100644 100644 b472699c70a25d5cedbb16f8d730057c3d9f2ac6 3ed37115850b1f01f156e348e13083deb044a989 M	setup/db/create-schema-premium.sql
+:100644 100644 4c2eece237ceae061636adcee11026536fc431d5 f7ca5c5e8dbafbb404f9fe8ef1aedc309676111b M	setup/db/db/schema-2214to30-cleanup.sql
+:100755 100755 6b34ec2e597217c5a38212f82b9da35ad6f1bcf4 60d1a91ac495e2eb56f953303588352a0894aca3 M	setup/db/db/schema-2214to30.sql
+
+commit 021b7a2aae67e04a3149950a0c612ec50112a6a0
+tree 12c4e54b6b9cb6ee7187acdf7df089689a1c7cbf
+parent 1d6d216e8ada2c53cc3a288ec6e5ddfddf058d98
+author Jessica Wang <jessica@cloud.com> 1331165946 -0800
+committer Jessica Wang <jessica@cloud.com> 1331165946 -0800
+
+    Infrastructure page - guest traffic - details tab - move Tags field up from lower pane(traffic type) to upper pane (physical network) since tags is at physical network level, not at traffic type level.
+
+:100644 100644 fd5870bba17653d90e5358826755980d65a7a1f1 b0243764f731fc8bb3316ac15f2e40e52f2a8c02 M	ui/scripts/system.js
+
+commit 1d6d216e8ada2c53cc3a288ec6e5ddfddf058d98
+tree aeea1a59f8155e18cf35babfbbf6dad4ebccd1f4
+parent e09871fc68f2ff66bcc8517371e817c026796efc
+author Jessica Wang <jessica@cloud.com> 1331165483 -0800
+committer Jessica Wang <jessica@cloud.com> 1331165483 -0800
+
+    bug 14193: system - guest traffic - edit action - not pass vlan to updatePhysicalNetwork when vlan field is blank.
+
+:100644 100644 59a7b835ca70373f2486caaba93a20981673341e fd5870bba17653d90e5358826755980d65a7a1f1 M	ui/scripts/system.js
+
+commit e09871fc68f2ff66bcc8517371e817c026796efc
+tree 7a0c496bab46b08eb2fe0586fa361d302e69344f
+parent 4d7bbcaba39a83af174cba4d6792404e4858822e
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331163141 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331163141 -0800
+
+    Fixed upload custom certificate api broken due to default api field length restriction
+
+:100644 100644 e94e31ea734c8948d73164ed344b829f399e256a dff8afe6b933fc757ff4909ebce1b7b6f7c021fc M	api/src/com/cloud/api/commands/UploadCustomCertificateCmd.java
+
+commit 4d7bbcaba39a83af174cba4d6792404e4858822e
+tree 1132a799740fbcc0c96ce617ab2773b16cff1362
+parent a043eb46fdb67f202f2212604734da103fa948aa
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331156083 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331156126 -0800
+
+    bug 14170: issues #1-#3 are fixed
+
+:100755 100755 e509062be74aeafde16ca9e4728df15e2fbce62a a0a3a83c8bb2391cfc3757145ddafd3614a4a602 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100644 100644 1254251c2e543940c159abd196402819185efaca 782d70c39164fd1e18a2dad036d9c7caaec3cc70 M	server/test/com/cloud/vm/MockUserVmManagerImpl.java
+:100644 100644 55d7798d357bff1e0389603828f32b5b6b4d89fe 4c2eece237ceae061636adcee11026536fc431d5 M	setup/db/db/schema-2214to30-cleanup.sql

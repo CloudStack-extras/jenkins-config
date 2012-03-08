@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>ke4qqq</userId>
+        </hudson.model.Cause_-UserIdCause>
+      </causes>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+      <result>FAILURE</result>
+    </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+  </actions>
+  <number>229</number>
+  <result>FAILURE</result>
+  <duration>1248</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/Automated Test Runs</workspace>
+  <hudsonVersion>1.447</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits/>
+</build>

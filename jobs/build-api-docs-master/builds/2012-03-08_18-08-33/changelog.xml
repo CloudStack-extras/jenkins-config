@@ -1,0 +1,10 @@
+Changes in branch origin/master, between b619b0f9b2d3e84a00ffcb005abaa663945418a2 and c515e1562ac88fce9816ac33c101d5ce1bcd58a8
+commit c515e1562ac88fce9816ac33c101d5ce1bcd58a8
+tree ebfb1159e72747c81981db1b85078dab04a9a42c
+parent b619b0f9b2d3e84a00ffcb005abaa663945418a2
+author Jessica Wang <jessica@cloud.com> 1331247946 -0800
+committer Jessica Wang <jessica@cloud.com> 1331247985 -0800
+
+    bug 14206: ISO page - listView - show name instead of description.
+
+:100644 100644 e46219809bc5f4d05f23fc6b3261874d3d6b6e4c eb871c9904301b70dfd45eb4d97f3d01f4d176c8 M	ui/scripts/templates.js

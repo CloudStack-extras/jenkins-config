@@ -1,0 +1,107 @@
+Changes in branch origin/master, between a17278608f6ff7f0330edb126800de3a46210e47 and d6a29e291815f36d00aef292ece04703f0a91f67
+commit d6a29e291815f36d00aef292ece04703f0a91f67
+tree 4c30f454de970299a19ef7cb567809241f5c822f
+parent c515e1562ac88fce9816ac33c101d5ce1bcd58a8
+author Brian Federle <brian.federle@citrix.com> 1331248295 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331248300 -0800
+
+    Add basic sync list view action tests
+
+:100644 100644 8c1c674b5789dace5d4bda3425722748290acbd1 eb7879c9aec44e3c9511bce44bcb5a9b0b334c92 M	ui/tests/test.listView.js
+
+commit c515e1562ac88fce9816ac33c101d5ce1bcd58a8
+tree ebfb1159e72747c81981db1b85078dab04a9a42c
+parent b619b0f9b2d3e84a00ffcb005abaa663945418a2
+author Jessica Wang <jessica@cloud.com> 1331247946 -0800
+committer Jessica Wang <jessica@cloud.com> 1331247985 -0800
+
+    bug 14206: ISO page - listView - show name instead of description.
+
+:100644 100644 e46219809bc5f4d05f23fc6b3261874d3d6b6e4c eb871c9904301b70dfd45eb4d97f3d01f4d176c8 M	ui/scripts/templates.js
+
+commit b619b0f9b2d3e84a00ffcb005abaa663945418a2
+tree 4919a9460a4aef95dc96419884f5ab3e010d1b7c
+parent 2ba215282a8d15427f1cc87859ddcf97a881e466
+author Jessica Wang <jessica@cloud.com> 1331246663 -0800
+committer Jessica Wang <jessica@cloud.com> 1331246687 -0800
+
+    bug 14196: infrastructure page - add guest network - pass subdomainaccess=false to API when Subdomain Access is unchecked.
+
+:100644 100644 60cd7c165c1dc9bc3797f5382323d6d478cdfea5 b0dee6e0ad8a30a418d0082d6b014a9f2fd51db5 M	ui/scripts/system.js
+
+commit 2ba215282a8d15427f1cc87859ddcf97a881e466
+tree 0ad9179f7ea885611440fb5f97f002d296c70650
+parent 42e13b9eb8768d6dcd78a72ea43719ea78142faf
+author Brian Federle <brian.federle@citrix.com> 1331246660 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331246665 -0800
+
+    Add initial list view action tests
+
+:100644 100644 f55a577847c8ac1099a6d4d4dba3de50066d5803 8c1c674b5789dace5d4bda3425722748290acbd1 M	ui/tests/test.listView.js
+
+commit 42e13b9eb8768d6dcd78a72ea43719ea78142faf
+tree 3ce201b3a4c1c00bf7aae332fa385bcd168e3569
+parent 735396f8c009155d4fadcf64d3aa93b44e766dcc
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331245758 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331245779 -0800
+
+    bug 14199: added missing config values during the db upgrade
+
+:100755 100755 0b84ccec723111213f206e6040a9e8a1fab89238 cd80947633beb5cb9a29055ba37d56c00a32aba1 M	setup/db/db/schema-2214to30.sql
+
+commit 735396f8c009155d4fadcf64d3aa93b44e766dcc
+tree a9583f3810ccde77c189f4a4e041f2412e36f374
+parent 606338dc1cc23a9ccb72f64fccbbb406a156575a
+author Brian Federle <brian.federle@citrix.com> 1331245475 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331245480 -0800
+
+    Add list view section selector tests
+
+:100644 100644 baead8a030cd2f878363d77498dfd97a1458e37d f55a577847c8ac1099a6d4d4dba3de50066d5803 M	ui/tests/test.listView.js
+
+commit 606338dc1cc23a9ccb72f64fccbbb406a156575a
+tree 41c84e33362ffc75a3bcdf41343f510ae75928ce
+parent 892ed3a2d7c033731b23ea995fa00777a96b610a
+author Jessica Wang <jessica@cloud.com> 1331244627 -0800
+committer Jessica Wang <jessica@cloud.com> 1331244687 -0800
+
+    cloudstack 3.0 UI - infrastructure page - update SSL Certificate - overlay loading image during action.
+
+:100644 100644 b06ee4c43f82de9c9c822ebacff27592f2e938c4 8216d02d8e6e9601a2970a86662cfb71da107422 M	ui/scripts/ui-custom/physicalResources.js
+
+commit 892ed3a2d7c033731b23ea995fa00777a96b610a
+tree 754fd00c7e4c91da5369521c88b65b7d287e75a1
+parent 33b2d04051f675ff1cfa2704dcfb2677c92b8e38
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331244631 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331244744 -0800
+
+    bug 14200: remove skip.steps config param as a part of 2.2.x-3.0 upgrade. Fixed the name for vm.destroy.forcestop config as well
+
+:100755 100755 c44ff7064bb146861b3c73b0ba2d98b8f7527506 0b84ccec723111213f206e6040a9e8a1fab89238 M	setup/db/db/schema-2214to30.sql
+
+commit 33b2d04051f675ff1cfa2704dcfb2677c92b8e38
+tree e9860ac4026d5ab8bcbea6d5c77b4be85cdf40af
+parent 1782139d5e70fea66e846a97920095aee83691d5
+author Brian Federle <brian.federle@citrix.com> 1331243221 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331243221 -0800
+
+    Add tests for list view widget:
+    
+    -Data provider
+    
+    -Column pre-filter
+
+:100644 100644 77feedc26d3bf46e622c6cd1b39a2549eb055147 baead8a030cd2f878363d77498dfd97a1458e37d M	ui/tests/test.listView.js
+
+commit 1782139d5e70fea66e846a97920095aee83691d5
+tree aa26a6672ce2bdfaeda1b6992a865978a8bbfd28
+parent a17278608f6ff7f0330edb126800de3a46210e47
+author Jessica Wang <jessica@cloud.com> 1331242206 -0800
+committer Jessica Wang <jessica@cloud.com> 1331242206 -0800
+
+    cloudstack 3.0 UI - (1) listView widget - add PreFilter() to exclude fields that shouldn't show upon conditions. (2) Instance page - add new field "Internal name" (e.g. "i-3-5-JW") that only shows for root-admin.
+
+:100644 100644 1430f6534ab03e67a3cfb552ac75259b2c36afef 7c05f43c96ae1005cd4ead141bfed9470e2d88b2 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 d53335a32ab3f2e933cdbd119fe5dd0c9cb2fdd7 c216d76dfa6e3d05dacebd466eacda490dfbf024 M	ui/index.jsp
+:100644 100644 18f23c1d77352e9937cdbd4334d93720cf5162bc 4fac2bc3b612a62b84093a712489839d3252222d M	ui/scripts/instances.js
+:100644 100644 3948ca34c112c8f9ad8240623c90ffb628ec7e73 311b81bea2b9189d63939db2217c17bfc79b7543 M	ui/scripts/ui/widgets/listView.js

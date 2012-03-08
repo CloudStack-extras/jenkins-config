@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between f316995af39a4171ab638e76f8b92c12788f3e6e and f52890968f3cc2aba02f259c3acc53ff2df2d18a
+commit f52890968f3cc2aba02f259c3acc53ff2df2d18a
+tree b83acedb8aa4fcb41e7888e3ceb46063d1487fed
+parent f316995af39a4171ab638e76f8b92c12788f3e6e
+author Jessica Wang <jessica@cloud.com> 1331247946 -0800
+committer Jessica Wang <jessica@cloud.com> 1331247946 -0800
+
+    bug 14206: ISO page - listView - show name instead of description.
+
+:100644 100644 e46219809bc5f4d05f23fc6b3261874d3d6b6e4c eb871c9904301b70dfd45eb4d97f3d01f4d176c8 M	ui/scripts/templates.js

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 8dab0767049e3490a9d461c4d9e35f72ced5f198 and a17278608f6ff7f0330edb126800de3a46210e47
+commit a17278608f6ff7f0330edb126800de3a46210e47
+tree 3aa170802a0042a223cd9ba97c5466489de5ad2b
+parent 8dab0767049e3490a9d461c4d9e35f72ced5f198
+author Sheng Yang <sheng.yang@citrix.com> 1331236483 -0800
+committer Sheng Yang <sheng.yang@citrix.com> 1331236531 -0800
+
+    Fix several wrong ResourceUnavailableException scopes
+
+:100755 100755 3766c16694edc04284fbcdf95cf62db20260404a 5a8716386415ca61bc0a40d59b2797ef9c4934b0 M	server/src/com/cloud/network/element/VirtualRouterElement.java
+:100755 100755 b21f4ffda0f66a589955dda746f44b81cece6a99 71e7a72801ce975163dc3d96d238ec733b8e80f9 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100755 100755 d4797c94bfed7d0a2c52045b003dd9ff319396a6 de7dee23a64be2c7d6d48a65f887c0a6aa4a9ab8 M	server/src/com/cloud/storage/StorageManagerImpl.java

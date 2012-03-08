@@ -1,0 +1,13 @@
+Changes in branch origin/master, between a17278608f6ff7f0330edb126800de3a46210e47 and 1782139d5e70fea66e846a97920095aee83691d5
+commit 1782139d5e70fea66e846a97920095aee83691d5
+tree aa26a6672ce2bdfaeda1b6992a865978a8bbfd28
+parent a17278608f6ff7f0330edb126800de3a46210e47
+author Jessica Wang <jessica@cloud.com> 1331242206 -0800
+committer Jessica Wang <jessica@cloud.com> 1331242206 -0800
+
+    cloudstack 3.0 UI - (1) listView widget - add PreFilter() to exclude fields that shouldn't show upon conditions. (2) Instance page - add new field "Internal name" (e.g. "i-3-5-JW") that only shows for root-admin.
+
+:100644 100644 1430f6534ab03e67a3cfb552ac75259b2c36afef 7c05f43c96ae1005cd4ead141bfed9470e2d88b2 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 d53335a32ab3f2e933cdbd119fe5dd0c9cb2fdd7 c216d76dfa6e3d05dacebd466eacda490dfbf024 M	ui/index.jsp
+:100644 100644 18f23c1d77352e9937cdbd4334d93720cf5162bc 4fac2bc3b612a62b84093a712489839d3252222d M	ui/scripts/instances.js
+:100644 100644 3948ca34c112c8f9ad8240623c90ffb628ec7e73 311b81bea2b9189d63939db2217c17bfc79b7543 M	ui/scripts/ui/widgets/listView.js

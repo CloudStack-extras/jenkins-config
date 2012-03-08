@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 42e13b9eb8768d6dcd78a72ea43719ea78142faf and b619b0f9b2d3e84a00ffcb005abaa663945418a2
+commit b619b0f9b2d3e84a00ffcb005abaa663945418a2
+tree 4919a9460a4aef95dc96419884f5ab3e010d1b7c
+parent 2ba215282a8d15427f1cc87859ddcf97a881e466
+author Jessica Wang <jessica@cloud.com> 1331246663 -0800
+committer Jessica Wang <jessica@cloud.com> 1331246687 -0800
+
+    bug 14196: infrastructure page - add guest network - pass subdomainaccess=false to API when Subdomain Access is unchecked.
+
+:100644 100644 60cd7c165c1dc9bc3797f5382323d6d478cdfea5 b0dee6e0ad8a30a418d0082d6b014a9f2fd51db5 M	ui/scripts/system.js
+
+commit 2ba215282a8d15427f1cc87859ddcf97a881e466
+tree 0ad9179f7ea885611440fb5f97f002d296c70650
+parent 42e13b9eb8768d6dcd78a72ea43719ea78142faf
+author Brian Federle <brian.federle@citrix.com> 1331246660 -0800
+committer Brian Federle <brian.federle@citrix.com> 1331246665 -0800
+
+    Add initial list view action tests
+
+:100644 100644 f55a577847c8ac1099a6d4d4dba3de50066d5803 8c1c674b5789dace5d4bda3425722748290acbd1 M	ui/tests/test.listView.js

@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 32fc70b06a9247105140bce2dd679b22fb73719c and f316995af39a4171ab638e76f8b92c12788f3e6e
+commit f316995af39a4171ab638e76f8b92c12788f3e6e
+tree 7e00d046a8bc0115df554020bed3232117b76e45
+parent 32fc70b06a9247105140bce2dd679b22fb73719c
+author Jessica Wang <jessica@cloud.com> 1331246600 -0800
+committer Jessica Wang <jessica@cloud.com> 1331246616 -0800
+
+    bug 14196: infrastructure page - add guest network - pass subdomainaccess=false to API when Subdomain Access is unchecked.
+
+:100644 100644 97fd833aebe8542b139fa8b3d91d5adc673bb32f bb02c0b7cf9b2221662769505a2b0f6a01f683e3 M	ui/scripts/system.js

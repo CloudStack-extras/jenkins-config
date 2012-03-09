@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@f7e5d1
 Using strategy: Default
-Last Built Revision: Revision 6ba669bd51b7416bd5d2e31e8971a99a970bce3e (origin/master)
+Last Built Revision: Revision 63987174597bfea767a49a7fa19b0c58a493a764 (origin/master)
 Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@f7e5d1
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision d445f66758b86d80688dbea4f7a25a2652838b03 (origin/master)
-Checking out Revision d445f66758b86d80688dbea4f7a25a2652838b03 (origin/master)
+Commencing build of Revision 64c5fba2da435d32ec159f7cd6c58a3328b7a041 (origin/master)
+Checking out Revision 64c5fba2da435d32ec159f7cd6c58a3328b7a041 (origin/master)
 [build-api-docs-master] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
@@ -14,8 +14,8 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-02-24T01:11:50Z
-     [echo] Build number is 3.0.0.2012-02-24T01:11:50Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-09T06:53:40Z
+     [echo] Build number is 3.0.0.2012-03-09T06:53:40Z
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
@@ -130,6 +130,6 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.0.zip
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 3 minutes 1 second
+Total time: 1 minute 24 seconds
 Archiving artifacts
 Finished: SUCCESS

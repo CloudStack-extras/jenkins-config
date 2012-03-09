@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between f52890968f3cc2aba02f259c3acc53ff2df2d18a and 9d791d20f1f7719c0d44035da05f3fa01fb13e8c
+commit 9d791d20f1f7719c0d44035da05f3fa01fb13e8c
+tree e9b6e49847c6ed9737085505e297ae57ea1ae904
+parent f52890968f3cc2aba02f259c3acc53ff2df2d18a
+author Nitin Mehta <nitin.mehta@citrix.com> 1331275776 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1331275964 +0530
+
+    Bug 14199: Add allocated workd to the config values.
+    Reviewed-By: Kishan
+
+:100755 100755 d08a7f5cc83d0ece5778e230aa655b50c55be319 e69acb603345a802c84a74e5f0f389c7bff0831b M	setup/db/db/schema-2214to30.sql

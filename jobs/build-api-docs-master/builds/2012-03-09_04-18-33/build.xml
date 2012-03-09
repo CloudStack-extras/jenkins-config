@@ -45,7 +45,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>7af61a6543d5e43599f0a8c930c8e9c6e531fa73</sha1>
+              <sha1>f82ec495207762e664d59efd08d8d4f88be08451</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -53,7 +53,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>230</hudsonBuildNumber>
+            <hudsonBuildNumber>330</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -106,9 +106,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>230</number>
+  <number>330</number>
   <result>SUCCESS</result>
-  <duration>88917</duration>
+  <duration>94901</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -118,6 +118,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>jtomechak</string>
+    <string>vijayendra.bhamidipati</string>
   </culprits>
 </build>

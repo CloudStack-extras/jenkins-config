@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between c6d4e5b66f0d22a0a4796fb3c1594ac7c2e9ae62 and e1cf523760531355c154400c29e23fb1488a6ffe
+commit e1cf523760531355c154400c29e23fb1488a6ffe
+tree 559789a44542bfb7d3b370f95f7df08bdba55696
+parent c6d4e5b66f0d22a0a4796fb3c1594ac7c2e9ae62
+author abhi <abhinandan.prateek@citrix.com> 1331298520 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1331298520 +0530
+
+    bug 14224: adding 6.0.2
+
+:100755 100755 b7afa5ee1842c905628237b6aafa89c8e96a9832 1b1316263cbfdc5d76d5f0b0cca57614b423e358 M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java

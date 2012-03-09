@@ -1,0 +1,91 @@
+Started by timer
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
+Using strategy: Default
+Last Built Revision: Revision f82ec495207762e664d59efd08d8d4f88be08451 (origin/master)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@f7e5d1
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
+Commencing build of Revision 0ab0fcfa5c3b8825b8a92e3c2d2dee8e8ca6152b (origin/master)
+Checking out Revision 0ab0fcfa5c3b8825b8a92e3c2d2dee8e8ca6152b (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson8997062581306250310.sh
++ sh tools/testClient/automated/automated.sh
+Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
+Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
+Copying /usr/share/tomcat6/lib files to /var/lib/jenkins/automated/lib...
+Copying /usr/share/tomcat6/logs files to /var/lib/jenkins/automated/logs...
+Copying /usr/share/tomcat6/temp files to /var/lib/jenkins/automated/temp...
+cp: cannot stat `/usr/share/tomcat6/temp/*': No such file or directory
+Copying /usr/share/tomcat6/webapps files to /var/lib/jenkins/automated/webapps...
+cp: cannot stat `/usr/share/tomcat6/webapps/*': No such file or directory
+Copying /usr/share/tomcat6/work files to /var/lib/jenkins/automated/work...
+cp: cannot stat `/usr/share/tomcat6/work/*': No such file or directory
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+clean:
+   [delete] Deleting: /var/lib/jenkins/workspace/Automated Test Runs/target/ant_verbose.txt
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target/classes
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/dist
+
+clean-all:
+   [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+automated-test-run:
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Automated Test Runs/build/replace.properties
+
+-init:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-09T17:00:41Z
+     [echo] Build number is 3.0.0.2012-03-09T17:00:41Z
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
+
+compile-utils:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/utils/src
+    [javac] Compiling 203 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-utils.jar
+
+compile-api:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/api/src
+    [javac] Compiling 703 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/api/src/com/cloud/configuration/ConfigurationService.java:37: cannot find symbol
+    [javac] symbol  : class LDAPRemoveCmd
+    [javac] location: package com.cloud.api.commands
+    [javac] import com.cloud.api.commands.LDAPRemoveCmd;
+    [javac]                              ^
+    [javac] /var/lib/jenkins/workspace/Automated Test Runs/api/src/com/cloud/configuration/ConfigurationService.java:253: cannot find symbol
+    [javac] symbol  : class LDAPRemoveCmd
+    [javac] location: interface com.cloud.configuration.ConfigurationService
+    [javac] 	boolean removeLDAP(LDAPRemoveCmd cmd);
+    [javac] 	                   ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 2 errors
+
+BUILD FAILED
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-tests.xml:269: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.xml:194: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Automated Test Runs/build/build-common.xml:49: Compile failed; see the compiler error output for details.
+
+Total time: 12 seconds
+Finished: SUCCESS

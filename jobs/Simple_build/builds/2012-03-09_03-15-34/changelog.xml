@@ -1,0 +1,30 @@
+Changes in branch origin/master, between 63987174597bfea767a49a7fa19b0c58a493a764 and d958bac2eb50113fff04c07d2a80e6c12d999a0b
+commit d958bac2eb50113fff04c07d2a80e6c12d999a0b
+tree 00351c61465d02d4988270926c0e24cddea0140e
+parent 64c5fba2da435d32ec159f7cd6c58a3328b7a041
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331277364 -0800
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331277950 -0800
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    
+    Description:
+    
+    	Replacing placement of db ids in exception messages to uuids
+    	in the file ManagementServerImpl.java.
+    
+    	Since there are a large number of files that throw exceptions
+    	with db ids in them and they need to be changed, we will make
+    	the changes in multiple commits.
+
+:100755 100755 82aaa5f32ae3050254928fabf8622d64ec634358 e62d6cbb20405d6f3618c518a7834abe1a50e470 M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 64c5fba2da435d32ec159f7cd6c58a3328b7a041
+tree 444b0b7a548a0fcf239907e68280ddf8028ea8b9
+parent 63987174597bfea767a49a7fa19b0c58a493a764
+author Nitin Mehta <nitin.mehta@citrix.com> 1331275776 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1331275776 +0530
+
+    Bug 14199: Add allocated workd to the config values.
+    Reviewed-By: Kishan
+
+:100755 100755 cd80947633beb5cb9a29055ba37d56c00a32aba1 6c5c35e08736e8279a5520a2f5963d098c1ad075 M	setup/db/db/schema-2214to30.sql

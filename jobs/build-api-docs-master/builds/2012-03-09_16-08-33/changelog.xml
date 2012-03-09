@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 33af68d924d92130c0952da9baf120ea8e2b0c79 and 294209184f40f74e8768664bd7e6362d8d8522f7
+commit 294209184f40f74e8768664bd7e6362d8d8522f7
+tree ce32a971b9bcdf0d99ba9ea4004a79429eb33b5a
+parent 33af68d924d92130c0952da9baf120ea8e2b0c79
+author Jessica Wang <jessica@cloud.com> 1331326917 -0800
+committer Jessica Wang <jessica@cloud.com> 1331326972 -0800
+
+    bug 14190: not refresh embedded data in corresponding list view row because data here is partial (e.g. if it's from Nics tab in instance page instead of details tab in instance page, data is just an array of Nic object, not an array of Instance object).
+
+:100644 100644 c2a3da6c147843acfc9509195e42de243d325f8c d3b67350b544d090bd20f1ddc0b19480d4b44de0 M	ui/scripts/ui/widgets/detailView.js

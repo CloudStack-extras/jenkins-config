@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between e1c13a863a3b3f3813837c81427672c394d0eb9b and 02552f2280a1979aab6dcca64119fe4c9d2f8646
+commit 02552f2280a1979aab6dcca64119fe4c9d2f8646
+tree aa3ba83775546ab4c3fbbc8cc407d8812efb871c
+parent e1c13a863a3b3f3813837c81427672c394d0eb9b
+author Jessica Wang <jessica@cloud.com> 1331329706 -0800
+committer Jessica Wang <jessica@cloud.com> 1331329706 -0800
+
+    bug 13112: cloudstack 3.0 UI - host page - add Statistics tab.
+
+:100644 100644 f4f8a5c48402d24a4a9b2447266dcb2b5f74bb32 bcf3734eec90e5425cbccd38db04b779fad7e87e M	ui/scripts/system.js

@@ -1,0 +1,24 @@
+Changes in branch origin/master, between bd83ada626f228f92d5592657ce0c7fb6a328084 and 954841ec10a82b094c149ebeb6ceeebfb749ed2c
+commit 954841ec10a82b094c149ebeb6ceeebfb749ed2c
+tree b57766f9e725ef231a34b6bc14aa05f3ab8581a1
+parent 321b04e2b03cbbcade0c8b79d7c52331b80299f1
+author bfederle <brian.federle@citrix.com> 1331331169 -0800
+committer bfederle <brian.federle@citrix.com> 1331331169 -0800
+
+    bug 14191
+    
+    -Only show domains under logged in user's domain
+    
+    -Allow domain admins to add accounts from 'Accounts' section
+
+:100644 100644 8d8856416bc94d7c566525c7c5e8c7d29f837422 17301c5f2a1626803cf51da4b68b18036739ff63 M	ui/scripts/accounts.js
+
+commit 321b04e2b03cbbcade0c8b79d7c52331b80299f1
+tree 70c740a524fe3210cef34caa5792d81f165356b2
+parent bd83ada626f228f92d5592657ce0c7fb6a328084
+author bfederle <brian.federle@citrix.com> 1331330624 -0800
+committer bfederle <brian.federle@citrix.com> 1331330631 -0800
+
+    List view UI: action filter tests
+
+:100644 100644 f2894aea0aedafb937488c6b9a49e3cfa718d685 151bf5e5006dad376ffbf05fccbd9a264149a806 M	ui/tests/test.listView.js

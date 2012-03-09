@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>This simply builds the master branch of CloudStack, every 3 hours</description>
+  <description>This polls the master branch of CloudStack every 5 minutes for changes and builds if there is one. Sends mail to the cloudstack-devel list on failure.</description>
   <logRotator>
     <daysToKeep>30</daysToKeep>
     <numToKeep>50</numToKeep>
@@ -50,7 +50,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector">
     <hudson.triggers.SCMTrigger>
-      <spec>15 */3 * * *</spec>
+      <spec>5 * * * *</spec>
     </hudson.triggers.SCMTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
@@ -59,6 +59,12 @@
       <targets>clean-all build-all</targets>
     </hudson.tasks.Ant>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.Mailer>
+      <recipients>cloudstack-devel@lists.sourceforge.net</recipients>
+      <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
   <buildWrappers/>
 </project>

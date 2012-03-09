@@ -1,0 +1,48 @@
+Changes in branch origin/master, between 63987174597bfea767a49a7fa19b0c58a493a764 and f82ec495207762e664d59efd08d8d4f88be08451
+commit f82ec495207762e664d59efd08d8d4f88be08451
+tree 5e61c616e47b472e9a34f69fb45f4922b61b63ba
+parent d958bac2eb50113fff04c07d2a80e6c12d999a0b
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331284416 -0800
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331284416 -0800
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    
+    Description:
+    
+    	Removed some wrong invocations to addProxyObject() when
+    	throwing exceptions in NetworkManagerImpl.java.
+    
+    	Replaced db ids with uuids in various points in the code
+    	of NetworkManagerImpl.java, where exceptions are thrown.
+
+:100755 100755 e28e4b8f7c6e078548c4fb210122e928b32d5a4c 9959cc76303c1a99b09a1b74748c85f2bb86e529 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit d958bac2eb50113fff04c07d2a80e6c12d999a0b
+tree 00351c61465d02d4988270926c0e24cddea0140e
+parent 64c5fba2da435d32ec159f7cd6c58a3328b7a041
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331277364 -0800
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331277950 -0800
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    
+    Description:
+    
+    	Replacing placement of db ids in exception messages to uuids
+    	in the file ManagementServerImpl.java.
+    
+    	Since there are a large number of files that throw exceptions
+    	with db ids in them and they need to be changed, we will make
+    	the changes in multiple commits.
+
+:100755 100755 82aaa5f32ae3050254928fabf8622d64ec634358 e62d6cbb20405d6f3618c518a7834abe1a50e470 M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 64c5fba2da435d32ec159f7cd6c58a3328b7a041
+tree 444b0b7a548a0fcf239907e68280ddf8028ea8b9
+parent 63987174597bfea767a49a7fa19b0c58a493a764
+author Nitin Mehta <nitin.mehta@citrix.com> 1331275776 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1331275776 +0530
+
+    Bug 14199: Add allocated workd to the config values.
+    Reviewed-By: Kishan
+
+:100755 100755 cd80947633beb5cb9a29055ba37d56c00a32aba1 6c5c35e08736e8279a5520a2f5963d098c1ad075 M	setup/db/db/schema-2214to30.sql

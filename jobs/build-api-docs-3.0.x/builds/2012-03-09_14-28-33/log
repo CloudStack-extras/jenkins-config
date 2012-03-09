@@ -1,0 +1,88 @@
+Started by an SCM change
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@f7e5d1
+Using strategy: Default
+Last Built Revision: Revision bf8b8d41310f50a4c23e1348ab774971a44f705b (origin/3.0.x)
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@f7e5d1
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack
+Commencing build of Revision a988a2a08501fe9005d6d1407c271a4055248131 (origin/3.0.x)
+Checking out Revision a988a2a08501fe9005d6d1407c271a4055248131 (origin/3.0.x)
+Cleaning workspace
+[build-api-docs-3.0.x] $ ant build-apidocs-zip
+Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-3.0.x/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-3.0.x/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-3.0.x/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-09T19:28:47Z
+     [echo] Build number is 3.0.0.2012-03-09T19:28:47Z
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/docs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/dep-cache
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-utils.jar
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/utils/src
+    [javac] Compiling 199 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-3.0.x/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-api.jar
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/api/src
+    [javac] Compiling 702 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-vmware-base.jar
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/vmware-base/src
+    [javac] Compiling 34 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-3.0.x/vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareContext.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-core.jar
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/core/src
+    [javac] Compiling 178 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-core.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-3.0.x/core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-core.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-agent.jar
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/agent/src
+    [javac] Compiling 42 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-agent.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-3.0.x/agent/src/com/cloud/agent/resource/computing/LibvirtVMDef.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-agent.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-server.jar
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-3.0.x/server/src
+    [javac] Compiling 823 source files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/classes/cloud-server.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar/cloud-server.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/client
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/client/lib
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/client/conf
+     [copy] Copying 38 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar
+     [copy] Copying 23 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/client/conf
+     [copy] Copying 53 files to /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/db

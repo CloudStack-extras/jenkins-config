@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 7643291c073ddb10148b761b229555b171b5604d and b7c77b25826fba06575d542eaa498ea2d475ed71
+commit b7c77b25826fba06575d542eaa498ea2d475ed71
+tree e9bf9f6ad2f4565158d736240a4d5c9b56b399d5
+parent 7643291c073ddb10148b761b229555b171b5604d
+author Jessica Wang <jessica@cloud.com> 1331321110 -0800
+committer Jessica Wang <jessica@cloud.com> 1331321166 -0800
+
+    cloudstack 3.0 UI - delete zone, delete pod, delete clouster in detailView - after action is finished, remove detailView and remove corresponding row from listView.
+
+:100644 100644 b0dee6e0ad8a30a418d0082d6b014a9f2fd51db5 5c948931f7d7b0ee347e6ad8455036e8a008858f M	ui/scripts/system.js
+:100644 100644 204c7045105d8b33aec4ec83417ce80f6269f0ad c2a3da6c147843acfc9509195e42de243d325f8c M	ui/scripts/ui/widgets/detailView.js

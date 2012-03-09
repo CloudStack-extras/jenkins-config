@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 6613a5624a461bff85d7b5384012b585fbf2f6c7 and 7643291c073ddb10148b761b229555b171b5604d
+commit 7643291c073ddb10148b761b229555b171b5604d
+tree 205d23b4e1bef7a205b860ee1f8d924ea1c9530c
+parent 6613a5624a461bff85d7b5384012b585fbf2f6c7
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331320682 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331320748 -0800
+
+    bug 14195: fixed category for Project related global config values
+
+:100755 100755 6c5c35e08736e8279a5520a2f5963d098c1ad075 f4259e1581ac065096c7a480e86a72c5d8ac426c M	setup/db/db/schema-2214to30.sql

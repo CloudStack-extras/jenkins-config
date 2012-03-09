@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 321b04e2b03cbbcade0c8b79d7c52331b80299f1 and 954841ec10a82b094c149ebeb6ceeebfb749ed2c
+commit 954841ec10a82b094c149ebeb6ceeebfb749ed2c
+tree b57766f9e725ef231a34b6bc14aa05f3ab8581a1
+parent 321b04e2b03cbbcade0c8b79d7c52331b80299f1
+author bfederle <brian.federle@citrix.com> 1331331169 -0800
+committer bfederle <brian.federle@citrix.com> 1331331169 -0800
+
+    bug 14191
+    
+    -Only show domains under logged in user's domain
+    
+    -Allow domain admins to add accounts from 'Accounts' section
+
+:100644 100644 8d8856416bc94d7c566525c7c5e8c7d29f837422 17301c5f2a1626803cf51da4b68b18036739ff63 M	ui/scripts/accounts.js

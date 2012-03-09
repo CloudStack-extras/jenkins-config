@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 2899b60c7de87ebd175222af7b67738f66fdc219 and 33af68d924d92130c0952da9baf120ea8e2b0c79
+commit 33af68d924d92130c0952da9baf120ea8e2b0c79
+tree 79c9b161fa73197e154a4105215d6db99be97ab0
+parent 2899b60c7de87ebd175222af7b67738f66fdc219
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331321841 -0800
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331321886 -0800
+
+    bug 14221: fixed description for default network offering
+    status 14221: resolved fixed
+
+:100755 100755 f4259e1581ac065096c7a480e86a72c5d8ac426c 8181285dd264fc8ccdbdbfdacf2417338233c449 M	setup/db/db/schema-2214to30.sql

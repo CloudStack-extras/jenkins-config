@@ -1,0 +1,68 @@
+Started by an SCM change
+Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@f7e5d1
+Using strategy: Default
+Last Built Revision: Revision f82ec495207762e664d59efd08d8d4f88be08451 (origin/master)
+Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@f7e5d1
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack.git
+Commencing build of Revision 0ab0fcfa5c3b8825b8a92e3c2d2dee8e8ca6152b (origin/master)
+Checking out Revision 0ab0fcfa5c3b8825b8a92e3c2d2dee8e8ca6152b (origin/master)
+[Simple_build] $ ant clean-all build-all
+Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean:
+   [delete] Deleting: /var/lib/jenkins/workspace/Simple_build/target/ant_verbose.txt
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/target/classes
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/target/jar
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/dist
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean-all:
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/target
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-09T14:15:54Z
+     [echo] Build number is 3.0.0.2012-03-09T14:15:54Z
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/docs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dep-cache
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-utils.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/utils/src
+    [javac] Compiling 203 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/Simple_build/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-api.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/api/src
+    [javac] Compiling 703 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-api.jar
+    [javac] /var/lib/jenkins/workspace/Simple_build/api/src/com/cloud/configuration/ConfigurationService.java:37: cannot find symbol
+    [javac] symbol  : class LDAPRemoveCmd
+    [javac] location: package com.cloud.api.commands
+    [javac] import com.cloud.api.commands.LDAPRemoveCmd;
+    [javac]                              ^
+    [javac] /var/lib/jenkins/workspace/Simple_build/api/src/com/cloud/configuration/ConfigurationService.java:253: cannot find symbol
+    [javac] symbol  : class LDAPRemoveCmd
+    [javac] location: interface com.cloud.configuration.ConfigurationService
+    [javac] 	boolean removeLDAP(LDAPRemoveCmd cmd);
+    [javac] 	                   ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 2 errors
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/Simple_build/build/build-cloud.xml:194: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/Simple_build/build/build-common.xml:49: Compile failed; see the compiler error output for details.
+
+Total time: 13 seconds
+Build step 'Invoke Ant' marked build as failure
+Finished: FAILURE

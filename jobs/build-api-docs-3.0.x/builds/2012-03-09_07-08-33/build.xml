@@ -15,7 +15,7 @@
           <string>origin/3.0.x</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>f495aab42d32c774284c50727959f67a8387f38c</sha1>
+              <sha1>c6d4e5b66f0d22a0a4796fb3c1594ac7c2e9ae62</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -23,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>150</hudsonBuildNumber>
+            <hudsonBuildNumber>250</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -43,12 +43,12 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
-      <result>SUCCESS</result>
+      <result>FAILURE</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>150</number>
-  <result>SUCCESS</result>
-  <duration>114592</duration>
+  <number>250</number>
+  <result>FAILURE</result>
+  <duration>20444</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -58,6 +58,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>jessica</string>
+    <string>abhinandan.prateek</string>
   </culprits>
 </build>

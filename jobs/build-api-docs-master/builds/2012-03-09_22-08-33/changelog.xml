@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 51a09642a2b3c001641dad89d239650854238b1b and b0746e97d382e1044852c436ef98aa5e2b4a1ec2
+commit b0746e97d382e1044852c436ef98aa5e2b4a1ec2
+tree 574f042a061b2df6a92a3b0146d5ca1e7468783b
+parent 51a09642a2b3c001641dad89d239650854238b1b
+author Sheng Yang <sheng.yang@citrix.com> 1331348286 -0800
+committer Sheng Yang <sheng.yang@citrix.com> 1331348567 -0800
+
+    Refactor VirtualNetworkApplianceManagerImpl
+    
+    Add separate create command for dhcp, userdata and password.
+
+:100755 100755 de3eaa7d1c60263b0febba46b5fb8f49cf8b85d0 3177b12df06ebbc11d5a215181917922561f7bd7 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

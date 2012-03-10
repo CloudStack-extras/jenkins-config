@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 3e293d840538f36c052454b6ef6b8d338c23e360 and 370bddb0e9f3620e29bcfec12c5d2e870ae299be
+commit 370bddb0e9f3620e29bcfec12c5d2e870ae299be
+tree 3a5319b0433a29fb60e1164d8f7a31ad9bef7c6d
+parent 3e293d840538f36c052454b6ef6b8d338c23e360
+author Jessica Wang <jessica@cloud.com> 1331340422 -0800
+committer Jessica Wang <jessica@cloud.com> 1331340448 -0800
+
+    cloudstack 3.0 UI - listView - when clicking fast between different rows, JS error "args.context.xxx is undefined" appears.  e.g. "args.context.instances is undefined" appears when clicking fast between different rows in listView in instance page. Because when clicking fast, users might click another row before API response for this current row is back => which causes the JS error.  The fix is to overlay the whole listView by loading image (spinning wheel image) until click-handling for this row is done (e.g. API response is back).
+
+:100644 100644 52fed9b870ee9aed3b49261ed588193256c94c10 e1751b6864204a2a154665b3893f591a0a0329c9 M	ui/scripts/ui/widgets/listView.js

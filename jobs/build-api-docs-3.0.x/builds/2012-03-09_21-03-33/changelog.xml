@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 370bddb0e9f3620e29bcfec12c5d2e870ae299be and e38a0ed58b8651f3d5d57e839eaeb93cb91ddc42
+commit e38a0ed58b8651f3d5d57e839eaeb93cb91ddc42
+tree 75648324015cf0200f00710f540dad45754b7fa8
+parent 370bddb0e9f3620e29bcfec12c5d2e870ae299be
+author Sheng Yang <sheng.yang@citrix.com> 1331343965 -0800
+committer Sheng Yang <sheng.yang@citrix.com> 1331344826 -0800
+
+    Refactor rules appling in the VirtualNetworkApplianceManagerImpl
+
+:100644 100644 875b79b497fe33ec634f4db5f2a82086c81a71b2 8c946d28a3d9e8d9c77787f034adb9a93b1ed6b5 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManager.java
+:100755 100755 71e7a72801ce975163dc3d96d238ec733b8e80f9 de3eaa7d1c60263b0febba46b5fb8f49cf8b85d0 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

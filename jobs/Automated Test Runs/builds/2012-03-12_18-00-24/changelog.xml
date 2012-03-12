@@ -1,0 +1,54 @@
+Changes in branch origin/master, between e879e89c5b5b3504a86396a97fbf324363148070 and 6414ec4718f959f877c54085324ef307aa5cb299
+commit 6414ec4718f959f877c54085324ef307aa5cb299
+tree d9f3227fc5355100373bc6d2d1d013669b4af478
+parent 44d0ec719a4b71d8d0c7bbb912dbbf004b884905
+author Jessica Wang <jessica@cloud.com> 1331588891 -0700
+committer Jessica Wang <jessica@cloud.com> 1331588928 -0700
+
+    infrastructure page - zone detail - guest traffic type - networks tab - pass listAll=true to 2nd listNetworks API.
+
+:100644 100644 349ce135b0336f21619f5726ce99ede4360130ee 39ef323d0a619a7b20261387298d05e7390e510a M	ui/scripts/system.js
+
+commit 44d0ec719a4b71d8d0c7bbb912dbbf004b884905
+tree c2d917f5e1a86a00a5957c7f68375ecf1e928bad
+parent da363269e210b6086dd6820093857bea69ff27fc
+author Jessica Wang <jessica@cloud.com> 1331586711 -0700
+committer Jessica Wang <jessica@cloud.com> 1331586794 -0700
+
+    cloudstack 3.0 UI - IP Address page - retrieving data for detailView - no need to pass listAll parameter to listPublicIpAddresses API. Passing id parameter is enough.
+
+:100644 100644 32e5348cc12cf6802d66692ab1e4f4e46dd96a00 12526d844e325d67f836cffb3581d00593cd614d M	ui/scripts/network.js
+
+commit da363269e210b6086dd6820093857bea69ff27fc
+tree c262066f379ff48174ff958c259783ad798466c7
+parent a031bcdfcc433ac8eb582354c75b241975e2ec7d
+author Sheng Yang <sheng.yang@citrix.com> 1331578792 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1331578831 -0700
+
+    bug 14074: Specify networkId for list public ip
+    
+    status 14074: resolved fixed
+
+:100755 100755 3177b12df06ebbc11d5a215181917922561f7bd7 80c980801fe2bb1ca291f0aa98f680514bdb4291 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit a031bcdfcc433ac8eb582354c75b241975e2ec7d
+tree 76e52c36f04282d166b6e37ca81e0f47c0bdc001
+parent b80ad8ab4402b96ab8cb8dcb516a7dcb311bc242
+author Jessica Wang <jessica@cloud.com> 1331577456 -0700
+committer Jessica Wang <jessica@cloud.com> 1331577456 -0700
+
+    bug 14238: create network offering dialog - remove traffic type dropdown since it includes only one choice. Hardcode it in API call.
+
+:100644 100644 b47db231a28b2922d7269c822481621944fd8314 4a5c63e806b7bd58b8e83bd5c533c9cefaf6fb74 M	ui/scripts/configuration.js
+
+commit b80ad8ab4402b96ab8cb8dcb516a7dcb311bc242
+tree 00afa35af10f0136f1e00e4aa24ecf4cf8114604
+parent e879e89c5b5b3504a86396a97fbf324363148070
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331573009 -0700
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331573088 -0700
+
+    bug 14247: implemented search by storage id in listSystemVms
+    status 14247: resolved fixed
+
+:100644 100644 195a5e370d40ca891d965147aee9a238b3ac9eed 9f38cb74bc0b66df02ab2f2008bc3286f76fb420 M	api/src/com/cloud/api/commands/ListSystemVMsCmd.java
+:100755 100755 e62d6cbb20405d6f3618c518a7834abe1a50e470 dafcca7c8e9b50f855bc7bbe217edc9428754c10 M	server/src/com/cloud/server/ManagementServerImpl.java

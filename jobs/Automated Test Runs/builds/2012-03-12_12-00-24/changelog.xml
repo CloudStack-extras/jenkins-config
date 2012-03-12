@@ -1,0 +1,53 @@
+Changes in branch origin/master, between 0f3a020bb0d4e7853e1168626d0ec723ba7e4835 and e879e89c5b5b3504a86396a97fbf324363148070
+commit e879e89c5b5b3504a86396a97fbf324363148070
+tree b2ef5f93975d661d4fc4f7cc15092b5261fbc3b7
+parent 838ee28331671a14df83936a9c11f533f995ef28
+author abhi <abhinandan.prateek@citrix.com> 1331551603 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1331551603 +0530
+
+    adding remove cmd for ldap
+
+:000000 100644 0000000000000000000000000000000000000000 ebc18d8367df780f220c5d346c73c108642294cb A	api/src/com/cloud/api/commands/LDAPRemoveCmd.java
+:000000 100644 0000000000000000000000000000000000000000 342ffc3a929024b9a0373292f2f999d3d0792266 A	api/src/com/cloud/api/response/LDAPRemoveResponse.java
+
+commit 838ee28331671a14df83936a9c11f533f995ef28
+tree e1ae5d44860fe5f076c1fe419a183c8eb662a0bd
+parent b2604cdd8730cb24fc2664f35f43c6f911d47995
+author abhi <abhinandan.prateek@citrix.com> 1331292361 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1331551200 +0530
+
+    bug 14151,14153: configuration variables are now hidden; added ldapRemove command
+
+:100644 100644 452923f7f486d62d639a9b9681c379923d766230 ce808410ace1a2007607b0f416b7f5d7f222de52 M	api/src/com/cloud/configuration/ConfigurationService.java
+:100755 100755 b0d286bd96775bb7b609df7171d6555b2a0b7d92 7d65341db9919cf5cfe50e489c89f48867166891 M	client/tomcatconf/commands.properties.in
+:100755 100755 2c2d6e595b107264ffa5096c30cfac7ca5fd188b 200e015360d4afba616764a4c13c8a8b55bf4c22 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit b2604cdd8730cb24fc2664f35f43c6f911d47995
+tree 79d88bdf1159706925ca115da8ece179122f9fa6
+parent 92eca8da43cf0e949e6a0b4981bf84ade7b6043a
+author abhi <abhinandan.prateek@citrix.com> 1331294667 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1331550562 +0530
+
+    bug 14224: allowing Xenserver 6.0.2, with the assumption that the same patches and guest os type will work as with 6.0
+
+:100755 100755 70af6c5b47a533f460f254422695ffa387d9e609 1b1316263cbfdc5d76d5f0b0cca57614b423e358 M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java
+
+commit 92eca8da43cf0e949e6a0b4981bf84ade7b6043a
+tree b1beba874696234f55e8de198d4314fd52e6bf82
+parent 804687ac5c64e850dc3b76c5f6f48d1c5049ad30
+author abhi <abhinandan.prateek@citrix.com> 1331298520 +0530
+committer abhi <abhinandan.prateek@citrix.com> 1331550562 +0530
+
+    bug 14224: adding 6.0.2
+
+:100755 100755 bc1c09191e7e31332b25cfaca8c486025f53fa1f 70af6c5b47a533f460f254422695ffa387d9e609 M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java
+
+commit 804687ac5c64e850dc3b76c5f6f48d1c5049ad30
+tree af7dd50f50153623ba6fe7d8a15a07bbfc6bb8e3
+parent 0f3a020bb0d4e7853e1168626d0ec723ba7e4835
+author kishan <kishan@cloud.com> 1331548805 +0530
+committer kishan <kishan@cloud.com> 1331548805 +0530
+
+    Bug 14195: Changed category of Usage and Secure configs
+
+:100755 100755 8181285dd264fc8ccdbdbfdacf2417338233c449 b6954dbc7d04c7c36345a3f85d5a3b9eb9f32838 M	setup/db/db/schema-2214to30.sql

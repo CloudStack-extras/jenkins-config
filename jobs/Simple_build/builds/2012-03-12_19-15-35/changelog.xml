@@ -1,0 +1,15 @@
+Changes in branch origin/master, between d513460b3b10e4ab3aa7365425e6edc0397c1952 and 25d44d9ae766d7d8700ab78a64ee7f7819f0ad76
+commit 25d44d9ae766d7d8700ab78a64ee7f7819f0ad76
+tree 344effde2df6814142f4b5a162c4b05522d0b026
+parent d513460b3b10e4ab3aa7365425e6edc0397c1952
+author Sheng Yang <sheng.yang@citrix.com> 1331593343 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1331593848 -0700
+
+    Refactor VirtualRouterNetworkManagerImpl
+    
+    Refactor applyDhcpEntry and applyUserData to use applyRules framework.
+
+:100755 100755 620e8e280e35e64003d1d84c952213e5f93affa0 e0e3257368263a943680f0ade13784df646a50db M	api/src/com/cloud/network/router/VirtualRouter.java
+:100755 100755 5a8716386415ca61bc0a40d59b2797ef9c4934b0 0b9cbd40b6c8ad82903f94671de3a03c1d3032d9 M	server/src/com/cloud/network/element/VirtualRouterElement.java
+:100644 100644 8c946d28a3d9e8d9c77787f034adb9a93b1ed6b5 570161ab8701a850049f8cacb164048da624326a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManager.java
+:100755 100755 80c980801fe2bb1ca291f0aa98f680514bdb4291 56c2d40eabfdc56107698411cbdf4495406612aa M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java

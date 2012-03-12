@@ -1,0 +1,33 @@
+Changes in branch origin/master, between 6414ec4718f959f877c54085324ef307aa5cb299 and d513460b3b10e4ab3aa7365425e6edc0397c1952
+commit d513460b3b10e4ab3aa7365425e6edc0397c1952
+tree 659e51a45f13f33be3298585f0d8c0fd0a335cc0
+parent 6414ec4718f959f877c54085324ef307aa5cb299
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331592600 -0700
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331592810 -0700
+
+    bug 14239: limit number of Isolated account specific networks per account
+    status 14239: resolved fixed
+    
+    Conflicts:
+    
+    	api/src/com/cloud/api/commands/CreateNetworkCmd.java
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+    	server/test/com/cloud/network/MockNetworkManagerImpl.java
+
+:100644 100644 4570a05ddbe5d2c90df604ca0e7cbd8d7f857b5f 31a6069b572032c587482ec6f9bb5d519d99dcc0 M	api/src/com/cloud/api/commands/CreateNetworkCmd.java
+:100644 100644 9a0ba7f4724f9b5b2976102ead5a276451136c7b e31bc4c62a60c8de1b472a56bfd6b1762ae8a2fc M	api/src/com/cloud/api/commands/CreateVlanIpRangeCmd.java
+:100755 100755 1d9de5c42292ea552fe0526d14dbf6e0c745976a 6d628067d45b62f6c2b65a7fb3b496232558b89e M	api/src/com/cloud/api/response/AccountResponse.java
+:100644 100644 ce808410ace1a2007607b0f416b7f5d7f222de52 553fb16acd5cf7cac75f269ef20196bbef71c569 M	api/src/com/cloud/configuration/ConfigurationService.java
+:100644 100644 e867d859bcec4506ea1c296fe52edee35e59425a 5d01964b839690fa9d1e19d7aad1c673e9b73c8a M	api/src/com/cloud/configuration/Resource.java
+:100755 100755 4d7e6b681925dcd30456283afa5a286392b6eaa1 c4be21775454df910e97e65006507d79d6cc26c1 M	api/src/com/cloud/network/NetworkService.java
+:100755 100755 ff176499b215bae5f7323ea42d468791eeebff72 28fe457ee90979c6f5eefcbb0774330a2df4cd24 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 9b30e60fe37eb8dd72b7db5fd0797b062bedf64a 6d7f7641de22c51f7f7f508b2a4d5253f352372b M	server/src/com/cloud/configuration/Config.java
+:100755 100755 200e015360d4afba616764a4c13c8a8b55bf4c22 337279d76c7ad72db2c10dd301586ec610fed4e8 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 6cff9ee8654998e827353cc1695f94ffe3b063f9 1093bdec6661fe566625028768a53945053a67fa M	server/src/com/cloud/network/NetworkManager.java
+:100755 100755 9959cc76303c1a99b09a1b74748c85f2bb86e529 37233f19710c02288c1fc5c66f4c7a9c232f33b3 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 561b48c8d544977735c173d3181c183c2d1593bd f918e3bd59a9ee2ad376f4f16cc8064ddd36d892 M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 080307bcb4b8deb8f600ededb5f6a645c09a7da6 2077883ad4526b3abbd9b8272c33d10e810f91f1 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java
+:100755 100755 7e884679107133c24d0de41dafa7d1ad828add8c 0112b9c8967991fd9aa34e1ef39662ff0579b864 M	server/src/com/cloud/resourcelimit/ResourceLimitManagerImpl.java
+:100644 100644 c37f60b4d1b8141b2409924d2d4d92da2f3fa339 47b7d877e7a4c59b5aa44dad0d671c99c396267e M	server/src/com/cloud/upgrade/dao/Upgrade218to22.java
+:100755 100755 a0a3a83c8bb2391cfc3757145ddafd3614a4a602 1c198deda690e080404dad82cb869db905bb9f54 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 b6954dbc7d04c7c36345a3f85d5a3b9eb9f32838 292971df6e9c4ed1b91e2caa4ba6444ae13df172 M	setup/db/db/schema-2214to30.sql

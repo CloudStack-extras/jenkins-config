@@ -1,0 +1,12 @@
+Changes in branch origin/master, between e879e89c5b5b3504a86396a97fbf324363148070 and b80ad8ab4402b96ab8cb8dcb516a7dcb311bc242
+commit b80ad8ab4402b96ab8cb8dcb516a7dcb311bc242
+tree 00afa35af10f0136f1e00e4aa24ecf4cf8114604
+parent e879e89c5b5b3504a86396a97fbf324363148070
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331573009 -0700
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331573088 -0700
+
+    bug 14247: implemented search by storage id in listSystemVms
+    status 14247: resolved fixed
+
+:100644 100644 195a5e370d40ca891d965147aee9a238b3ac9eed 9f38cb74bc0b66df02ab2f2008bc3286f76fb420 M	api/src/com/cloud/api/commands/ListSystemVMsCmd.java
+:100755 100755 e62d6cbb20405d6f3618c518a7834abe1a50e470 dafcca7c8e9b50f855bc7bbe217edc9428754c10 M	server/src/com/cloud/server/ManagementServerImpl.java

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 25d44d9ae766d7d8700ab78a64ee7f7819f0ad76 and 1bc0ae88c4b9cde95d5ad7773f3c2341c5670a61
+commit 1bc0ae88c4b9cde95d5ad7773f3c2341c5670a61
+tree b1e1d855195c91df0eb04434e2f2ea075d7134ef
+parent 25d44d9ae766d7d8700ab78a64ee7f7819f0ad76
+author Sheng Yang <sheng.yang@citrix.com> 1331597413 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1331597413 -0700
+
+    Add missing annotation
+
+:100755 100755 b341a37f28a8cd531693342c72c68b6e8772ebab a92b8fe4fb7a0d7df53e1aaf6f2248c0f2300152 M	core/src/com/cloud/vm/DomainRouterVO.java

@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 93a909784588ae2f4f03eb76a3b6e42f68e5ed1a and 07c3ca0ca2c9c704e8c1ecf4f2069ba4cd16d5ab
+commit 07c3ca0ca2c9c704e8c1ecf4f2069ba4cd16d5ab
+tree e9d4b0d4b9d272865a72925e526ba13a9670b3c0
+parent 93a909784588ae2f4f03eb76a3b6e42f68e5ed1a
+author Sheng Yang <sheng.yang@citrix.com> 1331665214 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1331679549 -0700
+
+    Change KVM's delimiter from "," to "%"
+    
+    In order not to confuse with commandline parameters
+
+:100755 100755 3c31eebd415eb473e31e70493a942a96898483f9 c13ce875acddf038c7b1c84f59970d18c135476a M	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java
+:100755 100755 510b7a65dea46eaf19bbfe9ccb62fd596eb2ba48 1f089296614fdf72e641ce2ef21aa6c4fd6f3f28 M	scripts/vm/hypervisor/kvm/rundomrpre.sh

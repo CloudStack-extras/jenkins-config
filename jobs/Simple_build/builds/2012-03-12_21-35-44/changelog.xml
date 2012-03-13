@@ -1,0 +1,29 @@
+Changes in branch origin/master, between 1bc0ae88c4b9cde95d5ad7773f3c2341c5670a61 and de6c2ceb22985fc42a6962572dff3a6eef9894dd
+commit de6c2ceb22985fc42a6962572dff3a6eef9894dd
+tree 945369de988445f465ba7fdc08c640d5a37aa36a
+parent 1bc0ae88c4b9cde95d5ad7773f3c2341c5670a61
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331600309 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331600745 -0700
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    
+    Description:
+    
+    	Modifying the API functions' exception handling to call
+    	addProxyObject() wherever applicable, and removing some
+    	wrong calls to addProxyObject() that were put in in an
+    	earlier commit for this bug.
+    
+    	With this commit, we cover many API functions to use the
+    	new exception handling code, but some pieces may still be
+    	left out. These will be covered as work in progress, when
+    	making changes to the CS API code.
+
+:100755 100755 a2481f50ce2881d6af293b00e4f61aedb2f2c1e5 762a1ef42f157a00ed8136988b0fd9c1937d5f06 M	api/src/com/cloud/api/BaseCmd.java
+:100644 100644 ee89b7d1038f1a57bdbe2f40405605800ecd56eb 04ecba0de7ba8d4602fd19ecb1df2f8f2cc933c5 M	api/src/com/cloud/api/commands/AddAccountToProjectCmd.java
+:100755 100755 37233f19710c02288c1fc5c66f4c7a9c232f33b3 ff10186d478d613664d5a389ddad4a606be8bbbc M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 ffbb35d329cac8b5d476d029a55d91c1f83a877d 693bb228a71d12463ac8e68fcff625aa9773438d M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+:100755 100755 7a696d1b897a5354551d122cfd19a9aca8f37723 4a6821e9f6e29b1d49f2e290c983d04099243708 M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+:100755 100755 88a795be629bf372560f0a6b2970998c8cfd53f0 6954e344de321e6c7ca5600efd4e181a74a1d4ba M	server/src/com/cloud/projects/ProjectManagerImpl.java
+:100755 100755 b0fe2b679da4d242466d35a2e50c5f200e57df1f 09926655dd658af95a9e2d3dd7c437d45b230f52 M	server/src/com/cloud/resource/ResourceManagerImpl.java
+:100755 100755 439792e1772879c9b899095cae8a7796a82d328b 95ecd28226b7d919787d8218885c795161c06c90 M	server/src/com/cloud/vm/UserVmManagerImpl.java

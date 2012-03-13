@@ -1,0 +1,21 @@
+Changes in branch origin/master, between b3e91cef5a3e0ca2280a3c1287d17d383a1c5e6b and 79e14696e39d04f3cec49d95f7f07d3b12179568
+commit 79e14696e39d04f3cec49d95f7f07d3b12179568
+tree a803140b2682b337304b0c26b11730e15bf40ee2
+parent 16f0022c824309123874a90b767617e20607a63e
+author Jessica Wang <jessica@cloud.com> 1331674257 -0700
+committer Jessica Wang <jessica@cloud.com> 1331674305 -0700
+
+    cloudstack 3.0 UI -infrastructure page - remove obsolete code.
+
+:100644 100644 39ef323d0a619a7b20261387298d05e7390e510a 573f90aeb996623a147440c3de8704d136ef97e5 M	ui/scripts/system.js
+
+commit 16f0022c824309123874a90b767617e20607a63e
+tree a93d24d470dc742b1304fa61c6e0f8d178174ef6
+parent b3e91cef5a3e0ca2280a3c1287d17d383a1c5e6b
+author Jessica Wang <jessica@cloud.com> 1331661011 -0700
+committer Jessica Wang <jessica@cloud.com> 1331661051 -0700
+
+    cloudstack 3.0 UI - Quick Installer - add host step - change text.
+
+:100644 100644 7c05f43c96ae1005cd4ead141bfed9470e2d88b2 cdfa407d1c9958f127b2068eab3129bcd86e3296 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 4314acd01fc3f232117e8daedfc510844d45d77f 279439090c15ca47eef858d2e2f0adb54e75bf4b M	client/WEB-INF/classes/resources/messages_ja.properties

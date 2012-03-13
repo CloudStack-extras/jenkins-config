@@ -1,0 +1,87 @@
+Changes in branch origin/master, between 6414ec4718f959f877c54085324ef307aa5cb299 and de6c2ceb22985fc42a6962572dff3a6eef9894dd
+commit de6c2ceb22985fc42a6962572dff3a6eef9894dd
+tree 945369de988445f465ba7fdc08c640d5a37aa36a
+parent 1bc0ae88c4b9cde95d5ad7773f3c2341c5670a61
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331600309 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331600745 -0700
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    
+    Description:
+    
+    	Modifying the API functions' exception handling to call
+    	addProxyObject() wherever applicable, and removing some
+    	wrong calls to addProxyObject() that were put in in an
+    	earlier commit for this bug.
+    
+    	With this commit, we cover many API functions to use the
+    	new exception handling code, but some pieces may still be
+    	left out. These will be covered as work in progress, when
+    	making changes to the CS API code.
+
+:100755 100755 a2481f50ce2881d6af293b00e4f61aedb2f2c1e5 762a1ef42f157a00ed8136988b0fd9c1937d5f06 M	api/src/com/cloud/api/BaseCmd.java
+:100644 100644 ee89b7d1038f1a57bdbe2f40405605800ecd56eb 04ecba0de7ba8d4602fd19ecb1df2f8f2cc933c5 M	api/src/com/cloud/api/commands/AddAccountToProjectCmd.java
+:100755 100755 37233f19710c02288c1fc5c66f4c7a9c232f33b3 ff10186d478d613664d5a389ddad4a606be8bbbc M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 ffbb35d329cac8b5d476d029a55d91c1f83a877d 693bb228a71d12463ac8e68fcff625aa9773438d M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+:100755 100755 7a696d1b897a5354551d122cfd19a9aca8f37723 4a6821e9f6e29b1d49f2e290c983d04099243708 M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+:100755 100755 88a795be629bf372560f0a6b2970998c8cfd53f0 6954e344de321e6c7ca5600efd4e181a74a1d4ba M	server/src/com/cloud/projects/ProjectManagerImpl.java
+:100755 100755 b0fe2b679da4d242466d35a2e50c5f200e57df1f 09926655dd658af95a9e2d3dd7c437d45b230f52 M	server/src/com/cloud/resource/ResourceManagerImpl.java
+:100755 100755 439792e1772879c9b899095cae8a7796a82d328b 95ecd28226b7d919787d8218885c795161c06c90 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 1bc0ae88c4b9cde95d5ad7773f3c2341c5670a61
+tree b1e1d855195c91df0eb04434e2f2ea075d7134ef
+parent 25d44d9ae766d7d8700ab78a64ee7f7819f0ad76
+author Sheng Yang <sheng.yang@citrix.com> 1331597413 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1331597413 -0700
+
+    Add missing annotation
+
+:100755 100755 b341a37f28a8cd531693342c72c68b6e8772ebab a92b8fe4fb7a0d7df53e1aaf6f2248c0f2300152 M	core/src/com/cloud/vm/DomainRouterVO.java
+
+commit 25d44d9ae766d7d8700ab78a64ee7f7819f0ad76
+tree 344effde2df6814142f4b5a162c4b05522d0b026
+parent d513460b3b10e4ab3aa7365425e6edc0397c1952
+author Sheng Yang <sheng.yang@citrix.com> 1331593343 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1331593848 -0700
+
+    Refactor VirtualRouterNetworkManagerImpl
+    
+    Refactor applyDhcpEntry and applyUserData to use applyRules framework.
+
+:100755 100755 620e8e280e35e64003d1d84c952213e5f93affa0 e0e3257368263a943680f0ade13784df646a50db M	api/src/com/cloud/network/router/VirtualRouter.java
+:100755 100755 5a8716386415ca61bc0a40d59b2797ef9c4934b0 0b9cbd40b6c8ad82903f94671de3a03c1d3032d9 M	server/src/com/cloud/network/element/VirtualRouterElement.java
+:100644 100644 8c946d28a3d9e8d9c77787f034adb9a93b1ed6b5 570161ab8701a850049f8cacb164048da624326a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManager.java
+:100755 100755 80c980801fe2bb1ca291f0aa98f680514bdb4291 56c2d40eabfdc56107698411cbdf4495406612aa M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit d513460b3b10e4ab3aa7365425e6edc0397c1952
+tree 659e51a45f13f33be3298585f0d8c0fd0a335cc0
+parent 6414ec4718f959f877c54085324ef307aa5cb299
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331592600 -0700
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331592810 -0700
+
+    bug 14239: limit number of Isolated account specific networks per account
+    status 14239: resolved fixed
+    
+    Conflicts:
+    
+    	api/src/com/cloud/api/commands/CreateNetworkCmd.java
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+    	server/test/com/cloud/network/MockNetworkManagerImpl.java
+
+:100644 100644 4570a05ddbe5d2c90df604ca0e7cbd8d7f857b5f 31a6069b572032c587482ec6f9bb5d519d99dcc0 M	api/src/com/cloud/api/commands/CreateNetworkCmd.java
+:100644 100644 9a0ba7f4724f9b5b2976102ead5a276451136c7b e31bc4c62a60c8de1b472a56bfd6b1762ae8a2fc M	api/src/com/cloud/api/commands/CreateVlanIpRangeCmd.java
+:100755 100755 1d9de5c42292ea552fe0526d14dbf6e0c745976a 6d628067d45b62f6c2b65a7fb3b496232558b89e M	api/src/com/cloud/api/response/AccountResponse.java
+:100644 100644 ce808410ace1a2007607b0f416b7f5d7f222de52 553fb16acd5cf7cac75f269ef20196bbef71c569 M	api/src/com/cloud/configuration/ConfigurationService.java
+:100644 100644 e867d859bcec4506ea1c296fe52edee35e59425a 5d01964b839690fa9d1e19d7aad1c673e9b73c8a M	api/src/com/cloud/configuration/Resource.java
+:100755 100755 4d7e6b681925dcd30456283afa5a286392b6eaa1 c4be21775454df910e97e65006507d79d6cc26c1 M	api/src/com/cloud/network/NetworkService.java
+:100755 100755 ff176499b215bae5f7323ea42d468791eeebff72 28fe457ee90979c6f5eefcbb0774330a2df4cd24 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 9b30e60fe37eb8dd72b7db5fd0797b062bedf64a 6d7f7641de22c51f7f7f508b2a4d5253f352372b M	server/src/com/cloud/configuration/Config.java
+:100755 100755 200e015360d4afba616764a4c13c8a8b55bf4c22 337279d76c7ad72db2c10dd301586ec610fed4e8 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 6cff9ee8654998e827353cc1695f94ffe3b063f9 1093bdec6661fe566625028768a53945053a67fa M	server/src/com/cloud/network/NetworkManager.java
+:100755 100755 9959cc76303c1a99b09a1b74748c85f2bb86e529 37233f19710c02288c1fc5c66f4c7a9c232f33b3 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 561b48c8d544977735c173d3181c183c2d1593bd f918e3bd59a9ee2ad376f4f16cc8064ddd36d892 M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 080307bcb4b8deb8f600ededb5f6a645c09a7da6 2077883ad4526b3abbd9b8272c33d10e810f91f1 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java
+:100755 100755 7e884679107133c24d0de41dafa7d1ad828add8c 0112b9c8967991fd9aa34e1ef39662ff0579b864 M	server/src/com/cloud/resourcelimit/ResourceLimitManagerImpl.java
+:100644 100644 c37f60b4d1b8141b2409924d2d4d92da2f3fa339 47b7d877e7a4c59b5aa44dad0d671c99c396267e M	server/src/com/cloud/upgrade/dao/Upgrade218to22.java
+:100755 100755 a0a3a83c8bb2391cfc3757145ddafd3614a4a602 1c198deda690e080404dad82cb869db905bb9f54 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+:100755 100755 b6954dbc7d04c7c36345a3f85d5a3b9eb9f32838 292971df6e9c4ed1b91e2caa4ba6444ae13df172 M	setup/db/db/schema-2214to30.sql

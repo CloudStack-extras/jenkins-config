@@ -1,0 +1,134 @@
+Changes in branch origin/master, between 59262d67a33ade541cc0480c0013d38e2ce07835 and c4c68e2995b18b68b57d9c30feaff2c15a477227
+commit c4c68e2995b18b68b57d9c30feaff2c15a477227
+tree ea967d45c53c37a50ab729b93ea0a12ac4bb2cdd
+parent 4b4cba10c7bf69d02d84f50a2d2deb763465d274
+author Jessica Wang <jessica@cloud.com> 1331761004 -0700
+committer Jessica Wang <jessica@cloud.com> 1331761004 -0700
+
+    cloudstack 3.0 UI - fix a JS error "str.replace is undefined".
+
+:100644 100644 54ae111faa4c80312703251eb511c58ad8075a21 831a01bc386c9a8936c11c45c2f61d6b095722e6 M	ui/scripts/instances.js
+:100644 100644 891efe761b50df8b86954f0e75271d4493143061 1b66055a466ffae9dbd032a51fcffc4e23b356d0 M	ui/scripts/system.js
+:100644 100644 0287976d87ba09f1615164c5867d0997c0ebc631 a1662a021ce28faf646d1506bdf289834cc16dc8 M	ui/scripts/ui/utils.js
+
+commit 4b4cba10c7bf69d02d84f50a2d2deb763465d274
+tree 82edac450014b789742ff27e91b2c6bb61d13a54
+parent dd55f8ab99d1ba37b9bb25ea74b8fac3def7d5a0
+author Jessica Wang <jessica@cloud.com> 1331759008 -0700
+committer Jessica Wang <jessica@cloud.com> 1331759008 -0700
+
+    cloudstack 3.0 UI - replace old sanitizeXSS() with new cloudStack.sanitize().
+
+:100644 100644 4a5c63e806b7bd58b8e83bd5c533c9cefaf6fb74 eabccba48d7388ade4aac5ef3025ac7723152323 M	ui/scripts/configuration.js
+:100644 100644 4fac2bc3b612a62b84093a712489839d3252222d 54ae111faa4c80312703251eb511c58ad8075a21 M	ui/scripts/instances.js
+:100644 100644 f20e3186f9faf02e41a93541dc9c62385c82a536 2842a425e11883bc0011015977df0bc4d85f9ee3 M	ui/scripts/sharedFunctions.js
+:100644 100644 e683451ea145a0ee24b8590371765634efdfff6d 891efe761b50df8b86954f0e75271d4493143061 M	ui/scripts/system.js
+:100644 100644 8216d02d8e6e9601a2970a86662cfb71da107422 23390c026c7b487edf58c17da8f9b7bcf1399c92 M	ui/scripts/ui-custom/physicalResources.js
+:100644 100644 20ebad7fc090f961e80e52e0b34e0fc723096c07 efe488e42ff7424e1deeb2de022e24d50d724c82 M	ui/scripts/zoneWizard.js
+
+commit dd55f8ab99d1ba37b9bb25ea74b8fac3def7d5a0
+tree 2f06c669fabcf79939361f18dc5f9fd60ac7ab7e
+parent e73a23e8c0717e90764f2177458e92b19de79983
+author bfederle <bfederle@gmail.com> 1331757118 -0700
+committer bfederle <bfederle@gmail.com> 1331757139 -0700
+
+    Sanitize createForm input
+
+:100644 100644 3b4a6ef6ebb7468d8dfd444af174518bff3da488 63dfbbdedd2078e689f634a94e99e3921051daf3 M	ui/scripts/ui/dialog.js
+
+commit e73a23e8c0717e90764f2177458e92b19de79983
+tree 735c77f45d13b34ff1ab692260684cac11d7805d
+parent d28de139b8c29f0cf326635cd8f7d47d78fe0b02
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331757003 -0700
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331757103 -0700
+
+    bug 14271: return only domainId in error message when caller is not authorized to operate within the domain
+    status 14271: resolved fixed
+
+:100755 100755 7a605e595d9fdfd2ec13b280e1066a064c77c6e1 a844e8c15f9a858e122ed1ee4065956647602b3c M	server/src/com/cloud/acl/DomainChecker.java
+
+commit d28de139b8c29f0cf326635cd8f7d47d78fe0b02
+tree 374e93e385d60adb7b8e0870f2e6cca1cc50ed8e
+parent 2c2e0accdd78702852d0e79eaec024eae6ecc0c3
+author bfederle <bfederle@gmail.com> 1331753562 -0700
+committer bfederle <bfederle@gmail.com> 1331753562 -0700
+
+    Sanitize detail view input rendering
+
+:100644 100644 d3b67350b544d090bd20f1ddc0b19480d4b44de0 046893b91be937a94ca9fc47ca9ba18faba828e9 M	ui/scripts/ui/widgets/detailView.js
+
+commit 2c2e0accdd78702852d0e79eaec024eae6ecc0c3
+tree 8c320bc8e1a5e960b5b62e4fcf536990c1e90966
+parent c5e726be90c85762b2fec0b5190d79f68149cddf
+author bfederle <bfederle@gmail.com> 1331752778 -0700
+committer bfederle <bfederle@gmail.com> 1331752778 -0700
+
+    Sanitize list view input rendering
+
+:100644 100644 3ef7839d9f9d04bef2545155ff2c853aeeef6b8f 0fcaacba8082898d71febc16fc21aa4923332047 M	ui/scripts/ui/widgets/listView.js
+
+commit c5e726be90c85762b2fec0b5190d79f68149cddf
+tree 3ce183e452bdaf3990cff16fb9dfef97ea1c42af
+parent a1e85cdd6d77076190c18c2e7c18bc1fb347fd2d
+author bfederle <bfederle@gmail.com> 1331751064 -0700
+committer bfederle <bfederle@gmail.com> 1331751101 -0700
+
+    Fix case where str is not present
+
+:100644 100644 cda98a0c4f39172a0217d1832b27f9573fa87365 0287976d87ba09f1615164c5867d0997c0ebc631 M	ui/scripts/ui/utils.js
+
+commit a1e85cdd6d77076190c18c2e7c18bc1fb347fd2d
+tree 6fbf85989887ac124ce00273ee5c0713ba734fe3
+parent f7524c22d4cbfc7f5c8121c9444eed7b99176bbe
+author Edison Su <sudison@gmail.com> 1331750902 -0700
+committer Edison Su <sudison@gmail.com> 1331750955 -0700
+
+    bug 14201: delete duplicate guest os type. status 14201: resolved fixed
+
+:100644 100644 f7ca5c5e8dbafbb404f9fe8ef1aedc309676111b b8549ab666ce5e6233e70f972b3b9de1be292879 M	setup/db/db/schema-2214to30-cleanup.sql
+
+commit f7524c22d4cbfc7f5c8121c9444eed7b99176bbe
+tree 3595607bf17dd5779e414b78b03cfb9fa6bf986a
+parent 35911856dbe63d166fd135dadfafc532b35e132e
+author bfederle <bfederle@gmail.com> 1331747624 -0700
+committer bfederle <bfederle@gmail.com> 1331747681 -0700
+
+    Add helper function to sanitize user input strings
+    
+    For any strings that require sanitization (i.e., strip
+    HTML/JavaScript), wrap the string around cloudStack.sanitize, or _s
+    for short. This currently will remove embedded HTML tags, which are
+    the main security issues present.
+    
+    Example:
+    
+    var str = '<script>Hello</script>My String';
+    
+    _s(str) = '&lt;script&gt;Hello&lt;/script&gt;My String'
+
+:100644 100644 79a39e1d4916752c66e20682e77e28a8d1568097 cda98a0c4f39172a0217d1832b27f9573fa87365 M	ui/scripts/ui/utils.js
+
+commit 35911856dbe63d166fd135dadfafc532b35e132e
+tree 31cd724e048dcc1feb55b4e302f52ebfd82ae0dd
+parent 1b4954d63a7bb6f91122e7f57a876eedbd08c0b6
+author Edison Su <sudison@gmail.com> 1331747289 -0700
+committer Edison Su <sudison@gmail.com> 1331747448 -0700
+
+    bug 14168: add re-try to mgt server, in case mgt server is down. status 14168: resolved fixed
+
+:100755 100755 3c4734da53f2c083a3d7dd4e6d5c5f27d9a5d532 4b7cec7340b453d1c20eea4c0ced15bf6026d4f6 M	agent/src/com/cloud/agent/Agent.java
+
+commit 1b4954d63a7bb6f91122e7f57a876eedbd08c0b6
+tree a6e585bd46a9cdb178f1a742a90514a2df83f9f1
+parent 59262d67a33ade541cc0480c0013d38e2ce07835
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331747154 -0700
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331747415 -0700
+
+    bug 14295: allow regular user to create network with the custom cidr
+    status 14295: resolved fixed
+    
+    Conflicts:
+    
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+
+:100755 100755 ff10186d478d613664d5a389ddad4a606be8bbbc db9015433e1f022fea5d5f5b2a72fad44456f866 M	server/src/com/cloud/network/NetworkManagerImpl.java

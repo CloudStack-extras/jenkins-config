@@ -1,0 +1,10 @@
+Changes in branch origin/master, between c4c68e2995b18b68b57d9c30feaff2c15a477227 and afbf97465aafefe567e86ae757966e30053321ad
+commit afbf97465aafefe567e86ae757966e30053321ad
+tree be66ffc04ec94bf130195edc9ae68a690e7c9ce0
+parent c4c68e2995b18b68b57d9c30feaff2c15a477227
+author bfederle <bfederle@gmail.com> 1331762355 -0700
+committer bfederle <bfederle@gmail.com> 1331762355 -0700
+
+    Sanitize projects UI elements -- project selector, etc.
+
+:100644 100644 856f2a1d1cb156c2912825748443e6b31c4bb41f e580115b2f8ef1a3ef412b0a933ec65d80cda837 M	ui/scripts/ui-custom/projects.js

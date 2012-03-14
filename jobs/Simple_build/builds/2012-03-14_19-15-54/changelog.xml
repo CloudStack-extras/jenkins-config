@@ -1,0 +1,33 @@
+Changes in branch origin/master, between afbf97465aafefe567e86ae757966e30053321ad and 504e90b7cc6d1a93a9bc2003be6b491c632bd29b
+commit 504e90b7cc6d1a93a9bc2003be6b491c632bd29b
+tree 3c9cb5d4d947e18f19cf0eae11efa4df96eb65f4
+parent 13864cc66a03ba0bd738407980b21ab1c32eee71
+author bfederle <bfederle@gmail.com> 1331766477 -0700
+committer bfederle <bfederle@gmail.com> 1331766682 -0700
+
+    Sanitize input for multi-edit, notification widgets
+
+:100644 100644 44eecef0383709dbde4fe6c8b9aca4d9067dc970 ece6cf5f29b0078d6e4f915e99e22bf70e164068 M	ui/scripts/ui/widgets/multiEdit.js
+:100644 100644 61c328d1336c810ba124e67db2aa2110cdcfc020 93f78367690c547d5af676ff4597cd5f3b1bbaea M	ui/scripts/ui/widgets/notifications.js
+
+commit 13864cc66a03ba0bd738407980b21ab1c32eee71
+tree 6850df66ad57d4dd21cc658b372fa368d6aa54ba
+parent 7f14bb70c594695672564acf55a0861b0120027a
+author bfederle <bfederle@gmail.com> 1331766435 -0700
+committer bfederle <bfederle@gmail.com> 1331766682 -0700
+
+    Add missing resource, max networks,  to project resource tab
+
+:100644 100644 cdfa407d1c9958f127b2068eab3129bcd86e3296 f6395bea3ca3a4f42e0ee6e6777eff17431cee1a M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 c216d76dfa6e3d05dacebd466eacda490dfbf024 c1d397c7dd70edd4623ff31ec3954803a0231f60 M	ui/index.jsp
+:100644 100644 b444cd09e83fff56843c8ba3797e84e1c737a22b 07c89bbc8a85701b95386f0078ab77716a73077d M	ui/scripts/projects.js
+
+commit 7f14bb70c594695672564acf55a0861b0120027a
+tree e6c35b9498b982be75407a6c85a483188aaf6053
+parent afbf97465aafefe567e86ae757966e30053321ad
+author Jessica Wang <jessica@cloud.com> 1331766664 -0700
+committer Jessica Wang <jessica@cloud.com> 1331766664 -0700
+
+    cloudstack 3.0 UI - XSS - listView - fix it to show correct value.
+
+:100644 100644 0fcaacba8082898d71febc16fc21aa4923332047 629375750f34080561e6c41f0bd27d900f8752de M	ui/scripts/ui/widgets/listView.js

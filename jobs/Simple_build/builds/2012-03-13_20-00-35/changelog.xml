@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 3960a29c5a1d8a80d034ed010a64e4e2c554992d and 192b90dadffa58dc8e821a1b95d131ce31bd74c2
+commit 192b90dadffa58dc8e821a1b95d131ce31bd74c2
+tree d1bc0852e830135ecb56c3307ce16b85a92824c5
+parent 3960a29c5a1d8a80d034ed010a64e4e2c554992d
+author Jessica Wang <jessica@cloud.com> 1331682934 -0700
+committer Jessica Wang <jessica@cloud.com> 1331682968 -0700
+
+    cloudstack 3.0 UI - network page, infrastructure page - guest network - restart network action - Hide "clean up" checkbox if it's Basic zone. Show "clean up" checkbox if it's Advanced zone.
+
+:100644 100644 49e0aaa29c2f980740569190c94f19c6354ad3d1 a5c7da677c9fd540fb8dfae79b2f3eae7d2aa9e4 M	ui/scripts/network.js
+:100644 100644 ea651defd0b39add95935a338273ab8570b8067a e683451ea145a0ee24b8590371765634efdfff6d M	ui/scripts/system.js

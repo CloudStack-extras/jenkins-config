@@ -1,0 +1,22 @@
+Changes in branch origin/master, between 0c180a2cf6be4bd0c67392847a7a4a50c72d9de4 and 59262d67a33ade541cc0480c0013d38e2ce07835
+commit 59262d67a33ade541cc0480c0013d38e2ce07835
+tree 54dc5edc08f0930fa59b14a801579b9e0617cae8
+parent d71ab329005698c9d4cca1ba8875de72e7ec827b
+author Likitha Shetty <likitha.shetty@citrix.com> 1331728178 +0530
+committer Likitha Shetty <likitha.shetty@citrix.com> 1331728178 +0530
+
+    Bug 13842 Check for snapshots in BackedUp state during the deletion of secondary storage
+    behalf of: pranav
+    reviewed by: kishan
+
+:100644 100644 73b7fe4833a4a370468fbb9259311d5273f33409 9015360f57b1d1c6d268dfb1e2279a6137818b6a M	server/src/com/cloud/storage/dao/SnapshotDaoImpl.java
+
+commit d71ab329005698c9d4cca1ba8875de72e7ec827b
+tree 0a6f78deec649de73742aee27c2cef67c8f912c7
+parent 0c180a2cf6be4bd0c67392847a7a4a50c72d9de4
+author Abhi <abhinandan.prateek@citrix.com> 1331725969 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1331725969 +0530
+
+    bug 14218: fixing category for redhat
+
+:100755 100755 82550ad22ba865388e86f2d777a94e0a5aac265b 9dabaece9576b3677e183dd10a4c660bd0863891 M	setup/db/db/schema-2214to30.sql

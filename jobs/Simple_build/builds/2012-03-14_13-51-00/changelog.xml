@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 59262d67a33ade541cc0480c0013d38e2ce07835 and 1b4954d63a7bb6f91122e7f57a876eedbd08c0b6
+commit 1b4954d63a7bb6f91122e7f57a876eedbd08c0b6
+tree a6e585bd46a9cdb178f1a742a90514a2df83f9f1
+parent 59262d67a33ade541cc0480c0013d38e2ce07835
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331747154 -0700
+committer Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331747415 -0700
+
+    bug 14295: allow regular user to create network with the custom cidr
+    status 14295: resolved fixed
+    
+    Conflicts:
+    
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+
+:100755 100755 ff10186d478d613664d5a389ddad4a606be8bbbc db9015433e1f022fea5d5f5b2a72fad44456f866 M	server/src/com/cloud/network/NetworkManagerImpl.java

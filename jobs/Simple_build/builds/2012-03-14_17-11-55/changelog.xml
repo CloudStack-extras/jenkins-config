@@ -1,0 +1,15 @@
+Changes in branch origin/master, between dd55f8ab99d1ba37b9bb25ea74b8fac3def7d5a0 and 4b4cba10c7bf69d02d84f50a2d2deb763465d274
+commit 4b4cba10c7bf69d02d84f50a2d2deb763465d274
+tree 82edac450014b789742ff27e91b2c6bb61d13a54
+parent dd55f8ab99d1ba37b9bb25ea74b8fac3def7d5a0
+author Jessica Wang <jessica@cloud.com> 1331759008 -0700
+committer Jessica Wang <jessica@cloud.com> 1331759008 -0700
+
+    cloudstack 3.0 UI - replace old sanitizeXSS() with new cloudStack.sanitize().
+
+:100644 100644 4a5c63e806b7bd58b8e83bd5c533c9cefaf6fb74 eabccba48d7388ade4aac5ef3025ac7723152323 M	ui/scripts/configuration.js
+:100644 100644 4fac2bc3b612a62b84093a712489839d3252222d 54ae111faa4c80312703251eb511c58ad8075a21 M	ui/scripts/instances.js
+:100644 100644 f20e3186f9faf02e41a93541dc9c62385c82a536 2842a425e11883bc0011015977df0bc4d85f9ee3 M	ui/scripts/sharedFunctions.js
+:100644 100644 e683451ea145a0ee24b8590371765634efdfff6d 891efe761b50df8b86954f0e75271d4493143061 M	ui/scripts/system.js
+:100644 100644 8216d02d8e6e9601a2970a86662cfb71da107422 23390c026c7b487edf58c17da8f9b7bcf1399c92 M	ui/scripts/ui-custom/physicalResources.js
+:100644 100644 20ebad7fc090f961e80e52e0b34e0fc723096c07 efe488e42ff7424e1deeb2de022e24d50d724c82 M	ui/scripts/zoneWizard.js

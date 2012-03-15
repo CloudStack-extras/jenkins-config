@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 504e90b7cc6d1a93a9bc2003be6b491c632bd29b and 4191d287538ea1123d4897735abd61fd90ac8d0c
+commit 4191d287538ea1123d4897735abd61fd90ac8d0c
+tree 6efd9769ac153362c1bcb8517c9863b142f30fec
+parent 504e90b7cc6d1a93a9bc2003be6b491c632bd29b
+author Jessica Wang <jessica@cloud.com> 1331768722 -0700
+committer Jessica Wang <jessica@cloud.com> 1331768722 -0700
+
+    cloudstack 3.0 UI - XSS - detailView in Edit mode - fix it to show original value instead of HTML-encoding value.
+
+:100644 100644 a1662a021ce28faf646d1506bdf289834cc16dc8 6166ab08c4a5cdf405c0f153282fa6ab0ee0c484 M	ui/scripts/ui/utils.js
+:100644 100644 046893b91be937a94ca9fc47ca9ba18faba828e9 375a66fde9f4f8fb3d1dc52eb410475feca814c5 M	ui/scripts/ui/widgets/detailView.js

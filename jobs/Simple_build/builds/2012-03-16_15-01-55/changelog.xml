@@ -1,0 +1,10 @@
+Changes in branch origin/master, between e112436510b20d234e0eb736025f26397212812d and 31274387fc0698b5d6e931d5c3e812616128f76b
+commit 31274387fc0698b5d6e931d5c3e812616128f76b
+tree 3fd355562313fd6fc3c0a0fcc9934a9dccb482e6
+parent e112436510b20d234e0eb736025f26397212812d
+author Jessica Wang <jessica@cloud.com> 1331923978 -0700
+committer Jessica Wang <jessica@cloud.com> 1331924022 -0700
+
+    cloudstack 3.0 UI - XSS - listView - editable field - fix a bug that editable field sanitized value twice.
+
+:100644 100644 629375750f34080561e6c41f0bd27d900f8752de 1bef5c1d0afce532e7fc527f1ca8c7ccc6d74820 M	ui/scripts/ui/widgets/listView.js

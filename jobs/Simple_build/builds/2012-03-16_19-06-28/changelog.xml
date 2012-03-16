@@ -1,0 +1,10 @@
+Changes in branch origin/master, between a6a54a2f8757feaa501396e1f0f0e88ffba86453 and 5079cb6a067bb86579c7b8b5d2d9c0d157bcbba0
+commit 5079cb6a067bb86579c7b8b5d2d9c0d157bcbba0
+tree 0284fb74616e87a8ed8c79bdd290a628d356179a
+parent a6a54a2f8757feaa501396e1f0f0e88ffba86453
+author Jessica Wang <jessica@cloud.com> 1331938627 -0700
+committer Jessica Wang <jessica@cloud.com> 1331938695 -0700
+
+    bug 14332: cloudstack 3.0 UI - Host page - make "Remove Host" action available when host state is Down, Alert, Disconnected or when resource state is Maintenance, Disabled.
+
+:100644 100644 1b66055a466ffae9dbd032a51fcffc4e23b356d0 86d496b389d3679bacf1b8b98b8de85e68bff880 M	ui/scripts/system.js

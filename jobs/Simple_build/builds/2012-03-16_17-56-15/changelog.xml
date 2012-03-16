@@ -1,0 +1,31 @@
+Changes in branch origin/master, between b8dae7c57c18b30c3d65440aadbef23c798f34db and a6a54a2f8757feaa501396e1f0f0e88ffba86453
+commit a6a54a2f8757feaa501396e1f0f0e88ffba86453
+tree 6154f62579cffc1d13a698cf29b61df0d2c1a292
+parent 8071f516780d9f83b0f7e9f6bc3ec0ff31481f31
+author frank <frank.zhang@citrix.com> 1331934483 -0700
+committer frank <frank.zhang@citrix.com> 1331934570 -0700
+
+    Bug 14189 - multiple physical nw - SSVM fail to download guest templates from storage server which is in isolated network only accessible by host's bridge
+    
+    if storage network is present, don't set route through private ip when adding internal download site
+    
+    status 14189: resovled fixed
+
+:100755 100755 e320c71481ccfa2aae9b38aab0809e3f81944401 2f9a40c44d2d5e1d278fc8eefcd309d342b54c36 M	core/src/com/cloud/storage/resource/NfsSecondaryStorageResource.java
+:100755 100755 7a1f0dddfcb9d3f68942b2bfaf3588f00dc033de d8741522dad718e1bea244a4d519ac72ccad384b M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+
+commit 8071f516780d9f83b0f7e9f6bc3ec0ff31481f31
+tree 99b6b295b4ca78a07e20f9c637bd630c97f7f97c
+parent b8dae7c57c18b30c3d65440aadbef23c798f34db
+author Sheng Yang <sheng.yang@citrix.com> 1331934225 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1331934462 -0700
+
+    bug 14215: Fix SSVM on Xen kernel panic due to "too many env var"
+    
+    Just add different delimitor for VM and extract them from cmdline later.
+    
+    status 14215: resolved fixed
+
+:100755 100755 2f3ad9094d7871bfdc4cec802d5a0be2564364bd 2caa49c092444827f5e461a832e73cce9c417209 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 fb5b0ee225428634ddefedf5cce0770925b37cac 4ff8a733b55b0d94001127ba99883d55a17bdb3d M	core/src/com/cloud/hypervisor/xen/resource/XenServer56FP1Resource.java
+:100755 100755 ae164e33b04a4e01c0aafefd8268d92dc2074c44 7c0e50da1424ea2044664f9fe5dc86b9259655ef M	patches/systemvm/debian/config/etc/init.d/cloud-early-config

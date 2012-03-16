@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 31274387fc0698b5d6e931d5c3e812616128f76b and b8dae7c57c18b30c3d65440aadbef23c798f34db
+commit b8dae7c57c18b30c3d65440aadbef23c798f34db
+tree 3ad3942866f9f73220dc7ea44c183d6b49446317
+parent 31274387fc0698b5d6e931d5c3e812616128f76b
+author Jessica Wang <jessica@cloud.com> 1331928704 -0700
+committer Jessica Wang <jessica@cloud.com> 1331928743 -0700
+
+    cloudstack 3.0 UI - XSS - global setting page - fix a bug that notification got hacked after saving a value that has script tag (XSS attack).
+
+:100644 100644 1bef5c1d0afce532e7fc527f1ca8c7ccc6d74820 69f8960f376105f29d74aa35978d3e0db3bd616a M	ui/scripts/ui/widgets/listView.js

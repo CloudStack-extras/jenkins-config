@@ -1,0 +1,12 @@
+Changes in branch origin/master, between eab2a0c5b8028f228be18bf757533eedc37ab154 and c1620cbfd05f9019ed6a929769624a1894920de3
+commit c1620cbfd05f9019ed6a929769624a1894920de3
+tree 09baf4a1eebb36e65de378361099f9035c368f26
+parent eab2a0c5b8028f228be18bf757533eedc37ab154
+author frank <frank.zhang@citrix.com> 1331942666 -0700
+committer frank <frank.zhang@citrix.com> 1331942794 -0700
+
+    Bug 14347 - Security: Extra files on Secondary Storage VM's Apache root
+    
+    status 14347: resolved fixed
+
+:100755 100755 7c0e50da1424ea2044664f9fe5dc86b9259655ef d3aefbe47884a3fcebe223676b622893cc856d86 M	patches/systemvm/debian/config/etc/init.d/cloud-early-config

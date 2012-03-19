@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 8af4053a14236008a5277eec3e8e8da181a41a76 and 0c4191bb753743ad4c6d09fca9328f33f0bc227d
+commit 0c4191bb753743ad4c6d09fca9328f33f0bc227d
+tree 4d4fb426785bba678b06adb173485288f5a4f73c
+parent 8af4053a14236008a5277eec3e8e8da181a41a76
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332177243 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332177243 +0000
+
+    Bug 14370 - addSecondaryStorage always fails: "Can't find pod with specificied podId null"
+    
+    	status 14370: resolved fixed
+
+:100755 100755 a4f5e9dde40c37cf8cade59722b7ff3bf7481fe4 a88778b7a38923c2d2ce410a777d8dc8c954608d M	server/src/com/cloud/resource/ResourceManagerImpl.java

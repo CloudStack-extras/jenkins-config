@@ -1,13 +1,14 @@
 Started by an SCM change
-Checkout:build-api-docs-2.2.y / /var/lib/jenkins/workspace/build-api-docs-2.2.y - hudson.remoting.LocalChannel@d39ac
+Started by an SCM change
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@d39ac
 Using strategy: Default
-Last Built Revision: Revision b47cb26cd8dd9be5739346db5fc40c54413b424a (remotes/origin/2.2.y)
-Checkout:build-api-docs-2.2.y / /var/lib/jenkins/workspace/build-api-docs-2.2.y - hudson.remoting.LocalChannel@d39ac
+Last Built Revision: Revision 3b303d1a941895294df9a2cd00cbf307fbfcded1 (origin/3.0.x)
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@d39ac
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
 ERROR: Problem fetching from origin / origin - could be unavailable. Continuing anyway
-[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Error performing command: git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/2.2.y:refs/remotes/origin/2.2.y
-Command "git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/2.2.y:refs/remotes/origin/2.2.y" returned status code 128: error: unable to find 93459b1a27c3ab73271ec756c6d2ddd0546f45be
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Error performing command: git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/3.0.x:refs/remotes/origin/3.0.x
+Command "git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/3.0.x:refs/remotes/origin/3.0.x" returned status code 128: error: unable to find 93459b1a27c3ab73271ec756c6d2ddd0546f45be
 fatal: object 93459b1a27c3ab73271ec756c6d2ddd0546f45be not found
 
 	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:776)
@@ -28,7 +29,7 @@ fatal: object 93459b1a27c3ab73271ec756c6d2ddd0546f45be not found
 	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
 	at hudson.model.ResourceController.execute(ResourceController.java:88)
 	at hudson.model.Executor.run(Executor.java:238)
-Caused by: hudson.plugins.git.GitException: Command "git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/2.2.y:refs/remotes/origin/2.2.y" returned status code 128: error: unable to find 93459b1a27c3ab73271ec756c6d2ddd0546f45be
+Caused by: hudson.plugins.git.GitException: Command "git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/3.0.x:refs/remotes/origin/3.0.x" returned status code 128: error: unable to find 93459b1a27c3ab73271ec756c6d2ddd0546f45be
 fatal: object 93459b1a27c3ab73271ec756c6d2ddd0546f45be not found
 
 	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:771)

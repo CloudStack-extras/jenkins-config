@@ -1,0 +1,151 @@
+Changes in branch origin/master, between 8af4053a14236008a5277eec3e8e8da181a41a76 and fec3a87d09e0a1711afa295ac689fde3af79c0c0
+commit fec3a87d09e0a1711afa295ac689fde3af79c0c0
+tree bd6149de0fab280644e26f08fd54aa7481f13547
+parent 794b0516a387d502da142380334430740ab00953
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332193534 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332193809 -0700
+
+    bug 14388: don't return console proxy / ssvm service offerings
+    status 14388: resolved fixed
+
+:100755 100755 2b85b625faec269cc418f5172949d809413f1a1a 0a6f1615fa2020f009b46895b7b5053ce9a8a7a4 M	api/src/com/cloud/offering/ServiceOffering.java
+:100755 100755 308d98a77bf1edfbaa9c57602a7901f19c683c77 400259aa70478054d886ef4132db5c96c1c358a0 M	server/src/com/cloud/api/ApiDBUtils.java
+:100755 100755 337279d76c7ad72db2c10dd301586ec610fed4e8 6290f872cb6cd5130e1ebe42871dbadfee311488 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 66eadd837a8ff8f8ee00593c298f69f72f23f5ab b2a8a76bfa8ede091bb91a34da7c2a7bf2f63667 M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:100644 100644 014f2a32c3db0fd56bc222b067473a1a57b48173 1f594dc161b60959fb298c8d599ea04141b0ed00 M	server/src/com/cloud/migration/Db20to21MigrationUtil.java
+:100644 100644 1309e260aa6a79613277c40f44c155b96a53d573 04624ae5b1589d89cb26824d817af23029b9be35 M	server/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java
+:100755 100755 56c2d40eabfdc56107698411cbdf4495406612aa 6dc84bc68f7edfd8a70d3f199fc922aeb1d32c20 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100755 100755 2b6acf93360ce627fcf6d7e19d1d7ea5f47a2273 5443c3b67914606266c74640a0dc38ada20d2052 M	server/src/com/cloud/server/ManagementServerImpl.java
+:100755 100755 d8741522dad718e1bea244a4d519ac72ccad384b 1b65c754cebe1ae2208f61e1ca151a5d244cecc8 M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+
+commit 794b0516a387d502da142380334430740ab00953
+tree fbc947f93c7cc5e95f109c412bcd3e11c1f3a810
+parent 3773b52b2fa8e646f807f2f7100095f02bda86af
+author Jessica Wang <jessica@cloud.com> 1332193505 -0700
+committer Jessica Wang <jessica@cloud.com> 1332193522 -0700
+
+    bug 14325: cloudstack 3.0 UI - add zone wizard - basic zone - cover the case that selected network offering has Netscaler provider, but no security group service.
+
+:100644 100644 b5fd1bc0a2f711e15e38013b3710a1dd8487ec01 f2ab71e65e94dbc822c801bb719160bdcefaac70 M	ui/scripts/zoneWizard.js
+
+commit 3773b52b2fa8e646f807f2f7100095f02bda86af
+tree 383031e65f54d3a0570dfe23da2bb3c49c94d2dc
+parent c01ed2f754d9caeed59246a85a088b1c98a278a5
+author frank <frank.zhang@citrix.com> 1332192973 -0700
+committer frank <frank.zhang@citrix.com> 1332193017 -0700
+
+    add cleanup.sql to DB upgrade test
+
+:100755 100755 8dd4c33d907ea1bfb2813af353b72df97ec2e64d 3790decec8e6d34ef155afa3324ce50a1b0ebd40 M	server/test/com/cloud/agent/manager/SearchCriteria2Test.java
+:100644 100644 8208b3009adb9b827e95de148ef79bb7af0c68b1 94fb6ea97b4c4823bd0025cc9679fd48665e3e21 M	server/test/com/cloud/upgrade/AdvanceZone217To224UpgradeTest.java
+:100644 100644 c410dff5e8e083de9d45d2f083bd15f27d4f0ea0 dafee7280d4d7b01c048573a22ddf51b3e5749a0 M	server/test/com/cloud/upgrade/BasicZone218To224UpgradeTest.java
+:100644 100644 1ed74834096bc529486d2922867eba58d2dd758d 04ea01d2286c2d33a49447d82bcf4581d50d6baa M	server/test/com/cloud/upgrade/HostCapacity218to22Test.java
+:100644 100644 12739f9b7e8bccd82d1b402a768ac26e54d2b28c d9adf6a22b58b63777555e5486a58d68225286f5 M	server/test/com/cloud/upgrade/InstanceGroup218To224UpgradeTest.java
+:100644 100644 e0725f48bb0321b46c60591c176c8d608fe45e0c 279b3e517b1b8297e5e40ed83bd6f42128f298df M	server/test/com/cloud/upgrade/PortForwarding218To224UpgradeTest.java
+:100644 100644 a6ed9180fcfbecce42858a9e203c5b72594eb5af 69ab7c33e1053e4c5febe5aa3de095769a47177f M	server/test/com/cloud/upgrade/Sanity220To224UpgradeTest.java
+:100644 100644 18eae81d95f169c2d31872bb1978b6bef772bc23 151b649d71c1abfc8a4fb076b505f2849e1c6142 M	server/test/com/cloud/upgrade/Sanity222To224UpgradeTest.java
+:100644 100644 52edafc5a2aca2b034e4c7bb099c76d25b2329ae d08c0c8fbd5e3507d429df809a02ed62d4ca775f M	server/test/com/cloud/upgrade/Sanity224To225UpgradeTest.java
+:100644 100644 2cfbd1cc0ed5a0fc3ed80da81320397a85c4b844 23b7be3015fbdcee948d10604993262fd2085ae7 M	server/test/com/cloud/upgrade/Template2214To30UpgradeTest.java
+:100644 100644 f51c949c052ed86c50c6b5d5cfc36bb61a83e9c5 7eac4c421a5bd1913e2d1a4696f308008545649a M	server/test/com/cloud/upgrade/Test2214To30DBUpgrade.java
+:100644 100644 f611407771a183af2e66833551a973e98b9ef699 ca28c41bc370c57c91efe6b585ef2943b9b28849 M	server/test/com/cloud/upgrade/Usage217To224UpgradeTest.java
+:100644 100644 c70a160833e2b34d298df0435e3bd1bd0d4b0968 8858cb2bbc743b77daa92e81faffe8b222d34419 M	server/test/com/cloud/upgrade/UsageEvents218To224UpgradeTest.java
+
+commit c01ed2f754d9caeed59246a85a088b1c98a278a5
+tree ac1ee9cec875ca942eb45942c77d3d4c62a7ba41
+parent 53aa3cd90b3a7a8c698401ac57d2458439574f79
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332186231 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332189518 -0700
+
+    Added upgrade path from 3.0.x to 3.0.1
+
+:100755 100755 1648900b15a97f72acd9003de8367dc0f4c631dd 804b27803a097c1f9acdce124f5ba82e4ed43676 M	server/src/com/cloud/upgrade/DatabaseUpgradeChecker.java
+:100755 100755 2570bf2976d7e00b34cf1c0df18d09f34061064d 9154cbc438eb23c9c1b7610ce2e3e2e4ffe1b315 M	server/src/com/cloud/upgrade/PremiumDatabaseUpgradeChecker.java
+:000000 100644 0000000000000000000000000000000000000000 44e3ee1a46a7afb43564d37ffd89aeb5361e2325 A	server/src/com/cloud/upgrade/dao/Upgrade30to301.java
+:100644 100644 20a3bfb741e65c9e10b1afcdca90f1614ec79eea f51c949c052ed86c50c6b5d5cfc36bb61a83e9c5 M	server/test/com/cloud/upgrade/Test2214To30DBUpgrade.java
+:000000 100755 0000000000000000000000000000000000000000 9cef101fbe4385725d85f6877efeeaac467aeccb A	setup/db/db/schema-30to301.sql
+
+commit 53aa3cd90b3a7a8c698401ac57d2458439574f79
+tree e4526c7a8cdfa57f94a2f1acce2b9f59da27f4e0
+parent 26c77e62ceb32139158ee07758bf9c0031c9c93b
+author frank <frank.zhang@citrix.com> 1332186747 -0700
+committer frank <frank.zhang@citrix.com> 1332189274 -0700
+
+    change ant build version to 3.0.1
+
+:100755 100755 2ac07ba7208cbdb0ddf9024ecf670ab3205fa8b9 58d58049325ea0cbbccb25afddbcd71621217f34 M	build/cloud.properties
+
+commit 26c77e62ceb32139158ee07758bf9c0031c9c93b
+tree 6df154d2004b76f9625c97cc7c309356c161aca8
+parent ea007f833f3c55d69a0d15680a3f43b8fdd238fd
+author frank <frank.zhang@citrix.com> 1332187791 -0700
+committer frank <frank.zhang@citrix.com> 1332187841 -0700
+
+    move fake.sql to proper folder
+
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	server/test/fake.sql	server/test/resources/fake.sql
+
+commit ea007f833f3c55d69a0d15680a3f43b8fdd238fd
+tree 2e9a5eaa4db0dde0409c97e463b8b4b518a1b3f2
+parent 04f54ed29ed78bb3f5730567e7949859dffc78fa
+author frank <frank.zhang@citrix.com> 1332187541 -0700
+committer frank <frank.zhang@citrix.com> 1332187603 -0700
+
+    use fake.sql for db upgrade test
+
+:100755 100755 dd709e5be3f06edabb7badd7f3a8d42bd47cb1df 8dd4c33d907ea1bfb2813af353b72df97ec2e64d M	server/test/com/cloud/agent/manager/SearchCriteria2Test.java
+:100644 100644 c119d5eb07f538e68d78aa22dd78ec8fe9c4403d 8208b3009adb9b827e95de148ef79bb7af0c68b1 M	server/test/com/cloud/upgrade/AdvanceZone217To224UpgradeTest.java
+:100644 100644 b96093bac2f9220cd3fed629f986dff835301ff6 c410dff5e8e083de9d45d2f083bd15f27d4f0ea0 M	server/test/com/cloud/upgrade/BasicZone218To224UpgradeTest.java
+:100644 100644 6303622acf9a30bfa03c6f0f3c2ce875bac52148 1ed74834096bc529486d2922867eba58d2dd758d M	server/test/com/cloud/upgrade/HostCapacity218to22Test.java
+:100644 100644 b87916bf43ee1d7bdbf9137b7cb840db4c5ffbd1 12739f9b7e8bccd82d1b402a768ac26e54d2b28c M	server/test/com/cloud/upgrade/InstanceGroup218To224UpgradeTest.java
+:100644 100644 02863a606d83d61548ba269aaa04501a27fa9a02 e0725f48bb0321b46c60591c176c8d608fe45e0c M	server/test/com/cloud/upgrade/PortForwarding218To224UpgradeTest.java
+:100644 100644 2951702754b26b47da9fefb09f811b0a5d517efd a6ed9180fcfbecce42858a9e203c5b72594eb5af M	server/test/com/cloud/upgrade/Sanity220To224UpgradeTest.java
+:100644 100644 8600a7f1b008f7e7b5606d8eee95f0423aeffc07 18eae81d95f169c2d31872bb1978b6bef772bc23 M	server/test/com/cloud/upgrade/Sanity222To224UpgradeTest.java
+:100644 100644 1977929620ec9f96209c63461c21b640993f0615 52edafc5a2aca2b034e4c7bb099c76d25b2329ae M	server/test/com/cloud/upgrade/Sanity224To225UpgradeTest.java
+:100644 100644 9759dfbf5e82bf1082abb1a55dbe0240d4f6ba76 2cfbd1cc0ed5a0fc3ed80da81320397a85c4b844 M	server/test/com/cloud/upgrade/Template2214To30UpgradeTest.java
+:100644 100644 31011ab71d759893048e155824fa008c8f568bf4 20a3bfb741e65c9e10b1afcdca90f1614ec79eea M	server/test/com/cloud/upgrade/Test2214To30DBUpgrade.java
+:100644 100644 3886c67b9dc5f250ca931f29d925c185633fe23e f611407771a183af2e66833551a973e98b9ef699 M	server/test/com/cloud/upgrade/Usage217To224UpgradeTest.java
+:100644 100644 7f72559d5d8ee1fed343250148289885d6be4c3c c70a160833e2b34d298df0435e3bd1bd0d4b0968 M	server/test/com/cloud/upgrade/UsageEvents218To224UpgradeTest.java
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	server/test/fake.sql
+
+commit 04f54ed29ed78bb3f5730567e7949859dffc78fa
+tree bb7845db2ccdcdef6fdf2cc5ad39193805106b08
+parent bb5a99f01756c01b86dc9312a1e5c2df5ed1e902
+author Jessica Wang <jessica@cloud.com> 1332183891 -0700
+committer Jessica Wang <jessica@cloud.com> 1332183908 -0700
+
+    bug 14325: cloudstack 3.0 UI - add zone wizard - basic zone - show netscaler tab if selected network offering's provider is Netscaler. Hide netscaler tab otherwise.
+
+:100644 100644 c1d397c7dd70edd4623ff31ec3954803a0231f60 d4aa46dfa18d4be7d9ffc0746a614ead65e43df3 M	ui/index.jsp
+:100644 100644 f98254b1cd03602e4d01b143a3a0c307b410df44 b5fd1bc0a2f711e15e38013b3710a1dd8487ec01 M	ui/scripts/zoneWizard.js
+
+commit bb5a99f01756c01b86dc9312a1e5c2df5ed1e902
+tree 264304f288ad0d66ab4a08589be5162fcc765f79
+parent b867e3fe62a85b3069874512827176284fc02755
+author Alena <alena@macbookpro.citrite.net> 1332179686 -0700
+committer Alena <alena@macbookpro.citrite.net> 1332179773 -0700
+
+    bug 14345: fixed #1,8,14 and 15
+
+:100755 100755 e6f53a46a3e39aaa7584134e5637f684e5004cec 294df782c0b19838c06219f830255f556fec4117 M	setup/db/db/schema-2214to30.sql
+
+commit b867e3fe62a85b3069874512827176284fc02755
+tree 09b27ef007a3b5b31da724b13cb5c770af0f9e0b
+parent 0c4191bb753743ad4c6d09fca9328f33f0bc227d
+author Jessica Wang <jessica@cloud.com> 1332179260 -0700
+committer Jessica Wang <jessica@cloud.com> 1332179334 -0700
+
+    bug 14325: cloudstack 3.0 UI - add zone wizard - basic zone - retrieve provider of selected network offering
+
+:100644 100644 efe488e42ff7424e1deeb2de022e24d50d724c82 f98254b1cd03602e4d01b143a3a0c307b410df44 M	ui/scripts/zoneWizard.js
+
+commit 0c4191bb753743ad4c6d09fca9328f33f0bc227d
+tree 4d4fb426785bba678b06adb173485288f5a4f73c
+parent 8af4053a14236008a5277eec3e8e8da181a41a76
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332177243 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332177243 +0000
+
+    Bug 14370 - addSecondaryStorage always fails: "Can't find pod with specificied podId null"
+    
+    	status 14370: resolved fixed
+
+:100755 100755 a4f5e9dde40c37cf8cade59722b7ff3bf7481fe4 a88778b7a38923c2d2ce410a777d8dc8c954608d M	server/src/com/cloud/resource/ResourceManagerImpl.java

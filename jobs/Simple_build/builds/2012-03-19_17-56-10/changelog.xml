@@ -1,0 +1,19 @@
+Changes in branch origin/master, between 794b0516a387d502da142380334430740ab00953 and fec3a87d09e0a1711afa295ac689fde3af79c0c0
+commit fec3a87d09e0a1711afa295ac689fde3af79c0c0
+tree bd6149de0fab280644e26f08fd54aa7481f13547
+parent 794b0516a387d502da142380334430740ab00953
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332193534 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332193809 -0700
+
+    bug 14388: don't return console proxy / ssvm service offerings
+    status 14388: resolved fixed
+
+:100755 100755 2b85b625faec269cc418f5172949d809413f1a1a 0a6f1615fa2020f009b46895b7b5053ce9a8a7a4 M	api/src/com/cloud/offering/ServiceOffering.java
+:100755 100755 308d98a77bf1edfbaa9c57602a7901f19c683c77 400259aa70478054d886ef4132db5c96c1c358a0 M	server/src/com/cloud/api/ApiDBUtils.java
+:100755 100755 337279d76c7ad72db2c10dd301586ec610fed4e8 6290f872cb6cd5130e1ebe42871dbadfee311488 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 66eadd837a8ff8f8ee00593c298f69f72f23f5ab b2a8a76bfa8ede091bb91a34da7c2a7bf2f63667 M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:100644 100644 014f2a32c3db0fd56bc222b067473a1a57b48173 1f594dc161b60959fb298c8d599ea04141b0ed00 M	server/src/com/cloud/migration/Db20to21MigrationUtil.java
+:100644 100644 1309e260aa6a79613277c40f44c155b96a53d573 04624ae5b1589d89cb26824d817af23029b9be35 M	server/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java
+:100755 100755 56c2d40eabfdc56107698411cbdf4495406612aa 6dc84bc68f7edfd8a70d3f199fc922aeb1d32c20 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100755 100755 2b6acf93360ce627fcf6d7e19d1d7ea5f47a2273 5443c3b67914606266c74640a0dc38ada20d2052 M	server/src/com/cloud/server/ManagementServerImpl.java
+:100755 100755 d8741522dad718e1bea244a4d519ac72ccad384b 1b65c754cebe1ae2208f61e1ca151a5d244cecc8 M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java

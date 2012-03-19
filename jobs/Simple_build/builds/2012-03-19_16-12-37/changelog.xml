@@ -1,0 +1,33 @@
+Changes in branch origin/master, between 04f54ed29ed78bb3f5730567e7949859dffc78fa and 26c77e62ceb32139158ee07758bf9c0031c9c93b
+commit 26c77e62ceb32139158ee07758bf9c0031c9c93b
+tree 6df154d2004b76f9625c97cc7c309356c161aca8
+parent ea007f833f3c55d69a0d15680a3f43b8fdd238fd
+author frank <frank.zhang@citrix.com> 1332187791 -0700
+committer frank <frank.zhang@citrix.com> 1332187841 -0700
+
+    move fake.sql to proper folder
+
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 R100	server/test/fake.sql	server/test/resources/fake.sql
+
+commit ea007f833f3c55d69a0d15680a3f43b8fdd238fd
+tree 2e9a5eaa4db0dde0409c97e463b8b4b518a1b3f2
+parent 04f54ed29ed78bb3f5730567e7949859dffc78fa
+author frank <frank.zhang@citrix.com> 1332187541 -0700
+committer frank <frank.zhang@citrix.com> 1332187603 -0700
+
+    use fake.sql for db upgrade test
+
+:100755 100755 dd709e5be3f06edabb7badd7f3a8d42bd47cb1df 8dd4c33d907ea1bfb2813af353b72df97ec2e64d M	server/test/com/cloud/agent/manager/SearchCriteria2Test.java
+:100644 100644 c119d5eb07f538e68d78aa22dd78ec8fe9c4403d 8208b3009adb9b827e95de148ef79bb7af0c68b1 M	server/test/com/cloud/upgrade/AdvanceZone217To224UpgradeTest.java
+:100644 100644 b96093bac2f9220cd3fed629f986dff835301ff6 c410dff5e8e083de9d45d2f083bd15f27d4f0ea0 M	server/test/com/cloud/upgrade/BasicZone218To224UpgradeTest.java
+:100644 100644 6303622acf9a30bfa03c6f0f3c2ce875bac52148 1ed74834096bc529486d2922867eba58d2dd758d M	server/test/com/cloud/upgrade/HostCapacity218to22Test.java
+:100644 100644 b87916bf43ee1d7bdbf9137b7cb840db4c5ffbd1 12739f9b7e8bccd82d1b402a768ac26e54d2b28c M	server/test/com/cloud/upgrade/InstanceGroup218To224UpgradeTest.java
+:100644 100644 02863a606d83d61548ba269aaa04501a27fa9a02 e0725f48bb0321b46c60591c176c8d608fe45e0c M	server/test/com/cloud/upgrade/PortForwarding218To224UpgradeTest.java
+:100644 100644 2951702754b26b47da9fefb09f811b0a5d517efd a6ed9180fcfbecce42858a9e203c5b72594eb5af M	server/test/com/cloud/upgrade/Sanity220To224UpgradeTest.java
+:100644 100644 8600a7f1b008f7e7b5606d8eee95f0423aeffc07 18eae81d95f169c2d31872bb1978b6bef772bc23 M	server/test/com/cloud/upgrade/Sanity222To224UpgradeTest.java
+:100644 100644 1977929620ec9f96209c63461c21b640993f0615 52edafc5a2aca2b034e4c7bb099c76d25b2329ae M	server/test/com/cloud/upgrade/Sanity224To225UpgradeTest.java
+:100644 100644 9759dfbf5e82bf1082abb1a55dbe0240d4f6ba76 2cfbd1cc0ed5a0fc3ed80da81320397a85c4b844 M	server/test/com/cloud/upgrade/Template2214To30UpgradeTest.java
+:100644 100644 31011ab71d759893048e155824fa008c8f568bf4 20a3bfb741e65c9e10b1afcdca90f1614ec79eea M	server/test/com/cloud/upgrade/Test2214To30DBUpgrade.java
+:100644 100644 3886c67b9dc5f250ca931f29d925c185633fe23e f611407771a183af2e66833551a973e98b9ef699 M	server/test/com/cloud/upgrade/Usage217To224UpgradeTest.java
+:100644 100644 7f72559d5d8ee1fed343250148289885d6be4c3c c70a160833e2b34d298df0435e3bd1bd0d4b0968 M	server/test/com/cloud/upgrade/UsageEvents218To224UpgradeTest.java
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	server/test/fake.sql

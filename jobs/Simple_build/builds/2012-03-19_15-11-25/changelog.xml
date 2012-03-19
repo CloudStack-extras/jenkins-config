@@ -1,0 +1,11 @@
+Changes in branch origin/master, between bb5a99f01756c01b86dc9312a1e5c2df5ed1e902 and 04f54ed29ed78bb3f5730567e7949859dffc78fa
+commit 04f54ed29ed78bb3f5730567e7949859dffc78fa
+tree bb7845db2ccdcdef6fdf2cc5ad39193805106b08
+parent bb5a99f01756c01b86dc9312a1e5c2df5ed1e902
+author Jessica Wang <jessica@cloud.com> 1332183891 -0700
+committer Jessica Wang <jessica@cloud.com> 1332183908 -0700
+
+    bug 14325: cloudstack 3.0 UI - add zone wizard - basic zone - show netscaler tab if selected network offering's provider is Netscaler. Hide netscaler tab otherwise.
+
+:100644 100644 c1d397c7dd70edd4623ff31ec3954803a0231f60 d4aa46dfa18d4be7d9ffc0746a614ead65e43df3 M	ui/index.jsp
+:100644 100644 f98254b1cd03602e4d01b143a3a0c307b410df44 b5fd1bc0a2f711e15e38013b3710a1dd8487ec01 M	ui/scripts/zoneWizard.js

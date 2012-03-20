@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 3d327c03be54ed4cf87cea7deb09632a330a2b70 and 257997398eb7897d5f876b9bcc66dbe03e30344b
+commit 257997398eb7897d5f876b9bcc66dbe03e30344b
+tree 7e631d61639fcfa1ea049e5086dbe08e4140fd7e
+parent 3d327c03be54ed4cf87cea7deb09632a330a2b70
+author Jessica Wang <jessica@cloud.com> 1332279515 -0700
+committer Jessica Wang <jessica@cloud.com> 1332279567 -0700
+
+    cloudstack 3.0 UI - infrastructure page - zone detail - rename "network" tab to "physical network" tab.
+
+:100644 100644 673335f144a8777a52b9b9269c2ebaf1fe55882a 295acffc6d40e1dbac7e003551e152b62cf53585 M	ui/index.jsp
+:100644 100644 815ad425faafba978cca0496141155e2ee98f77b 721b198b92d6e46478f816c028e55120321bddda M	ui/scripts/system.js

@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 257997398eb7897d5f876b9bcc66dbe03e30344b and 9e352d592815e4fbece70dec5f54ea96913b6515
+commit 9e352d592815e4fbece70dec5f54ea96913b6515
+tree 0d196e9b509bbca09e66d9da3f44318d193d2bf7
+parent 257997398eb7897d5f876b9bcc66dbe03e30344b
+author Jessica Wang <jessica@cloud.com> 1332281676 -0700
+committer Jessica Wang <jessica@cloud.com> 1332281727 -0700
+
+    cloudstack 3.0 UI - listView widget - remove action - remove the corresponding row after action completes.
+
+:100644 100644 375a66fde9f4f8fb3d1dc52eb410475feca814c5 154d541e61c4149875aadf4f76d6fd70932adc63 M	ui/scripts/ui/widgets/detailView.js
+:100644 100644 69f8960f376105f29d74aa35978d3e0db3bd616a eb9c68357651a5ece122fe1f85f4f5c317b6c9da M	ui/scripts/ui/widgets/listView.js

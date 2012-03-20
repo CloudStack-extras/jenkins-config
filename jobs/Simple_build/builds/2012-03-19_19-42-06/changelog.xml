@@ -1,0 +1,12 @@
+Changes in branch origin/master, between a4c332766daca2964f6ef7de16196212dd41cb0d and 5dc82ecb7f5c64835b820242354697f713a334b6
+commit 5dc82ecb7f5c64835b820242354697f713a334b6
+tree 009d43cf8d5f1c944a930e100f2fd0eaa0eb0dca
+parent a4c332766daca2964f6ef7de16196212dd41cb0d
+author frank <frank.zhang@citrix.com> 1332200079 -0700
+committer frank <frank.zhang@citrix.com> 1332200153 -0700
+
+    Bug 14379 - port 8096 should be closed and disabled by default on CS
+    
+    status 14739: resolved fixed
+
+:100755 100755 a5e90bcc75181e74bbaac73ae9d1a762e929d3cb 189498b640694770f6c2195cf6ec2cf7ad46683a M	python/lib/cloudutils/serviceConfig.py

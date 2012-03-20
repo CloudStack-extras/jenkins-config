@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 5dc82ecb7f5c64835b820242354697f713a334b6 and 8dafe972fec66d2414faf8d2eabce535773f0bbf
+commit 8dafe972fec66d2414faf8d2eabce535773f0bbf
+tree 4554bd82b583731f784d44c0ac16b61ed79873ab
+parent 5dc82ecb7f5c64835b820242354697f713a334b6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332200427 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332200472 -0700
+
+    bug 14341: fixed issue #3
+    status 14341: resolved fixed
+
+:100755 100755 0024e1199249b1756d9df1cb1e042e2e59ab9c55 bc7aff73a6790b8f34a05bc1a0cd992b167b0299 M	setup/db/db/schema-2214to30.sql

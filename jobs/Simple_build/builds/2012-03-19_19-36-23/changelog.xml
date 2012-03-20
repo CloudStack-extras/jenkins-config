@@ -1,0 +1,10 @@
+Changes in branch origin/master, between e53cfeceb6f24a1cada75fdfbcaad41e693109a8 and a4c332766daca2964f6ef7de16196212dd41cb0d
+commit a4c332766daca2964f6ef7de16196212dd41cb0d
+tree 54e34fd9bcb52b41eb8682bf92ac513ae158ccef
+parent e53cfeceb6f24a1cada75fdfbcaad41e693109a8
+author Jessica Wang <jessica@cloud.com> 1332199805 -0700
+committer Jessica Wang <jessica@cloud.com> 1332199870 -0700
+
+    bug 14376: cloudstack 3.0 UI - Add Network Offering - compute offering(service offering) dropdown - only populate service offerings whose systemvmtype is domainrouter.
+
+:100644 100644 eabccba48d7388ade4aac5ef3025ac7723152323 ae82b0d7d8034195e499f27f8cdad634b0d101b1 M	ui/scripts/configuration.js

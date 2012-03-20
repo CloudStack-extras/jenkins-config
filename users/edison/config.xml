@@ -17,7 +17,7 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>Edison@citrix.com</emailAddress>
+      <emailAddress>edison@cloud.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

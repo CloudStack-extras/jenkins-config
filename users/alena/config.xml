@@ -20,7 +20,7 @@
       <passwordHash>XkDibb:ae9c32b9ef20309ede35c9f3c0cbf62131273667b1daef82f8099243c7e0f7c2</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>alena@macbookpro.citrite.net</emailAddress>
+      <emailAddress>alena@cloud.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

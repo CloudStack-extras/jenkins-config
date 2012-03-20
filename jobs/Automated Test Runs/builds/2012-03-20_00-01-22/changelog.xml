@@ -1,0 +1,91 @@
+Changes in branch origin/master, between fec3a87d09e0a1711afa295ac689fde3af79c0c0 and 6af1e6665b51a289e02020f29d09185449a3f32b
+commit 6af1e6665b51a289e02020f29d09185449a3f32b
+tree d0ddb04fa39de659e1d2233911b31cb1b36f6ea5
+parent 8dafe972fec66d2414faf8d2eabce535773f0bbf
+author frank <frank.zhang@citrix.com> 1332203786 -0700
+committer frank <frank.zhang@citrix.com> 1332203915 -0700
+
+    Bug 14149 - OVM Typo and wrong mountpoint
+    
+    status 14149: resolved fixed
+
+:100644 100644 1ac987d1cebbed313e22325198f4b1e872483651 182afe949f16880811f822c583448a32cf1c6804 M	ovm/scripts/vm/hypervisor/ovm/OvmVolumeModule.py
+
+commit 8dafe972fec66d2414faf8d2eabce535773f0bbf
+tree 4554bd82b583731f784d44c0ac16b61ed79873ab
+parent 5dc82ecb7f5c64835b820242354697f713a334b6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332200427 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332200472 -0700
+
+    bug 14341: fixed issue #3
+    status 14341: resolved fixed
+
+:100755 100755 0024e1199249b1756d9df1cb1e042e2e59ab9c55 bc7aff73a6790b8f34a05bc1a0cd992b167b0299 M	setup/db/db/schema-2214to30.sql
+
+commit 5dc82ecb7f5c64835b820242354697f713a334b6
+tree 009d43cf8d5f1c944a930e100f2fd0eaa0eb0dca
+parent a4c332766daca2964f6ef7de16196212dd41cb0d
+author frank <frank.zhang@citrix.com> 1332200079 -0700
+committer frank <frank.zhang@citrix.com> 1332200153 -0700
+
+    Bug 14379 - port 8096 should be closed and disabled by default on CS
+    
+    status 14739: resolved fixed
+
+:100755 100755 a5e90bcc75181e74bbaac73ae9d1a762e929d3cb 189498b640694770f6c2195cf6ec2cf7ad46683a M	python/lib/cloudutils/serviceConfig.py
+
+commit a4c332766daca2964f6ef7de16196212dd41cb0d
+tree 54e34fd9bcb52b41eb8682bf92ac513ae158ccef
+parent e53cfeceb6f24a1cada75fdfbcaad41e693109a8
+author Jessica Wang <jessica@cloud.com> 1332199805 -0700
+committer Jessica Wang <jessica@cloud.com> 1332199870 -0700
+
+    bug 14376: cloudstack 3.0 UI - Add Network Offering - compute offering(service offering) dropdown - only populate service offerings whose systemvmtype is domainrouter.
+
+:100644 100644 eabccba48d7388ade4aac5ef3025ac7723152323 ae82b0d7d8034195e499f27f8cdad634b0d101b1 M	ui/scripts/configuration.js
+
+commit e53cfeceb6f24a1cada75fdfbcaad41e693109a8
+tree 11c1ecc435c13828cb48d8619c52e7a22ebb62b8
+parent 20acc4d3157299d0d6e45d185fe2e9ae3de3f784
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332199117 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332199178 -0700
+
+    bug 14379: don't enable 8096 port by default (set global config variable to null by default, and don't create a listener on this port unless its set to valid integer)
+
+:100755 100755 83d47cf439a19134e0c8c0aba38b5ce8b1dae512 aa71cdc28d21684adf35a6bcd91bd330a7ccaab7 M	server/src/com/cloud/api/ApiServer.java
+:100755 100755 6d7f7641de22c51f7f7f508b2a4d5253f352372b 520960958b8a2fcd6c176cc2dca334bb687bdf06 M	server/src/com/cloud/configuration/Config.java
+:100755 100755 3ca0819c80803faa9b62287dd42ee01f63fb4a92 c3195036f262d931f4eb0565b414f2dffbbde1ba M	server/src/com/cloud/template/TemplateAdapter.java
+:100755 100755 28ef42403be416bc8aa2202be35cb07dc31b98f2 084940f427a04795aef9d5c129a845eb25fea649 M	server/src/com/cloud/template/TemplateAdapterBase.java
+
+commit 20acc4d3157299d0d6e45d185fe2e9ae3de3f784
+tree 3dcd577ad29f8b2345a07031521a92f39e54930d
+parent 4303e30ae0f1177a094490b5a969ec7d33a21b55
+author Jessica Wang <jessica@cloud.com> 1332198202 -0700
+committer Jessica Wang <jessica@cloud.com> 1332198290 -0700
+
+    bug 14377: cloudstack 3.0 UI - login - if login fails due to invalid username and password, show a generic error message instead of API returned error message.
+
+:100644 100644 f6395bea3ca3a4f42e0ee6e6777eff17431cee1a 2c0b8fc3d7ae7b20788c915a7e74ba9d0804376d M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 279439090c15ca47eef858d2e2f0adb54e75bf4b 6b33a628b8370c78b72eb33c15bc19f4eaa56c8f M	client/WEB-INF/classes/resources/messages_ja.properties
+:100644 100644 d4aa46dfa18d4be7d9ffc0746a614ead65e43df3 7f7a79611ca9a976b9c82bfb9a6c888b39ba5d9b M	ui/index.jsp
+:100644 100644 7d3ebd069f7513c510cb83ed240201dd2e15447a 80cda99b0704d92d214391a78bce338111a2b014 M	ui/scripts/cloudStack.js
+
+commit 4303e30ae0f1177a094490b5a969ec7d33a21b55
+tree 97cda364785f63dbe3c43c6e69715f04a617f63c
+parent 32c0068ae36b1d9c15be57a37426135f2630a775
+author frank <frank.zhang@citrix.com> 1332195976 -0700
+committer frank <frank.zhang@citrix.com> 1332196063 -0700
+
+    add missing cleanup.sql
+
+:000000 100644 0000000000000000000000000000000000000000 950344491ac0d6b01d608720f69837473beb82c5 A	server/test/resources/cleanup.sql
+
+commit 32c0068ae36b1d9c15be57a37426135f2630a775
+tree bcc27efd3680221ca96f7132c7424f4c8ccdf050
+parent fec3a87d09e0a1711afa295ac689fde3af79c0c0
+author Sheng Yang <sheng.yang@citrix.com> 1332195460 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1332195511 -0700
+
+    bug 14341: Fix #2
+
+:100755 100755 294df782c0b19838c06219f830255f556fec4117 0024e1199249b1756d9df1cb1e042e2e59ab9c55 M	setup/db/db/schema-2214to30.sql

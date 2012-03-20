@@ -1,0 +1,12 @@
+Changes in branch origin/master, between c23f1b8882cf8002250a608637f096ba98a84524 and 464967294bd738365d0bde2949f607e67d9f4b61
+commit 464967294bd738365d0bde2949f607e67d9f4b61
+tree d6905939d1930442f02efdf1bd0c7be8549577e1
+parent c23f1b8882cf8002250a608637f096ba98a84524
+author Jessica Wang <jessica@cloud.com> 1332275934 -0700
+committer Jessica Wang <jessica@cloud.com> 1332276061 -0700
+
+    Revert "bug 14376: cloudstack 3.0 UI - Add Network Offering - compute offering(service offering) dropdown - only populate service offerings whose systemvmtype is domainrouter."
+    
+    This reverts commit 076617fbffb8160ad3f1d73885a6c809220b9aa8.
+
+:100644 100644 ae82b0d7d8034195e499f27f8cdad634b0d101b1 eabccba48d7388ade4aac5ef3025ac7723152323 M	ui/scripts/configuration.js

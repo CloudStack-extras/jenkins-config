@@ -1,0 +1,10 @@
+Changes in branch origin/master, between e43914ab58400b0e6b244b08fba5b95679fcba32 and d35489778025bca55db2c1dc8aca1fff2164ad93
+commit d35489778025bca55db2c1dc8aca1fff2164ad93
+tree 431454793290be9787c4ebd500f9e51fb83d84c1
+parent e43914ab58400b0e6b244b08fba5b95679fcba32
+author Abhi <abhinandan.prateek@citrix.com> 1332305508 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1332305584 +0530
+
+    bug 12947: enabling XCP 1.5
+
+:100755 100755 1b1316263cbfdc5d76d5f0b0cca57614b423e358 fd6ccb8c67a3b43e515ee566330a280456df780c M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java

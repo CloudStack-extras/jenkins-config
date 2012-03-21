@@ -1,0 +1,11 @@
+Changes in branch origin/master, between d3673506cf3aec8ef9f4f8e0a172f6ebec448505 and 99e1ca123f8bdab2512704bda1c42d464833c7cf
+commit 99e1ca123f8bdab2512704bda1c42d464833c7cf
+tree cbe730539421a4f101e623b2d76ed169512d3142
+parent d3673506cf3aec8ef9f4f8e0a172f6ebec448505
+author Murali reddy <Murali.Reddy@citrix.com> 1332328971 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1332329084 +0530
+
+    bug 13899: CloudStack (Advanced Mode) should not allow "NetScaler" as provider for StaticNAT service
+    status 13899: resolved fixed
+
+:100644 100644 bd37ccc844ca9a956c2d61bf9ef45c9e861921d9 33e31fdc0825b83c88685e43492edbc3024b4304 M	server/src/com/cloud/network/element/NetscalerElement.java

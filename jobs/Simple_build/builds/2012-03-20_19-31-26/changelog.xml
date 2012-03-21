@@ -1,0 +1,18 @@
+Changes in branch origin/master, between 7cb0351eaad010e761a6439998be193bae7da790 and 24e57e283ec9bdd69a0325a3b605b2be83e4a410
+commit 24e57e283ec9bdd69a0325a3b605b2be83e4a410
+tree bf6707ec33f028016715e161f45a143122abeb9c
+parent 7cb0351eaad010e761a6439998be193bae7da790
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1332282909 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1332285763 -0700
+
+    Bug 14071: queryAsyncJobResult in xml format gives incorrect UUIDs back
+    
+    Description:
+    
+    	Incorrectly removed part of the XML serializer that serialized
+    	the IdentityProxy object in normal responses, when putting in
+    	support for serialization of lists of IdentityProxy objects in
+    	exception responses as part of the code changes put in for bug
+    	13217, resulting in this bug. Putting it back in place.
+
+:100644 100644 55d54483a89111815fa1e8279fc558dc9e83afa2 4b8dbaaf96b64bdd5126b28f17bab77eb54aacd5 M	server/src/com/cloud/api/response/ApiResponseSerializer.java

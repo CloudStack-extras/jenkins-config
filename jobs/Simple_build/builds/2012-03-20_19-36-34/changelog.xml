@@ -1,0 +1,22 @@
+Changes in branch origin/master, between 24e57e283ec9bdd69a0325a3b605b2be83e4a410 and 1a39682cd5b0d5ec29307edab22788246770d429
+commit 1a39682cd5b0d5ec29307edab22788246770d429
+tree 2756637651311d0d9bf8568d65c9ec21bc45cb5a
+parent b6b4c893f84ed31da04a988dbea07931de9eeb69
+author bfederle <bfederle@gmail.com> 1332285978 -0700
+committer bfederle <bfederle@gmail.com> 1332286174 -0700
+
+    Fix case where LB instance list is empty
+
+:100644 100644 fc79d6c319cc6295bd31eb29c033bdb59753eff9 b7b5aa3d95b2f662485a34f3808737354bbb49f2 M	ui/scripts/network.js
+
+commit b6b4c893f84ed31da04a988dbea07931de9eeb69
+tree e4f97aafaa970411bbff1f32e26dc0a908814522
+parent 24e57e283ec9bdd69a0325a3b605b2be83e4a410
+author bfederle <bfederle@gmail.com> 1332285804 -0700
+committer bfederle <bfederle@gmail.com> 1332286173 -0700
+
+    bug 14352
+    
+    Show internal VM names instead of IDs for LB rule
+
+:100644 100644 a5c7da677c9fd540fb8dfae79b2f3eae7d2aa9e4 fc79d6c319cc6295bd31eb29c033bdb59753eff9 M	ui/scripts/network.js

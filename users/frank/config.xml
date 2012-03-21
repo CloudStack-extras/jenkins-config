@@ -25,7 +25,7 @@
       <authorizedKeys></authorizedKeys>
     </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>frank@cloud.com</emailAddress>
+      <emailAddress>frank.zhang@citrix.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

@@ -1,0 +1,17 @@
+Changes in branch origin/master, between f82aa63815c0fcb68948b1664fd22146cb3e58c1 and 76528f37f12996d7ea00f3fbf63f7eb5626105bc
+commit 76528f37f12996d7ea00f3fbf63f7eb5626105bc
+tree cb240dcd76b84aec6ad81515de5371a1578c412d
+parent f82aa63815c0fcb68948b1664fd22146cb3e58c1
+author Brian Federle <brian.federle@citrix.com> 1332357199 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332357199 -0700
+
+    bug 14240
+    
+    Add VM details to name in PF/LB rule on click.
+    
+    Note that the details panel now maximizes, to prevent additional panels
+    from accumulating by the user trying to click on multiple VMs when the
+    detail pane is present.
+
+:100644 100644 9f90090d9c386428736196900a9d014fcf3f98d6 9dadcc77a6c16b70e81efc1d8db678d406b2ee63 M	ui/css/cloudstack3.css
+:100644 100644 7d2ba33ef32bab57289b5e61122cf928411b2e76 6b32ea07590c244bc491d67230acf71dcebb4d9d M	ui/scripts/ui/widgets/multiEdit.js

@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 4233cd7aba20310921789677e9f58b2571df9d17 and 93151a701c012e90232c7912f8ac0b25578c2fb1
+commit 93151a701c012e90232c7912f8ac0b25578c2fb1
+tree 657d8f49737605b97514d539900e850a59a21941
+parent 4233cd7aba20310921789677e9f58b2571df9d17
+author Kelven Yang <kelven@cloud.com> 1332367918 -0700
+committer Kelven Yang <kelven@cloud.com> 1332367918 -0700
+
+    bug 14313: add map type adapter to ApiGsonBuilder as some API response classes are using Map<String, String>
+
+:100644 100644 a52dcfcbe39a44148938a1b4b8636afea4b6dd99 58ac337916bfbe41ceef1654cfa25ce6fc8d91cd M	server/src/com/cloud/api/ApiGsonHelper.java
+:000000 100644 0000000000000000000000000000000000000000 3acd5f1a51c633c89017d3c0e7b233f2678bfbb0 A	server/src/com/cloud/api/StringMapTypeAdapter.java

@@ -1,0 +1,113 @@
+Changes in branch origin/master, between 257997398eb7897d5f876b9bcc66dbe03e30344b and e43914ab58400b0e6b244b08fba5b95679fcba32
+commit e43914ab58400b0e6b244b08fba5b95679fcba32
+tree e568e405ee785cf0805e660a7bbec9d4376639a6
+parent a5d7cd3d51f4700888fa30f7a3c6583775ea63fc
+author prachi <prachi@cloud.com> 1332287913 -0700
+committer prachi <prachi@cloud.com> 1332287944 -0700
+
+    Bug 14336 - Login API does not return UUID's
+    
+    Changes done:
+    - Provide UUID for userid and domainid only while constructing the login response. Session will hold the DB id's as before, to ensure other parts keep working.
+    - This reverts commit de28aa3ddde5b601f2f234f2eccef871fbaf1a06.
+
+:100755 100755 45918967a4e7c81ff46cffb4db614c1a37bd7448 395e4d7da2972982bca82108b6c8767c4626d332 M	server/src/com/cloud/api/ApiServer.java
+:100755 100755 148fc5829f215167bbfc83cdf8b7974faa6abc53 2d5cf46fdead15bf40250038f9f5afb9e2d4fe2c M	server/src/com/cloud/api/ApiServlet.java
+
+commit a5d7cd3d51f4700888fa30f7a3c6583775ea63fc
+tree b2f1ad29d20623bb66b34f4fe5b490c2d309917b
+parent 280d533a6fff978eac6ca80b43c783fc741045fb
+author prachi <prachi@cloud.com> 1332284361 -0700
+committer prachi <prachi@cloud.com> 1332287942 -0700
+
+    Bug 14336 - Login API does not return UUID's
+    
+    Changes:
+    - login API now returns back UUID for user and domain
+
+:100755 100755 82327f78ab485c7beef9df30bed8c722975cd0bc 45918967a4e7c81ff46cffb4db614c1a37bd7448 M	server/src/com/cloud/api/ApiServer.java
+
+commit 280d533a6fff978eac6ca80b43c783fc741045fb
+tree 63c979b6cd8dd7bec238167cf3c3a33f2c32b543
+parent 1a39682cd5b0d5ec29307edab22788246770d429
+author prachi <prachi@cloud.com> 1332284225 -0700
+committer prachi <prachi@cloud.com> 1332287940 -0700
+
+    Bug 14047 - login API fails when UUID is used for domain_id
+    
+    Changes:
+    - API should accept UUID for domain and convert to id when needed
+
+:100755 100755 aa71cdc28d21684adf35a6bcd91bd330a7ccaab7 82327f78ab485c7beef9df30bed8c722975cd0bc M	server/src/com/cloud/api/ApiServer.java
+:100755 100755 a293df9aa63ea3130b4eeeb98c32a8e93eaa6ee9 148fc5829f215167bbfc83cdf8b7974faa6abc53 M	server/src/com/cloud/api/ApiServlet.java
+
+commit 1a39682cd5b0d5ec29307edab22788246770d429
+tree 2756637651311d0d9bf8568d65c9ec21bc45cb5a
+parent b6b4c893f84ed31da04a988dbea07931de9eeb69
+author bfederle <bfederle@gmail.com> 1332285978 -0700
+committer bfederle <bfederle@gmail.com> 1332286174 -0700
+
+    Fix case where LB instance list is empty
+
+:100644 100644 fc79d6c319cc6295bd31eb29c033bdb59753eff9 b7b5aa3d95b2f662485a34f3808737354bbb49f2 M	ui/scripts/network.js
+
+commit b6b4c893f84ed31da04a988dbea07931de9eeb69
+tree e4f97aafaa970411bbff1f32e26dc0a908814522
+parent 24e57e283ec9bdd69a0325a3b605b2be83e4a410
+author bfederle <bfederle@gmail.com> 1332285804 -0700
+committer bfederle <bfederle@gmail.com> 1332286173 -0700
+
+    bug 14352
+    
+    Show internal VM names instead of IDs for LB rule
+
+:100644 100644 a5c7da677c9fd540fb8dfae79b2f3eae7d2aa9e4 fc79d6c319cc6295bd31eb29c033bdb59753eff9 M	ui/scripts/network.js
+
+commit 24e57e283ec9bdd69a0325a3b605b2be83e4a410
+tree bf6707ec33f028016715e161f45a143122abeb9c
+parent 7cb0351eaad010e761a6439998be193bae7da790
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1332282909 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1332285763 -0700
+
+    Bug 14071: queryAsyncJobResult in xml format gives incorrect UUIDs back
+    
+    Description:
+    
+    	Incorrectly removed part of the XML serializer that serialized
+    	the IdentityProxy object in normal responses, when putting in
+    	support for serialization of lists of IdentityProxy objects in
+    	exception responses as part of the code changes put in for bug
+    	13217, resulting in this bug. Putting it back in place.
+
+:100644 100644 55d54483a89111815fa1e8279fc558dc9e83afa2 4b8dbaaf96b64bdd5126b28f17bab77eb54aacd5 M	server/src/com/cloud/api/response/ApiResponseSerializer.java
+
+commit 7cb0351eaad010e761a6439998be193bae7da790
+tree b07f1cbed32d277550239cc0ca78aa23a4ae3393
+parent ce8c58fda46914524e6175ca809e604699d841e7
+author Jessica Wang <jessica@cloud.com> 1332285347 -0700
+committer Jessica Wang <jessica@cloud.com> 1332285402 -0700
+
+    bug 14425: cloudstack 3.0 UI - infrastructure page - create guest network - not pass subDomainAccess to createNetwork API when scope is Account.
+
+:100644 100644 dc3246dd7eddc342a92edff60d9b4e4a0b167815 97620e3b8b64dc1c9cac8c24e07de3ea9cf4edce M	ui/scripts/system.js
+
+commit ce8c58fda46914524e6175ca809e604699d841e7
+tree 36e56f68441b987b5c3fd2dd0d1be0d095447197
+parent 9e352d592815e4fbece70dec5f54ea96913b6515
+author Jessica Wang <jessica@cloud.com> 1332284594 -0700
+committer Jessica Wang <jessica@cloud.com> 1332284646 -0700
+
+    bug 14422: infrastructure page - add guest network - Pass physical network ID to createNetwork API only when network offering's guestiptype is Shared. Not pass it if it's Isolated.
+
+:100644 100644 721b198b92d6e46478f816c028e55120321bddda dc3246dd7eddc342a92edff60d9b4e4a0b167815 M	ui/scripts/system.js
+
+commit 9e352d592815e4fbece70dec5f54ea96913b6515
+tree 0d196e9b509bbca09e66d9da3f44318d193d2bf7
+parent 257997398eb7897d5f876b9bcc66dbe03e30344b
+author Jessica Wang <jessica@cloud.com> 1332281676 -0700
+committer Jessica Wang <jessica@cloud.com> 1332281727 -0700
+
+    cloudstack 3.0 UI - listView widget - remove action - remove the corresponding row after action completes.
+
+:100644 100644 375a66fde9f4f8fb3d1dc52eb410475feca814c5 154d541e61c4149875aadf4f76d6fd70932adc63 M	ui/scripts/ui/widgets/detailView.js
+:100644 100644 69f8960f376105f29d74aa35978d3e0db3bd616a eb9c68357651a5ece122fe1f85f4f5c317b6c9da M	ui/scripts/ui/widgets/listView.js

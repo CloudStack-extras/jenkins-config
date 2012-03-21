@@ -1,0 +1,18 @@
+Changes in branch origin/master, between b9807e0fca800bdf56b5008c5e7e5ccba3d33837 and 99000f5d6e3a137c69039988ae0d5a4d488e2b4c
+commit 99000f5d6e3a137c69039988ae0d5a4d488e2b4c
+tree b02fb0263c09e6ba74eb75cccc68769f199876e1
+parent b9807e0fca800bdf56b5008c5e7e5ccba3d33837
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332317655 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332317744 +0530
+
+    Demo files for the confluence tutorial on testing with python
+    
+    http://confluence.cloudstack.org/display/QA/Testing+with+python
+    
+    demo.cfg: sample configuration file containing the mgmt server location
+    testDeployVM.py : simple example demonstrated on confluence tutorial
+    testSshDeployVM.py : advanced example to demonstrate backend verification
+
+:000000 100644 0000000000000000000000000000000000000000 a24793edade04b5794873fc7196ac15010264b37 A	tools/testClient/demo/demo.cfg
+:000000 100644 0000000000000000000000000000000000000000 a246359262fbe98c99aca01db5adc1b16f2cecbd A	tools/testClient/demo/testDeployVM.py
+:000000 100644 0000000000000000000000000000000000000000 1dcd82f43594e059bd696eff79139ed3fe2a4119 A	tools/testClient/demo/testSshDeployVM.py

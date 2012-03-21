@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 7a97c23bec187846f63708efe66bc37cbd5dbd4f and f29bb12486ddc9e89182f00142dbfc32388ee991
+commit f29bb12486ddc9e89182f00142dbfc32388ee991
+tree ab52f86046f6b61bda399244789671438c0225ce
+parent 7a97c23bec187846f63708efe66bc37cbd5dbd4f
+author Jessica Wang <jessica@cloud.com> 1332364367 -0700
+committer Jessica Wang <jessica@cloud.com> 1332364386 -0700
+
+    bug 14202: cloudstack 3.0 UI - DeployVM wizard - select ISO step - only populate ISOs that are bootable.
+
+:100644 100644 831a01bc386c9a8936c11c45c2f61d6b095722e6 dd8933a025817d94ddaf5b220e111a05734aa795 M	ui/scripts/instances.js

@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 8b235acad0e0a354a70f6fc4a62c3dea31168b1a and 0652165adb2cb9fda96bfc3190741245344221e7
+commit 0652165adb2cb9fda96bfc3190741245344221e7
+tree c0cd68f1bf1db6191771c02e89d8e0a5c1d5b8e5
+parent 8b235acad0e0a354a70f6fc4a62c3dea31168b1a
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332437144 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332437197 -0700
+
+    bug 14446: removed elasticLBVm from components.xml
+    status 14446: resolved fixed
+    reviewed-by: Frank Zhang
+
+:100755 100755 425d3d9fc88e22053e6ca1068471ab3141b7c4c8 3ee2396640883b8b00933ad721918db27a34ec76 M	client/tomcatconf/components.xml.in
+:100644 100644 e72fffdab8b5a183199c7a834ce5deb205a865fa 314f3b9ef44cb11b811a0df354e74f60ec45c8da M	server/src/com/cloud/network/element/ElasticLoadBalancerElement.java

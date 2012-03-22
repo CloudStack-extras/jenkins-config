@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d7cd27d923c56589829c4c159cfdae6a666da439 and 1a8e5287fdeff657425aad3e785d3eb3c0e4a39c
+commit 1a8e5287fdeff657425aad3e785d3eb3c0e4a39c
+tree 408c660f8639df5d338c2995c04257c73c71a66a
+parent d7cd27d923c56589829c4c159cfdae6a666da439
+author Kelven Yang <kelven@cloud.com> 1331684881 -0700
+committer Kelven Yang <kelven@cloud.com> 1332373563 -0700
+
+    Bug 14213: use UUID name in secondary storage for templates. Reviewed-By: edison
+
+:100644 100644 61d21bdc7df9934d78804e21c6dce47307e7be1e da4a7872ae49b30e6a80b08616dfc200ea292846 M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java

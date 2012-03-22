@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 9c55b7b69574bc65d3551587d784c502618309f3 and d7cd27d923c56589829c4c159cfdae6a666da439
+commit d7cd27d923c56589829c4c159cfdae6a666da439
+tree 3c55a0214eec2c05957bc6c18263082d13b75d5c
+parent 9c55b7b69574bc65d3551587d784c502618309f3
+author Jessica Wang <jessica@cloud.com> 1332372643 -0700
+committer Jessica Wang <jessica@cloud.com> 1332372704 -0700
+
+    cloudstack 3.0 UI - network page - detail view - pass listAll=true for now until API is fixed.
+
+:100644 100644 e4afb4676e99b8224aaf632f71a9f854347d5560 ac4fe1e6d53bf2517a3feb1e2ec853dbbf78d967 M	ui/scripts/network.js

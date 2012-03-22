@@ -1,0 +1,59 @@
+Changes in branch origin/master, between 90da4d1c92bdc8607a6579eb104750e95cd542d4 and 4060be184234d4138506fc7d096d229dc0834ff3
+commit 4060be184234d4138506fc7d096d229dc0834ff3
+tree 18f614623681a5310ee517385a0a4bd574b2e3d4
+parent 7e9d535156ae8fd7a95eb1ac36b83de3b8ddf437
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332450525 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332451035 -0700
+
+    bug 14445: automatically enable firewall service for VR when VR is a provider for PF/StaticNat services
+    status 14445: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 6290f872cb6cd5130e1ebe42871dbadfee311488 ad9aeef8b726cd00030b211e05f7c9f1674f72c0 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit 7e9d535156ae8fd7a95eb1ac36b83de3b8ddf437
+tree d0239857808e2fc3b271248b70f5542099d1219b
+parent 15019d1e5c32bee83e8a2bee033be2dc2c352d57
+author Brian Federle <brian.federle@citrix.com> 1332442374 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332442381 -0700
+
+    Add UI browser tests
+
+:100644 100644 3de5eca7207baa735a98acfcb2ca8155d9a369de 5f50562a3c4c9e1c8c07202039146f2c86cc9ff9 M	ui/tests/test.cloudBrowser.js
+
+commit 15019d1e5c32bee83e8a2bee033be2dc2c352d57
+tree e3888e2e6bc34c064f2d363bea19028ab47eb88c
+parent 217e357c4e4836d85356279707f31f155cbb9142
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332441144 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332441202 -0700
+
+    bug 14439: added search by name/description to listGuestOS and listGuestOSCategories apis
+    status 14439: resolved fixed
+    reviewed-by: Frank Zhang
+
+:100644 100644 f94658d07ec18923b35ae1d578c0d0f3502fcb5f 756687c591f448e53bf0c6bd8d15ae8baed9a50e M	api/src/com/cloud/api/commands/ListGuestOsCategoriesCmd.java
+:100644 100644 f7e485b352022b4ebe0d63da36acdc0d99d47611 55e7ecc3bfc690f014d76d110674adafa7a42169 M	api/src/com/cloud/api/commands/ListGuestOsCmd.java
+:100755 100755 5443c3b67914606266c74640a0dc38ada20d2052 c437c2f4cc57dac60a6ae85cb1fe65275d6fb87f M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 217e357c4e4836d85356279707f31f155cbb9142
+tree d920121ac0f5114ab089c54f15a3770b4a7fe9d2
+parent c42fceab27b4fd564fb662040f269b34e506049a
+author Jessica Wang <jessica@cloud.com> 1332437551 -0700
+committer Jessica Wang <jessica@cloud.com> 1332437569 -0700
+
+    bug 14451: cloudstack 3.0 UI - volume page - remove the "Migrate Volume" option for regular user and domain admin.
+
+:100644 100644 905e589e8f84c199497d57a0df6a7e1c41e9a564 7c34ed3988be9718a4b304e57491e3a8f0539acd M	ui/scripts/storage.js
+
+commit c42fceab27b4fd564fb662040f269b34e506049a
+tree 912193b3f166d1251acb1c44b52c179cf1ac3321
+parent 90da4d1c92bdc8607a6579eb104750e95cd542d4
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332437144 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332437208 -0700
+
+    bug 14446: removed elasticLBVm from components.xml
+    status 14446: resolved fixed
+    reviewed-by: Frank Zhang
+
+:100755 100755 425d3d9fc88e22053e6ca1068471ab3141b7c4c8 3ee2396640883b8b00933ad721918db27a34ec76 M	client/tomcatconf/components.xml.in
+:100644 100644 e72fffdab8b5a183199c7a834ce5deb205a865fa 314f3b9ef44cb11b811a0df354e74f60ec45c8da M	server/src/com/cloud/network/element/ElasticLoadBalancerElement.java

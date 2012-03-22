@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 2a837c3ebdf6b80b1e9a28b95366bc3c3af3fcb9 and 90da4d1c92bdc8607a6579eb104750e95cd542d4
+commit 90da4d1c92bdc8607a6579eb104750e95cd542d4
+tree a9bae345cdbb5ced93eed97139e7531c5059c01b
+parent 97963b37a2c89cc6b95717b636cbb84796e24810
+author Abhi <abhinandan.prateek@citrix.com> 1332417463 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1332417656 +0530
+
+    bug 12947: support for 1.5 beta; reviewed-by: nitin
+
+:100755 100755 fd6ccb8c67a3b43e515ee566330a280456df780c 41cf1d2b7e8db279c98fb3413e19b8f96dbd9245 M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java
+
+commit 97963b37a2c89cc6b95717b636cbb84796e24810
+tree f5a63f4d416c0331e50b6e01ac2a10fe5051663b
+parent 2a837c3ebdf6b80b1e9a28b95366bc3c3af3fcb9
+author Abhi <abhinandan.prateek@citrix.com> 1332416542 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1332417006 +0530
+
+    bug 14135: mapping windows 2003 os types to xen templates
+
+:100644 100644 af56e19c5b02ad3c4fdc118194e041d573fd3e56 2c2d96a07e49325f9f9b8dd490f2f16a3078e891 M	core/src/com/cloud/hypervisor/xen/resource/CitrixHelper.java

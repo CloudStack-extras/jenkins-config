@@ -1,0 +1,24 @@
+Changes in branch origin/master, between 1a8e5287fdeff657425aad3e785d3eb3c0e4a39c and 45c7ad63bf9ea9b0e705de5818275be827fb4bac
+commit 45c7ad63bf9ea9b0e705de5818275be827fb4bac
+tree ca69aa9fe6b478bd290ace525caf2aad612418a6
+parent 1a8e5287fdeff657425aad3e785d3eb3c0e4a39c
+author prachi <prachi@cloud.com> 1332372887 -0700
+committer prachi <prachi@cloud.com> 1332373952 -0700
+
+    Bug 14299 - Fix adding public ip range per account
+    
+    Changes:
+    Fixed as described in the bug.
+    
+    * CreateVlanIpRangeCmd still accept account/domainId info
+    * if account owns:
+    - one Isolated network with source nat service enabled, use this network
+    - more than one Isolated network with source nat service enabled - error out
+    - none Isolated networks with source nat service enabled, create it only in
+    case when there is an Isolated network offering with Availability=Required and
+    source nat service enabled.
+
+:100755 100755 c4be21775454df910e97e65006507d79d6cc26c1 a184663f8e22b94e8ced0b59e116fe45fc713950 M	api/src/com/cloud/network/NetworkService.java
+:100755 100755 8f51cde3f255baddf284521548a854be6b573175 60a49b9556789ea286cc4c47e7d2e05f08b75e12 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 f918e3bd59a9ee2ad376f4f16cc8064ddd36d892 f3c13f0cea5ca4e845a3e35ed6989436a758a7de M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 2077883ad4526b3abbd9b8272c33d10e810f91f1 03b174a197e653bcae5263f07252870a3b29ea50 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java

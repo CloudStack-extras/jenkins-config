@@ -1,0 +1,55 @@
+Changes in branch origin/master, between 7c327ec6587e906d2ecf70a76f0a5640aa358614 and 45c7ad63bf9ea9b0e705de5818275be827fb4bac
+commit 45c7ad63bf9ea9b0e705de5818275be827fb4bac
+tree ca69aa9fe6b478bd290ace525caf2aad612418a6
+parent 1a8e5287fdeff657425aad3e785d3eb3c0e4a39c
+author prachi <prachi@cloud.com> 1332372887 -0700
+committer prachi <prachi@cloud.com> 1332373952 -0700
+
+    Bug 14299 - Fix adding public ip range per account
+    
+    Changes:
+    Fixed as described in the bug.
+    
+    * CreateVlanIpRangeCmd still accept account/domainId info
+    * if account owns:
+    - one Isolated network with source nat service enabled, use this network
+    - more than one Isolated network with source nat service enabled - error out
+    - none Isolated networks with source nat service enabled, create it only in
+    case when there is an Isolated network offering with Availability=Required and
+    source nat service enabled.
+
+:100755 100755 c4be21775454df910e97e65006507d79d6cc26c1 a184663f8e22b94e8ced0b59e116fe45fc713950 M	api/src/com/cloud/network/NetworkService.java
+:100755 100755 8f51cde3f255baddf284521548a854be6b573175 60a49b9556789ea286cc4c47e7d2e05f08b75e12 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 f918e3bd59a9ee2ad376f4f16cc8064ddd36d892 f3c13f0cea5ca4e845a3e35ed6989436a758a7de M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 2077883ad4526b3abbd9b8272c33d10e810f91f1 03b174a197e653bcae5263f07252870a3b29ea50 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java
+
+commit 1a8e5287fdeff657425aad3e785d3eb3c0e4a39c
+tree 408c660f8639df5d338c2995c04257c73c71a66a
+parent d7cd27d923c56589829c4c159cfdae6a666da439
+author Kelven Yang <kelven@cloud.com> 1331684881 -0700
+committer Kelven Yang <kelven@cloud.com> 1332373563 -0700
+
+    Bug 14213: use UUID name in secondary storage for templates. Reviewed-By: edison
+
+:100644 100644 61d21bdc7df9934d78804e21c6dce47307e7be1e da4a7872ae49b30e6a80b08616dfc200ea292846 M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+
+commit d7cd27d923c56589829c4c159cfdae6a666da439
+tree 3c55a0214eec2c05957bc6c18263082d13b75d5c
+parent 9c55b7b69574bc65d3551587d784c502618309f3
+author Jessica Wang <jessica@cloud.com> 1332372643 -0700
+committer Jessica Wang <jessica@cloud.com> 1332372704 -0700
+
+    cloudstack 3.0 UI - network page - detail view - pass listAll=true for now until API is fixed.
+
+:100644 100644 e4afb4676e99b8224aaf632f71a9f854347d5560 ac4fe1e6d53bf2517a3feb1e2ec853dbbf78d967 M	ui/scripts/network.js
+
+commit 9c55b7b69574bc65d3551587d784c502618309f3
+tree 7775c485c197938d4555b8ea8c89c3bc8a19162c
+parent 7c327ec6587e906d2ecf70a76f0a5640aa358614
+author Kelven Yang <kelven@cloud.com> 1332367918 -0700
+committer Kelven Yang <kelven@cloud.com> 1332368207 -0700
+
+    bug 14313: add map type adapter to ApiGsonBuilder as some API response classes are using Map<String, String>
+
+:100644 100644 80eaf474b2dd2dee3eea366ab9b849fd1e3a1945 fcbaaa72f5f2e3d525337869f0dabff0d1e44b7e M	server/src/com/cloud/api/ApiGsonHelper.java
+:000000 100644 0000000000000000000000000000000000000000 3acd5f1a51c633c89017d3c0e7b233f2678bfbb0 A	server/src/com/cloud/api/StringMapTypeAdapter.java

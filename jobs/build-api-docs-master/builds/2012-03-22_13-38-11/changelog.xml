@@ -1,0 +1,10 @@
+Changes in branch origin/master, between c42fceab27b4fd564fb662040f269b34e506049a and 217e357c4e4836d85356279707f31f155cbb9142
+commit 217e357c4e4836d85356279707f31f155cbb9142
+tree d920121ac0f5114ab089c54f15a3770b4a7fe9d2
+parent c42fceab27b4fd564fb662040f269b34e506049a
+author Jessica Wang <jessica@cloud.com> 1332437551 -0700
+committer Jessica Wang <jessica@cloud.com> 1332437569 -0700
+
+    bug 14451: cloudstack 3.0 UI - volume page - remove the "Migrate Volume" option for regular user and domain admin.
+
+:100644 100644 905e589e8f84c199497d57a0df6a7e1c41e9a564 7c34ed3988be9718a4b304e57491e3a8f0539acd M	ui/scripts/storage.js

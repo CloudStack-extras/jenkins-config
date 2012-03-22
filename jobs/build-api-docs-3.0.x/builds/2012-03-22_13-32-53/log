@@ -1,12 +1,13 @@
 Started by an SCM change
+Started by an SCM change
 Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision 8b235acad0e0a354a70f6fc4a62c3dea31168b1a (origin/3.0.x)
+Last Built Revision: Revision 0652165adb2cb9fda96bfc3190741245344221e7 (origin/3.0.x)
 Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision 0652165adb2cb9fda96bfc3190741245344221e7 (origin/3.0.x)
-Checking out Revision 0652165adb2cb9fda96bfc3190741245344221e7 (origin/3.0.x)
+Commencing build of Revision 03bb51014a30051eb2840206ffca69c23e08a2ab (origin/3.0.x)
+Checking out Revision 03bb51014a30051eb2840206ffca69c23e08a2ab (origin/3.0.x)
 Cleaning workspace
 [build-api-docs-3.0.x] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
@@ -17,8 +18,8 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-22T17:28:27Z
-     [echo] Build number is 3.0.1.2012-03-22T17:28:27Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-22T17:33:11Z
+     [echo] Build number is 3.0.1.2012-03-22T17:33:11Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-3.0.x/target/dep-cache
@@ -231,6 +232,6 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml
       [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-3.0.x/dist/apidocs-3.0.1.zip
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 4 minutes 18 seconds
+Total time: 2 minutes 15 seconds
 Archiving artifacts
 Finished: SUCCESS

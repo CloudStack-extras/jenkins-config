@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 7e9d535156ae8fd7a95eb1ac36b83de3b8ddf437 and 4060be184234d4138506fc7d096d229dc0834ff3
+commit 4060be184234d4138506fc7d096d229dc0834ff3
+tree 18f614623681a5310ee517385a0a4bd574b2e3d4
+parent 7e9d535156ae8fd7a95eb1ac36b83de3b8ddf437
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332450525 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332451035 -0700
+
+    bug 14445: automatically enable firewall service for VR when VR is a provider for PF/StaticNat services
+    status 14445: resolved fixed
+    reviewed-by: Sheng Yang
+
+:100755 100755 6290f872cb6cd5130e1ebe42871dbadfee311488 ad9aeef8b726cd00030b211e05f7c9f1674f72c0 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java

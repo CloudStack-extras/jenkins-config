@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 64311cc3ab2416d30a95c58ec1f632fd0b851f16 and 7acd080a03eb685be696d8ad4f6978b41bd2e00c
+commit 7acd080a03eb685be696d8ad4f6978b41bd2e00c
+tree b2fd588bb7081c96130a00d501eeac2206b85e81
+parent 64311cc3ab2416d30a95c58ec1f632fd0b851f16
+author Abhi <abhinandan.prateek@citrix.com> 1332416542 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1332416918 +0530
+
+    bug 14135: mapping windows 2003 os types to xen templates
+
+:100644 100644 af56e19c5b02ad3c4fdc118194e041d573fd3e56 2c2d96a07e49325f9f9b8dd490f2f16a3078e891 M	core/src/com/cloud/hypervisor/xen/resource/CitrixHelper.java

@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 4060be184234d4138506fc7d096d229dc0834ff3 and 0472a9e12142faee25785182096e8455ba72eba9
+commit 0472a9e12142faee25785182096e8455ba72eba9
+tree 303f2c54572f174226a1dbe09adbb0658561f4a9
+parent 40aa9411380ec813c2a27e8eac5a9a25fbbbe52d
+author Jessica Wang <jessica@cloud.com> 1332459342 -0700
+committer Jessica Wang <jessica@cloud.com> 1332459398 -0700
+
+    remove obsolete code since we don't display the individual providers on the system chart anymore.
+
+:100644 100644 ebc9fda6bae98e4791ff6f33a545990ead40a3e3 226cb0bc5ff28b13f7eacb6e770ffdfc0a92e447 M	ui/scripts/system.js
+
+commit 40aa9411380ec813c2a27e8eac5a9a25fbbbe52d
+tree 5ba5196738a36b1f90ee8119d825e87d1fe8977b
+parent 4060be184234d4138506fc7d096d229dc0834ff3
+author bfederle <brian.federle@citrix.com> 1332456431 -0400
+committer bfederle <brian.federle@citrix.com> 1332456431 -0400
+
+    bug 14447: Fix incorrect label on select network offering of VM wizard
+
+:100644 100644 b2905bf4fc58c0b845bb7d21dc6cac7893f7d147 1f729a652e89b0274bc028675e94d1fe533706b5 M	ui/index.jsp

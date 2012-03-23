@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 17d179535bc3b1acebc3931909af32bd4206e185 and 44f7fd4f97b7a8f99308d01ae3701792ca1276e5
+commit 44f7fd4f97b7a8f99308d01ae3701792ca1276e5
+tree ec24f337524ab4d87176a7d711050f26f54d2ca0
+parent 17d179535bc3b1acebc3931909af32bd4206e185
+author Brian Federle <brian.federle@citrix.com> 1332536924 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332536924 -0700
+
+    Add detail view action filter tests
+
+:100644 100644 bd4c372c9ec0367a66f77d6390ab5382c0bf79e8 de914b773e9b6eba796b0d9194d95eb48e2ccdaa M	ui/tests/test.detailView.js

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 2b0923540c159fdb6b3c09c6a9455a5ebc35faea and 17d179535bc3b1acebc3931909af32bd4206e185
+commit 17d179535bc3b1acebc3931909af32bd4206e185
+tree 56438707b39e3f9bd7713fd263c59d72be4c5d85
+parent 2b0923540c159fdb6b3c09c6a9455a5ebc35faea
+author Brian Federle <brian.federle@citrix.com> 1332536533 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332536533 -0700
+
+    Cleanup mock functions
+
+:100644 100644 ff2f4b6f48f86413f2c2758f6c1d8f17226da1f8 bd4c372c9ec0367a66f77d6390ab5382c0bf79e8 M	ui/tests/test.detailView.js

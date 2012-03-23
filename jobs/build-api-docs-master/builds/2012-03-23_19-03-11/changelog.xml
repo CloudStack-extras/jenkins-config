@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 5998eb84c7a376239b5108c3133e4171828f1a7b and 1945c7080527d9966e0fc6c966ed423f694e1a70
+commit 1945c7080527d9966e0fc6c966ed423f694e1a70
+tree d2c94e74e6a0f6730f33a3c7ea8bf4c62b8c7701
+parent 5998eb84c7a376239b5108c3133e4171828f1a7b
+author Jessica Wang <jessica@cloud.com> 1332543401 -0700
+committer Jessica Wang <jessica@cloud.com> 1332543538 -0700
+
+    bug 14481: cloudstack 3.0 UI - instance page - after a regular user destroys a VM, listVirtualMachines API will no longer returns this destroyed VM to the regular user. So, add additional code in dataProvider() to handle this case.
+
+:100644 100644 dd8933a025817d94ddaf5b220e111a05734aa795 f84b5483a90453a0972d119b35f8650a205119c1 M	ui/scripts/instances.js

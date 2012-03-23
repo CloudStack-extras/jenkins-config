@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 53f1c487ea60673f9e0290d714debbf74e69a8e3 and 590f2791f5969c982dbf269718561b34c00e5bff
+commit 590f2791f5969c982dbf269718561b34c00e5bff
+tree c41ae23ef8f41e490d19ef1fc0b21d1063556ab8
+parent 53f1c487ea60673f9e0290d714debbf74e69a8e3
+author Jessica Wang <jessica@cloud.com> 1332459342 -0700
+committer Jessica Wang <jessica@cloud.com> 1332459342 -0700
+
+    remove obsolete code since we don't display the individual providers on the system chart anymore.
+
+:100644 100644 32f0d1147fee37a1408ddae1f6bc20f084a25710 e6611e7bf7a22844eb0476ce9139b4f11cece2a1 M	ui/scripts/system.js

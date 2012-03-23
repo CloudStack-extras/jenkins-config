@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 0472a9e12142faee25785182096e8455ba72eba9 and cb0ea6385ad6b77c3b01137e6878638660e2e4e5
+commit cb0ea6385ad6b77c3b01137e6878638660e2e4e5
+tree ad11349229c40d1a5a40b44e164a81796b7c9c45
+parent 0472a9e12142faee25785182096e8455ba72eba9
+author Jessica Wang <jessica@cloud.com> 1332522018 -0700
+committer Jessica Wang <jessica@cloud.com> 1332522018 -0700
+
+    cloudstack 3.0 UI - check in Chinese translation.
+
+:100644 100644 6c223d0c1c0fcb893bdee50a2a7dca94e404ff7e 8f20ac1a583ea96d3ffcad2ea45ea766ee98901f M	client/WEB-INF/classes/resources/messages_zh_CN.properties

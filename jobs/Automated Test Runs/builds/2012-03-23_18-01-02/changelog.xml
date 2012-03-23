@@ -1,0 +1,94 @@
+Changes in branch origin/master, between 0472a9e12142faee25785182096e8455ba72eba9 and e53aa0c147114d5248cf12a959195102fb0ce8a5
+commit e53aa0c147114d5248cf12a959195102fb0ce8a5
+tree 2687a7b6d2430d137d82bca49d64877a23a8a201
+parent 44f7fd4f97b7a8f99308d01ae3701792ca1276e5
+author Brian Federle <brian.federle@citrix.com> 1332538793 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332538793 -0700
+
+    bug 14191
+    
+    Correctly filter domain drop-down on add account dialog if accessed
+    via a specific domain.
+
+:100644 100644 17301c5f2a1626803cf51da4b68b18036739ff63 e389c3ac6de5c081122b88cd52974265ef603305 M	ui/scripts/accounts.js
+
+commit 44f7fd4f97b7a8f99308d01ae3701792ca1276e5
+tree ec24f337524ab4d87176a7d711050f26f54d2ca0
+parent 17d179535bc3b1acebc3931909af32bd4206e185
+author Brian Federle <brian.federle@citrix.com> 1332536924 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332536924 -0700
+
+    Add detail view action filter tests
+
+:100644 100644 bd4c372c9ec0367a66f77d6390ab5382c0bf79e8 de914b773e9b6eba796b0d9194d95eb48e2ccdaa M	ui/tests/test.detailView.js
+
+commit 17d179535bc3b1acebc3931909af32bd4206e185
+tree 56438707b39e3f9bd7713fd263c59d72be4c5d85
+parent 2b0923540c159fdb6b3c09c6a9455a5ebc35faea
+author Brian Federle <brian.federle@citrix.com> 1332536533 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332536533 -0700
+
+    Cleanup mock functions
+
+:100644 100644 ff2f4b6f48f86413f2c2758f6c1d8f17226da1f8 bd4c372c9ec0367a66f77d6390ab5382c0bf79e8 M	ui/tests/test.detailView.js
+
+commit 2b0923540c159fdb6b3c09c6a9455a5ebc35faea
+tree e112041de0b98116deeaa5ffa9afe1b15bd15a92
+parent 5dccd91be1d0afd18f795132def1c18830a326ff
+author Brian Federle <brian.federle@citrix.com> 1332535693 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332535693 -0700
+
+    Add detail view refresh action tests
+
+:100644 100644 fcf54220b062edaee0720c6fdd8063ea6639d67d ff2f4b6f48f86413f2c2758f6c1d8f17226da1f8 M	ui/tests/test.detailView.js
+
+commit 5dccd91be1d0afd18f795132def1c18830a326ff
+tree b9857d962f77967111c826d4ac4d90a66af77f90
+parent cedfd5ed5cd9e12f1156b5a2e10d80dd095f76ff
+author Brian Federle <brian.federle@citrix.com> 1332534382 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332534388 -0700
+
+    Detail view: Always return true on args.response.success
+
+:100644 100644 f9aeed04391da80636780afc82f71bf98a7b9d8e 2cfa8137673a5846fce3bd51865ad8adf7439220 M	ui/scripts/ui/widgets/detailView.js
+
+commit cedfd5ed5cd9e12f1156b5a2e10d80dd095f76ff
+tree de30803a79794d92cc8bfdf828552e30a073fa75
+parent 95b0f510642be21d57fb493421d195dc576f1423
+author Brian Federle <brian.federle@citrix.com> 1332534365 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332534388 -0700
+
+    Add detail view tests
+
+:100644 100644 74a5555e6a1d3cf1da32d45df023d23474c69140 b3924ce024cdbdb7d04b1d17991d531f1a523bff M	ui/tests/index.html
+:000000 100644 0000000000000000000000000000000000000000 fcf54220b062edaee0720c6fdd8063ea6639d67d A	ui/tests/test.detailView.js
+
+commit 95b0f510642be21d57fb493421d195dc576f1423
+tree 8fb566c84231bbc6d58893efde2e5377137c95e7
+parent b5e33e35d5e5eacff0f8364bba0f5094cbfa875c
+author Jessica Wang <jessica@cloud.com> 1332530134 -0700
+committer Jessica Wang <jessica@cloud.com> 1332530174 -0700
+
+    bug 14474: cloudstack 3.0 UI - network page - configuration - Load Balancer, Port Forwarding - "instancename" is not returned by API for normal user and domain admin. Should use "displayname" returned by API instead.
+
+:100644 100644 ac4fe1e6d53bf2517a3feb1e2ec853dbbf78d967 fa953e6fd4f0c1ff0aecabc6f0c9d11ec20c626b M	ui/scripts/network.js
+
+commit b5e33e35d5e5eacff0f8364bba0f5094cbfa875c
+tree 8f30f2ee94424bad6d8438c7953cfe43ddfca7ca
+parent cb0ea6385ad6b77c3b01137e6878638660e2e4e5
+author Jessica Wang <jessica@cloud.com> 1332522535 -0700
+committer Jessica Wang <jessica@cloud.com> 1332522598 -0700
+
+    cloudstack 3.0 UI - login page - language dropdown - add "Chinese (Simplified)" option.
+
+:100644 100644 1f729a652e89b0274bc028675e94d1fe533706b5 26b45b859eeb8fa9a392e52da305266e49b87ce4 M	ui/index.jsp
+
+commit cb0ea6385ad6b77c3b01137e6878638660e2e4e5
+tree ad11349229c40d1a5a40b44e164a81796b7c9c45
+parent 0472a9e12142faee25785182096e8455ba72eba9
+author Jessica Wang <jessica@cloud.com> 1332522018 -0700
+committer Jessica Wang <jessica@cloud.com> 1332522018 -0700
+
+    cloudstack 3.0 UI - check in Chinese translation.
+
+:100644 100644 6c223d0c1c0fcb893bdee50a2a7dca94e404ff7e 8f20ac1a583ea96d3ffcad2ea45ea766ee98901f M	client/WEB-INF/classes/resources/messages_zh_CN.properties

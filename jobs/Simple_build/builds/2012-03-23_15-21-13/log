@@ -1,12 +1,12 @@
 Started by an SCM change
-Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@d39ac
+Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision b9807e0fca800bdf56b5008c5e7e5ccba3d33837 (origin/master)
-Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@d39ac
+Last Built Revision: Revision b5e33e35d5e5eacff0f8364bba0f5094cbfa875c (origin/master)
+Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack.git
-Commencing build of Revision 99000f5d6e3a137c69039988ae0d5a4d488e2b4c (origin/master)
-Checking out Revision 99000f5d6e3a137c69039988ae0d5a4d488e2b4c (origin/master)
+Commencing build of Revision 95b0f510642be21d57fb493421d195dc576f1423 (origin/master)
+Checking out Revision 95b0f510642be21d57fb493421d195dc576f1423 (origin/master)
 [Simple_build] $ ant clean-all build-all
 Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
@@ -25,8 +25,8 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-21T08:26:21Z
-     [echo] Build number is 3.0.1.2012-03-21T08:26:21Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-23T19:21:27Z
+     [echo] Build number is 3.0.1.2012-03-23T19:21:27Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dep-cache
@@ -80,7 +80,7 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
      [echo] Compiling /var/lib/jenkins/workspace/Simple_build/server/src
-    [javac] Compiling 824 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
+    [javac] Compiling 825 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
     [javac] Note: Some input files use or override a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
     [javac] Note: Some input files use unchecked or unsafe operations.
@@ -220,5 +220,5 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 35 seconds
+Total time: 1 minute 37 seconds
 Finished: SUCCESS

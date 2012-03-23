@@ -1,13 +1,13 @@
 Started by timer
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@d39ac
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision 8af4053a14236008a5277eec3e8e8da181a41a76 (origin/master)
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@d39ac
+Last Built Revision: Revision 0472a9e12142faee25785182096e8455ba72eba9 (origin/master)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision 8af4053a14236008a5277eec3e8e8da181a41a76 (origin/master)
-Checking out Revision 8af4053a14236008a5277eec3e8e8da181a41a76 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson6089632762529387758.sh
+Commencing build of Revision 0472a9e12142faee25785182096e8455ba72eba9 (origin/master)
+Checking out Revision 0472a9e12142faee25785182096e8455ba72eba9 (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson1558651708315956256.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -34,7 +34,7 @@ clean-all:
    [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target
 
 BUILD SUCCESSFUL
-Total time: 2 seconds
+Total time: 4 seconds
 Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at , on 2012-03-18T10:01:22Z
-     [echo] Build number is 3.0.0.2012-03-18T10:01:22Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-23T10:01:31Z
+     [echo] Build number is 3.0.1.2012-03-23T10:01:31Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -103,7 +103,7 @@ compile-agent:
 compile-server:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/server/src
-    [javac] Compiling 823 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
+    [javac] Compiling 825 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
     [javac] Note: Some input files use or override a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
     [javac] Note: Some input files use unchecked or unsafe operations.
@@ -116,7 +116,7 @@ build-server:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
      [copy] Copying 38 files to /var/lib/jenkins/workspace/Automated Test Runs/target/jar
      [copy] Copying 23 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
-     [copy] Copying 53 files to /var/lib/jenkins/workspace/Automated Test Runs/target/db
+     [copy] Copying 54 files to /var/lib/jenkins/workspace/Automated Test Runs/target/db
 
 build-console-viewer:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
@@ -367,5 +367,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 2 minutes 6 seconds
+Total time: 1 minute 24 seconds
 Finished: SUCCESS

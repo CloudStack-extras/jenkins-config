@@ -1,0 +1,43 @@
+Changes in branch origin/master, between 56dd6e81ac06a1d6065ed035c02e3c25e271e4e2 and a5a7be4c7e30edaf8db3f241ec03524755ba69d2
+commit a5a7be4c7e30edaf8db3f241ec03524755ba69d2
+tree a4cfbd8b56ea74d15aed5a458dbc1ab310bab810
+parent 47d01dbd3d062595956d6d43fd6fe75b4b4dcd69
+author Nitin Mehta <nitin.mehta@citrix.com> 1332577799 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1332577799 +0530
+
+    Bug 10808: Add Upload Volume api and do validation.
+
+:000000 100755 0000000000000000000000000000000000000000 672c91c54f8a22b7efbb98ae9de720ffdad031b3 A	api/src/com/cloud/api/commands/UploadVolumeCmd.java
+:100755 100755 7d65341db9919cf5cfe50e489c89f48867166891 a352ed87fe34de719fe9b7692e203f0c33be1c77 M	client/tomcatconf/commands.properties.in
+:100755 100755 de7dee23a64be2c7d6d48a65f887c0a6aa4a9ab8 db2971d1da9726903574a8abfc2dac295dc96dec M	server/src/com/cloud/storage/StorageManagerImpl.java
+
+commit 47d01dbd3d062595956d6d43fd6fe75b4b4dcd69
+tree 70f0d8c85482b5e11053d9cf4f6607193498b031
+parent 52202839fbf87f203d1b0fc56a48610408a10964
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332438408 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332559011 +0530
+
+    reduce logging verbosity, set level to info
+    reviewed-by: Kishan
+
+:100644 100644 fb6d58eba22deb8cb534f55796297113ec98d6ed 12b004b7f26d0ecd955498b515a6e838c85d3180 M	tools/testClient/cloudstackConnection.py
+:100644 100644 18684b37621ddc5c72e301c9ecafe8ab9b8153a6 ae2797c0608ac2b2be96d42a88baf1d57ecf1335 M	tools/testClient/deployDataCenter.py
+
+commit 52202839fbf87f203d1b0fc56a48610408a10964
+tree 225f1bbca56e03016c1290e1250f68dd86fbfe38
+parent 56dd6e81ac06a1d6065ed035c02e3c25e271e4e2
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332436788 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332559010 +0530
+
+    testCase level logger and testClient class attr
+    reviewed-by: Chirag Jog
+    
+    Each testCase class will use its own logger to distinguish log
+    messages when multiple suites are run. This will aid debugging
+    
+    Every cloudstackTestCase will also contiain a class level attr of the
+    testClient which was previously available only to setUp/tearDown. Now
+    even setUpClass/tearDownClass can use this attribute.
+
+:100644 100644 cceed9ca8bd964a5325e1451558c2d569dc9e96a 8057d5750ddc3f2fcf4709ff0d8402ae91dfc816 M	tools/testClient/TestCaseExecuteEngine.py
+:100644 100644 4595aefaa42a801a4f43cafaa1ace88aa268166e 2424a670ac24ef2c55e691a0a7d1e29344339754 M	tools/testClient/cloudstackTestCase.py

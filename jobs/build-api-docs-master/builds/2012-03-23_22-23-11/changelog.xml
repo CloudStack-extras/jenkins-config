@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 1e4893b69c46dc53a36b9886d22b46bb58a0e1e0 and 56dd6e81ac06a1d6065ed035c02e3c25e271e4e2
+commit 56dd6e81ac06a1d6065ed035c02e3c25e271e4e2
+tree af98c51fe98f658aaab7735f5c4888ad5c5803c4
+parent 1e4893b69c46dc53a36b9886d22b46bb58a0e1e0
+author Edison Su <sudison@gmail.com> 1332555603 -0700
+committer Edison Su <sudison@gmail.com> 1332555647 -0700
+
+    bug 14454: simulator: add limitation on how many vms can be created on a host. status 14454: resolved fixed; Reviewed-by: sangeetha
+
+:100644 100644 6a3f6614eff4b46f73c386c8c39b55de170bf180 8f88a63ac85f0e66054030cdeb08b92e9c6d2dfa M	agent-simulator/src/com/cloud/agent/manager/MockVmManager.java
+:100644 100644 4e8faf313a2de93f0cd048f2ca52e3a9a6e57ff1 a770a4475aa2d049cc4fc666efcd84f140495dd9 M	agent-simulator/src/com/cloud/agent/manager/MockVmManagerImpl.java
+:100755 100755 aa2b457f9128e713f1c8b94d57d292fda7555b9f 91063a75e283b9718fb15fedc1b30a4af8b3d4de M	agent-simulator/src/com/cloud/agent/manager/SimulatorManager.java
+:100644 100644 a90e3282b782c97663f120f3d9bcb6e8b30b24af 5143dede509a5a45c56327b7c4dc0a95456ca052 M	agent-simulator/src/com/cloud/agent/manager/SimulatorManagerImpl.java
+:100644 100644 df30b47737bf700660f6e4675d2de42e39dbb207 6c756dec082b77426c12392d52679630cd8d6bfa M	agent-simulator/src/com/cloud/resource/AgentRoutingResource.java
+:100644 100644 d84b2a4acce13aaa927414fb04fa58426c29381b 49e66006affcb9b0de3b0dfd95ce4b706cec7a3f M	agent-simulator/src/com/cloud/simulator/dao/MockVMDaoImpl.java

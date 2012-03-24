@@ -1,13 +1,13 @@
 Started by timer
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@d39ac
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision 8af4053a14236008a5277eec3e8e8da181a41a76 (origin/master)
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@d39ac
+Last Built Revision: Revision a5a7be4c7e30edaf8db3f241ec03524755ba69d2 (origin/master)
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision 8af4053a14236008a5277eec3e8e8da181a41a76 (origin/master)
-Checking out Revision 8af4053a14236008a5277eec3e8e8da181a41a76 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson4580497659384846879.sh
+Commencing build of Revision a78537398cca223f657f89994c9ef5a32180e86e (origin/master)
+Checking out Revision a78537398cca223f657f89994c9ef5a32180e86e (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson6955595408627495425.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-19T16:01:19Z
-     [echo] Build number is 3.0.0.2012-03-19T16:01:19Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-24T16:01:19Z
+     [echo] Build number is 3.0.1.2012-03-24T16:01:19Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -67,7 +67,7 @@ compile-utils:
 compile-api:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/api/src
-    [javac] Compiling 705 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
+    [javac] Compiling 706 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-api.jar
     [javac] Note: Some input files use unchecked or unsafe operations.
     [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-api.jar
@@ -103,7 +103,7 @@ compile-agent:
 compile-server:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/server/src
-    [javac] Compiling 823 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
+    [javac] Compiling 825 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
     [javac] Note: Some input files use or override a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
     [javac] Note: Some input files use unchecked or unsafe operations.
@@ -116,7 +116,7 @@ build-server:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
      [copy] Copying 38 files to /var/lib/jenkins/workspace/Automated Test Runs/target/jar
      [copy] Copying 23 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
-     [copy] Copying 53 files to /var/lib/jenkins/workspace/Automated Test Runs/target/db
+     [copy] Copying 54 files to /var/lib/jenkins/workspace/Automated Test Runs/target/db
 
 build-console-viewer:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
@@ -184,7 +184,7 @@ build-scripts:
 
 build-ui:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/ui
-     [copy] Copying 141 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
+     [copy] Copying 142 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
      [copy] Copying 519 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/target/ui
 
@@ -271,9 +271,8 @@ deploydb:
      [echo] deploydb server-setup.xml templates.sql ${DBROOTPW}
      [exec] Recreating Database cloud.
      [exec] Please enter root password for MySQL.
-     [exec] Enter password: 
      [exec] Error: Cannot execute create-database.sql
-     [exec] ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+     [exec] Enter password: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
      [exec] Result: 10
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -368,5 +367,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 2 minutes 28 seconds
+Total time: 1 minute 42 seconds
 Finished: SUCCESS

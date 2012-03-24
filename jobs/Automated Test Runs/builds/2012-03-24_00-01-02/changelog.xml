@@ -1,0 +1,57 @@
+Changes in branch origin/master, between e53aa0c147114d5248cf12a959195102fb0ce8a5 and 56dd6e81ac06a1d6065ed035c02e3c25e271e4e2
+commit 56dd6e81ac06a1d6065ed035c02e3c25e271e4e2
+tree af98c51fe98f658aaab7735f5c4888ad5c5803c4
+parent 1e4893b69c46dc53a36b9886d22b46bb58a0e1e0
+author Edison Su <sudison@gmail.com> 1332555603 -0700
+committer Edison Su <sudison@gmail.com> 1332555647 -0700
+
+    bug 14454: simulator: add limitation on how many vms can be created on a host. status 14454: resolved fixed; Reviewed-by: sangeetha
+
+:100644 100644 6a3f6614eff4b46f73c386c8c39b55de170bf180 8f88a63ac85f0e66054030cdeb08b92e9c6d2dfa M	agent-simulator/src/com/cloud/agent/manager/MockVmManager.java
+:100644 100644 4e8faf313a2de93f0cd048f2ca52e3a9a6e57ff1 a770a4475aa2d049cc4fc666efcd84f140495dd9 M	agent-simulator/src/com/cloud/agent/manager/MockVmManagerImpl.java
+:100755 100755 aa2b457f9128e713f1c8b94d57d292fda7555b9f 91063a75e283b9718fb15fedc1b30a4af8b3d4de M	agent-simulator/src/com/cloud/agent/manager/SimulatorManager.java
+:100644 100644 a90e3282b782c97663f120f3d9bcb6e8b30b24af 5143dede509a5a45c56327b7c4dc0a95456ca052 M	agent-simulator/src/com/cloud/agent/manager/SimulatorManagerImpl.java
+:100644 100644 df30b47737bf700660f6e4675d2de42e39dbb207 6c756dec082b77426c12392d52679630cd8d6bfa M	agent-simulator/src/com/cloud/resource/AgentRoutingResource.java
+:100644 100644 d84b2a4acce13aaa927414fb04fa58426c29381b 49e66006affcb9b0de3b0dfd95ce4b706cec7a3f M	agent-simulator/src/com/cloud/simulator/dao/MockVMDaoImpl.java
+
+commit 1e4893b69c46dc53a36b9886d22b46bb58a0e1e0
+tree f8e47cffe6ec345dc12e0df805da094999a6781d
+parent 04312dabc43c34ca0a722c2a8df05c353ccb0f11
+author Edison Su <sudison@gmail.com> 1332552151 -0700
+committer Edison Su <sudison@gmail.com> 1332552190 -0700
+
+    bug 1443: even adding host failed, return success in api. status 14443: resolved fixed; Reviewed-by: sheng
+
+:100755 100755 bbf5dd5e2fa1defff0784b9bc842f5f7bde2d2ea aae032f047bba3a608f650751f3e6e25ee633625 M	server/src/com/cloud/hypervisor/kvm/discoverer/KvmServerDiscoverer.java
+:100755 100755 9d29dd073cb25e12b6fe35da08d0e9661e1de91b 71d1bc6c447c2c14ca6868bb51faf5aa34b939ca M	server/src/com/cloud/resource/ResourceManager.java
+:100755 100755 a88778b7a38923c2d2ce410a777d8dc8c954608d 04423e88a48b089b4fd2528fc54e3a6d40c78b1c M	server/src/com/cloud/resource/ResourceManagerImpl.java
+
+commit 04312dabc43c34ca0a722c2a8df05c353ccb0f11
+tree 3cce855eac4332f70087a9dc5522dfc25f0da064
+parent 1945c7080527d9966e0fc6c966ed423f694e1a70
+author Edison Su <sudison@gmail.com> 1332550627 -0700
+committer Edison Su <sudison@gmail.com> 1332550710 -0700
+
+    bug 14024: apply sweller's patch. status 14024: resovled fixed; Reviewed-by: sweller
+
+:100644 100644 90db1bd0cf54725646afdd378cddb96ec729887c 57b4b4ada552275c6f55e657f0b62abf6381b824 M	agent/src/com/cloud/agent/storage/LibvirtStorageAdaptor.java
+
+commit 1945c7080527d9966e0fc6c966ed423f694e1a70
+tree d2c94e74e6a0f6730f33a3c7ea8bf4c62b8c7701
+parent 5998eb84c7a376239b5108c3133e4171828f1a7b
+author Jessica Wang <jessica@cloud.com> 1332543401 -0700
+committer Jessica Wang <jessica@cloud.com> 1332543538 -0700
+
+    bug 14481: cloudstack 3.0 UI - instance page - after a regular user destroys a VM, listVirtualMachines API will no longer returns this destroyed VM to the regular user. So, add additional code in dataProvider() to handle this case.
+
+:100644 100644 dd8933a025817d94ddaf5b220e111a05734aa795 f84b5483a90453a0972d119b35f8650a205119c1 M	ui/scripts/instances.js
+
+commit 5998eb84c7a376239b5108c3133e4171828f1a7b
+tree b5c9b8b2de4e8b2a7f62174493f19a302f7cf4ce
+parent e53aa0c147114d5248cf12a959195102fb0ce8a5
+author Brian Federle <brian.federle@citrix.com> 1332542393 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332542393 -0700
+
+    Detail view: 'View all' action tests
+
+:100644 100644 de914b773e9b6eba796b0d9194d95eb48e2ccdaa 6f77bc926b7028bc74c4c19fc857c31ed22fe6be M	ui/tests/test.detailView.js

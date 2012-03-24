@@ -1,0 +1,31 @@
+Changes in branch origin/3.0.x, between 6a6ab1111bd5643e4b2bb9ed7036a19cb3ec3efd and 2cfcee47d03610c5e3024989e9e6aad44fc2d073
+commit 2cfcee47d03610c5e3024989e9e6aad44fc2d073
+tree 43f5149d54104cdccc00cd56fe1e8382097dd4df
+parent a6a159f6a15fa8ca2e5b38937278eae3efc5dd92
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332438408 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332562844 +0530
+
+    reduce logging verbosity, set level to info
+    reviewed-by: Kishan
+
+:100644 100644 fb6d58eba22deb8cb534f55796297113ec98d6ed 12b004b7f26d0ecd955498b515a6e838c85d3180 M	tools/testClient/cloudstackConnection.py
+:100644 100644 18684b37621ddc5c72e301c9ecafe8ab9b8153a6 ae2797c0608ac2b2be96d42a88baf1d57ecf1335 M	tools/testClient/deployDataCenter.py
+
+commit a6a159f6a15fa8ca2e5b38937278eae3efc5dd92
+tree 64cf5b9054830bf684da2c7a3d08f90b826953e3
+parent 6a6ab1111bd5643e4b2bb9ed7036a19cb3ec3efd
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332436788 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1332562844 +0530
+
+    testCase level logger and testClient class attr
+    reviewed-by: Chirag Jog
+    
+    Each testCase class will use its own logger to distinguish log
+    messages when multiple suites are run. This will aid debugging
+    
+    Every cloudstackTestCase will also contiain a class level attr of the
+    testClient which was previously available only to setUp/tearDown. Now
+    even setUpClass/tearDownClass can use this attribute.
+
+:100644 100644 cceed9ca8bd964a5325e1451558c2d569dc9e96a 8057d5750ddc3f2fcf4709ff0d8402ae91dfc816 M	tools/testClient/TestCaseExecuteEngine.py
+:100644 100644 4595aefaa42a801a4f43cafaa1ace88aa268166e 2424a670ac24ef2c55e691a0a7d1e29344339754 M	tools/testClient/cloudstackTestCase.py

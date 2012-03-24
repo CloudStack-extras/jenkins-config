@@ -1,0 +1,12 @@
+Changes in branch origin/master, between a5a7be4c7e30edaf8db3f241ec03524755ba69d2 and a78537398cca223f657f89994c9ef5a32180e86e
+commit a78537398cca223f657f89994c9ef5a32180e86e
+tree df8c056ca691332a240e797c79c59ffbd7382ae5
+parent a5a7be4c7e30edaf8db3f241ec03524755ba69d2
+author Nitin Mehta <nitin.mehta@citrix.com> 1332586491 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1332586491 +0530
+
+    Bug 14490: Fix NPE in ListCapacity
+
+:100755 100755 306e0ee4de20199a7d172929bac850d8f5dc4b3f 16d67fc122d639e5865610089d159e66d4850580 M	api/src/com/cloud/capacity/Capacity.java
+:100755 100755 cfe0dfec41b9a2afeedf35aa134963c7e31aabb4 5c2d43861fa2d1bb87b3b515cb3e5941b9f5afb7 M	core/src/com/cloud/capacity/CapacityVO.java
+:100755 100755 c437c2f4cc57dac60a6ae85cb1fe65275d6fb87f ae0c8dc0ef005312ebceb57f35a9526577930ce2 M	server/src/com/cloud/server/ManagementServerImpl.java

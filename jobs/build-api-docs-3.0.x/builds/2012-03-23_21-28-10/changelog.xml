@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 15cdc4b78c93cb36c61c9205b3eb10e676133007 and 8604894a28802d33481c54e7513fadbb752a342c
+commit 8604894a28802d33481c54e7513fadbb752a342c
+tree 70a55dc525fb56d5e163574bdfbaac7affa7cda8
+parent 15cdc4b78c93cb36c61c9205b3eb10e676133007
+author Edison Su <sudison@gmail.com> 1332552151 -0700
+committer Edison Su <sudison@gmail.com> 1332552179 -0700
+
+    bug 1443: even adding host failed, return success in api. status 14443: resolved fixed; Reviewed-by: sheng
+
+:100755 100755 a370e60cc2d1c593525d2464fa634a525a33d963 b7f08bdfa7eac27436152428fbc2ec0c953946ab M	server/src/com/cloud/hypervisor/kvm/discoverer/KvmServerDiscoverer.java
+:100755 100755 9d29dd073cb25e12b6fe35da08d0e9661e1de91b 71d1bc6c447c2c14ca6868bb51faf5aa34b939ca M	server/src/com/cloud/resource/ResourceManager.java
+:100755 100755 64e05087029a4945dcd7114dda29e808f1f583b0 50d0c9d4857c71b49877cb09824fe1037cc1cbae M	server/src/com/cloud/resource/ResourceManagerImpl.java

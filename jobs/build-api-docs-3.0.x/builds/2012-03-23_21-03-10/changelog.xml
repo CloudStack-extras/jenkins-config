@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 00c48f985b05f8ab19b2814c15ddb06bb7e1855e and 15cdc4b78c93cb36c61c9205b3eb10e676133007
+commit 15cdc4b78c93cb36c61c9205b3eb10e676133007
+tree 064fb502e2ab9ee48e03c43423ec2a77ae1441b3
+parent 00c48f985b05f8ab19b2814c15ddb06bb7e1855e
+author Edison Su <sudison@gmail.com> 1332550627 -0700
+committer Edison Su <sudison@gmail.com> 1332550627 -0700
+
+    bug 14024: apply sweller's patch. status 14024: resovled fixed; Reviewed-by: sweller
+
+:100644 100644 214fc31735b3a4387c0db0b2b5281e7d4568789d 41d205cecc491eff94e3b8294db88928ba42cd7d M	agent/src/com/cloud/agent/storage/LibvirtStorageAdaptor.java

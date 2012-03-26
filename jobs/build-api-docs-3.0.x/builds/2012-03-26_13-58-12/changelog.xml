@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 3f58fc707df2dd1600bc0cf8617a1d75b37dac72 and 58546e9a06539afaa88a9c05f1a84bedb1624fd7
+commit 58546e9a06539afaa88a9c05f1a84bedb1624fd7
+tree e6f0a1641aba75b6e60011c79b2af303751a447e
+parent 3f58fc707df2dd1600bc0cf8617a1d75b37dac72
+author Jessica Wang <jessica@cloud.com> 1332784418 -0700
+committer Jessica Wang <jessica@cloud.com> 1332784495 -0700
+
+    bug 14488 - multiEdit widget - itemData[0] does not always have data. Only retrieve data when itemData[0] is not an empty object.  [reviewed-by: Brian]
+
+:100644 100644 6b32ea07590c244bc491d67230acf71dcebb4d9d 25b1cb0a6361476a4c8fec6b830960359f170da5 M	ui/scripts/ui/widgets/multiEdit.js

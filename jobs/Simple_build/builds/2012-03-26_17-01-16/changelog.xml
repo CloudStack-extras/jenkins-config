@@ -1,0 +1,20 @@
+Changes in branch origin/master, between aaaaadf16f29581d46523d22c660f4542b6eee93 and b409615a328c059ab8daf841529fcbf8abcb8863
+commit b409615a328c059ab8daf841529fcbf8abcb8863
+tree 68df394e89e5e9b3ae7ec93aa236721162c2dfe0
+parent aaaaadf16f29581d46523d22c660f4542b6eee93
+author Sheng Yang <sheng.yang@citrix.com> 1332554785 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1332795343 -0700
+
+    bug 14484: Apply existed firewall rules when associating IP
+    
+    It's not a elegant fix. The status for firewall rules should remain unchanged
+    before/after ip association/disassociation. But the related change is tricky
+    than this fix, may not get enough test for 3.0.1. So we would apply existed
+    firewall rules again, which would work, just result in some unnecessary
+    commands.
+    
+    status 14484: resolved fixed
+    
+    Reviewed-by: Edison Su
+
+:100755 100755 60a49b9556789ea286cc4c47e7d2e05f08b75e12 71b7ebcae6ae9a3cc83d015f867faa1118d7c1f4 M	server/src/com/cloud/network/NetworkManagerImpl.java

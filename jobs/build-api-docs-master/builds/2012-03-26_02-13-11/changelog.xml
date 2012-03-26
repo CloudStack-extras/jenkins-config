@@ -1,0 +1,10 @@
+Changes in branch origin/master, between a78537398cca223f657f89994c9ef5a32180e86e and c796c86330da457b2f0db43b4b03b5a58efaa385
+commit c796c86330da457b2f0db43b4b03b5a58efaa385
+tree be6c232deb85226c242699a5c55962efa39efba8
+parent a78537398cca223f657f89994c9ef5a32180e86e
+author Sanjay Tripathi <sanjay.tripathi@citrix.com> 1332742298 +0530
+committer Sanjay Tripathi <sanjay.tripathi@citrix.com> 1332742298 +0530
+
+    Bug 14067: Global config - clicking on Edit button twice gives javaScript error args.callback is not a function.
+
+:100644 100644 4f5b41c7c3eafc8781c845a08c1018a35d531ac9 ea7551a5aa31e87df8d45fa93ea5c80313874415 M	ui/scripts/ui/widgets/listView.js

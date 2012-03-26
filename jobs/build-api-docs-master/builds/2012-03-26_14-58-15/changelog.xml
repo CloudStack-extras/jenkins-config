@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 8fa7c114a655848675d8f3411eb073bf8c60e442 and c504e8aa3581e2df582e2ab0bc07fbe5c73e890d
+commit c504e8aa3581e2df582e2ab0bc07fbe5c73e890d
+tree 3c486dad575f6039381d8a9d93ba4a04f8b358c8
+parent 8fa7c114a655848675d8f3411eb073bf8c60e442
+author frank <frank.zhang@citrix.com> 1332788133 -0700
+committer frank <frank.zhang@citrix.com> 1332788292 -0700
+
+    Bug 14492 - Stop and start of SSVM in Zone1 fails if Zone2 is configured with Storage network
+    
+    status 14492: resolved fixed
+    reviewed-by: edison
+
+:100755 100755 7d8354f028689315d8d65b36b629c65d23a23b21 c57c021d6d2e5fce4a216be3b1dc8ce5ce4365c2 M	server/src/com/cloud/network/StorageNetworkManager.java
+:100755 100755 b8cdaff84cac2bc0c56cf5eb7c67d9cf35ba98a2 69198e482de3d76d60120c865ff6adffb8d36216 M	server/src/com/cloud/network/StorageNetworkManagerImpl.java
+:100755 100755 197abe4a90adc32b1e4c0817da80a02450c85b36 347343029e84165095f85ea90b0db21444dd1ec8 M	server/src/com/cloud/network/guru/StorageNetworkGuru.java

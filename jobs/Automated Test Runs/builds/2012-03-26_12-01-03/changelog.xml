@@ -1,0 +1,26 @@
+Changes in branch origin/master, between 9eb23c64dd5485d6ca8bd2dea0f1b18fd22b130a and 3d1337111664e328b25373f0618cbb9462e5c616
+commit 3d1337111664e328b25373f0618cbb9462e5c616
+tree 11e220c968641f36d187572c59c304b641d9d668
+parent 2fe0f10657e3526ee0c96ce535c9d4c6aa697505
+author Murali reddy <Murali.Reddy@citrix.com> 1332762053 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1332762053 +0530
+
+    bug 14463: Failed to Deploy VM due to failure in creation of guest VLAN on SRX
+    status 14463; resolved fixed
+    
+    moved all static (config related) variables to non-static in SRX server resource as we can have more than
+    one SRX device in a zone
+
+:100644 100644 3d680c29a39891b9535e9d73cdb46cb91ddc80c2 110a2241999c121a56d36653c4b60498e69766d1 M	core/src/com/cloud/network/resource/JuniperSrxResource.java
+
+commit 2fe0f10657e3526ee0c96ce535c9d4c6aa697505
+tree be6c232deb85226c242699a5c55962efa39efba8
+parent 9eb23c64dd5485d6ca8bd2dea0f1b18fd22b130a
+author Murali reddy <Murali.Reddy@citrix.com> 1332757498 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1332757498 +0530
+
+    Revert "bug 14463: Failed to Deploy VM due to failure in creation of guest VLAN on SRX"
+    
+    This reverts commit 9eb23c64dd5485d6ca8bd2dea0f1b18fd22b130a.
+
+:100644 100644 be972abd161db5d6fe9091afeea32555e52d012b 3d680c29a39891b9535e9d73cdb46cb91ddc80c2 M	core/src/com/cloud/network/resource/JuniperSrxResource.java

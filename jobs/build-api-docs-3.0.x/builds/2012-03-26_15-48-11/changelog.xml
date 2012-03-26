@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between b19a1b505231a747da245060cdd01b07915ec074 and f77430f16078565e0ae9d420b53d16e4c77b8dd7
+commit f77430f16078565e0ae9d420b53d16e4c77b8dd7
+tree 87ba40393f9b1374b9b3e1f3891be0c3419b57e6
+parent b19a1b505231a747da245060cdd01b07915ec074
+author Jessica Wang <jessica@cloud.com> 1332791210 -0700
+committer Jessica Wang <jessica@cloud.com> 1332791210 -0700
+
+    cloudstack 3.0 UI - infrastructure - service provider detail view - correct view all label from view provider to view devices.
+
+:100644 100644 7eeff9314ad72ad22e1b94cf19075dde2c4a7eb1 7f94636d687883e04b15ed321c36a4b05832a93b M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 26b45b859eeb8fa9a392e52da305266e49b87ce4 08b6dcd8aa02b0b14db1ac457f7dabf93364b573 M	ui/index.jsp
+:100644 100644 5d7ed4d6c25353894e8aa181f447a745e89340d0 599d5de6f12bd4fc6cc126d458de627330dec92a M	ui/scripts/system.js

@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 436ed88175d0c4114072728ad42f9b0890d00e40 and 68ce66ef78db0d0fc438351cff8238e405e9cf49
+commit 68ce66ef78db0d0fc438351cff8238e405e9cf49
+tree d50fff89c3180055668606650f7353a1c8f4d59e
+parent 436ed88175d0c4114072728ad42f9b0890d00e40
+author Jessica Wang <jessica@cloud.com> 1332799536 -0700
+committer Jessica Wang <jessica@cloud.com> 1332799556 -0700
+
+    bug 14482: IP Address page - remove IP action - after action is finished, remove the IP from listView and close detailView.
+
+:100644 100644 fa953e6fd4f0c1ff0aecabc6f0c9d11ec20c626b 94a26c9e3fe99bdcd71ac9384532ebbb9dfbdd5d M	ui/scripts/network.js

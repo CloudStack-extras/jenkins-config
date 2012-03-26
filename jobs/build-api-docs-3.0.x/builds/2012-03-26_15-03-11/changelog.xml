@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 5fe0faf0cd15a6993323880e2600a5d711d23773 and b19a1b505231a747da245060cdd01b07915ec074
+commit b19a1b505231a747da245060cdd01b07915ec074
+tree e2da0335baf65285bd52cf824788684315c02e39
+parent 5fe0faf0cd15a6993323880e2600a5d711d23773
+author Jessica Wang <jessica@cloud.com> 1332788232 -0700
+committer Jessica Wang <jessica@cloud.com> 1332788255 -0700
+
+    cloudstack 3.0 UI - service provider detail view - show service provider info instead of physical network info. [reviewed-by: Brian]
+
+:100644 100644 e6611e7bf7a22844eb0476ce9139b4f11cece2a1 5d7ed4d6c25353894e8aa181f447a745e89340d0 M	ui/scripts/system.js

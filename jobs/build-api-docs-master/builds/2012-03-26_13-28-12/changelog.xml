@@ -1,0 +1,18 @@
+Changes in branch origin/master, between 3d1337111664e328b25373f0618cbb9462e5c616 and ce8e9a9f512f32f262d771f68c5e28088dbf9e4c
+commit ce8e9a9f512f32f262d771f68c5e28088dbf9e4c
+tree 043dd1e68b24b984b8a1727a3af8d5251e69bd71
+parent 3d1337111664e328b25373f0618cbb9462e5c616
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332781578 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332782835 -0700
+
+    bug 14500: set default value for is_system field as a part of 3.0 to 3.0.1 upgrade
+    status 14500: resolved fixed
+    reviwed-by: Frank Zhang
+    
+    Conflicts:
+    
+    	server/test/com/cloud/network/MockNetworkManagerImpl.java
+    	setup/db/db/schema-30to301.sql
+
+:100755 100755 9c45e73b37ed38e23c7bf074887094deed297897 a62b8180bbdcb3490ad2e9042610b5aa10967db0 M	server/test/com/cloud/network/MockNetworkManagerImpl.java
+:100755 100755 81de759a8326926f1c3938be1f184808dc8c0a7b 70291efa56926a2a08c830bd084373915e21991d M	setup/db/db/schema-30to301.sql

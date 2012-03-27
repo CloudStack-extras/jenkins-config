@@ -1,0 +1,23 @@
+Changes in branch origin/master, between a6d4a766477ace7d15685f1a32885e8814451420 and bed3f7f7e2110e67885e32bd95ff16dd9288b473
+commit bed3f7f7e2110e67885e32bd95ff16dd9288b473
+tree 14f0bd78b75746e27f88b693955f913feec8d5f9
+parent 57f935ca03a12c66fb4d5c1b6423cd30d09ce7a2
+author kishan <kishan@cloud.com> 1332855274 +0530
+committer kishan <kishan@cloud.com> 1332855274 +0530
+
+    bug 14512: Create user_stats entry for router while persisting routerVO
+    status 14512: resolved fixed
+    reviewed-by: Nitin
+
+:100755 100755 7cc9d199ec7ab01c007d22dd84319e6134360887 cd9f7eaa9d694544b65658aced7431a4561b6cd7 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit 57f935ca03a12c66fb4d5c1b6423cd30d09ce7a2
+tree ebeff6deebcd58ef3316c14d90fcc11d46124a15
+parent a6d4a766477ace7d15685f1a32885e8814451420
+author kishan <kishan@cloud.com> 1332762263 +0530
+committer kishan <kishan@cloud.com> 1332826979 +0530
+
+    Added since version to API response docs
+
+:100644 100644 21f3d3a79aada3cfdfa524bd469c604952e40e0b 746ca4f2757046b9134f1c111a67b9f8a8f61ce6 M	api/src/com/cloud/serializer/Param.java
+:100644 100644 3567f56fc3de9bd74cc24fe1e7fd233157f58835 dcf04280b6c17a6b07d13760789bb8e2aa7d262a M	server/src/com/cloud/api/doc/ApiXmlDocWriter.java

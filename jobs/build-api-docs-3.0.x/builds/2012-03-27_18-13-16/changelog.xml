@@ -1,0 +1,184 @@
+Changes in branch origin/3.0.x, between 23f87663e45896ed7de3632e9a90b4f3812b391b and 3f803a8c3dc4d9ac9a6cbca5c78825148feab837
+commit 3f803a8c3dc4d9ac9a6cbca5c78825148feab837
+tree 827f8b171312a409e7dd30cce86e5831d4f12f18
+parent 59ee8f202a83334def8705a79be10fe0b1c23200
+author Kelven Yang <kelven@cloud.com> 1332885370 -0700
+committer Kelven Yang <kelven@cloud.com> 1332886289 -0700
+
+    Make the final switch on console proxy refactoring work. new VNC engine will be in use after this commit
+    
+    Reviewed-By: Kelven
+
+:100755 100755 728f5a42fe0ed5809dfcd14fd4b6de04162b33b6 40e4111fd71674ba97bc5ba3b58b80abfb7dcbd7 M	build/build-cloud.xml
+:100755 100755 a819fb488eb43f21f792c7402e6516efe6ab313d da9e73cca02de749912b43cc73765a44c92883c4 M	build/package.xml
+:100644 100644 6dd6176144b78933fd8bc303b265e9438dead3c9 c87c7cd39953883804b5e4011dea8cb399d09ae6 M	console-proxy/.classpath
+:100644 100644 0e8fcacce348513f932830f1ada6fec43b9019ba 92e7827f3ecd29b9c93b0bea4198f0aee6bde889 M	console-proxy/src/com/cloud/consoleproxy/AjaxFIFOImageCache.java
+:100644 100644 d1f3bb2e74c9f4bb5c1199dbef8d8e3ef56ef34b f77e75d8f1c97e3ba6039c118c3387f3135d05d5 R096	console/src/com/cloud/console/AuthenticationException.java	console-proxy/src/com/cloud/consoleproxy/AuthenticationException.java
+:100644 100644 658cfe17d2a48afff0ad0ae1543091eea492293b f44b775bbaafc5d90907a7e5d6c6904645d7d2d7 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy.java
+:100644 100644 3c9e18c098531f809bcfedcf9d67e028f7ebfef8 f51a0b9f7ab0c677d0e3f594a639d313322b2ec7 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java
+:100644 100644 f151b6e4470cb5e3e7e2e7224f9d9155771e1ad3 daf6060d7bdc95875262abecf2f5d5f3f716a9f2 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxImageHandler.java
+:100644 100644 abfa896c39d1e4604d54b603810b15634c6f22b5 18dbe51b63a2ceb35e0f24407a4182ca11aaf6f2 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyBaseServerFactoryImpl.java
+:100644 100644 b66213e68eb4eace3836f3fee891f858a12640b7 b53b779b7b83e3927c993c9b2aedad88cc3ea693 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientBase.java
+:100644 000000 fee5fe4c360d3c0398572187e8a89c747b95e332 0000000000000000000000000000000000000000 D	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientHandler.java
+:100644 100644 38ef1dbda9a9f46fdef35670896a8c8bf40c2a64 839c778b2afa77c9f55ad0702e692b4c01272f0c M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyCmdHandler.java
+:100644 100644 42796ca7496b63cc7f4799bfb11c22d9cf4a94d6 cc33d495ec66c2430ebbe16b0e9a3efc3e696b98 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyLoggerFactory.java
+:100644 100644 7d8f624e961955220edf18e7179ffc9972ac6892 d3fbb5f86f3c5a1ed417607bc327e596b7b88ece M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyMonitor.java
+:100644 100644 2e6f18db25844e5b2cfc29dc42f339c0f79e2fe6 cd5122dba7751af6475bbede48cf47994fefe4f6 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyResourceHandler.java
+:100644 000000 6a6e56d63535d6620fdf700be9e3a8aae2674ebd 0000000000000000000000000000000000000000 D	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyStatus.java
+:100644 100644 393fe0facc85ec07ee830fa887225e30c1c48c2f 99ee14ed574485ed32cc7ef7f8317009ac7da024 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyThumbnailHandler.java
+:100644 000000 ed6174110c4a4aab17e1a32cdab9a3c3d8df6eaa 0000000000000000000000000000000000000000 D	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyViewer.java
+:100644 000000 1168e64186b618c9b1b577b27ba6c8905f22c15f 0000000000000000000000000000000000000000 D	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy_obsolete.java
+:100644 000000 4ad8930e6f3fa0ce6ac6ef959c2b6b6bc56db14a 0000000000000000000000000000000000000000 D	console-proxy/src/com/cloud/consoleproxy/ViewerOptions.java
+:100644 100644 3633eb1a1d871b09cb791210a6255e323f49759c 9eb18320dda9f08b3f3cafdd0dd97d7264caf56d M	console-proxy/src/com/cloud/consoleproxy/vnc/BufferedImageCanvas.java
+:100644 100644 66b463cd09da9da558e86230c242def23d6826c9 0c5e50941ca1cf4a6855df9689a27b20ecf10e87 M	console-proxy/src/com/cloud/consoleproxy/vnc/FrameBufferCanvas.java
+:100644 100644 236703fa5b2347f8db80c94434b828279b3c1491 8dab1037e4a93f51c08725f35c7bf9e20462e6fa M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+:100644 100644 64adc96f4ad7e4f311d62de37f27c19cc14cfe54 0a5a2f172f84e55eda1abb5965b08b5e831c95ab M	console-proxy/src/com/cloud/consoleproxy/vnc/VncServerPacketReceiver.java
+:100644 100644 6eed8ba1a0bf2f1d748d49e7643b1f5006915b1e 1d93f3365780e9a85a059d888ac4e19ce0c04826 M	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/ServerCutText.java
+:100644 000000 e8a8d8c0a8487c1b390defdb51611daf323bf3f9 0000000000000000000000000000000000000000 D	console-viewer/.classpath
+:100644 000000 1b47b7baad358c6e2e5a09a15f006343cd95f10e 0000000000000000000000000000000000000000 D	console-viewer/.project
+:100644 000000 f35990a19c37ff72714ed5ecf3224839976c2079 0000000000000000000000000000000000000000 D	console-viewer/scripts/run-viewer.bat
+:100644 000000 416d8b5065f46c3d8c9e30c0de08f5ffaf1377b7 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/AuthPanel.java
+:100644 000000 d5cf61efa5525eb7dff9a880ea074d6297c3359c 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/ButtonPanel.java
+:100644 000000 0f40da569bd00ccb3bf6163e9613bc5f03bb162d 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/ClipboardFrame.java
+:100644 000000 f7024512ce11c700d90473ee2cb9aa4924ace88a 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/ConsoleApplet.java
+:100644 000000 488778de17915d11203ba6f5fba51e666733b1c5 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/ConsoleViewer.java
+:100644 000000 89d0590aa19d8aa06189b1dc642413a48370c676 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/OptionsFrame.java
+:100644 000000 4b5effb63aed5ccee3ed159e2845fd1b42550bdf 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/RecordingFrame.java
+:100644 000000 7c1ba17b56f5424b24e86eab718338b65584c190 0000000000000000000000000000000000000000 D	console-viewer/src/com/cloud/consoleviewer/ReloginPanel.java
+:100644 000000 b68cd7c94c5871beea1338dea632b0089eeab1f5 0000000000000000000000000000000000000000 D	console-viewer/test/test-applet.html
+:100644 000000 d171cd4c1231c688762ba221723f4b629bd7667d 0000000000000000000000000000000000000000 D	console/.classpath
+:100644 000000 c359a0eb4d20d9ee64f476ede7471040ce310715 0000000000000000000000000000000000000000 D	console/.project
+:100644 000000 3c8b8d505fbd48307099f5a68b2e2901f9240417 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/CapabilityInfo.java
+:100644 000000 82a85dedee1972848f60b33c9a54413c35ead5c3 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/CapsContainer.java
+:100644 000000 f2d5e7e3078c2f086a6e08a3ff2b32cfaf625b00 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/ConsoleCanvas.java
+:100644 000000 5ed2659636f4bb0291cc3f86a7dc7eddf8cf5baf 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/ConsoleCanvas2.java
+:100644 000000 8f7a8c0a7a28989928d4b96b8ca5fe1bda6686e8 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/DesCipher.java
+:100644 000000 9d0b5bd2f2c8b9c544aecd933a01d42ad4748b86 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/ITileScanListener.java
+:100644 000000 ba3868f1368d4f8c566cce7a4ed1bd58c8f82676 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/InStream.java
+:100644 000000 593e4e5c57b2c6cb84b81fd50d1deb7e0f502525 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/Logger.java
+:100644 000000 0c78dda63825f40a68632f474dde02da860bda0c 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/LoggerFactory.java
+:100644 000000 130f8d5d8dea6b30b3bf5db1522872263b696833 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/MemInStream.java
+:100644 000000 65e031293b5a384c258cc194186c377927378bd8 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/Region.java
+:100644 000000 b24a22244e8247168f8ec19e3f63d7947c710075 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/RegionClassifier.java
+:100644 000000 f21a31b5bc4b500974c2f101835c073552e067e8 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/RfbProto.java
+:100644 000000 06d581e1482e936848bdfa4284442860bb09a1f3 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/RfbProtoAdapter.java
+:100644 000000 6f88bf6511791c9f1770914565485619a830e139 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/RfbViewer.java
+:100644 000000 fe49944ea8bc66346444a4f88e1f096399b903c1 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/SessionRecorder.java
+:100644 000000 4bb5bb95bf103334216dd5db42b83fd35c3e93b1 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/SplitInputStream.java
+:100644 000000 ef917f32086de825dfead5b52f85b1014d4e7d8f 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/TileInfo.java
+:100644 000000 8cd02794a6c2e62ce3d3a53e38d43e86526e505a 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/TileTracker.java
+:100644 000000 1ef5ed15763e85bb00f67883f12d92c5a2912136 0000000000000000000000000000000000000000 D	console/src/com/cloud/console/ZlibInStream.java
+
+commit 59ee8f202a83334def8705a79be10fe0b1c23200
+tree 2b313e37e3216668cb0b36a0f707a8b2c9ef7751
+parent 43cf095a13e963202287b5a6322aa96a2fbcff51
+author Kelven Yang <kelven@cloud.com> 1331851196 -0700
+committer Kelven Yang <kelven@cloud.com> 1332886259 -0700
+
+    Console proxy refactoring - new VNC engine is plugged in
+
+:100644 100644 b05badc917efc91d3a538f2c4ab4c59416445585 658cfe17d2a48afff0ad0ae1543091eea492293b M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy.java
+:100644 100644 ddfdb88a55fac0c075cdaa298fce43832e880beb 3c9e18c098531f809bcfedcf9d67e028f7ebfef8 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java
+:100644 100644 812c4b4cb942a809261a943704656a53492d29a0 f151b6e4470cb5e3e7e2e7224f9d9155771e1ad3 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxImageHandler.java
+:100644 100644 69e964ed51e583b2d62bc6396029e60836775335 f83a4b061223deffac3d9536f808bcedd28e36f7 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClient.java
+:100644 100644 53315a87f8da3ff24e6b241b05a39b29d3a4b7d0 b66213e68eb4eace3836f3fee891f858a12640b7 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientBase.java
+:100644 100644 23543a706c4e601c106278406e815cf090d0ad33 fee5fe4c360d3c0398572187e8a89c747b95e332 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientHandler.java
+:000000 100644 0000000000000000000000000000000000000000 bef18631259a10812bf7db3824e6a3d7eeec3464 A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientListener.java
+:100644 100644 2fc181368e1c3ffb1e20f3c976059c14dda33048 ffcf795ab4c5675e1f2d16c02828afedc7b43ff0 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientStatsCollector.java
+:100644 100644 27e9be49c55771a62d8a614224c78a38d68d75aa 38ef1dbda9a9f46fdef35670896a8c8bf40c2a64 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyCmdHandler.java
+:100644 100644 f42f688ea505488d34ee92b4eee327b715ba40da 81a3b66ff849648420017b103a8ff93358dcbecb M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyGCThread.java
+:100644 100644 45bfd111108908b6fece8120fc7d4e9027862a1e 7d8f624e961955220edf18e7179ffc9972ac6892 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyMonitor.java
+:100644 100644 75a106097fb6c750f72f0345b62ee12751f7dbdf 6a6e56d63535d6620fdf700be9e3a8aae2674ebd M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyStatus.java
+:100644 100644 690490c3c917fb8324d681394e875e255ca8cf3e 393fe0facc85ec07ee830fa887225e30c1c48c2f M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyThumbnailHandler.java
+:100644 100644 0f936234884b4ad71f8ab47011e8f0510d978cf3 ed6174110c4a4aab17e1a32cdab9a3c3d8df6eaa M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyViewer.java
+:100644 100644 310ee655085250c28fc8f2917ea87f32464134c9 5cd6fe8cb10b86182ce07664ce1456f95d3d4c8c M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyVncClient.java
+:000000 100644 0000000000000000000000000000000000000000 1168e64186b618c9b1b577b27ba6c8905f22c15f A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy_obsolete.java
+:000000 100644 0000000000000000000000000000000000000000 1122121e18eb37ae9949e68e82d8d7f2cd0843ac A	console-proxy/src/com/cloud/consoleproxy/InputEventType.java
+:100644 100644 44663557882b6b86c4350874f886f5c09a189a1a 3633eb1a1d871b09cb791210a6255e323f49759c M	console-proxy/src/com/cloud/consoleproxy/vnc/BufferedImageCanvas.java
+:100644 100644 912ad088a5fbbb19f5f95885dc058e5b00293923 66b463cd09da9da558e86230c242def23d6826c9 M	console-proxy/src/com/cloud/consoleproxy/vnc/FrameBufferCanvas.java
+:100644 000000 3d17592c689952bea5e3be40f9f14444265bcc7d 0000000000000000000000000000000000000000 D	console-proxy/src/com/cloud/consoleproxy/vnc/FrameBufferEventListener.java
+:100644 000000 2a6ae4d351e2bcc29e7a38066f4f2b3e43c5dc3b 0000000000000000000000000000000000000000 D	console-proxy/src/com/cloud/consoleproxy/vnc/SimpleLogger.java
+:100644 100644 932584216129f5c067f7442c678a90996451500d 236703fa5b2347f8db80c94434b828279b3c1491 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+:100644 100644 c6569deb0d192d3e6b6fe1e6db3c6111e1ff95ed bdbfc7ea21e347c059b641c6427a4240f3ab427b M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClientPacketSender.java
+:100644 100644 1e8fb912dacd388075d8e055672166741b65c7b0 64adc96f4ad7e4f311d62de37f27c19cc14cfe54 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncServerPacketReceiver.java
+:100644 100644 b0ed4fdff5e9610ecfd1e4226be28903d0c4bead c213047c2b941718760a12f01b0161598c2dd3e3 M	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/FramebufferUpdatePacket.java
+:100644 100644 473f87509ad0742aa322355b714ea9156eb4c224 6eed8ba1a0bf2f1d748d49e7643b1f5006915b1e M	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/ServerCutText.java
+
+commit 43cf095a13e963202287b5a6322aa96a2fbcff51
+tree 7dcea6fa8d4592ea98142b65db6edd5187fd594b
+parent d5941bee1c4fe73a6bc8076298c3b55552b4efb6
+author Kelven Yang <kelven@cloud.com> 1331168166 -0800
+committer Kelven Yang <kelven@cloud.com> 1332886214 -0700
+
+    Console proxy refactoring incremental check-in - pluggable framework for VNC and RDP engine
+
+:100644 100644 99f60a549b4f5529baf78ea721fcccfda8c6bbfe b05badc917efc91d3a538f2c4ab4c59416445585 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy.java
+:000000 100644 0000000000000000000000000000000000000000 69e964ed51e583b2d62bc6396029e60836775335 A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClient.java
+:000000 100644 0000000000000000000000000000000000000000 53315a87f8da3ff24e6b241b05a39b29d3a4b7d0 A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientBase.java
+:000000 100644 0000000000000000000000000000000000000000 2fc181368e1c3ffb1e20f3c976059c14dda33048 A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientStatsCollector.java
+:000000 100644 0000000000000000000000000000000000000000 f42f688ea505488d34ee92b4eee327b715ba40da A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyGCThread.java
+:100644 100644 2c66ed091e23031370c3b9a2cc5e38ba800e6e4a 310ee655085250c28fc8f2917ea87f32464134c9 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyVncClient.java
+:100644 100644 c21c422eb1611869b4308606401f81961628098c 44663557882b6b86c4350874f886f5c09a189a1a M	console-proxy/src/com/cloud/consoleproxy/vnc/BufferedImageCanvas.java
+:000000 100644 0000000000000000000000000000000000000000 912ad088a5fbbb19f5f95885dc058e5b00293923 A	console-proxy/src/com/cloud/consoleproxy/vnc/FrameBufferCanvas.java
+:100644 100644 f3934f10d7bbef72b85b20fab7c48969b3722b06 3d17592c689952bea5e3be40f9f14444265bcc7d R073	console-proxy/src/com/cloud/consoleproxy/vnc/VncClientListener.java	console-proxy/src/com/cloud/consoleproxy/vnc/FrameBufferEventListener.java
+:100644 100644 1bdc114daeae5371f840d465c41a608f89bb1a89 932584216129f5c067f7442c678a90996451500d M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+:100644 100644 669fb895c8aabc2dad7a2624901e2bba3558d411 1e8fb912dacd388075d8e055672166741b65c7b0 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncServerPacketReceiver.java
+:100644 100644 64c184c8e72f6bb7332ad11721b62c9a12cda578 b0ed4fdff5e9610ecfd1e4226be28903d0c4bead M	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/FramebufferUpdatePacket.java
+
+commit d5941bee1c4fe73a6bc8076298c3b55552b4efb6
+tree 3e729d55a0fdbecab62e76da6549494d915fff63
+parent 271bd15172a0b4e588807740c4fddf529dde2f36
+author Kelven Yang <kelven@cloud.com> 1330650149 -0800
+committer Kelven Yang <kelven@cloud.com> 1332886167 -0700
+
+    Console proxy refactoring incremental check-in - build in-memory VncClient contact between VNC client implementation and console proxy
+
+:000000 100644 0000000000000000000000000000000000000000 2c66ed091e23031370c3b9a2cc5e38ba800e6e4a A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyVncClient.java
+:000000 100644 0000000000000000000000000000000000000000 7e4d7b22458e83d2d55322e3d7f5c001d7fee751 A	console-proxy/src/com/cloud/consoleproxy/util/ImageHelper.java
+:100644 100644 cd9a8378ba4654fc6d03a41737411783d2b11e95 c21c422eb1611869b4308606401f81961628098c M	console-proxy/src/com/cloud/consoleproxy/vnc/BufferedImageCanvas.java
+:100644 100644 25035bda0ece2d364c6fe6ccfe644d504d758cea 1bdc114daeae5371f840d465c41a608f89bb1a89 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+:000000 100644 0000000000000000000000000000000000000000 f3934f10d7bbef72b85b20fab7c48969b3722b06 A	console-proxy/src/com/cloud/consoleproxy/vnc/VncClientListener.java
+:100644 100644 01d9cf887e6b7dd28588638b2d13fb7c17c4ef8a 669fb895c8aabc2dad7a2624901e2bba3558d411 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncServerPacketReceiver.java
+:100644 100644 aa2c2b19e9057fa063c65e87dbefdc4a5e732366 64c184c8e72f6bb7332ad11721b62c9a12cda578 M	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/FramebufferUpdatePacket.java
+
+commit 271bd15172a0b4e588807740c4fddf529dde2f36
+tree ea19a1d25ec8faa8257d16462551e1b677834721
+parent 23f87663e45896ed7de3632e9a90b4f3812b391b
+author Kelven Yang <kelven@cloud.com> 1332886006 -0700
+committer Kelven Yang <kelven@cloud.com> 1332886006 -0700
+
+    Console proxy refactoring incremental check-in - new VNC protocol implementation
+    
+    Reviewed-By: Kelven
+
+:100644 100644 ae9ae833bc288d4d87b0f8e87c1c0e84b5c9ccd2 6dd6176144b78933fd8bc303b265e9438dead3c9 M	console-proxy/.classpath
+:000000 100644 0000000000000000000000000000000000000000 06fe44d8c18143586caa8e978985b9f2b54c124f A	console-proxy/src/com/cloud/consoleproxy/util/ITileScanListener.java
+:000000 100644 0000000000000000000000000000000000000000 32bf02d9a1951af92bf71c944e14c8dfbd28a7f1 A	console-proxy/src/com/cloud/consoleproxy/util/Logger.java
+:000000 100644 0000000000000000000000000000000000000000 8e75c02783514610241df2b63f01253684c737ee A	console-proxy/src/com/cloud/consoleproxy/util/LoggerFactory.java
+:000000 100644 0000000000000000000000000000000000000000 6dd83a978591effc722201d2e29e7721110838de A	console-proxy/src/com/cloud/consoleproxy/util/Region.java
+:000000 100644 0000000000000000000000000000000000000000 c1cabf9d03e5d2faeccf0f77ecae87d0c9511232 A	console-proxy/src/com/cloud/consoleproxy/util/RegionClassifier.java
+:000000 100644 0000000000000000000000000000000000000000 90cff3a1662a8cd0312e5596beeae4c3ff5e1c8b A	console-proxy/src/com/cloud/consoleproxy/util/TileInfo.java
+:000000 100644 0000000000000000000000000000000000000000 7ef79a2825ea6ebb854b61e3301e1faa51229a22 A	console-proxy/src/com/cloud/consoleproxy/util/TileTracker.java
+:000000 100644 0000000000000000000000000000000000000000 cd9a8378ba4654fc6d03a41737411783d2b11e95 A	console-proxy/src/com/cloud/consoleproxy/vnc/BufferedImageCanvas.java
+:000000 100644 0000000000000000000000000000000000000000 90d86425a4b9ac30befd1c3ce8a7f35157f7b7dd A	console-proxy/src/com/cloud/consoleproxy/vnc/FrameBufferUpdateListener.java
+:000000 100644 0000000000000000000000000000000000000000 23db2540141ecfb295628181ae4d845de4e137f5 A	console-proxy/src/com/cloud/consoleproxy/vnc/PaintNotificationListener.java
+:000000 100644 0000000000000000000000000000000000000000 5e9ec7b7c3053df9802ab269e72c7d75ab56d878 A	console-proxy/src/com/cloud/consoleproxy/vnc/RfbConstants.java
+:000000 100644 0000000000000000000000000000000000000000 2a6ae4d351e2bcc29e7a38066f4f2b3e43c5dc3b A	console-proxy/src/com/cloud/consoleproxy/vnc/SimpleLogger.java
+:000000 100644 0000000000000000000000000000000000000000 25035bda0ece2d364c6fe6ccfe644d504d758cea A	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+:000000 100644 0000000000000000000000000000000000000000 c6569deb0d192d3e6b6fe1e6db3c6111e1ff95ed A	console-proxy/src/com/cloud/consoleproxy/vnc/VncClientPacketSender.java
+:000000 100644 0000000000000000000000000000000000000000 afd53cf3f4a156854928684e07e279fdb98965f9 A	console-proxy/src/com/cloud/consoleproxy/vnc/VncScreenDescription.java
+:000000 100644 0000000000000000000000000000000000000000 01d9cf887e6b7dd28588638b2d13fb7c17c4ef8a A	console-proxy/src/com/cloud/consoleproxy/vnc/VncServerPacketReceiver.java
+:000000 100644 0000000000000000000000000000000000000000 46b98f7ed15ed9d058ad2d7bdf440c5ceffbf64b A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/client/ClientPacket.java
+:000000 100644 0000000000000000000000000000000000000000 c6e9be20d476297a8c0ad6cd2bac7465f38fa6f2 A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/client/FramebufferUpdateRequestPacket.java
+:000000 100644 0000000000000000000000000000000000000000 9a2d44f10c6c639f59fdc047682b3f2bfba0873a A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/client/KeyboardEventPacket.java
+:000000 100644 0000000000000000000000000000000000000000 6514936df07568189ebfecffb373ffd39154b08e A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/client/MouseEventPacket.java
+:000000 100644 0000000000000000000000000000000000000000 56df9043a0a50ede5c0f24bc87513b07993d8834 A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/client/SetEncodingsPacket.java
+:000000 100644 0000000000000000000000000000000000000000 b891c6d2ac4d096b8d2c3a2627a3acce8ed471db A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/client/SetPixelFormatPacket.java
+:000000 100644 0000000000000000000000000000000000000000 0a6c9044ebb0473b9e6bef529625dcd46b71c66a A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/AbstractRect.java
+:000000 100644 0000000000000000000000000000000000000000 1f1519571fa86fc587d0f9409cd7383f1fb7988c A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/CopyRect.java
+:000000 100644 0000000000000000000000000000000000000000 688634c0cd210fd6c0a6c335c3cb5f852be85448 A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/FrameBufferSizeChangeRequest.java
+:000000 100644 0000000000000000000000000000000000000000 aa2c2b19e9057fa063c65e87dbefdc4a5e732366 A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/FramebufferUpdatePacket.java
+:000000 100644 0000000000000000000000000000000000000000 c7149f0ea9896cb59edd544b83cdb4aefdf39a3a A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/RawRect.java
+:000000 100644 0000000000000000000000000000000000000000 4ed4eacb1a6d3a9ec7b4c44445a3830ca7fe5200 A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/Rect.java
+:000000 100644 0000000000000000000000000000000000000000 473f87509ad0742aa322355b714ea9156eb4c224 A	console-proxy/src/com/cloud/consoleproxy/vnc/packet/server/ServerCutText.java
+:100644 100644 512a5665685745e3bb936a3c0c974f4e4f99b086 d638539fe9552544c4ab04b8195b74e3ea681a1c M	core/test/com/cloud/agent/transport/RequestTest.java

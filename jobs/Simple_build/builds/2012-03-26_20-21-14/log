@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision 2b0923540c159fdb6b3c09c6a9455a5ebc35faea (origin/master)
+Last Built Revision: Revision 217982840e4c054aeececc3d0e7ce331a77644c1 (origin/master)
 Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack.git
-Commencing build of Revision 17d179535bc3b1acebc3931909af32bd4206e185 (origin/master)
-Checking out Revision 17d179535bc3b1acebc3931909af32bd4206e185 (origin/master)
+Commencing build of Revision a6d4a766477ace7d15685f1a32885e8814451420 (origin/master)
+Checking out Revision a6d4a766477ace7d15685f1a32885e8814451420 (origin/master)
 [Simple_build] $ ant clean-all build-all
 Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
@@ -25,8 +25,8 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-23T21:06:19Z
-     [echo] Build number is 3.0.1.2012-03-23T21:06:19Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-27T00:21:34Z
+     [echo] Build number is 3.0.1.2012-03-27T00:21:34Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dep-cache
@@ -44,7 +44,7 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-api.jar
      [echo] Compiling /var/lib/jenkins/workspace/Simple_build/api/src
-    [javac] Compiling 705 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-api.jar
+    [javac] Compiling 706 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-api.jar
     [javac] Note: Some input files use unchecked or unsafe operations.
     [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-api.jar
@@ -161,7 +161,7 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/ui
-     [copy] Copying 142 files to /var/lib/jenkins/workspace/Simple_build/target/ui
+     [copy] Copying 143 files to /var/lib/jenkins/workspace/Simple_build/target/ui
      [copy] Copying 519 files to /var/lib/jenkins/workspace/Simple_build/target/ui
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/target/ui
 
@@ -220,5 +220,5 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 1 second
+Total time: 1 minute 52 seconds
 Finished: SUCCESS

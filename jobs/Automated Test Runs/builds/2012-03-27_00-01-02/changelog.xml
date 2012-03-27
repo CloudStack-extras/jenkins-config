@@ -1,0 +1,30 @@
+Changes in branch origin/master, between eb8975670f28c0a1770b2425d8dcb82e0c1ca69a and a6d4a766477ace7d15685f1a32885e8814451420
+commit a6d4a766477ace7d15685f1a32885e8814451420
+tree d275a1e622485add6b1f81e9da98f9f05249e26f
+parent 217982840e4c054aeececc3d0e7ce331a77644c1
+author Edison Su <sudison@gmail.com> 1332807215 -0700
+committer Edison Su <sudison@gmail.com> 1332807303 -0700
+
+    bug 14498: in xenserver 6.0 and openvswitch enabled, reboot xenserver will lost link local bridge; the workaround is if the link local bridge is lost, create a new one; status 14498: resolved fixed; Reviewed-by: frank
+
+:100755 100755 523247254568c1645350c9a083775abc66bec849 11792b1b02896c981c2ff16838ac2a5f8eb6b7c0 M	scripts/vm/hypervisor/xenserver/vmops
+
+commit 217982840e4c054aeececc3d0e7ce331a77644c1
+tree 70935cd9f9cc50c68418f4c08277a8996a622254
+parent ac00c64dc08149d78ba1556de7ac3bfc0a00b35d
+author Jessica Wang <jessica@cloud.com> 1332799536 -0700
+committer Jessica Wang <jessica@cloud.com> 1332799607 -0700
+
+    bug 14482: IP Address page - remove IP action - after action is finished, remove the IP from listView and close detailView.
+
+:100644 100644 fa953e6fd4f0c1ff0aecabc6f0c9d11ec20c626b 94a26c9e3fe99bdcd71ac9384532ebbb9dfbdd5d M	ui/scripts/network.js
+
+commit ac00c64dc08149d78ba1556de7ac3bfc0a00b35d
+tree 14f07238b4c9c28094f3f2a9c6aa7d263b47573c
+parent eb8975670f28c0a1770b2425d8dcb82e0c1ca69a
+author Brian Federle <brian.federle@citrix.com> 1332799463 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332799479 -0700
+
+    Add more basic multi-edit tests
+
+:100644 100644 bc698e1672be8176c63f23ccd61440b8645e98df da973f5aca40bcb906f330ff59bca896460d9b5c M	ui/tests/test.multiEdit.js

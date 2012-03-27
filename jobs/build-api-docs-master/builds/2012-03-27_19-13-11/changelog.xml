@@ -1,0 +1,63 @@
+Changes in branch origin/master, between fe950868c38ffe08f6b04ae575c5985bcd98ad86 and 7d87f48ef49b388908d27c75f1a3aa15862e47d7
+commit 7d87f48ef49b388908d27c75f1a3aa15862e47d7
+tree 9930a0c202ba477c966024859a9a8f6cdcf4dbdf
+parent 880188466ce9ab375c63fbf4e25fbbae08dd5737
+author Kelven Yang <kelven@cloud.com> 1332567697 -0700
+committer Kelven Yang <kelven@cloud.com> 1332889795 -0700
+
+    bug 14301:
+    
+    1) Drop synchronized call semantic for ClusterManagerImpl.broadcast()
+    2) Have no choice now but to use an unbound thread pool to notify upper layer. This is to prevent thread starvation when we have cross-management server waitings.
+    
+    Reviewed-By: Kelven(with unit test)
+
+:100755 100755 46fdff3eacf9fb2e7ace7de54a90a595cb623900 68adbe9303424feaac1e0c391d4f7428c5fa1afb M	server/src/com/cloud/cluster/ClusterManager.java
+:100755 100755 6a42fce107b5f366552e24cc97d3970f2b5cf36d f5ba9eb2c167e09b309b91208cee4b509f63d296 M	server/src/com/cloud/cluster/ClusterManagerImpl.java
+:100644 100644 f0976c25be3a4cc188b137b8ed61370f52c3e0f2 701ccae51d64666944b227a1a5e3d5cda75bfcce M	server/src/com/cloud/cluster/ClusterServicePdu.java
+:100644 100644 1088d771503099bb6ff14f4aec0c08faeaaefddf 599c68ab10aca9eba7ce310c559d58c43eadb5ff M	server/src/com/cloud/cluster/ClusterServiceRequestPdu.java
+:100755 100755 f10666994248ee673ac8ec5e8c2df809fa602dc1 3d0dabd40718f71ac66abf0c6007ffa673f19132 M	server/src/com/cloud/cluster/ClusterServiceServletHttpHandler.java
+:100644 100644 f61301d20cd2aa6f6a0d130facd0030048c3b22c ca1ec7616182983118d9ca606669928b5716be28 M	server/src/com/cloud/cluster/ClusterServiceServletImpl.java
+:100755 100755 999e1a98d581bac99c650e78d47a37d0b325e29c c8fe6bbf7cb0efb1ab3b2cac4b22c2827948a8c7 M	server/src/com/cloud/cluster/DummyClusterManagerImpl.java
+
+commit 880188466ce9ab375c63fbf4e25fbbae08dd5737
+tree 01cb64ee2d7e1c00751e14b3d14019ae8e892233
+parent b0e8f08a3e658503aa5299410e8db552173d5ee4
+author Kelven Yang <kelven@cloud.com> 1332889737 -0700
+committer Kelven Yang <kelven@cloud.com> 1332889737 -0700
+
+    bug 14301: fix regressions caused by new clustering transport. Correct usage of HttpClient to avoid socket staying in CLOSE_WAIT state for too long. Reviewed-By: Kelven
+
+:100755 100755 2d00b9873fb6909a8a4fa5430181dd01c8f1127c 6a42fce107b5f366552e24cc97d3970f2b5cf36d M	server/src/com/cloud/cluster/ClusterManagerImpl.java
+:100644 100644 a85bf72f55b408671314e422bf573a6c87e287ee 5c312df70ee09d7d45a1e7a178fcef2d894de316 M	server/src/com/cloud/cluster/ClusterServiceServletContainer.java
+:100644 100644 6f21e929b6416fdbaf4d11102336d2a178ff8c1d f61301d20cd2aa6f6a0d130facd0030048c3b22c M	server/src/com/cloud/cluster/ClusterServiceServletImpl.java
+
+commit b0e8f08a3e658503aa5299410e8db552173d5ee4
+tree 40c40459534a3d6585e95469111b7b8bd6059882
+parent 0f34744c9e96efcbb61c56e10db7e581e1a8c614
+author Kelven Yang <kelven@cloud.com> 1332889552 -0700
+committer Kelven Yang <kelven@cloud.com> 1332889552 -0700
+
+    bug 14301: Decouple synchronized crosss management server call with clustering transport. Reviewed-by: Kelven
+
+:100644 100644 a33ec1e15693d10dcdf7e5cd7e1307f3c1173f90 6f21e929b6416fdbaf4d11102336d2a178ff8c1d M	server/src/com/cloud/cluster/ClusterServiceServletImpl.java
+
+commit 0f34744c9e96efcbb61c56e10db7e581e1a8c614
+tree 51e57599f57aa828b1e354bc65a9e13a92c985c3
+parent fe950868c38ffe08f6b04ae575c5985bcd98ad86
+author Kelven Yang <kelven@cloud.com> 1332889314 -0700
+committer Kelven Yang <kelven@cloud.com> 1332889314 -0700
+
+    bug 14301: Decouple synchronized crosss management server call with clustering transport. Reviewed-by: Kelven
+
+:100755 000000 6a8aa81ced47ed6342c9e885d3a06ff6860d0e16 0000000000000000000000000000000000000000 D	server/src/com/cloud/cluster/ClusterAsyncExectuionListener.java
+:100755 100755 cec5ea7b17c05eacbc0139cf575b33736a9bd44b 46fdff3eacf9fb2e7ace7de54a90a595cb623900 M	server/src/com/cloud/cluster/ClusterManager.java
+:100755 100755 0982cc7afaab93dcf8fdc901037c59d0a2d1aeb9 2d00b9873fb6909a8a4fa5430181dd01c8f1127c M	server/src/com/cloud/cluster/ClusterManagerImpl.java
+:100644 100644 dd8081b46ced9f2f6c3c6c4ac2eed5b19e66a0d3 408eb15c29200cc443b6ec751227b5c379da5c3d M	server/src/com/cloud/cluster/ClusterService.java
+:000000 100644 0000000000000000000000000000000000000000 f0976c25be3a4cc188b137b8ed61370f52c3e0f2 A	server/src/com/cloud/cluster/ClusterServicePdu.java
+:000000 100644 0000000000000000000000000000000000000000 1088d771503099bb6ff14f4aec0c08faeaaefddf A	server/src/com/cloud/cluster/ClusterServiceRequestPdu.java
+:100755 100755 9636683076b9193f41864fe50d35739de5e9e12f f10666994248ee673ac8ec5e8c2df809fa602dc1 M	server/src/com/cloud/cluster/ClusterServiceServletHttpHandler.java
+:100644 100644 ce65fe18e87affaa07f0892a4fd8440e3f66d8bb a33ec1e15693d10dcdf7e5cd7e1307f3c1173f90 M	server/src/com/cloud/cluster/ClusterServiceServletImpl.java
+:100755 100755 6275b8b21e783918bff9235519218dbf528bb6f4 999e1a98d581bac99c650e78d47a37d0b325e29c M	server/src/com/cloud/cluster/DummyClusterManagerImpl.java
+:100644 100644 335785f7fe216b50012e4412bd9646919bda008e c1ff62f2a236e9500d139cdb1fbf6ffebdbdf05b M	server/src/com/cloud/cluster/RemoteMethodConstants.java
+:100755 100755 ac2dd041441f643005f9dd04a53b8b76c8556c02 132958a2a7a5af4e39d31e5114abaea3200d3de9 M	server/test/com/cloud/cluster/CheckPointManagerTest.java

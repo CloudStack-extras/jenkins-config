@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between b208abd9ffd8d92f1a76a815c1ebfb136162f625 and 1445acd7e747a12e5d2187066598668620196caa
+commit 1445acd7e747a12e5d2187066598668620196caa
+tree 94e1c2a6c9a05697ce6f5c98c4cc15f08e3c1722
+parent b208abd9ffd8d92f1a76a815c1ebfb136162f625
+author Brian Federle <brian.federle@citrix.com> 1332956190 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332956215 -0700
+
+    bug 14098
+    
+    Always allow edit guest network action, for both basic and advanced
+    zones.
+
+:100644 100644 46d1257cb6e246d98ee5da47ced516337f61927c b1f7d9a9f08578b33dcc52f4d6f1b5d4dfbaf70a M	ui/scripts/system.js

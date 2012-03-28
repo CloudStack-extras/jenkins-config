@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 026641f48cd5ae982b8356a363d4d24656c2665b and e4d16551fcedfcaa82cc866fce5f46cb5c4e5daa
+commit e4d16551fcedfcaa82cc866fce5f46cb5c4e5daa
+tree 1fc7b51a573acdeeb245c9e1a2441a23f6da2dfb
+parent 026641f48cd5ae982b8356a363d4d24656c2665b
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332954310 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332954354 -0700
+
+    bug 14465: throw exception when try to send email invitation while smtp session wasn't configured
+    status 14465: resolved fixed
+
+:100755 100755 b78257a4c3e98195d19fd16610522742e0e33c59 946ecd1b02f396d2ac8399eb58d36f32f2abf043 M	server/src/com/cloud/projects/ProjectManagerImpl.java

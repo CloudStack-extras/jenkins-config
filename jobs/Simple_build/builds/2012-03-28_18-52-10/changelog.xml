@@ -1,0 +1,10 @@
+Changes in branch origin/master, between f37ae5b00c6fa0eefcb77b22270a5c00210814ed and bb7811c4e08642a943ae61060430d449447ee762
+commit bb7811c4e08642a943ae61060430d449447ee762
+tree 235b20506aa21495fede19e67745780ae2e044a0
+parent f37ae5b00c6fa0eefcb77b22270a5c00210814ed
+author Jessica Wang <jessica@cloud.com> 1332974549 -0700
+committer Jessica Wang <jessica@cloud.com> 1332974591 -0700
+
+    bug 14525: cloudstack 3.0 UI - Instance page - attach ISO action - populate ISO dropdown by 3 listISOs API call with 3 different isofilter parameter.
+
+:100644 100644 f84b5483a90453a0972d119b35f8650a205119c1 82311253d305d623135960a011b3aaae27627ccf M	ui/scripts/instances.js

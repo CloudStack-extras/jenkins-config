@@ -1,0 +1,22 @@
+Changes in branch origin/3.0.x, between c5d3e637083c22a461cc31fcc45cd2812dad1ff7 and 32ce95979b3a9b6597bd89ccdd6fbc4bc0a8796b
+commit 32ce95979b3a9b6597bd89ccdd6fbc4bc0a8796b
+tree cc3dca83c58240c6488fed1d178040e66ca1ebfb
+parent 4a742c73a76dee886e9ca6fa0f1900b71ec2190f
+author Kelven Yang <kelven@cloud.com> 1332974519 -0700
+committer Kelven Yang <kelven@cloud.com> 1332974686 -0700
+
+    bug 14301: suppress expected exceptions from showing annoying stack dump, the message will be logged at TRACE level.
+    
+    Reviewed-By: Kelven
+
+:100644 100644 db02d74fb76436aeed28995aa011cd4e5ec237f2 ac8ff5d3a71d7bbe4f7ec3226b2a134a073a3a7b M	server/src/com/cloud/cluster/ClusterServiceServletContainer.java
+
+commit 4a742c73a76dee886e9ca6fa0f1900b71ec2190f
+tree c6ab3e592a784f52bd15a4a5589b78b0eddff147
+parent c5d3e637083c22a461cc31fcc45cd2812dad1ff7
+author Jessica Wang <jessica@cloud.com> 1332974549 -0700
+committer Jessica Wang <jessica@cloud.com> 1332974549 -0700
+
+    bug 14525: cloudstack 3.0 UI - Instance page - attach ISO action - populate ISO dropdown by 3 listISOs API call with 3 different isofilter parameter.
+
+:100644 100644 f84b5483a90453a0972d119b35f8650a205119c1 82311253d305d623135960a011b3aaae27627ccf M	ui/scripts/instances.js

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 3c0108ef58867d54b7bdb211b34d8744ef4735e2 and 85899aee6b77a4ac22b7bae725c7e6a315e50500
+commit 85899aee6b77a4ac22b7bae725c7e6a315e50500
+tree e515220dcf1bbb5155ec2f9742a4c719ae240f8b
+parent 3c0108ef58867d54b7bdb211b34d8744ef4735e2
+author pranav <pranav@pranav-VirtualBox.(none)> 1332843609 +0530
+committer Brian Federle <brian.federle@citrix.com> 1332965199 -0700
+
+    bug: 14275 Search Box renders incorrectly in UI in IE9 in compatbility mode
+
+:100644 100644 47166e1d20763dbf527a940c7538564e919e1a59 f4f7ed7c44895f32e56437db1001cd2f4e8de63f M	ui/css/cloudstack3-ie7.css

@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 16ab819502ffcddd3dac34e3622dca0d2ff25a67 and ca981e209a965037be2e194a9abbd3d3b7ccaf87
+commit ca981e209a965037be2e194a9abbd3d3b7ccaf87
+tree 22461233709df9a0cdf7d583035996ea3a896320
+parent 16ab819502ffcddd3dac34e3622dca0d2ff25a67
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332976530 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332976644 -0700
+
+    bug 14169: show error on the console in addition to logging it when restart operation fails for ssvm/consoleProxy/domR
+    status 14169: resolved fixed
+
+:100755 100755 411f89e4882d00fad367e4197e2ea06278b9a477 4659c9f4af80cbd1b801e0002009b75a535393fc M	setup/bindir/cloud-sysvmadm.in

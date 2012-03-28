@@ -1,0 +1,11 @@
+Changes in branch origin/master, between ca981e209a965037be2e194a9abbd3d3b7ccaf87 and f53dc35d9fd914e5b584e57ac34aa274e60c01c3
+commit f53dc35d9fd914e5b584e57ac34aa274e60c01c3
+tree aa72d826530e6dc02a3a4e7912034f2f4fe5784b
+parent ca981e209a965037be2e194a9abbd3d3b7ccaf87
+author frank <frank.zhang@citrix.com> 1332976554 -0700
+committer frank <frank.zhang@citrix.com> 1332976722 -0700
+
+    change a comment in ApiResponseGsonHelper.java
+    reviewed-by: edison
+
+:100644 100644 e92b4d1e2f6ced24df23a5b3ab668851482365f8 9db81668491a6ae61f652223c113b9ae2e143438 M	server/src/com/cloud/api/ApiResponseGsonHelper.java

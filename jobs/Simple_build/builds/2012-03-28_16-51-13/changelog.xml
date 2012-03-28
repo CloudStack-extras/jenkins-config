@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 1adb426e5881c0a58c4d46d753739700f4ce1224 and d6cf594ef7e20c6c4ffdaa76c461efc9b99f704c
+commit d6cf594ef7e20c6c4ffdaa76c461efc9b99f704c
+tree 30c2b9a3a0f8144f3dee2f095b89628feb5ee1ef
+parent 1adb426e5881c0a58c4d46d753739700f4ce1224
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332967803 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332967874 -0700
+
+    bug 14292: don't try to reboot vm as part of resetVmPassword if the vm is in Stopped state
+    status 14292: resolved fixed
+
+:100755 100755 9e31629159e3c045b77766d5447e50279d0e6d5b b4e77aa20140c851a4ca83d41a23a1f12a87e45d M	server/src/com/cloud/vm/UserVmManagerImpl.java

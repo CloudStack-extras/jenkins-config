@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 85899aee6b77a4ac22b7bae725c7e6a315e50500 and 1adb426e5881c0a58c4d46d753739700f4ce1224
+commit 1adb426e5881c0a58c4d46d753739700f4ce1224
+tree 56f29dbb505845d00df9df020413edad678a7bae
+parent 85899aee6b77a4ac22b7bae725c7e6a315e50500
+author Jessica Wang <jessica@cloud.com> 1332966614 -0700
+committer Jessica Wang <jessica@cloud.com> 1332966698 -0700
+
+    bug 13313: cloudstack 3.0 UI - Add Zone wizard - Skip addHost step when cluster dropdown is selected as VMWare in AddZone step.
+
+:100644 100644 9e0f9ba23d149ceadde695a6c1f5f40678c09cd9 254fd8b2e2cf09022a16d1a603cf78e99f5c7c87 M	ui/scripts/zoneWizard.js

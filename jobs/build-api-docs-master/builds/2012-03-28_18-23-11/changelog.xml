@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 698a1bb3cdcaa6106d6baada00bddecb7f969cc9 and f37ae5b00c6fa0eefcb77b22270a5c00210814ed
+commit f37ae5b00c6fa0eefcb77b22270a5c00210814ed
+tree 49a9dc04ffdb97a20b792878dbe920798331ecde
+parent 698a1bb3cdcaa6106d6baada00bddecb7f969cc9
+author frank <frank.zhang@citrix.com> 1332973212 -0700
+committer frank <frank.zhang@citrix.com> 1332973340 -0700
+
+    Bug 14509 - Can't attach ISO to OVM guest instance
+    
+    status 14509: resolved fixed
+    reviewed-by: edison
+
+:100755 100755 d4f81d73f5a523ad31db1033f830d81b12b1884d 3c362d4b676a3c580678805582ba7c7e906d110e M	ovm/scripts/vm/hypervisor/ovm/OvmVmModule.py

@@ -1,0 +1,151 @@
+Changes in branch origin/master, between 026641f48cd5ae982b8356a363d4d24656c2665b and 964eeeb51545324e683a7059b4dccafb209e6faa
+commit 964eeeb51545324e683a7059b4dccafb209e6faa
+tree bb045878e6d89d6957ba759f7c5c549301528234
+parent c568df743f1becd8aa99b9d58aee3167cab42fef
+author Jessica Wang <jessica@cloud.com> 1332969858 -0700
+committer Jessica Wang <jessica@cloud.com> 1332970510 -0700
+
+    bug 14514: cloudstack 3.0 UI - volume page - show download volume option when a volume's attached VM is stopped or when a volume is detached from a VM.
+
+:100644 100644 dfdf68adc449e1fef3234f0390e5dc9a5fb9f8d7 4ae8529164d346d4c9486fe2a17ac7a1d19bcb19 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 8276f6e538d4a6ae2dbb1f1195bff1493157749f a64facfc782c6463faf81ac3a6c881d89cd385ca M	ui/index.jsp
+:100644 100644 7c34ed3988be9718a4b304e57491e3a8f0539acd 252edc197f27519c2a15b4530ef0fa803940a9ef M	ui/scripts/storage.js
+
+commit c568df743f1becd8aa99b9d58aee3167cab42fef
+tree a385ace5bb59a7ec06151083fdab78136d10d22c
+parent 7d906c2f606a845351df6057bdd02eed63339ea9
+author Brian Federle <brian.federle@citrix.com> 1332970406 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332970444 -0700
+
+    Revert "Add support for OVM traffic labels in UI"
+    
+    This reverts commit a199d1f7a2045d74eb6184e9ed6d0f2f39edf3fd.
+
+:100644 100644 89e82e3668eacf931372e56fc2a45932bd239139 dfdf68adc449e1fef3234f0390e5dc9a5fb9f8d7 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 ef018765b639c84ba59134727a49f9cfb900171e 8276f6e538d4a6ae2dbb1f1195bff1493157749f M	ui/index.jsp
+:100644 100644 18d49f80570c3a532670fb04b8a7b0b451d49c44 8e2e532b11959a2d071053298dad45f6abe11e49 M	ui/scripts/system.js
+
+commit 7d906c2f606a845351df6057bdd02eed63339ea9
+tree 517f9d2fe4b042982caf4f7f5265e8b8f694788b
+parent d6cf594ef7e20c6c4ffdaa76c461efc9b99f704c
+author Kelven Yang <kelven@cloud.com> 1332968815 -0700
+committer Kelven Yang <kelven@cloud.com> 1332969300 -0700
+
+    bug 14491: use template unique name instead of self-generated UUID name. Reviewed-By: Kelven(with test)
+
+:100644 100644 da4a7872ae49b30e6a80b08616dfc200ea292846 4fb52a11bf831bf48b2ca09627f4e7568fd47858 M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+
+commit d6cf594ef7e20c6c4ffdaa76c461efc9b99f704c
+tree 30c2b9a3a0f8144f3dee2f095b89628feb5ee1ef
+parent 1adb426e5881c0a58c4d46d753739700f4ce1224
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332967803 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332967874 -0700
+
+    bug 14292: don't try to reboot vm as part of resetVmPassword if the vm is in Stopped state
+    status 14292: resolved fixed
+
+:100755 100755 9e31629159e3c045b77766d5447e50279d0e6d5b b4e77aa20140c851a4ca83d41a23a1f12a87e45d M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 1adb426e5881c0a58c4d46d753739700f4ce1224
+tree 56f29dbb505845d00df9df020413edad678a7bae
+parent 85899aee6b77a4ac22b7bae725c7e6a315e50500
+author Jessica Wang <jessica@cloud.com> 1332966614 -0700
+committer Jessica Wang <jessica@cloud.com> 1332966698 -0700
+
+    bug 13313: cloudstack 3.0 UI - Add Zone wizard - Skip addHost step when cluster dropdown is selected as VMWare in AddZone step.
+
+:100644 100644 9e0f9ba23d149ceadde695a6c1f5f40678c09cd9 254fd8b2e2cf09022a16d1a603cf78e99f5c7c87 M	ui/scripts/zoneWizard.js
+
+commit 85899aee6b77a4ac22b7bae725c7e6a315e50500
+tree e515220dcf1bbb5155ec2f9742a4c719ae240f8b
+parent 3c0108ef58867d54b7bdb211b34d8744ef4735e2
+author pranav <pranav@pranav-VirtualBox.(none)> 1332843609 +0530
+committer Brian Federle <brian.federle@citrix.com> 1332965199 -0700
+
+    bug: 14275 Search Box renders incorrectly in UI in IE9 in compatbility mode
+
+:100644 100644 47166e1d20763dbf527a940c7538564e919e1a59 f4f7ed7c44895f32e56437db1001cd2f4e8de63f M	ui/css/cloudstack3-ie7.css
+
+commit 3c0108ef58867d54b7bdb211b34d8744ef4735e2
+tree 4f8d6e61ae4d5a34ddd7ee9e6b4f639ac60ad0d1
+parent dc1af9e5f482cfb131ed0fb97e1800984412149a
+author Pranav Saxena <pranav.saxena@citrix.com> 1332963230 +0530
+committer Brian Federle <brian.federle@citrix.com> 1332963733 -0700
+
+    Bug 14476: ESC causes UI to freeze
+
+:100644 100644 59df1308417a46c278abf9299616766ccb7ddd8a 72db985709b573eded055b733fdc4b3e1dd61046 M	ui/scripts/ui/dialog.js
+
+commit dc1af9e5f482cfb131ed0fb97e1800984412149a
+tree db4f5199497e328972c11cd84a1b42fcb4020cfa
+parent a199d1f7a2045d74eb6184e9ed6d0f2f39edf3fd
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332958979 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332959049 -0700
+
+    bug 14444: specifyVlan should always be false for the network offering of type Isolated supporting sourceNat service
+    status 14444: resolved fixed
+
+:100755 100755 ad9aeef8b726cd00030b211e05f7c9f1674f72c0 02abba05c72e65cd5c33c0e460afdb15ea459f72 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 1093bdec6661fe566625028768a53945053a67fa c1ef12c980102489131fb2824139d33bcb1ffba3 M	server/src/com/cloud/network/NetworkManager.java
+
+commit a199d1f7a2045d74eb6184e9ed6d0f2f39edf3fd
+tree acb1c13cef04d6e5279f8376894615dd955a72d4
+parent 3e649a96ca4fe4b41904c6e1d87a7232a05c41f8
+author Brian Federle <brian.federle@citrix.com> 1332958277 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332958277 -0700
+
+    Add support for OVM traffic labels in UI
+
+:100644 100644 dfdf68adc449e1fef3234f0390e5dc9a5fb9f8d7 89e82e3668eacf931372e56fc2a45932bd239139 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 8276f6e538d4a6ae2dbb1f1195bff1493157749f ef018765b639c84ba59134727a49f9cfb900171e M	ui/index.jsp
+:100644 100644 8e2e532b11959a2d071053298dad45f6abe11e49 18d49f80570c3a532670fb04b8a7b0b451d49c44 M	ui/scripts/system.js
+
+commit 3e649a96ca4fe4b41904c6e1d87a7232a05c41f8
+tree 05078a9f7b57dd0d36cbab8f4ef02bcd11e77e41
+parent 63111c43c5347adc38d999e07cb0b9ddc63511d8
+author Brian Federle <brian.federle@citrix.com> 1332957028 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332957028 -0700
+
+    bug 14507
+    
+    Fix typo in title field for change password dialog
+
+:100644 100644 e389c3ac6de5c081122b88cd52974265ef603305 9f20d72b80b06914ee12e98a8b47f9ded72340a3 M	ui/scripts/accounts.js
+
+commit 63111c43c5347adc38d999e07cb0b9ddc63511d8
+tree c0ec8f503fa72eebf6cb96641b8e826622266f68
+parent 97d8941a54a314b74f2d81d5fe69d7bb66035fc0
+author Brian Federle <brian.federle@citrix.com> 1332956190 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332956190 -0700
+
+    bug 14098
+    
+    Always allow edit guest network action, for both basic and advanced
+    zones.
+
+:100644 100644 3289216505743c94da342553a2b3346b0e5914f0 8e2e532b11959a2d071053298dad45f6abe11e49 M	ui/scripts/system.js
+
+commit 97d8941a54a314b74f2d81d5fe69d7bb66035fc0
+tree b3238145de059e30fe7592c531a53060fc903ed5
+parent e4d16551fcedfcaa82cc866fce5f46cb5c4e5daa
+author bfederle <bfederle@gmail.com> 1332955492 -0700
+committer bfederle <bfederle@gmail.com> 1332955492 -0700
+
+    bug 14057
+    
+    Rename 'label' -> 'traffic label' in configure traffic type dialog.
+
+:100644 100644 dfb9dea1f9e34f5c4e18db522ccabf4a69c5e94a dfdf68adc449e1fef3234f0390e5dc9a5fb9f8d7 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 6fa021e5e4c23ac676a341c7589e91136c76c625 8276f6e538d4a6ae2dbb1f1195bff1493157749f M	ui/index.jsp
+:100644 100644 3220de21590da02f2a4dafb0bbf818c188dc2a0b e04a635388e14c990e5fe90e70d0b2c9052cc863 M	ui/scripts/ui-custom/zoneWizard.js
+
+commit e4d16551fcedfcaa82cc866fce5f46cb5c4e5daa
+tree 1fc7b51a573acdeeb245c9e1a2441a23f6da2dfb
+parent 026641f48cd5ae982b8356a363d4d24656c2665b
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332954310 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332954354 -0700
+
+    bug 14465: throw exception when try to send email invitation while smtp session wasn't configured
+    status 14465: resolved fixed
+
+:100755 100755 b78257a4c3e98195d19fd16610522742e0e33c59 946ecd1b02f396d2ac8399eb58d36f32f2abf043 M	server/src/com/cloud/projects/ProjectManagerImpl.java

@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 964eeeb51545324e683a7059b4dccafb209e6faa and 698a1bb3cdcaa6106d6baada00bddecb7f969cc9
+commit 3e2ca5a54f3248b7d92e0eac7ed1c7528209533e
+tree 9a516b8b94cada5acc95060d2397104de21ea0d5
+parent c568df743f1becd8aa99b9d58aee3167cab42fef
+author Brian Federle <brian.federle@citrix.com> 1332972103 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332972103 -0700
+
+    bug 14519
+    
+    Show separate message for basic zone setup physical network UI
+
+:100644 100644 dfdf68adc449e1fef3234f0390e5dc9a5fb9f8d7 0a6c7b3e40619dcbea3ebecb35b0b0e201d9a576 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 8276f6e538d4a6ae2dbb1f1195bff1493157749f 5e53e8277a4702162425b557002f7a17f623b5f0 M	ui/index.jsp
+:100644 100644 254fd8b2e2cf09022a16d1a603cf78e99f5c7c87 4444656e61c081d393c04bc8246995ad57429ebf M	ui/scripts/zoneWizard.js

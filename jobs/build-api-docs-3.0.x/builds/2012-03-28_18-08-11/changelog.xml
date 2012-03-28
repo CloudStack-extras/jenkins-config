@@ -1,0 +1,18 @@
+Changes in branch origin/3.0.x, between dad7ffc6427a3b6eb1ffc57cf2ea83f0b9385e69 and 5e0f81bdc60bd10fcec18f2d49761699dc79a419
+commit 5e0f81bdc60bd10fcec18f2d49761699dc79a419
+tree 623680d056b53710e7f87105baf234e502ea1b06
+parent dad7ffc6427a3b6eb1ffc57cf2ea83f0b9385e69
+author Brian Federle <brian.federle@citrix.com> 1332972103 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332972376 -0700
+
+    bug 14519
+    
+    Show separate message for basic zone setup physical network UI
+    
+    Conflicts:
+    
+    	client/WEB-INF/classes/resources/messages.properties
+
+:100644 100644 4ae8529164d346d4c9486fe2a17ac7a1d19bcb19 502565170485700fe31f6c709d1729e703b1f085 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 a64facfc782c6463faf81ac3a6c881d89cd385ca 5de56a509ba11c36b604fde8b5b9d6aafebcf093 M	ui/index.jsp
+:100644 100644 254fd8b2e2cf09022a16d1a603cf78e99f5c7c87 4444656e61c081d393c04bc8246995ad57429ebf M	ui/scripts/zoneWizard.js

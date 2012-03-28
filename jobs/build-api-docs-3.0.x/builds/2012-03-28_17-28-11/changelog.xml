@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between f7f512c32b362adce326754e976c0411b8e61fe2 and dad7ffc6427a3b6eb1ffc57cf2ea83f0b9385e69
+commit dad7ffc6427a3b6eb1ffc57cf2ea83f0b9385e69
+tree ba4219875a99f31f9e80dc0982fa38f2627492dd
+parent f7f512c32b362adce326754e976c0411b8e61fe2
+author Jessica Wang <jessica@cloud.com> 1332969858 -0700
+committer Jessica Wang <jessica@cloud.com> 1332969858 -0700
+
+    bug 14514: cloudstack 3.0 UI - volume page - show download volume option when a volume's attached VM is stopped or when a volume is detached from a VM.
+
+:100644 100644 dfdf68adc449e1fef3234f0390e5dc9a5fb9f8d7 4ae8529164d346d4c9486fe2a17ac7a1d19bcb19 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 8276f6e538d4a6ae2dbb1f1195bff1493157749f a64facfc782c6463faf81ac3a6c881d89cd385ca M	ui/index.jsp
+:100644 100644 7c34ed3988be9718a4b304e57491e3a8f0539acd 252edc197f27519c2a15b4530ef0fa803940a9ef M	ui/scripts/storage.js

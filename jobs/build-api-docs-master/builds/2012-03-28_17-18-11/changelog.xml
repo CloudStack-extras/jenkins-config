@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d6cf594ef7e20c6c4ffdaa76c461efc9b99f704c and 7d906c2f606a845351df6057bdd02eed63339ea9
+commit 7d906c2f606a845351df6057bdd02eed63339ea9
+tree 517f9d2fe4b042982caf4f7f5265e8b8f694788b
+parent d6cf594ef7e20c6c4ffdaa76c461efc9b99f704c
+author Kelven Yang <kelven@cloud.com> 1332968815 -0700
+committer Kelven Yang <kelven@cloud.com> 1332969300 -0700
+
+    bug 14491: use template unique name instead of self-generated UUID name. Reviewed-By: Kelven(with test)
+
+:100644 100644 da4a7872ae49b30e6a80b08616dfc200ea292846 4fb52a11bf831bf48b2ca09627f4e7568fd47858 M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java

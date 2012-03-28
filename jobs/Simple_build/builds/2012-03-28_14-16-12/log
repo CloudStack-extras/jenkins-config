@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision a78537398cca223f657f89994c9ef5a32180e86e (origin/master)
+Last Built Revision: Revision 3e649a96ca4fe4b41904c6e1d87a7232a05c41f8 (origin/master)
 Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack.git
-Commencing build of Revision c796c86330da457b2f0db43b4b03b5a58efaa385 (origin/master)
-Checking out Revision c796c86330da457b2f0db43b4b03b5a58efaa385 (origin/master)
+Commencing build of Revision a199d1f7a2045d74eb6184e9ed6d0f2f39edf3fd (origin/master)
+Checking out Revision a199d1f7a2045d74eb6184e9ed6d0f2f39edf3fd (origin/master)
 [Simple_build] $ ant clean-all build-all
 Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
@@ -25,8 +25,8 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-26T06:16:22Z
-     [echo] Build number is 3.0.1.2012-03-26T06:16:22Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-28T18:16:19Z
+     [echo] Build number is 3.0.1.2012-03-28T18:16:19Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dep-cache
@@ -80,7 +80,7 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
      [echo] Compiling /var/lib/jenkins/workspace/Simple_build/server/src
-    [javac] Compiling 825 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
+    [javac] Compiling 826 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
     [javac] Note: Some input files use or override a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
     [javac] Note: Some input files use unchecked or unsafe operations.
@@ -95,30 +95,10 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
      [copy] Copying 23 files to /var/lib/jenkins/workspace/Simple_build/dist/client/conf
      [copy] Copying 54 files to /var/lib/jenkins/workspace/Simple_build/target/db
 
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-console-viewer:
-    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/console-viewer
-    [javac] Compiling 21 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/console-viewer
-    [javac] /var/lib/jenkins/workspace/Simple_build/console/src/com/cloud/console/ConsoleCanvas.java:1578: warning: [deprecation] KeyEvent(java.awt.Component,int,long,int,int) in java.awt.event.KeyEvent has been deprecated
-    [javac]   		KeyEvent evt = new KeyEvent(this, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 
-    [javac]   		               ^
-    [javac] 1 warning
-    [javac] Compiling 8 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/console-viewer
-      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/VMOpsConsoleApplet.jar
-
-[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-common:
-    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-console-common.jar
-     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/console/src
-    [javac] Compiling 21 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-console-common.jar
-    [javac] Note: /var/lib/jenkins/workspace/Simple_build/console/src/com/cloud/console/ConsoleCanvas.java uses or overrides a deprecated API.
-    [javac] Note: Recompile with -Xlint:deprecation for details.
-      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-console-common.jar
-
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-proxy:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-console-proxy.jar
      [echo] Compiling /var/lib/jenkins/workspace/Simple_build/console-proxy/src
-    [javac] Compiling 53 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-console-proxy.jar
-    [javac] Note: /var/lib/jenkins/workspace/Simple_build/console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java uses or overrides a deprecated API.
-    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Compiling 50 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-console-proxy.jar
       [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-console-proxy.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcopy-console-proxy:
@@ -131,10 +111,9 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/ui
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/css
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/certs
-     [copy] Copying 2 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy
      [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/conf
      [copy] Copying 22 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/images
-     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/applet
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/js
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/ui
      [copy] Copying 2 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/css
@@ -161,7 +140,7 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/ui
-     [copy] Copying 142 files to /var/lib/jenkins/workspace/Simple_build/target/ui
+     [copy] Copying 143 files to /var/lib/jenkins/workspace/Simple_build/target/ui
      [copy] Copying 519 files to /var/lib/jenkins/workspace/Simple_build/target/ui
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/target/ui
 
@@ -220,5 +199,5 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 35 seconds
+Total time: 1 minute 2 seconds
 Finished: SUCCESS

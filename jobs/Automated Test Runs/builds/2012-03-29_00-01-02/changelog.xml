@@ -1,0 +1,127 @@
+Changes in branch origin/master, between 964eeeb51545324e683a7059b4dccafb209e6faa and 7da24db79b6645fb316ae1a373bfefd33fe34696
+commit 7da24db79b6645fb316ae1a373bfefd33fe34696
+tree 104aa6a557c1ad6442a70a997e8504be3e23f097
+parent afb148a38c8b678d8301213e20926045bc472cf5
+author Jessica Wang <jessica@cloud.com> 1332991492 -0700
+committer Jessica Wang <jessica@cloud.com> 1332991535 -0700
+
+    Revert - bug 14532: cloudstack 3.0 UI - IP Address page - StaticNAT IP - NAT Port Range - protocol dropdown - add ICMP option
+
+:100644 100644 93fb892eb6db4b511c7683bce2cb113cf3f4bd6f 94a26c9e3fe99bdcd71ac9384532ebbb9dfbdd5d M	ui/scripts/network.js
+
+commit afb148a38c8b678d8301213e20926045bc472cf5
+tree d5ebbaa58f3a7d60b95eaa02e63093b087f05173
+parent 80b43212ebe6215edf293cd59c952656a2bfebec
+author Jessica Wang <jessica@cloud.com> 1332988311 -0700
+committer Jessica Wang <jessica@cloud.com> 1332988364 -0700
+
+    bug 14532: cloudstack 3.0 UI - IP Address page - StaticNAT IP - NAT Port Range - protocol dropdown - add ICMP option
+
+:100644 100644 94a26c9e3fe99bdcd71ac9384532ebbb9dfbdd5d 93fb892eb6db4b511c7683bce2cb113cf3f4bd6f M	ui/scripts/network.js
+
+commit 80b43212ebe6215edf293cd59c952656a2bfebec
+tree 104aa6a557c1ad6442a70a997e8504be3e23f097
+parent 0d99538c4b45f436dc1404e119685db6c7407110
+author frank <frank.zhang@citrix.com> 1332985844 -0700
+committer frank <frank.zhang@citrix.com> 1332985921 -0700
+
+    fix build
+    
+    vnc directory is excluded by waf's glob. unfortunately, new console proxy has a folder named vnc
+    
+    reviewed-by: edison
+
+:100644 100644 a1c5b450f2845bed07b1268297dde4f978130e6b 28e81f0de66066e02dcebd2d73a9c22964f4798c M	wscript
+
+commit 0d99538c4b45f436dc1404e119685db6c7407110
+tree 937203b694a39f02ca4e0b6b1cd36dd4c62a3c33
+parent 0e248bdbe1632a5544d88c7b8152736889421617
+author Edison Su <sudison@gmail.com> 1332981781 -0700
+committer Edison Su <sudison@gmail.com> 1332981860 -0700
+
+    bug 14535: fix multiple data disk; status 14535: resolved fixed; Reviewed-by: sheng
+
+:100755 100755 c13ce875acddf038c7b1c84f59970d18c135476a 1bff44e8f320f04b99a27f780d8cebee299de923 M	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java
+
+commit 0e248bdbe1632a5544d88c7b8152736889421617
+tree 6dca557c9214de0535828a8ce9d236501dabd2bc
+parent f53dc35d9fd914e5b584e57ac34aa274e60c01c3
+author bfederle <bfederle@gmail.com> 1332979027 -0700
+committer bfederle <bfederle@gmail.com> 1332979418 -0700
+
+    bug 13773
+    
+    Change 'migrateToAnotherStorage' icon to use same icon as 'migrate'
+
+:100644 100644 9dadcc77a6c16b70e81efc1d8db678d406b2ee63 9622be19000a0fc4dd278666264e1b3c68c56700 M	ui/css/cloudstack3.css
+
+commit f53dc35d9fd914e5b584e57ac34aa274e60c01c3
+tree aa72d826530e6dc02a3a4e7912034f2f4fe5784b
+parent ca981e209a965037be2e194a9abbd3d3b7ccaf87
+author frank <frank.zhang@citrix.com> 1332976554 -0700
+committer frank <frank.zhang@citrix.com> 1332976722 -0700
+
+    change a comment in ApiResponseGsonHelper.java
+    reviewed-by: edison
+
+:100644 100644 e92b4d1e2f6ced24df23a5b3ab668851482365f8 9db81668491a6ae61f652223c113b9ae2e143438 M	server/src/com/cloud/api/ApiResponseGsonHelper.java
+
+commit ca981e209a965037be2e194a9abbd3d3b7ccaf87
+tree 22461233709df9a0cdf7d583035996ea3a896320
+parent 16ab819502ffcddd3dac34e3622dca0d2ff25a67
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332976530 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1332976644 -0700
+
+    bug 14169: show error on the console in addition to logging it when restart operation fails for ssvm/consoleProxy/domR
+    status 14169: resolved fixed
+
+:100755 100755 411f89e4882d00fad367e4197e2ea06278b9a477 4659c9f4af80cbd1b801e0002009b75a535393fc M	setup/bindir/cloud-sysvmadm.in
+
+commit 16ab819502ffcddd3dac34e3622dca0d2ff25a67
+tree 3992a504c74122dd3ed131dbae12ca5203ef250b
+parent bb7811c4e08642a943ae61060430d449447ee762
+author Kelven Yang <kelven@cloud.com> 1332974519 -0700
+committer Kelven Yang <kelven@cloud.com> 1332974820 -0700
+
+    bug 14301: suppress expected exceptions from showing annoying stack dump, the message will be logged at TRACE level.
+    
+    Reviewed-By: Kelven
+
+:100644 100644 db02d74fb76436aeed28995aa011cd4e5ec237f2 ac8ff5d3a71d7bbe4f7ec3226b2a134a073a3a7b M	server/src/com/cloud/cluster/ClusterServiceServletContainer.java
+
+commit bb7811c4e08642a943ae61060430d449447ee762
+tree 235b20506aa21495fede19e67745780ae2e044a0
+parent f37ae5b00c6fa0eefcb77b22270a5c00210814ed
+author Jessica Wang <jessica@cloud.com> 1332974549 -0700
+committer Jessica Wang <jessica@cloud.com> 1332974591 -0700
+
+    bug 14525: cloudstack 3.0 UI - Instance page - attach ISO action - populate ISO dropdown by 3 listISOs API call with 3 different isofilter parameter.
+
+:100644 100644 f84b5483a90453a0972d119b35f8650a205119c1 82311253d305d623135960a011b3aaae27627ccf M	ui/scripts/instances.js
+
+commit f37ae5b00c6fa0eefcb77b22270a5c00210814ed
+tree 49a9dc04ffdb97a20b792878dbe920798331ecde
+parent 698a1bb3cdcaa6106d6baada00bddecb7f969cc9
+author frank <frank.zhang@citrix.com> 1332973212 -0700
+committer frank <frank.zhang@citrix.com> 1332973340 -0700
+
+    Bug 14509 - Can't attach ISO to OVM guest instance
+    
+    status 14509: resolved fixed
+    reviewed-by: edison
+
+:100755 100755 d4f81d73f5a523ad31db1033f830d81b12b1884d 3c362d4b676a3c580678805582ba7c7e906d110e M	ovm/scripts/vm/hypervisor/ovm/OvmVmModule.py
+
+commit 3e2ca5a54f3248b7d92e0eac7ed1c7528209533e
+tree 9a516b8b94cada5acc95060d2397104de21ea0d5
+parent c568df743f1becd8aa99b9d58aee3167cab42fef
+author Brian Federle <brian.federle@citrix.com> 1332972103 -0700
+committer Brian Federle <brian.federle@citrix.com> 1332972103 -0700
+
+    bug 14519
+    
+    Show separate message for basic zone setup physical network UI
+
+:100644 100644 dfdf68adc449e1fef3234f0390e5dc9a5fb9f8d7 0a6c7b3e40619dcbea3ebecb35b0b0e201d9a576 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 8276f6e538d4a6ae2dbb1f1195bff1493157749f 5e53e8277a4702162425b557002f7a17f623b5f0 M	ui/index.jsp
+:100644 100644 254fd8b2e2cf09022a16d1a603cf78e99f5c7c87 4444656e61c081d393c04bc8246995ad57429ebf M	ui/scripts/zoneWizard.js

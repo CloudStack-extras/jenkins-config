@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between 057b0b25083024b37afdb6ee2771188678d88f3f and 876c577e9a91895a8ed429d77e00ca0a6cb0c0bd
+commit 876c577e9a91895a8ed429d77e00ca0a6cb0c0bd
+tree 271ee6976e6ddb8ccbed7a4d2b5815958259facb
+parent 057b0b25083024b37afdb6ee2771188678d88f3f
+author frank <frank.zhang@citrix.com> 1332985844 -0700
+committer frank <frank.zhang@citrix.com> 1332985939 -0700
+
+    fix build
+    
+    vnc directory is excluded by waf's glob. unfortunately, new console proxy has a folder named vnc
+    
+    reviewed-by: edison
+
+:100644 100644 a1c5b450f2845bed07b1268297dde4f978130e6b 28e81f0de66066e02dcebd2d73a9c22964f4798c M	wscript

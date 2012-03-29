@@ -1,0 +1,21 @@
+Changes in branch origin/3.0.x, between f3202901124b4f179394b5044b065885779ea9a1 and 2b6712b7a87138aff102e406284c8e8ad3223500
+commit 2b6712b7a87138aff102e406284c8e8ad3223500
+tree 201d9250c442f8793e9f9b19fbd401d5168a8a22
+parent f3202901124b4f179394b5044b065885779ea9a1
+author prachi <prachi@cloud.com> 1333040839 -0700
+committer prachi <prachi@cloud.com> 1333040927 -0700
+
+    Bug 14536 - DB exception while trying to delete physical network
+    
+    Reviewed-By: Sheng Yang
+    
+    Changes:
+    Added 'removed' column to physical_network_service_providers to avoid the Foreign Key constraint error.
+    
+    Conflicts:
+    
+    	setup/db/db/schema-30to301.sql
+
+:100644 100644 d5104a91828bd81a4e7dcd7b4710ab76f6bab8b1 ddd1b67574439bbdce0f39894da37d3918291a63 M	server/src/com/cloud/network/dao/PhysicalNetworkServiceProviderVO.java
+:100755 100755 5a5be19b1353eccd3886444e56f3ba731a7a76a7 40fefe0f7684b655aa978130e2e123374fb036f2 M	setup/db/create-schema.sql
+:100755 100755 4449c8b8257e072b85dc5f05ad63a5e1c5ca98ad 74dc3b5514c98d2e605f051fee70c9e18b2ef52b M	setup/db/db/schema-30to301.sql

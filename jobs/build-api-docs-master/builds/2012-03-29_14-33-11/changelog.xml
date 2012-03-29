@@ -1,0 +1,10 @@
+Changes in branch origin/master, between a2d7d5e7ae9f13064f3a3a24a22b16ebaa0d08a3 and 1ee12a8080d91815e11518d08b615222a80635d3
+commit 1ee12a8080d91815e11518d08b615222a80635d3
+tree 7b31e375cb7ff80a307b546714be20758fa38993
+parent a2d7d5e7ae9f13064f3a3a24a22b16ebaa0d08a3
+author frank <frank.zhang@citrix.com> 1333045858 -0700
+committer frank <frank.zhang@citrix.com> 1333045858 -0700
+
+    fix typo in cloud.spec
+
+:100644 100644 c306e692a1247dc1d3d4d0aa9de862189faad0fb 704d58df28d852d9d21504ac91437da3ac9d0b30 M	cloud.spec

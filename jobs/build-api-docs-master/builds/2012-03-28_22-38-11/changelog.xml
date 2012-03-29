@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 80b43212ebe6215edf293cd59c952656a2bfebec and afb148a38c8b678d8301213e20926045bc472cf5
+commit afb148a38c8b678d8301213e20926045bc472cf5
+tree d5ebbaa58f3a7d60b95eaa02e63093b087f05173
+parent 80b43212ebe6215edf293cd59c952656a2bfebec
+author Jessica Wang <jessica@cloud.com> 1332988311 -0700
+committer Jessica Wang <jessica@cloud.com> 1332988364 -0700
+
+    bug 14532: cloudstack 3.0 UI - IP Address page - StaticNAT IP - NAT Port Range - protocol dropdown - add ICMP option
+
+:100644 100644 94a26c9e3fe99bdcd71ac9384532ebbb9dfbdd5d 93fb892eb6db4b511c7683bce2cb113cf3f4bd6f M	ui/scripts/network.js

@@ -1,0 +1,16 @@
+Changes in branch origin/3.0.x, between 07466f8c53b1c0d5d4051056405b583a38c07483 and 399cc04163188320f004f8b2c9901c36d534c274
+commit 399cc04163188320f004f8b2c9901c36d534c274
+tree 3f462f30d10f7268928efe52f76d708870a8a9c0
+parent 07466f8c53b1c0d5d4051056405b583a38c07483
+author prachi <prachi@cloud.com> 1333049728 -0700
+committer prachi <prachi@cloud.com> 1333049893 -0700
+
+    Bug 14536 - DB exception while trying to delete physical network
+    
+    Reviewed-By: Sheng Yang
+    
+    Changes:
+    Added proper cleanup for virtual router elements.
+
+:100755 100755 7df6e461bdf8b2e48d0e341da908f9a9d74d0a30 e33a910a9d597b77472c1d3c683c91a1ae5183b0 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 0b9cbd40b6c8ad82903f94671de3a03c1d3032d9 f715764128a123ca4558a3177c8e1304449ad185 M	server/src/com/cloud/network/element/VirtualRouterElement.java

@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 5a06ddb36af3a32e8b560ccba7c82bc1a7b2f080 and 4f5386a5df817a73cfd0661aff30215a27160743
+commit 4f5386a5df817a73cfd0661aff30215a27160743
+tree 7d2ce44d78f25a4e7377cd57663f05cc605e2bb1
+parent 5a06ddb36af3a32e8b560ccba7c82bc1a7b2f080
+author Abhi <abhinandan.prateek@citrix.com> 1333022718 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1333022718 +0530
+
+    bug 13873: memory overhead can now be overridden for each version, increasing the overhead for SP2 by 1.5%
+
+:100755 100755 2caa49c092444827f5e461a832e73cce9c417209 5c4c72cff4059e855c0af98825cc26fdeb66b791 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 38f7f61d1fd2ff54451b184b09892bf2a1149b99 854eb3b1db5584fe7cb2541bb9f7f657b72ce8db M	core/src/com/cloud/hypervisor/xen/resource/XenServer56SP2Resource.java

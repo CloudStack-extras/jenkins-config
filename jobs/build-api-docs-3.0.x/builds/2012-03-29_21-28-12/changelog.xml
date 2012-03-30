@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 8b9a8e36c1a5a0a8c7f715c6ddfcff01a572933b and 5dc08bce4471299feb4c32a7f067ccf3d2605fb1
+commit 5dc08bce4471299feb4c32a7f067ccf3d2605fb1
+tree 9c5df8ab0b18ff6adfdd36bcd427da4ed4b67744
+parent 8b9a8e36c1a5a0a8c7f715c6ddfcff01a572933b
+author Kelven Yang <kelven@cloud.com> 1333070549 -0700
+committer Kelven Yang <kelven@cloud.com> 1333070691 -0700
+
+    Bug 14551: add top-level catch clause to protect task/thread from stalling
+    
+    Reviewed-By: Kelven
+
+:100755 100755 546a1e1d424d0d26419c62336cc3a9d0e44431eb cbb0d6835bdb80616c9d352100a3cefcb376b1ea M	server/src/com/cloud/agent/manager/ClusteredAgentManagerImpl.java

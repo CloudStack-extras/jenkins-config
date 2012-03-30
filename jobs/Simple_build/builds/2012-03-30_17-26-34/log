@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision bb7811c4e08642a943ae61060430d449447ee762 (origin/master)
+Last Built Revision: Revision 30dbea1ff777afa97cdb97dfcb04ba26a010cd30 (origin/master)
 Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack.git
-Commencing build of Revision 16ab819502ffcddd3dac34e3622dca0d2ff25a67 (origin/master)
-Checking out Revision 16ab819502ffcddd3dac34e3622dca0d2ff25a67 (origin/master)
+Commencing build of Revision be5b430a962c7de47efddd15bb0eb6eafa8ec343 (origin/master)
+Checking out Revision be5b430a962c7de47efddd15bb0eb6eafa8ec343 (origin/master)
 [Simple_build] $ ant clean-all build-all
 Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
@@ -25,8 +25,8 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-28T22:56:25Z
-     [echo] Build number is 3.0.1.2012-03-28T22:56:25Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-30T21:26:49Z
+     [echo] Build number is 3.0.1.2012-03-30T21:26:49Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dep-cache
@@ -199,5 +199,5 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 37 seconds
+Total time: 1 minute 26 seconds
 Finished: SUCCESS

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between bd02f0c5337251fb6603ce0de8e52001ea66eb0d and 30dbea1ff777afa97cdb97dfcb04ba26a010cd30
+commit 30dbea1ff777afa97cdb97dfcb04ba26a010cd30
+tree 3b6de4bf04d1668a6001cdde080f851ec2f916a7
+parent bd02f0c5337251fb6603ce0de8e52001ea66eb0d
+author Jessica Wang <jessica@cloud.com> 1333139496 -0700
+committer Jessica Wang <jessica@cloud.com> 1333139569 -0700
+
+    bug 12421: cloudstack 3.0 UI - detailView widget - fix a bug that updated data returned by API call got lost, so failed to update detailView with updated data.
+
+:100644 100644 2cfa8137673a5846fce3bd51865ad8adf7439220 ade1fc29416596d49942f337ecbab8d192c26448 M	ui/scripts/ui/widgets/detailView.js

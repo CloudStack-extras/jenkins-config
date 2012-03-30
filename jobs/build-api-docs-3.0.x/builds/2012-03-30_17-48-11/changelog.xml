@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 3c293bc4b3f221277b4583bac8d6f29a410b178a and 481c7ccc4b436982e41faf8b16d4cf943a408a4e
+commit 481c7ccc4b436982e41faf8b16d4cf943a408a4e
+tree 52f6266ab4313ba0c4707819f62f6f7e51c10be7
+parent 3c293bc4b3f221277b4583bac8d6f29a410b178a
+author Brian Federle <brian.federle@citrix.com> 1333143748 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333143785 -0700
+
+    Also replace MD5 lib for old UI
+
+:100755 100755 54885ab451df13cdfa72e75d7ad468132e8f0070 5dc56545de81b57605a900636fef4a5acc87f0c4 M	ui/old/scripts/jquery.md5.js

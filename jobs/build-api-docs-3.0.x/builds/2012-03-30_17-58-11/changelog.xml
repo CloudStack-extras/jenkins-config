@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 481c7ccc4b436982e41faf8b16d4cf943a408a4e and c15f58624e83a2b29421dee3f2d7cd11c70fc481
+commit c15f58624e83a2b29421dee3f2d7cd11c70fc481
+tree c310d4292c3e1b71ba57a84ffc0fcac9fcf6cd00
+parent 481c7ccc4b436982e41faf8b16d4cf943a408a4e
+author Brian Federle <brian.federle@citrix.com> 1333144382 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333144445 -0700
+
+    bug 14556: Add missing page + pageSize params to PF/LB list view
+
+:100644 100644 3bc82ec7e25df999522b5af8fd4e9f115a48c720 8876e65223f58c22688bb7dca4823388a248aed6 M	ui/scripts/network.js

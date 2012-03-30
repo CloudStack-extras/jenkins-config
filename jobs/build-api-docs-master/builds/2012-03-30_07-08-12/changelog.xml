@@ -1,0 +1,12 @@
+Changes in branch origin/master, between c12b00099bbea5aab4457258624e3f6148529100 and 6cc90a0615417e4e24e27e19542337b3386bd006
+commit 6cc90a0615417e4e24e27e19542337b3386bd006
+tree 3e3b36159e4d067ade31a53a845ee62fe809373f
+parent c12b00099bbea5aab4457258624e3f6148529100
+author Murali reddy <Murali.Reddy@citrix.com> 1333105306 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1333105557 +0530
+
+    bug 14554: Failed to add Usage Filter on SRX during SetStaticNatRulesCommand Execution
+    status 14554: resolved fixed
+    reviewed-by: Janardhan
+
+:100644 100644 110a2241999c121a56d36653c4b60498e69766d1 85cd7df826ccd9c348318fa1f57821b710b12d76 M	core/src/com/cloud/network/resource/JuniperSrxResource.java

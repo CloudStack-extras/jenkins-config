@@ -1,0 +1,20 @@
+Changes in branch origin/3.0.x, between a3e945f93e0e2af0d101a5d44bd4a35cc17ff436 and 4c7871cc583b129954602298f34623539b3c830a
+commit 4c7871cc583b129954602298f34623539b3c830a
+tree 3d1ac7adecca0c9528570b1d7c6a6a42eefc8e72
+parent e629744fc047c645d2c174ad8cc880d416f4f3a4
+author Jessica Wang <jessica@cloud.com> 1333149306 -0700
+committer Jessica Wang <jessica@cloud.com> 1333149306 -0700
+
+    bug 12421: cloudstack 3.0 UI - infrastructure page - cluster section - add an extra property ("state" property) to cluster object from API call. "state" property is not returned by API call. "state" property's value is determined by "managestate" property and "allocation" property returned by API call.
+
+:100644 100644 ab750e454f552f88d8ba2b1ce3f712a14b6c0e62 a3db64c9739f69173b06bbdb1aa5f12f17e14557 M	ui/scripts/system.js
+
+commit e629744fc047c645d2c174ad8cc880d416f4f3a4
+tree bb42b7043bbf1701e4f68ee6ff9747b37fb0902d
+parent a3e945f93e0e2af0d101a5d44bd4a35cc17ff436
+author Jessica Wang <jessica@cloud.com> 1333139496 -0700
+committer Jessica Wang <jessica@cloud.com> 1333145267 -0700
+
+    bug 12421: cloudstack 3.0 UI - detailView widget - fix a bug that updated data returned by API call got lost, so failed to update detailView with updated data.
+
+:100644 100644 f9aeed04391da80636780afc82f71bf98a7b9d8e 0a88d34b03446d9b1c85dfafc822c10c6f26f4ae M	ui/scripts/ui/widgets/detailView.js

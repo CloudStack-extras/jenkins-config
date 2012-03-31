@@ -1,13 +1,13 @@
 Started by timer
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@128899a
 Using strategy: Default
-Last Built Revision: Revision 3d1337111664e328b25373f0618cbb9462e5c616 (origin/master)
+Last Built Revision: Revision a62fb3a1f960b28406b99de10a2b69917aa12365 (origin/master)
 Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@128899a
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
-Commencing build of Revision eb8975670f28c0a1770b2425d8dcb82e0c1ca69a (origin/master)
-Checking out Revision eb8975670f28c0a1770b2425d8dcb82e0c1ca69a (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson3744190147886453611.sh
+Commencing build of Revision a62fb3a1f960b28406b99de10a2b69917aa12365 (origin/master)
+Checking out Revision a62fb3a1f960b28406b99de10a2b69917aa12365 (origin/master)
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson6002483734636925655.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -34,7 +34,7 @@ clean-all:
    [delete] Deleting directory /var/lib/jenkins/workspace/Automated Test Runs/target
 
 BUILD SUCCESSFUL
-Total time: 8 seconds
+Total time: 2 seconds
 Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -48,8 +48,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-26T22:02:16Z
-     [echo] Build number is 3.0.1.2012-03-26T22:02:16Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-03-31T22:01:17Z
+     [echo] Build number is 3.0.1.2012-03-31T22:01:17Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -103,7 +103,7 @@ compile-agent:
 compile-server:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/server/src
-    [javac] Compiling 825 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
+    [javac] Compiling 826 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-server.jar
     [javac] Note: Some input files use or override a deprecated API.
     [javac] Note: Recompile with -Xlint:deprecation for details.
     [javac] Note: Some input files use unchecked or unsafe operations.
@@ -118,30 +118,10 @@ build-server:
      [copy] Copying 23 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/client/conf
      [copy] Copying 54 files to /var/lib/jenkins/workspace/Automated Test Runs/target/db
 
-build-console-viewer:
-    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
-    [javac] Compiling 21 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
-    [javac] /var/lib/jenkins/workspace/Automated Test Runs/console/src/com/cloud/console/ConsoleCanvas.java:1578: warning: [deprecation] KeyEvent(java.awt.Component,int,long,int,int) in java.awt.event.KeyEvent has been deprecated
-    [javac]   		KeyEvent evt = new KeyEvent(this, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 
-    [javac]   		               ^
-    [javac] 1 warning
-    [javac] Compiling 8 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/console-viewer
-      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/VMOpsConsoleApplet.jar
-
-compile-console-common:
-    [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-common.jar
-     [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console/src
-    [javac] Compiling 21 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-common.jar
-    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console/src/com/cloud/console/ConsoleCanvas.java uses or overrides a deprecated API.
-    [javac] Note: Recompile with -Xlint:deprecation for details.
-      [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-common.jar
-
 compile-console-proxy:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
      [echo] Compiling /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src
-    [javac] Compiling 53 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
-    [javac] Note: /var/lib/jenkins/workspace/Automated Test Runs/console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java uses or overrides a deprecated API.
-    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Compiling 50 source files to /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-console-proxy.jar
       [jar] Building jar: /var/lib/jenkins/workspace/Automated Test Runs/target/jar/cloud-console-proxy.jar
 
 copy-console-proxy:
@@ -154,10 +134,9 @@ copy-console-proxy:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/ui
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/css
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/certs
-     [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy
      [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/conf
      [copy] Copying 22 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/images
-     [copy] Copying 1 file to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/applet
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/js
      [copy] Copying 4 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/ui
      [copy] Copying 2 files to /var/lib/jenkins/workspace/Automated Test Runs/dist/console-proxy/css
@@ -367,5 +346,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 2 minutes 30 seconds
+Total time: 1 minute 13 seconds
 Finished: SUCCESS

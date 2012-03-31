@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 3107ad88a5a3633dd9f581bad86ba9f2ff23ece0 and 0b6c9fed5e80d22acef62ad8760e338d7274fa6a
+commit 0b6c9fed5e80d22acef62ad8760e338d7274fa6a
+tree 17f5745ca96d402021fa0e1ef37ba4df4c8db545
+parent 3107ad88a5a3633dd9f581bad86ba9f2ff23ece0
+author Jessica Wang <jessica@cloud.com> 1333149306 -0700
+committer Jessica Wang <jessica@cloud.com> 1333150316 -0700
+
+    bug 12421: cloudstack 3.0 UI - infrastructure page - cluster section - add an extra property ("state" property) to cluster object from API call. "state" property is not returned by API call. "state" property's value is determined by "managestate" property and "allocation" property returned by API call.
+
+:100644 100644 1a9aede675e18f26d43df9c93567a1dd304d49f9 88a4b79a4fbb2fcdc489a2beb9eda845e85a74ec M	ui/scripts/system.js

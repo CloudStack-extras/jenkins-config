@@ -1,0 +1,42 @@
+Changes in branch origin/master, between 0e1a245c56203aef3185ac64010cf40ca158f18c and a62fb3a1f960b28406b99de10a2b69917aa12365
+commit a62fb3a1f960b28406b99de10a2b69917aa12365
+tree ad605d7aff68667f22f8f1bc6a709b78c19bb91c
+parent 74754f0a5625eeddfa4a074a7a98f00adc099fd5
+author Jessica Wang <jessica@cloud.com> 1333153521 -0700
+committer Jessica Wang <jessica@cloud.com> 1333153608 -0700
+
+    cloudstack 3.0 UI - domain page - fix a JS error that appears after a new domain is created - "context[$detailView.data('view-args').section] is undefined"
+
+:100644 100644 ade1fc29416596d49942f337ecbab8d192c26448 a83de030eb9f4f23ca286884c7582bea7b668001 M	ui/scripts/ui/widgets/detailView.js
+
+commit 74754f0a5625eeddfa4a074a7a98f00adc099fd5
+tree c6eb35f5a8ca4c53fd3939297f55c5a1dd6e2d6e
+parent 0b6c9fed5e80d22acef62ad8760e338d7274fa6a
+author Kelven Yang <kelven@cloud.com> 1333150890 -0700
+committer Kelven Yang <kelven@cloud.com> 1333151173 -0700
+
+    bug 14564: Upon management server startup, for detected inactive management server (based on timestamp), perform ping-test before we really mark it as down
+    
+    Reviewed-By: kelven
+
+:100755 100755 54e2b5c701068ad40b8e69c462191d53095d4a91 95c42c1a0e01f692213a14193e964f295b332795 M	server/src/com/cloud/cluster/ClusterManagerImpl.java
+
+commit 0b6c9fed5e80d22acef62ad8760e338d7274fa6a
+tree 17f5745ca96d402021fa0e1ef37ba4df4c8db545
+parent 3107ad88a5a3633dd9f581bad86ba9f2ff23ece0
+author Jessica Wang <jessica@cloud.com> 1333149306 -0700
+committer Jessica Wang <jessica@cloud.com> 1333150316 -0700
+
+    bug 12421: cloudstack 3.0 UI - infrastructure page - cluster section - add an extra property ("state" property) to cluster object from API call. "state" property is not returned by API call. "state" property's value is determined by "managestate" property and "allocation" property returned by API call.
+
+:100644 100644 1a9aede675e18f26d43df9c93567a1dd304d49f9 88a4b79a4fbb2fcdc489a2beb9eda845e85a74ec M	ui/scripts/system.js
+
+commit 3107ad88a5a3633dd9f581bad86ba9f2ff23ece0
+tree 708dbb7cda270465e64f73b3867ecbce2066a74d
+parent 0e1a245c56203aef3185ac64010cf40ca158f18c
+author Brian Federle <brian.federle@citrix.com> 1333145063 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333145063 -0700
+
+    Add missing page + pageSize params to network provider list views
+
+:100644 100644 8e2e532b11959a2d071053298dad45f6abe11e49 1a9aede675e18f26d43df9c93567a1dd304d49f9 M	ui/scripts/system.js

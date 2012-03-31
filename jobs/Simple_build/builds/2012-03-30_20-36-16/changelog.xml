@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 74754f0a5625eeddfa4a074a7a98f00adc099fd5 and a62fb3a1f960b28406b99de10a2b69917aa12365
+commit a62fb3a1f960b28406b99de10a2b69917aa12365
+tree ad605d7aff68667f22f8f1bc6a709b78c19bb91c
+parent 74754f0a5625eeddfa4a074a7a98f00adc099fd5
+author Jessica Wang <jessica@cloud.com> 1333153521 -0700
+committer Jessica Wang <jessica@cloud.com> 1333153608 -0700
+
+    cloudstack 3.0 UI - domain page - fix a JS error that appears after a new domain is created - "context[$detailView.data('view-args').section] is undefined"
+
+:100644 100644 ade1fc29416596d49942f337ecbab8d192c26448 a83de030eb9f4f23ca286884c7582bea7b668001 M	ui/scripts/ui/widgets/detailView.js

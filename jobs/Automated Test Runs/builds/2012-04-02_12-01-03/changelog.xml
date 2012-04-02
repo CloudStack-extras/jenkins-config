@@ -1,0 +1,44 @@
+Changes in branch origin/master, between a62fb3a1f960b28406b99de10a2b69917aa12365 and c8fa379c55d99c48f15298cd6013378722c32c87
+commit c8fa379c55d99c48f15298cd6013378722c32c87
+tree 92ff499375b3a614e1080562757eef38fda2979a
+parent 40d7e124a7af9369adcb92faddc7163feb3c1122
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369901 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369901 +0530
+
+    README file for the tutorial on "Testing with Python"
+
+:000000 100644 0000000000000000000000000000000000000000 650ea05df1c559ebe23ae4e80cb1490cabe7559c A	tools/testClient/demo/README
+
+commit 40d7e124a7af9369adcb92faddc7163feb3c1122
+tree 82aa822f077f1b4e83a629a16fd92ddbfbccbf1e
+parent 9011f6297f7786061d1b977697b60e98354321f2
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369802 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369802 +0530
+
+    Test runs against 3.0 version
+
+:100644 100644 6f74dc6eec714b6da8fde06edacf9e2d9ad04880 12b921099298e981598ecef08c8efd1503838af2 M	tools/testClient/demo/testSshDeployVM.py
+
+commit 9011f6297f7786061d1b977697b60e98354321f2
+tree 9636b50e88e03315c3e942c40bd32c8c01f40c89
+parent 38d6ce4ef27a90354ea72c2366e1be74a7403536
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369699 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369725 +0530
+
+    testClient demo
+    reviewed-by: unittest
+    
+    Added test case that demonstrates a backend verification
+
+:100644 100644 1dcd82f43594e059bd696eff79139ed3fe2a4119 6f74dc6eec714b6da8fde06edacf9e2d9ad04880 M	tools/testClient/demo/testSshDeployVM.py
+
+commit 38d6ce4ef27a90354ea72c2366e1be74a7403536
+tree 620bd991be24e4a0098eede866a7a5848aeaa6c6
+parent a62fb3a1f960b28406b99de10a2b69917aa12365
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369644 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1333369677 +0530
+
+    Correcting the reported failure message
+    reviewed-by: Edison Su
+
+:100644 100644 ae2797c0608ac2b2be96d42a88baf1d57ecf1335 961768740852baffc0f985d1687f1e3de40000ed M	tools/testClient/deployDataCenter.py

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between fc0327677aee40d9c3459600c80b88ba3fe622ce and b100928df84641d3323041936db4e560212d1e98
+commit b100928df84641d3323041936db4e560212d1e98
+tree 87d1df5e3ebb477a4c7683e7adc540b449915f86
+parent fc0327677aee40d9c3459600c80b88ba3fe622ce
+author Brian Federle <brian.federle@citrix.com> 1333493551 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333493551 -0700
+
+    Fix appearance of text in project view tabs
+
+:100644 100644 4d85e7abec029d3f239f4fc42f0e65cf4b5a8edb a487b3a1e8f104ce299f8048dee3c031c22d9b7f M	ui/css/cloudstack3.css

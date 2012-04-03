@@ -1,0 +1,182 @@
+Started by an SCM change
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@128899a
+Using strategy: Default
+Last Built Revision: Revision 892a29c2ef89b92bd4a833bfaf83d922dd15e669 (origin/master)
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@128899a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack
+Commencing build of Revision 2f634c09137ae756af6b46ef3cd61eae9d5b57ac (origin/master)
+Checking out Revision 2f634c09137ae756af6b46ef3cd61eae9d5b57ac (origin/master)
+[build-api-docs-master] $ ant build-apidocs-zip
+Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-04-03T11:53:31Z
+     [echo] Build number is 3.0.1.2012-04-03T11:53:31Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+   [depend] The class com.cloud.utils.events.WeatherChangeEventArgs in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-utils.jar/com/cloud/utils/events/WeatherChangeEventArgs.class is out of date due to com.cloud.utils.events.EventArgs but has not been deleted because its source file could not be determined
+   [depend] Deleted 181 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
+    [javac] Compiling 139 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+   [depend] Deleted 808 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/api/src
+    [javac] Compiling 706 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+   [depend] Deleted 44 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/vmware-base/src
+    [javac] Compiling 34 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareContext.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+   [depend] Deleted 220 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/core/src
+    [javac] Compiling 177 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-core.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-core.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
+   [depend] Deleted 97 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/agent/src
+    [javac] Compiling 42 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-agent.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/agent/src/com/cloud/agent/resource/computing/LibvirtVMDef.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-agent.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
+   [depend] The class com.cloud.cluster.ClusterAsyncExectuionListener in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar/com/cloud/cluster/ClusterAsyncExectuionListener.class is out of date due to com.cloud.cluster.ClusterManager but has not been deleted because its source file could not be determined
+   [depend] Deleted 978 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/server/src
+    [javac] Compiling 826 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-server.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
+     [copy] Copying 23 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/client/conf
+     [copy] Copying 54 files to /var/lib/jenkins/workspace/build-api-docs-master/target/db
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-proxy:
+   [depend] The class com.cloud.consoleproxy.ConsoleProxyViewer in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-console-proxy.jar/com/cloud/consoleproxy/ConsoleProxyViewer.class is out of date due to com.cloud.consoleproxy.AjaxFIFOImageCache but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.consoleproxy.ConsoleProxyClientHandler in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-console-proxy.jar/com/cloud/consoleproxy/ConsoleProxyClientHandler.class is out of date due to com.cloud.consoleproxy.ConsoleProxy but has not been deleted because its source file could not be determined
+   [depend] Deleted 58 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/console-proxy/src
+    [javac] Compiling 50 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-console-proxy.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-console-proxy.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcopy-console-proxy:
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/dist/console-proxy
+     [copy] Copying 3 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/console-proxy/js
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-console-proxy:
+     [copy] Copying 7 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/console-proxy
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-agent:
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/dist/agent/conf
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/dist/agent/conf
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/agent
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
+     [copy] Copying 76 files to /var/lib/jenkins/workspace/build-api-docs-master/target/scripts
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
+     [copy] Copying 101 files to /var/lib/jenkins/workspace/build-api-docs-master/target/ui
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+   [depend] Deleted 28 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/ovm/src
+    [javac] Compiling 18 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-ovm.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/ovm/src/com/cloud/ovm/object/OvmStoragePool.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-ovm.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ovm:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-package:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm:
+      [zip] Updating zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/systemvm.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-systemvm-patch:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch/usr/sbin
+     [copy] Copying 75 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch/usr/sbin
+      [tar] Building tar: /var/lib/jenkins/workspace/build-api-docs-master/dist/patch.tar
+     [gzip] Building: /var/lib/jenkins/workspace/build-api-docs-master/dist/cloud-scripts.tgz
+   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/patch.tar
+   [delete] Deleting directory /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm-iso:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-opensource:
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/build-api-docs-master/dist
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/build-api-docs-master/target/jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-war-oss:
+      [war] Updating war: /var/lib/jenkins/workspace/build-api-docs-master/dist/client/client.war
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-test:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-testclient:
+     [echo] src is /var/lib/jenkins/workspace/build-api-docs-master/test
+   [depend] Deleted 49 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/test/src
+    [javac] Compiling 37 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-test.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-test.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-usage:
+   [depend] Deleted 31 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/usage/src
+    [javac] Compiling 16 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-usage.jar
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-usage.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent-simulator:
+   [depend] Deleted 50 out of date files in 0 seconds
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/agent-simulator/src
+    [javac] Compiling 47 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-agent-simulator.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/agent-simulator/src/com/cloud/resource/SimulatorDiscoverer.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-agent-simulator.jar
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/client/conf
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all-with-simulator:
+      [war] Updating war: /var/lib/jenkins/workspace/build-api-docs-master/dist/client/client.war
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
+     [echo] build-apidocs
+     [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-master/dist/commands.xml
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
+   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.1.zip
+      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.1.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 2 minutes 2 seconds
+Archiving artifacts
+Finished: SUCCESS

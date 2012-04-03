@@ -1,0 +1,20 @@
+Changes in branch origin/master, between fdf5cc420cb67c43362e4f7ea2e66bf1d7f76b96 and 892a29c2ef89b92bd4a833bfaf83d922dd15e669
+commit 892a29c2ef89b92bd4a833bfaf83d922dd15e669
+tree 64c91c9165196b2183ad55bf80db56ef2d3986b8
+parent 3aed5ee8305c811d6adbd8f56912b99fe2cc4cf7
+author Jessica Wang <jessica@cloud.com> 1333411408 -0700
+committer Jessica Wang <jessica@cloud.com> 1333411437 -0700
+
+    bug 14585: cloudstack 3.0 UI - systemVM page - after destroy action completes, close detailView and remove it from listView.
+
+:100644 100644 88a4b79a4fbb2fcdc489a2beb9eda845e85a74ec 3b09aeb8d7a01e9dab355e50576e325100b614b8 M	ui/scripts/system.js
+
+commit 3aed5ee8305c811d6adbd8f56912b99fe2cc4cf7
+tree d8773f1d6761a2dc8a09afd1dc224aad4f1c2e9c
+parent fdf5cc420cb67c43362e4f7ea2e66bf1d7f76b96
+author Jessica Wang <jessica@cloud.com> 1333409030 -0700
+committer Jessica Wang <jessica@cloud.com> 1333409593 -0700
+
+    bug 14586: cloudstack 3.0 UI - fix a bug that Download Template action didn't pop up a dialog box showing download URL.
+
+:100644 100644 a83de030eb9f4f23ca286884c7582bea7b668001 4e6033f80f776387022b2ced459ff14904f40ba4 M	ui/scripts/ui/widgets/detailView.js

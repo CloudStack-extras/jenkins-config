@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 1e0a5a9055b7da40dd42d8a530ae17f2bb67a6d5 and d999e2e70c91bdf014e26988aec5185d3268ae86
+commit d999e2e70c91bdf014e26988aec5185d3268ae86
+tree 05637d3b1ca50be89007c551974a0f604e589e2e
+parent 1e0a5a9055b7da40dd42d8a530ae17f2bb67a6d5
+author Brian Federle <brian.federle@citrix.com> 1333474694 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333474694 -0700
+
+    CSS cleanup
+
+:100644 100644 7bdfe6d607001a30425854f5397c3a46ec95fdec 4d85e7abec029d3f239f4fc42f0e65cf4b5a8edb M	ui/css/cloudstack3.css

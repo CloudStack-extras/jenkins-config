@@ -1,0 +1,22 @@
+Changes in branch origin/master, between db610a7e7a7f9768e5c3a0c9f3eda6b5016c262d and 5e82bfc13d06cdfc67e41f3a9aa183a859c57a5f
+commit 5e82bfc13d06cdfc67e41f3a9aa183a859c57a5f
+tree cb74490463cd79872892d60ae46329a19650200c
+parent 6263ae9944f0ba6733a675b607fae3d9e2e0bc6f
+author Brian Federle <brian.federle@citrix.com> 1333489372 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333489372 -0700
+
+    Test update detail view data via async action
+
+:100644 100644 abc49599357a363fd303bb44c552b071b4f4518c f1361f93d72cb112cb5131f1abb5f54ca3407dd1 M	ui/tests/test.detailView.js
+
+commit 6263ae9944f0ba6733a675b607fae3d9e2e0bc6f
+tree 767d442aaf8a18d71af371be8790ce0fb0df9647
+parent db610a7e7a7f9768e5c3a0c9f3eda6b5016c262d
+author Brian Federle <brian.federle@citrix.com> 1333489354 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333489354 -0700
+
+    Detail view UI fix
+    
+    Fix case where detail view data does not update, after async action
+
+:100644 100644 a0dd8604dbda2b4a5c6400cc41a9ae71910357a9 fdc9183b2abad9d1eb4d950b157ed7032cdf2a45 M	ui/scripts/ui/widgets/detailView.js

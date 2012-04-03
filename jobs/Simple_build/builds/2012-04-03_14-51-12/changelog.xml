@@ -1,0 +1,14 @@
+Changes in branch origin/master, between a777b6212d9e70e8e7635b6e2bc28f8c459c2852 and 297fbc171cd12d778b9ff12e37c90269d660daf8
+commit 297fbc171cd12d778b9ff12e37c90269d660daf8
+tree de6f69c8cb2cec7ad20e6325ce5260e04c8ebfb3
+parent a777b6212d9e70e8e7635b6e2bc28f8c459c2852
+author Brian Federle <brian.federle@citrix.com> 1333478661 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333478661 -0700
+
+    bug 14569
+    
+    Always show 'change service' action, even when VM is running. When VM
+    is running, show a popup indicating user to stop VM, and do not
+    perform action.
+
+:100644 100644 61c7f1c7d3f9f40e22a4486072df41b3cc4834cb a829853778e716942cccda92c43723b9e009a855 M	ui/scripts/instances.js

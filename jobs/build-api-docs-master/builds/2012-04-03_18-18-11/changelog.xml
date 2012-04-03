@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 5e82bfc13d06cdfc67e41f3a9aa183a859c57a5f and 551020609d2cbf6aba288029fc40801c532d198a
+commit 551020609d2cbf6aba288029fc40801c532d198a
+tree 279d984725e63aadb13a91f7e3f6684bb02388a4
+parent 5e82bfc13d06cdfc67e41f3a9aa183a859c57a5f
+author Brian Federle <brian.federle@citrix.com> 1333491259 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333491259 -0700
+
+    Detail view UI test: test pre-action context
+
+:100644 100644 f1361f93d72cb112cb5131f1abb5f54ca3407dd1 555334ab68b1a8b45b6c7cc8406e32c2da767d27 M	ui/tests/test.detailView.js

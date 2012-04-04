@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 38f43564e016f3b01da540786e3356b30bf3e3b7 and 25e85e177ede708105549dcd8a0eb10f2c12b49e
+commit 25e85e177ede708105549dcd8a0eb10f2c12b49e
+tree b687d2879dccd07e2fb21d2532c98982c0e0ba09
+parent 38f43564e016f3b01da540786e3356b30bf3e3b7
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333569235 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333569302 -0700
+
+    bug 14589: don't accept empty username/firstname/lastname in update/createUser apis
+
+:100755 100755 40b16ae565d7ae1a3cbfc3b5ba393066e9060ba9 fd9c9c2099efede39c908443dca3289ba8555fc1 M	server/src/com/cloud/user/AccountManagerImpl.java

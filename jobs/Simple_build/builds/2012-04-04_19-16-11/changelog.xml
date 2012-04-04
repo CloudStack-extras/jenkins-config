@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 68f9e6f4ead496560a63953d21637aad04729ef6 and 1dc99a17eb5b310df34392de639bd49daf7c8d66
+commit 1dc99a17eb5b310df34392de639bd49daf7c8d66
+tree 7369116fe47863ce20121fafc52a9f01d1ea357b
+parent 68f9e6f4ead496560a63953d21637aad04729ef6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333581086 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333581231 -0700
+
+    Fixed unittest
+
+:100755 100755 6c6bcae5081d5c79208b45e1c66a67f6506e0997 0d525406f5c8b5b74b294f71187622d594952f8a M	server/test/com/cloud/cluster/CheckPointManagerTest.java

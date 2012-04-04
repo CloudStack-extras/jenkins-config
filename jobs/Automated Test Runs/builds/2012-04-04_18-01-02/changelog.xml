@@ -1,0 +1,25 @@
+Changes in branch origin/master, between 38f43564e016f3b01da540786e3356b30bf3e3b7 and ccdca396d31f3d7760523712ced2109323f9b638
+commit ccdca396d31f3d7760523712ced2109323f9b638
+tree 788c5b11b2c3d7ad3509e9e32328952ce9293d33
+parent 25e85e177ede708105549dcd8a0eb10f2c12b49e
+author Brian Federle <brian.federle@citrix.com> 1333576358 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333576358 -0700
+
+    bug 14603
+    
+    -Disable display of public traffic icon for basic zone, non-EIP/ELB
+    
+    -Show public traffic icon as 'required' for basic zone in EIP/ELB
+
+:100644 100644 a487b3a1e8f104ce299f8048dee3c031c22d9b7f ecb499ec6740835c2f899d2015b589f6562187f0 M	ui/css/cloudstack3.css
+:100644 100644 969ed1dfaa2aaef85cf08297b48c90e56a7aef59 7f35feea6faa9e6fdeb4090042f66bcfc6a58348 M	ui/scripts/zoneWizard.js
+
+commit 25e85e177ede708105549dcd8a0eb10f2c12b49e
+tree b687d2879dccd07e2fb21d2532c98982c0e0ba09
+parent 38f43564e016f3b01da540786e3356b30bf3e3b7
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333569235 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333569302 -0700
+
+    bug 14589: don't accept empty username/firstname/lastname in update/createUser apis
+
+:100755 100755 40b16ae565d7ae1a3cbfc3b5ba393066e9060ba9 fd9c9c2099efede39c908443dca3289ba8555fc1 M	server/src/com/cloud/user/AccountManagerImpl.java

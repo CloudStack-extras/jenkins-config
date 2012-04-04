@@ -1,0 +1,69 @@
+Started by an SCM change
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@128899a
+Using strategy: Default
+Last Built Revision: Revision 7dfe2ae9c77156ea2a18ba1d5593938482457445 (origin/3.0.x)
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@128899a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack
+Commencing build of Revision 07778f8db372ca07f3804c0dd76c2ff6311042ba (origin/3.0.x)
+Checking out Revision 07778f8db372ca07f3804c0dd76c2ff6311042ba (origin/3.0.x)
+Cleaning workspace
+FATAL: Could not checkout null with start point 07778f8db372ca07f3804c0dd76c2ff6311042ba
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Could not checkout null with start point 07778f8db372ca07f3804c0dd76c2ff6311042ba
+	at hudson.plugins.git.GitAPI.checkoutBranch(GitAPI.java:863)
+	at hudson.plugins.git.GitSCM$4.invoke(GitSCM.java:1192)
+	at hudson.plugins.git.GitSCM$4.invoke(GitSCM.java:1176)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1176)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1195)
+	at hudson.model.AbstractBuild$AbstractRunner.checkout(AbstractBuild.java:573)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:462)
+	at hudson.model.Run.run(Run.java:1404)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)
+Caused by: hudson.plugins.git.GitException: Error performing command: git checkout -f 07778f8db372ca07f3804c0dd76c2ff6311042ba
+Command "git checkout -f 07778f8db372ca07f3804c0dd76c2ff6311042ba" returned status code 1: error: unable to unlink old 'tools/testClient/testcase/P1-tests/README' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/__init__.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_accounts.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_blocker_bugs.py' (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_configs.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_limits.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_resources.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_usage.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_projects.py (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_resource_limits.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_routers.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_security_groups.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_snapshots.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_templates.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_usage.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_volumes.py' (Permission denied)
+HEAD is now at 07778f8... Code cleanup for createVlanRange api
+
+	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:776)
+	at hudson.plugins.git.GitAPI.launchCommand(GitAPI.java:741)
+	at hudson.plugins.git.GitAPI.launchCommand(GitAPI.java:751)
+	at hudson.plugins.git.GitAPI.checkoutBranch(GitAPI.java:850)
+	... 12 more
+Caused by: hudson.plugins.git.GitException: Command "git checkout -f 07778f8db372ca07f3804c0dd76c2ff6311042ba" returned status code 1: error: unable to unlink old 'tools/testClient/testcase/P1-tests/README' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/__init__.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_accounts.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_blocker_bugs.py' (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_configs.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_limits.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_resources.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_project_usage.py (Permission denied)
+error: unable to create file tools/testClient/testcase/P1-tests/test_projects.py (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_resource_limits.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_routers.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_security_groups.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_snapshots.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_templates.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_usage.py' (Permission denied)
+error: unable to unlink old 'tools/testClient/testcase/P1-tests/test_volumes.py' (Permission denied)
+HEAD is now at 07778f8... Code cleanup for createVlanRange api
+
+	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:771)
+	... 15 more

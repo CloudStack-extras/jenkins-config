@@ -1,0 +1,24 @@
+Changes in branch origin/master, between 0194ca1954891ad947371c81d3e5ce5699c44c4f and c112088fc5c83887e633af5e5b0dc86ec81158ff
+commit c112088fc5c83887e633af5e5b0dc86ec81158ff
+tree 5a679c81e83585981dd16dfd5fda943dda6f445c
+parent 93a5b7c0bc43f35127ced52ec220cf6a437cdebf
+author Kelven Yang <kelven@cloud.com> 1333583571 -0700
+committer Kelven Yang <kelven@cloud.com> 1333663599 -0700
+
+    bug 14618: Protect servlet container from shutting down on unexpected runtime exceptions
+    
+    Reviewed-By: Kelven
+
+:100644 100644 40947465d7225fb83c04d8aada5dd4748ae5a2d4 b1b281484ce894645c6b2932cda5640cb8b7856e M	server/src/com/cloud/cluster/ClusterServiceServletContainer.java
+
+commit 93a5b7c0bc43f35127ced52ec220cf6a437cdebf
+tree 74cea8efa84b0df4c185b7f5e30df53ae4904a33
+parent 0194ca1954891ad947371c81d3e5ce5699c44c4f
+author Kelven Yang <kelven@cloud.com> 1333487055 -0700
+committer Kelven Yang <kelven@cloud.com> 1333663585 -0700
+
+    Bug 14301: Perform socket-level only management server pings
+    
+    Reviewed-By: kelven
+
+:100755 100755 0926b6338d9e592cd96fc8804941c9f8e7346086 56e9bccf9f4b41b529a27ddbe15bb84cdb24e207 M	server/src/com/cloud/cluster/ClusterManagerImpl.java

@@ -1,0 +1,47 @@
+Changes in branch origin/master, between ccdca396d31f3d7760523712ced2109323f9b638 and 984c4bbdb7d217dd08f8d1b0efe84286138c78c8
+commit 984c4bbdb7d217dd08f8d1b0efe84286138c78c8
+tree 559797aa884a0c25eaf60aff84913a0ab2d27ce4
+parent 1dc99a17eb5b310df34392de639bd49daf7c8d66
+author Jessica Wang <jessica@cloud.com> 1333582442 -0700
+committer Jessica Wang <jessica@cloud.com> 1333582590 -0700
+
+    cloudstack 3.0 UI - system service offering page - (1) add System VM Type dropdown in Add Service Offering dialog.  (2) add System VM Type in detailView.
+
+:100644 100644 502565170485700fe31f6c709d1729e703b1f085 717809deb4f69d8a296d6bc9109bd7258db35f0d M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 de4ce604f11548985c47bd4919767baf6e9c87e0 bc4ad3bed94e5323c991d069e09eb57f4a0465bc M	ui/index.jsp
+:100644 100644 3c37ec9e61fbb1e7e4e13a337ef9b120d7506c51 a605b52678118f35665f6be60a430374a531206a M	ui/scripts/configuration.js
+
+commit 1dc99a17eb5b310df34392de639bd49daf7c8d66
+tree 7369116fe47863ce20121fafc52a9f01d1ea357b
+parent 68f9e6f4ead496560a63953d21637aad04729ef6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333581086 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333581231 -0700
+
+    Fixed unittest
+
+:100755 100755 6c6bcae5081d5c79208b45e1c66a67f6506e0997 0d525406f5c8b5b74b294f71187622d594952f8a M	server/test/com/cloud/cluster/CheckPointManagerTest.java
+
+commit 68f9e6f4ead496560a63953d21637aad04729ef6
+tree 19b68e55a196011e3e594a3473288899a20c4353
+parent c0130a5c41b6d0a6aa160029db96fcbdf35a29b5
+author Jessica Wang <jessica@cloud.com> 1333576993 -0700
+committer Jessica Wang <jessica@cloud.com> 1333577114 -0700
+
+    bug 14591: cloudstack 3.0 UI - remove Change Service option from router page.
+
+:100644 100644 c0ed29f95b4798115e091665da1623d4084b95df 09250a01d4b140f766b11b25ae87a6eb82464cc8 M	ui/scripts/system.js
+
+commit c0130a5c41b6d0a6aa160029db96fcbdf35a29b5
+tree da0c72e11f9359eea8344ce1ef7e00c49ff6b39d
+parent ccdca396d31f3d7760523712ced2109323f9b638
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333576946 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333576984 -0700
+
+    Code cleanup for createVlanRange api
+
+:100644 100644 53bfe2f3e12ad28d1de385064c9bdcc16f7ce75e 3432ecf79611274ee2768196bc7802d29cc62e2d M	api/src/com/cloud/api/commands/CreateVlanIpRangeCmd.java
+:100755 100755 5074c25047e8cf975db320c2975cb19d3f65bf7a a03cf9eec870b73cbf19a10513529455185d44b5 M	server/src/com/cloud/baremetal/BareMetalVmManagerImpl.java
+:100644 100644 dbf6d6cdce01bb3efcc3626f8660d0ce0289e1a3 ad2e42f8e1f357d265504a5d8356b4d849eb5297 M	server/src/com/cloud/configuration/ConfigurationManager.java
+:100755 100755 3e28128f9d4a5f411ca0547ede34a65248e18512 e523b41f69fca21296e800b683821019f2121777 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 c2b0a4f2038751a5f111108ac48c6f113a3bd3b8 9642ca8fcd1e23af9558be6ffd096965fedfbb03 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 6964f985dc2e5364ac583ef8287ed49f484fbee9 a515dd984570382db19783704a43ae542010dcce M	server/src/com/cloud/vm/UserVmManagerImpl.java

@@ -1,0 +1,15 @@
+Changes in branch origin/master, between c112088fc5c83887e633af5e5b0dc86ec81158ff and 711551e34fd505ab28e08ca9cc6fe8fabe7a0f5d
+commit 711551e34fd505ab28e08ca9cc6fe8fabe7a0f5d
+tree 442fd214943e0e7d13b271fd881f5961b21d52e8
+parent c112088fc5c83887e633af5e5b0dc86ec81158ff
+author Brian Federle <brian.federle@citrix.com> 1333665778 -0700
+committer Brian Federle <brian.federle@citrix.com> 1333665848 -0700
+
+    UI: detail view
+    
+    Support dynamically updating context on detail view load, to support cases
+    where certain context items are required by other elements loaded, but may not
+    be present in the browser history.
+
+:100644 100644 bfc67f61f667901e434b8f845c8ade3796d0d71f acbd19ebf88e141909bf99f595dc224a9bd8240c M	ui/scripts/ui/widgets/detailView.js
+:100644 100644 1d098a34916db64ff0b7b39e76679af1257a15b4 413e28dac203c410a4371f376ae92694b0a2a39c M	ui/tests/test.detailView.js

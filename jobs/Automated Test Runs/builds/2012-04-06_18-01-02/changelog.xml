@@ -1,0 +1,111 @@
+Changes in branch origin/master, between c07cca1af63cdec53331d94829946f2a3ad8d365 and a0171b9874bd4bcbb64484955ebf4b4e72da5f2c
+commit a0171b9874bd4bcbb64484955ebf4b4e72da5f2c
+tree d8a2db0ccb915a98594f9ce24e452cbee853359f
+parent 6ff3dc3951c6e3798bc90cac682adb4c72a7e626
+author David Nalley <david@gnsa.us> 1333749117 -0400
+committer David Nalley <david@gnsa.us> 1333749117 -0400
+
+    changing lots of line endings
+
+:100644 100644 3b0380a4458a7b19f9ecc519b97929ef8a9ecbbd bb68d98a96dc4d0af0b73decb2550180809a25c9 M	core/src/com/cloud/agent/IAgentControl.java
+:100644 100644 efe5878c93c80f54bf2137178f972121899cf931 775eff714370b7d065c24560fc7aec3b8d0e65f5 M	core/src/com/cloud/agent/IAgentControlListener.java
+:100644 100644 9d706c61aebd660de1b9db4f09d8d270f2e7ff31 040f346c240ac2dc22c8014514f0097e28549d72 M	core/src/com/cloud/alert/AlertAdapter.java
+:100755 100755 11aad6b8421ef408b9572d02f7159fa9174af657 546d214572157960f31d3193b85d89b24d8d5324 M	core/src/com/cloud/alert/AlertVO.java
+:100644 100644 48bb8cb71d2f30ad880a6728fcd91da170ee0f9c b7a33f30c58b984fb656d3800756dba0aab76f75 M	core/src/com/cloud/async/AsyncJobVO.java
+:100644 100644 085d953676a802f15d46304e6acbd3405d5bf4c1 47f09084e44648ff446746c81586ec116a9e32ac M	core/src/com/cloud/async/SyncQueueItemVO.java
+:100644 100644 5f21a304362925457bb2820ba3bdbf4a80aec984 e855b7ddc201a8f76dba085d1cacb9920b8d52dc M	core/src/com/cloud/async/SyncQueueVO.java
+:100755 100755 a62325a826683adf1be21c24704a1d1966cc196b 4bc721d7cb964edc8d862ef21a0e1bacdec03008 M	core/src/com/cloud/capacity/CapacityVO.java
+:100644 100644 e1aa68cacd2eb7921a828b8fe129fcd7fcb29dcf 2f144f2f7c15101952bd28c07cc2189b06c0806e M	core/src/com/cloud/configuration/ConfigurationVO.java
+:100644 100644 0363f96c1652841ebf5d595c6a87b7370714d422 7e11435d2c7f70244b1080635feb9fb91d1ffd93 M	core/src/com/cloud/consoleproxy/ConsoleProxyAllocator.java
+:100644 100644 775afa8310486370b0767b500bbd6c6d08fa4da3 0fbc502f7d2141aaf4cffba75a1d88cdf3361d7f M	core/src/com/cloud/event/EventVO.java
+:100644 100644 05de20a8ec4373a47af0f855f8b3bd067c08df2e 1439226b550d7b15652cc6590bd039ee8e7f24de M	core/src/com/cloud/event/UsageEventVO.java
+:100644 100644 e1f68982879e32b0b1b31ddcebd530eea7ea7d1b fc532af4f87673d920f3eac6c0a340eef6ba9aa5 M	core/src/com/cloud/event/dao/EventDao.java
+:100644 100644 218d0c52472daad2567069a69f924cc0d4362672 722e5eb64d0b20fd57b7f99e4d579815617f36be M	core/src/com/cloud/event/dao/EventDaoImpl.java
+:100644 100644 8a4079a180f382c81455968cf24bc2457e38ff6d 80513d846ea80b95737bb9fd4d38ffe41e7c803a M	core/src/com/cloud/event/dao/UsageEventDao.java
+:100644 100644 cb2d87c4773b8d7f197e8f379dc8803bc9d99ba0 37b99a3b74cbf6bb0186e28eb3e52df80f666abf M	core/src/com/cloud/event/dao/UsageEventDaoImpl.java
+:100644 100644 7658ac2a4d46074956aedf822d5a8a0e4b8022f1 c71351b285c6fbdea52cd1d20bd33bc0da9e34a5 M	core/src/com/cloud/exception/AgentControlChannelException.java
+:100644 100644 ec1b0f568dcc47f254b628efeba2a57df59811d7 600fb6dc5af78c9451e47406921967d66468c9d2 M	core/src/com/cloud/host/HostTagVO.java
+:100755 100755 38c8996431fd50bda640c7d8f954d34bdfebb8c4 e339c20a3aeec3a24e3ac3bc605299c07a2f5081 M	core/src/com/cloud/host/HostVO.java
+:100644 100644 7084d8adb671589cd919f2a85e795f9458b530a6 04dc1d952f88b618a56514e9c78d9684d03d95d7 M	core/src/com/cloud/hypervisor/HypervisorCapabilitiesVO.java
+:100755 100755 bf2d4aeac01fa245b5f938edcf20cfc28e7ab172 67c0e6fffa383038b58098f08174a553f0f0df09 M	core/src/com/cloud/hypervisor/vmware/manager/VmwareManager.java
+:100644 100644 6e51989139f5bcdc1f1ba7c597bef74b403dca4e b2372915f7e82ae810fa345321f7dd18665f1e28 M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManager.java
+:100644 100644 3da2bb84ada0df386a42fce17d415fb8018688a6 7f5d6b8c9c75cf1d7764d8f85b44e57b9d1080fb M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java
+:100644 100644 6fd62f9f3ac52d100d772fb77b3a299d27afa512 9f4de50b9fda3d7bd1d865477bbb501086a8a55a M	core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageMount.java
+:100755 100755 1d75711d27a0799f7b8bd915944daaaf242eb212 e85e9ca7a3a6b0b94b6d8408744b67f09c44ff57 M	core/src/com/cloud/hypervisor/vmware/resource/SshHelper.java
+:100755 100755 d97c8e2b1e7fc8b83a862853cbd887d24f0bf19d f82afb8d3f045c1100870f0eae1b22a8cbbbac4e M	core/src/com/cloud/hypervisor/vmware/resource/VmwareContextFactory.java
+:100755 100755 3471eed6c6f0bc5c76182ff57ffec3ad750bee20 7bbb6e12f84f8b69abccff3ff2ebeb4fefa7df8e M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java
+:100644 100644 85ec22ab6477cefab3c9e7e8973419aaf02c0bb9 ae2c5519cf96760106e6477b8f41e701b1a15570 M	core/src/com/cloud/info/ConsoleProxyConnectionInfo.java
+:100644 100644 12ab0a909f82326b57e19f3da8b7e408ad4dab61 52155b7c5aed17eb45d50592bb8523c0ad915eb5 M	core/src/com/cloud/info/ConsoleProxyInfo.java
+:100644 100644 89128b8bd546145891d0b4d210e31a9b11cbc5fb c89f33cdafecced34f353651143a41ba391ddfd2 M	core/src/com/cloud/info/ConsoleProxyLoadInfo.java
+:100644 100644 02cc51879b52aea2773abbac986077602bff0aa2 a9a64f0453c6f5083bfef89fdb2356fec1ffe872 M	core/src/com/cloud/info/ConsoleProxyStatus.java
+:100644 100644 947bcdb79e782c4ae790368bfb2b013f66de1b45 26b6e7e1f036577abdd871af33f3849c3ba00ee3 M	core/src/com/cloud/info/RunningHostCountInfo.java
+:100644 100644 5471a496e5198fbdca32b4deb8128a81d432e85b 7da9e2a3097b5bedc728fa86e78d6015f24bf152 M	core/src/com/cloud/info/RunningHostInfoAgregator.java
+:100644 100644 8a7b778bf0ce1ef25c8b337a18607200d563f21e 95c30576a116f4c276e3f39597c1414f827de984 M	core/src/com/cloud/info/SecStorageVmLoadInfo.java
+:100644 100644 7f1992b5f277ff57093d89ff8962663f7b3c9a45 dc996ba0bf66b7ebc1ae78660639b844bc7ac703 M	core/src/com/cloud/network/VpnUserVO.java
+:100755 100755 a4ab07356960d95fe7c75d032775ac315a3a00f2 febfc254439c4db40f57b673c13e15dbf274eb04 M	core/src/com/cloud/resource/ResourceListener.java
+:100755 100755 67746316a8344a242e2c18d5284607d2b2d2878b 0641cf2b5de1864450dd76c6357a34f87836e045 M	core/src/com/cloud/resource/UnableDeleteHostException.java
+:100644 100644 fcebaeee76b7563eb24aa34ab15cfb63e71400e7 d3954586ce2785972699fd54b5b868fd15ab80f1 M	core/src/com/cloud/serializer/GsonHelper.java
+:100644 100644 127d31b4e25814d03888e5c0458189bd2f99e8ca 8c6d902387405b299da6b4b53e805efc326ba314 M	core/src/com/cloud/serializer/SerializerHelper.java
+:100755 100755 ef4fa9517e0e751b47896be8d5f33c55a752b5bc a58f363a18ffc7e35d5980e160e3d5e652f1c1ea M	core/src/com/cloud/storage/DiskOfferingVO.java
+:100644 100644 75cf59521b0548884e62d9990fdbfb5d4fab7471 a367d451009a9d98b68baced5b156ae19c1d5032 M	core/src/com/cloud/storage/LaunchPermissionVO.java
+:100644 100644 4b2f0b29073867cebd80032e092d248b8e383372 4a42ad35e7628f279082ba317869737d0cfa7b91 M	core/src/com/cloud/storage/SnapshotPolicyVO.java
+:100644 100644 ffcc02897b512770cc06628f625ed47f2bf17e72 96c6252c89fe35deb21db8ab3ba5874c9ce48721 M	core/src/com/cloud/storage/SnapshotScheduleVO.java
+:100644 100644 fd66cb47c985d298b562504e3383fdae538369ca 24a5c9e88d77ef3ddd40973a7e84a3a87c5dc523 M	core/src/com/cloud/storage/SnapshotVO.java
+:100644 100644 d2e3cd7f9a0dd83d95edf01f83d42263c63bde96 ea6672eaec814004abc08787f8f6764b8dea8fad M	core/src/com/cloud/storage/SwiftVO.java
+:100644 100644 99e3880c5b2af820306d498a5faefad3ba85a9ae 312dcdbc14e816c077c4cb4ee5740a18392aad8b M	core/src/com/cloud/storage/VMTemplateDetailVO.java
+:100755 100755 fceb4d5f20caedc79963eefc2eb7abc90490c341 25e015a727d7207cc47741199e74cd11386fc694 M	core/src/com/cloud/storage/VMTemplateHostVO.java
+:100644 100644 e8398934b096d60c241cb91795413b09d3450a1c 37fe15a69ee744dea3cbfc1d65069f4349552b3f M	core/src/com/cloud/storage/VMTemplateStoragePoolVO.java
+:100755 100755 85d2453594a1540d10fc3e1e6cebc165fa0c30c1 921bdffbadd17fa3ab01d8f87c4c5e45474f2687 M	core/src/com/cloud/storage/VMTemplateSwiftVO.java
+:100755 100755 fae4cb8d4bb1a2f4bde5fa0132f1a6fe8831a077 ee14732079155c9c680c0f03de1466e92e9dca14 M	core/src/com/cloud/storage/VMTemplateVO.java
+:100644 100644 4c00852cdfe55b272d3eb743801c0ccb480a1cf3 d49dee96a04b9fbfc7d2e65ff91defeffb250033 M	core/src/com/cloud/storage/template/VmdkProcessor.java
+:100644 100644 1cb2e2ab2277a8c50b630a7ba715127818dd296a 3ecf9b26de332dec5f0f92adf7a7411d9fdb2721 M	core/src/com/cloud/user/AccountVO.java
+:100644 100644 193db3f60b287175f2ff1c0ed424a9d2b89acc1c 4211f62bf4c68fa49a16204c8a81eb6432cb85bf M	core/src/com/cloud/user/UserAccountVO.java
+:100644 100644 77e0286915a9101de73537815a891dccbfa229e1 d8c36b648a847e815d503c9da93b1c8e0d2a8a4d M	core/src/com/cloud/user/UserStatisticsVO.java
+:100644 100644 4e78ee7eebae0b6b11263b619ed96aa167a66579 7bf2076b63b55296d3ae4f35cddf2e71c544f261 M	core/src/com/cloud/user/UserStatsLogVO.java
+:100644 100644 2a3d246a5bdda6cbfdb4ef3958eb5f219a78a26d 9f2847a23924f56331d7b470485dcc06b3cdf296 M	core/src/com/cloud/vm/ConsoleProxy.java
+:100644 100644 554f61632d5d87d4e95540d3a71261c4aeddbb67 ba69f4ff8f81fc2b8fc6f94e3ae4db81d002e278 M	core/src/com/cloud/vm/SecondaryStorageVm.java
+:100644 100644 f9c57f5931eb8d685f3fb84634b9f2d387d541bd 8346719826d056fc74e8bbd7c25f62da286a6942 M	core/src/com/cloud/vm/VMInstanceVO.java
+
+commit 6ff3dc3951c6e3798bc90cac682adb4c72a7e626
+tree 9a00fb5917a6a87bfd2bb22e61b1bd4396c451c3
+parent 2d1a6b0b35be7721783fe89e96c3e344acede048
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333745148 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333745209 -0700
+
+    Return password as a result of startVm command if the vm was originally deployed with startVm=false parameter
+
+:100755 100755 77ab07fb8a246e0136a3642a7acb385d55903af2 0722deb0850ae545b5c50f1df379cd7b89804bc5 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 2d1a6b0b35be7721783fe89e96c3e344acede048
+tree 4ee107c9e4ed37627650437071264afd8a53c333
+parent b646c827248a79de7edafb83bfcb870b48f816ba
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333670638 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1333737048 -0700
+
+    bug 14615: deployVm can work 2 diff ways now: 1) Default way - create and start the vm. 2) Create the vm without starting it. Note that vm's volumes stay in Allocated state -not created on the backend till the point where vm starts
+    status 14615: resolved fixed
+
+:100755 100755 f4f54499aa4edb273d1fed57cb908f3bb2c23ade f0466b765f52841cfc3770ebba60b91745701f04 M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 86a2f850aaba339a2b96a32f3323a841425504af 5c684f8618620f1d5f13e7d29fdcf333c0103c72 M	api/src/com/cloud/api/commands/DeployVMCmd.java
+:100644 100644 caf3e9445ede06e4171a36b71598ec2e8bc2b693 6fb3e509870ab00d830f2e362aa14a82ecf2598b M	api/src/com/cloud/api/commands/StartVMCmd.java
+:100755 100755 af5872fc3bcc9b3cdba7b6d1b2836bfddb347ad7 8b8eb205b36e56df0227db1136037c7cd90d1c96 M	api/src/com/cloud/vm/UserVmService.java
+:100755 100755 7c65065c924722a88761d0188f2ac81c150a121e bc5026b37dc130f6568d729b2f1d11665b802d02 M	core/src/com/cloud/vm/UserVmVO.java
+:100755 100755 a03cf9eec870b73cbf19a10513529455185d44b5 2677e5ce38433f46b705d0252f14ea0ea1194435 M	server/src/com/cloud/baremetal/BareMetalVmManagerImpl.java
+:100755 100755 f9dfd6a8a233cc2129378201eae03ebe9e38c455 35254cb8a3bd795a24433c43d0e8dc50170f4072 M	server/src/com/cloud/storage/StorageManagerImpl.java
+:100644 100644 469597366f6395fae7b015cc23420b692e297d49 2eafb14ca21f437f57598d81883d360aa0fc27a5 M	server/src/com/cloud/vm/ItWorkDao.java
+:100755 100755 619a62f24739e74cb0e46d94e7438f8744d39dd6 864c589df415c86fd5d237c857a86678cefd14ef M	server/src/com/cloud/vm/UserVmManager.java
+:100755 100755 a515dd984570382db19783704a43ae542010dcce 77ab07fb8a246e0136a3642a7acb385d55903af2 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100755 100755 b0afd18344f44c8f294f69af16569904e4ec6ebd 7bab3dc5d99180eb52f631bd455ad8b22c6f46ac M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+:100644 100644 e1b244e9139ee93e75254bc5653c6c5588ed3d96 1ba56480256cc2afff107bc652af94a244c29b5d M	server/test/com/cloud/vm/MockUserVmManagerImpl.java
+:100755 100755 cb39be56568d0a345cc135a18e81dc74357ce9c9 e7353507e332d97929bcdc80fd76dd7348cdf1cb M	setup/db/create-schema.sql
+:100755 100755 7f2419f25f71296d21a10424fe3e2919ec11d25d e179518d3a0cc953213fc6c0b19c8473ad2a6ec9 M	setup/db/db/schema-301to302.sql
+
+commit b646c827248a79de7edafb83bfcb870b48f816ba
+tree aa441215f64ccee6617f4645026a270ee68a0599
+parent c07cca1af63cdec53331d94829946f2a3ad8d365
+author Jessica Wang <jessica@cloud.com> 1333732871 -0700
+committer Jessica Wang <jessica@cloud.com> 1333732981 -0700
+
+    cloudstack 3.0 UI - Add Network Offering dialog - compute offering (service offering) dropdown - populate only service offerings for domain router.
+
+:100644 100644 a605b52678118f35665f6be60a430374a531206a 85cfe71abb150d3d95bce0cdff706e0fb948cde5 M	ui/scripts/configuration.js

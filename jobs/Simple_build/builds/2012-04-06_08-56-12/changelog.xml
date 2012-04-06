@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 711551e34fd505ab28e08ca9cc6fe8fabe7a0f5d and c07cca1af63cdec53331d94829946f2a3ad8d365
+commit c07cca1af63cdec53331d94829946f2a3ad8d365
+tree 611f442399f4b4633b14f44624a536e114169efb
+parent 711551e34fd505ab28e08ca9cc6fe8fabe7a0f5d
+author Chirag Jog <chirag@clogeny.com> 1333715335 -0700
+committer Chirag Jog <chirag@clogeny.com> 1333715335 -0700
+
+    Bug 14612: Database client returns empty list after one successful query
+    Status 14612: resolved fixed
+    reviewed-by: Prasanna Santhanam <Prasanna.Santhanam@citrix.com>
+    
+    Commit to refresh the transaction state
+
+:100644 100644 b6d99193f46f71af50f3195add4fd163f527400f afe5be586954d259bc4ae0a154937ffafadcf68d M	tools/testClient/dbConnection.py

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between c07cca1af63cdec53331d94829946f2a3ad8d365 and b646c827248a79de7edafb83bfcb870b48f816ba
+commit b646c827248a79de7edafb83bfcb870b48f816ba
+tree aa441215f64ccee6617f4645026a270ee68a0599
+parent c07cca1af63cdec53331d94829946f2a3ad8d365
+author Jessica Wang <jessica@cloud.com> 1333732871 -0700
+committer Jessica Wang <jessica@cloud.com> 1333732981 -0700
+
+    cloudstack 3.0 UI - Add Network Offering dialog - compute offering (service offering) dropdown - populate only service offerings for domain router.
+
+:100644 100644 a605b52678118f35665f6be60a430374a531206a 85cfe71abb150d3d95bce0cdff706e0fb948cde5 M	ui/scripts/configuration.js

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d76207a09cb3c220eed7bd2acca1b47cea82885e and 5659691140d5027f86cb9237820c54d5ce80ceda
+commit 5659691140d5027f86cb9237820c54d5ce80ceda
+tree 2fd8ce8f16382947988a258571d26a03e2218994
+parent d76207a09cb3c220eed7bd2acca1b47cea82885e
+author Jessica Wang <jessica@cloud.com> 1334013362 -0700
+committer Jessica Wang <jessica@cloud.com> 1334013480 -0700
+
+    cloudstack 3.0 UI - physical network page - guest traffic type - networks tab (guest networks) - implement Refresh button.
+
+:100644 100644 55d3a89415d31c75dddc4a62f0cf9e8352136827 cf0911f9fcc74a4c1125e907e0ff0cc0fc62c578 M	ui/scripts/system.js

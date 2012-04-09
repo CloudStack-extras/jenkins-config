@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 3a5a60c0be8c72205cc5c218436ee0249769a3e2 and 3cf68e14c7d8a2fd38d6d160c564619dc8a67eb7
+commit 3cf68e14c7d8a2fd38d6d160c564619dc8a67eb7
+tree 64e808b5c4381664a892008a954c08057673e22b
+parent 3a5a60c0be8c72205cc5c218436ee0249769a3e2
+author Jessica Wang <jessica@cloud.com> 1334006594 -0700
+committer Jessica Wang <jessica@cloud.com> 1334009116 -0700
+
+    cloudstack 3.0 UI - System VM page - implement Refresh button.
+
+:100644 100644 153eebdd0e3a8af27289caed4d12c2c2dc5373fb edd8cd1d1f0dce8da2d8f29fc9b3ae60ed8db4d9 M	ui/scripts/system.js

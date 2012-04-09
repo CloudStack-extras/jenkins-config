@@ -1,0 +1,27 @@
+Changes in branch origin/master, between 3cf68e14c7d8a2fd38d6d160c564619dc8a67eb7 and 98fd5cf959c02355ff9e7e55f55684881c14769b
+commit 98fd5cf959c02355ff9e7e55f55684881c14769b
+tree 5fc9c8649bffe9e0f4e036776e1684e68e428184
+parent 3cf68e14c7d8a2fd38d6d160c564619dc8a67eb7
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334002571 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334009881 -0700
+
+    bug 14622: introduced ha tagging for host
+    status 14622: resolved fixed
+    
+    Conflicts:
+    
+    	server/src/com/cloud/host/dao/HostDao.java
+
+:100644 100644 38638fa6af2dde0c48150e0e3e68c8242e7adcd2 8f863d9032ed482b51d5bb186e04e4e2996bce32 M	api/src/com/cloud/vm/VirtualMachineProfile.java
+:100755 100755 c6bb22f47806b39ca73cc2f3613f8101f75fa765 676aed93a8a243f0143b76d8e280b202c3f26a4f M	server/src/com/cloud/agent/manager/allocator/impl/FirstFitAllocator.java
+:100755 100755 f5760c8d4cdd4bb75899b1f10dabfadf1f79086c 608f584add68e61159c295caa36fc4a84f98371d M	server/src/com/cloud/capacity/dao/CapacityDaoImpl.java
+:100755 100755 9c7674981be748ffa3ead0294e2db6478d7867a5 b92c9598ccd571e0e380ab79284454a90f13a5f7 M	server/src/com/cloud/configuration/Config.java
+:100755 100755 836aeac1310254fe5895522800a6f1da7452425c 68d28d9c9b058089e2b36b5a9be5ae84631aa47e M	server/src/com/cloud/deploy/BareMetalPlanner.java
+:100755 100755 d0a00cb4a641510c800edc87c1fb13d61fb65e4e 77c1007421de8125fe555d18f9bdf322866df34a M	server/src/com/cloud/deploy/FirstFitPlanner.java
+:100644 100644 d9fe2a11b2aa35cd58a5cae7ff4896d01678d958 7bcf170198414f8c3a1b8c7113258cb12227e95b M	server/src/com/cloud/ha/HighAvailabilityManager.java
+:100755 100755 abf9542025c8e5f79c14f5390b344bd34328eb11 17008d331bd548cd38badc9cfc3018a2d4cdc0a8 M	server/src/com/cloud/ha/HighAvailabilityManagerImpl.java
+:100755 100755 76ad5d2204de942c92cd7c82ca3cc5fba9319a49 a29bcd429760bccc2352d1818930a626bfaef632 M	server/src/com/cloud/host/dao/HostDao.java
+:100755 100755 b97d062337fec3431fefa9db6b4a1f2a51114e71 745567dd7d260de5fab0945d72f89a8133cca4c4 M	server/src/com/cloud/host/dao/HostDaoImpl.java
+:100755 100755 9a6f33c44a56442c6cdc61ecff151cf98d4a89f8 4cd4c4905ecfe4d828312efc72683d74487726a4 M	server/src/com/cloud/resource/ResourceManager.java
+:100755 100755 5118e61c8ac21707eb2eede479d04ffc1c488d27 384f649f1a34621503cdab1bac34c2e5e5fc1563 M	server/src/com/cloud/resource/ResourceManagerImpl.java
+:100755 100755 e179518d3a0cc953213fc6c0b19c8473ad2a6ec9 107571cdae3dc31bcf938772ca2f9a7582251e97 M	setup/db/db/schema-301to302.sql

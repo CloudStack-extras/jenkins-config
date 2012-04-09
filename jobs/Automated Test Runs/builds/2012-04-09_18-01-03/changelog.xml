@@ -1,0 +1,55 @@
+Changes in branch origin/master, between d6e9f49c096877afe186b25e8b13780f44a20a2e and 3a5a60c0be8c72205cc5c218436ee0249769a3e2
+commit 3a5a60c0be8c72205cc5c218436ee0249769a3e2
+tree 854a9e5d2344f3fe0883b96a754d070186638506
+parent bd4ad55535adc153cc6716fdd7d1cbdc3cf08586
+author Brian Federle <brian.federle@citrix.com> 1334003168 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334003168 -0700
+
+    Add 'view all' shortcuts for common zone resources
+    
+    On the physical resources dashboard, add a button to view all
+    resources for pods, clusters, and hosts. This will compile a
+    list view containing the resources across all zones.
+    
+    In order to be able to add resources when in this zone-inspecific mode,
+    a zone drop-down had to be added to the create forms for
+    pods, clusters, and hosts.
+
+:100644 100644 ecb499ec6740835c2f899d2015b589f6562187f0 1415de29ec3509ab8db75d906be0fcfe275d7b1f M	ui/css/cloudstack3.css
+:100644 100644 bc4ad3bed94e5323c991d069e09eb57f4a0465bc 37adb4093e955775a49ff39ea9c3941361d27a8f M	ui/index.jsp
+:100644 100644 9a95c2849700d7fd709c40d92162f69511833a95 153eebdd0e3a8af27289caed4d12c2c2dc5373fb M	ui/scripts/system.js
+:100644 100644 56f39011eb7bc0a3f65261afb722f8da62e4fbb8 257843f838e34c674f8e1f10cf4cc915850e655b M	ui/scripts/ui-custom/physicalResources.js
+
+commit bd4ad55535adc153cc6716fdd7d1cbdc3cf08586
+tree 5d6072d7cfc233bca747edbf680576c11a75bcdb
+parent d6e9f49c096877afe186b25e8b13780f44a20a2e
+author David Nalley <david@gnsa.us> 1333995703 -0400
+committer David Nalley <david@gnsa.us> 1333995703 -0400
+
+    fixing line endings for vmware-base
+
+:100644 100644 55a83c5ac5577fa16d16ac4c67abd1f2085b1ead 26c4e17ec6768157449b6a31ad442255322ff0fa M	vmware-base/src/com/cloud/hypervisor/vmware/mo/BaseMO.java
+:100755 100755 cec934b59a4a5d263cf97c9d562469d5f4a96d0d 51801a2251e87ef8f38cc69adffd3e1c2a26c525 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/ClusterMO.java
+:100644 100644 d2304b9a0986d4896751b9620f5a3e505ba680da 6dc5fdc0493ab3b26a5d931bac64f884b609a20d M	vmware-base/src/com/cloud/hypervisor/vmware/mo/CustomFieldsManagerMO.java
+:100755 100755 17535eb99b4e6f161422f98d68eee0e2c7a1782f 7c573509503fe15b87e21e8b18cacb252de3a55a M	vmware-base/src/com/cloud/hypervisor/vmware/mo/DatacenterMO.java
+:100755 100755 018a2c2819fdedbb771d3feb7425d02505ebc16d 295dfd4e104df06f089075dc49d4fa2719b17bbd M	vmware-base/src/com/cloud/hypervisor/vmware/mo/DatastoreFile.java
+:100755 100755 cea137eb60cf0d119335a145394bdcce7497de4d b81fad16b4e91ff56fbb9a86dce49b96a9b094df M	vmware-base/src/com/cloud/hypervisor/vmware/mo/DatastoreMO.java
+:100755 100755 86f3f5a4aac81576d99ac4256ebdedc089555bd0 82903c314b6b8d630d2f1226fbd098b05044fab0 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/HostDatastoreSystemMO.java
+:100755 100755 c632a793bc59bad5266f46e5d16766728224a68f c7a7dc4a60ac297a0005ab7da8370a4f5be40ec8 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/HostFirewallSystemMO.java
+:100755 100755 470bc76dc5b2eb9130ef3756f479dd363a9f4b7d 36221383bc3658c178576ee51c6631354a68b440 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/HostMO.java
+:100755 100755 95439d02676f74aa42a007bee9183443ca654261 e80ba09d1c16358104807c3dde59b3d265e34dd5 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/HostNetworkSystemMO.java
+:100755 100755 f2ca8eadd0a1c96d7741861c56ae798d4269d61c 5e6aacd97d82245228b8eb864d667e0529b74dfb M	vmware-base/src/com/cloud/hypervisor/vmware/mo/HttpNfcLeaseMO.java
+:100755 100755 44c0dc49d18b906f9d7531e8b4992faa345919ff b7a41a4cc86464c4b2d3b2d04d35ccc2512e5594 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/HypervisorHostHelper.java
+:100644 100644 639a5179ec0651e381da2404c1c98018ec943213 f31560172d2166e0e247848d25825edd942302be M	vmware-base/src/com/cloud/hypervisor/vmware/mo/NetworkMO.java
+:100644 100644 2289562689f4973cb52dc94e767848abcb0afbed 1eb48027392c947b6dd17cff1ec9e2d33d9f18cb M	vmware-base/src/com/cloud/hypervisor/vmware/mo/PerfCounterInfoMapper.java
+:100644 100644 9200959045927a758819bb0bf8431442fe1d9b21 990ab79dbb02b23b3178e8d1facba4010e2718f1 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/PerfManagerMO.java
+:100755 100755 bfebc4a2dce4e12e156abfd90d92abec4c813d6d ff5c1c26efabb16d96e3ddad4e72348c4de8d1f3 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/SnapshotDescriptor.java
+:100755 100755 1b457dcca31d330f1364f2fb2092d4bc41e5825d 6e89733cb52c79acfbd724dfd851cec7ff82f2d0 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VirtualDiskManagerMO.java
+:100755 100755 c9f15270d2f34ce3445064e73e51c73ba51fffe9 9ad279f935ae91cc1ba4a6fd97cdb30d88beca96 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VirtualMachineMO.java
+:100755 100755 6ebbcc271b1b0f31cdf7a635986bf2c5b294e3b7 dc07d7fd10b9ae99669af2bf35eef93747f900dc M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VmdkFileDescriptor.java
+:100755 100755 89398f981e1db11f42f0c739d7d6725e091d3913 4f39860e18f791fadd355d373e4c7601a894bead M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VmwareHypervisorHost.java
+:100755 100755 1c1418ea98ba9344b587b91800205b4115f5ac43 af16ad827a7281aa12c16c33dc9db9bf7f6c5332 M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VmwareHypervisorHostNetworkSummary.java
+:100755 100755 aaffffdd3dac7b7a6f5a465895161d14e880067b bbd6a42497e6513e7672385f22830b0cee0cf34a M	vmware-base/src/com/cloud/hypervisor/vmware/mo/VmwareHypervisorHostResourceSummary.java
+:100755 100755 73d77998626c6617fa8e2003fc0991f62db3ac51 d72e5c842650ac0c091bc2e4a6aebd20943a92d5 M	vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareContext.java
+:100755 100755 3a95b72daf9652f4f2679912df7d9cc510597966 dc4fd7eeae33fe0b19f9b198d2cfac422ffc4eb4 M	vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareGuestOsMapper.java
+:100755 100755 428b77c6673370f0dfdab76f730c4e0b8a199515 0f717b82cc2484f73a7504c42547196398f31a18 M	vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareHelper.java

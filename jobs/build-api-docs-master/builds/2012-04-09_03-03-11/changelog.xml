@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 59436be4eeb2c3b10e2ce3e4e73cfc2ec8cc0ade and d6e9f49c096877afe186b25e8b13780f44a20a2e
+commit d6e9f49c096877afe186b25e8b13780f44a20a2e
+tree a169e3b861361fba337505cd218176273b055597
+parent 59436be4eeb2c3b10e2ce3e4e73cfc2ec8cc0ade
+author Abhi <abhinandan.prateek@citrix.com> 1333954489 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1333954638 +0530
+
+    bug CS-14396: the VMs with current host id should be listed here, probably this fix did not make to this branch, is there is 2.2.14 branch
+
+:100644 100644 627b6db71b931311ed06d888aab2a1f09ee6750b ea890061e175fc5ee8c1339dedea133420966391 M	server/src/com/cloud/vm/dao/VMInstanceDaoImpl.java

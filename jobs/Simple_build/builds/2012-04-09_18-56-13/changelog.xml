@@ -1,0 +1,30 @@
+Changes in branch origin/master, between 85b35978de05e660b8cf1a9a976387c85b2d8daf and d76207a09cb3c220eed7bd2acca1b47cea82885e
+commit d76207a09cb3c220eed7bd2acca1b47cea82885e
+tree f26c197853712680a87296bc72fd1dcd186832f8
+parent 12ec170cc0c7f7b3dbf5070ebb06e6548395e03b
+author Kelven Yang <kelven@cloud.com> 1334011138 -0700
+committer Kelven Yang <kelven@cloud.com> 1334011760 -0700
+
+    Add support for Xen Secure-Console Intergration in console proxy
+
+:100644 100644 bab8ca5026109e9c216415aef6a1ec83f31a2239 bad33a2b072920aa647fb3ae00295b1036c0f0f0 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy.java
+:100644 100644 62458189f055ebda9f5ec1ff850c8e6e2a05c58b cef028591cf9c4ac750c272a636e0bf02a96a026 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java
+:100644 100644 3195927bae88d71daade3ca8e421af0af718dc4a 3b5d726b67ddc98f017d5271ce3b90585dfc9631 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxImageHandler.java
+:100644 100644 576bc4a104698661826cb971b291b21e9d6bd444 575c40696755bcf1f31cec668d86b7dd7c15fe70 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClient.java
+:100644 100644 091be1a5ed1300d8f37886159e5bd00f5ddeade9 38907cd5d1d7d8ad015f558e74b7d8b75eab706b M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientBase.java
+:000000 100644 0000000000000000000000000000000000000000 b4f9713c4f405eb49a52c4201b4553ac6e44c2be A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientParam.java
+:100644 100644 87fdbace200ca02e907f9273d618a1b3be3c2f23 226df7b78ecb777c51d673a1d7bca2a075fc24c4 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyThumbnailHandler.java
+:100644 100644 bfdd675e7292e1cc3d8be9775e660d428fef1be0 9e383fbe292e2de995d4f4fb1792047e6ea1786e M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyVncClient.java
+:000000 100644 0000000000000000000000000000000000000000 f4a42531b4255009e0f8ee2cd04cecdad8ec5ae6 A	console-proxy/src/com/cloud/consoleproxy/util/RawHTTP.java
+:100644 100644 78eceec36fbb47147f2c6024dae02a71940ff3c4 b42df505f9538f7b5d66f3537bb21b1da305985f M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+
+commit 12ec170cc0c7f7b3dbf5070ebb06e6548395e03b
+tree 8ce5cee058c866107b09f00272bc349b0f89c40e
+parent 85b35978de05e660b8cf1a9a976387c85b2d8daf
+author Kelven Yang <kelven@cloud.com> 1333991064 -0700
+committer Kelven Yang <kelven@cloud.com> 1334011759 -0700
+
+    Do load report outside of the loop
+
+:100644 100644 e911aa27449200ebc9200bbe3698cb0d45b60395 62458189f055ebda9f5ec1ff850c8e6e2a05c58b M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java
+:100644 100644 cd423e5ddfa7ceabefea6de889448127996575a2 614a39ebd373ab1c7d033ddf640121379a6d8c13 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyGCThread.java

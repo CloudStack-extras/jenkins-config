@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 52539e798d3bdf2102f7043552571da7f685c8bd and ae8e9a11ec1a130e3c2eb44b778a257e973b0f06
+commit ae8e9a11ec1a130e3c2eb44b778a257e973b0f06
+tree 74e599b8b1eb80337509817d1e7d35df4bc8f716
+parent 52539e798d3bdf2102f7043552571da7f685c8bd
+author Jessica Wang <jessica@cloud.com> 1334083641 -0700
+committer Jessica Wang <jessica@cloud.com> 1334083750 -0700
+
+    cloudstack 3.0 UI - physical network page - Network Service Providers - Virtual Router - get supported services from API call instead of hard-coding.
+
+:100644 100644 e1ec2903c32bcb709a66ff62362eab6f4eb80efb ddc8063f3119e2d282dfbd3a9f654a660a189df4 M	ui/scripts/system.js

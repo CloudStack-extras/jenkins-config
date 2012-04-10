@@ -1,0 +1,10 @@
+Changes in branch origin/master, between f1af23d88d168be90f67044c0bd41d7277e45f31 and ed7066c587ff5f1e83a2bd6f0ac24d5f9959ad3e
+commit ed7066c587ff5f1e83a2bd6f0ac24d5f9959ad3e
+tree 01fa622f239951779153d9fe1b4753944566f3b8
+parent f1af23d88d168be90f67044c0bd41d7277e45f31
+author Jessica Wang <jessica@cloud.com> 1334098305 -0700
+committer Jessica Wang <jessica@cloud.com> 1334098394 -0700
+
+    cloudstack 3.0 UI - Pod page - detail view - implement Refresh button.
+
+:100644 100644 62200551cde9450c00690f1e8b3712be498145fc 8392e89bbeec1389cca4a78f32d4de78e2ff6d8b M	ui/scripts/system.js

@@ -1,0 +1,37 @@
+Changes in branch origin/master, between e4a41071de958688f17be9d1b81c89d04a8519de and 91fadc4a0d0e47831eea8db5a0df0b343a2ad9e4
+commit 91fadc4a0d0e47831eea8db5a0df0b343a2ad9e4
+tree 5fdb2cbb02946d798dd450749509206512ad7e53
+parent e4a41071de958688f17be9d1b81c89d04a8519de
+author David Nalley <david@gnsa.us> 1334016341 -0400
+committer David Nalley <david@gnsa.us> 1334016341 -0400
+
+    fixing line ends in utils
+
+:100644 100644 2b7e851f32cc352a49c60ae214f5862e79878670 7dc3b11abdea9c0408d266be6484dd233e46e35d M	utils/conf/db.properties
+:100644 100644 df56003a7c0243411b4f9694f7098c9a0b5e2ccf bfb8ea00c6a0642365fb05ab2da8bd1ea9c01091 M	utils/src/com/cloud/utils/ActionDelegate.java
+:100755 100755 21c293fc731492a13ebf6dca2792fbe6ce471a8c 393d9a54a75d47b65e4b08f9639833b1dade24c1 M	utils/src/com/cloud/utils/AnnotationHelper.java
+:100755 100755 1cf911779e5da65d728c5aee048b67e58814d687 b9aa7b18046fe60547b168e330ee8d874b2436bb M	utils/src/com/cloud/utils/CloudResourceBundle.java
+:100644 100644 ed8d31312cad2f5b56bfcf951231c8d601d36633 9339572bed3101976138c599ca15b99799228d6e M	utils/src/com/cloud/utils/DateUtil.java
+:100644 100644 5c75cb9880afae3f1bef3875b7a037e1d254c32f 1338cc1e3a51814bad15e7616eb45ac269d443db M	utils/src/com/cloud/utils/IdentityProxy.java
+:100644 100644 1dceb49f91c752dae27cfbc5308ef98a9e8a18c2 67fdda6e1b5a38c2cd62462560931b0927df7322 M	utils/src/com/cloud/utils/IteratorUtil.java
+:100755 100755 2d089deead28ed61ef1cec0bbf9dd2ba1aa71972 fc2d9546cd2e3509f24971416f7e7a3c0392cdfc M	utils/src/com/cloud/utils/NumbersUtil.java
+:100644 100644 e2a8ccd31fcfd5bf3f12b7783567833b6722a2ce b8183901db0337e45bdf48683c242eaa6755908e M	utils/src/com/cloud/utils/ProcessUtil.java
+:100644 100644 5031cb4b22578c6bb0331da9a2552e643f8cdac4 0f88cd48fbb420d447b9c6e4f6abc3f0da76be3e M	utils/src/com/cloud/utils/Profiler.java
+:100755 100755 cf4f09f6f6ca9be79d424abd006a8621dda6a02c 83d3af8c61c55a683d95266a962c413b03d42d53 M	utils/src/com/cloud/utils/SerialVersionUID.java
+:100644 100644 5e8cc891fe8a191799a8c92bd806b4898ab2b92b 4354507cdd3aba6ac001c30746d4aeae584bc39c M	utils/src/com/cloud/utils/StringUtils.java
+:100644 100644 e6da9a06941a78310e808e2874f94fd6246963a8 891a4da66969442ed341e6a3d1996ec97c6964c6 M	utils/src/com/cloud/utils/concurrency/SynchronizationEvent.java
+:100644 100644 74ae279c23862c5c7b593d2c3f9baef2780998af 5c0018ab1ec3d2ff643ff2528e70f51bd97a326b M	utils/src/com/cloud/utils/db/GlobalLock.java
+:100755 100755 50281d7eb57ee9770e552fdc66b5d51bc93dc962 032425e3f2ce1bd70de6bb52a1cbae0379bf0512 M	utils/src/com/cloud/utils/db/SearchCriteria2.java
+:100755 100755 11d494b69e89c35a3abc7b8ba6db30b2f4d8d01a 4f56a97897d12d5e5ff2d98c3bb1ab9e71b7085a M	utils/src/com/cloud/utils/db/SearchCriteriaService.java
+:100644 100644 6c8a05c69146909c15799742b23a532842dcd7f1 0c908c4b742628c11dadc6c2e7c8537c4133fd28 M	utils/src/com/cloud/utils/events/EventArgs.java
+:100644 100644 53774566690f7a49b210bf5da4f623b64535f090 e717af4fbdee24c9edc6a0645d527a4937863c9a M	utils/src/com/cloud/utils/events/EventsTest.java
+:100644 100644 47518af24a9e975c3b029154c7369c441dcf75a3 035a988a8422be84c6083c106023a0718db972f6 M	utils/src/com/cloud/utils/events/SubscriptionMgr.java
+:100755 100755 528c191aff3124cfa7b278de26ba4fbb00ea534e 79e1dc58282f6d7cdfbd95bb29b9c415c6a2c6d8 M	utils/src/com/cloud/utils/exception/CSExceptionErrorCode.java
+:100644 100644 5d6060cacd088bc12caaa8bff05361e39aecdb3e 013a3a68d89be6413cd2084895e3b70e5f410d8e M	utils/src/com/cloud/utils/exception/RuntimeCloudException.java
+:100755 100755 6d9235868863c55a02cf1114875ea9c0ee6cf345 38a616265a942bed99aa0f61931b31ef879b69f9 M	utils/src/com/cloud/utils/net/MacAddress.java
+:100755 100755 62199f7b8cef844a61c6b1e73cb25b25cc5c7a68 02cd8cfaba38b7041ef03b4132e1afee7092cfca M	utils/src/com/cloud/utils/script/Script2.java
+:100644 100644 3d3255b4e8713bd1c17093fff1dbd4aa75ca5401 5a4319f105c96e3724cb794b674723bdf47b5368 M	utils/test/com/cloud/utils/TestProfiler.java
+:100644 100644 a1b9ba1d7205cf917bcf12cec32d218e60342f1d b059a1871d9e37fe3ec801e311b68c8c6d04d0de M	utils/test/com/cloud/utils/net/NetUtilsTest.java
+:100644 100644 53e7ee42cfb97fef293e62a45277bd92bf920b03 ac59eb0afe9b1f1199f4ae41994f5250b88d0736 M	utils/test/com/cloud/utils/testcase/ComponentSetup.java
+:100644 100644 49d3554af9925a1373c0ef498343c252c9cf8a1a fdc02d1a45bd49a5b7785beaf1fc2135934fb11c M	utils/test/com/cloud/utils/testcase/ComponentTestCase.java
+:100644 100644 d657401290abb55e6f59ca9ce79e2a281e716418 25e903bb2c88ec52937530a1cc247ac4203687d8 M	utils/test/com/cloud/utils/testcase/Log4jEnabledTestCase.java

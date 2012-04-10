@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 5659691140d5027f86cb9237820c54d5ce80ceda and e4a41071de958688f17be9d1b81c89d04a8519de
+commit e4a41071de958688f17be9d1b81c89d04a8519de
+tree 747573b7f54d03589c76347fb16c2f2059bc9930
+parent 5659691140d5027f86cb9237820c54d5ce80ceda
+author Jessica Wang <jessica@cloud.com> 1334015753 -0700
+committer Jessica Wang <jessica@cloud.com> 1334015841 -0700
+
+    cloudstack 3.0 UI - physical network page - Network Service Providers - Virtual Router - implement Refresh button.
+
+:100644 100644 cf0911f9fcc74a4c1125e907e0ff0cc0fc62c578 e1ec2903c32bcb709a66ff62362eab6f4eb80efb M	ui/scripts/system.js

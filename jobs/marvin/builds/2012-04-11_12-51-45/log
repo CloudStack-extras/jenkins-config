@@ -1,0 +1,7 @@
+Started by user [8mha:AAAAjh+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADI4Shj49EuLU4v0C4oSixPz8hIBv0XDl5MAAAA=[0mprasanna
+[marvin] $ /bin/sh -xe /tmp/hudson1097630993258713601.sh
++ cd /var/lib/jenkins/workspace/marvin/../cloudstack-oss
+/tmp/hudson1097630993258713601.sh: line 2: cd: /var/lib/jenkins/workspace/marvin/../cloudstack-oss: No such file or directory
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE

@@ -30,17 +30,23 @@ This job provides a packaged source tarball for any of the cloudstack branches</
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/prasanna/cloudstack-oss
+      <command>cd $WORKSPACE/cloudstack-oss
 git checkout $BRANCH_NAME
 git pull
-ant package-marvin</command>
+ant package-marvin
+cd -</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>/home/prasanna/cloudstack-oss/tools/marvin/dist/Marvin*.tar.gz</artifacts>
+      <artifacts>$WORKSPACE/cloudstack-oss/tools/marvin/dist/Marvin*.tar.gz</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.Mailer>
+      <recipients></recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsPublisher/>
   </publishers>
   <buildWrappers/>

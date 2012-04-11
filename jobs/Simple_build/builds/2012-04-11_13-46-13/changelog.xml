@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d150576a48246786d7ea4a12eb2294eee439e0c5 and d34ded17847fa120fc27506474ca7cb5f4ea8daf
+commit d34ded17847fa120fc27506474ca7cb5f4ea8daf
+tree feb5521520eaaa79d85a8ae939deb7c2bd8824c3
+parent d150576a48246786d7ea4a12eb2294eee439e0c5
+author frank <frank.zhang@citrix.com> 1334166008 -0700
+committer frank <frank.zhang@citrix.com> 1334166008 -0700
+
+    Change version to 3.0.2
+
+:100755 100755 519ebb41aeb19715f2987c6678d326e854750415 c44329f58b5c11caaf67e1b6d3e152a4806c181f M	build/cloud.properties

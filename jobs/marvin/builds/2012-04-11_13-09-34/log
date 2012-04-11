@@ -1,0 +1,48 @@
+Started by user [8mha:AAAAjh+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADI4Shj49EuLU4v0C4oSixPz8hIBv0XDl5MAAAA=[0mprasanna
+Checkout:marvin / /var/lib/jenkins/workspace/marvin - hudson.remoting.LocalChannel@128899a
+Using strategy: Default
+Checkout:marvin / /var/lib/jenkins/workspace/marvin - hudson.remoting.LocalChannel@128899a
+Cloning the remote Git repository
+Cloning repository origin
+Fetching upstream changes from git://github.com/CloudStack/CloudStack
+ERROR: Problem fetching from origin / origin - could be unavailable. Continuing anyway.
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Error performing command: git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/*:refs/remotes/origin/*
+Command "git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/*:refs/remotes/origin/*" returned status code 128: error: unable to find 100d5096f3a0a86c9f396548b00cae005b16bd08
+fatal: object 100d5096f3a0a86c9f396548b00cae005b16bd08 not found
+
+	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:776)
+	at hudson.plugins.git.GitAPI.launchCommand(GitAPI.java:741)
+	at hudson.plugins.git.GitAPI.fetch(GitAPI.java:190)
+	at hudson.plugins.git.GitAPI.fetch(GitAPI.java:978)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1049)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:970)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:970)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1195)
+	at hudson.model.AbstractBuild$AbstractRunner.checkout(AbstractBuild.java:573)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:462)
+	at hudson.model.Run.run(Run.java:1404)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)
+Caused by: hudson.plugins.git.GitException: Command "git fetch -t git://github.com/CloudStack/CloudStack +refs/heads/*:refs/remotes/origin/*" returned status code 128: error: unable to find 100d5096f3a0a86c9f396548b00cae005b16bd08
+fatal: object 100d5096f3a0a86c9f396548b00cae005b16bd08 not found
+
+	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:771)
+	... 15 more
+ERROR: Could not fetch from any repository
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mFATAL: Could not fetch from any repository
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Could not fetch from any repository
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1061)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:970)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:970)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1195)
+	at hudson.model.AbstractBuild$AbstractRunner.checkout(AbstractBuild.java:573)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:462)
+	at hudson.model.Run.run(Run.java:1404)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)

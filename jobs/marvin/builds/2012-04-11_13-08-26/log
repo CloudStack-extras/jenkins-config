@@ -1,0 +1,73 @@
+Started by user [8mha:AAAAjh+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADI4Shj49EuLU4v0C4oSixPz8hIBv0XDl5MAAAA=[0mprasanna
+Checkout:marvin / /var/lib/jenkins/workspace/marvin - hudson.remoting.LocalChannel@128899a
+Using strategy: Default
+Checkout:marvin / /var/lib/jenkins/workspace/marvin - hudson.remoting.LocalChannel@128899a
+Cloning the remote Git repository
+Cloning repository origin
+ERROR: Failed to clean the workspace
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Unable to delete /var/lib/jenkins/workspace/marvin/cloudstack-oss
+	at hudson.Util.deleteFile(Util.java:266)
+	at hudson.Util.deleteRecursive(Util.java:316)
+	at hudson.Util.deleteContentsRecursive(Util.java:227)
+	at hudson.Util.deleteRecursive(Util.java:307)
+	at hudson.FilePath$9.invoke(FilePath.java:852)
+	at hudson.FilePath$9.invoke(FilePath.java:850)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.FilePath.deleteRecursive(FilePath.java:850)
+	at hudson.plugins.git.GitAPI.clone(GitAPI.java:211)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1029)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:970)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:970)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1195)
+	at hudson.model.AbstractBuild$AbstractRunner.checkout(AbstractBuild.java:573)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:462)
+	at hudson.model.Run.run(Run.java:1404)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)
+ERROR: Error cloning remote repo 'origin' : Failed to delete workspace
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Failed to delete workspace
+	at hudson.plugins.git.GitAPI.clone(GitAPI.java:214)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1029)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:970)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:970)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1195)
+	at hudson.model.AbstractBuild$AbstractRunner.checkout(AbstractBuild.java:573)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:462)
+	at hudson.model.Run.run(Run.java:1404)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)
+Caused by: java.io.IOException: Unable to delete /var/lib/jenkins/workspace/marvin/cloudstack-oss
+	at hudson.Util.deleteFile(Util.java:266)
+	at hudson.Util.deleteRecursive(Util.java:316)
+	at hudson.Util.deleteContentsRecursive(Util.java:227)
+	at hudson.Util.deleteRecursive(Util.java:307)
+	at hudson.FilePath$9.invoke(FilePath.java:852)
+	at hudson.FilePath$9.invoke(FilePath.java:850)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.FilePath.deleteRecursive(FilePath.java:850)
+	at hudson.plugins.git.GitAPI.clone(GitAPI.java:211)
+	... 12 more
+Trying next repository
+ERROR: Could not clone repository
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mFATAL: Could not clone
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Could not clone
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1041)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:970)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:970)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1195)
+	at hudson.model.AbstractBuild$AbstractRunner.checkout(AbstractBuild.java:573)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:462)
+	at hudson.model.Run.run(Run.java:1404)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)

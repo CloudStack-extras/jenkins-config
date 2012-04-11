@@ -1,0 +1,10 @@
+Changes in branch origin/master, between bd58de20fc44cf793e69ec533e6bb8c3ce9ef6e4 and bc8685975abf1ba234df399b990bcc16ef065157
+commit bc8685975abf1ba234df399b990bcc16ef065157
+tree 16bb19f888e415b5da3f4862205e692344016b9c
+parent bd58de20fc44cf793e69ec533e6bb8c3ce9ef6e4
+author Pranav Saxena <pranav.saxena@citrix.com> 1334176299 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334180040 -0700
+
+    Bug 14211: CS- 14211 Redundant User Instance Field in UI
+
+:100644 100644 a829853778e716942cccda92c43723b9e009a855 5810b6d8f62ca8c29ccb60a8061d72e1f2fd931e M	ui/scripts/instances.js

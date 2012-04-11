@@ -1,0 +1,10 @@
+Changes in branch origin/master, between bc8685975abf1ba234df399b990bcc16ef065157 and 53ca91024ae2afa7dcea7ce666af9edfec505ead
+commit 53ca91024ae2afa7dcea7ce666af9edfec505ead
+tree 1e10e2afe7a46581667ec613eb7bb586db7f54d3
+parent bc8685975abf1ba234df399b990bcc16ef065157
+author Jessica Wang <jessica@cloud.com> 1334181293 -0700
+committer Jessica Wang <jessica@cloud.com> 1334181365 -0700
+
+    cloudstack 3.0 UI - infrastructure - physical network - network service providers - F5, Netscaler, SRX - devices - (1)  correct section id. (2) After remove action completes, close detailView and remove the row from listView.
+
+:100644 100644 f4efea440dd8734962ea6b6fdb6b11e4fed02171 d63d4ca4830c0e76d998d3442339ba651d1be7f9 M	ui/scripts/system.js

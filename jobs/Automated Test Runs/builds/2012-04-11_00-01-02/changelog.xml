@@ -1,0 +1,77 @@
+Changes in branch origin/master, between ac0e2c314edd415ceb187e228cf1f0ad16504e4b and b6eae2855f9950afec1cae95f12e66ea6b15abe9
+commit b6eae2855f9950afec1cae95f12e66ea6b15abe9
+tree 32ce1f37ab468bdf03408f789b67dc3e98293f3b
+parent 3ae0ecb0eb736bc243de27cfc50f8ea3c4eed900
+author Jessica Wang <jessica@cloud.com> 1334102212 -0700
+committer Jessica Wang <jessica@cloud.com> 1334102293 -0700
+
+    cloudstack 3.0 UI - Secondary Storage page - detail view - implement Refresh button.
+
+:100644 100644 9a9c7f6b0113669ce39af69b6237b84ee5cbc5e0 acafd3e77fb0718d6754b96eaf1581e1f401dcaa M	ui/scripts/system.js
+
+commit 3ae0ecb0eb736bc243de27cfc50f8ea3c4eed900
+tree 05a4554128cebde0b3fa75ac5b507de9e6b5e266
+parent 3c79f459942001931d5df39ff6c77aa27d9a0529
+author Jessica Wang <jessica@cloud.com> 1334101278 -0700
+committer Jessica Wang <jessica@cloud.com> 1334101375 -0700
+
+    cloudstack 3.0 UI - Primary Storage page - detail view - implement Refresh button.
+
+:100644 100644 859fa7adbb9bdc82000d6be22dafa8f025b75e31 9a9c7f6b0113669ce39af69b6237b84ee5cbc5e0 M	ui/scripts/system.js
+
+commit 3c79f459942001931d5df39ff6c77aa27d9a0529
+tree ee7c41a8ae11f15257fd70a3abf8981742e880f1
+parent 8b8973f9416f1db749cca685bacd0114324719b1
+author Jessica Wang <jessica@cloud.com> 1334100156 -0700
+committer Jessica Wang <jessica@cloud.com> 1334100239 -0700
+
+    cloudstack 3.0 UI - Host page - detail view - implement Refresh button.
+
+:100644 100644 8392e89bbeec1389cca4a78f32d4de78e2ff6d8b 859fa7adbb9bdc82000d6be22dafa8f025b75e31 M	ui/scripts/system.js
+
+commit 8b8973f9416f1db749cca685bacd0114324719b1
+tree cf9a8ce215218429fca8af01205a257ae25009d3
+parent ed7066c587ff5f1e83a2bd6f0ac24d5f9959ad3e
+author Kelven Yang <kelven@cloud.com> 1334098651 -0700
+committer Kelven Yang <kelven@cloud.com> 1334098672 -0700
+
+    Complete XenServer Secure Console proxy implementation
+
+:100644 100644 bad33a2b072920aa647fb3ae00295b1036c0f0f0 e12cfa0782beb4b82d82c339541c2cb1eb278674 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy.java
+:100644 100644 cef028591cf9c4ac750c272a636e0bf02a96a026 8f44b7f777eac049db5b170bb8169b5990dea3e5 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java
+:100644 100644 e26a3ddb4a0b5786e8f1424787c71106cd6de45f 5aceb68c77fb727f5276750d65fca45c3d9b77cf M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxImageHandler.java
+:100644 100644 b4f9713c4f405eb49a52c4201b4553ac6e44c2be df688778070646c6f36adb8a32d2c6a93447267d M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientParam.java
+:100644 100644 226df7b78ecb777c51d673a1d7bca2a075fc24c4 ef9dd5f94f437d431f41fb422854d1ee01864364 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyThumbnailHandler.java
+:100644 100644 9e383fbe292e2de995d4f4fb1792047e6ea1786e 22dd789993503cf893c62dcb41190fd38f2f6d85 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyVncClient.java
+:100644 100644 b42df505f9538f7b5d66f3537bb21b1da305985f b7ed80c008c251d654e5bd162e41f9e16385e7e6 M	console-proxy/src/com/cloud/consoleproxy/vnc/VncClient.java
+:100644 100644 d8353cdc59d4afa5a129200407260876a4384255 dae529bc563788f6e964a1dfeac382b51239bfc6 M	server/src/com/cloud/servlet/ConsoleProxyServlet.java
+
+commit ed7066c587ff5f1e83a2bd6f0ac24d5f9959ad3e
+tree 01fa622f239951779153d9fe1b4753944566f3b8
+parent f1af23d88d168be90f67044c0bd41d7277e45f31
+author Jessica Wang <jessica@cloud.com> 1334098305 -0700
+committer Jessica Wang <jessica@cloud.com> 1334098394 -0700
+
+    cloudstack 3.0 UI - Pod page - detail view - implement Refresh button.
+
+:100644 100644 62200551cde9450c00690f1e8b3712be498145fc 8392e89bbeec1389cca4a78f32d4de78e2ff6d8b M	ui/scripts/system.js
+
+commit f1af23d88d168be90f67044c0bd41d7277e45f31
+tree 758134bfc3dbeb54e275920072da4d4487aad717
+parent b2a0b33c846c0aafab87af2baab0cf18167a8b98
+author Jessica Wang <jessica@cloud.com> 1334097724 -0700
+committer Jessica Wang <jessica@cloud.com> 1334097808 -0700
+
+    cloudstack 3.0 UI - physical network page - Network Service Providers - SRX - devices - detailView - implement Refresh button.
+
+:100644 100644 a954f03de216c7b7ff62a0b608f59f760b4a8448 62200551cde9450c00690f1e8b3712be498145fc M	ui/scripts/system.js
+
+commit b2a0b33c846c0aafab87af2baab0cf18167a8b98
+tree a4a470ca08a66e259677790b0055b695c107dab3
+parent ac0e2c314edd415ceb187e228cf1f0ad16504e4b
+author Jessica Wang <jessica@cloud.com> 1334095246 -0700
+committer Jessica Wang <jessica@cloud.com> 1334095347 -0700
+
+    cloudstack 3.0 UI - physical network page - Network Service Providers - F5 - devices - detailView - implement Refresh button.
+
+:100644 100644 99fe7c7c9d8d56e1b0f1d22fbb6e6791e2e3e6d3 a954f03de216c7b7ff62a0b608f59f760b4a8448 M	ui/scripts/system.js

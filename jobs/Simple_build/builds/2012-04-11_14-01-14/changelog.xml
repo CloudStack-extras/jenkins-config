@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d34ded17847fa120fc27506474ca7cb5f4ea8daf and 66cdfcec3f5e617f6d3965029057c9ae3bd836d3
+commit 66cdfcec3f5e617f6d3965029057c9ae3bd836d3
+tree e20e8a25da7a4987c6d9b352e43927e83429629a
+parent d34ded17847fa120fc27506474ca7cb5f4ea8daf
+author Jessica Wang <jessica@cloud.com> 1334166752 -0700
+committer Jessica Wang <jessica@cloud.com> 1334166752 -0700
+
+    cloudstack 3.0 UI - infrastructure - physical network - network service providers - when clicking Netscaler/F5/SRX, get fresh data from API call instead of cache.
+
+:100644 100644 acafd3e77fb0718d6754b96eaf1581e1f401dcaa c8b1164e594d3a2bf0c46d679ecfdf3b970c5dad M	ui/scripts/system.js

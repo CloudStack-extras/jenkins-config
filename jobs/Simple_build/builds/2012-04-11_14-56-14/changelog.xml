@@ -1,0 +1,14 @@
+Changes in branch origin/master, between cd9c24a978928a60f475bd599634f3c6579fb3e0 and bd58de20fc44cf793e69ec533e6bb8c3ce9ef6e4
+commit bd58de20fc44cf793e69ec533e6bb8c3ce9ef6e4
+tree 0be3cbb8740b536b664664199a27bab1f9dcdb03
+parent cd9c24a978928a60f475bd599634f3c6579fb3e0
+author Brian Federle <brian.federle@citrix.com> 1334170217 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334170263 -0700
+
+    bug CS-14419
+    
+    Add error handling for delete security group action
+    
+    status CS-14419: resolved fixed
+
+:100644 100644 3f876a75d3f4b95e66ac0b8d9379f1c2c181e8d0 42138644250b6f09a4f4ce365e916e45de88ed0a M	ui/scripts/network.js

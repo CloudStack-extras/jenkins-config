@@ -1,0 +1,16 @@
+Changes in branch origin/master, between 38e54d35e061332dc5dde33a5985a1e91ba0c842 and 4f116fb24f148c4ee64a74515d61a6323ae03e4c
+commit 4f116fb24f148c4ee64a74515d61a6323ae03e4c
+tree db7a3fb318d77f025a184be1a0a76c95ba587d8a
+parent 38e54d35e061332dc5dde33a5985a1e91ba0c842
+author prachi <prachi@cloud.com> 1334186119 -0700
+committer prachi <prachi@cloud.com> 1334186671 -0700
+
+    Bug 14646 - Enabling Host into maintenance mode is stopping the VMs instead of live migrating them to other hosts in the cluster.
+    
+    Changes:
+    -  While listing UP hosts in the cluster of the host, the query has changed and now also considers the Host 'resourceState' field and picks only those hosts that have value 'enabled'.
+       This query result does not include the host being put in maintainance; unlike the earlier query that used to include it.
+    -  But the logic to find out if this is the last host in the Cluster is not updated and has a bug when it compares the list size.
+    - Fixed this.
+
+:100755 100755 384f649f1a34621503cdab1bac34c2e5e5fc1563 bf9c43f6b5e28c523d1fa740ad80c121650632bf M	server/src/com/cloud/resource/ResourceManagerImpl.java

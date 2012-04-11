@@ -32,6 +32,7 @@ This job provides a packaged source tarball for any of the cloudstack branches</
     <hudson.tasks.Shell>
       <command>cd /home/prasanna/cloudstack-oss
 git checkout $BRANCH_NAME
+git pull
 ant package-marvin</command>
     </hudson.tasks.Shell>
   </builders>

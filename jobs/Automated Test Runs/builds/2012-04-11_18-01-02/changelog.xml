@@ -1,0 +1,66 @@
+Changes in branch origin/master, between d150576a48246786d7ea4a12eb2294eee439e0c5 and 53ca91024ae2afa7dcea7ce666af9edfec505ead
+commit 53ca91024ae2afa7dcea7ce666af9edfec505ead
+tree 1e10e2afe7a46581667ec613eb7bb586db7f54d3
+parent bc8685975abf1ba234df399b990bcc16ef065157
+author Jessica Wang <jessica@cloud.com> 1334181293 -0700
+committer Jessica Wang <jessica@cloud.com> 1334181365 -0700
+
+    cloudstack 3.0 UI - infrastructure - physical network - network service providers - F5, Netscaler, SRX - devices - (1)  correct section id. (2) After remove action completes, close detailView and remove the row from listView.
+
+:100644 100644 f4efea440dd8734962ea6b6fdb6b11e4fed02171 d63d4ca4830c0e76d998d3442339ba651d1be7f9 M	ui/scripts/system.js
+
+commit bc8685975abf1ba234df399b990bcc16ef065157
+tree 16bb19f888e415b5da3f4862205e692344016b9c
+parent bd58de20fc44cf793e69ec533e6bb8c3ce9ef6e4
+author Pranav Saxena <pranav.saxena@citrix.com> 1334176299 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334180040 -0700
+
+    Bug 14211: CS- 14211 Redundant User Instance Field in UI
+
+:100644 100644 a829853778e716942cccda92c43723b9e009a855 5810b6d8f62ca8c29ccb60a8061d72e1f2fd931e M	ui/scripts/instances.js
+
+commit bd58de20fc44cf793e69ec533e6bb8c3ce9ef6e4
+tree 0be3cbb8740b536b664664199a27bab1f9dcdb03
+parent cd9c24a978928a60f475bd599634f3c6579fb3e0
+author Brian Federle <brian.federle@citrix.com> 1334170217 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334170263 -0700
+
+    bug CS-14419
+    
+    Add error handling for delete security group action
+    
+    status CS-14419: resolved fixed
+
+:100644 100644 3f876a75d3f4b95e66ac0b8d9379f1c2c181e8d0 42138644250b6f09a4f4ce365e916e45de88ed0a M	ui/scripts/network.js
+
+commit cd9c24a978928a60f475bd599634f3c6579fb3e0
+tree 6ec874e11251cc94d4d8aa12a517c78049eebdb2
+parent 66cdfcec3f5e617f6d3965029057c9ae3bd836d3
+author Jessica Wang <jessica@cloud.com> 1334169531 -0700
+committer Jessica Wang <jessica@cloud.com> 1334169531 -0700
+
+    cloudstack 3.0 UI - infrastructure - physical network - network service providers - Netscaler/F5/SRX - devices - change breadcrumb to show Devices instead of Netscaler/F5/SRX (to distinguish between provider and devices).
+
+:100644 100644 717809deb4f69d8a296d6bc9109bd7258db35f0d 797683de6c603633a2498b8925209fe19e1847df M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 37adb4093e955775a49ff39ea9c3941361d27a8f 889b872906e9c1ddc8b8b88604364a351cbf52f9 M	ui/index.jsp
+:100644 100644 c8b1164e594d3a2bf0c46d679ecfdf3b970c5dad f4efea440dd8734962ea6b6fdb6b11e4fed02171 M	ui/scripts/system.js
+
+commit 66cdfcec3f5e617f6d3965029057c9ae3bd836d3
+tree e20e8a25da7a4987c6d9b352e43927e83429629a
+parent d34ded17847fa120fc27506474ca7cb5f4ea8daf
+author Jessica Wang <jessica@cloud.com> 1334166752 -0700
+committer Jessica Wang <jessica@cloud.com> 1334166752 -0700
+
+    cloudstack 3.0 UI - infrastructure - physical network - network service providers - when clicking Netscaler/F5/SRX, get fresh data from API call instead of cache.
+
+:100644 100644 acafd3e77fb0718d6754b96eaf1581e1f401dcaa c8b1164e594d3a2bf0c46d679ecfdf3b970c5dad M	ui/scripts/system.js
+
+commit d34ded17847fa120fc27506474ca7cb5f4ea8daf
+tree feb5521520eaaa79d85a8ae939deb7c2bd8824c3
+parent d150576a48246786d7ea4a12eb2294eee439e0c5
+author frank <frank.zhang@citrix.com> 1334166008 -0700
+committer frank <frank.zhang@citrix.com> 1334166008 -0700
+
+    Change version to 3.0.2
+
+:100755 100755 519ebb41aeb19715f2987c6678d326e854750415 c44329f58b5c11caaf67e1b6d3e152a4806c181f M	build/cloud.properties

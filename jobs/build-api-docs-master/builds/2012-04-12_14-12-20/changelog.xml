@@ -1,0 +1,24 @@
+Changes in branch origin/master, between 7c6932ef808e881c9354e57efdf2f6e6887e26dc and fcc9ec2f553720780e9bb64152c9c505eee470a6
+commit fcc9ec2f553720780e9bb64152c9c505eee470a6
+tree dc5d5fcabe1bf3e886879cc0854146357f92b375
+parent b4186eac6c93aab598a6476fd9ad7cd8b494f4c7
+author frank <frank.zhang@citrix.com> 1334254135 -0700
+committer frank <frank.zhang@citrix.com> 1334254318 -0700
+
+    don't install python files in cloud-cli.install as they have been installed in cloud-python.install
+
+:100644 100644 075cb9a5ca0294cb94354cf61b815007089487cb 15ed12715020bb4abbd8bdb7bf1da6364d0ec0c6 M	debian/cloud-cli.install
+
+commit b4186eac6c93aab598a6476fd9ad7cd8b494f4c7
+tree d33d27f2ef622689ef70a7e6ec4766f4c7c5e843
+parent 7c6932ef808e881c9354e57efdf2f6e6887e26dc
+author frank <frank.zhang@citrix.com> 1334253060 -0700
+committer frank <frank.zhang@citrix.com> 1334254309 -0700
+
+    CS-14411 cloud-cli missing from Ubuntu packages
+    
+    resolved fixed
+
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	debian/cloud-cli.config
+:000000 100644 0000000000000000000000000000000000000000 075cb9a5ca0294cb94354cf61b815007089487cb A	debian/cloud-cli.install
+:100644 100644 1d3ffe886ed644aa3e187a6b3d455ca47496eaa0 32272f6ef3067e0559f9c0a6b7ebf16dd659790e M	debian/control

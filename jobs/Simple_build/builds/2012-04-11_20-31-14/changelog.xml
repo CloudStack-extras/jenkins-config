@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 2b6666ccd1fff810667cbb937efcc8a67fb02fa4 and 9684ea739734a5b84ecb7f9a412f234a5b782160
+commit 9684ea739734a5b84ecb7f9a412f234a5b782160
+tree 4a3f89d12e40018f2c1062249ce3a156339395d6
+parent 2b6666ccd1fff810667cbb937efcc8a67fb02fa4
+author frank <frank.zhang@citrix.com> 1334190061 -0700
+committer frank <frank.zhang@citrix.com> 1334190335 -0700
+
+    CS-14429 Cloud db schema differences between fresh installed 3.0.2 & upgraded 3.0.2
+    
+        do check befor droping index i_host__allocation_state`(`allocation_state`)
+
+:100644 100644 e737b3c9bc18057fde3cfdf04c9653be62d20fbd 217b55b8b36463994c77d9ce4a347e9bf60a347f M	server/src/com/cloud/upgrade/dao/Upgrade301to302.java
+:100755 100755 a263d521979781f3cb65b3fa732a3ebacc045c34 97a4b471e927f452509a35d93db09f91e491170c M	setup/db/db/schema-301to302.sql

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 14f973ba8ce08bab55498ac9849dd2a4f35df469 and 2c3c0f06cab203820dc2e043530f53bcdef870ba
+commit 2c3c0f06cab203820dc2e043530f53bcdef870ba
+tree 4e38fcb2ece6aa923a5674cea1c2f2df577b3c23
+parent 14f973ba8ce08bab55498ac9849dd2a4f35df469
+author Abhi <abhinandan.prateek@citrix.com> 1334232978 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1334232978 +0530
+
+    bug CS-13303: updating resource state on upgrade
+
+:100755 100755 d7737bc99681c1e228a627b0b738977568c9ab3e 31fc75ea09ff3e49f7e8fbca2f8c7fa95beb5708 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java

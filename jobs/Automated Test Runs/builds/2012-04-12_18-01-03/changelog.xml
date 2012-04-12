@@ -1,0 +1,64 @@
+Changes in branch origin/master, between 7f470e8d2aabe223492260f7f9584bbdb5f33db4 and db25ef518b9408e2c9f57a5e2d55b5fa516c08ef
+commit db25ef518b9408e2c9f57a5e2d55b5fa516c08ef
+tree 08c8239b2f1a412cd63585269d98a9ae3dacd250
+parent 676a28177b01997058bce8f0e87f2689d607bd8b
+author Brian Federle <brian.federle@citrix.com> 1334258272 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334258272 -0700
+
+    bug CS-14441: Fix typo in VMware traffic label ID
+
+:100644 100644 7f35feea6faa9e6fdeb4090042f66bcfc6a58348 b33634a914d42644a48dadd7b8b419852de480a4 M	ui/scripts/zoneWizard.js
+
+commit 676a28177b01997058bce8f0e87f2689d607bd8b
+tree 69c1a665f7afd2ddc247692d667b9e2a59cfc143
+parent fcc9ec2f553720780e9bb64152c9c505eee470a6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334256132 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334256636 -0700
+
+    Added one more parameter - haHost(boolean) - to listHosts api command. The parameter identifies if the host is dedicated for ha only
+    
+    Conflicts:
+    
+    	server/src/com/cloud/api/ApiResponseHelper.java
+
+:100755 100755 f0466b765f52841cfc3770ebba60b91745701f04 b69d78260260a6210ac3cbc1bb38b9455d31b9e6 M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 fca666b16cb45a1bcd7374bcf24c0eeeb6c610e5 9d77b2524b4779a62db97715e2576bed36db3b48 M	api/src/com/cloud/api/commands/ListHostsCmd.java
+:100755 100755 a9baddf77dee96f2a3cefdecda5c4ded72e4462d 890b4c8c036673bd867235f225e46c5735305fd4 M	api/src/com/cloud/api/response/HostResponse.java
+:100755 100755 a550feb59dab6abfca5d7f955a0debbba3575e40 25a6b5119d2b94a97240753525b0274174d11664 M	server/src/com/cloud/api/ApiDBUtils.java
+:100755 100755 31678d84d882d19f9f9f1f592a6221d92e9280cb 04c9b7a325a98d641e1927679a3476c4cef5005e M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 b7dcb46f8370f82a4c195f44b89de369cf22c5af 6d8825d62a767333a7e6eb48da5ea447bf07ece4 M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit fcc9ec2f553720780e9bb64152c9c505eee470a6
+tree dc5d5fcabe1bf3e886879cc0854146357f92b375
+parent b4186eac6c93aab598a6476fd9ad7cd8b494f4c7
+author frank <frank.zhang@citrix.com> 1334254135 -0700
+committer frank <frank.zhang@citrix.com> 1334254318 -0700
+
+    don't install python files in cloud-cli.install as they have been installed in cloud-python.install
+
+:100644 100644 075cb9a5ca0294cb94354cf61b815007089487cb 15ed12715020bb4abbd8bdb7bf1da6364d0ec0c6 M	debian/cloud-cli.install
+
+commit b4186eac6c93aab598a6476fd9ad7cd8b494f4c7
+tree d33d27f2ef622689ef70a7e6ec4766f4c7c5e843
+parent 7c6932ef808e881c9354e57efdf2f6e6887e26dc
+author frank <frank.zhang@citrix.com> 1334253060 -0700
+committer frank <frank.zhang@citrix.com> 1334254309 -0700
+
+    CS-14411 cloud-cli missing from Ubuntu packages
+    
+    resolved fixed
+
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	debian/cloud-cli.config
+:000000 100644 0000000000000000000000000000000000000000 075cb9a5ca0294cb94354cf61b815007089487cb A	debian/cloud-cli.install
+:100644 100644 1d3ffe886ed644aa3e187a6b3d455ca47496eaa0 32272f6ef3067e0559f9c0a6b7ebf16dd659790e M	debian/control
+
+commit 7c6932ef808e881c9354e57efdf2f6e6887e26dc
+tree 4efefcb0a2329235b60cd678f2f57ee2ab7d7b0d
+parent 7f470e8d2aabe223492260f7f9584bbdb5f33db4
+author Alex Huang <alex.huang@citrix.com> 1329937918 -0800
+committer Alex Huang <alex.huang@citrix.com> 1334253878 -0700
+
+    some reformatting and a new way to get vos into the system
+
+:100644 100644 734f5bd03a81c7474e033a8ef3be239c48bd8955 6535875e695f8a29ae9b036e4429fd9c33a63062 M	server/src/com/cloud/async/AsyncJobManagerImpl.java
+:100755 100755 d6bd327c21f8b6e150302dcafbd031fd69f8e79f c2fe8bdd6ac6f658cdbafb2c414eebb6ab1a3a21 M	utils/src/com/cloud/utils/db/GenericDaoBase.java

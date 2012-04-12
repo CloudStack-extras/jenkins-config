@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d91fbab9cfcd7d332fdadc4ecd3959b0cc245ef1 and 6c9fd606abce5579ff9092bb489775d2386703b3
+commit 6c9fd606abce5579ff9092bb489775d2386703b3
+tree 5d33ad7a2771f65cc8c5c5105b0441f4e480aa84
+parent d91fbab9cfcd7d332fdadc4ecd3959b0cc245ef1
+author Sheng Yang <sheng.yang@citrix.com> 1334188093 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1334188278 -0700
+
+    Fix foreign key "fk_domain_router__element_id" in the upgrade
+
+:100755 100755 7f3cd19317414895f8f3c76a9545eb5501351c69 a263d521979781f3cb65b3fa732a3ebacc045c34 M	setup/db/db/schema-301to302.sql

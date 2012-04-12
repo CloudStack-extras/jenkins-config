@@ -1,7 +1,0 @@
-Started by user [8mha:AAAAjB+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADJ4Shh49EuLU4v0s1NNCgsLAYYg/s+RAAAA[0mDavid Nalley
-[marvin] $ /bin/sh -xe /tmp/hudson9130528839442235192.sh
-+ cd /home/prasanna/cloudstack-oss
-/tmp/hudson9130528839442235192.sh: line 2: cd: /home/prasanna/cloudstack-oss: Not a directory
-Build step 'Execute shell' marked build as failure
-Archiving artifacts
-Finished: FAILURE

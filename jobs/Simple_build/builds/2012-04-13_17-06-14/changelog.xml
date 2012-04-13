@@ -1,0 +1,10 @@
+Changes in branch origin/master, between c33ecdeaba119488d4cd5c6dd966cb9cc81cc5c6 and b2be0039cb38f78f659ca25af8ac93cc89aa3b09
+commit b2be0039cb38f78f659ca25af8ac93cc89aa3b09
+tree f3614e25a18cc8dfe7caeb9069194251c04fed28
+parent c33ecdeaba119488d4cd5c6dd966cb9cc81cc5c6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334350621 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334350741 -0700
+
+    Usage db upgrade from 2.2.14 to 3.0 - don't drop the same fields twice from network_usage table
+
+:100755 100755 4cf26fbedde0251aee5e45a97fb6233dcd1e2e31 aebba36b3ab5e52a26ce29c2e79a95752b1216e9 M	setup/db/db/schema-2214to30.sql

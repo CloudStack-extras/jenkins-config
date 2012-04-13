@@ -1,0 +1,10 @@
+Changes in branch origin/master, between a8ab24be964b8cf3743d7c5789542e80f3854d2f and c33ecdeaba119488d4cd5c6dd966cb9cc81cc5c6
+commit c33ecdeaba119488d4cd5c6dd966cb9cc81cc5c6
+tree c569ab6c8bda1e941ca9c39bbd4bceec792964c3
+parent a8ab24be964b8cf3743d7c5789542e80f3854d2f
+author Jessica Wang <jessica@cloud.com> 1334337423 -0700
+committer Jessica Wang <jessica@cloud.com> 1334337423 -0700
+
+    bug 14368: cloudstack 3.0 UI - domain page - add "Update Resource Count" action ("Update Resource Count" is different from "Update Resource Limit")
+
+:100644 100644 69b002efd15aefe684a4ada2be24300a7eb39b48 0f89c996d7fe83fae645e4cd578e6ea93dbba1ea M	ui/scripts/domains.js

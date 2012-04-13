@@ -1,0 +1,20 @@
+Changes in branch origin/master, between f6383f844d7b42ec8f3770e716ab51e8b2485e7c and 88d6562dace7828fe6324f796fe29393a839431d
+commit 88d6562dace7828fe6324f796fe29393a839431d
+tree 031c5d097d07a881e0f6d461f1bf1e9fc3a2427d
+parent 7cc93d4ed4be80b87ea68f15225b01a99b71568e
+author anthony <anthony@cloud.com> 1334355589 -0700
+committer anthony <anthony@cloud.com> 1334355589 -0700
+
+    typo in cloud-setup-bonding.sh
+
+:100755 100755 51d72f3ecd4f51a83318e72de46917e2d6d5b681 45477d9fcf1910c68e957f87905e8a057bce5fec M	scripts/vm/hypervisor/xenserver/cloud-setup-bonding.sh
+
+commit 7cc93d4ed4be80b87ea68f15225b01a99b71568e
+tree e046a12fed9f85fa7ae1f37f327cbe8153bf69a0
+parent f6383f844d7b42ec8f3770e716ab51e8b2485e7c
+author anthony <anthony@cloud.com> 1334355157 -0700
+committer anthony <anthony@cloud.com> 1334355408 -0700
+
+    correct template name for CentOS 6.0
+
+:100644 100644 d9ecc5e2ac075c179e70b4170fb82ba7e3d8d4eb 3aba320fa22f7f90e9ae00b85be62dae653b58a2 M	core/src/com/cloud/hypervisor/xen/resource/CitrixHelper.java

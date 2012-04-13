@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 88d6562dace7828fe6324f796fe29393a839431d and bd47cd104c60cdb474897df8597b34af857c13f7
+commit bd47cd104c60cdb474897df8597b34af857c13f7
+tree f599aab7b612403bed77e706056283ef18b00dbc
+parent 88d6562dace7828fe6324f796fe29393a839431d
+author frank <frank.zhang@citrix.com> 1334356334 -0700
+committer frank <frank.zhang@citrix.com> 1334356499 -0700
+
+    CloudStack CS-14475
+    Atomatic addition of Apache license header broke lots of mysql files
+    
+    fix DB upgrade cleanup script not get executed issue.
+    
+    add "#" as comment signature in ScriptRunner.java
+
+:100644 100644 19b90580a4650542b3b1dac5685ca0c523289a98 5a67a890b58f8b397e6d12ea00432958b8b7d6a6 M	utils/src/com/cloud/utils/db/ScriptRunner.java

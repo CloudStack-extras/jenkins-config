@@ -1,0 +1,100 @@
+Changes in branch origin/master, between db25ef518b9408e2c9f57a5e2d55b5fa516c08ef and cc4e4e69d80961f834c3db48ef016d29546c4b9d
+commit cc4e4e69d80961f834c3db48ef016d29546c4b9d
+tree 4cf3679a09ab2d65dae22a6f0525d81a1437ec30
+parent 172ea6f1099a83f613c6f94c8f09a0081ebbc8eb
+author frank <frank.zhang@citrix.com> 1334276717 -0700
+committer frank <frank.zhang@citrix.com> 1334276769 -0700
+
+    CS-14341 Order of Compute offerings does not stick
+    
+    resolved fixed
+
+:100755 100755 c4dc22cfda3a5cbccfc205e59fd0c6464360897e fa5601e5943aa63ae4475c2f111268fe2c5539f5 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit 172ea6f1099a83f613c6f94c8f09a0081ebbc8eb
+tree 1ee17ad7b7b2a8c04bd480e9547b630713668c9e
+parent 60d45ec5e39b7caf41c236bfbb8572af83254eba
+author Jessica Wang <jessica@cloud.com> 1334272863 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273156 -0700
+
+    cloudstack 3.0 UI - add zone wizard - step 2 - fix a bug that change event of network offerings dropdown was not triggered when visiting step 2 the first time.
+
+:100644 100644 2e4227b1298f553cc6d6dd971ffc1a5d7bb1a746 3d31261b77cdce3a5d43752ad2bf6779163102e8 M	ui/scripts/zoneWizard.js
+
+commit 60d45ec5e39b7caf41c236bfbb8572af83254eba
+tree 1493a2ec55501426e9b19140c79097d116555e41
+parent b3bf6f08e61640bb40535470c4d49bbdf2fac58a
+author Jessica Wang <jessica@cloud.com> 1334270381 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273138 -0700
+
+    cloudstack 3.0 UI - fix a JS error "selectedNetworkOfferingObj is not defined"
+
+:100644 100644 2355e411e16ac3d34bb5e726ff55799848b3b80e 2e4227b1298f553cc6d6dd971ffc1a5d7bb1a746 M	ui/scripts/zoneWizard.js
+
+commit b3bf6f08e61640bb40535470c4d49bbdf2fac58a
+tree 2ece5d1c01a63e217ab44d35b7bf9c58968a1ac4
+parent 757c3542e8f74a5eee9a2b20edea71bdc6e3e6c1
+author Jessica Wang <jessica@cloud.com> 1334269176 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273110 -0700
+
+    bug 14386: cloudstack 3.0 UI - add zone wizard - basic zone - network offering dropdown - exclude network offerings having EIP/ELB/SG if hypervisor is not XenServer.
+
+:100644 100644 b33634a914d42644a48dadd7b8b419852de480a4 2355e411e16ac3d34bb5e726ff55799848b3b80e M	ui/scripts/zoneWizard.js
+
+commit 757c3542e8f74a5eee9a2b20edea71bdc6e3e6c1
+tree 416a6c64ed4b7dd3b471727f28ebc4092e80966d
+parent ee0f3e898c6f0b2e9695991f49b9a8809de087dc
+author Jessica Wang <jessica@cloud.com> 1334269053 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273093 -0700
+
+    cloudstack 3.0 UI - dialog widget - remove a line that produced a bug that change event is trigger before data is populated in this dropdown in selectFn($.extend(selectArgs, dependsOnArgs)). Besides, selectFn($.extend(selectArgs, dependsOnArgs)) includes the line, $input.trigger('change'), already.
+
+:100644 100644 f50f735110e63788d6e6ad67224f78c5b5f11906 3e2f0b277848585bed1c6582b7f4c7bd00fab7ba M	ui/scripts/ui/dialog.js
+
+commit ee0f3e898c6f0b2e9695991f49b9a8809de087dc
+tree bfc87e91c28701b76e52c1cd2e769c0cc02c0cdd
+parent 582e62c2040dc1c169bb7a8884ab259e2ed293ea
+author pranav <pranav@pranav-VirtualBox.(none)> 1332843609 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334268931 -0700
+
+    Bug 12833 addition of Fetch Latest Button on the Dashboard
+    
+    Conflicts:
+    
+    	client/WEB-INF/classes/resources/messages.properties
+    	ui/css/cloudstack3.css
+    
+    reviewed-by: brian
+
+:100644 100644 2d321fee91b2d31c16be9d6b3c6a521ee8fb2e19 57e14552a8e0e565681a8cff2bfe4a9d377f327d M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 fab77e2bfb012593c9f07c3b91ee61f441091b0c ce57adc6ae0df487e141b6e856039367aa1e1e73 M	ui/index.jsp
+:100644 100644 6b2ee3585ee049a5dbff0b6207a9518d2932b037 9ba2a5b60fd622be4dc5fc0bae09de80e4909889 M	ui/scripts/dashboard.js
+:100644 100644 d312e0605c00d15fd1087ffa7306d13147f8cebf 4b53eb0a0e0b36fc1c9a1eba11f4f4fee90dee9e M	ui/scripts/ui-custom/dashboard.js
+
+commit 582e62c2040dc1c169bb7a8884ab259e2ed293ea
+tree 473f5222bd6b756b8a6fe657275f840bb054de13
+parent 8e3edfd504ed173c6b7206e422eb808086d14e5a
+author Pranav Saxena <pranav.saxena@citrix.com> 1334183582 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334268151 -0700
+
+    Bug 14632 : CS-14393 3.0.1 Hosts' Statistics page show memory values as TB
+    
+    Conflicts:
+    
+    	ui/scripts/system.js
+    
+    reviewed-by: brian
+
+:100644 100644 d63d4ca4830c0e76d998d3442339ba651d1be7f9 a3a22e07cba838faf589856948a3e7c303b966da M	ui/scripts/system.js
+
+commit 8e3edfd504ed173c6b7206e422eb808086d14e5a
+tree 49ee37117a485129f19a28a582b6cfb7b3bd6930
+parent db25ef518b9408e2c9f57a5e2d55b5fa516c08ef
+author Pranav Saxena <pranav.saxena@citrix.com> 1334244247 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334267921 -0700
+
+    Bug 13969 : CS 13764 Names row of any table should not be clickable
+    
+    reviewed-by: brian
+
+:100644 100644 1415de29ec3509ab8db75d906be0fcfe275d7b1f 6f9bdb9464ebd19432a3f5f783cec3263f26c283 M	ui/css/cloudstack3.css

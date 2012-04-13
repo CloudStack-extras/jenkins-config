@@ -1,0 +1,22 @@
+Changes in branch origin/master, between cc4e4e69d80961f834c3db48ef016d29546c4b9d and a8ab24be964b8cf3743d7c5789542e80f3854d2f
+commit a8ab24be964b8cf3743d7c5789542e80f3854d2f
+tree 387a35e7997d4b496e3f35a76cc978418d303c39
+parent 7e186fefb6483d917f300604a859210f23cee0ea
+author Abhi <abhinandan.prateek@citrix.com> 1334305149 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1334305149 +0530
+
+    bug CS-14466: removing blank statement
+
+:100755 100755 31fc75ea09ff3e49f7e8fbca2f8c7fa95beb5708 7517941c9aafee8fc8f101582718fd6bc3219320 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+
+commit 7e186fefb6483d917f300604a859210f23cee0ea
+tree 5db62785a741f5e019c876f86aa75d192ab94460
+parent cc4e4e69d80961f834c3db48ef016d29546c4b9d
+author kishan <kishan@cloud.com> 1334298920 +0530
+committer kishan <kishan@cloud.com> 1334298920 +0530
+
+    bug CS-14430, CS-14431: Dropped unused columns in usage_network table, drop event table in cloud_usage db
+    status CS-14430, CS-14431: resolved fixed
+    reviewed-by: Nitin
+
+:100755 100755 4be6486aa7f3f73dd81149dd46db7a19b70a97c5 4cf26fbedde0251aee5e45a97fb6233dcd1e2e31 M	setup/db/db/schema-2214to30.sql

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 172ea6f1099a83f613c6f94c8f09a0081ebbc8eb and cc4e4e69d80961f834c3db48ef016d29546c4b9d
+commit cc4e4e69d80961f834c3db48ef016d29546c4b9d
+tree 4cf3679a09ab2d65dae22a6f0525d81a1437ec30
+parent 172ea6f1099a83f613c6f94c8f09a0081ebbc8eb
+author frank <frank.zhang@citrix.com> 1334276717 -0700
+committer frank <frank.zhang@citrix.com> 1334276769 -0700
+
+    CS-14341 Order of Compute offerings does not stick
+    
+    resolved fixed
+
+:100755 100755 c4dc22cfda3a5cbccfc205e59fd0c6464360897e fa5601e5943aa63ae4475c2f111268fe2c5539f5 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java

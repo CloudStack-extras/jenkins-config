@@ -1,0 +1,40 @@
+Changes in branch origin/master, between ee0f3e898c6f0b2e9695991f49b9a8809de087dc and 172ea6f1099a83f613c6f94c8f09a0081ebbc8eb
+commit 172ea6f1099a83f613c6f94c8f09a0081ebbc8eb
+tree 1ee17ad7b7b2a8c04bd480e9547b630713668c9e
+parent 60d45ec5e39b7caf41c236bfbb8572af83254eba
+author Jessica Wang <jessica@cloud.com> 1334272863 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273156 -0700
+
+    cloudstack 3.0 UI - add zone wizard - step 2 - fix a bug that change event of network offerings dropdown was not triggered when visiting step 2 the first time.
+
+:100644 100644 2e4227b1298f553cc6d6dd971ffc1a5d7bb1a746 3d31261b77cdce3a5d43752ad2bf6779163102e8 M	ui/scripts/zoneWizard.js
+
+commit 60d45ec5e39b7caf41c236bfbb8572af83254eba
+tree 1493a2ec55501426e9b19140c79097d116555e41
+parent b3bf6f08e61640bb40535470c4d49bbdf2fac58a
+author Jessica Wang <jessica@cloud.com> 1334270381 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273138 -0700
+
+    cloudstack 3.0 UI - fix a JS error "selectedNetworkOfferingObj is not defined"
+
+:100644 100644 2355e411e16ac3d34bb5e726ff55799848b3b80e 2e4227b1298f553cc6d6dd971ffc1a5d7bb1a746 M	ui/scripts/zoneWizard.js
+
+commit b3bf6f08e61640bb40535470c4d49bbdf2fac58a
+tree 2ece5d1c01a63e217ab44d35b7bf9c58968a1ac4
+parent 757c3542e8f74a5eee9a2b20edea71bdc6e3e6c1
+author Jessica Wang <jessica@cloud.com> 1334269176 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273110 -0700
+
+    bug 14386: cloudstack 3.0 UI - add zone wizard - basic zone - network offering dropdown - exclude network offerings having EIP/ELB/SG if hypervisor is not XenServer.
+
+:100644 100644 b33634a914d42644a48dadd7b8b419852de480a4 2355e411e16ac3d34bb5e726ff55799848b3b80e M	ui/scripts/zoneWizard.js
+
+commit 757c3542e8f74a5eee9a2b20edea71bdc6e3e6c1
+tree 416a6c64ed4b7dd3b471727f28ebc4092e80966d
+parent ee0f3e898c6f0b2e9695991f49b9a8809de087dc
+author Jessica Wang <jessica@cloud.com> 1334269053 -0700
+committer Jessica Wang <jessica@cloud.com> 1334273093 -0700
+
+    cloudstack 3.0 UI - dialog widget - remove a line that produced a bug that change event is trigger before data is populated in this dropdown in selectFn($.extend(selectArgs, dependsOnArgs)). Besides, selectFn($.extend(selectArgs, dependsOnArgs)) includes the line, $input.trigger('change'), already.
+
+:100644 100644 f50f735110e63788d6e6ad67224f78c5b5f11906 3e2f0b277848585bed1c6582b7f4c7bd00fab7ba M	ui/scripts/ui/dialog.js

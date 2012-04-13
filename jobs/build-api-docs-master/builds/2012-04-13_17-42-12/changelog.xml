@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 76c7c22b34eecbbd42fbeb3ec97206abec8f84b1 and 8f6e3e5ea9193a1fe78667e2939bf5a90c555385
+commit 8f6e3e5ea9193a1fe78667e2939bf5a90c555385
+tree a421ea25db5e62e58b373985c3a912f976a54e95
+parent 76c7c22b34eecbbd42fbeb3ec97206abec8f84b1
+author Jessica Wang <jessica@cloud.com> 1334353065 -0700
+committer Jessica Wang <jessica@cloud.com> 1334353270 -0700
+
+    cloudstack 3.0 UI - add Network offering dialog - correct label of service offering from Compute offering to System offering.
+
+:100644 100644 57e14552a8e0e565681a8cff2bfe4a9d377f327d 83736baa745412e7622c93c20ded83d39865835f M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 ce57adc6ae0df487e141b6e856039367aa1e1e73 06bd4267877216b8819bd68efcd18c6603ae79ca M	ui/index.jsp
+:100644 100644 db879715553072d7667f0d975be86d418ed273a0 65163aaed503734e2bf8996e11cc363ebed7a500 M	ui/scripts/configuration.js

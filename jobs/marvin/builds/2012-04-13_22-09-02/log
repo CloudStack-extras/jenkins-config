@@ -1,0 +1,216 @@
+Started by user [8mha:AAAAjB+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADJ4Shh49EuLU4v0s1NNCgsLAYYg/s+RAAAA[0mDavid Nalley
+Checkout:marvin / /var/lib/jenkins/workspace/marvin - hudson.remoting.LocalChannel@128899a
+Using strategy: Default
+Checkout:marvin / /var/lib/jenkins/workspace/marvin - hudson.remoting.LocalChannel@128899a
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack
+Commencing build of Revision d940f234f6a7da516756f247917ac2c080440e1a (origin/master)
+Checking out Revision d940f234f6a7da516756f247917ac2c080440e1a (origin/master)
+No change to record in branch origin/master
+[marvin] $ ant -DBRANCH_NAME=master package-marvin
+Buildfile: /var/lib/jenkins/workspace/marvin/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/marvin/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/marvin/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/marvin/build/replace.properties
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-04-14T02:09:12Z
+     [echo] Build number is 3.0.2.2012-04-14T02:09:12Z
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/docs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/dep-cache
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-utils.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/utils/src
+    [javac] Compiling 203 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/marvin/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-api.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/api/src
+    [javac] Compiling 707 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-vmware-base.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/vmware-base/src
+    [javac] Compiling 34 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /var/lib/jenkins/workspace/marvin/vmware-base/src/com/cloud/hypervisor/vmware/util/VmwareContext.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-core.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/core/src
+    [javac] Compiling 178 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-core.jar
+    [javac] Note: /var/lib/jenkins/workspace/marvin/core/src/com/cloud/hypervisor/vmware/manager/VmwareStorageManagerImpl.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-core.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-agent.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/agent/src
+    [javac] Compiling 42 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-agent.jar
+    [javac] Note: /var/lib/jenkins/workspace/marvin/agent/src/com/cloud/agent/resource/computing/LibvirtVMDef.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-agent.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-server.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/server/src
+    [javac] Compiling 827 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-server.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-server.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/client
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/client/lib
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/client/conf
+     [copy] Copying 38 files to /var/lib/jenkins/workspace/marvin/target/jar
+     [copy] Copying 23 files to /var/lib/jenkins/workspace/marvin/dist/client/conf
+     [copy] Copying 57 files to /var/lib/jenkins/workspace/marvin/target/db
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-proxy:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-console-proxy.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/console-proxy/src
+    [javac] Compiling 52 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-console-proxy.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-console-proxy.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcopy-console-proxy:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/conf
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/logs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/applet
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/images
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/js
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/ui
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/css
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/console-proxy/certs
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/marvin/dist/console-proxy
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/marvin/dist/console-proxy/conf
+     [copy] Copying 22 files to /var/lib/jenkins/workspace/marvin/dist/console-proxy/images
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/marvin/dist/console-proxy/js
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/marvin/dist/console-proxy/ui
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/marvin/dist/console-proxy/css
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/marvin/dist/console-proxy/certs
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-console-proxy:
+     [copy] Copying 8 files to /var/lib/jenkins/workspace/marvin/dist/console-proxy
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/marvin/dist/console-proxy/conf
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-agent:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/agent
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/agent/scripts
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/agent/conf
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/agent/logs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/agent/db
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/agent/storagehdpatch
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/marvin/dist/agent/conf
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/marvin/dist/agent/conf
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/marvin/dist/agent
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
+     [copy] Copying 153 files to /var/lib/jenkins/workspace/marvin/target/scripts
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/marvin/target/scripts
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/ui
+     [copy] Copying 73 files to /var/lib/jenkins/workspace/marvin/target/ui
+     [copy] Copying 92 files to /var/lib/jenkins/workspace/marvin/target/ui
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/marvin/target/ui
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-ovm.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/ovm/src
+    [javac] Compiling 18 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-ovm.jar
+    [javac] Note: /var/lib/jenkins/workspace/marvin/ovm/src/com/cloud/ovm/object/OvmStoragePool.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-ovm.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ovm:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-package:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm:
+      [zip] Building zip: /var/lib/jenkins/workspace/marvin/dist/systemvm.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-systemvm-patch:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/build-patch
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/dist/build-patch/usr/sbin
+     [copy] Copying 75 files to /var/lib/jenkins/workspace/marvin/dist/build-patch
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/marvin/dist/build-patch/usr/sbin
+      [tar] Building tar: /var/lib/jenkins/workspace/marvin/dist/patch.tar
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/marvin/dist
+     [gzip] Building: /var/lib/jenkins/workspace/marvin/dist/cloud-scripts.tgz
+   [delete] Deleting: /var/lib/jenkins/workspace/marvin/dist/patch.tar
+   [delete] Deleting directory /var/lib/jenkins/workspace/marvin/dist/build-patch
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm-iso:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-opensource:
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/marvin/dist
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/marvin/target/jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-war-oss:
+      [war] Building war: /var/lib/jenkins/workspace/marvin/dist/client/client.war
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-test:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/test/classes
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-testclient:
+     [echo] src is /var/lib/jenkins/workspace/marvin/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-test.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/test/src
+    [javac] Compiling 37 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-test.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-test.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-usage:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/marvin/target/classes/cloud-usage.jar
+     [echo] Compiling /var/lib/jenkins/workspace/marvin/usage/src
+    [javac] Compiling 16 source files to /var/lib/jenkins/workspace/marvin/target/classes/cloud-usage.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/marvin/target/jar/cloud-usage.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
+     [echo] build-apidocs
+     [echo] Result locates at /var/lib/jenkins/workspace/marvin/dist/commands.xml
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-marvin:
+     [echo] Generating Marvin API Classes
+     [echo] API classes @ /var/lib/jenkins/workspace/marvin/tools/marvin/marvin/cloudstackAPI
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-marvin:
+     [echo] Packaging Marvin
+     [exec] Marvin requires paramiko to be installed
+     [exec] Traceback (most recent call last):
+     [exec]   File "setup.py", line 13, in <module>
+     [exec]     import paramiko
+     [exec] ImportError: No module named paramiko
+     [exec] Result: 1
+     [echo] distributable tarball at: /var/lib/jenkins/workspace/marvin/tools/marvin/dist/Marvin-*.tar.gz
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 1 minute 48 seconds
+Archiving artifacts
+ERROR: No artifacts found that match the file pattern "/var/lib/jenkins/workspace/marvin/tools/marvin/dist/Marvin*.tar.gz". Configuration error?
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mERROR: '/var/lib/jenkins/workspace/marvin/tools/marvin/dist/Marvin*.tar.gz' doesn't match anything: '' exists but not '/var/lib/jenkins/workspace/marvin/tools/marvin/dist/Marvin*.tar.gz'
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mBuild step 'Archive the artifacts' changed build result to FAILURE
+Finished: FAILURE

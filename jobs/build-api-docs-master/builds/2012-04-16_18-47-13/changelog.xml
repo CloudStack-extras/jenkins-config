@@ -1,0 +1,17 @@
+Changes in branch origin/master, between 1543c01e8df7b8afbc0585ad530632ec9058dd8f and 03ccb7f31305525f02937fe24f4c9e0a671602f9
+commit 03ccb7f31305525f02937fe24f4c9e0a671602f9
+tree 06a6a5bbc5224cb4325716917de5f677baf64ac7
+parent 1543c01e8df7b8afbc0585ad530632ec9058dd8f
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334616159 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334616236 -0700
+
+    CS-14512: fixed deployVm with ipToNetworkList when uuid is used for networkIds
+    
+    Conflicts:
+    
+    	server/src/com/cloud/api/ApiResponseHelper.java
+
+:100755 100755 e9880784175a413b657874a2c743fa5f06e3cd95 9bf0a1cc1e7cfe07b765daae3bcc9d71d038bf98 M	api/src/com/cloud/api/ResponseGenerator.java
+:100644 100644 5c684f8618620f1d5f13e7d29fdcf333c0103c72 85914cb9289ca08cd386f83e030385e69698b880 M	api/src/com/cloud/api/commands/DeployVMCmd.java
+:100755 100755 6756afc73a7463804be2a6281f06b9c2fee5d0b2 0079830e53b12aa20c864ffdb6e91519454983f2 M	server/src/com/cloud/api/ApiDispatcher.java
+:100755 100755 04c9b7a325a98d641e1927679a3476c4cef5005e 9147a6a12ce06ca657f1a8e6db96166d1a227eb8 M	server/src/com/cloud/api/ApiResponseHelper.java

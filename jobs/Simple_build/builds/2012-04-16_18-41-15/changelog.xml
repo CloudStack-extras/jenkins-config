@@ -1,0 +1,16 @@
+Changes in branch origin/master, between 2f36d60bdec5413cf16df1985917598c4488b570 and 1543c01e8df7b8afbc0585ad530632ec9058dd8f
+commit 1543c01e8df7b8afbc0585ad530632ec9058dd8f
+tree 96988380876a501b294e9237bfbfa95c664da6b3
+parent 2f36d60bdec5413cf16df1985917598c4488b570
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1334614536 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1334615272 -0700
+
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Description:
+    
+    	Fixing two other scenarios apart from the reported one
+    	where we were not passing in database IDs for translation
+    	into uuids, in the exception.
+
+:100755 100755 9642ca8fcd1e23af9558be6ffd096965fedfbb03 f8dac7be56199b8c716490be6269d5c32bba6477 M	server/src/com/cloud/network/NetworkManagerImpl.java

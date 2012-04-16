@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 859e3673809e4afef8c562685568a09b1e70e1f0 and 35c8c01e9ce8acea2d7e6f8ce073d07526809f1b
+commit 35c8c01e9ce8acea2d7e6f8ce073d07526809f1b
+tree 813f74cba73d43404d3a98343a67f04a06430b64
+parent 859e3673809e4afef8c562685568a09b1e70e1f0
+author kishan <kishan@cloud.com> 1334576708 +0530
+committer kishan <kishan@cloud.com> 1334576708 +0530
+
+    bug CS-14431: query to drop event table already exists. reverting earlier commit
+    status CS-14431: resolved fixed
+    reviewed-by: Nitin
+
+:100755 100755 aebba36b3ab5e52a26ce29c2e79a95752b1216e9 cb16ea310022fe9ffc1635468ed634c34cb0db59 M	setup/db/db/schema-2214to30.sql

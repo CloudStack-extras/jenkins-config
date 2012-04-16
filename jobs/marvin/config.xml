@@ -68,7 +68,7 @@ This job provides a packaged source tarball for any of the cloudstack branches</
   </builders>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>$WORKSPACE/tools/marvin/dist/Marvin*.tar.gz</artifacts>
+      <artifacts>tools/marvin/dist/Marvin*.tar.gz</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsPublisher/>

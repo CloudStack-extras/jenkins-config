@@ -1,0 +1,18 @@
+Changes in branch origin/master, between 35c8c01e9ce8acea2d7e6f8ce073d07526809f1b and 662a23491669f9f9db2030e188c4f124286245ee
+commit 662a23491669f9f9db2030e188c4f124286245ee
+tree a71bd14c59e652be7a21f68cfd8d0e107b1245e4
+parent 35c8c01e9ce8acea2d7e6f8ce073d07526809f1b
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334607419 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334607766 -0700
+
+    CS-14297: added "forced" option to deleteStoragePool command. If forced=true, all destroyed volumes are marked as Expunged even when we can't reach primary storage at the moment of deletion.
+    
+    Conflicts:
+    
+    	api/src/com/cloud/api/commands/StopVMCmd.java
+
+:100644 100644 edcd282ec7260480b8eb8195abc3a5e639c334ad 53601947bde1ba3e325ce4591dcb8a58addc2e8f M	api/src/com/cloud/api/commands/DeletePoolCmd.java
+:100644 100644 324c95eab2e9d44ef60f952a7e84f4e0f11a3fbb 45e6bd9852ccb2523f08017bd329f9184f18497c M	api/src/com/cloud/api/commands/StopVMCmd.java
+:100755 100755 35254cb8a3bd795a24433c43d0e8dc50170f4072 015489bb6240284ee9769bf8bc2a252c985bb9c6 M	server/src/com/cloud/storage/StorageManagerImpl.java
+:100755 100755 b949fb0a76d22efc3f32477f9ad6c86a52bc079f 920af44a884c3bfb7f8e22973eded87151c2121e M	server/src/com/cloud/storage/dao/VolumeDao.java
+:100755 100755 b8cf8778fb80b1850e91656123330f83470e71f2 0cbcf398d8ebc158a9c188ae8d43d7eb334b01ef M	server/src/com/cloud/storage/dao/VolumeDaoImpl.java

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 193e835717b1fcbf2092d6b09c65ec14cd6eb52f and e5bf2434984868f11144bcdc6979d36412385313
+commit e5bf2434984868f11144bcdc6979d36412385313
+tree 9b88df9cab71eb299f03ff2a94f72e758a3d4fa1
+parent 193e835717b1fcbf2092d6b09c65ec14cd6eb52f
+author Murali reddy <Murali.Reddy@citrix.com> 1334651867 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1334651867 +0530
+
+    bug CS-14458: NetScaler SDX support in CloudStack only work with 10 gig interface
+    
+    This fix will ensure both 10gig and 1 gig interfaces of NetScaler SDX are supported
+
+:100644 100644 fc89c75a1b1b624506754facab6263135dbeb497 5ba1a962ef00422fd681fa5efbd02543a337ff93 M	core/src/com/cloud/network/resource/NetscalerResource.java

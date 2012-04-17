@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 64b45722de0575279848807c593c52f249ab5932 and e852857f9e69526eb13c26c9878a7f8859fcf6b7
+commit e852857f9e69526eb13c26c9878a7f8859fcf6b7
+tree f61b522cd8ef9befaea4ed439840f055a9db3bb6
+parent 64b45722de0575279848807c593c52f249ab5932
+author Jessica Wang <jessica@cloud.com> 1334685807 -0700
+committer Jessica Wang <jessica@cloud.com> 1334685965 -0700
+
+    bug 14516: add zone wizard - exclude EIP, ELB, SG network offerings only when hypervisor is VMware or BareMetal.
+
+:100644 100644 3d31261b77cdce3a5d43752ad2bf6779163102e8 62d898a4b4ee714145adda2179318ab35644185a M	ui/scripts/zoneWizard.js

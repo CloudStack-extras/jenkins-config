@@ -1,0 +1,20 @@
+Changes in branch origin/master, between e5bf2434984868f11144bcdc6979d36412385313 and e852857f9e69526eb13c26c9878a7f8859fcf6b7
+commit e852857f9e69526eb13c26c9878a7f8859fcf6b7
+tree f61b522cd8ef9befaea4ed439840f055a9db3bb6
+parent 64b45722de0575279848807c593c52f249ab5932
+author Jessica Wang <jessica@cloud.com> 1334685807 -0700
+committer Jessica Wang <jessica@cloud.com> 1334685965 -0700
+
+    bug 14516: add zone wizard - exclude EIP, ELB, SG network offerings only when hypervisor is VMware or BareMetal.
+
+:100644 100644 3d31261b77cdce3a5d43752ad2bf6779163102e8 62d898a4b4ee714145adda2179318ab35644185a M	ui/scripts/zoneWizard.js
+
+commit 64b45722de0575279848807c593c52f249ab5932
+tree caaf0d0badfcdae7ca7e0d756409659fc8250151
+parent e5bf2434984868f11144bcdc6979d36412385313
+author Jessica Wang <jessica@cloud.com> 1334684076 -0700
+committer Jessica Wang <jessica@cloud.com> 1334684135 -0700
+
+    cloudstack 3.0 UI - deployVM action - not show dialogbox of "password of new VM xxx is yyy" if deployVirtualMachine API doesn't return password (regardless of passwordenabled property).
+
+:100644 100644 c5c612486f462ffa8e76ba30fb852dd8883a5a59 9d9ac0e73c638bad7d556036911a254772058a90 M	ui/scripts/instances.js

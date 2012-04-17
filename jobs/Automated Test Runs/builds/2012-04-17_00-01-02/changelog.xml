@@ -1,0 +1,63 @@
+Changes in branch origin/master, between 662a23491669f9f9db2030e188c4f124286245ee and 193e835717b1fcbf2092d6b09c65ec14cd6eb52f
+commit 193e835717b1fcbf2092d6b09c65ec14cd6eb52f
+tree c0bee86f1f67fbd1ffe57adf4cd82e3bdca71958
+parent 01274e3af4ff04b16bd2cc10a23c96f17ba45cf4
+author Jessica Wang <jessica@cloud.com> 1334625643 -0700
+committer Jessica Wang <jessica@cloud.com> 1334625732 -0700
+
+    bug 14410: cloudstack 3.0 UI - instance page - Start VM action - show vm password on screen if startVM API returns it.
+
+:100644 100644 5810b6d8f62ca8c29ccb60a8061d72e1f2fd931e c5c612486f462ffa8e76ba30fb852dd8883a5a59 M	ui/scripts/instances.js
+
+commit 01274e3af4ff04b16bd2cc10a23c96f17ba45cf4
+tree 188d2b68b79cfa7bdb7ab2efe13948c7d12ea3cc
+parent 03ccb7f31305525f02937fe24f4c9e0a671602f9
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334617433 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334617485 -0700
+
+    CS-14480: db upgrade 3.0.1-3.0.2 - fixed upgrade inconsistencies in default fields values
+
+:100644 100644 50f22e9eadcf035705710a5cec1c661b5a8864bd 71de7fb9355ef3eafa001242728d69dd7201dd48 M	setup/db/db/schema-301to302-cleanup.sql
+
+commit 03ccb7f31305525f02937fe24f4c9e0a671602f9
+tree 06a6a5bbc5224cb4325716917de5f677baf64ac7
+parent 1543c01e8df7b8afbc0585ad530632ec9058dd8f
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334616159 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334616236 -0700
+
+    CS-14512: fixed deployVm with ipToNetworkList when uuid is used for networkIds
+    
+    Conflicts:
+    
+    	server/src/com/cloud/api/ApiResponseHelper.java
+
+:100755 100755 e9880784175a413b657874a2c743fa5f06e3cd95 9bf0a1cc1e7cfe07b765daae3bcc9d71d038bf98 M	api/src/com/cloud/api/ResponseGenerator.java
+:100644 100644 5c684f8618620f1d5f13e7d29fdcf333c0103c72 85914cb9289ca08cd386f83e030385e69698b880 M	api/src/com/cloud/api/commands/DeployVMCmd.java
+:100755 100755 6756afc73a7463804be2a6281f06b9c2fee5d0b2 0079830e53b12aa20c864ffdb6e91519454983f2 M	server/src/com/cloud/api/ApiDispatcher.java
+:100755 100755 04c9b7a325a98d641e1927679a3476c4cef5005e 9147a6a12ce06ca657f1a8e6db96166d1a227eb8 M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit 1543c01e8df7b8afbc0585ad530632ec9058dd8f
+tree 96988380876a501b294e9237bfbfa95c664da6b3
+parent 2f36d60bdec5413cf16df1985917598c4488b570
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1334614536 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1334615272 -0700
+
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Description:
+    
+    	Fixing two other scenarios apart from the reported one
+    	where we were not passing in database IDs for translation
+    	into uuids, in the exception.
+
+:100755 100755 9642ca8fcd1e23af9558be6ffd096965fedfbb03 f8dac7be56199b8c716490be6269d5c32bba6477 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit 2f36d60bdec5413cf16df1985917598c4488b570
+tree 15153450ae8e3be0784cc4b9e51028d4e9148abd
+parent 662a23491669f9f9db2030e188c4f124286245ee
+author Jessica Wang <jessica@cloud.com> 1334613430 -0700
+committer Jessica Wang <jessica@cloud.com> 1334613563 -0700
+
+    bug 12688: fix a bug in listView widget that didn't pass correct filterBy object to loadBody().
+
+:100644 100644 02e0eebf3f3094655db56eda6f406a98f1fe662e 6cc572d6ca60c6e7f64407d07f0e464e5c1f3002 M	ui/scripts/ui/widgets/listView.js

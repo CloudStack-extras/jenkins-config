@@ -1,0 +1,12 @@
+Changes in branch origin/master, between e852857f9e69526eb13c26c9878a7f8859fcf6b7 and 478eb1df6c3ed7699ce0035b13c3f6bdcff33c2d
+commit 478eb1df6c3ed7699ce0035b13c3f6bdcff33c2d
+tree 161584e39cb6c9dd83fb132a82e9dbe3bb50b663
+parent e852857f9e69526eb13c26c9878a7f8859fcf6b7
+author anthony <anthony@cloud.com> 1334704095 -0700
+committer anthony <anthony@cloud.com> 1334704095 -0700
+
+    bug : 14543
+    
+    XenServer doesn't need to provide gateway
+
+:100755 100755 f148d3bc3f81403a6f684a4d33de38da8b5602f2 efe922a8a2f57a1129c2b2bfa97997619359bcaf M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java

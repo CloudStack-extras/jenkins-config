@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 478eb1df6c3ed7699ce0035b13c3f6bdcff33c2d and 4cc9bf95c87eea341e69f41ffb85ef2c00f8fd6e
+commit 4cc9bf95c87eea341e69f41ffb85ef2c00f8fd6e
+tree e06f832f01ac8134b31c895c2207941f0b23109c
+parent 478eb1df6c3ed7699ce0035b13c3f6bdcff33c2d
+author Jessica Wang <jessica@cloud.com> 1334704870 -0700
+committer Jessica Wang <jessica@cloud.com> 1334705084 -0700
+
+    CS-13589: cloudstack 3.0 UI - volume page - when a volume is in "Migrating" state, disallow any action.
+
+:100644 100644 d1895462b081a9a011cdb8b27745cf72f68c7292 164b72fb528c1a91c6aaa4ae0877ad67e5994ddc M	ui/scripts/storage.js

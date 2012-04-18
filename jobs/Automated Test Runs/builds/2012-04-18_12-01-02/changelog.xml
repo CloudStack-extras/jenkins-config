@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 08bda90268ac8518866e3efc2be9b662fbd275b4 and 7be811905fbdadab3724a495318b5d2321898afa
+commit 7be811905fbdadab3724a495318b5d2321898afa
+tree 8a3791ff55be2d786720202c405f88eb3d30c6f4
+parent 08bda90268ac8518866e3efc2be9b662fbd275b4
+author kishan <kishan@cloud.com> 1334743761 +0530
+committer kishan <kishan@cloud.com> 1334743761 +0530
+
+    bug CS-14532: during 2211-2212 upgrade, do not add resource count entries for resourceTypes that were added in later releases
+    status CS-14532: resolved fixed
+    reviewed-by: Nitin
+
+:100644 100644 9276d3b4d7c42b7db44feb0782e1c4fc884f73c4 1c922c19d1cc26f5fc54b9e9a0a933d5a99e7af9 M	server/src/com/cloud/upgrade/dao/Upgrade2211to2212.java

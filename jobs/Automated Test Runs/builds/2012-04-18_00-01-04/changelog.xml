@@ -1,0 +1,22 @@
+Changes in branch origin/master, between e852857f9e69526eb13c26c9878a7f8859fcf6b7 and 4cc9bf95c87eea341e69f41ffb85ef2c00f8fd6e
+commit 4cc9bf95c87eea341e69f41ffb85ef2c00f8fd6e
+tree e06f832f01ac8134b31c895c2207941f0b23109c
+parent 478eb1df6c3ed7699ce0035b13c3f6bdcff33c2d
+author Jessica Wang <jessica@cloud.com> 1334704870 -0700
+committer Jessica Wang <jessica@cloud.com> 1334705084 -0700
+
+    CS-13589: cloudstack 3.0 UI - volume page - when a volume is in "Migrating" state, disallow any action.
+
+:100644 100644 d1895462b081a9a011cdb8b27745cf72f68c7292 164b72fb528c1a91c6aaa4ae0877ad67e5994ddc M	ui/scripts/storage.js
+
+commit 478eb1df6c3ed7699ce0035b13c3f6bdcff33c2d
+tree 161584e39cb6c9dd83fb132a82e9dbe3bb50b663
+parent e852857f9e69526eb13c26c9878a7f8859fcf6b7
+author anthony <anthony@cloud.com> 1334704095 -0700
+committer anthony <anthony@cloud.com> 1334704095 -0700
+
+    bug : 14543
+    
+    XenServer doesn't need to provide gateway
+
+:100755 100755 f148d3bc3f81403a6f684a4d33de38da8b5602f2 efe922a8a2f57a1129c2b2bfa97997619359bcaf M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java

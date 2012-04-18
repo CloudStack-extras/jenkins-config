@@ -1,0 +1,10 @@
+Changes in branch origin/master, between e6d064952de2504d63c6bae70f7b868fb8818a83 and e32449613d16397442eaefc4e5bd9e307da29ece
+commit e32449613d16397442eaefc4e5bd9e307da29ece
+tree 0fbfcc6fb3d5e632076f852b8d9b0f381994b3a7
+parent e6d064952de2504d63c6bae70f7b868fb8818a83
+author Jessica Wang <jessica@cloud.com> 1334782327 -0700
+committer Jessica Wang <jessica@cloud.com> 1334782373 -0700
+
+    CS-14142: cloudstack 3.0 UI - Instance page - show Attached ISO name instead of Attached ISO Yes/No.
+
+:100644 100644 ac92ea4a953f1c20f3e259c77be8b63c55e579c7 bcc2bda239ae73edbedc76d15a31f48b36d9f0bc M	ui/scripts/instances.js

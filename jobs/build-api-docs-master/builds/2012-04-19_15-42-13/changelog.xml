@@ -1,0 +1,14 @@
+Changes in branch origin/master, between c5083787c2c3b9cfd92c3d6ec29d0a4964d26985 and 04ce34daaf889c6a862fbe8de8263c2596dc8224
+commit 04ce34daaf889c6a862fbe8de8263c2596dc8224
+tree e30dd77956280e1c1c4460aa8265a0b0341a2280
+parent c5083787c2c3b9cfd92c3d6ec29d0a4964d26985
+author Brian Federle <brian.federle@citrix.com> 1334863669 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334864475 -0700
+
+    bug CS-14573
+    
+    Update EULAs
+
+:100644 100644 c30161da2a122d69dafd346a6da9a4ddff157e57 fa74cdb45ce8e1b52b2cebec160608351d34ea44 M	build/license/eula.en.html
+:100755 100755 22a022198b1a3b6611851bb49e63544c12031640 f2f7093ff37bdce54fcc5380ff48ff0e5cbdb88c M	build/license/eula.ja.html
+:000000 100644 0000000000000000000000000000000000000000 d39dd2e85f16ef81bfb806ccdcd7922a875d1f74 A	build/license/eula.zh_CN.html

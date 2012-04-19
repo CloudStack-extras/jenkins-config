@@ -1,0 +1,99 @@
+Changes in branch origin/master, between 327049b5c5601c8ce79eea3e36cd48c9b859a0ba and e76c34e6f789a103700facaeee4994a7e3653e9e
+commit e76c34e6f789a103700facaeee4994a7e3653e9e
+tree 861e7481e2d7a1ed19a701a2d98e9769614d1f56
+parent 231a67b951ca3ced7e2a05f617aa0cffb87b8254
+author Jessica Tomechak <jtomechak@cloud.com> 1334865658 -0700
+committer Jessica Tomechak <jtomechak@cloud.com> 1334866105 -0700
+
+    Fix docs for CS-14560, typo.
+
+:100644 100644 ccd47b1aae126afda01a7013e0e5cce3f14c0f3d 30768dcda43600905f86fb7fcdc40ca40d588708 M	docs/3.0/CloudStack3.0QuickInstallGuide.docx
+
+commit 231a67b951ca3ced7e2a05f617aa0cffb87b8254
+tree 941ded06eed314fa0844a07aa20b0c9f0fc90397
+parent 7fb70ab9f1f7a2ba73c44aff1e2f9dd68e3984d3
+author Brian Federle <brian.federle@citrix.com> 1334865619 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334865619 -0700
+
+    Add missing 'fetchLatest' for second listCapacity call
+
+:100644 100644 9ba2a5b60fd622be4dc5fc0bae09de80e4909889 7a7df08c4df70cbe856df2699179c6ed785b4853 M	ui/scripts/dashboard.js
+
+commit 7fb70ab9f1f7a2ba73c44aff1e2f9dd68e3984d3
+tree fb8cd3c0aa645b58b76e72be9ca65a16c98d0025
+parent 78dc2ecf18e15e0c34ab214162bd9d55fbecfcce
+author Pranav Saxena <pranav.saxena@citrix.com> 1334573681 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334865231 -0700
+
+    CS-13763 : System Wide Capacity Percentages are not being properly shown on Firefox on Ubuntu/Fedora
+
+:100644 100644 ded10d6c1528acb5e7919fddd7e1ab4353c37ecc 2464f040dda8567e2d18e0daff30682367e2685a M	ui/css/cloudstack3.css
+
+commit 78dc2ecf18e15e0c34ab214162bd9d55fbecfcce
+tree 922913c9bcc11b7d182f7e307cf5373e7560cb0a
+parent 0dcaab2581e1905a5cf9761eb0038b159eb8afb7
+author Pranav Saxena <pranav.saxena@citrix.com> 1334640981 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334865222 -0700
+
+    CS-13904 : Labels for service offering CPU and memory not consistent
+
+:100644 100644 3474f44bd0365ec9ef7a7a64690c2facbfec9575 b913179b88835141b1885bfa10eb3c5d801f6091 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 1424473d529d8991cf5376fec587d38b55acae03 0b154522cf67c1467e8ceee47b09230cb12f2b65 M	ui/scripts/sharedFunctions.js
+
+commit 0dcaab2581e1905a5cf9761eb0038b159eb8afb7
+tree 124ad6065327831ec4b2c15bb6e93a74bcb43864
+parent 04ce34daaf889c6a862fbe8de8263c2596dc8224
+author Pranav Saxena <pranav.saxena@citrix.com> 1334828642 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334865196 -0700
+
+    CS-13825 : There's an extra >CR> in the internal DNS text label in firefox Ubuntu Cloudstack Installation
+
+:100644 100644 6f9bdb9464ebd19432a3f5f783cec3263f26c283 ded10d6c1528acb5e7919fddd7e1ab4353c37ecc M	ui/css/cloudstack3.css
+
+commit 04ce34daaf889c6a862fbe8de8263c2596dc8224
+tree e30dd77956280e1c1c4460aa8265a0b0341a2280
+parent c5083787c2c3b9cfd92c3d6ec29d0a4964d26985
+author Brian Federle <brian.federle@citrix.com> 1334863669 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334864475 -0700
+
+    bug CS-14573
+    
+    Update EULAs
+
+:100644 100644 c30161da2a122d69dafd346a6da9a4ddff157e57 fa74cdb45ce8e1b52b2cebec160608351d34ea44 M	build/license/eula.en.html
+:100755 100755 22a022198b1a3b6611851bb49e63544c12031640 f2f7093ff37bdce54fcc5380ff48ff0e5cbdb88c M	build/license/eula.ja.html
+:000000 100644 0000000000000000000000000000000000000000 d39dd2e85f16ef81bfb806ccdcd7922a875d1f74 A	build/license/eula.zh_CN.html
+
+commit c5083787c2c3b9cfd92c3d6ec29d0a4964d26985
+tree db15731d6c3af81cf66c2c3f95342dc80e245b2b
+parent e5571480d4e9eef39e1b0a23c65b6442ce774577
+author Kelven Yang <kelven@cloud.com> 1334862633 -0700
+committer Kelven Yang <kelven@cloud.com> 1334862633 -0700
+
+    Hardening console proxy AJAX protocol to address security concerns
+
+:100644 100644 21863c1ab2ca7c582a96cfe5d3e5527cc6689e44 a0c9b2257c3d1320259e1173d112191f11fa49ed M	agent/src/com/cloud/agent/resource/consoleproxy/ConsoleProxyResource.java
+:100644 100644 132fc520457a3c2f07991adcde8cbd67512d09e3 c3b0479bdc7b3de611ec778760e386a0d7c9d643 M	api/src/com/cloud/agent/api/proxy/StartConsoleProxyAgentHttpHandlerCommand.java
+:100644 100644 11a3d2aa9ad5c6173a58ba2079d105801da76327 96c57e40ba77835b768cd5ad40fce4f65670c14c M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxy.java
+:100644 100644 8f44b7f777eac049db5b170bb8169b5990dea3e5 a4542db6a6e909918961719ff234c072ca5a305e M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxHandler.java
+:100644 100644 5aceb68c77fb727f5276750d65fca45c3d9b77cf bc01ed724745e3c9ba3b3ca3914c883a79fcb1a7 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyAjaxImageHandler.java
+:100644 100644 68d2750ebb084c21d0593eb2e0658d5d1fd09589 b3925556bb1705cbba9b2ccf42fe0db0980c6aad M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientBase.java
+:100644 100644 01a053df969f4b7ab1598ebdb45163a4402b666c 0b29d23cddf39db0b8e3b1518eca8f996f032689 M	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyClientParam.java
+:000000 100644 0000000000000000000000000000000000000000 105537ea2a6d680a555c31828b4c433357bb6521 A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyHttpHandlerHelper.java
+:000000 100644 0000000000000000000000000000000000000000 8e1f7b46fd864faa0115f7795a5ad156d129b721 A	console-proxy/src/com/cloud/consoleproxy/ConsoleProxyPasswordBasedEncryptor.java
+:100755 100755 c5438229457b287aa16248ac2b93e8a00a7655d7 612d2b69797241d63595e4a4314b48cb2b407bea M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:000000 100644 0000000000000000000000000000000000000000 a53ab398148f35c7cc861e9071dcfdcea7ae4cfa A	server/src/com/cloud/servlet/ConsoleProxyClientParam.java
+:000000 100644 0000000000000000000000000000000000000000 2d1b6f529c64894787af193307026c3a9cd94d5d A	server/src/com/cloud/servlet/ConsoleProxyPasswordBasedEncryptor.java
+:100644 100644 0362a2cf70bd5cf2ba8eca493e70086ebb799da4 d400d51ec6061069bc0a14c0f07ab7aae1c24e8d M	server/src/com/cloud/servlet/ConsoleProxyServlet.java
+
+commit e5571480d4e9eef39e1b0a23c65b6442ce774577
+tree 45ea88d030bb2960fc708eca88a12d92e56888c9
+parent 327049b5c5601c8ce79eea3e36cd48c9b859a0ba
+author kishan <kishan@cloud.com> 1334852857 +0530
+committer kishan <kishan@cloud.com> 1334852991 +0530
+
+    bug CS-14566: set up physical networks before encrypting config values
+    status CS-14566: resolved fixed
+    reviewed-by: Nitin
+
+:100755 100755 7517941c9aafee8fc8f101582718fd6bc3219320 9c61c373de18462ae3c71dd8fd36ec834571abf3 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java

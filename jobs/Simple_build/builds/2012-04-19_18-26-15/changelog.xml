@@ -1,0 +1,20 @@
+Changes in branch origin/master, between e76c34e6f789a103700facaeee4994a7e3653e9e and 8b35987b8d1a15011ff40340949937b8a821449e
+commit 8b35987b8d1a15011ff40340949937b8a821449e
+tree 9ad2937bb7b5bc229382e61b592a9e5da5a65442
+parent 26b4d180d1ed13a8c24543b1cd43334d200c91f8
+author Pranav Saxena <pranav.saxena@citrix.com> 1334873120 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334873860 -0700
+
+    CS-13830 : Zone's guest CIDR field is not modifiable in the UI
+
+:100644 100644 1c1fab1151405c7e3c788db23b341435b26ecc6b aa7e68b2cfcee73a7dc747e07e50670a4949e05a M	ui/scripts/system.js
+
+commit 26b4d180d1ed13a8c24543b1cd43334d200c91f8
+tree 937a33da1644a7bd0ba54dea9e6e16293a9da4b6
+parent e76c34e6f789a103700facaeee4994a7e3653e9e
+author Pranav Saxena <pranav.saxena@citrix.com> 1334870280 +0530
+committer Brian Federle <brian.federle@citrix.com> 1334873847 -0700
+
+    CS-13830 : Zone's guest CIDR field is not modifiable in the UI
+
+:100644 100644 c430977e1bf06f58999dae9c04d38d4b825bb0b4 1c1fab1151405c7e3c788db23b341435b26ecc6b M	ui/scripts/system.js

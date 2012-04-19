@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 0b18117db95e09479a5b7ddcbe32c1b626058a46 and 327049b5c5601c8ce79eea3e36cd48c9b859a0ba
+commit 327049b5c5601c8ce79eea3e36cd48c9b859a0ba
+tree 4e83eda67dd3e663136bb7cf5a8637d12e2bf8b3
+parent 0b18117db95e09479a5b7ddcbe32c1b626058a46
+author Rajesh Battala <rajesh.battala@citrix.com> 1334850345 +0530
+committer Rajesh Battala <rajesh.battala@citrix.com> 1334850345 +0530
+
+    CS-14546: Fixed bug Unable to view console in System and Guest VMs and Added Upgrade script
+
+:000000 100755 0000000000000000000000000000000000000000 533bdaadd1a890d6f272b499265bb1cfa7ee6b71 A	scripts/vm/hypervisor/xenserver/upgrade_vnc_config.sh
+:100644 100644 dae529bc563788f6e964a1dfeac382b51239bfc6 0362a2cf70bd5cf2ba8eca493e70086ebb799da4 M	server/src/com/cloud/servlet/ConsoleProxyServlet.java

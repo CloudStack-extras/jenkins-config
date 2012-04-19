@@ -1,0 +1,12 @@
+Changes in branch origin/master, between b7b77cea5c3bb3840d0a101fa83e7ed17985ce91 and 9d694dd8e75d4c562dd0035765d1f493f06c3d5e
+commit 9d694dd8e75d4c562dd0035765d1f493f06c3d5e
+tree 6d918e7016089a92f0a79b9d6c4874e83e349040
+parent b7b77cea5c3bb3840d0a101fa83e7ed17985ce91
+author Jessica Wang <jessica@cloud.com> 1334798386 -0700
+committer Jessica Wang <jessica@cloud.com> 1334798442 -0700
+
+    cloudstack 3.0 UI - localize validation message for vm host name.
+
+:100644 100644 d4d8b63e6f6a6db3b32fc42c59e133210695952e 3474f44bd0365ec9ef7a7a64690c2facbfec9575 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 75f30a8cc16e1b637166d64abab35c9b4c878d5b e9f730fdc899b4efc204cb477f6d5362c87b1757 M	ui/index.jsp
+:100644 100644 38d9f65cfed721a2f335a60f41006eb1bf93aa14 1424473d529d8991cf5376fec587d38b55acae03 M	ui/scripts/sharedFunctions.js

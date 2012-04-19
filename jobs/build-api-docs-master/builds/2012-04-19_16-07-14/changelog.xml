@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 7fb70ab9f1f7a2ba73c44aff1e2f9dd68e3984d3 and 231a67b951ca3ced7e2a05f617aa0cffb87b8254
+commit 231a67b951ca3ced7e2a05f617aa0cffb87b8254
+tree 941ded06eed314fa0844a07aa20b0c9f0fc90397
+parent 7fb70ab9f1f7a2ba73c44aff1e2f9dd68e3984d3
+author Brian Federle <brian.federle@citrix.com> 1334865619 -0700
+committer Brian Federle <brian.federle@citrix.com> 1334865619 -0700
+
+    Add missing 'fetchLatest' for second listCapacity call
+
+:100644 100644 9ba2a5b60fd622be4dc5fc0bae09de80e4909889 7a7df08c4df70cbe856df2699179c6ed785b4853 M	ui/scripts/dashboard.js

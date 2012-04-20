@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 102bc1f39f11e70e371d7868a8575108ec1c5cb6 and e4e0fff2ebdfccae6559890a76a8e1bb23701baa
+commit e4e0fff2ebdfccae6559890a76a8e1bb23701baa
+tree b29b6725c5f1d8513695e708d038a823fd2bbcaa
+parent 102bc1f39f11e70e371d7868a8575108ec1c5cb6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334948093 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1334948437 -0700
+
+    Fixed db upgrade for 2.1-3.0
+
+:100644 100644 0cd18bd995404d95c4e61430d29e03ea0675e21a a9612da3d774abd5986aca5808334b8ed8664aea M	server/src/com/cloud/upgrade/dao/Upgrade301to302.java
+:100644 100644 c0a4127c0b345fbb948eb8885e8039fa392d88ff 39d58217daf95582824a38581a92b26991ea079c M	setup/db/db/schema-21to22-cleanup.sql

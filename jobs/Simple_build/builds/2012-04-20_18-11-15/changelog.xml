@@ -1,0 +1,13 @@
+Changes in branch origin/master, between e4e0fff2ebdfccae6559890a76a8e1bb23701baa and 9e2167041ba8b1ec207a542dfc317ea8497b198d
+commit 9e2167041ba8b1ec207a542dfc317ea8497b198d
+tree 56769e689deaca7446b0f00164b050e949fc6bf3
+parent e4e0fff2ebdfccae6559890a76a8e1bb23701baa
+author bfederle <bfederle@gmail.com> 1334958890 -0700
+committer bfederle <bfederle@gmail.com> 1334959088 -0700
+
+    Zone wizard UI
+    
+    Add missing 'selectedNetworkOfferingObj' var, which may cause JS
+    errors in some cases
+
+:100644 100644 62d898a4b4ee714145adda2179318ab35644185a ddfea02cc982562985fac675167974d920757378 M	ui/scripts/zoneWizard.js

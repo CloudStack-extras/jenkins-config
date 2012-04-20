@@ -1,0 +1,21 @@
+Changes in branch origin/master, between 329b06087e30cc1693243543e1e0496d0dd06dab and 6f0890ea3a188382a16efc939f2e1c833f649add
+commit 6f0890ea3a188382a16efc939f2e1c833f649add
+tree 0cb7afc3416f20d91eefcb934c38c2ca38e2f187
+parent 44f4a5219ad5b61641afc82b5f0f6f2b1ffb3202
+author Abhi <abhinandan.prateek@citrix.com> 1334643251 +0530
+committer Abhi <abhinandan.prateek@citrix.com> 1334898781 +0530
+
+    bug CS-12812: XCP has get_mtime missing from the utils, added it here
+
+:100755 100755 7a4d8a8dc7105944626b4a7e96ddc42ee19ea6e6 f18a12e73e53658f7fbaecff93f297f2b1c19945 M	scripts/vm/hypervisor/xenserver/xcpserver/NFSSR.py
+
+commit 44f4a5219ad5b61641afc82b5f0f6f2b1ffb3202
+tree 8600faee2bde5c3b276d373f74819e4fbce8abbd
+parent 329b06087e30cc1693243543e1e0496d0dd06dab
+author Nitin Mehta <nitin.mehta@citrix.com> 1334898255 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1334898255 +0530
+
+    bug CS-14530: Whwnever creating an agent of type Routing update the capacity state as there is a transition in the resource state of the host.
+    Reviewed By: Kishan
+
+:100755 100755 fcbc117e8ee90d6c305972d9f941a65bd9c97993 99f955781587ffc507db87b3476ae9492c4195f6 M	server/src/com/cloud/resource/ResourceManagerImpl.java

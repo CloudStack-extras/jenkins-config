@@ -1,0 +1,14 @@
+Changes in branch origin/master, between f76ad767753871ac6090ac7e28ca834321d900ae and 329b06087e30cc1693243543e1e0496d0dd06dab
+commit 329b06087e30cc1693243543e1e0496d0dd06dab
+tree 153cc95f94e741ff538f0a588ec40e6d7ed6ec1b
+parent f76ad767753871ac6090ac7e28ca834321d900ae
+author Sheng Yang <sheng.yang@citrix.com> 1334885337 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1334885376 -0700
+
+    CS-14542: Fix wrong traffic label for KVM agent
+    
+        Conflicts:
+    
+    	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java
+
+:100755 100755 0920bf939f73524d76b7700cad1e7cb9d5d50dcc d5f33f788044342dcb805dff8bf7a010231ee2f6 M	server/src/com/cloud/hypervisor/kvm/discoverer/KvmServerDiscoverer.java

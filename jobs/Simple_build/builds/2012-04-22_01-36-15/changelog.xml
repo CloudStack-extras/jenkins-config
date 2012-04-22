@@ -1,0 +1,20 @@
+Changes in branch origin/master, between bbd0259ad294ecea740006594221062f74f6ea01 and 3b4fb0b55e404649f47b0ca6d12a134383e36584
+commit 3b4fb0b55e404649f47b0ca6d12a134383e36584
+tree d5f34a05f0fab87187a7596252a830e49b000286
+parent 7990e15f090981960c94393b64fff9d29dff2386
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335072552 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335072621 -0700
+
+    Fixed db upgrade bug: do vnc password encryption only for non-removed vms
+
+:100755 100755 02436ba8680ca21174c252df66455513c4b67daa b5d662fe0620eabb4b64601f906e494a58f04f98 M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java
+
+commit 7990e15f090981960c94393b64fff9d29dff2386
+tree f6d61fc00ef5cdf4de55043463a5c9fc4f40f3a9
+parent bbd0259ad294ecea740006594221062f74f6ea01
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335068187 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335072591 -0700
+
+    More logging to the db upgrade
+
+:100755 100755 679b99ddd99dafed9bcf1deba71ede27b6f829d2 02436ba8680ca21174c252df66455513c4b67daa M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java

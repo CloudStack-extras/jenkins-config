@@ -1,0 +1,10 @@
+Changes in branch origin/master, between aee89701e994336f2618d2e396a2d6b8319f5882 and 6fd42b831d02c0456de572f846e1b8d013c54fb6
+commit 6fd42b831d02c0456de572f846e1b8d013c54fb6
+tree 506e7e40d24172853c00468bd4a2583cd8ce2264
+parent aee89701e994336f2618d2e396a2d6b8319f5882
+author Nitin Mehta <nitin.mehta@citrix.com> 1335195636 +0530
+committer Nitin Mehta <nitin.mehta@citrix.com> 1335195636 +0530
+
+    bug CS-10789: upgrade changes for the new table and custome disk offering.
+
+:100755 100755 7a352e31b09474aee29353f21c6a88e2d7262aec c0aedf581fcab8d3a87950ab43573d1ff9426b9a M	setup/db/db/schema-302to303.sql

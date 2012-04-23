@@ -1,0 +1,15 @@
+Changes in branch origin/master, between 051416ec5a5e119576535709cf1fa30e7b477122 and 61a10de627fb5aad8c0ea2440995d52338e0f291
+commit 61a10de627fb5aad8c0ea2440995d52338e0f291
+tree 411abc46c28e89f0bf236c42675aef001f3ec643
+parent 051416ec5a5e119576535709cf1fa30e7b477122
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335205082 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335205198 -0700
+
+    CS-14591: added XenServer 6.0.2 and VmWare 5.0 as supported hypervisors to fresh 3.0.2 and to the 3.0.1-3.0.2 db upgrade
+    
+    Conflicts:
+    
+    	setup/db/db/schema-301to302.sql
+
+:100755 100755 e3ec841995e567f8a9e868aa3e9debcf05b38a1e 87287f879ecf300a77b75496133bfed1e4366047 M	setup/db/create-schema.sql
+:100755 100755 8ea43af62523dd265d25ec4fca36af2ac5fa71ce 257562759569af33466d8931b4282f6e59ad65b1 M	setup/db/db/schema-301to302.sql

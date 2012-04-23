@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 4310a8d9a8c59175fb35f721c0a1d2f1120c8db6 and 051416ec5a5e119576535709cf1fa30e7b477122
+commit 051416ec5a5e119576535709cf1fa30e7b477122
+tree bdf1b32513ccc2deaa277c142d8f707dda42bdfb
+parent 4310a8d9a8c59175fb35f721c0a1d2f1120c8db6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335203616 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335203708 -0700
+
+    CS-14589: change engine and row_format for op_lock op_nwgrp_work during the db upgrade
+
+:100755 100755 3d4434ae8db21c095892aba0c62ac83750cb7107 8ea43af62523dd265d25ec4fca36af2ac5fa71ce M	setup/db/db/schema-301to302.sql

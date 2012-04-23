@@ -1,0 +1,77 @@
+Changes in branch origin/master, between 6fd42b831d02c0456de572f846e1b8d013c54fb6 and 352f3d95ed73ffaf4bc6910fd1a2e668d7da76c4
+commit 352f3d95ed73ffaf4bc6910fd1a2e668d7da76c4
+tree 83a9b062f888da198e6878285f467bea7da48a6c
+parent 37e8d03f0a82445aa77b6f83042c4de6cc3baf52
+author anthony <anthony@cloud.com> 1335214634 -0700
+committer anthony <anthony@cloud.com> 1335214679 -0700
+
+    add CentOS 6.0, CentOS 5.7, RHEL 5.7 support for XenServer 6.0.2
+
+:100644 100644 3aba320fa22f7f90e9ae00b85be62dae653b58a2 1cc1075dd78d34e28ce7a88975c2ae61bb6038f5 M	core/src/com/cloud/hypervisor/xen/resource/CitrixHelper.java
+:000000 100644 0000000000000000000000000000000000000000 9c2e914d9f8e00c13acb595a4683f425ecdc85f8 A	core/src/com/cloud/hypervisor/xen/resource/XenServer602Resource.java
+:100755 100755 d23dfc03403ae964236e2654ec65bf28b845bdb0 1f576d6e53ac8284113813e2fdb638fe0a6e645a M	server/src/com/cloud/hypervisor/xen/discoverer/XcpServerDiscoverer.java
+
+commit 37e8d03f0a82445aa77b6f83042c4de6cc3baf52
+tree 5259e6d72600482ad8dd6825bb5ae1e92400a93f
+parent 69e6d2e906ac682ba2957bd11e9fc5440c41a1c0
+author Jessica Wang <jessica@cloud.com> 1335213566 -0700
+committer Jessica Wang <jessica@cloud.com> 1335213566 -0700
+
+    CS-14588: cloudstack 3.0 UI - VM Wizard - correct validation message for name field.
+
+:100644 100644 b913179b88835141b1885bfa10eb3c5d801f6091 4a9a2a587a746264acfbd99c626c95cc1ccdb967 M	client/WEB-INF/classes/resources/messages.properties
+
+commit 69e6d2e906ac682ba2957bd11e9fc5440c41a1c0
+tree 0d6f1f49ce3ebe98df55c103af2e876fc4aa3940
+parent 61a10de627fb5aad8c0ea2440995d52338e0f291
+author Jessica Wang <jessica@cloud.com> 1335205235 -0700
+committer Jessica Wang <jessica@cloud.com> 1335213515 -0700
+
+    CS-14588: cloudstack 3.0 UI - VM Wizard - name field - allow uppercase.
+
+:100644 100644 0b154522cf67c1467e8ceee47b09230cb12f2b65 594f7cc01ac647c164126f64c735e865d9a2c43d M	ui/scripts/sharedFunctions.js
+
+commit 61a10de627fb5aad8c0ea2440995d52338e0f291
+tree 411abc46c28e89f0bf236c42675aef001f3ec643
+parent 051416ec5a5e119576535709cf1fa30e7b477122
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335205082 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335205198 -0700
+
+    CS-14591: added XenServer 6.0.2 and VmWare 5.0 as supported hypervisors to fresh 3.0.2 and to the 3.0.1-3.0.2 db upgrade
+    
+    Conflicts:
+    
+    	setup/db/db/schema-301to302.sql
+
+:100755 100755 e3ec841995e567f8a9e868aa3e9debcf05b38a1e 87287f879ecf300a77b75496133bfed1e4366047 M	setup/db/create-schema.sql
+:100755 100755 8ea43af62523dd265d25ec4fca36af2ac5fa71ce 257562759569af33466d8931b4282f6e59ad65b1 M	setup/db/db/schema-301to302.sql
+
+commit 051416ec5a5e119576535709cf1fa30e7b477122
+tree bdf1b32513ccc2deaa277c142d8f707dda42bdfb
+parent 4310a8d9a8c59175fb35f721c0a1d2f1120c8db6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335203616 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335203708 -0700
+
+    CS-14589: change engine and row_format for op_lock op_nwgrp_work during the db upgrade
+
+:100755 100755 3d4434ae8db21c095892aba0c62ac83750cb7107 8ea43af62523dd265d25ec4fca36af2ac5fa71ce M	setup/db/db/schema-301to302.sql
+
+commit 4310a8d9a8c59175fb35f721c0a1d2f1120c8db6
+tree 0e13a44fe61810108e8fe1446d25b94593d041d3
+parent f6c6518adafd688f3ad7f159228518959b7e9ed0
+author frank <frank.zhang@citrix.com> 1335203309 -0700
+committer frank <frank.zhang@citrix.com> 1335203309 -0700
+
+    change verison to 3.0.3
+
+:100755 100755 c44329f58b5c11caaf67e1b6d3e152a4806c181f 57bfaab5fbf2350a14df7a0dc0f96bf579a28169 M	build/cloud.properties
+
+commit f6c6518adafd688f3ad7f159228518959b7e9ed0
+tree 5240037a58dd026cff22ae6d86971c004eb21dbd
+parent 6fd42b831d02c0456de572f846e1b8d013c54fb6
+author Jessica Wang <jessica@cloud.com> 1335202920 -0700
+committer Jessica Wang <jessica@cloud.com> 1335203015 -0700
+
+    CS-14186: cloudstack 3.0 UI - create network offering - when GuestIpType is Shared, hide SourceNat/StaticNat/PortForwarding/LoadBalancer/Firewall/VPN if zoneType is Advanced, hide SourceNat/PortForwarding/Firewall/VPN if zoneType is BAsic.
+
+:100644 100644 65163aaed503734e2bf8996e11cc363ebed7a500 6a7b4f90055dbfe9cfaf16ff4ecda289972d9e34 M	ui/scripts/configuration.js

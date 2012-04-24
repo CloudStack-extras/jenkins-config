@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 5021274232367b7844e82288b0dcf5c0a1c69e79 and 1ced2ed4246d3c64c56ce6916ecb2f73939911dd
+commit 1ced2ed4246d3c64c56ce6916ecb2f73939911dd
+tree f0dfa8d0c43a70dfdfa12e14ba3b985a23b0eed7
+parent 5021274232367b7844e82288b0dcf5c0a1c69e79
+author Sheng Yang <sheng.yang@citrix.com> 1335232846 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1335234016 -0700
+
+    CS-14555: Calculated checksum before unzip
+    
+    Otherwise checksum would be overrided by wrong value.
+
+:100755 100755 b1f0906962231c329084fb15ac312d370e1444c4 4f01842cbab601b1297d5158512f2cc33dd41756 M	core/src/com/cloud/storage/template/DownloadManagerImpl.java

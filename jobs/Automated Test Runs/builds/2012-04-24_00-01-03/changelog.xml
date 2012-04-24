@@ -1,0 +1,420 @@
+Changes in branch origin/master, between 352f3d95ed73ffaf4bc6910fd1a2e668d7da76c4 and 1ced2ed4246d3c64c56ce6916ecb2f73939911dd
+commit 1ced2ed4246d3c64c56ce6916ecb2f73939911dd
+tree f0dfa8d0c43a70dfdfa12e14ba3b985a23b0eed7
+parent 5021274232367b7844e82288b0dcf5c0a1c69e79
+author Sheng Yang <sheng.yang@citrix.com> 1335232846 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1335234016 -0700
+
+    CS-14555: Calculated checksum before unzip
+    
+    Otherwise checksum would be overrided by wrong value.
+
+:100755 100755 b1f0906962231c329084fb15ac312d370e1444c4 4f01842cbab601b1297d5158512f2cc33dd41756 M	core/src/com/cloud/storage/template/DownloadManagerImpl.java
+
+commit 5021274232367b7844e82288b0dcf5c0a1c69e79
+tree db5f651c94a2fdd93cf9d434c6ddd52fe3575b3c
+parent b8889eeb58f3b5329e44dcac86e29eeb0bb47572
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335221709 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335221783 -0700
+
+    CS-14256: throw executionException when finalizeStart fails (no point to retry).
+
+:100755 100755 b43f87411caa235422da7dfcada090490261e60c cd03303f8c9c896dfda4d643909748630aaf6410 M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+
+commit b8889eeb58f3b5329e44dcac86e29eeb0bb47572
+tree a5e0625192ab0689a09d660448c9f3d7ba9af1f8
+parent 64bdbba72948d9aae6847c755efaaac5a351235a
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335192133 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216915 +0100
+
+    Fixing further issue with conflict resolution
+
+:100644 100644 7a6ecfbdaba566d23dcd3c1931a2f81c0572f221 6985c80fc608542467414fcf34449d173e57d002 M	ui/scripts/zoneWizard.js
+
+commit 64bdbba72948d9aae6847c755efaaac5a351235a
+tree 1ed00a20274cf96219a69d1e3d7abcaa47a2b3f3
+parent eb36cd5aba76645d819bc6977107b8596abd9549
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335178687 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216915 +0100
+
+    Removing connectivity from service provider list
+
+:100644 100644 8f9adcf02dc5bd3e33c3dd40302714178dc0ab6c e8394961b2bccf22dcd33f4381475f7fea156002 M	api/src/com/cloud/network/Network.java
+
+commit eb36cd5aba76645d819bc6977107b8596abd9549
+tree c769ef3a0ad0c4118f2b800b93b731ba73f86f4d
+parent f5952ef6858bfa62b3a6512b04e61d08d61faaf5
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335178660 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216915 +0100
+
+    Removing basic connectivity provider and OVS network offering as not
+    needed for Bonita
+
+:100755 100755 38b8e9df7b213535ec61b03079d845fe5d444782 da60285232961a95e59a57e32160b9bfa2224b58 M	server/src/com/cloud/server/ConfigurationServerImpl.java
+
+commit f5952ef6858bfa62b3a6512b04e61d08d61faaf5
+tree aa54f29b3f01c182c08bf729f28d94995423f7a3
+parent f66dd8927e7e56212edd927af94a79377c71b84f
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335177454 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216878 +0100
+
+    Adding ovs_tunnel_interface to schema;
+    adding new tables to update script (3.0.2 to 3.0.3)
+
+:100755 100755 afcd8cc388d8b584c256fb3fa8f843f69dfb48a7 2570b9d77c5926f8dec96e87c5a09eebd3f76b7c M	setup/db/create-schema.sql
+:100755 100755 a4e3bbc012df10c5c9d7fdd0d30bebab390bf28c 9abd329d49e3ea0bfcbc4ca9580028ed49e485d2 M	setup/db/db/schema-2214to30.sql
+:100755 100755 c0aedf581fcab8d3a87950ab43573d1ff9426b9a 72d40e977b90c144fa3df414b1cb987833ff1bd9 M	setup/db/db/schema-302to303.sql
+
+commit f66dd8927e7e56212edd927af94a79377c71b84f
+tree bf6f12f40bd02e1e471adf86ba861591ed026fd5
+parent ccbdee899c104a0a4017f217a2f55d7b4a021b3f
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335142304 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216799 +0100
+
+    Fix conflict resolution errors
+
+:100644 100644 2b6d2c9b14eee2b0dbaddda86999b968daf6ea4e 3d23463bf126e371f994ce1ff9ed56b28e13043e M	api/src/com/cloud/network/ovs/OvsCreateTunnelAnswer.java
+:100644 100644 8164b57a521ec9d0dd5426842ebb4e50b311aab7 8ec03fa67b96f9f2111c9ab68cf1215245583b06 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+
+commit ccbdee899c104a0a4017f217a2f55d7b4a021b3f
+tree 0bb6590cb541e5114251db495a35ca8ad2ccfed7
+parent 59e93d9f29c19a59efe21719c1225bf99313aefb
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332770989 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216799 +0100
+
+    Now finding the IP address also for the remote endpoint
+
+:100644 100644 5075a0aee0e6eee5720ca0e8e5ccd7fd658e57ab 43af4e539338daf7b7a7029a8dcfbf7a959ca994 M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+
+commit 59e93d9f29c19a59efe21719c1225bf99313aefb
+tree 5bc5fdf9bce1987c304a0806b6ca8c50c2d3cc8b
+parent ec472fcaaadfabd7ad5cf9f06738c61a77d0c4c2
+author root <root@mgmt-srv.ovs-demo> 1332770298 +0800
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216799 +0100
+
+    Minor changes to string format command
+
+:100644 100644 50a82427506f7d8355fc8d2536c776c544c65d0a 5075a0aee0e6eee5720ca0e8e5ccd7fd658e57ab M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+
+commit ec472fcaaadfabd7ad5cf9f06738c61a77d0c4c2
+tree b9b2f7f90eb6a5817250206b2f83f8a2f968da8b
+parent b98099386474cc91a6684464748a8910de2478c4
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332760766 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216799 +0100
+
+    Forgot to add new dao into component library!
+
+:100755 100755 a936ae6c3228dac15e776350a2459364fa4daa36 29fa807d8ad34b8a509627b5b36a2bf7bb74f2ae M	server/src/com/cloud/configuration/DefaultComponentLibrary.java
+
+commit b98099386474cc91a6684464748a8910de2478c4
+tree 179f2654058cf18a62c08d8c116067c28a91d37c
+parent 3513551ae3b9d81e8d9ddd1e3217b5a4b059d584
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332759470 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216799 +0100
+
+    Adding DB support for interfaces OVS tunnel manager will use as GRE endpoints
+
+:000000 100644 0000000000000000000000000000000000000000 53c0c13ee2fb3a6878a870357ea1c980bdfd56ac A	api/src/com/cloud/network/ovs/OvsFetchInterfaceAnswer.java
+:000000 100644 0000000000000000000000000000000000000000 4e42506a4fda83c270e9810d721a3c27353ad436 A	api/src/com/cloud/network/ovs/OvsFetchInterfaceCommand.java
+:100644 100644 f762689ee82a7e411d78efdd0804595cefa37d09 8164b57a521ec9d0dd5426842ebb4e50b311aab7 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 62826ec6d083bfbafb0ae00538879d2f04c46a46 50a82427506f7d8355fc8d2536c776c544c65d0a M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+:000000 100644 0000000000000000000000000000000000000000 3298ca686a9ffbbe78e5dc13099207125eca374c A	server/src/com/cloud/network/ovs/dao/OvsTunnelInterfaceDao.java
+:000000 100644 0000000000000000000000000000000000000000 5adf63d33624905d4e69d927859bf55618005e60 A	server/src/com/cloud/network/ovs/dao/OvsTunnelInterfaceDaoImpl.java
+:000000 100644 0000000000000000000000000000000000000000 0b2699dcf4ca1041dbf400e0d379889f8c9fb779 A	server/src/com/cloud/network/ovs/dao/OvsTunnelInterfaceVO.java
+
+commit 3513551ae3b9d81e8d9ddd1e3217b5a4b059d584
+tree e31ff4b79225417fb49ca1a4f358f3dfb54ba517
+parent 02cd1484b7af0238d7be097fae14261935dd360d
+author root <root@mgmt-srv.ovs-demo> 1332750814 +0800
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216799 +0100
+
+    Hacking for demo
+
+:100644 100644 1d93d2cd3b6b069d184f4ad289131d316fa96b04 62826ec6d083bfbafb0ae00538879d2f04c46a46 M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+:100755 100755 651e37053bc98e1054e6869465d7de46d34e6442 d715cd918a90073214abebe52896cec7a0b103e8 M	server/src/com/cloud/resource/ResourceManagerImpl.java
+:100755 100755 c8a525e1e5615fece172faa89f023bd3a9e86c82 afcd8cc388d8b584c256fb3fa8f843f69dfb48a7 M	setup/db/create-schema.sql
+
+commit 02cd1484b7af0238d7be097fae14261935dd360d
+tree 6c676000b42ab2c6e5821ffa55ba723ea96cfbdc
+parent 2340ebced38246427d9fadc7ea4b85851d3feb61
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332248238 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216798 +0100
+
+    Removing superfluous log statements
+
+:100644 100644 ffdfb62624a7e029880ccfa3bbc5bbcd8144b628 f762689ee82a7e411d78efdd0804595cefa37d09 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 15b6ea0663f8dc3433ff1b22c8b78841f9f10b8c a4b55866e946040d41380344e2eabbcadc77ec61 M	server/src/com/cloud/network/guru/OvsGuestNetworkGuru.java
+:100644 100644 f31a2b089539433c050c781934cf28c83787071c efba0cf99c8e77780ffd37bb7da32e981252c519 M	server/src/com/cloud/network/ovs/OvsTunnelManager.java
+:100644 100644 c3e8c4573d1111caaafc367e7c2b6ad62b1608cb 1d93d2cd3b6b069d184f4ad289131d316fa96b04 M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+
+commit 2340ebced38246427d9fadc7ea4b85851d3feb61
+tree db01d50ec607a804ee3d3f6535cb33fc14c5849b
+parent 08daf9eee0e33358f99411c2f5b690f44f84a175
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331906153 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216798 +0100
+
+    Now using vnets instead of network id for creating networks
+    Fixed issues with vif scripts on 5.6FP1
+    Fixed ipv6 issue on 5.6FP1
+    Plus other various fixes and improvements
+    
+    Starting to remove debug code
+    NOTE: Network is configured correctly but instances do not start. Possibly indefinite wait occuring on some commands
+
+:100644 100644 c05cb9d5eddd2eebb46e26dcda91a503c3485fb5 df16618f21ec1710654ec5377ae40f3349235f85 M	api/src/com/cloud/network/ovs/OvsCreateTunnelCommand.java
+:100644 100644 10bf81254c81ebb261a05da6f71a8abe50676193 ffdfb62624a7e029880ccfa3bbc5bbcd8144b628 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 937c892224c3295a1debf2238fbf870f3eabdb99 e2d7b423f4eafbfb42fea15bf73d035bcfbeef9d M	scripts/vm/hypervisor/xenserver/xenserver56fp1/ovs-vif-flows.py
+:100755 100755 9147a6a12ce06ca657f1a8e6db96166d1a227eb8 4ea7492e1e82b735a0f820ebb5fa1b618144fbc9 M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit 08daf9eee0e33358f99411c2f5b690f44f84a175
+tree 839b45ba9b3b9ff8b0f76b6f89bb4689bc77635e
+parent d062c21cb256ef370d7d04801f026420a2a2845b
+author Jessica Wang <jessica@cloud.com> 1331768722 -0700
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216798 +0100
+
+    cloudstack 3.0 UI - XSS - detailView in Edit mode - fix it to show original value instead of HTML-encoding value.
+
+:100644 100644 f64eef6e6e442368de1af2f9205a46a336d9db27 fb266733051f756879ebc2e03c17fd15353026ee M	ui/scripts/ui/utils.js
+
+commit d062c21cb256ef370d7d04801f026420a2a2845b
+tree dae640e0180d1f6cdae5262df23fed997fbc2cb3
+parent 2119ae16dfb78b94fc0b4295720498607c7162c7
+author bfederle <bfederle@gmail.com> 1331766477 -0700
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216798 +0100
+
+    Sanitize input for multi-edit, notification widgets
+
+:100644 100644 780bf07f9a03382c7cc8ff3148eca5b029ddc1a4 ee7fd3ae75296af9faf36a5085c9bd659f2fe59a M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 2119ae16dfb78b94fc0b4295720498607c7162c7
+tree bcdedc0751e266aaaa0e0fae6b0d3064510e4572
+parent 28218e6cfbb77dcb3f7495ccd659597cd35c58ce
+author bfederle <bfederle@gmail.com> 1331766435 -0700
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216798 +0100
+
+    Add missing resource, max networks,  to project resource tab
+
+:100644 100644 4a9a2a587a746264acfbd99c626c95cc1ccdb967 96b32b38622bb3707eafb06170309a0b5006b6e5 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 e9f730fdc899b4efc204cb477f6d5362c87b1757 2c4e2cfb25d23d3e80ff5960480689d5393929ed M	ui/index.jsp
+
+commit 28218e6cfbb77dcb3f7495ccd659597cd35c58ce
+tree b04836b057860b9002666d79dc245626f2395295
+parent c92335b1d850fd848030af9861c14c6fc517e63c
+author Jessica Wang <jessica@cloud.com> 1331759008 -0700
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216798 +0100
+
+    cloudstack 3.0 UI - replace old sanitizeXSS() with new cloudStack.sanitize().
+
+:100644 100644 6985c80fc608542467414fcf34449d173e57d002 7a6ecfbdaba566d23dcd3c1931a2f81c0572f221 M	ui/scripts/zoneWizard.js
+
+commit 25f57c3f5916f9f083344f828a17ce4cedc2228a
+tree 8eca962d0e31fb20b5c26195f8e5c258df0e0054
+parent 8a9bbe496ba71b37f7c63ab7180d8b82cbfef163
+author bfederle <bfederle@gmail.com> 1331753562 -0700
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216788 +0100
+
+    Sanitize detail view input rendering
+
+:100644 100644 acbd19ebf88e141909bf99f595dc224a9bd8240c 4bfbe480d1e4ca1d7774fafc6e81793626bb4011 M	ui/scripts/ui/widgets/detailView.js
+
+commit b10ab6b2d09c0bb5cdbb3f4b58e2e271b8ccb425
+tree 28bd79cde299e41e6e37e5f5010d267302c5e508
+parent 3eef46f8a9986d58acb2c649fc7de6dfde207936
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331733808 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216772 +0100
+
+    Adding Missing file to source control
+
+:000000 100644 0000000000000000000000000000000000000000 937c892224c3295a1debf2238fbf870f3eabdb99 A	scripts/vm/hypervisor/xenserver/xenserver56fp1/ovs-vif-flows.py
+:000000 100644 0000000000000000000000000000000000000000 1e2ab230f176eb9c82fd47152e57e00c4976b301 A	scripts/vm/hypervisor/xenserver/xenserver60/ovs-vif-flows.py
+
+commit 3eef46f8a9986d58acb2c649fc7de6dfde207936
+tree 04659cbf83b657e8d97ab37f5fa8240c86230cc6
+parent 5568e95d4cfac783fb8c878034b6826272fc2873
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331729085 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216772 +0100
+
+    Open vSwitch tunnel manager
+    Applying patch with new ovs-tunnel-manager on top of cloudstack oss-master
+
+:100644 100644 df16618f21ec1710654ec5377ae40f3349235f85 c05cb9d5eddd2eebb46e26dcda91a503c3485fb5 M	api/src/com/cloud/network/ovs/OvsCreateTunnelCommand.java
+:100644 100644 e5af2c4a076b40647ebb814411b8b2ef0568f526 10bf81254c81ebb261a05da6f71a8abe50676193 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100755 0790e1f68c3ddc8615f6a0dadc5f86277ab9dd1f 0790e1f68c3ddc8615f6a0dadc5f86277ab9dd1f M	scripts/vm/hypervisor/xenserver/ovstunnel
+
+commit 5568e95d4cfac783fb8c878034b6826272fc2873
+tree 0a649d2fbf2b42218742b4e604fdacf9ed77be2a
+parent e2cc2c1f6ec4bdcc9addf0c6893e29385fcdea61
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331725423 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216772 +0100
+
+    Overwriting ovstunnel
+
+:100755 100644 0790e1f68c3ddc8615f6a0dadc5f86277ab9dd1f 0790e1f68c3ddc8615f6a0dadc5f86277ab9dd1f M	scripts/vm/hypervisor/xenserver/ovstunnel
+
+commit e2cc2c1f6ec4bdcc9addf0c6893e29385fcdea61
+tree 75d12bd19097e2a0060a73e6ed5f0ce5146c2d48
+parent 241ba26a03f75e6e1d7e12f628680ad2f2bf7c04
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332176361 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216772 +0100
+
+    Fixing remaining issues with per-VIF flow script and removing version-specific scripts.
+    
+    Now generating XSnetwork names using gre keys
+    
+    Plus other minor corrections
+
+:100644 100644 11f762bafa879f8d233dead4417c35167c6ec45d 689e03eca5b7957cb6f4b36603389fbece80b557 M	api/src/com/cloud/network/ovs/OvsDestroyBridgeCommand.java
+:100644 100644 53fc4ceeb4474b2389b1f9dc11fe42dd4ac20636 e5a80953fac33bbd656555dfadf1a7ebae29964d M	api/src/com/cloud/network/ovs/OvsDestroyTunnelCommand.java
+:100644 100644 ec8ded7e40d5ae1ce0b595a61f49243b4817778e e5af2c4a076b40647ebb814411b8b2ef0568f526 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 e2d7b423f4eafbfb42fea15bf73d035bcfbeef9d 0cfe4422228854a02fe61b17802d92bcc72c3669 R094	scripts/vm/hypervisor/xenserver/xenserver56fp1/ovs-vif-flows.py	scripts/vm/hypervisor/xenserver/ovs-vif-flows.py
+:100755 100755 d900477d928885f114a89ba0ff83180cb6863630 0790e1f68c3ddc8615f6a0dadc5f86277ab9dd1f M	scripts/vm/hypervisor/xenserver/ovstunnel
+:100644 100644 bca65cbdfc5a48b9ff14b9b0b265313496841a45 88d33c8b2dfdcd284340845529738b311b3ddde7 M	scripts/vm/hypervisor/xenserver/xenserver56fp1/patch
+:100644 000000 1e2ab230f176eb9c82fd47152e57e00c4976b301 0000000000000000000000000000000000000000 D	scripts/vm/hypervisor/xenserver/xenserver60/ovs-vif-flows.py
+:100644 100644 b75596b3adb48330bf24fadfe89dcea135daa305 bb25ee23b1642f3e44ed604994d6294ebf1aab8b M	scripts/vm/hypervisor/xenserver/xenserver60/patch
+:100644 100644 f01184f67cfd4f356c88f14ea5eb7688fe45d9e6 c3e8c4573d1111caaafc367e7c2b6ad62b1608cb M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+:100755 100755 99f955781587ffc507db87b3476ae9492c4195f6 651e37053bc98e1054e6869465d7de46d34e6442 M	server/src/com/cloud/resource/ResourceManagerImpl.java
+
+commit 241ba26a03f75e6e1d7e12f628680ad2f2bf7c04
+tree 19b0d48110a604a3d2cacdcf01ff826b366cc456
+parent 8987499cdaa74bcaa2b5fbda4d0c769a1ac3ad60
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1332155494 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216772 +0100
+
+    Work in progress - Need to fix issue on sec storage
+
+:100644 100644 3c5cb6041b83317b8d25bcf52fb337010beb0f16 ec8ded7e40d5ae1ce0b595a61f49243b4817778e M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+
+commit 8987499cdaa74bcaa2b5fbda4d0c769a1ac3ad60
+tree be65bbaecae5dd72f748af45f61936554a31a4a6
+parent ac052ed4f0481bbd96725f0129d165e24ceadb34
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331906153 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216772 +0100
+
+    Now using vnets instead of network id for creating networks
+    Fixed issues with vif scripts on 5.6FP1
+    Fixed ipv6 issue on 5.6FP1
+    Plus other various fixes and improvements
+    
+    Starting to remove debug code
+    NOTE: Network is configured correctly but instances do not start. Possibly indefinite wait occuring on some commands
+
+:100644 100644 454723dfc34b6aea4d015a61fa5fd9af03a0e845 df16618f21ec1710654ec5377ae40f3349235f85 M	api/src/com/cloud/network/ovs/OvsCreateTunnelCommand.java
+:000000 100644 0000000000000000000000000000000000000000 4cf2d36dc5d0f392efb7a620d0debb80e543f0c4 A	api/src/com/cloud/network/ovs/OvsSetupBridgeCommand.java
+:100644 100644 6194fa697b32f55716aa68f4a6c2c0abb3b978df 3c5cb6041b83317b8d25bcf52fb337010beb0f16 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100755 100755 6e0ff1f8c76ce46fc16fc9551b646d0fd195eb78 d900477d928885f114a89ba0ff83180cb6863630 M	scripts/vm/hypervisor/xenserver/ovstunnel
+:100644 100644 937c892224c3295a1debf2238fbf870f3eabdb99 e2d7b423f4eafbfb42fea15bf73d035bcfbeef9d M	scripts/vm/hypervisor/xenserver/xenserver56fp1/ovs-vif-flows.py
+:100755 100755 fb6d6bdb185d03500763ccdb3e6a079574038eeb 49b4d30bed6f33c614082c069dede0ac3a12c4ec M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 8babbbc958259e47aa9d0886a9437f5652722ac6 15b6ea0663f8dc3433ff1b22c8b78841f9f10b8c M	server/src/com/cloud/network/guru/OvsGuestNetworkGuru.java
+:100644 100644 40883ea7220a274239becadd814ce2bed477351e f01184f67cfd4f356c88f14ea5eb7688fe45d9e6 M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+
+commit ac052ed4f0481bbd96725f0129d165e24ceadb34
+tree 64ed7c4fc0481be7466b181fb854e89c5f39911e
+parent 5fe391c29e86ec7c5407792b780e070c367d6776
+author unknown <salvatoreo@CAMLSALVATOR01.citrite.net> 1331822702 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216771 +0100
+
+    Now allocating vnets for GRE keys
+
+:100755 100755 7578331b2cbc3bfd8848991aa4716779faded42a fb6d6bdb185d03500763ccdb3e6a079574038eeb M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 222b79af37a99eb93dda0c7ab14059effa5a7f05 8babbbc958259e47aa9d0886a9437f5652722ac6 M	server/src/com/cloud/network/guru/OvsGuestNetworkGuru.java
+:100644 100644 b9f177c933615b26f32bdea57f5c1282728f6b68 40883ea7220a274239becadd814ce2bed477351e M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+
+commit b04254220fe200922a7b46ef7ec7ee28fa102f9b
+tree 4c9c2e7dfc5528bdb0e18703995acaa4ae13010b
+parent 3b4690424da50193a1f87c528773492db07dfbad
+author bfederle <bfederle@gmail.com> 1331752778 -0700
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216737 +0100
+
+    Sanitize list view input rendering
+
+:100644 100644 6cc572d6ca60c6e7f64407d07f0e464e5c1f3002 0f20592b0c55b1834c396cad78318441d9d79479 M	ui/scripts/ui/widgets/listView.js
+
+commit 3b4690424da50193a1f87c528773492db07dfbad
+tree 4978174a1b6fcf890c019b0f40d8c66377284e4a
+parent b62c26c6068548ef6045615a124194c96c40290a
+author Alena Prokharchyk <Alena.Prokharchyk@citrix.com> 1331747154 -0700
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216736 +0100
+
+    bug 14295: allow regular user to create network with the custom cidr
+    status 14295: resolved fixed
+    
+    Conflicts:
+    
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+
+:100755 100755 5fd4ddaef210081568a0e0b26151d696b6d9c9b4 7578331b2cbc3bfd8848991aa4716779faded42a M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit b62c26c6068548ef6045615a124194c96c40290a
+tree 80f93fe898c64573542d317be1b0366e2a21bbbe
+parent 8268635846649c3c9ef8756968cdd5161ea65245
+author Abhi <abhinandan.prateek@citrix.com> 1331725969 +0530
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216736 +0100
+
+    bug 14218: fixing category for redhat
+
+:100755 100755 cb16ea310022fe9ffc1635468ed634c34cb0db59 a4e3bbc012df10c5c9d7fdd0d30bebab390bf28c M	setup/db/db/schema-2214to30.sql
+
+commit 8268635846649c3c9ef8756968cdd5161ea65245
+tree 51b4afc886e06acbb236d7603d4ced6638e0fc20
+parent 9f321ffeac9006b880d6927b2116d5e6b20f8b86
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331733808 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216736 +0100
+
+    Adding Missing file to source control
+
+:000000 100644 0000000000000000000000000000000000000000 11f762bafa879f8d233dead4417c35167c6ec45d A	api/src/com/cloud/network/ovs/OvsDestroyBridgeCommand.java
+:000000 100644 0000000000000000000000000000000000000000 552e522c98a4d220569559b194038acba8d4b0c9 A	scripts/vm/hypervisor/xenserver/cloudstack_pluginlib.py
+:000000 100644 0000000000000000000000000000000000000000 fb078dd188bd2afb6800524e0119938715558dd3 A	scripts/vm/hypervisor/xenserver/cloudstack_plugins.conf
+:000000 100644 0000000000000000000000000000000000000000 85c930f18a25c6743b87b2fe6aaf2c4b64edbe44 A	scripts/vm/hypervisor/xenserver/xen-ovs-vif-flows.rules
+:000000 100644 0000000000000000000000000000000000000000 937c892224c3295a1debf2238fbf870f3eabdb99 A	scripts/vm/hypervisor/xenserver/xenserver56fp1/ovs-vif-flows.py
+:000000 100644 0000000000000000000000000000000000000000 1e2ab230f176eb9c82fd47152e57e00c4976b301 A	scripts/vm/hypervisor/xenserver/xenserver60/ovs-vif-flows.py
+:000000 100644 0000000000000000000000000000000000000000 4b0b61c865d79a33de02def4464728a6e5d4db50 A	server/src/com/cloud/network/ovs/dao/OvsTunnelNetworkDao.java
+:000000 100644 0000000000000000000000000000000000000000 3b979de191978cbadd9e7c6a4730a28587c728f6 A	server/src/com/cloud/network/ovs/dao/OvsTunnelNetworkDaoImpl.java
+:000000 100644 0000000000000000000000000000000000000000 ad793c8ec423e06974725ef60ef7ef94d68be6d0 A	server/src/com/cloud/network/ovs/dao/OvsTunnelNetworkVO.java
+
+commit 9f321ffeac9006b880d6927b2116d5e6b20f8b86
+tree daf0a8e54ea7e4138241d7ad0ac741b1dd781f97
+parent a1a615e0185684cc5ff08b6adad11b257c8a372c
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331729085 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216736 +0100
+
+    Open vSwitch tunnel manager
+    Applying patch with new ovs-tunnel-manager on top of cloudstack oss-master
+
+:100644 100644 e8394961b2bccf22dcd33f4381475f7fea156002 8f9adcf02dc5bd3e33c3dd40302714178dc0ab6c M	api/src/com/cloud/network/Network.java
+:100644 100644 65a69f44cab35c95ed53f875347179d99754f022 2b6d2c9b14eee2b0dbaddda86999b968daf6ea4e M	api/src/com/cloud/network/ovs/OvsCreateTunnelAnswer.java
+:100644 100644 71ef0c3366e1f007ffde7b118fa3168d59a791af 454723dfc34b6aea4d015a61fa5fd9af03a0e845 M	api/src/com/cloud/network/ovs/OvsCreateTunnelCommand.java
+:100644 100644 4ca71f642afc9ef080935865e15b18bed4605c3c 53fc4ceeb4474b2389b1f9dc11fe42dd4ac20636 M	api/src/com/cloud/network/ovs/OvsDestroyTunnelCommand.java
+:100644 100644 2f5314efa46f4db62937fe3fc58455b41412a3b3 195bc0d692615ef1ba14775d0dfd30afd4d48b84 M	api/src/com/cloud/offering/NetworkOffering.java
+:100755 100644 efe922a8a2f57a1129c2b2bfa97997619359bcaf 6194fa697b32f55716aa68f4a6c2c0abb3b978df M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 f8c0075c76525e705c9b23f7d6a1b3cf304d2704 f35abdeab17cd183f9b9fcacabdc9a103e4d0f16 M	scripts/.pydevproject
+:100644 100755 3dfaf20b76a8253fdde6c5383282ddfbf12257f6 6e0ff1f8c76ce46fc16fc9551b646d0fd195eb78 M	scripts/vm/hypervisor/xenserver/ovstunnel
+:100755 100755 11792b1b02896c981c2ff16838ac2a5f8eb6b7c0 248108bbd85af6c8273f0d7a137892af96cba831 M	scripts/vm/hypervisor/xenserver/vmops
+:100644 100644 a3c1f91e31952fd3a7a13015607c8ac934308b33 bca65cbdfc5a48b9ff14b9b0b265313496841a45 M	scripts/vm/hypervisor/xenserver/xenserver56fp1/patch
+:100644 100644 344b4d3d5715a4aaca4d021f44fdbd42c74228d2 b75596b3adb48330bf24fadfe89dcea135daa305 M	scripts/vm/hypervisor/xenserver/xenserver60/patch
+:100755 100755 adf44645d597dca10b1affb9e8d0beb66fd50ece a936ae6c3228dac15e776350a2459364fa4daa36 M	server/src/com/cloud/configuration/DefaultComponentLibrary.java
+:100755 100755 6395a4feb7f89283723ed711ce08fbd8ff776d5e c53985a95eee69821bc1b7dd1b9fa260e7e9da8b M	server/src/com/cloud/network/NetworkManager.java
+:100755 100755 f8dac7be56199b8c716490be6269d5c32bba6477 5fd4ddaef210081568a0e0b26151d696b6d9c9b4 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 58c137b80cb9575dab30ffb7c74231cd3b8a059f 3fa130e793df1cd75ca6ec20dd7b591520bf0695 M	server/src/com/cloud/network/element/OvsElement.java
+:100644 100644 6ec1df810af4e7fff171596bc2dae70bb7a8d283 6b2882a7614fd4956167407cd310f60ef8f2f6c2 M	server/src/com/cloud/network/guru/ExternalGuestNetworkGuru.java
+:100755 100755 ae528238ca1906a4b88c19b182080a64a846c75a f9977102b1f4b7652a87f3b6c7e04e44aae6a2d8 M	server/src/com/cloud/network/guru/GuestNetworkGuru.java
+:100644 100644 a373ea20d8bbfad1adef030cd01aeef86902ed9f 222b79af37a99eb93dda0c7ab14059effa5a7f05 M	server/src/com/cloud/network/guru/OvsGuestNetworkGuru.java
+:100755 100755 0785c77c1688249b83f917b2f58b3bdfbda7f8c4 c93ce679d9d056f82731c878208e7048f9743419 M	server/src/com/cloud/network/ovs/OvsTunnelListener.java
+:100644 100644 3a6163672a42b6a7ccbaade7aec579ea13b23b99 f31a2b089539433c050c781934cf28c83787071c M	server/src/com/cloud/network/ovs/OvsTunnelManager.java
+:100644 100644 b4799da934760a5727865d36dd4f4dfe3b433eb5 b9f177c933615b26f32bdea57f5c1282728f6b68 M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java
+:100644 100644 1379461477feba15426cdd39f358e4b02fe4efb2 28eed904e43580df2f85767b5fca2deb4552855e M	server/src/com/cloud/offerings/dao/NetworkOfferingServiceMapDaoImpl.java
+:100755 100755 15ef408a4cedd4242a55b0caf31d6cfb283f4bac 38b8e9df7b213535ec61b03079d845fe5d444782 M	server/src/com/cloud/server/ConfigurationServerImpl.java
+:100755 100755 6fd021fcba22236f626023528df81f3305115b02 c4f528e18d7996901fefa23e212cfdfa4b3ec4bb M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100755 100755 c6e957f32716c727965ab9db9ac190e3535e6870 b43f87411caa235422da7dfcada090490261e60c M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+:100755 100755 bc136ed81e17173a0e200422ddfd28553e55da7c 1f28c3ad5476947efb740341d906b78569b9edba M	server/src/com/cloud/vm/dao/DomainRouterDaoImpl.java
+:100755 100755 87287f879ecf300a77b75496133bfed1e4366047 c8a525e1e5615fece172faa89f023bd3a9e86c82 M	setup/db/create-schema.sql
+
+commit a1a615e0185684cc5ff08b6adad11b257c8a372c
+tree ed7d686fdf5860ec36dba782be2395bc4af2bc1c
+parent 352f3d95ed73ffaf4bc6910fd1a2e668d7da76c4
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1331725423 +0000
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335216736 +0100
+
+    Overwriting ovstunnel
+
+:100755 100644 3dfaf20b76a8253fdde6c5383282ddfbf12257f6 3dfaf20b76a8253fdde6c5383282ddfbf12257f6 M	scripts/vm/hypervisor/xenserver/ovstunnel

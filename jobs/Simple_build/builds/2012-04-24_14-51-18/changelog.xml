@@ -1,0 +1,18 @@
+Changes in branch origin/master, between b5cb20557029ca2d5089ad1d466a5dc0e19e788f and a678988f33943d95cf1aacf1741cfed1138bc20a
+commit a678988f33943d95cf1aacf1741cfed1138bc20a
+tree 9058967fe867024742a1c2354d312e2dd0b71a9e
+parent b5cb20557029ca2d5089ad1d466a5dc0e19e788f
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335292897 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335293040 -0700
+
+    CS-14622: fixed adding vlan range per account - associate it with the Guest network, not public
+    
+    Conflicts:
+    
+    	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+    	server/test/com/cloud/network/MockNetworkManagerImpl.java
+
+:100755 100755 4f9560198ecfb3a0ea3b6014c13bf0928d12ed95 d2bbb91e8d9cb22f37c7c3b1ea5a2f05230bb6af M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+:100755 100755 c53985a95eee69821bc1b7dd1b9fa260e7e9da8b daf2d61d3acb52b2e79ce41c60c1435d2cdac71c M	server/src/com/cloud/network/NetworkManager.java
+:100755 100755 49b4d30bed6f33c614082c069dede0ac3a12c4ec da490f703489b2b06bc9b6af00a78d7e4deae072 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 8bf3421ae3f67134e06fdfa8588fb882fc3eb4f5 54c3025c10fc2f79227c6cd675e1cb9ece80472b M	server/test/com/cloud/network/MockNetworkManagerImpl.java

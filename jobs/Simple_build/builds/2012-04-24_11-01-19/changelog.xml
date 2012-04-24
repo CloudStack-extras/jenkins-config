@@ -1,0 +1,21 @@
+Changes in branch origin/master, between 1ced2ed4246d3c64c56ce6916ecb2f73939911dd and bbd2e06366f8d3489ce77805529b73a3a4eb040f
+commit bbd2e06366f8d3489ce77805529b73a3a4eb040f
+tree 69939e7a19c69358980abfdee7ac5cff79d2ba72
+parent 026ed52f1de818d8578d489efb945bf31aad0c33
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335279383 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335279383 +0100
+
+    CS-14619: Add missing INSERT statements
+
+:100755 100755 72d40e977b90c144fa3df414b1cb987833ff1bd9 3186370a306f5acb7cb524e3c182bd66c874b4a7 M	setup/db/db/schema-302to303.sql
+
+commit 026ed52f1de818d8578d489efb945bf31aad0c33
+tree fc17e7bfb356b4db85bf6ea39077be4e73a81750
+parent 1ced2ed4246d3c64c56ce6916ecb2f73939911dd
+author Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335279190 +0100
+committer Salvatore Orlando <salvatore.orlando@eu.citrix.com> 1335279190 +0100
+
+    CS-14437: Final changes to ensure proper tunnel creation (rebase problems)
+
+:100644 100644 8ec03fa67b96f9f2111c9ab68cf1215245583b06 ec4068f44b128df6ef27dff3322a80bc63c43d1a M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100644 100644 43af4e539338daf7b7a7029a8dcfbf7a959ca994 b8a8ff6ab1e8c324e68183fc14ad7a65a07910d4 M	server/src/com/cloud/network/ovs/OvsTunnelManagerImpl.java

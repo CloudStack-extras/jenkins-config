@@ -1,0 +1,70 @@
+Changes in branch origin/master, between 1b42828f1a0e830f70467f5239a9bec1fb521cbb and 074f553cb7f2f1f7ce58049362d8deb0ed57c1a7
+commit 074f553cb7f2f1f7ce58049362d8deb0ed57c1a7
+tree 06a7fb4a538f4551662d2c0fe02e4ae863c490de
+parent 83eae0c4bfefd12f0bab6d5329706f98ee4b816c
+author Jessica Wang <jessica@cloud.com> 1335387848 -0700
+committer Jessica Wang <jessica@cloud.com> 1335388443 -0700
+
+    CS-14338: cloudstack 3.0 UI - instance page - Destroy VM action - change after-action message.
+
+:100644 100644 3173055a08985e0fb72df098d9637a2796860c6a e7500d6ceca5b7cef0246644f18819939b5bd0af M	ui/scripts/instances.js
+
+commit 83eae0c4bfefd12f0bab6d5329706f98ee4b816c
+tree 4b0338194ae341a295ec068e7459e8d7cf3abff5
+parent fd6c64e4d2db93b901c988f03259b202fc03395d
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335386546 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335386647 -0700
+
+    CS-14629: added missing global config variables
+    
+    Conflicts:
+    
+    	setup/db/db/schema-301to302.sql
+
+:100755 100755 25284246fb9b41a85dc0d148ea3e3b732178c535 ed1ff406e19d6a5914f519d462a235c75f83e4fd M	setup/db/db/schema-301to302.sql
+
+commit fd6c64e4d2db93b901c988f03259b202fc03395d
+tree c9c49ce32fb02fa3371cb1da0362d4b646c50a63
+parent 5f1380fd44718545d40c4d78e8bc9289c3b730f1
+author bfederle <bfederle@gmail.com> 1335382313 -0700
+committer bfederle <bfederle@gmail.com> 1335382313 -0700
+
+    CloudStack: Main UI logo fix
+    
+    Fix logo not being present on fresh install (for commercial build),
+    after clicking out of quick install
+
+:100644 100644 88db546ecc6327306ac3fad4c9fff3beae769901 ac5d8b8c0fd82ca072f48eca89cb8d888808ab26 M	ui/scripts/cloudStack.js
+
+commit 5f1380fd44718545d40c4d78e8bc9289c3b730f1
+tree 528a026a3f1ea49afd3193a64e75156c8085093d
+parent c7cbae4c4809d2c4c46e58d4cbd7eb142e4929da
+author bfederle <bfederle@gmail.com> 1335378528 -0700
+committer bfederle <bfederle@gmail.com> 1335378533 -0700
+
+    Firefox CSS fix
+    
+    Explicitly hide overflow-x, to prevent breakage from Firefox 12 update
+    causing horizontal scrollbars to be visible.
+
+:100644 100644 2464f040dda8567e2d18e0daff30682367e2685a acd0716b4a2ed2b5c062d983878a642dacfc2c0e M	ui/css/cloudstack3.css
+
+commit c7cbae4c4809d2c4c46e58d4cbd7eb142e4929da
+tree 58710e75238a0395f7e35e4e21a3ac7ef6725609
+parent a244fb6d4266de7c8a237e67d3ed5022328b6fc5
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335377047 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1335377075 -0700
+
+    Set ha host to false when no ha tag is enabled
+
+:100755 100755 8fb6c8b8588ffd735a54a2dc47ba81e44a0fa42a d3875e4c19f67db54253c512c492e85a84b4b36b M	server/src/com/cloud/api/ApiResponseHelper.java
+
+commit a244fb6d4266de7c8a237e67d3ed5022328b6fc5
+tree 0b54ebe9281ac24e1b435c5cd9b06ae270f2f17a
+parent 1b42828f1a0e830f70467f5239a9bec1fb521cbb
+author Jessica Wang <jessica@cloud.com> 1335312342 -0700
+committer Jessica Wang <jessica@cloud.com> 1335375639 -0700
+
+    CS-14385: cloudstack UI - Host page - add "HA Enabled" column which only shows When ha.tag global configuration is not empty.
+
+:100644 100644 055ee5cc2035d0b6c437740a040fc22be800666a 168a8cf2ee906f95ec79ed50e11d6e35c349821c M	ui/scripts/system.js

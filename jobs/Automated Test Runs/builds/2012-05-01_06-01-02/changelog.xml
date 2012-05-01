@@ -1,0 +1,26 @@
+Changes in branch origin/master, between 73e83b79df5124aad39ec97d223b7303c20736f5 and c961fb11a687327c0479b9413ca7f234fcdba072
+commit c961fb11a687327c0479b9413ca7f234fcdba072
+tree efc665889259f085cf9bc7b41158f8597ba27c14
+parent 1ac0ac956bdd25fbfa0e0ff736e6bdc8e825d2d0
+author Murali reddy <Murali.Reddy@citrix.com> 1335855012 +0530
+committer Murali reddy <Murali.Reddy@citrix.com> 1335855012 +0530
+
+    bug cs-14510:NetScaler SDX does not work when public network is setup to be in untagged network
+    status cs-14510: resolved fixed
+    
+    This fix ensures VPX's provisioned on the SDX by CloudStack will be made part of both
+    tagged and untagged public networks
+
+:100644 100644 5ba1a962ef00422fd681fa5efbd02543a337ff93 160c90ec1e77d5246a376fd19612d1aba110f4e4 M	core/src/com/cloud/network/resource/NetscalerResource.java
+
+commit 1ac0ac956bdd25fbfa0e0ff736e6bdc8e825d2d0
+tree f84f55541aaf05ea28f0464e7c5a78a0b043b194
+parent 73e83b79df5124aad39ec97d223b7303c20736f5
+author kishan <kishan@cloud.com> 1335850859 +0530
+committer kishan <kishan@cloud.com> 1335850859 +0530
+
+    bug CS-14695: Encrypt VNC password during 3.0.0 upgrade
+    status CS-14695: resolved fixed
+    reviewed-by: Abhi
+
+:100755 100755 7e4bff51a9de45a25cb2fdc290e517f805bea844 a4e5b6fd153e5ab094d433073b27b10625ff2d2c M	server/src/com/cloud/upgrade/dao/Upgrade2214to30.java

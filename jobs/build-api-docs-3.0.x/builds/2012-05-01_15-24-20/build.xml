@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
+    <hudson.plugins.git.util.BuildData>
+      <buildsByBranchName>
+        <entry>
+          <string>origin/3.0.x</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>f57e8ad8acac9ded8b8597d12327893d47b24ebb</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/3.0.x</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>52952</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction>
+      <build class="build" reference="../../.."/>
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <no-comparator/>
+        <entry>
+          <string>origin/3.0.x</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/build-api-docs-3.0.x</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+      <result>SUCCESS</result>
+    </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+  </actions>
+  <number>52952</number>
+  <result>SUCCESS</result>
+  <duration>190819</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/build-api-docs-3.0.x</workspace>
+  <hudsonVersion>1.447</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits>
+    <string>frank</string>
+    <string>brian.federle</string>
+    <string>anthony</string>
+    <string>jana</string>
+    <string>alena.prokharchyk</string>
+    <string>nitin.mehta</string>
+    <string>jtomechak</string>
+    <string>Prasanna.Santhanam</string>
+    <string>vijayendra.bhamidipati</string>
+    <string>bfederle</string>
+    <string>chiradeep</string>
+    <string>kishan</string>
+    <string>Murali.Reddy</string>
+    <string>salvatore.orlando</string>
+    <string>jessica</string>
+    <string>abhinandan.prateek</string>
+    <string>kelven</string>
+    <string>sheng.yang</string>
+    <string>Edison.Su</string>
+    <string>prachi</string>
+    <string>likitha.shetty</string>
+    <string>John.Zucker</string>
+  </culprits>
+</build>

@@ -404,3 +404,6 @@ su jenkins
 sudo su
 whoami
 w
+cd
+ls
+tail /var/log/mail/statistics 

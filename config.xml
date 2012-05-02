@@ -44,88 +44,116 @@
     <permission>hudson.model.Hudson.Administer:sam</permission>
     <permission>hudson.model.Hudson.Read:alena</permission>
     <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:devdeep</permission>
     <permission>hudson.model.Hudson.Read:ewanm</permission>
     <permission>hudson.model.Hudson.Read:frank</permission>
     <permission>hudson.model.Hudson.Read:ke4qqq</permission>
+    <permission>hudson.model.Hudson.Read:pradeep</permission>
     <permission>hudson.model.Hudson.Read:prasanna</permission>
     <permission>hudson.model.Hudson.Read:sam</permission>
     <permission>hudson.model.Hudson.RunScripts:alena</permission>
+    <permission>hudson.model.Hudson.RunScripts:devdeep</permission>
     <permission>hudson.model.Hudson.RunScripts:ewanm</permission>
     <permission>hudson.model.Hudson.RunScripts:frank</permission>
     <permission>hudson.model.Hudson.RunScripts:ke4qqq</permission>
+    <permission>hudson.model.Hudson.RunScripts:pradeep</permission>
     <permission>hudson.model.Hudson.RunScripts:prasanna</permission>
     <permission>hudson.model.Hudson.RunScripts:sam</permission>
     <permission>hudson.model.Item.Build:alena</permission>
+    <permission>hudson.model.Item.Build:devdeep</permission>
     <permission>hudson.model.Item.Build:ewanm</permission>
     <permission>hudson.model.Item.Build:frank</permission>
     <permission>hudson.model.Item.Build:ke4qqq</permission>
+    <permission>hudson.model.Item.Build:pradeep</permission>
     <permission>hudson.model.Item.Build:prasanna</permission>
     <permission>hudson.model.Item.Build:sam</permission>
     <permission>hudson.model.Item.Configure:alena</permission>
+    <permission>hudson.model.Item.Configure:devdeep</permission>
     <permission>hudson.model.Item.Configure:ewanm</permission>
     <permission>hudson.model.Item.Configure:frank</permission>
     <permission>hudson.model.Item.Configure:ke4qqq</permission>
+    <permission>hudson.model.Item.Configure:pradeep</permission>
     <permission>hudson.model.Item.Configure:prasanna</permission>
     <permission>hudson.model.Item.Configure:sam</permission>
     <permission>hudson.model.Item.Create:alena</permission>
+    <permission>hudson.model.Item.Create:devdeep</permission>
     <permission>hudson.model.Item.Create:ewanm</permission>
     <permission>hudson.model.Item.Create:frank</permission>
     <permission>hudson.model.Item.Create:ke4qqq</permission>
+    <permission>hudson.model.Item.Create:pradeep</permission>
     <permission>hudson.model.Item.Create:prasanna</permission>
     <permission>hudson.model.Item.Create:sam</permission>
     <permission>hudson.model.Item.Delete:alena</permission>
+    <permission>hudson.model.Item.Delete:devdeep</permission>
     <permission>hudson.model.Item.Delete:ewanm</permission>
     <permission>hudson.model.Item.Delete:frank</permission>
     <permission>hudson.model.Item.Delete:ke4qqq</permission>
+    <permission>hudson.model.Item.Delete:pradeep</permission>
     <permission>hudson.model.Item.Delete:prasanna</permission>
     <permission>hudson.model.Item.Delete:sam</permission>
     <permission>hudson.model.Item.Read:alena</permission>
     <permission>hudson.model.Item.Read:anonymous</permission>
+    <permission>hudson.model.Item.Read:devdeep</permission>
     <permission>hudson.model.Item.Read:ewanm</permission>
     <permission>hudson.model.Item.Read:frank</permission>
     <permission>hudson.model.Item.Read:ke4qqq</permission>
+    <permission>hudson.model.Item.Read:pradeep</permission>
     <permission>hudson.model.Item.Read:prasanna</permission>
     <permission>hudson.model.Item.Read:sam</permission>
     <permission>hudson.model.Item.Workspace:alena</permission>
+    <permission>hudson.model.Item.Workspace:devdeep</permission>
     <permission>hudson.model.Item.Workspace:ewanm</permission>
     <permission>hudson.model.Item.Workspace:frank</permission>
     <permission>hudson.model.Item.Workspace:ke4qqq</permission>
+    <permission>hudson.model.Item.Workspace:pradeep</permission>
     <permission>hudson.model.Item.Workspace:prasanna</permission>
     <permission>hudson.model.Item.Workspace:sam</permission>
     <permission>hudson.model.Run.Delete:alena</permission>
+    <permission>hudson.model.Run.Delete:devdeep</permission>
     <permission>hudson.model.Run.Delete:ewanm</permission>
     <permission>hudson.model.Run.Delete:frank</permission>
     <permission>hudson.model.Run.Delete:ke4qqq</permission>
+    <permission>hudson.model.Run.Delete:pradeep</permission>
     <permission>hudson.model.Run.Delete:prasanna</permission>
     <permission>hudson.model.Run.Delete:sam</permission>
     <permission>hudson.model.Run.Update:alena</permission>
+    <permission>hudson.model.Run.Update:devdeep</permission>
     <permission>hudson.model.Run.Update:ewanm</permission>
     <permission>hudson.model.Run.Update:frank</permission>
     <permission>hudson.model.Run.Update:ke4qqq</permission>
+    <permission>hudson.model.Run.Update:pradeep</permission>
     <permission>hudson.model.Run.Update:prasanna</permission>
     <permission>hudson.model.Run.Update:sam</permission>
     <permission>hudson.model.View.Configure:alena</permission>
+    <permission>hudson.model.View.Configure:devdeep</permission>
     <permission>hudson.model.View.Configure:ewanm</permission>
     <permission>hudson.model.View.Configure:frank</permission>
     <permission>hudson.model.View.Configure:ke4qqq</permission>
+    <permission>hudson.model.View.Configure:pradeep</permission>
     <permission>hudson.model.View.Configure:prasanna</permission>
     <permission>hudson.model.View.Configure:sam</permission>
     <permission>hudson.model.View.Create:alena</permission>
+    <permission>hudson.model.View.Create:devdeep</permission>
     <permission>hudson.model.View.Create:ewanm</permission>
     <permission>hudson.model.View.Create:frank</permission>
     <permission>hudson.model.View.Create:ke4qqq</permission>
+    <permission>hudson.model.View.Create:pradeep</permission>
     <permission>hudson.model.View.Create:prasanna</permission>
     <permission>hudson.model.View.Create:sam</permission>
     <permission>hudson.model.View.Delete:alena</permission>
+    <permission>hudson.model.View.Delete:devdeep</permission>
     <permission>hudson.model.View.Delete:ewanm</permission>
     <permission>hudson.model.View.Delete:frank</permission>
     <permission>hudson.model.View.Delete:ke4qqq</permission>
+    <permission>hudson.model.View.Delete:pradeep</permission>
     <permission>hudson.model.View.Delete:prasanna</permission>
     <permission>hudson.model.View.Delete:sam</permission>
     <permission>hudson.scm.SCM.Tag:alena</permission>
+    <permission>hudson.scm.SCM.Tag:devdeep</permission>
     <permission>hudson.scm.SCM.Tag:ewanm</permission>
     <permission>hudson.scm.SCM.Tag:frank</permission>
     <permission>hudson.scm.SCM.Tag:ke4qqq</permission>
+    <permission>hudson.scm.SCM.Tag:pradeep</permission>
     <permission>hudson.scm.SCM.Tag:prasanna</permission>
     <permission>hudson.scm.SCM.Tag:sam</permission>
   </authorizationStrategy>

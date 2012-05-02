@@ -381,3 +381,20 @@ ps -o "%p %a" 5058
 ps -o "%p \n%a" 5058
 ps -o "%a" 5058
 ps -o "%a" 5058
+cd
+top  -U jenkins
+top  -U jenkins
+cat /var/log/jenkins/jenkins.log
+ps -o "%a" 5058
+java -showversion
+cd
+ls
+whoami
+cat README 
+cat Workspace\ clean-up.log 
+cd w
+w
+cd workspace/
+ls
+cd ../
+ls

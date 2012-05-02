@@ -61,7 +61,7 @@
   </builders>
   <publishers>
     <hudson.tasks.Mailer>
-      <recipients>cloudstack-devel@lists.sourceforge.net cloudstack-commits@incubator.apache.org</recipients>
+      <recipients>cloudstack-devel@lists.sourceforge.net</recipients>
       <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>true</sendToIndividuals>
     </hudson.tasks.Mailer>

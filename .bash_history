@@ -398,3 +398,9 @@ cd workspace/
 ls
 cd ../
 ls
+cd
+ps -o "%a" 5058
+su jenkins
+sudo su
+whoami
+w

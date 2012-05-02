@@ -339,3 +339,45 @@ cd automated
 dir
 ls -alF
 vi automated.sh
+cd
+ls
+ls -lrt
+cd updates/
+ls
+cd ..
+ls
+tail -f /var/log/tomcat6/catalina.out 
+cd user
+lcd ..
+cd ..
+ls
+cd
+ls
+cd users
+ls
+cat pra
+cat prasanna/
+ls prasanna/
+netstat -anp | grep 8080
+ps 5058
+tail -f /var/log/jenkins/jenkins.log
+ps 5058
+top
+pstree 5058
+ps a
+ps a 5058
+less /var/log/jenkins/jenkins.log
+man ps
+ps -eo euser,ruser,suser,fuser,f,comm,label
+ps -eo euser,ruser,suser,fuser,f,comm,label 5058
+ps -eo "%p %y %x %c"
+ps -eo "%p %y %x %c" 5058
+ps -o "%p %y %x %c" 5058
+ps -o "%p %y %x %c %C" 5058
+ps 5058
+ps -o "%p %y %x %c %a" 5058
+ps -o "%p %y %a" 5058
+ps -o "%p %a" 5058
+ps -o "%p \n%a" 5058
+ps -o "%a" 5058
+ps -o "%a" 5058

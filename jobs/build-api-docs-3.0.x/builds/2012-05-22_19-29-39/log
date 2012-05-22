@@ -1,0 +1,12 @@
+Started by user [8mha:AAAAix+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADK4Sxi49UuLU4v0U8sT83IBCxZKUpAAAAA=[0mEwan Mellor
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@2cef66
+Using strategy: Default
+Last Built Revision: Revision f57e8ad8acac9ded8b8597d12327893d47b24ebb (origin/3.0.x)
+Checkout:build-api-docs-3.0.x / /var/lib/jenkins/workspace/build-api-docs-3.0.x - hudson.remoting.LocalChannel@2cef66
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://github.com/CloudStack/CloudStack
+Commencing build of Revision ce07dcff8560cb4eff1f52483b6fb88d42b507c6 (origin/3.0.x)
+Checking out Revision ce07dcff8560cb4eff1f52483b6fb88d42b507c6 (origin/3.0.x)
+Cleaning workspace
+[build-api-docs-3.0.x] $ ant build-apidocs-zip
+Buildfile: /var/lib/jenkins/workspace/build-api-docs-3.0.x/build.xml

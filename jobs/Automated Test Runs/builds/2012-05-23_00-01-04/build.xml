@@ -747,7 +747,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>73e83b79df5124aad39ec97d223b7303c20736f5</sha1>
+              <sha1>751972a3b4f55ad525be57e2dfc742790446e876</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -755,7 +755,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>438</hudsonBuildNumber>
+            <hudsonBuildNumber>444</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -958,9 +958,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>438</number>
+  <number>444</number>
   <result>SUCCESS</result>
-  <duration>117190</duration>
+  <duration>114671</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -970,6 +970,26 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
+    <string>frank</string>
+    <string>anthony</string>
+    <string>brian.federle</string>
+    <string>alena.prokharchyk</string>
+    <string>nitin.mehta</string>
+    <string>sudison</string>
+    <string>chirag</string>
+    <string>Prasanna.Santhanam</string>
+    <string>sanjay.tripathi</string>
+    <string>bfederle</string>
+    <string>ewan.mellor</string>
+    <string>kishan</string>
+    <string>Murali.Reddy</string>
+    <string>jayapalreddy.uradi</string>
     <string>jessica</string>
+    <string>salvatore.orlando</string>
+    <string>abhinandan.prateek</string>
+    <string>david</string>
+    <string>sheng.yang</string>
+    <string>kelven</string>
+    <string>prachi</string>
   </culprits>
 </build>

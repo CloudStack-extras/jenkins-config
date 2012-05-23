@@ -44,6 +44,7 @@
     <skipTag>false</skipTag>
     <scmName></scmName>
   </scm>
+  <quietPeriod>600</quietPeriod>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>

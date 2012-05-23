@@ -65,6 +65,11 @@
       <artifacts>dist/apidocs-*.zip</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.Mailer>
+      <recipients>#Cloud-Engineering@citrite.net</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+    </hudson.tasks.Mailer>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsPublisher/>
   </publishers>
   <buildWrappers/>

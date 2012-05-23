@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>ewanm</userId>
+        </hudson.model.Cause_-UserIdCause>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData>
+      <buildsByBranchName>
+        <entry>
+          <string>origin/3.0.x</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>661fa30bcfb218444bb21c5814f582564a0df5d2</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/3.0.x</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>53992</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction>
+      <build class="build" reference="../../.."/>
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <no-comparator/>
+        <entry>
+          <string>origin/3.0.x</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/build-api-docs-3.0.x</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+      <result>FAILURE</result>
+    </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+  </actions>
+  <number>53992</number>
+  <result>FAILURE</result>
+  <duration>240939</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/build-api-docs-3.0.x</workspace>
+  <hudsonVersion>1.447</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits>
+    <string>edison</string>
+    <string>home</string>
+    <string>aprateek</string>
+    <string>frank</string>
+    <string>jana</string>
+    <string>root</string>
+    <string>nitin.mehta</string>
+    <string>sateesh.chodapuneedi</string>
+    <string>devdeep.singh</string>
+    <string>chirag</string>
+    <string>Prasanna.Santhanam</string>
+    <string>vijayendra.bhamidipati</string>
+    <string>salvatore.orlando</string>
+    <string>abhinandan.prateek</string>
+    <string>kelven</string>
+    <string>prachi</string>
+    <string>rajesh.battala</string>
+    <string>anthony</string>
+    <string>brian.federle</string>
+    <string>alena.prokharchyk</string>
+    <string>pradeep.soundararajan</string>
+    <string>sudison</string>
+    <string>sanjay.tripathi</string>
+    <string>alena</string>
+    <string>ewan.mellor</string>
+    <string>bfederle</string>
+    <string>kishan</string>
+    <string>chiradeep</string>
+    <string>Murali.Reddy</string>
+    <string>jayapalreddy.uradi</string>
+    <string>jessica</string>
+    <string>david</string>
+    <string>sheng.yang</string>
+    <string>Edison.Su</string>
+    <string>likitha.shetty</string>
+    <string>John.Zucker</string>
+  </culprits>
+</build>

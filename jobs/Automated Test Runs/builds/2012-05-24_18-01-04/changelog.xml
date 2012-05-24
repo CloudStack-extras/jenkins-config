@@ -1,0 +1,99 @@
+Changes in branch origin/master, between 8581d02ee8ed9464dcc182045600569a13af4794 and f6efcd39a3b0c263cc9177d0eac0db9e9d2c6a35
+commit f6efcd39a3b0c263cc9177d0eac0db9e9d2c6a35
+tree ec4f0671bf221701621ff51472e3ca8886a069ac
+parent 45311fefc19400f19715f72537378a53ee52d994
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1337892025 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1337892434 -0700
+
+    CS-15083: fixed source nat ip assoc for the case when account owns more than 1 guest network, and 1+ public account specific ranges
+
+:100755 100755 8a39778ae7b281e8edd79cff7db9560b73d39128 e5860815bc44359e1e3817aebb8cb756eb61cc49 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit 45311fefc19400f19715f72537378a53ee52d994
+tree 2445c8ae07bc3c991019e1433eb441fffd93f62d
+parent c4e82930a8dce3b828e57363feaa85818837e991
+author Brian Federle <brian.federle@citrix.com> 1337888402 -0700
+committer Brian Federle <brian.federle@citrix.com> 1337888474 -0700
+
+    CS-13739: Localize 'login' button
+
+:100644 100644 25e4936daa73a6f4f53fffa4fe1126fe219ef1ba cda542a3c1a628363bcc6d4c7bdb28a4d7174c8e M	ui/css/cloudstack3.css
+:100644 100644 21ef1ad142ce68874590e283f9be2b28686c0e4d 86437fc25e231f955621da3b94ab4e1f589d8722 M	ui/images/sprites.png
+:100644 100644 3429d03e434495c475649e60096686b3dd457e3f 12361a4b43c03d5d1987ba059bb8f27a925282fb M	ui/index.jsp
+
+commit c4e82930a8dce3b828e57363feaa85818837e991
+tree 908dcd96f0b6538f92bcfdac7ec3096971805cf1
+parent 88d66e89fac9e35c916b9f7f2901f2ba8aeb31ae
+author Sanjay Tripathi <sanjay.tripathi@citrix.com> 1337856841 +0530
+committer Sanjay Tripathi <sanjay.tripathi@citrix.com> 1337888498 +0530
+
+    NexusVswitch UI development
+
+:100644 100644 89f39cd75a2cd86bd098020f973bc7bc8b1c30d1 3429d03e434495c475649e60096686b3dd457e3f M	ui/index.jsp
+
+commit 9f2a823d6ecb5c4577f10c92be5dfa4ed4772e16
+tree c86e00e03cbf1a962371b98b27f4c4791efd25b1
+parent 434f166c022d4e6a9dd04cb927b041eb6f06fe1e
+author Brian Federle <brian.federle@citrix.com> 1337886958 -0700
+committer Brian Federle <brian.federle@citrix.com> 1337887078 -0700
+
+    CS-13091: Enable/disable physical network UI actions
+
+:100644 100644 1f3ae284a303287c20ce3d164b8a9dd1c51a519d 0ba0cf666cff59dd2598907ba08e5079fa0cc4c7 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 f8fc4615cc68ba1fe4e27dd3d1bb76e6528961fa 89f39cd75a2cd86bd098020f973bc7bc8b1c30d1 M	ui/index.jsp
+:100644 100644 d2244fd5a71d3f4ee5aa315c86e69a8180edb696 c5fa2ceab1a01d13325758314c5d1b97f925799e M	ui/scripts/system.js
+:100644 100644 7c4951a2ad2b72b92253065ca0066e72901f7797 dfe26e91f3c3d50a85fb0f52b038ce57577fc001 M	ui/scripts/ui-custom/zoneChart.js
+
+commit 63116385c412a8d936476f960573ad920ba35b40
+tree 2e6175bf1be8dc9b070c9700617e89cac78a98ee
+parent 28b0df590ebb68914191bfbf9ec3cbd44f1a5f11
+author Pranav Saxena <pranav.saxena@citrix.com> 1337886743 +0530
+committer Pranav Saxena <pranav.saxena@citrix.com> 1337886743 +0530
+
+    CS-14053: IE compatibility issues
+
+:100644 100644 f4f7ed7c44895f32e56437db1001cd2f4e8de63f 5012daa7e0645b2e98f32b9ca51e9dfc3e942594 M	ui/css/cloudstack3-ie7.css
+:100644 100644 2957897b3ceada42c47042695f5d59b721afb57a 25e4936daa73a6f4f53fffa4fe1126fe219ef1ba M	ui/css/cloudstack3.css
+
+commit 434f166c022d4e6a9dd04cb927b041eb6f06fe1e
+tree 3864bfd22592c68ece3df4fa84c71fc94be9a7bb
+parent e65465929d8878e35225802809d642087a57227a
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1337886201 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1337886242 -0700
+
+    Removed unused comments
+
+:100755 100755 b97ce9fac56ba4eaf4d92035b518da43ab16d9c9 ba178efb7173583fcf18d611cf3b3fd6a412e154 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java
+
+commit e65465929d8878e35225802809d642087a57227a
+tree 222d3fe030c93172b80183fb4dd535318e4c0063
+parent 28b0df590ebb68914191bfbf9ec3cbd44f1a5f11
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1337884648 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1337884712 -0700
+
+    CS-15082: don't allow to remove guest network in Basic zone when there are non-expunged CPVM/SSVMs using it.
+
+:100755 100755 fca654eb57c78759e7f8e54e2e9e5bf65c92cc51 8a39778ae7b281e8edd79cff7db9560b73d39128 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 27c568d9ba7301dbe8437a86b59c60cb844704c5 e9a6daeb4e20db4d22c49c01ae47f926085d9cb6 M	server/src/com/cloud/vm/dao/VMInstanceDao.java
+:100644 100644 ea890061e175fc5ee8c1339dedea133420966391 5d4be39457391004aebbee37a7ddf6c052c384eb M	server/src/com/cloud/vm/dao/VMInstanceDaoImpl.java
+
+commit 28b0df590ebb68914191bfbf9ec3cbd44f1a5f11
+tree 3c4440e37a63092b1242a9bea5afacc4ebb2f78c
+parent f2746b06280c936a2e8d52675b5deacfbcac344f
+author Pranav Saxena <pranav.saxena@citrix.com> 1337884237 +0530
+committer Pranav Saxena <pranav.saxena@citrix.com> 1337884237 +0530
+
+    CS-15078:Standard name for vSwitch
+
+:100644 100644 76b0a93e381748c71d0bf820cfc516bfe787d42b d2244fd5a71d3f4ee5aa315c86e69a8180edb696 M	ui/scripts/system.js
+:100644 100644 76eb5429da41c5368be9182ccc84b4de11cfadb8 e4c0d57697bebd14552ead7f6dc8b197ef9d5cb6 M	ui/scripts/zoneWizard.js
+
+commit f2746b06280c936a2e8d52675b5deacfbcac344f
+tree 46d77a27f5807101d89ba896815ff4dca18e28d3
+parent 8581d02ee8ed9464dcc182045600569a13af4794
+author Jessica Wang <jessica@cloud.com> 1337881934 -0700
+committer Jessica Wang <jessica@cloud.com> 1337881934 -0700
+
+    add new labels in Chinese translation file.
+
+:100644 100644 4db5ae8a8f3358953a026d6306f17d8d32662a92 4640f669555ca69f4a8cb89bf6499b000e185a03 M	client/WEB-INF/classes/resources/messages_zh_CN.properties

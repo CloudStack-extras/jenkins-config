@@ -23,22 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>5</hudsonBuildNumber>
-          </hudson.plugins.git.util.Build>
-        </entry>
-        <entry>
-          <string>origin/master</string>
-          <hudson.plugins.git.util.Build>
-            <revision>
-              <sha1>cff7ff5fc4291073a7d199813200e29b527be73b</sha1>
-              <branches class="list">
-                <hudson.plugins.git.Branch>
-                  <sha1 reference="../../../sha1"/>
-                  <name>origin/master</name>
-                </hudson.plugins.git.Branch>
-              </branches>
-            </revision>
-            <hudsonBuildNumber>4476</hudsonBuildNumber>
+            <hudsonBuildNumber>2</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -68,26 +53,26 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>6</hudsonBuildNumber>
+            <hudsonBuildNumber>3</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
-          <string>origin/hybrid</string>
+          <string>remotes/origin/2.2.y</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>37cee31bd24fd9c593b1c7f3fae59a1be86e6b1a</sha1>
+              <sha1>22a5cd1d8483e6e1c481aaee9d7058ea6dcabce2</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
-                  <name>origin/hybrid</name>
+                  <name>remotes/origin/2.2.y</name>
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>7</hudsonBuildNumber>
+            <hudsonBuildNumber>10871</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
+      <lastBuild reference="../buildsByBranchName/entry[4]/hudson.plugins.git.util.Build"/>
       <scmName></scmName>
     </hudson.plugins.git.util.BuildData>
     <hudson.plugins.git.GitTagAction>
@@ -95,29 +80,29 @@
       <tags class="hudson.util.CopyOnWriteMap$Tree">
         <no-comparator/>
         <entry>
-          <string>origin/master</string>
+          <string>remotes/origin/2.2.y</string>
           <list/>
         </entry>
       </tags>
-      <ws>/var/lib/jenkins/workspace/build-api-docs-master</ws>
+      <ws>/var/lib/jenkins/workspace/build-api-docs-2.2.y</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>4476</number>
+  <number>10871</number>
   <result>SUCCESS</result>
-  <duration>81953</duration>
+  <duration>213062</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/build-api-docs-master</workspace>
+  <workspace>/var/lib/jenkins/workspace/build-api-docs-2.2.y</workspace>
   <hudsonVersion>1.447</hudsonVersion>
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>jessica</string>
+    <string>anthony</string>
   </culprits>
 </build>

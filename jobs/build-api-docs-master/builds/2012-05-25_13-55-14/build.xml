@@ -30,7 +30,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>329b06087e30cc1693243543e1e0496d0dd06dab</sha1>
+              <sha1>a74e8d8b6bf4dd6cdbce09189e38076a9c0d9166</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -38,7 +38,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>4494</hudsonBuildNumber>
+            <hudsonBuildNumber>4594</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -106,9 +106,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>4494</number>
+  <number>4594</number>
   <result>SUCCESS</result>
-  <duration>83318</duration>
+  <duration>65039</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -118,6 +118,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>sheng.yang</string>
+    <string>sudison</string>
   </culprits>
 </build>

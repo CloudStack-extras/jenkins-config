@@ -1,21 +1,22 @@
 Started by an SCM change
-Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@128899a
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@2cef66
 Using strategy: Default
-Last Built Revision: Revision bbd0259ad294ecea740006594221062f74f6ea01 (origin/master)
-Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@128899a
+Last Built Revision: Revision 74beef1012cdced032ee359b159b258c5e77cdc5 (origin/master)
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@2cef66
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision 3b4fb0b55e404649f47b0ca6d12a134383e36584 (origin/master)
-Checking out Revision 3b4fb0b55e404649f47b0ca6d12a134383e36584 (origin/master)
+Commencing build of Revision 3d4edfed03dad24964cde601f61cb1e3a3eed153 (origin/master)
+Checking out Revision 3d4edfed03dad24964cde601f61cb1e3a3eed153 (origin/master)
 [build-api-docs-master] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
      [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] deploy home: /var/lib/jenkins/workspace/build-api-docs-master/build/deploy
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-04-22T05:32:24Z
-     [echo] Build number is 3.0.2.2012-04-22T05:32:24Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-05-25T22:00:27Z
+     [echo] Build number is 3.0.3.2012-05-25T22:00:27Z
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
@@ -38,13 +39,11 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-agent.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
-   [depend] Deleted 3 out of date files in 0 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/server/src
-    [javac] Compiling 3 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-server.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
-     [copy] Copying 23 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/client/conf
+     [copy] Copying 24 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/client/conf
      [copy] Copying 57 files to /var/lib/jenkins/workspace/build-api-docs-master/target/db
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-agent:
@@ -54,6 +53,7 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/target/ui
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/ovm/src
@@ -96,17 +96,39 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/usage/src
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-usage.jar
 
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-awsapi:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-05-25T22:00:27Z
+     [echo] Build number is 3.0.3.2012-05-25T22:00:27Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-awsapi:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/awsapi/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-awsapi.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-jar:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-s3:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-ec2:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-s3:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-ec2:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi:
+
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
      [echo] build-apidocs
+     [exec] Can't find file ${commands.cisco.file}
+     [exec] Result: 1
      [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-master/dist/commands.xml
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
-   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.2.zip
-      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.2.zip
+   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
+      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 17 seconds
+Total time: 2 minutes 8 seconds
 Archiving artifacts
 Finished: SUCCESS

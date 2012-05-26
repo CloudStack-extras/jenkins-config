@@ -1,36 +1,49 @@
 Started by an SCM change
-Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@128899a
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@2cef66
 Using strategy: Default
-Last Built Revision: Revision b8889eeb58f3b5329e44dcac86e29eeb0bb47572 (origin/master)
-Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@128899a
+Last Built Revision: Revision 1593900402f02845beface48880ed62ec9060f5d (origin/master)
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@2cef66
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git://github.com/CloudStack/CloudStack
-Commencing build of Revision 5021274232367b7844e82288b0dcf5c0a1c69e79 (origin/master)
-Checking out Revision 5021274232367b7844e82288b0dcf5c0a1c69e79 (origin/master)
+Commencing build of Revision 8eff66578411974d8aa4f3b17826984588b79c2e (origin/master)
+Checking out Revision 8eff66578411974d8aa4f3b17826984588b79c2e (origin/master)
 [build-api-docs-master] $ ant build-apidocs-zip
 Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
      [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] deploy home: /var/lib/jenkins/workspace/build-api-docs-master/build/deploy
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-04-23T22:59:24Z
-     [echo] Build number is 3.0.3.2012-04-23T22:59:24Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-05-26T01:45:20Z
+     [echo] Build number is 3.0.3.2012-05-26T01:45:20Z
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-utils.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+   [depend] Deleted 14 out of date files in 0 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/api/src
+    [javac] Compiling 8 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-api.jar
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-api.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+   [depend] Deleted 10 out of date files in 0 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/vmware-base/src
+    [javac] Compiling 8 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-vmware-base.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+   [depend] Deleted 3 out of date files in 0 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/core/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-core.jar
+    [javac] Note: /var/lib/jenkins/workspace/build-api-docs-master/core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-core.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
@@ -38,13 +51,21 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-agent.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
-   [depend] Deleted 5 out of date files in 0 seconds
+   [depend] The class com.cloud.api.commands.ListCiscoNexusVSMCmd in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar/com/cloud/api/commands/ListCiscoNexusVSMCmd.class is out of date due to com.cloud.network.CiscoNexusVSMDeviceVO but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.GetCiscoVSMDetailsCmd in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar/com/cloud/api/commands/GetCiscoVSMDetailsCmd.class is out of date due to com.cloud.network.CiscoNexusVSMDeviceVO but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.GetCiscoVSMByClusterIdCmd in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar/com/cloud/api/commands/GetCiscoVSMByClusterIdCmd.class is out of date due to com.cloud.network.CiscoNexusVSMDeviceVO but has not been deleted because its source file could not be determined
+   [depend] The class com.cloud.api.commands.AddCiscoNexusVSMCmd in file /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar/com/cloud/api/commands/AddCiscoNexusVSMCmd.class is out of date due to com.cloud.network.CiscoNexusVSMDeviceVO but has not been deleted because its source file could not be determined
+   [depend] Deleted 15 out of date files in 2 seconds
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/server/src
-    [javac] Compiling 2 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
+    [javac] Compiling 15 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-server.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-server.jar
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
-     [copy] Copying 23 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/client/conf
+     [copy] Copying 25 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/client/conf
      [copy] Copying 57 files to /var/lib/jenkins/workspace/build-api-docs-master/target/db
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-agent:
@@ -96,10 +117,37 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
      [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/usage/src
       [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-usage.jar
 
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-awsapi:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-05-26T01:45:20Z
+     [echo] Build number is 3.0.3.2012-05-26T01:45:20Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-awsapi:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/awsapi/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-awsapi.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-jar:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-s3:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-ec2:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-s3:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-ec2:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi:
+
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
      [echo] build-apidocs
+     [exec] Traceback (most recent call last):
+     [exec]   File "/var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py", line 148, in <module>
+     [exec]     category = choose_category(fn)
+     [exec]   File "/var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py", line 129, in choose_category
+     [exec]     (fn, __file__))
+     [exec] Exception: Need to add a category for getCiscoVSMDetails.xml to /var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py:known_categories
+     [exec] Result: 1
      [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-master/dist/commands.xml
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
@@ -107,6 +155,6 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
       [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
-Total time: 1 minute 17 seconds
+Total time: 1 minute 49 seconds
 Archiving artifacts
 Finished: SUCCESS

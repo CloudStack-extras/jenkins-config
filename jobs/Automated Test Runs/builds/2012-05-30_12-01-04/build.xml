@@ -747,7 +747,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>4bb4e98eaee5212c5803302136de906c4c2070a4</sha1>
+              <sha1>90b87585e72d43ac1eaadb8ce3b7a9fdd149ebe2</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -755,7 +755,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>454</hudsonBuildNumber>
+            <hudsonBuildNumber>474</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -958,9 +958,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>454</number>
+  <number>474</number>
   <result>SUCCESS</result>
-  <duration>81595</duration>
+  <duration>175249</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -969,7 +969,5 @@
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
-  <culprits>
-    <string>nitin.mehta</string>
-  </culprits>
+  <culprits/>
 </build>

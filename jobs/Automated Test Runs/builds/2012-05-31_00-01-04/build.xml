@@ -755,7 +755,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>456</hudsonBuildNumber>
+            <hudsonBuildNumber>476</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -958,9 +958,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>456</number>
+  <number>476</number>
   <result>SUCCESS</result>
-  <duration>219591</duration>
+  <duration>176094</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -969,9 +969,5 @@
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
-  <culprits>
-    <string>frank</string>
-    <string>vijayendra.bhamidipati</string>
-    <string>prachi</string>
-  </culprits>
+  <culprits/>
 </build>

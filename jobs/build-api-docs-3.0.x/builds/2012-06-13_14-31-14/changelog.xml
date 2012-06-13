@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 17978438eed3272a8f757f85dce34444554290a6 and ce6b50b3d63dbd0bc5a2e6eeb15bd5b006295e8a
+commit ce6b50b3d63dbd0bc5a2e6eeb15bd5b006295e8a
+tree b2a6939c86b8319bb9291de18f09c630ad58cde2
+parent 17978438eed3272a8f757f85dce34444554290a6
+author Pranav Saxena <pranav.saxena@citrix.com> 1339579506 +0530
+committer Brian Federle <brian.federle@citrix.com> 1339611661 -0700
+
+    CS-15202: Rename all references in UI of Nexus VSM/dvswitch to Nexus 1000v
+
+:100644 100644 eda69df3ed69d4fcdc85a4a21797bd6518650369 a5c192389be5946a6308be4bd3b5a14904284555 M	client/WEB-INF/classes/resources/messages.properties
+:100644 100644 37868deaf6f40af6b606598468aa777fa42aac5a 48380c2bc61b20075fe33d42903ef9fe68917fa6 M	ui/scripts/system.js
+:100644 100644 081639f03dfbea85f660f28ce088690aecc953d7 2f6e7308180bda96ee44b0ecc767144f522aa95c M	ui/scripts/zoneWizard.js

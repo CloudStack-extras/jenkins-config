@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 5c5a2adb90a1380020f1e3f7913cebc0ebac18d0 and 0b5ed6ef57b0409e7a809425546a58de1bf9e0aa
+commit 0b5ed6ef57b0409e7a809425546a58de1bf9e0aa
+tree 63ab73a68b65eaef46a14e1a4f509b0905eb804e
+parent 5c5a2adb90a1380020f1e3f7913cebc0ebac18d0
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1339712787 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1339712787 -0700
+
+    Api docs: added category for resource tags commands
+
+:100644 100644 1c2f48c4c09e39b1e44fd9cdbcaa7288e7317351 3775f9fbaf86ea88e41dea234acae97c88d9e1cc M	setup/apidoc/gen_toc.py

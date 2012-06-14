@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between a9d1d1387842db74d70c772018eb6b6d5a2e99c9 and 402ee953b21a71ca78c04ff9ee2f0b22e3fbcbcf
+commit 402ee953b21a71ca78c04ff9ee2f0b22e3fbcbcf
+tree 58c389f6d661b0264ae2ff02fb58c201d4fe7870
+parent a9d1d1387842db74d70c772018eb6b6d5a2e99c9
+author Edison Su <sudison@gmail.com> 1338336737 -0700
+committer Edison Su <sudison@gmail.com> 1339707873 -0700
+
+    CS-14826
+    fix typo
+    Reviewed-by: sheng
+
+:100755 100755 b9fc038dca695d787aae6d6832ea1443fedd777b 3cfed1f24c891014d045c7d1900387df1966339b M	core/src/com/cloud/storage/template/DownloadManagerImpl.java

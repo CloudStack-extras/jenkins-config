@@ -1,0 +1,16 @@
+Changes in branch origin/3.0.x, between 09e7ab0c7ee4661f82186b153c6fac514a09eb07 and a9d1d1387842db74d70c772018eb6b6d5a2e99c9
+commit a9d1d1387842db74d70c772018eb6b6d5a2e99c9
+tree 3cf97def9941fb22e554104d5d6ac5bf5026e4b9
+parent 09e7ab0c7ee4661f82186b153c6fac514a09eb07
+author Brian Federle <brian.federle@citrix.com> 1339698725 -0700
+committer Brian Federle <brian.federle@citrix.com> 1339698850 -0700
+
+    CS-14230
+    
+    Add password confirm to add account/user forms
+    
+    Original patch by: oyla.smola@gmail.com
+    Reviewed-by: brian
+
+:100644 100644 e58c5c8beaa2600c51163075911a95583b4141f9 6d67d7a332cbedaf768b758df414534d22c4cc8e M	ui/scripts/accounts.js
+:100644 100644 b560f1673a60ce4df3c259d6c4afc1b84601c0dc 50c4ed77b6a0eb1bb953c3858dff7a6367bb85a3 M	ui/scripts/ui/dialog.js

@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 7d6528b21d524390c6e84cf50143279dcb740166 and 8ad831e691b1ab9d9812f9565cd5fee4e4f5e10f
+commit 8ad831e691b1ab9d9812f9565cd5fee4e4f5e10f
+tree e68c78a04dd7ac3216f4b8ab5caeafcb36fa5539
+parent 7d6528b21d524390c6e84cf50143279dcb740166
+author Jessica Wang <jessica.wang@citrix.com> 1339635349 -0700
+committer Jessica Wang <jessica.wang@citrix.com> 1339635349 -0700
+
+    CS-14604: cloudstack 3.0 UI - Add Zone Wizard - (1) Basic zone: always show Guest Traffic step regardless of whether OVS tunnel manager is enabled. (2) Advanced zone: skip Guest Traffic step if OVS tunnel manager is enabled.
+
+:100644 100644 7d5db43ee3d7253ef2adb15f0a7491e59dc1befa 248b2d381b128dba2045dab972dd9d28486fc6cd M	ui/scripts/zoneWizard.js

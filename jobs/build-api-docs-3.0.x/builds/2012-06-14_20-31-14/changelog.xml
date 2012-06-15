@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 0b5ed6ef57b0409e7a809425546a58de1bf9e0aa and 11b76751939fd1daf0fcf6223a51aaf60219f083
+commit 11b76751939fd1daf0fcf6223a51aaf60219f083
+tree bd68d0b8785ae8e2e2b330b3df32e1b0b29b8b63
+parent 0b5ed6ef57b0409e7a809425546a58de1bf9e0aa
+author Jessica Wang <jessica.wang@citrix.com> 1339720092 -0700
+committer Jessica Wang <jessica.wang@citrix.com> 1339720092 -0700
+
+    CS-15157: cloudstack 3.0 UI - infrastructure page - physical network - network service providers - reset nspMap before populating listNetworkServiceProviders response to nspMap.
+
+:100644 100644 48380c2bc61b20075fe33d42903ef9fe68917fa6 bc15dce2556efdb55c8e7119c3cf8196c8f38426 M	ui/scripts/system.js

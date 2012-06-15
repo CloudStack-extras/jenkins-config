@@ -1,0 +1,14 @@
+Changes in branch origin/3.0.x, between 52b2408c5f247251eb9d7416b2c62f562e3d1542 and 53f6739900586a69d5a6cdf31344d4ba52cbcc8e
+commit 53f6739900586a69d5a6cdf31344d4ba52cbcc8e
+tree 88bfb5830f97b0830f843ce3b61538352fcbf47c
+parent 52b2408c5f247251eb9d7416b2c62f562e3d1542
+author anthony <anthony@cloud.com> 1339783666 -0700
+committer anthony <anthony@cloud.com> 1339783666 -0700
+
+    CS-12972 : cap is per domain/VM
+    
+    Conflicts:
+    
+    	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+
+:100644 100644 3fd015d462ca7b4a27694ed816ca4f83fc367878 fc5333fefe549bbbc4ad63cd76a885ccc08944ad M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java

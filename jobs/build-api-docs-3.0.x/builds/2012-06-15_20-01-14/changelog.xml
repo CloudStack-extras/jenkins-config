@@ -1,0 +1,33 @@
+Changes in branch origin/3.0.x, between 5235894b209c1502739f386c55915c844e152384 and 1abdb876c9260d2c04ebbad5fa2b7ba876650860
+commit 1abdb876c9260d2c04ebbad5fa2b7ba876650860
+tree 64194cfb829785bed6da95342488be9a1c2f0fa2
+parent 5235894b209c1502739f386c55915c844e152384
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1336679757 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1339801076 -0700
+
+    1) Allow having multiple shared networks with the same vlan
+    2) Added new parameter to listNetworks command - canUseForDeploy(boolean). When true, list only networks that can be used for vm deployment (networks have enough ip addresses to allocate from for the vm)
+    
+    Conflicts:
+    
+    	api/src/com/cloud/api/ApiConstants.java
+    	api/src/com/cloud/api/commands/ListNetworksCmd.java
+    	api/src/com/cloud/api/response/NetworkResponse.java
+    	api/src/com/cloud/network/NetworkService.java
+    	server/src/com/cloud/api/ApiDBUtils.java
+    	server/src/com/cloud/api/ApiResponseHelper.java
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+    	server/src/com/cloud/network/dao/IPAddressDao.java
+    	server/src/com/cloud/network/dao/IPAddressDaoImpl.java
+
+:100755 100755 94e8bbc71b1d461d43a83344a4e66ee6ebc0ffe6 8b646c3411635eca6beae3c9e18175e60002afdf M	api/src/com/cloud/api/ApiConstants.java
+:100644 100644 182bf815a02257e7af959abe4bd5dd55b73eef8c 676c453d72c8780d34edc3e9bda6057772a777cc M	api/src/com/cloud/api/commands/ListNetworksCmd.java
+:100644 100644 5cb2cb47a8697ea139633652652e9ea6266333d9 87eab0ce8fc000ef29e2947bc027b9bdf6b66995 M	api/src/com/cloud/api/response/NetworkResponse.java
+:100755 100755 129b6c38b3abe2930be28bbda30f5985646cde7e d0754f171cb6f6df97da3144efa421baa7116fb4 M	api/src/com/cloud/network/NetworkService.java
+:100755 100755 d77fbe69fd8281d87dc281f5e8e0c54696d7d0b5 64c7fef679210e1cdeb04f9e00723376b5318830 M	server/src/com/cloud/api/ApiDBUtils.java
+:100755 100755 bfedb2db7f82dfc342942bf84ff09d9ec73b041d 6a1d12312472d53340551ff70ab6501336115353 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 86239611cd6281be5aba6ccbb1dcec3c8542d09d f2f870c054a91d4c41b4884db494f779bb4cb1b7 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 54867703f361ff4b7d911c5db3c4c20f360f4a8f 0624bf86c33d506ffc71719e19e35bee51feaf53 M	server/src/com/cloud/network/dao/IPAddressDao.java
+:100755 100755 b2979b056845238e0c951ebc63b6a872a9a91fde 8e8229ea2e622d5571acdf9847996c055d76d04d M	server/src/com/cloud/network/dao/IPAddressDaoImpl.java
+:100644 100644 299f5ee8a262bf47968aa9b9b7dc2bd75a727bce f73591f4070b65df73109ecbbc822c898ecf30da M	server/src/com/cloud/network/dao/NetworkDao.java
+:100644 100644 8fa107c8710a595cf58c3283bbd3617f7f40515b 9c4a5f87263766a5395a8ddc8a936349f07754e5 M	server/src/com/cloud/network/dao/NetworkDaoImpl.java

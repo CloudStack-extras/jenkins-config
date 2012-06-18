@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 0d19de3d4b9a5c8283b6bd95112ed9cb8afda5aa and 375bb99f094511a04205977cac5ac3db42e8ab4f
+commit 375bb99f094511a04205977cac5ac3db42e8ab4f
+tree 0e9100ecf55a8398e4ca24e58f948168ca137594
+parent 0d19de3d4b9a5c8283b6bd95112ed9cb8afda5aa
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340058620 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340060278 -0700
+
+    Don't send public/guest nic info when start VR in VPC
+
+:100755 100755 a6415b0fb6626e334a3c04d540598521b34adb2e d8346011c4a29e5df32abcd69265a64fad4ad9cc M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 bc7d3e00213f05735b30081eb1bf0bce85cc6425 899faf78704d67d3985a5577968e9681e94993e7 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java

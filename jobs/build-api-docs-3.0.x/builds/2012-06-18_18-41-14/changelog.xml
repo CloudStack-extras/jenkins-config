@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between df679393868681a5b9095b33549222956b494de6 and 0d19de3d4b9a5c8283b6bd95112ed9cb8afda5aa
+commit 0d19de3d4b9a5c8283b6bd95112ed9cb8afda5aa
+tree 2ad1c0dff625d1c370bc723fd39b59978a96ac3a
+parent df679393868681a5b9095b33549222956b494de6
+author anthony <anthony@cloud.com> 1340058242 -0700
+committer anthony <anthony@cloud.com> 1340058262 -0700
+
+    VPC : fix for geustnw.sh
+
+:100755 100755 c2e3592e51adcac8019996642fa25d728c28f92c 57071dd7e33c29b19692c11682cbe1d68eee249f M	patches/systemvm/debian/config/opt/cloud/bin/guestnw.sh

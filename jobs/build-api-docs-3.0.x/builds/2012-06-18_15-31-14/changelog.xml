@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 3b2b8fc14306f55703088b2abcea42c03b84fce8 and eb26f9569b485c6fcfdabfb6c77bf935052fa5af
+commit eb26f9569b485c6fcfdabfb6c77bf935052fa5af
+tree f9f9a89265da4c23472dd092e839bcfbf78de2f1
+parent 3b2b8fc14306f55703088b2abcea42c03b84fce8
+author anthony <anthony@cloud.com> 1340047251 -0700
+committer anthony <anthony@cloud.com> 1340047251 -0700
+
+    VPC : fixed vpc_ipassoc
+
+:100644 100644 117ca8c45eaeb8ed8b20ab229f27fe408b7af4fb 3ec18ba507064c3bdcf5bdb1ba9c4307f279219b M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100755 100755 ec373f8719c0be190d8b4898ea9416c401e411c4 9cd3d6dd9898ba5f259465f6deee2b6979f21b71 M	patches/systemvm/debian/config/opt/cloud/bin/vpc_ipassoc.sh

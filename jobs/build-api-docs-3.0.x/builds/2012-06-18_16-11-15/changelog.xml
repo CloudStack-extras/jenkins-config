@@ -1,0 +1,184 @@
+Changes in branch origin/3.0.x, between eb26f9569b485c6fcfdabfb6c77bf935052fa5af and b9263b0c518a429653176dbff9625c60ea07e087
+commit 2ef82872879b58786cd95d2f88672496c8f4227c
+tree d9efc18da9991d9f3aa9ccd7519c868902232021
+parent e03ed60540f89a05c985833c006bca10edccaf93
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1334614536 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340049476 -0700
+
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Description:
+    
+    	Fixing two other scenarios apart from the reported one
+    	where we were not passing in database IDs for translation
+    	into uuids, in the exception.
+
+:100755 100755 439cf476dd2aa666727752f9cebd9b27b16c843a 34d1bbfbff62822c88d79a733feefee6809e2f94 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit e03ed60540f89a05c985833c006bca10edccaf93
+tree e6bd502635dd5320efcb9d70cfd9a3522848ab9c
+parent 7860b78049bd0a16eced8d18c7d7c74626a4b2dd
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331840383 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340049344 -0700
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Cherry-picking from master for bug 14448 into 3.0.x. Resolved
+    conflicts encountered during cherry-picking.
+    
+    Description:
+    
+    	Adding overloaded addProxyObject() function to CloudException
+    	and RuntimeCloudException classes and using this function
+    	to stuff exceptions with IDs, to reduce code footprint.
+    
+    Conflicts:
+    
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+    	server/src/com/cloud/resource/ResourceManagerImpl.java
+
+:100755 100755 d80334bfd0ebc763cb13ba6325af9612e7bf06ba c24b1a292a14e071c080cffb94cc46905c834e8f M	api/src/com/cloud/api/BaseCmd.java
+:100644 100644 0c66418b1316e2fb32c30cc20d6b83ced372071c b430a706c2bc5ca19344bb66c249c25aaf486fbe M	api/src/com/cloud/api/commands/AddAccountToProjectCmd.java
+:100644 100644 790c94c1f5cd09757ea9f5de5f991ad90e4053d7 890c66c912178f42d3c6ea0acea7073326e30f28 M	api/src/com/cloud/api/commands/CreateSnapshotPolicyCmd.java
+:100755 100755 d7775dec3cfc4fab44d91b4032e950b1339d7d8a 10c8b6ac6b8c8d9b340e1731889deaf6288dcf3e M	api/src/com/cloud/api/commands/CreateTemplateCmd.java
+:100644 100644 94ba8ea6c587b311c9da2544e2d51088a1bc43fc 98566e9c2ef7cf4426d9fafb1bda28f484b9b44b M	api/src/com/cloud/exception/CloudException.java
+:100755 100755 9074bfba10ebf79137385305b0056bee1ff052e6 a274803872b3a7fd2d3fcc8390409a40160e35e4 M	server/src/com/cloud/agent/manager/ClusteredAgentManagerImpl.java
+:100755 100755 71e02494800f3b2a994818af74346434b4c9110d 58ece59354834f8776edda0e0c84f6b729dccac0 M	server/src/com/cloud/baremetal/BareMetalPingServiceImpl.java
+:100755 100755 bac191bd310b3c903a5481bbeb988c80a1a0f809 2677e5ce38433f46b705d0252f14ea0ea1194435 M	server/src/com/cloud/baremetal/BareMetalVmManagerImpl.java
+:100755 100755 aecf8c014dd34a6a9e89478ba92bda0c18fa221b 439cf476dd2aa666727752f9cebd9b27b16c843a M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 b9fef9dfbc84548fd59525975daec9e4c73f80e6 805657bf10fb120155297cc2db87cd41bc632bc6 M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+:100755 100755 26832874820dae6fb391b22cc1ff6d0b8a153df0 70592e598a386519460cf0356d44cbd7970e22c7 M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+:100755 100755 d03844c699871d9fe7d60f83b2a8cdd2e8ab4804 01fdeda84a9f786eaf0d2005f9e73795ef3477ff M	server/src/com/cloud/projects/ProjectManagerImpl.java
+:100755 100755 d610be55d4688561187f86cf30c65678284876f2 4d4bb52ec139dbddf56e1697c3a3d6d1eafaedee M	server/src/com/cloud/resource/ResourceManagerImpl.java
+:100755 100755 28ccc6bf9db8e612c4ee636573bf6025707030b7 d25a468af8d8da8ca512d817b7732d29bdc4bde4 M	server/src/com/cloud/server/ManagementServerImpl.java
+:100755 100755 ab3de05d785c111c223aa28b22d0070b9a1ce7a3 9402c8de2a9038eb162fc88bd343978b12b5376c M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100644 100644 de5a2c5467da6f88772b46a00cdc708b9f8eb4f1 b3e9180052e9ac4a77e77b5831d1cccb7c5eabf7 M	utils/src/com/cloud/utils/exception/RuntimeCloudException.java
+
+commit 7860b78049bd0a16eced8d18c7d7c74626a4b2dd
+tree ecfec32b0bf56f8c4fa770017aeb3422a82a6a8c
+parent 6d4857823479f52355f7f54fb60d9ffbd16f4ff4
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331600309 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340048658 -0700
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Cherry-picking from master for bug 14448 into 3.0.x. Resolving
+    conflicts arising from the pick.
+    
+    Description:
+    
+    	Modifying the API functions' exception handling to call
+    	addProxyObject() wherever applicable, and removing some
+    	wrong calls to addProxyObject() that were put in in an
+    	earlier commit for this bug.
+    
+    	With this commit, we cover many API functions to use the
+    	new exception handling code, but some pieces may still be
+    	left out. These will be covered as work in progress, when
+    	making changes to the CS API code.
+    
+    Conflicts:
+    
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+    	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+    	server/src/com/cloud/resource/ResourceManagerImpl.java
+
+:100755 100755 5e92621353451cc1affbb8a0493d6c2991cabe4f d80334bfd0ebc763cb13ba6325af9612e7bf06ba M	api/src/com/cloud/api/BaseCmd.java
+:100644 100644 fbbb2fa70b18ca08f10228bc6212f76a9969a5ab 0c66418b1316e2fb32c30cc20d6b83ced372071c M	api/src/com/cloud/api/commands/AddAccountToProjectCmd.java
+:100755 100755 b9df14de61d46af2d09ef4c5c804558860ceeed9 aecf8c014dd34a6a9e89478ba92bda0c18fa221b M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 e4ddfffda0b0a98164b20d6eb13e85ca50524884 b9fef9dfbc84548fd59525975daec9e4c73f80e6 M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+:100755 100755 4f48f4f7dd73bbb7628135d14c057ceec4c73de3 26832874820dae6fb391b22cc1ff6d0b8a153df0 M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+:100755 100755 f611441712a5e10c95a00e3bd50999541e2100ce d03844c699871d9fe7d60f83b2a8cdd2e8ab4804 M	server/src/com/cloud/projects/ProjectManagerImpl.java
+:100755 100755 a147ddc2f949231d499d63d5e5e2cd778277d7da d610be55d4688561187f86cf30c65678284876f2 M	server/src/com/cloud/resource/ResourceManagerImpl.java
+:100755 100755 7733976088925dda4541db83cf394611bd9b1f37 ab3de05d785c111c223aa28b22d0070b9a1ce7a3 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+
+commit 6d4857823479f52355f7f54fb60d9ffbd16f4ff4
+tree f9287c162ffee653b39eb9277125ce10b8b860e9
+parent 8e47091ccdad63d4e822ad87ab20139beb0238f5
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331284416 -0800
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340047097 -0700
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Cherry-picking from master for bug 14448 into 3.0.x. Modified the
+    pick to resolve some conflicts.
+    
+    Description:
+    
+    	Removed some wrong invocations to addProxyObject() when
+    	throwing exceptions in NetworkManagerImpl.java.
+    
+    	Replaced db ids with uuids in various points in the code
+    	of NetworkManagerImpl.java, where exceptions are thrown.
+    
+    Conflicts:
+    
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+
+:100755 100755 f2f870c054a91d4c41b4884db494f779bb4cb1b7 b9df14de61d46af2d09ef4c5c804558860ceeed9 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit 8e47091ccdad63d4e822ad87ab20139beb0238f5
+tree e397c8e4db381088d5698272a9bdea294e970daf
+parent 79abb862f3fb63a2f9e1012cfef8457e2de28d92
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331277364 -0800
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340045278 -0700
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Cherry-picking from master for bug 14448 into 3.0.x.
+    
+    Description:
+    
+    	Replacing placement of db ids in exception messages to uuids
+    	in the file ManagementServerImpl.java.
+    
+    	Since there are a large number of files that throw exceptions
+    	with db ids in them and they need to be changed, we will make
+    	the changes in multiple commits.
+
+:100755 100755 cbee26c6cab9b3dad275bcb92d3669b57f863e7d 28ccc6bf9db8e612c4ee636573bf6025707030b7 M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 79abb862f3fb63a2f9e1012cfef8457e2de28d92
+tree b1632162738aa383840d70730e159a05b4e7009a
+parent 855618e4f496e540ab43e98859991dd591ce4970
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1331253534 -0800
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340044776 -0700
+
+    Bug 13127: API error text refer to database ids instead of uuids
+    Bug CS-14448: Wrong error message on using the createVlanIpRange cmd
+    
+    Cherry-picking from master for bug 14448 into 3.0.x.
+    
+    Description:
+    
+    	Adding a new class AnnotationHelper, that provides routines
+    	to read annotations from a VO class.
+    
+    	Cloudstack does the mapping between cloudstack java VO objects
+    	and the database tables using cglib. cglib creates proxy objects
+    	as the maps between VO objects and the database.  A VO (value
+    	object) class is populated after querying from the MYSQL database.
+    
+    	Ideally, a getAnnotation() issued on a cglib proxy object should
+    	get a list of all the annotations in all classes in the inheritence
+    	chain. However, this functionality seems to be currently broken
+    	in cglib.  Hence, when querying for annotations given the object
+    	of a VO class, we need to get to the corresponding VO class of that
+    	cglib proxy class and issue a getAnnotation() on that class. To get
+    	the VO class, we simply need to get the super class of the proxy
+    	object. Also, we need to recurse to the root VO class in case the
+    	VO class extends another VO class.
+    
+    	Note that the cache used by CS is ehcache.
+    
+    Conflicts:
+    
+    	server/src/com/cloud/server/ManagementServerImpl.java
+
+:100644 100644 fbce2e5dd6f40f89d9b33d588cbdcc83c09c25e8 f48b86138fe9c52a79547466d6d10026f64aec8f M	server/src/com/cloud/domain/DomainVO.java
+:100755 100755 84135ac1e12b4d3ffc9e022cd22cf9376aee4c05 cbee26c6cab9b3dad275bcb92d3669b57f863e7d M	server/src/com/cloud/server/ManagementServerImpl.java
+:000000 100755 0000000000000000000000000000000000000000 d983ef3b083b89d6e4e834c6c37d75e0330244e5 A	utils/src/com/cloud/utils/AnnotationHelper.java

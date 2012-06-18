@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between b9263b0c518a429653176dbff9625c60ea07e087 and 16561769711253e813f21de645aa04d18b1eabe1
+commit 16561769711253e813f21de645aa04d18b1eabe1
+tree 425a5585c325b2532392bec824d32d4ac9772f42
+parent b9263b0c518a429653176dbff9625c60ea07e087
+author Jessica Wang <jessica.wang@citrix.com> 1340051123 -0700
+committer Jessica Wang <jessica.wang@citrix.com> 1340051142 -0700
+
+    CS-14854: cloudstack 3.0 UI - (1) extend detailView widget to take in dynamic isEditable value. (2) template page - edit template action - for regular user and domain admin: make Extractable field and Featured field non-editable. Do NOT send “isfeatured”, “isextractable” to updateTemplatePermission API when they are non-editable.
+
+:100644 100644 8ddcbed89e7439d39b0768ad9701afc52fdbae90 4c765538934ce2b7b19862b97b434efff682e024 M	ui/scripts/templates.js
+:100644 100644 219a9369273fe94100f8507af397b1b637c656ca 68520e08a2383e6597a47464568354bbd0776374 M	ui/scripts/ui/widgets/detailView.js

@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 855618e4f496e540ab43e98859991dd591ce4970 and 3b2b8fc14306f55703088b2abcea42c03b84fce8
+commit 3b2b8fc14306f55703088b2abcea42c03b84fce8
+tree 52012f13d259915673f4644dbac226e3a1ba228c
+parent 855618e4f496e540ab43e98859991dd591ce4970
+author anthony <anthony@cloud.com> 1340044835 -0700
+committer anthony <anthony@cloud.com> 1340044859 -0700
+
+    VPC: fix VPC cidr check
+
+:100755 100755 f2f870c054a91d4c41b4884db494f779bb4cb1b7 1326d5b5ea6ad776a49a137f5d05fd58228403e1 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 55e95be24809551c3ac25bce2ac607d79f233498 53811aff4836ee455141723fa51f44221c894a89 M	server/src/com/cloud/network/vpc/VpcManagerImpl.java
+:100755 100755 5a5a52ac31fdca9822bdc7677d48e921726cd287 4a266bc583eb959bed0b9416cad554027fbd3344 M	utils/src/com/cloud/utils/net/NetUtils.java

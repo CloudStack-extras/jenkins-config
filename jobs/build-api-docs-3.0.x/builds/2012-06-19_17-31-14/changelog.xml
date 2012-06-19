@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 205fd844e5a4e05e80342433e0ffbba3cc442470 and 1dc3ee51f59ea8118d106b1f3495b5462add347b
+commit 1dc3ee51f59ea8118d106b1f3495b5462add347b
+tree 1c3d7f6fa1b103e85aaaac90baabadf93e8ad9b4
+parent 205fd844e5a4e05e80342433e0ffbba3cc442470
+author Pranav Saxena <pranav.saxena@citrix.com> 1340092579 +0530
+committer bfederle <bfederle@gmail.com> 1340141200 -0700
+
+    cs-15286: incorrect result when edit pod
+    
+    Original patch by: olga.smola
+    reviewed-by: brian
+
+:100644 100644 bc15dce2556efdb55c8e7119c3cf8196c8f38426 3e022d2c22c931a575c6aee1ffcc2fb2889a0c74 M	ui/scripts/system.js

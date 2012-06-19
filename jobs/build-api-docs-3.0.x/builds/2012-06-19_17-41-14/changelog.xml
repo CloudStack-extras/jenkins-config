@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 1dc3ee51f59ea8118d106b1f3495b5462add347b and b8f67f0249b8421a3f4208b4273f84307ea7865c
+commit b8f67f0249b8421a3f4208b4273f84307ea7865c
+tree 0803e4874a418545183755249ab8cc4fb13c665d
+parent 1dc3ee51f59ea8118d106b1f3495b5462add347b
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340140215 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340141450 -0700
+
+    Vpc: fixed the network shutdown happening as a part of GC thread for VPC networks
+
+:100755 100755 566032981308b65fd83237b09ee34b971dd6424a ab83a66a598a520d28aee68a35024ddb926c2bb9 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 899faf78704d67d3985a5577968e9681e94993e7 a15d6c6942682660b5a06962a0cdb96557ce354e M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java
+:100755 100755 06699aee022489bbaebd715c87ff8c67a4b90b87 08013ed8d8aea5222226c1db699fc860e955acbc M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+:100755 100755 f0257ac12d70c946593fd02638870327dd055cdf b423a89078c10ed0ba87988abccc5d1e1683c483 M	server/src/com/cloud/vm/dao/DomainRouterDaoImpl.java

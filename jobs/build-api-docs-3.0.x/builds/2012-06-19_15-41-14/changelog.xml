@@ -1,0 +1,41 @@
+Changes in branch origin/3.0.x, between da6c58ed306c51e99694ae80d49dc24397ea9a49 and 205fd844e5a4e05e80342433e0ffbba3cc442470
+commit 205fd844e5a4e05e80342433e0ffbba3cc442470
+tree f3c9f0365d43fcfe6725299e0ed7f504b65ad5d6
+parent 17b9952b8617d55ea21ffa67da9f5808da1aa90d
+author anthony <anthony@cloud.com> 1340134207 -0700
+committer anthony <anthony@cloud.com> 1340134207 -0700
+
+    VPC : when plug VIF , get unused VIF number
+
+:100644 100644 3e3f35b287e2b7a8e5963e492e4386cf88d49e4d d0723f0b503e5fa2f488ff26fadc97c42123d84f M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+
+commit 17b9952b8617d55ea21ffa67da9f5808da1aa90d
+tree 4e813eb70c01582cb5cd03c9316f02c5ae5a8ab6
+parent 88aa19796fbeff91dc5724d6eeacc03a57a491bd
+author anthony <anthony@cloud.com> 1340130611 -0700
+committer anthony <anthony@cloud.com> 1340130611 -0700
+
+    VPC : use correc provider for guest network inside VPC
+
+:100755 100755 1293a9b039498e0cc1d1dbabb6c79d6cbd4363ea 6ea761a933b926432c2c0a114e76bfe4942192a8 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit 88aa19796fbeff91dc5724d6eeacc03a57a491bd
+tree 5ae85834835532a9a422f4ef64e3d8d508a0bcf2
+parent 63fc767a70d62c74d8b84c0bc716dc8bc73211f6
+author anthony <anthony@cloud.com> 1340126583 -0700
+committer anthony <anthony@cloud.com> 1340126610 -0700
+
+    VPC : fixed snat
+
+:100755 100755 703bd51905c6a99ca6560ab7c2400d1232c03d69 0fe803ed8abab6fb096ece88319a38ae9ca3effa M	patches/systemvm/debian/config/opt/cloud/bin/vpc_snat.sh
+
+commit 63fc767a70d62c74d8b84c0bc716dc8bc73211f6
+tree 8c6a06cf51c6010d6dde1a313bd4eac452f818f0
+parent da6c58ed306c51e99694ae80d49dc24397ea9a49
+author anthony <anthony@cloud.com> 1340071750 -0700
+committer anthony <anthony@cloud.com> 1340126610 -0700
+
+    VPC : disable Network-usage for vpc, will revisit later
+
+:100644 100644 18555378562c3a6de5aa6cc04d410161c0acd44c 4121b8a51bb6f7161b27f20e1de7ee1f885a7993 M	api/src/com/cloud/agent/api/NetworkUsageCommand.java
+:100644 100644 4ad276f99a3c381a194d97be9e7ae8b070672778 d76b5bc0b9e7a8ff96e3f5b88730e230150cf005 M	core/src/com/cloud/hypervisor/xen/resource/XenServer56Resource.java

@@ -15,7 +15,7 @@
           <string>origin/3.0.x</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>1ab26e11de754f57d0d8a3e6b22c72fc3bd8d112</sha1>
+              <sha1>615dff8d80cb0ba43bce782a7e5d39497496dbf7</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -23,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>53993</hudsonBuildNumber>
+            <hudsonBuildNumber>54093</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -46,9 +46,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>53993</number>
+  <number>54093</number>
   <result>SUCCESS</result>
-  <duration>239881</duration>
+  <duration>357436</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -58,41 +58,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>edison</string>
-    <string>home</string>
-    <string>aprateek</string>
-    <string>frank</string>
-    <string>jana</string>
-    <string>root</string>
-    <string>nitin.mehta</string>
-    <string>sateesh.chodapuneedi</string>
-    <string>devdeep.singh</string>
-    <string>chirag</string>
-    <string>Prasanna.Santhanam</string>
-    <string>vijayendra.bhamidipati</string>
-    <string>salvatore.orlando</string>
-    <string>abhinandan.prateek</string>
-    <string>kelven</string>
-    <string>prachi</string>
-    <string>rajesh.battala</string>
-    <string>anthony</string>
-    <string>brian.federle</string>
-    <string>alena.prokharchyk</string>
-    <string>pradeep.soundararajan</string>
-    <string>sudison</string>
-    <string>sanjay.tripathi</string>
-    <string>alena</string>
-    <string>ewan.mellor</string>
     <string>bfederle</string>
-    <string>kishan</string>
-    <string>chiradeep</string>
-    <string>Murali.Reddy</string>
-    <string>jayapalreddy.uradi</string>
-    <string>jessica</string>
-    <string>david</string>
-    <string>sheng.yang</string>
-    <string>Edison.Su</string>
-    <string>likitha.shetty</string>
-    <string>John.Zucker</string>
   </culprits>
 </build>

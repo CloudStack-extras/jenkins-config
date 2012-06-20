@@ -3,18 +3,19 @@
   <actions>
     <hudson.model.CauseAction>
       <causes>
-        <hudson.model.Cause_-UserIdCause>
-          <userId>ewanm</userId>
-        </hudson.model.Cause_-UserIdCause>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
       </causes>
     </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
     <hudson.plugins.git.util.BuildData>
       <buildsByBranchName>
         <entry>
           <string>origin/3.0.x</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>ce07dcff8560cb4eff1f52483b6fb88d42b507c6</sha1>
+              <sha1>997bc8d9ce8cd4c866a060f2454a332949265fa3</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -22,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>53991</hudsonBuildNumber>
+            <hudsonBuildNumber>54091</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -42,12 +43,12 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
-      <result>FAILURE</result>
+      <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>53991</number>
-  <result>FAILURE</result>
-  <duration>223958</duration>
+  <number>54091</number>
+  <result>SUCCESS</result>
+  <duration>192265</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -57,41 +58,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>edison</string>
-    <string>home</string>
-    <string>aprateek</string>
-    <string>frank</string>
-    <string>jana</string>
-    <string>root</string>
-    <string>nitin.mehta</string>
-    <string>sateesh.chodapuneedi</string>
-    <string>devdeep.singh</string>
-    <string>chirag</string>
-    <string>Prasanna.Santhanam</string>
-    <string>vijayendra.bhamidipati</string>
-    <string>salvatore.orlando</string>
-    <string>abhinandan.prateek</string>
-    <string>kelven</string>
-    <string>prachi</string>
-    <string>rajesh.battala</string>
     <string>anthony</string>
-    <string>brian.federle</string>
-    <string>alena.prokharchyk</string>
-    <string>pradeep.soundararajan</string>
-    <string>sudison</string>
-    <string>sanjay.tripathi</string>
-    <string>alena</string>
-    <string>ewan.mellor</string>
-    <string>bfederle</string>
-    <string>kishan</string>
-    <string>chiradeep</string>
-    <string>Murali.Reddy</string>
-    <string>jayapalreddy.uradi</string>
-    <string>jessica</string>
-    <string>david</string>
-    <string>sheng.yang</string>
-    <string>Edison.Su</string>
-    <string>likitha.shetty</string>
-    <string>John.Zucker</string>
   </culprits>
 </build>

@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 9c1d3e6614d0dbc9a11c77da7297e4f8a1f353d1 and 1862942bc9cc45f1d2c92aa175ca3579243bee08
+commit 1862942bc9cc45f1d2c92aa175ca3579243bee08
+tree cd67ba000acabea9a44739e53a8545c602ea82f4
+parent 9c1d3e6614d0dbc9a11c77da7297e4f8a1f353d1
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340213819 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340213867 -0700
+
+    VPC: fixed user vm start in case when Implemented network existed w/o VR (it was expunged with DestroyRouter command)
+
+:100644 100644 6a6528ace18172388ebccc4d27339461195fa025 64cfdae72f92091c7b16400df13efe73e9f51ea9 M	server/src/com/cloud/network/element/VpcVirtualRouterElement.java

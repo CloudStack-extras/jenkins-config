@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between e5fd090053e93ca02729e9344f95b6890a4c3cac and 6fbd7503da36af43f9e24dbd156a0965d1e17c03
+commit 6fbd7503da36af43f9e24dbd156a0965d1e17c03
+tree f66fbef396a4fe2de3acc6ece49363ebe123dcbb
+parent e5fd090053e93ca02729e9344f95b6890a4c3cac
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340250966 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340251104 +0530
+
+    adding unittest-xml-reporting as a dependency to marvin
+
+:100644 100644 83c9c8a0a32e4b697586706bb5bd2a0a531dc408 46be4f190f6ead1f9d87ab5516a562cd4dac164f M	tools/marvin/setup.py

@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between e56dbdf78e12d585cfd40eeddbaf93061340d77c and f99c203aa0e8b4062fda032a98c7f1b8642f2d0e
+commit f99c203aa0e8b4062fda032a98c7f1b8642f2d0e
+tree f4bdf8b35d10c592398ba4eaffa6637de265083f
+parent e56dbdf78e12d585cfd40eeddbaf93061340d77c
+author anthony <anthony@cloud.com> 1340235366 -0700
+committer anthony <anthony@cloud.com> 1340235397 -0700
+
+    VPC : add vpc_nat. sh for port_forwarding and static nat
+
+:000000 100755 0000000000000000000000000000000000000000 a331365a02c36fcf5eb06315081bbbd015682c54 A	patches/systemvm/debian/config/opt/cloud/bin/vpc_nat.sh

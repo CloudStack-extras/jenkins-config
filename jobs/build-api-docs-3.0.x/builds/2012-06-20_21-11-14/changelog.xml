@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between f99c203aa0e8b4062fda032a98c7f1b8642f2d0e and e5fd090053e93ca02729e9344f95b6890a4c3cac
+commit e5fd090053e93ca02729e9344f95b6890a4c3cac
+tree fdadb758d96a901c2fd9085625c2efffbe891415
+parent f99c203aa0e8b4062fda032a98c7f1b8642f2d0e
+author anthony <anthony@cloud.com> 1340239965 -0700
+committer anthony <anthony@cloud.com> 1340239965 -0700
+
+    VPC : completed setupNetworkACLCommand
+
+:100644 100644 f26e337f65bc8b827a669e3e1a9989d74ee26b1f abef84aef380d59841ca866533e751b58d7eb45b M	api/src/com/cloud/agent/api/routing/SetNetworkACLCommand.java
+:100644 100644 bcff1bc60246511365e52b6cd11725138ecb55c4 e334d1243e2815e273efaa9e750e7610c83e2dd9 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java

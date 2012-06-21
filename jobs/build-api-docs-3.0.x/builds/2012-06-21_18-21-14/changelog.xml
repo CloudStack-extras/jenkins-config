@@ -1,0 +1,16 @@
+Changes in branch origin/3.0.x, between 51e1bda4481b9f5a26c81652c6dfa35f70abdd9b and 516628273fab9e6f5b06c9f3df70e4d5465cc9b7
+commit 516628273fab9e6f5b06c9f3df70e4d5465cc9b7
+tree b810d88cc957e5c35b0cec36fc6efc465063dae3
+parent 51e1bda4481b9f5a26c81652c6dfa35f70abdd9b
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340315908 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340316615 -0700
+
+    VPC: apply firewall ACLs as a part of VPC router start/restart and VPC network implement
+
+:100644 100644 73977938a89c27142878a28de781bf88bc346609 f7b0f9d3ffab2c8466e28a53684a7a19aaf56da8 M	api/src/com/cloud/network/firewall/NetworkACLService.java
+:100755 100755 3f8764e056e3bda9c51e97f61f5921de5cf61d2b abb7af1110c350d4daab7431328b3c836a0c4372 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 235d2a6119e3c3ac2e872e0ee88794eb5edf043f 50613f6ff38fd2466233cb62cd9ac504a454d2fb M	server/src/com/cloud/network/firewall/NetworkACLManagerImpl.java
+:100755 100755 19a7681fa9e47cdcd62cc20a2615156c92700fcb c44a4f4fb9e497bca0f2dbf174ee00a94fd95908 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 4016691559a50207f689bad0d7a8a15e6dcc653b 4bb5c1879bc6e74532e715ffcc5f004bc9e6bdf5 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java
+:100644 100644 56dc483be34a17cdd8bf86a2e4308cb4e6ec9cea 1f2b4b50ba53264145dcd6dbe47a722ecdd50416 M	server/src/com/cloud/vm/VirtualMachineManager.java
+:100755 100755 08013ed8d8aea5222226c1db699fc860e955acbc 9cad3d1e26a20754df01a49b5c2977727116a2a3 M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java

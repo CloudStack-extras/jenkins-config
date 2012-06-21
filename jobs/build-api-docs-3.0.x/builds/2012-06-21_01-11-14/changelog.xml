@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 6fbd7503da36af43f9e24dbd156a0965d1e17c03 and 71f3bd436db529607f6f98a03f2590b2b41aa881
+commit 71f3bd436db529607f6f98a03f2590b2b41aa881
+tree 900107146166954f50050c2c641a5dc2e0f62090
+parent 6fbd7503da36af43f9e24dbd156a0965d1e17c03
+author Abhinandan Prateek <aprateek@apache.org> 1340255195 +0100
+committer Abhinandan Prateek <aprateek@apache.org> 1340255195 +0100
+
+    bug CS-15285: preserving order of network ids so that first network in the list is taken as the default network
+
+:100644 100644 85914cb9289ca08cd386f83e030385e69698b880 a88449c79091b6ce3c727c14a46e46d14ace7f9c M	api/src/com/cloud/api/commands/DeployVMCmd.java

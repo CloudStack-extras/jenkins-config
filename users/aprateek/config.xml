@@ -17,7 +17,7 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>aprateek@aprateek-PC.(none)</emailAddress>
+      <emailAddress>aprateek@apache.org</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

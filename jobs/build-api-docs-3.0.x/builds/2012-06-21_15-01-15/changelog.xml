@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 3d10eaaafadf20be944c48dbe9f88681364462a9 and 49d389d3c0f4c1a5ce08e4c4f90b1bba05ad94a0
+commit 49d389d3c0f4c1a5ce08e4c4f90b1bba05ad94a0
+tree e3cfa2092648cc28cadce9d74592ff0cd872f776
+parent 3d10eaaafadf20be944c48dbe9f88681364462a9
+author anthony <anthony@cloud.com> 1340304503 -0700
+committer anthony <anthony@cloud.com> 1340304523 -0700
+
+    VPC : add vpc_loadbalancer.sh
+
+:000000 100755 0000000000000000000000000000000000000000 fce42739370a257c279042fed09489e0a7a758b6 A	patches/systemvm/debian/config/opt/cloud/bin/vpc_loadbalancer.sh

@@ -1,0 +1,21 @@
+Changes in branch origin/3.0.x, between 49d389d3c0f4c1a5ce08e4c4f90b1bba05ad94a0 and 51e1bda4481b9f5a26c81652c6dfa35f70abdd9b
+commit 51e1bda4481b9f5a26c81652c6dfa35f70abdd9b
+tree ef8f9b54d85939bb597b9df692be353437f48613
+parent bfc4722ad465249eab6033e349739faaa15be524
+author anthony <anthony@cloud.com> 1340306982 -0700
+committer anthony <anthony@cloud.com> 1340306982 -0700
+
+    VPC : change name
+
+:100755 100755 71197b864273ca1206bc9b466805c6b2c1741b63 71197b864273ca1206bc9b466805c6b2c1741b63 R100	patches/systemvm/debian/config/opt/cloud/bin/acl.sh	patches/systemvm/debian/config/opt/cloud/bin/vpc_acl.sh
+:100755 100755 5d437e5f4a24daf1a851dba808d22e4b877e29e5 5d437e5f4a24daf1a851dba808d22e4b877e29e5 R100	patches/systemvm/debian/config/opt/cloud/bin/guestnw.sh	patches/systemvm/debian/config/opt/cloud/bin/vpc_guestnw.sh
+
+commit bfc4722ad465249eab6033e349739faaa15be524
+tree 78096b5dde3dbafc134ab6a998298074321fde3f
+parent 49d389d3c0f4c1a5ce08e4c4f90b1bba05ad94a0
+author anthony <anthony@cloud.com> 1340306624 -0700
+committer anthony <anthony@cloud.com> 1340306624 -0700
+
+    VPC : add vpc_netusage.sh
+
+:000000 100755 0000000000000000000000000000000000000000 0ddb46b6c3a77826997f49d1261030e555205368 A	patches/systemvm/debian/config/opt/cloud/bin/vpc_netusage.sh

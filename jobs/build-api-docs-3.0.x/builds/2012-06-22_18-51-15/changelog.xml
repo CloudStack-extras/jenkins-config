@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 42c17e013189ae06905443773dabc189f08031a8 and 05332128e954c3880072ff816fbbe6727b5e4bef
+commit 05332128e954c3880072ff816fbbe6727b5e4bef
+tree 8873cfcfb05d4be49af815e15798b22d097505d5
+parent 42c17e013189ae06905443773dabc189f08031a8
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340405235 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340405235 -0700
+
+    VPC: resend private gateway as a part of VPC VR start
+
+:100755 100755 5e0529eaf5b2e5de243976c1447550171bd0c389 5acad897ef435a7bd294fdf33aca2d9fdcab870e M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 0f62037595dd237d90782b8b53a83cc0ca47503f d18ceffe748421dede5dbeb04753fbe929af1880 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java

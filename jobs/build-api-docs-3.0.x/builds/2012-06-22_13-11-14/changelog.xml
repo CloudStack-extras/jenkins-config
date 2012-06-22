@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 52f4c73b624e62ce681e6280acfaa6001d4b3580 and a96a25992323866158bb4c12051036958aafe796
+commit a96a25992323866158bb4c12051036958aafe796
+tree 6561537356be62e2946812b59c8771cbbbb3facc
+parent 52f4c73b624e62ce681e6280acfaa6001d4b3580
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340384764 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340384786 -0700
+
+    VPC: apply dhcp entries only after all guest nics are plugged
+
+:100644 100644 4222e4c436962cc0d3e31504b37b24cd27d1ea8a 7d340046bb282e23f483ce9f0ee41891ca6f80ce M	api/src/com/cloud/agent/api/PlugNicCommand.java
+:100755 100755 c44a4f4fb9e497bca0f2dbf174ee00a94fd95908 5e0529eaf5b2e5de243976c1447550171bd0c389 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 4bb5c1879bc6e74532e715ffcc5f004bc9e6bdf5 425f18259e6cacce97ae64d8b4ea90bf50f53c63 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java

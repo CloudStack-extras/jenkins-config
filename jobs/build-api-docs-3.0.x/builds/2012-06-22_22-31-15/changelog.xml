@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 583c8ad979681365b7c3bf79de95d85f9326346a and 61a568cd8ee36069cf4e2d305bea88d3b1c8d9cd
+commit 61a568cd8ee36069cf4e2d305bea88d3b1c8d9cd
+tree acba61bbf7222ef8573fbc1afa1df74be2d96814
+parent 583c8ad979681365b7c3bf79de95d85f9326346a
+author anthony <anthony@cloud.com> 1340417738 -0700
+committer anthony <anthony@cloud.com> 1340417738 -0700
+
+    VPC : add portforwarding
+
+:100644 100644 317e2b4602543144bf95e575afa8d23105b13e9c f74ce41e71c98b5cd67ee40744605a53107121ad M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100755 100755 a331365a02c36fcf5eb06315081bbbd015682c54 2402bf7ef76ea696a40710cbc074ee785ab49028 R064	patches/systemvm/debian/config/opt/cloud/bin/vpc_nat.sh	patches/systemvm/debian/config/opt/cloud/bin/vpc_portforwarding

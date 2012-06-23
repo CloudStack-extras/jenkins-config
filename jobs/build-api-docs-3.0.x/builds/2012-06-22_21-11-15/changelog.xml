@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 05332128e954c3880072ff816fbbe6727b5e4bef and 583c8ad979681365b7c3bf79de95d85f9326346a
+commit 583c8ad979681365b7c3bf79de95d85f9326346a
+tree 750eb639d99c31a11f930690f4155c2c2e6df979
+parent 05332128e954c3880072ff816fbbe6727b5e4bef
+author anthony <anthony@cloud.com> 1340413282 -0700
+committer anthony <anthony@cloud.com> 1340413298 -0700
+
+    VPC : acl works
+
+:100644 100644 c1d0c158cc223f8d4e1104617ce57e5897afef84 262aa5f9f191748043725196433bc01255688522 M	patches/systemvm/debian/config/etc/iptables/iptables-vpcrouter
+:100755 100755 e48c2329fdbcb72ba2580e6ac30642e770ecc281 7ef648d523215452011c5557490abf72daa12e9c M	patches/systemvm/debian/config/opt/cloud/bin/vpc_acl.sh

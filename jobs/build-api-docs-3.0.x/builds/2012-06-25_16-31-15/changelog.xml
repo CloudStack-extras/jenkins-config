@@ -1,0 +1,21 @@
+Changes in branch origin/3.0.x, between c2e38336519ae2a57a54e369cd54db3c970d100b and 8cbf5f749f431c6a551e88b74705a91f71a54785
+commit 8cbf5f749f431c6a551e88b74705a91f71a54785
+tree 92eb8a103e25e4aece9c96d165bb0bbf64ff0009
+parent 997112089781b89c372409f1721bb9093229973c
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340655540 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340655568 -0700
+
+    VPC: Don't allow to do ip assoc to the network in the VPC. The ip should be assigned to the VPC itself
+
+:100755 100755 fee85489872bcd615a1da0a0688ca022d1ee2168 0d4a41d9597713f004a397ca948a5c2b4b6c8930 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit 997112089781b89c372409f1721bb9093229973c
+tree edd7b451b37363c71a86af4ac9988d2b81bc38a5
+parent c2e38336519ae2a57a54e369cd54db3c970d100b
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340650093 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340655568 -0700
+
+    VPC: moved NetworkACL manager to the vpc folder
+
+:100755 100755 c7c51ae0c0b8d1362f1b2bacf5da6bf4b092e169 453cb040d942d954d63869e521a6f69705bdeb7a M	server/src/com/cloud/configuration/DefaultComponentLibrary.java
+:100644 100644 50613f6ff38fd2466233cb62cd9ac504a454d2fb be30e8cc1a9054403e0a613d55f57d804a93f40e R099	server/src/com/cloud/network/firewall/NetworkACLManagerImpl.java	server/src/com/cloud/network/vpc/NetworkACLManagerImpl.java

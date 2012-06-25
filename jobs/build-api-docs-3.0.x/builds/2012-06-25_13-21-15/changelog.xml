@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 0969ad35442c186d92d5318524d5f2ecf62a6438 and 515340b5e3299b4e7a2cc53f32c82540a136c65f
+commit 515340b5e3299b4e7a2cc53f32c82540a136c65f
+tree 41d21b68d4514391495b4c5d79d0466f18beff15
+parent 0969ad35442c186d92d5318524d5f2ecf62a6438
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340644315 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340644330 -0700
+
+    VPC: listPrivateGateways API implementation
+
+:000000 100644 0000000000000000000000000000000000000000 5d9266e276ab770a45a6c85b02a29421ed96c0ba A	api/src/com/cloud/api/commands/ListPrivateGatewaysCmd.java
+:100644 100644 e8c9e86babb944947aa14e7ccc6255a8e4950bff 926ad0f80551afc783aa6fc938aaeb950935ecd4 M	api/src/com/cloud/network/vpc/VpcService.java
+:100755 100755 680767c859c13c55db8a37dcb24d92a37c14a5f4 ee1d30b47d3ac6bcb1941c11e2a66c01468651e7 M	client/tomcatconf/commands.properties.in
+:100644 100644 e811f65859429a2e4ad26820e055880520991db3 a652f35f07d8bd5579e55642d63760512ce5c09f M	server/src/com/cloud/network/vpc/VpcManagerImpl.java

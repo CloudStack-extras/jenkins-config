@@ -15,7 +15,7 @@
           <string>origin/3.0.x</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>d0b9aecd1631d7cb2a71de28d89f16ed4c990738</sha1>
+              <sha1>515340b5e3299b4e7a2cc53f32c82540a136c65f</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -23,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>54022</hudsonBuildNumber>
+            <hudsonBuildNumber>54122</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -42,13 +42,16 @@
       <ws>/var/lib/jenkins/workspace/build-api-docs-3.0.x</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
+    <hudson.tasks.MailMessageIdAction>
+      <messageId>&lt;24301262.111340645041589.JavaMail.jenkins@domU-12-31-39-15-22-2D&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
-      <result>SUCCESS</result>
+      <result>FAILURE</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>54022</number>
-  <result>SUCCESS</result>
-  <duration>198636</duration>
+  <number>54122</number>
+  <result>FAILURE</result>
+  <duration>168990</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -58,8 +61,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>jessica</string>
-    <string>sudison</string>
-    <string>kelven</string>
+    <string>alena.prokharchyk</string>
   </culprits>
 </build>

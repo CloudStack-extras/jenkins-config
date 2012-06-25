@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 515340b5e3299b4e7a2cc53f32c82540a136c65f and 1e478b5c65975d33066c1fe61f704204f514478a
+commit 1e478b5c65975d33066c1fe61f704204f514478a
+tree 23b670e49408f5c525d2019faa4cd3b1190c95c6
+parent 515340b5e3299b4e7a2cc53f32c82540a136c65f
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340645218 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340645218 -0700
+
+    VPC: added missing @Implementation to listPrivateGateways
+
+:100644 100644 5d9266e276ab770a45a6c85b02a29421ed96c0ba 9006547673ad666d92f0540c23e33919cf48e65f M	api/src/com/cloud/api/commands/ListPrivateGatewaysCmd.java

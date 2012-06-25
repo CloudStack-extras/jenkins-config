@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 781752b4c71f3c0f0e3e35540592abc93eced5bf and 32c858ecd2737d9c1b5ed125cf94e28011146f31
+commit 32c858ecd2737d9c1b5ed125cf94e28011146f31
+tree 679f792cdd45914dfea89d4b24de6f53bb5d5e42
+parent 781752b4c71f3c0f0e3e35540592abc93eced5bf
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340665130 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340665163 -0700
+
+    VPC: finilize start for the VR - send ip assoc commands only after plug nic is done for all public nics
+
+:100755 100755 0d4a41d9597713f004a397ca948a5c2b4b6c8930 69461209b6465973d2d06eb7cd8d5f107551ed85 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 a4cb4b2d41083eea1bc5639b09fda3483ec1c306 d732fa0de81374a101540fe13eb15aaafaf5d1f8 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 d18ceffe748421dede5dbeb04753fbe929af1880 426368204cdd6021917425fe52d897402cb6dfb8 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java
+:100755 100755 d828166da637e416357c3fe15a1b3fd72c6274d2 ddbeaf3fb346f6949b4984f1ed044be4cd4759ab M	server/src/com/cloud/network/rules/RulesManagerImpl.java

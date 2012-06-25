@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 61a568cd8ee36069cf4e2d305bea88d3b1c8d9cd and f56795d22bbc7cca6fe89512ee8e1f602af9d775
+commit f56795d22bbc7cca6fe89512ee8e1f602af9d775
+tree a4741c311846a5ef507703e23f0b09b14d68a60a
+parent 61a568cd8ee36069cf4e2d305bea88d3b1c8d9cd
+author Koushik Das <Koushik.Das@citrix.com> 1340617880 +0530
+committer Koushik Das <Koushik.Das@citrix.com> 1340617880 +0530
+
+    Fix bug CS-15261.
+    In case IP address is passed to deployVirtualMachine API, the default property on NIC was not getting set and as a result there was a failure down the line and VM creation was failing.
+
+:100755 100755 9402c8de2a9038eb162fc88bd343978b12b5376c 40fac710cd95e652068d1e110825c510fd440770 M	server/src/com/cloud/vm/UserVmManagerImpl.java

@@ -1,0 +1,21 @@
+Changes in branch origin/3.0.x, between 8cbf5f749f431c6a551e88b74705a91f71a54785 and b407b8831c6430492bf11c774602b8458aed16d4
+commit b407b8831c6430492bf11c774602b8458aed16d4
+tree f075ca3084c283fd6795f77aa49c12e7bae394e3
+parent 8cbf5f749f431c6a551e88b74705a91f71a54785
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340662529 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340662577 -0700
+
+    VPC: initial checkin for Static Routes
+
+:100755 100755 8b646c3411635eca6beae3c9e18175e60002afdf dba57f2020e50fdab76877f678185c453421e011 M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 465ce34485919dc28c67e38436bed21c50f183d7 5bcabf6225c0d6f452529f2e2b0e07f500e068c7 M	api/src/com/cloud/api/ResponseGenerator.java
+:100644 100644 8cb7a6d47dea4e3b206c328fc38295175b150402 4f0fe038e7e9121cf666bcbd4217be6fab33294a M	api/src/com/cloud/api/commands/CreatePrivateGatewayCmd.java
+:100644 100644 9006547673ad666d92f0540c23e33919cf48e65f 6b217757fbbcbe9f33d3fa6e64afdb9aa8655157 M	api/src/com/cloud/api/commands/ListPrivateGatewaysCmd.java
+:000000 100644 0000000000000000000000000000000000000000 a77c71b25fd9d14b63b74c9545a858914493ea0f A	api/src/com/cloud/api/response/StaticRouteResponse.java
+:000000 100644 0000000000000000000000000000000000000000 fee47ab71de49c3828c7ad9efe0157c3dada5989 A	api/src/com/cloud/network/vpc/StaticRoute.java
+:100755 100755 ee1d30b47d3ac6bcb1941c11e2a66c01468651e7 051861ff79c38c550a3d7f9e24ff808c8277968c M	client/tomcatconf/commands.properties.in
+:100755 100755 fa269247611e3f966b050e21d3ce642b898bbfd1 c5d5889a50a714587ddbf934e1925b7835c5ddb5 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 5acad897ef435a7bd294fdf33aca2d9fdcab870e a4cb4b2d41083eea1bc5639b09fda3483ec1c306 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 ef2b792bd138b42582e99a4b781b92778ac1ac83 4440c31d6f20dd3dc058706a94dda85e8fbd5f82 M	server/src/com/cloud/network/rules/FirewallRuleVO.java
+:000000 100644 0000000000000000000000000000000000000000 3b58c358202e2515581fedc02a76b0b6b0bf6790 A	server/src/com/cloud/network/vpc/StaticRouteVO.java
+:100755 100755 76ec838d0c33856fe18e20a3f0a9d364181a940f 3ce14b05e1e5de3da03b85c81870847d32c643bd M	setup/db/create-schema.sql

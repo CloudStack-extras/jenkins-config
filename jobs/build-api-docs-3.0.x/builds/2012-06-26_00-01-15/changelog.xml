@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 0f863b30257c8d65d8ed5033d68523b4b354c523 and 493560e370f179027b22f43cea48f9793b9070ea
+commit 493560e370f179027b22f43cea48f9793b9070ea
+tree bdaafdc530eb1b8ee9dcd6d36b91cd0dd0031d43
+parent 0f863b30257c8d65d8ed5033d68523b4b354c523
+author anthony <anthony@cloud.com> 1340682405 -0700
+committer anthony <anthony@cloud.com> 1340682421 -0700
+
+    VPC : fix for CONNMARK
+
+:100755 100755 3f80a4ca9b8cd2adf09f5fe8e55d54ceb2a93379 2701ef7d1e63c9f2f776b26cdfd3ec257c85c868 M	patches/systemvm/debian/config/opt/cloud/bin/cloud-nic.sh
+:100755 100755 7f137d1044389c5f14ecb94bf97f1438a301808e 5f10abe3de4049d879d867b3f0a5defab765270a M	patches/systemvm/debian/config/opt/cloud/bin/vpc_ipassoc.sh

@@ -7,7 +7,7 @@ Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
 Commencing build of Revision 130893be9389a30e3cc31a4a3191e7e1a176f42b (origin/master)
 Checking out Revision 130893be9389a30e3cc31a4a3191e7e1a176f42b (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson7118099249959627908.sh
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson1019658104107249829.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -38,7 +38,7 @@ clean-awsapi:
 clean-all:
 
 BUILD SUCCESSFUL
-Total time: 2 seconds
+Total time: 5 seconds
 Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -54,8 +54,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-06-21T04:01:38Z
-     [echo] Build number is 3.0.3.2012-06-21T04:01:38Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-06-26T04:01:42Z
+     [echo] Build number is 3.0.3.2012-06-26T04:01:42Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -199,8 +199,8 @@ compile-usage:
 
 -init-awsapi:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dist-files
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-06-21T04:01:38Z
-     [echo] Build number is 3.0.3.2012-06-21T04:01:38Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-06-26T04:01:42Z
+     [echo] Build number is 3.0.3.2012-06-26T04:01:42Z
 
 compile-awsapi:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-awsapi.jar
@@ -253,7 +253,7 @@ deploy-ovm:
      [copy] Copying 20 files to /var/lib/jenkins/automated/webapps/client/WEB-INF/lib/scripts
 
 -init-awsapi:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-06-21T04:04:10.932Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-06-26T04:06:40.351Z
      [echo] Build number is 3.0.3
 
 deploy-axis:
@@ -398,5 +398,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 2 minutes 48 seconds
+Total time: 5 minutes 34 seconds
 Finished: SUCCESS

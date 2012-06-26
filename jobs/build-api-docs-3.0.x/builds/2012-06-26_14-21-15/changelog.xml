@@ -1,0 +1,29 @@
+Changes in branch origin/3.0.x, between 25e3f6cebc637b358543485dc7529f9ee3768ddf and 9d88781e8c8193a0e1661f60d64fb303346c8b8d
+commit 9d88781e8c8193a0e1661f60d64fb303346c8b8d
+tree d6497dd3ec9ce80d7010232408dce33ffe0157a8
+parent 25e3f6cebc637b358543485dc7529f9ee3768ddf
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340734255 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340734286 -0700
+
+    VPC: implementation for Add/delete/list StaticRoute. Agent implementation is yet to be done
+
+:000000 100644 0000000000000000000000000000000000000000 93e79aad0cb06dad0ec8e6a6b31309c6c11e7551 A	api/src/com/cloud/agent/api/routing/SetStaticRouteAnswer.java
+:000000 100644 0000000000000000000000000000000000000000 1ab59d7174e41239b8db64e7829e70024c8bf3a5 A	api/src/com/cloud/agent/api/routing/SetStaticRouteCommand.java
+:100644 100644 805013eaad944d896b2d272e5f36010a00e59c37 af6fc000b2016531dd824f455d5343475a8fc9ef M	api/src/com/cloud/api/commands/CreateStaticRouteCmd.java
+:100644 100644 a77c71b25fd9d14b63b74c9545a858914493ea0f 025be6e0b824c8f39d976c08ef9ad336896655ba M	api/src/com/cloud/api/response/StaticRouteResponse.java
+:100755 100755 cb393f6e787d75af71ca35eab9a75de126406eba 5318c1e8df9cf71960bd9a9d7c06b8ba64485cc6 M	api/src/com/cloud/api/response/VolumeResponse.java
+:100644 100644 34bdb511cb8ac879492d57d17285beec3d78e7f7 3e369b3e721dc9c79e37c7133bb3aae8b2d6d87b M	api/src/com/cloud/network/element/VpcProvider.java
+:000000 100644 0000000000000000000000000000000000000000 073621d7321d339793f791e95e41748d09157972 A	api/src/com/cloud/network/vpc/StaticRouteProfile.java
+:100644 100644 d1faf237dddd1bc8882d00d979480305d803846c a4e1a1a3451f5d66af79aecdf1c52c758956a77c M	api/src/com/cloud/network/vpc/VpcService.java
+:100644 100644 e6dc6f2603ced3d017efebddd97fec6ad2fb60d9 27afe9adc9d23c32282b870b92122ccacdcf7d33 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100755 100755 c5d5889a50a714587ddbf934e1925b7835c5ddb5 bae6e1d560b52686ab2b80c9a82177067f69cac8 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 c89f8905c72f22ac0a9e966ea9ca35a6a86bff0a 3102ab332deb229c0011ccb38943ae6d2bc0f5bc M	server/src/com/cloud/network/element/VpcVirtualRouterElement.java
+:100644 100644 7d0a78581d98b3afc93b1d9b7ae31530af407542 a364dbc48d07a90b325f934b1b4a9230eb469a7f M	server/src/com/cloud/network/firewall/FirewallManagerImpl.java
+:100644 100644 0d738ee20b4167d8f79e4e831c452925164e1b5c a17c7cfa0f32706ec303ea719cf7a9776bbcdf5c M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManager.java
+:100644 100644 426368204cdd6021917425fe52d897402cb6dfb8 d576f1cae0802623bcc444bc2a297a4dde971f41 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java
+:100644 100644 f4bc80ab39eb05810bdc0389afceb7e487997b1d 9f5a33964d83e57d4e8a3745dadc6edfdbb77444 M	server/src/com/cloud/network/vpc/Dao/StaticRouteDao.java
+:100644 100644 b25b9316a129f185382ace3205cf3193ae6fe324 0f03a85ea970fd7ff8bdbeb2b0acd75aeeb0d80a M	server/src/com/cloud/network/vpc/Dao/StaticRouteDaoImpl.java
+:100644 100644 f8b59a0beeb51786eb6892dde01ddb54d84837c2 8859aa8c8d65cc786f1a252a4dc84c9e09348ee9 M	server/src/com/cloud/network/vpc/StaticRouteVO.java
+:100644 100644 eb339ec8d6fc20e26b0b06248165304e80f8c374 b38f3e4635dc23a5af1f34ddfe7445ce9e6f940a M	server/src/com/cloud/network/vpc/VpcManagerImpl.java
+:100755 100755 11f93bbb6caeb71a2baf15b7e10b3ff7d7c1639b ed861841d59fbdf2d826f02f24fc3e797b0af7a3 M	server/src/com/cloud/vm/dao/DomainRouterDao.java
+:100755 100755 b423a89078c10ed0ba87988abccc5d1e1683c483 176f03a253be2fe6ff8619335f0c5a759eda6702 M	server/src/com/cloud/vm/dao/DomainRouterDaoImpl.java

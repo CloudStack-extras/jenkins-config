@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 627ef76fe1f58cc6c298b7b5d85adab70a306408 and 0f863b30257c8d65d8ed5033d68523b4b354c523
+commit 0f863b30257c8d65d8ed5033d68523b4b354c523
+tree 59eb1bc25511f1bd2bbab4889604f04c9f08a723
+parent 627ef76fe1f58cc6c298b7b5d85adab70a306408
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340681896 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340681896 -0700
+
+    Fixed unittest
+
+:100755 100755 29bab27c96e21882a789744dd45cc8b8406e2c85 e8d91841b7f2fb76b30adb4a63233b4fe21c46b4 M	server/test/com/cloud/network/MockNetworkManagerImpl.java

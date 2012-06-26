@@ -1,0 +1,35 @@
+Changes in branch origin/3.0.x, between 9d88781e8c8193a0e1661f60d64fb303346c8b8d and ccb075de6fe4a6c63e1ac3b1f4774e421f75d2d7
+commit ccb075de6fe4a6c63e1ac3b1f4774e421f75d2d7
+tree a12cc8f59845d018ba6b680f8a208ed8ac34c346
+parent a764c9a09dbb59554c698a418500413f8d13f048
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340742952 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340742993 -0700
+
+    VPC: added vpcId to SetStaticNatRule and CreateLoadBalancerConfig commands
+
+:100644 100644 bc3992c8365b7f6faffbb58c306ea1b514b77c62 266f3b0d3af22ab0489369c58c1f84039cfa3ee1 M	api/src/com/cloud/agent/api/routing/LoadBalancerConfigCommand.java
+:100644 100644 39485b806d5372b22e8cd703c9e700ed521b3ff0 a81a063a0a0a86313497146a472f025723205e2b M	api/src/com/cloud/agent/api/routing/SetStaticNatRulesCommand.java
+:100644 100644 ad7372bbc353de3ce8fd059595d42abd17808a28 932b17920bd7c991b91f9c748e146768aad72dce M	server/src/com/cloud/network/ExternalFirewallDeviceManagerImpl.java
+:100644 100644 c91f4caff3ad51c719581fa4122d0af26e1ca18e 409970d8d92a1e82c5f279b8aeefaaf0f0c4e3a9 M	server/src/com/cloud/network/ExternalLoadBalancerDeviceManagerImpl.java
+:100644 100644 33a82d479c6a45e3956da46d19de79af907f5bd2 e8ea3bcdbe6751b38724cdd6ea0be317b5db573b M	server/src/com/cloud/network/element/NetscalerElement.java
+:100644 100644 5b0a19430a19d6d9ede1f0e29fddbad3bf942653 704d400a3fa631c6c7a1f591865f42c36c0d755c M	server/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java
+:100755 100755 d732fa0de81374a101540fe13eb15aaafaf5d1f8 8e550fe977ce3e66fed38c03c01522d8ef677f1d M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+
+commit a764c9a09dbb59554c698a418500413f8d13f048
+tree f4aa2359029e2528bc4addd09b665ad9c8b2fd7e
+parent 9d88781e8c8193a0e1661f60d64fb303346c8b8d
+author bfederle <bfederle@gmail.com> 1340742636 -0700
+committer bfederle <bfederle@gmail.com> 1340742697 -0700
+
+    CS-15287
+    
+    Support validation on edit detail view
+    
+    Original patch by: olga.smola
+    reviewed-by: brian
+
+:100644 100644 21d1c6af373a1287640a10ba6ca6507b40796835 c061c439429d47bab4a4cb088b8ea1b8bb4d02c6 M	ui/css/cloudstack3.css
+:100644 100644 6d67d7a332cbedaf768b758df414534d22c4cc8e 9b565c62d90e29a75c760b9bebbb00675323571d M	ui/scripts/accounts.js
+:100644 100644 fc1b3a4c3cdf8e55ca61346a8cf1de0f646fc95b 7cc12ac447da7d9ee3002d5a9769702580b2424b M	ui/scripts/configuration.js
+:100644 100644 e49b94ff52c724e7642c11c55718dba656cf6d61 5a13af9fc6fc2b522d3d19899b9dd5a725f7a262 M	ui/scripts/templates.js
+:100644 100644 68520e08a2383e6597a47464568354bbd0776374 68f0927666765501b1871fcc43d7f96650baf628 M	ui/scripts/ui/widgets/detailView.js

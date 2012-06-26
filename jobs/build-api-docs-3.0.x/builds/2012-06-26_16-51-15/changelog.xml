@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between ccb075de6fe4a6c63e1ac3b1f4774e421f75d2d7 and 80c748682a862615605d9af58fe8e48e4f1981ad
+commit 80c748682a862615605d9af58fe8e48e4f1981ad
+tree 06932b51d3c677aaa3e41afa3866e1b041b852e2
+parent ccb075de6fe4a6c63e1ac3b1f4774e421f75d2d7
+author bfederle <bfederle@gmail.com> 1340743396 -0700
+committer bfederle <bfederle@gmail.com> 1340743437 -0700
+
+    CS-15290: Fix 'Path' field validation
+    
+    Original patch by: olga.smola
+    reviewed-by: brian
+
+:100644 100644 f6a5540a6e09521f7bbcb8f479c623cb015b072a 2cba42bbd5bf9c206d664c29c8d236967289f8d6 M	ui/scripts/system.js

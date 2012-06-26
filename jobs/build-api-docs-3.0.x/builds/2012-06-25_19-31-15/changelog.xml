@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between 32c858ecd2737d9c1b5ed125cf94e28011146f31 and 84a4a7c1c88ac259b934612ef904b2e581a8c169
+commit 84a4a7c1c88ac259b934612ef904b2e581a8c169
+tree df7f6dbd91b125b1c35916200ea3ecf96cec9630
+parent 32c858ecd2737d9c1b5ed125cf94e28011146f31
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340666779 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340666779 -0700
+
+    VPC: update ip address object after the ip is associated with the network
+
+:100755 100755 821654c9cd564151bbdc92f5ce26411e48756159 a41eeeb423b2f6b4a65cb30569bb53acf4eab023 M	server/src/com/cloud/network/NetworkManager.java
+:100755 100755 69461209b6465973d2d06eb7cd8d5f107551ed85 2b810cfcd705a528164282fae988af4cca74628b M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100755 100755 84221c4e78f186e1a035bd7d0f484efca4d3ca20 f00a4ccb671e0f6153724f04e1a14d7407ab56df M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java
+:100755 100755 ddbeaf3fb346f6949b4984f1ed044be4cd4759ab 63ced1b13e3f26d86e898fc80e284fa29389d8ee M	server/src/com/cloud/network/rules/RulesManagerImpl.java
+:100755 100755 b1ee175b0e7842df2c07c86cd18b02f69b6821d4 39dbea96463e9eb91802af4e9208999595eca104 M	server/src/com/cloud/network/vpn/RemoteAccessVpnManagerImpl.java
+:100755 100755 62d8c52538c0f917e149d613c96d5b34a90cfda6 29bab27c96e21882a789744dd45cc8b8406e2c85 M	server/test/com/cloud/network/MockNetworkManagerImpl.java

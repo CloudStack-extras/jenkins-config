@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 84a4a7c1c88ac259b934612ef904b2e581a8c169 and 669029b8cd98adf520bfdddfef0d5700e42f2cc2
+commit 669029b8cd98adf520bfdddfef0d5700e42f2cc2
+tree 9387f5dc865a8808741fcb1807c648e0a14c9d9b
+parent 84a4a7c1c88ac259b934612ef904b2e581a8c169
+author anthony <anthony@cloud.com> 1340666933 -0700
+committer anthony <anthony@cloud.com> 1340666950 -0700
+
+    VPC : fix for connection mark
+
+:100644 100644 262aa5f9f191748043725196433bc01255688522 6130cae3eb2d6f663340d3c99642d9a648370934 M	patches/systemvm/debian/config/etc/iptables/iptables-vpcrouter
+:100755 100755 4a2da8b5bf504072362d9acb4f33da08dd7e9199 4c1020669ef90238f85125cd899385aff0fe4b98 M	patches/systemvm/debian/config/opt/cloud/bin/vpc_guestnw.sh

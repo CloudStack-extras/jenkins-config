@@ -1,0 +1,24 @@
+Changes in branch origin/3.0.x, between 8a7e525aa9c76c1e55e8e5319616928c35806d3b and a7f3c4ba2053b99ce7fe2ef910cca4c51d3af7ba
+commit a7f3c4ba2053b99ce7fe2ef910cca4c51d3af7ba
+tree 7fbedd62040d8c5348ecf17de0aa197375adc261
+parent efc45f9ee96aefc510b253b5e3f3abcc291d9d2c
+author Jessica Wang <jessica.wang@citrix.com> 1340403285 -0700
+committer Jessica Wang <jessica.wang@citrix.com> 1340748433 -0700
+
+    cloudstack 3.0 UI - (1) to distinguish between getUpdatedItem() and getUpdatedData(), rename getUpdatedData() to getUpdatedItemWhenAsyncJobFails() since it's being called only when async job fails. (2) fix the space problem (tab size is not 2) from patch.
+
+:100644 100644 dae1e7be916903d5ec1f91bc8c9f1607b1366a40 25f004ee7b4153f2888219ef396ad9b3a459d1dd M	ui/scripts/instances.js
+:100644 100644 e0fb8e80184dc2b3cbd97fd9209d2f7f21139f63 1c95928721c314e3e6227ab444b73d77cdfa9e22 M	ui/scripts/sharedFunctions.js
+:100644 100644 6d7d48a2bfd1b32aca1defe2192c4c24c25d5c6f 761df05093a93a712ae2f7628639ffe90ed0988a M	ui/scripts/ui/widgets/listView.js
+
+commit efc45f9ee96aefc510b253b5e3f3abcc291d9d2c
+tree e9674895524de2ea1644207fe71f7c485554d5bf
+parent 8a7e525aa9c76c1e55e8e5319616928c35806d3b
+author olgasmola <olya.smola@gmail.com> 1340624507 +0300
+committer Jessica Wang <jessica.wang@citrix.com> 1340748432 -0700
+
+    CS-15329: Instances with Error states appear in Instances list after creating.
+
+:100644 100644 0d93fad59e0c0670dcb8c5a3b607e8eb6ee773d7 dae1e7be916903d5ec1f91bc8c9f1607b1366a40 M	ui/scripts/instances.js
+:100644 100644 e7d2aeb7d56f440ee96c2e3f1195f203cbdebd41 e0fb8e80184dc2b3cbd97fd9209d2f7f21139f63 M	ui/scripts/sharedFunctions.js
+:100644 100644 734d3a4aeea44cadda3321b08b0f07789fe448a4 6d7d48a2bfd1b32aca1defe2192c4c24c25d5c6f M	ui/scripts/ui/widgets/listView.js

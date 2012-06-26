@@ -1,0 +1,15 @@
+Changes in branch origin/3.0.x, between a7f3c4ba2053b99ce7fe2ef910cca4c51d3af7ba and 9936e9b731620d9aa2ffbef22ae04e8c75ac89b1
+commit 9936e9b731620d9aa2ffbef22ae04e8c75ac89b1
+tree 7601e6b9719b9311ae707ef7b39f9dff3d9a8ca3
+parent a7f3c4ba2053b99ce7fe2ef910cca4c51d3af7ba
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340745547 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340748869 -0700
+
+    VPC: 1) Don't allow to delete private gateway when it has static routes assigned. Routes have to be removed first.
+    2) Re-apply static routes as a part of VPC VR start
+
+:100755 100755 8e550fe977ce3e66fed38c03c01522d8ef677f1d 0af91cbbd7d54bcf1152778f67b203f6b6f12043 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 d576f1cae0802623bcc444bc2a297a4dde971f41 e88d529ea18aa953cf1af039c7dfee43702bdf26 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java
+:100644 100644 9f5a33964d83e57d4e8a3745dadc6edfdbb77444 d5a7d35cd2cbebd8aba8cafd0d65c7c5a5687e8d M	server/src/com/cloud/network/vpc/Dao/StaticRouteDao.java
+:100644 100644 0f03a85ea970fd7ff8bdbeb2b0acd75aeeb0d80a d88b89f04f040763686de3c7dada0fb8b297a50f M	server/src/com/cloud/network/vpc/Dao/StaticRouteDaoImpl.java
+:100644 100644 925e8d2babecaa3f0921494de65c062c7b731f51 1bad9dccf27a7285b27fba881ed045d3a30a0dc3 M	server/src/com/cloud/network/vpc/VpcManagerImpl.java

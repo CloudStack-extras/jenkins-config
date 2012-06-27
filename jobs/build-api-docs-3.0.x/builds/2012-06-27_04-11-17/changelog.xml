@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 7dae3361c683e5e7f7a128e1898871b934ccbd7a and 461727fea0b920f871354f6ddd1e9012a0df6d3b
+commit 461727fea0b920f871354f6ddd1e9012a0df6d3b
+tree 8820a7de2648ba5423ad1806b4095719a2c2361b
+parent 7dae3361c683e5e7f7a128e1898871b934ccbd7a
+author Chirag Jog <chirag@clogeny.com> 1340784309 +0530
+committer Chirag Jog <chirag@clogeny.com> 1340784309 +0530
+
+    Adding VMWare DRS test suite
+
+:000000 100644 0000000000000000000000000000000000000000 ec0228bf62f10d8a85b28b0a1e90246eecc39fb9 A	test/integration/component/test_vmware_drs.py

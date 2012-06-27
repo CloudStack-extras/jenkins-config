@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 72d455c71aeb9cc84bea57edaaaee0dd9704ccf3 and c3213a473573825348b4f33a474e9d3fe251f0f6
+commit c3213a473573825348b4f33a474e9d3fe251f0f6
+tree 2d362da73a768ca5003980be49f736f3fe27ad08
+parent 72d455c71aeb9cc84bea57edaaaee0dd9704ccf3
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340804378 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340804378 +0530
+
+    guestIpRanges as part of pod creation
+    
+    These guestIpRanges will represent the range of IPs that carry guest
+    traffic. They are associated with the pod in case of basic zone
+
+:100644 100644 39b5e4e6f26398650760d8a6624859b68e78c6c7 9b2fc52d351f241787e09b378bd9e47374948746 M	tools/marvin/marvin/deployDataCenter.py

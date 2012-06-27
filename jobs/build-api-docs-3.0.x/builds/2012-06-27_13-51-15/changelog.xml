@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between c3213a473573825348b4f33a474e9d3fe251f0f6 and e2fd2f751565e0897873567e9fe5427bd2cd37be
+commit e2fd2f751565e0897873567e9fe5427bd2cd37be
+tree 487f798635f8ce873d36f55b055dd84668e8944d
+parent c3213a473573825348b4f33a474e9d3fe251f0f6
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340818275 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340818304 -0700
+
+    VPC: don't generate empty SetStaticRoute command during VR start when there are no static routes for the VPC
+
+:100644 100644 e88d529ea18aa953cf1af039c7dfee43702bdf26 cc87960ff8955fb52127d7d23ba43f8716908def M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java
+:100755 100755 75c0cf6d04492d6998aa00ebbce5aee1f86abd44 fc26dd8e0d70f8ce86c4afc170fb8f18b9a25908 M	server/src/com/cloud/user/AccountManagerImpl.java

@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 9775675d9790fc4a38f27786f5f0be6659b7a416 and 1f72bb176c8f72541e87753d5010514817da3c5a
+commit 1f72bb176c8f72541e87753d5010514817da3c5a
+tree 72ab5b10cc186b38e1fab46e5c6767e809c42056
+parent 9775675d9790fc4a38f27786f5f0be6659b7a416
+author olgasmola <olya.smola@gmail.com> 1340024677 +0300
+committer Jessica Wang <jessica.wang@citrix.com> 1340829627 -0700
+
+    CS-14047: Return the user to the log in page when login time out.
+
+:100644 100644 c528a154dfd3961920d9d2ddea26c05b9b79262a de15ff071e0e12899138bb59c5ed6eba1838aed1 M	ui/scripts/cloudStack.js

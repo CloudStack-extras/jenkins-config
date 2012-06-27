@@ -1,0 +1,22 @@
+Changes in branch origin/3.0.x, between 4587299d026db7cda613744f72ac7e7c33908c43 and 72d455c71aeb9cc84bea57edaaaee0dd9704ccf3
+commit 72d455c71aeb9cc84bea57edaaaee0dd9704ccf3
+tree a1433d8076811bf750f2258106d9513dbf704f52
+parent 4997b7b433b5375a8376cb4252b519d0f9c59b2d
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340801686 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340801686 +0530
+
+    basic environment config generration
+
+:100644 100644 fac22e302bf029a616b7d200775020716bb4804d 07b6a9b70084d35c38107fe29e75c6be64aa8635 M	tools/marvin/marvin/sandbox/basic/basic_env.py
+:000000 100644 0000000000000000000000000000000000000000 08cdb79abea851b18e2a05b3e51cce2258fa54d9 A	tools/marvin/marvin/sandbox/basic/setup.properties
+
+commit 4997b7b433b5375a8376cb4252b519d0f9c59b2d
+tree b4cfd03fbeadef802924b0836bc0587ec27f07ed
+parent 4587299d026db7cda613744f72ac7e7c33908c43
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340801659 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340801659 +0530
+
+    Add the sandbox scripts for marvin advanced and basic installs
+
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 fac22e302bf029a616b7d200775020716bb4804d M	tools/marvin/marvin/sandbox/basic/basic_env.py
+:100644 100644 46be4f190f6ead1f9d87ab5516a562cd4dac164f 9706e32a7cf876df330aefa7cf6482946da1bbfb M	tools/marvin/setup.py

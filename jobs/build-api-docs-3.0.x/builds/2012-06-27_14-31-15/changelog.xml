@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between e2fd2f751565e0897873567e9fe5427bd2cd37be and 9775675d9790fc4a38f27786f5f0be6659b7a416
+commit 9775675d9790fc4a38f27786f5f0be6659b7a416
+tree 9d5b5012b088819c783cce6689b55dc807e22eaa
+parent e2fd2f751565e0897873567e9fe5427bd2cd37be
+author anthony <anthony@cloud.com> 1340821219 -0700
+committer anthony <anthony@cloud.com> 1340821219 -0700
+
+    VPC : fixes for static nat
+
+:100644 100644 5c0ca6051e652df26ff2e59ecf81513bedd189db 72f71586a178a202f21000e7e33c81cc8d9fd308 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:000000 100755 0000000000000000000000000000000000000000 f7111747339130dc1bfb81b433f8209c03034808 A	patches/systemvm/debian/config/opt/cloud/bin/vpc_func.sh
+:100755 100755 6eb83898ab1b367f45880faa674c7a2904bec76a 40c1e4d996a1043a95581dfb6c513d0bd09cec3b M	patches/systemvm/debian/config/opt/cloud/bin/vpc_ipassoc.sh
+:100755 100755 bcf0c5a950fdeefff0a8ffbb4d7d7228cff6fbeb f25dfd8b47745619e48af09f247a41d8b974a421 M	patches/systemvm/debian/config/opt/cloud/bin/vpc_staticnat.sh

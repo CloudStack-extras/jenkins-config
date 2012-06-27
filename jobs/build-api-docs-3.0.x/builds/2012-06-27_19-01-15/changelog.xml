@@ -1,0 +1,30 @@
+Changes in branch origin/3.0.x, between bc9b23dfcd28747b4eb0a4872cefbad4f14e3ba4 and 74043d28e474c2acb3b3de29cc82906abc771839
+commit 74043d28e474c2acb3b3de29cc82906abc771839
+tree a77d7405e8b4eea978af9cb5526ed527536eb7bc
+parent 4c187a66d1a63f045b6e8a0d0aadf6e99936da12
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340837791 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340837889 -0700
+
+    VPC: delete network ACLs as a part of network cleanup
+
+:100755 100755 8e84d6422d6a25592e192ac04346580011cfc047 3899ec6d322d781aa0bbfd9fa47c262acdefa359 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 e546565d74604339ef796bb58298b6f0048fcf9e 6e3ba66e21c14995d98705c3eb6310dcd6671713 M	server/src/com/cloud/network/vpc/NetworkACLManagerImpl.java
+
+commit 73a3c8f496251640a459a4e5da0d65a7df77a7e0
+tree f622b783039f512804f23d01bee5fd6ac5ba2a8c
+parent 9775675d9790fc4a38f27786f5f0be6659b7a416
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340836399 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340836399 -0700
+
+    Bug CS-15372: IdentityProxy info should be copied over during exception handling in API layer for create(), like it is done in execute().
+    
+    Description:
+    
+    	1. Added exception processing for uuid lists in exceptions,
+    	   for commands of type BaseAsyncCreateCmd.
+    	2. Added nullpointer check in addProxyObject().
+    	3. Miscellaneous whitespace reformatting for git patching.
+
+:100644 100644 98566e9c2ef7cf4426d9fafb1bda28f484b9b44b 8a30a866bd585418064acadb1bd96f93a17f93ce M	api/src/com/cloud/exception/CloudException.java
+:100755 100755 0079830e53b12aa20c864ffdb6e91519454983f2 901a5dca539640445701f2a62d7f87bee82e61c7 M	server/src/com/cloud/api/ApiDispatcher.java
+:100644 100644 b3e9180052e9ac4a77e77b5831d1cccb7c5eabf7 8d7aba71de3e0782ae9c738a3e28005780d22f0e M	utils/src/com/cloud/utils/exception/RuntimeCloudException.java

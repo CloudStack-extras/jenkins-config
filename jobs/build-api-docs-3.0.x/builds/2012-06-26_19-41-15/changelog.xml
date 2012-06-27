@@ -1,0 +1,21 @@
+Changes in branch origin/3.0.x, between 08b2f7e37e71393ad3bd347be9952692b374b698 and 0b620bc85219b2ca253e3548b34b67db4cbaacb0
+commit 0b620bc85219b2ca253e3548b34b67db4cbaacb0
+tree 69381eab73d910aa5e6f70755caa74fa76e89d1e
+parent 303d8a250d409b92dc109da02f26d73f8d55c8bb
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340753756 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340753756 -0700
+
+    VPC: fixed list public ips by vpcId
+
+:100755 100755 d25a468af8d8da8ca512d817b7732d29bdc4bde4 28323b2cbf152fbe53770e23758975ff8ae5ab5d M	server/src/com/cloud/server/ManagementServerImpl.java
+
+commit 303d8a250d409b92dc109da02f26d73f8d55c8bb
+tree 767d651ceeca7368faaa8cf5fbba31d61ae40ead
+parent 08b2f7e37e71393ad3bd347be9952692b374b698
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340752959 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340752992 -0700
+
+    Fixed @Implementation for the api commands - responseObject field should be the instance of BaseResponse
+
+:100644 100644 9e12bb79643cd457eea1217721b4120e530c699e c52e65128762544901547b8f137c7aa7196c5835 M	api/src/com/cloud/api/Implementation.java
+:100755 100755 47bc126bbe213ebae2c4bb9dc89d45cfaa7fc5d7 d70298236f60708e522085e550413adf533b8dc1 M	api/src/com/cloud/api/commands/UpdateStorageNetworkIpRangeCmd.java

@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 23c96451a78558ffc1552388f189ef231a2ed695 and 831dba1210c9d4e377784fa36ba6a3ac5d814f4a
+commit 831dba1210c9d4e377784fa36ba6a3ac5d814f4a
+tree 80b90d30d9e333ac25ddd3ce15bab3fc5e47c943
+parent 23c96451a78558ffc1552388f189ef231a2ed695
+author Sheng Yang <sheng.yang@citrix.com> 1340850138 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1340850138 -0700
+
+    CS-6840: Fix wrong command name
+
+:100755 100755 71cafb9aa211223bdc9aaa56ce92e5034b7b6eb8 ef9c6a70d1bb4e5d300946fddd633409c17c0e49 M	client/tomcatconf/commands.properties.in

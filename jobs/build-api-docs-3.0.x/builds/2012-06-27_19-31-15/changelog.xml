@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 74043d28e474c2acb3b3de29cc82906abc771839 and 6a129771735e1b9e683d879b9606cd6a174c8954
+commit 6a129771735e1b9e683d879b9606cd6a174c8954
+tree ece0a582f23a2558ccd08e9ed660ecaf918592fd
+parent 74043d28e474c2acb3b3de29cc82906abc771839
+author bfederle <bfederle@gmail.com> 1340839230 -0700
+committer bfederle <bfederle@gmail.com> 1340839392 -0700
+
+    CS-13535: Error handling for add domain operation
+    
+    Original patch by: olga.smola
+    reviewed-by: jessica, r5583
+
+:100644 100644 7fc67003ebafb4dd9cc4a0c8c83b024e53be1dbc bc24492aff233c344ecd628c3d29650848d80bdc M	ui/scripts/domains.js

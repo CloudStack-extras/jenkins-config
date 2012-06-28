@@ -1,0 +1,42 @@
+Changes in branch origin/3.0.x, between 252e599a6cffaeeba1d82ae5a03639d85e177810 and 66a918f51ad1d3a36ed690cbfdae5c56cc68e11b
+commit 66a918f51ad1d3a36ed690cbfdae5c56cc68e11b
+tree 36025a33dc5c9bce48e4d14bb0edbe4be94ad64e
+parent 196ef1c1e0e176dfebec9bcffee43861c45fbf5d
+author Sheng Yang <sheng.yang@citrix.com> 1340922152 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1340922315 -0700
+
+    CS-6840: List all objects without require parameter
+
+:100644 100644 cc9331bd4f77104f974c1d85b89368ad8e11811f 0b5e69d8c0dd927bb599abb3b051281355e2011b M	api/src/com/cloud/api/commands/ListVpnConnectionsCmd.java
+:100644 100644 335183497c2539fe0d5a5878c0f68c3caa7b5c00 9f5a14306b36aebb5fd866d15fad02471a885e11 M	api/src/com/cloud/api/commands/ListVpnCustomerGatewaysCmd.java
+:100644 100644 b72b1bb1eb9479c0c3518e74d66941745dc24010 46d5d7dcffca23e59673be50d7924ecb00b7ad1e M	api/src/com/cloud/api/commands/ListVpnGatewaysCmd.java
+:100644 100644 bc634efaff781779d22793120fe2246c0aa644f9 eca1d807cd4e653534c1fdffc45da16d1c6fdf94 M	server/src/com/cloud/network/vpn/Site2SiteVpnManagerImpl.java
+
+commit 196ef1c1e0e176dfebec9bcffee43861c45fbf5d
+tree 543477707d7ee5241ac34e59302ce2b9c192dab6
+parent 0a14f09fd79ad64449e34b5f40d6b05d02dcc3d6
+author Brian Federle <brian.federle@citrix.com> 1340921946 -0700
+committer Brian Federle <brian.federle@citrix.com> 1340921946 -0700
+
+    VPC tier UI: Update state after performing actions
+    
+    After performing an action that changes state, namely starting and
+    stopping a tier, run through the action pre-filter again, to make sure
+    that the allowable actions are properly refreshed.
+
+:100644 100644 11ec4f7fcdee8e8090639e533a2286ca817d7479 9ad6189109c7f1908881c9bf3df7257a0733cc75 M	ui/scripts/ui-custom/vpc.js
+:100644 100644 7e04c7005ac49c7d30eb186d1cf929f5e399f161 307314bdea336470ad049938a33dd01772e22ae3 M	ui/scripts/vpc.js
+
+commit 0a14f09fd79ad64449e34b5f40d6b05d02dcc3d6
+tree dbc5c5da6966ff1225a17863cff382cea6a31661
+parent 252e599a6cffaeeba1d82ae5a03639d85e177810
+author Brian Federle <brian.federle@citrix.com> 1340920213 -0700
+committer Brian Federle <brian.federle@citrix.com> 1340920213 -0700
+
+    VPC UI: Refactor tier action filter handling
+    
+    For reusability, move action filter handling for VPC tier actions to a
+    separate function. This allows for easier refreshing of actions after a
+    tier's state has changed.
+
+:100644 100644 851e5a827b2e955c69dc6c79d0c52978572abaeb 11ec4f7fcdee8e8090639e533a2286ca817d7479 M	ui/scripts/ui-custom/vpc.js

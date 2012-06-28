@@ -1,0 +1,21 @@
+Changes in branch origin/3.0.x, between 49446529330470468d53146aa4a3f9be7e42f71b and 90b96642a74d63c7dc508a39b4d1311e1062fc33
+commit 90b96642a74d63c7dc508a39b4d1311e1062fc33
+tree 1a299457015abeb52411697bc1dbef7e2cbd62bb
+parent 49446529330470468d53146aa4a3f9be7e42f71b
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340914150 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340914494 -0700
+
+    Static route can be created for generic VpcGateway now, not just Private gateway
+
+:100644 100644 0299c9ec20f6a7503fdd847377fe8ede1be2bfa0 d493b8bc291032387a898afe90752a99ff348c4b M	api/src/com/cloud/api/commands/CreatePrivateGatewayCmd.java
+:100644 100644 af6fc000b2016531dd824f455d5343475a8fc9ef 4be141b3cd37e053776fe011a8287d9227f47f03 M	api/src/com/cloud/api/commands/CreateStaticRouteCmd.java
+:100644 100644 89b941daa0204f809d3b58fc8079d940f029ad59 83714582b1d0e9be66b0166268a343bcd58392ba M	api/src/com/cloud/api/commands/DeletePrivateGatewayCmd.java
+:100644 100644 3ecc75a90db34c434a9eba95ffee05aa460898f2 d23b1b4c5b1b88f7a667fce8fc709b12372aa90b M	api/src/com/cloud/network/vpc/PrivateGateway.java
+:100644 100644 073621d7321d339793f791e95e41748d09157972 75bfe751a94fe4f0fbc07267af03be5fcefc9aff M	api/src/com/cloud/network/vpc/StaticRouteProfile.java
+:100644 100644 e3b532a1cb5752af43e0cd9d0059f637994f55c1 1ebaffc6734d38ce561f13df35afced269ce5bbd M	api/src/com/cloud/network/vpc/VpcGateway.java
+:100644 100644 a4e1a1a3451f5d66af79aecdf1c52c758956a77c fec908083fc917138a9491a8653a7db714ad7ef6 M	api/src/com/cloud/network/vpc/VpcService.java
+:100644 100644 1bff8002e9e6b4f24722a1754a07ef435988cdc7 458ec3da9bba45b7e61eb7f0ea3f772f033132b3 M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java
+:100644 100644 912a14325d5af56419708cd47cf4cc96504a3dda 0ec3883f4e8962244e45123a6bd36ac442717649 M	server/src/com/cloud/network/vpc/PrivateGatewayProfile.java
+:100644 100644 35a17384fd37bd4b2939943b64392c30dcdbf974 58a283ce7730059140648d62994015c0100afd6c M	server/src/com/cloud/network/vpc/VpcGatewayVO.java
+:100644 100644 b4323a75669f2705339caffdab9c8aaf0ad059d7 bb4774d7a1fc96364fcc9fd69e58ff25ca8a0df8 M	server/src/com/cloud/network/vpc/VpcManagerImpl.java
+:100755 100755 0b3bf262b66c641b8b64b6eefd4c6bdb88e7f7cc 2519c103143de6e53d947fe3f80850c3799545f8 M	setup/db/create-schema.sql

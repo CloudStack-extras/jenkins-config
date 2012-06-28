@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between c4cf065a3f3e39c12d8f82da22ae8499c9207ac2 and 318d2aedbd0db42d53395a91ca2945db212732d7
+commit 318d2aedbd0db42d53395a91ca2945db212732d7
+tree 9fe79cfe2c493e9b6787716e35a10157e3d641a1
+parent c4cf065a3f3e39c12d8f82da22ae8499c9207ac2
+author frank <frank.zhang@citrix.com> 1340925020 -0700
+committer frank <frank.zhang@citrix.com> 1340925082 -0700
+
+    CS-15376
+    Need to change rpm spec to deploy awsapi in its own webapps folder
+
+:100644 100644 da6ad321e9ab423dd594ad82562e84895baaad24 9824b9ac776f458120576097719a7902767fb1a8 M	cloud.spec

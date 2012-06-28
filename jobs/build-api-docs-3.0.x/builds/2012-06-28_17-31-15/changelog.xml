@@ -1,0 +1,24 @@
+Changes in branch origin/3.0.x, between 27eceaabdf5d06d30a8648c45eaddfda4395a9dd and 252e599a6cffaeeba1d82ae5a03639d85e177810
+commit 252e599a6cffaeeba1d82ae5a03639d85e177810
+tree d59a9d2f8acf30ae064c86c68cd5afab6612e018
+parent ceb444516645d677ad54d0aadf41e3883666d2f1
+author Brian Federle <brian.federle@citrix.com> 1340918417 -0700
+committer Brian Federle <brian.federle@citrix.com> 1340918490 -0700
+
+    Pass _custom correctly to VPC tier add VM action
+
+:100644 100644 0545748e0cce4601f0afb3bfe115a739d8278d17 851e5a827b2e955c69dc6c79d0c52978572abaeb M	ui/scripts/ui-custom/vpc.js
+:100644 100644 bc3cf70d769251ea6b8bf182dbc1e1569cb915ec 7e04c7005ac49c7d30eb186d1cf929f5e399f161 M	ui/scripts/vpc.js
+
+commit ceb444516645d677ad54d0aadf41e3883666d2f1
+tree e2b90fb9651c40d691518116fdc40edaa73346bd
+parent 27eceaabdf5d06d30a8648c45eaddfda4395a9dd
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340918109 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340918354 -0700
+
+    VPC: createPF/createLBrule: 1) don't allow to pass openFirewall=true 2) when no openFirewall is passed in, defaulted to false if the public ip belongs to VPC
+
+:100644 100644 ea3272c8c0cec2f49c2efb144e455f28894738bd e87548765cdbc2a08ffd2077c901f6fe5499d350 M	api/src/com/cloud/api/commands/AssociateIPAddrCmd.java
+:100644 100644 fc6cf8b4ac3146581f94da0794bf0f2f86f39f13 c2ff39665f7b141a775a289968ba316f9b706500 M	api/src/com/cloud/api/commands/CreateLoadBalancerRuleCmd.java
+:100644 100644 2553d7eada3b8184c79966c83256588694a9d200 50650810cc77e66831c12f9a6f8aabef3476dd22 M	api/src/com/cloud/api/commands/CreatePortForwardingRuleCmd.java
+:100755 100755 63ced1b13e3f26d86e898fc80e284fa29389d8ee 0de7cf1a77555f6f72d07ef561c410ebf625b4d2 M	server/src/com/cloud/network/rules/RulesManagerImpl.java

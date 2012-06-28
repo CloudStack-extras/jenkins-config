@@ -1,0 +1,11 @@
+Changes in branch origin/3.0.x, between 709e878e43f63db66c1bd0c66273fbf89b04edbf and edb8e04b0e2d6d84fd272a0e773b1b8bb7f3f107
+commit edb8e04b0e2d6d84fd272a0e773b1b8bb7f3f107
+tree 097fa1384bb7f4eeb537088f43e75fafe12b089c
+parent 709e878e43f63db66c1bd0c66273fbf89b04edbf
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340844087 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1340844101 -0700
+
+    VPC: update public IP info in domain_router table once the VR gets the public nic
+
+:100755 100755 0af91cbbd7d54bcf1152778f67b203f6b6f12043 dbaa817b8d005c8937caedb6f1c3919d37eef787 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100644 100644 cc473aba819663ded3f23aaa6fe074f0c50623cc a41410c81ed70f582cd10161240c6cd9fbb9e80f M	server/src/com/cloud/network/router/VpcVirtualNetworkApplianceManagerImpl.java

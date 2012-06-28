@@ -1,0 +1,24 @@
+Changes in branch origin/master, between 130893be9389a30e3cc31a4a3191e7e1a176f42b and 92e509b07cad9065adb6dae4fba43cdf83a62bb6
+commit 92e509b07cad9065adb6dae4fba43cdf83a62bb6
+tree cd2ac473bf5b38dbc4a2902a9a67bf75ca6f6c74
+parent 130893be9389a30e3cc31a4a3191e7e1a176f42b
+author Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340836399 -0700
+committer Vijayendra Bhamidipati <vijayendra.bhamidipati@citrix.com> 1340837383 -0700
+
+    Bug CS-15372: IdentityProxy info should be copied over during exception handling in API layer for create(), like it is done in execute().
+    
+    Description:
+    
+    	1. Added exception processing for uuid lists in exceptions,
+    	   for commands of type BaseAsyncCreateCmd.
+    	2. Added nullpointer check in addProxyObject().
+    	3. Miscellaneous whitespace reformatting for git patching.
+    
+    Conflicts:
+    
+    	api/src/com/cloud/exception/CloudException.java
+    	utils/src/com/cloud/utils/exception/RuntimeCloudException.java
+
+:100644 100644 343f651cf904da3f32c6b39debbba3cb847e16d8 8a30a866bd585418064acadb1bd96f93a17f93ce M	api/src/com/cloud/exception/CloudException.java
+:100755 100755 0079830e53b12aa20c864ffdb6e91519454983f2 901a5dca539640445701f2a62d7f87bee82e61c7 M	server/src/com/cloud/api/ApiDispatcher.java
+:100644 100644 013a3a68d89be6413cd2084895e3b70e5f410d8e 8d7aba71de3e0782ae9c738a3e28005780d22f0e M	utils/src/com/cloud/utils/exception/RuntimeCloudException.java

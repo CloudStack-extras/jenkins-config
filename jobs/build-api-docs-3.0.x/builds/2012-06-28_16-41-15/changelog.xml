@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 90b96642a74d63c7dc508a39b4d1311e1062fc33 and 06563d4eeadbbc344fbbfadb2ce526dda101a0fa
+commit 06563d4eeadbbc344fbbfadb2ce526dda101a0fa
+tree 4e85e25ad0b121e961114dbbd591ce4646e907c0
+parent 90b96642a74d63c7dc508a39b4d1311e1062fc33
+author Brian Federle <brian.federle@citrix.com> 1340915602 -0700
+committer Brian Federle <brian.federle@citrix.com> 1340915704 -0700
+
+    CS-15211: More noticable 'Back' button on quick install
+    
+    Original patch by: Pranav Saxena <pranav.saxena@citrix.com>
+    reviewed-by: Brian Federle <brian.federle@citrix.com>
+
+:100644 100644 ea7a840579a108d395b683f0181d6e20000b74eb 6a0917428cfffd3a21b92147dac03a460ef19117 M	ui/css/cloudstack3.css

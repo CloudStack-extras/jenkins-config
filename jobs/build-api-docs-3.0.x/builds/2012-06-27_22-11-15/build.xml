@@ -15,7 +15,7 @@
           <string>origin/3.0.x</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>aaf0d24a8372cd48148e9e6fe2ba23ba374c0633</sha1>
+              <sha1>23c96451a78558ffc1552388f189ef231a2ed695</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -23,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>54063</hudsonBuildNumber>
+            <hudsonBuildNumber>54163</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -43,15 +43,15 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
     <hudson.tasks.MailMessageIdAction>
-      <messageId>&lt;11031611.61339726443558.JavaMail.jenkins@domU-12-31-39-15-22-2D&gt;</messageId>
+      <messageId>&lt;27896089.131340849644076.JavaMail.jenkins@domU-12-31-39-15-22-2D&gt;</messageId>
     </hudson.tasks.MailMessageIdAction>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
       <result>FAILURE</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>54063</number>
+  <number>54163</number>
   <result>FAILURE</result>
-  <duration>168102</duration>
+  <duration>171450</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -61,8 +61,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>anthony</string>
-    <string>alena.prokharchyk</string>
-    <string>vijayendra.bhamidipati</string>
+    <string>sheng.yang</string>
   </culprits>
 </build>

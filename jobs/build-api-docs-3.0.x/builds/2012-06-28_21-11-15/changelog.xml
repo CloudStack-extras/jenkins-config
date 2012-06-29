@@ -1,0 +1,29 @@
+Changes in branch origin/3.0.x, between 1109ef717af2611d98f117082a586caee011b82b and 077ca1489c01ba30426501c4dec3bc41984df57e
+commit 077ca1489c01ba30426501c4dec3bc41984df57e
+tree 134f4462060fb5b715649b73bf08a28da0f2c4e7
+parent 1109ef717af2611d98f117082a586caee011b82b
+author kishan <kishan@cloud.com> 1340931990 -0700
+committer kishan <kishan@cloud.com> 1340932067 -0700
+
+    bug CS-15389: Added prepareStop to Virtualmachine manager and moved network usage collection into prepareStop of VR manager
+
+:100644 100644 b1b370a859846c4fb1990d2550168ccbe8b9f103 cc98cf9371e83a25b183cfc48f76d5b97cd9efa5 M	agent-simulator/src/com/cloud/agent/manager/MockVmManagerImpl.java
+:100644 100644 55bcc2909bcf7e02f3ec55fee1edc6aeb49986b1 fe4534f681ae84c77d921a30a587d02a22e5896d M	agent-simulator/src/com/cloud/resource/AgentRoutingResource.java
+:100644 100644 49763107f11815d94702b71a074df19f5492405a 12541fbd3acb7241fa3512b6daf55796036c2b61 M	agent/src/com/cloud/agent/resource/computing/CloudZonesComputingResource.java
+:100644 100644 0c1e2926b5294863c2889d7a5730743c67117234 5f659301960901d136b372ca5d66427dfac0a681 M	agent/src/com/cloud/agent/resource/computing/FakeComputingResource.java
+:100755 100755 26cb3dcc719ddd852736a0bebffda24f091968c4 2bab8c2717c28143277e9a061b9913b7d2dbed87 M	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java
+:100644 100644 2900fb3b3ef1d55e61080e5af84653a8f8d814b5 a4eabad4c2fb6ba5a71cb68ca152f2cf646914ca M	api/src/com/cloud/agent/api/RebootAnswer.java
+:100755 100755 f32089cff9dbd46cb863b3b2fadc2e814c9352be cb20a8247d1f249a46067fc869cfb35dbd5feb34 M	api/src/com/cloud/agent/api/StopAnswer.java
+:100755 100755 0bbced8f92ab9c732a28608aee0a193bb90a2af5 63ba9e071aa786730116391f3a0768297f3ae6ed M	api/src/com/cloud/agent/api/StopCommand.java
+:100755 100755 19e90cb35316d8f1f7457dfcb2b90cf4ddf2b9e7 3668930f6b9db3c0a7abf0e85bd8c873ea50553c M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java
+:100644 100644 9b23d6b3cc853617ff7a9aff7abacd8cb029e235 4a700cd91774695b0614d169f54c60103c9450e4 M	core/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:100755 100755 8232112ab5a6998a6e1ae6e56130e18d3293d2ce 6def28f5dd61fb9590b741f739b897ec7a7e6556 M	ovm/src/com/cloud/ovm/hypervisor/OvmResourceBase.java
+:100755 100755 7b4556c4f1b1027a02d2d8edefbedcadbc4f4206 76ba08cb3cea92569ccd3d129773670db8f5371a M	server/src/com/cloud/baremetal/BareMetalResourceBase.java
+:100755 100755 983e90932c3457b5fd183d26588405594d2f5dde 3c6716ca64d264269f3b59237702b37e5d23fde8 M	server/src/com/cloud/consoleproxy/AgentBasedConsoleProxyManager.java
+:100755 100755 492b05f2bbea453dc18cebc996d26a81e14c4a67 61d6cd4c92013169027ff66320b4c09576f5f5a0 M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:100644 100644 704d400a3fa631c6c7a1f591865f42c36c0d755c 793698a6e1bef3bb1dea837bfb3cb050bfbf9a1b M	server/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java
+:100755 100755 d400742ae39d081e8dae6645bda3a12d7a71fe61 6bbc24cc546b0da4fe32b7309d59106d29847b9a M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100755 100755 8a54f235b7195fa6f9c9b1aa95cac8355b743e4c e93be77d8ef7e28d803d64b2e521b964613d15af M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+:100755 100755 40fac710cd95e652068d1e110825c510fd440770 a21f9fdf604a84c274e239f289cb05f23ac3e048 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100644 100644 f8355f580cfa22ce34ec342a7d6437cfa576e09c 82e42dd2af77dd7cb63144e638c6d049a99613b1 M	server/src/com/cloud/vm/VirtualMachineGuru.java
+:100755 100755 9cad3d1e26a20754df01a49b5c2977727116a2a3 54d72d95e11d34a4b9aa3c8f0968234f3a1278f8 M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java

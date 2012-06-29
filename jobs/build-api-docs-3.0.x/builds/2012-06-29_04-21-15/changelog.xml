@@ -1,0 +1,13 @@
+Changes in branch origin/3.0.x, between 077ca1489c01ba30426501c4dec3bc41984df57e and afa52cd554cf12cd4ca369b49b914e4687f0bba6
+commit afa52cd554cf12cd4ca369b49b914e4687f0bba6
+tree 9f5380fda6b749907a562379acea649344c81685
+parent 077ca1489c01ba30426501c4dec3bc41984df57e
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340957344 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340957707 +0530
+
+    Post configuration tests to check
+    
+    - if system VMs are up and running
+    - if built-in template is downloaded and ready to launch
+
+:000000 100644 0000000000000000000000000000000000000000 ed167a17f2036c9d284e99d500395fed0e286621 A	tools/marvin/marvin/testSetupSuccess.py

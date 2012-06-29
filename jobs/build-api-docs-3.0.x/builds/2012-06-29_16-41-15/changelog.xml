@@ -1,0 +1,16 @@
+Changes in branch origin/3.0.x, between f87c719b0330e0b9a766be10382c7268112d36e2 and a3a965a5a89cb12ff944aed4062652460d1ace67
+commit a3a965a5a89cb12ff944aed4062652460d1ace67
+tree bb1fdfe355e9c538db79537f0988d675b016e6bf
+parent f87c719b0330e0b9a766be10382c7268112d36e2
+author Brian Federle <brian.federle@citrix.com> 1341002147 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341002147 -0700
+
+    VPC UI: Add link to site-to-site VPN
+    
+    Add link in tooltip for site-to-site VPN, which opens a new panel
+    showing the list view. This draws from the existing 'siteToSiteVpn'
+    network subsection, so no modification should be required to the
+    existing list view.
+
+:100644 100644 98934dc1f8d62b1884efea532ad421fdd34329da c598c0880a64e4d3f1d4797d24734b293c097d53 M	ui/scripts/ui-custom/vpc.js
+:100644 100644 4f73345f208c685cc20ed906e5f7469aeb9774f7 b8beeaa5aa722f77b2ad0cd648b97c1e63f5d612 M	ui/scripts/vpc.js

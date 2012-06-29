@@ -1,0 +1,19 @@
+Changes in branch origin/3.0.x, between 8d35452493a24d7f782f79cb5cbe57aaf4d6371e and 49d8b650e93d2822d6393a254ace7c5f7987baf6
+commit 49d8b650e93d2822d6393a254ace7c5f7987baf6
+tree 7359b7f45cf8a923fb8a9203b33fce9cc6380847
+parent 8d35452493a24d7f782f79cb5cbe57aaf4d6371e
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1341008212 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1341008237 -0700
+
+    VPC: listPrivateGateways command is available for regular user too (he needs to know the gatewayId for the static route creation)
+
+:100755 100755 a2c6f117e377052ef2f9a8713f059fac92b4b519 e036162d303b6fac849517b05c548737e3201f74 M	api/src/com/cloud/api/ResponseGenerator.java
+:100644 100644 6b217757fbbcbe9f33d3fa6e64afdb9aa8655157 67ff27deee8ec62975a9fd2678b3a969185ba207 M	api/src/com/cloud/api/commands/ListPrivateGatewaysCmd.java
+:100644 100644 621442ab711960a29617ae98130a6f2d9ecf4dac 52f1b0b887a15044a25e3177ce17fdec0c3bf67c M	api/src/com/cloud/api/response/PrivateGatewayResponse.java
+:100644 100644 1ebaffc6734d38ce561f13df35afced269ce5bbd cde9a04ae088d26f95a0071aedae814c6bc7ccc3 M	api/src/com/cloud/network/vpc/VpcGateway.java
+:100755 100755 ef9c6a70d1bb4e5d300946fddd633409c17c0e49 703957de4bf1260e10793d1ebc1d4c03cac7496b M	client/tomcatconf/commands.properties.in
+:100755 100755 9016e457928879b4019f920b70f8a6f4e6eb3cb8 6477e53684257390be40b0cfd140db0b629d864e M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 0ec3883f4e8962244e45123a6bd36ac442717649 62e7e22eef217578a1c41a82243e195efe4ba740 M	server/src/com/cloud/network/vpc/PrivateGatewayProfile.java
+:100644 100644 58a283ce7730059140648d62994015c0100afd6c 2178be327ad90b4e07b44eb7ee1809c60e1fcde2 M	server/src/com/cloud/network/vpc/VpcGatewayVO.java
+:100644 100644 7eb51fb7660b48ecddca1b603add6f41b9189ec6 ab658980ae582147a02c588dd5893d2c02fb555d M	server/src/com/cloud/network/vpc/VpcManagerImpl.java
+:100755 100755 2519c103143de6e53d947fe3f80850c3799545f8 c2eafd661f70d7277b12f42864db8d17afcaec80 M	setup/db/create-schema.sql

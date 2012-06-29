@@ -15,7 +15,7 @@
           <string>origin/3.0.x</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>615dff8d80cb0ba43bce782a7e5d39497496dbf7</sha1>
+              <sha1>8d35452493a24d7f782f79cb5cbe57aaf4d6371e</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -23,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>54093</hudsonBuildNumber>
+            <hudsonBuildNumber>54193</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -46,9 +46,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>54093</number>
+  <number>54193</number>
   <result>SUCCESS</result>
-  <duration>357436</duration>
+  <duration>212401</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -58,6 +58,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>bfederle</string>
+    <string>jessica.wang</string>
   </culprits>
 </build>

@@ -1,0 +1,12 @@
+Changes in branch origin/3.0.x, between 68a82ae1e34ae6cf53f38c7578afbe7b2687fb36 and 6cf45ad29b1cea688f54cf95d33d8fd4ab6d1c85
+commit 6cf45ad29b1cea688f54cf95d33d8fd4ab6d1c85
+tree 5118ce0d92be67c3d8ed4b3e0f901474f73d16f5
+parent 68a82ae1e34ae6cf53f38c7578afbe7b2687fb36
+author Jessica Wang <jessica.wang@citrix.com> 1341006000 -0700
+committer Jessica Wang <jessica.wang@citrix.com> 1341006000 -0700
+
+    cloudstack 3.0 API: CreateVpnCustomerGateway API, ListVpnCustomerGateways API: set object name for API response.
+
+:100644 100644 9f5a14306b36aebb5fd866d15fad02471a885e11 4f1488b68c520ff81501f3aab3064e166c2922f6 M	api/src/com/cloud/api/commands/ListVpnCustomerGatewaysCmd.java
+:100755 100755 6926c2bde90a508cbacdbc983126fee5f1f3c77e 1491ac5ec073539b30a95b8093cd5807467f6c59 M	server/src/com/cloud/api/ApiResponseHelper.java
+:100644 100644 23b13ef6fcacf6e42c45c0ce68c3ddde14e500ad 5446d10bc6b34aca63076a1de2e722f1a2e33997 M	ui/scripts/network.js

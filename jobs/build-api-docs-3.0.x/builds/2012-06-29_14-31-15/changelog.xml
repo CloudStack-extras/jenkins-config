@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between d922b99c648a1522f0f00974671b45feee98ac10 and 3f61f42a7ebc4aa891bb6020c4158287f6983521
+commit 3f61f42a7ebc4aa891bb6020c4158287f6983521
+tree b09578e15fa9e6958243674ebded3253b1194074
+parent d922b99c648a1522f0f00974671b45feee98ac10
+author Deepti Dohare <deepti.dohare@citrix.com> 1340694737 +0530
+committer Deepti Dohare <deepti.dohare@citrix.com> 1340994212 +0530
+
+    Fix for CS-15300 Limits on domain admin accounts
+
+:100755 100755 797d9f03706491ab49b976d8a710eb55b67a52f8 aa4b7223c81e5dfc433274c092d7babf07f3ce1b M	server/src/com/cloud/resourcelimit/ResourceLimitManagerImpl.java

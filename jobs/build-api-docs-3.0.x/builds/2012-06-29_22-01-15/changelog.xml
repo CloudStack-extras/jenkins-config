@@ -1,0 +1,10 @@
+Changes in branch origin/3.0.x, between 25ecac3d7b98e7700d7cd02f713db79e18f9f315 and e75516d4f7dcdcf04b5fc108bf6e52175c1c16ad
+commit e75516d4f7dcdcf04b5fc108bf6e52175c1c16ad
+tree 2e5229365389d167e1d59f94fdd8247dd1949c54
+parent 25ecac3d7b98e7700d7cd02f713db79e18f9f315
+author Kelven Yang <kelven@cloud.com> 1341020935 -0700
+committer Kelven Yang <kelven@cloud.com> 1341020952 -0700
+
+    code-complete of inter-vlan support in VMware
+
+:100755 100755 3668930f6b9db3c0a7abf0e85bd8c873ea50553c 671ab27da9838c90bf31cd23abee9ec2388cb8fd M	core/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java

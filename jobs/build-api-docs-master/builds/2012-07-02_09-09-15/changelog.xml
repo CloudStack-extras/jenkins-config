@@ -1,0 +1,28 @@
+Changes in branch origin/master, between 1a2f354f4dd0b9491dfd24c92776da2f442b454e and 91fd3b772e338b7cf4f2ecc15ed81af82f939329
+commit 91fd3b772e338b7cf4f2ecc15ed81af82f939329
+tree 79f33f1e49fdcfd2db9b90674cf4929883a60422
+parent ad3ae753dd42b5959a1401af0c56a4eea7353f07
+author David Nalley <david@gnsa.us> 1341234531 -0400
+committer David Nalley <david@gnsa.us> 1341234531 -0400
+
+    Applying patch from Prasanna Santhanam
+    Marvin sandbox example scripts for generating one host configurations
+    https://reviews.apache.org/r/5656
+
+:100644 100644 39b5e4e6f26398650760d8a6624859b68e78c6c7 5c7880e60ae1bf00cb3ec50bad1087265cf17d54 M	tools/marvin/marvin/deployDataCenter.py
+:100644 100644 25e83dbb0f401995a1645a1f7b26a311d9ea2f2e fa504c3890ed4f240c9a9d2c4773c479c2fbdbc7 M	tools/marvin/marvin/sandbox/advanced/advanced_env.py
+:100644 100644 48b082e4f37ccb25766e69e51fce8579bc3c364f 9c025f58aa2bd0e282fa1e653b80af54cfa12509 M	tools/marvin/marvin/sandbox/advanced/setup.properties
+:100644 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 6274a2b988eabf01b511bb932a15fa78e10a8ba6 M	tools/marvin/marvin/sandbox/basic/basic_env.py
+:100644 100644 83c9c8a0a32e4b697586706bb5bd2a0a531dc408 af40771d6a446681f86216a9d0c8f440fd4a668b M	tools/marvin/setup.py
+
+commit ad3ae753dd42b5959a1401af0c56a4eea7353f07
+tree 7e9dbed62ba26d3dda92cc589a1ad8709303a8d8
+parent 1a2f354f4dd0b9491dfd24c92776da2f442b454e
+author David Nalley <david@gnsa.us> 1341234006 -0400
+committer David Nalley <david@gnsa.us> 1341234006 -0400
+
+    Patch from Hugo Trippaers
+    https://reviews.apache.org/r/5698
+    CentOS 6.2 ships tomcat6-el-2.1-api-6.0.24.jar with tomcat just like RedHat
+
+:100644 100644 d437f3af16ac343187b70734a2a65628246f2f67 832fe677b106dcf319a4c07009360c5623e0cafd M	wscript_configure

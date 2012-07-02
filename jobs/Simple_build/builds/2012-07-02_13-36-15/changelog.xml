@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 8aa2b55dd62cf488b63b7377610e1d8aa14a2fc6 and de04b8cb793d92ce252a8771eb6edabd06a9b53e
+commit de04b8cb793d92ce252a8771eb6edabd06a9b53e
+tree 0613db0bb5a58408f45b17fe400065c46b459a26
+parent 8aa2b55dd62cf488b63b7377610e1d8aa14a2fc6
+author David Nalley <david@gnsa.us> 1341250298 -0400
+committer David Nalley <david@gnsa.us> 1341250298 -0400
+
+    stopgap to fix the RPM issues created by the plugins
+    Patch by Hugo Trippaers
+    https://reviews.apache.org/r/5697/
+
+:100644 100644 83af1e6576df631613ac28ecadb8f3aa76e58319 f4ca068e6446b9804878bc8c5d3f1191563ea60b M	cloud.spec
+:100644 100644 4c4f1e4c9686d4f9ada5fc23346319540e5ae62f e8e9c3658ce7042b82201d9dd02cde7edca978f3 M	wscript_build
+:100644 100644 832fe677b106dcf319a4c07009360c5623e0cafd 0ccf40ac321bdb0d73560aa268b94790aa589fbe M	wscript_configure

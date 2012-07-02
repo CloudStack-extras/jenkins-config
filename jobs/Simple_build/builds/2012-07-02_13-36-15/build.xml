@@ -23,14 +23,14 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>5</hudsonBuildNumber>
+            <hudsonBuildNumber>2</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>5f1380fd44718545d40c4d78e8bc9289c3b730f1</sha1>
+              <sha1>de04b8cb793d92ce252a8771eb6edabd06a9b53e</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -38,7 +38,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>4534</hudsonBuildNumber>
+            <hudsonBuildNumber>606</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -57,6 +57,51 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/2.1.vanilla</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>b89beda6f5ff0e0141d506dcb31e9ae8ac6e8444</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.1.vanilla</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>7</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/2.2.beta1</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>0dd7816906a857297d1b402d550af9150d4d8b97</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.2.beta1</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>5</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/2.1.4.kumquat</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>5bfe349783b60d7729e409f5054c1dfb0b3fcce7</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/2.1.4.kumquat</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/fedorawork</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -68,7 +113,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>6</hudsonBuildNumber>
+            <hudsonBuildNumber>3</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -83,7 +128,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>7</hudsonBuildNumber>
+            <hudsonBuildNumber>4</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -99,25 +144,22 @@
           <list/>
         </entry>
       </tags>
-      <ws>/var/lib/jenkins/workspace/build-api-docs-master</ws>
+      <ws>/var/lib/jenkins/workspace/Simple_build</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
-    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
-      <result>SUCCESS</result>
-    </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>4534</number>
+  <number>606</number>
   <result>SUCCESS</result>
-  <duration>112064</duration>
+  <duration>206279</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/build-api-docs-master</workspace>
+  <workspace>/var/lib/jenkins/workspace/Simple_build</workspace>
   <hudsonVersion>1.447</hudsonVersion>
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>bfederle</string>
+    <string>david</string>
   </culprits>
 </build>

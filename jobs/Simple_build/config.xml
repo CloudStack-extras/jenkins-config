@@ -61,9 +61,9 @@
   </builders>
   <publishers>
     <hudson.tasks.Mailer>
-      <recipients>Prasanna.Santhanam@citrix.com</recipients>
-      <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>true</sendToIndividuals>
+      <recipients>cloudstack-commits@incubator.apache.org</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
     </hudson.tasks.Mailer>
   </publishers>
   <buildWrappers/>

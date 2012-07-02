@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 0449ae37f1112c680956a8ce5979f433456cbcb9 and c8bbf04c81649919e3c128be42a9500ba47a8766
+commit c8bbf04c81649919e3c128be42a9500ba47a8766
+tree 725f2a29035643b18f321a7c3433fb6af2c05a6c
+parent 0449ae37f1112c680956a8ce5979f433456cbcb9
+author Deepti Dohare <deepti.dohare@citrix.com> 1341270182 +0530
+committer U-nitin-PC\nitin <nitin@nitin-PC.(none)> 1341270353 +0530
+
+    CS-15300: Domain Admin accounts now respect the limits imposed on the domain just as a regular account.
+    Signed-off-by: Nitin Mehta<nitin.mehta@citrix.com>
+
+:100755 100755 a32bc807bd41fabda6b30c2d74cbc0a98c5a5d52 b285d2ce8fb1e20f7ab362e0f103d755955abd14 M	server/src/com/cloud/resourcelimit/ResourceLimitManagerImpl.java

@@ -1,0 +1,22 @@
+Changes in branch origin/master, between 5fafb0e5e59252bfc5f0cc1edcb21da5110938f5 and 9876d34ea4a7ac79a0c38b35a249dce20295d391
+commit 9876d34ea4a7ac79a0c38b35a249dce20295d391
+tree 483d927381645ac886e727651488bc4584c25c0b
+parent 5fafb0e5e59252bfc5f0cc1edcb21da5110938f5
+author Murali reddy <Murali.Reddy@citrix.com> 1341266758 -0700
+committer Murali reddy <Murali.Reddy@citrix.com> 1341266758 -0700
+
+    moving out ELB network element to plugins/network-elements/elastic-loadbalancer
+
+:100755 100755 dcadb93184ab216ad8bcc1cab681e9a9ea5f5acd 61b0e6249015e856655306b8888e58e815d94a8e M	build/build-cloud-plugins.xml
+:100755 100755 e4e062a27f3af60ea5fca7097c942395d5ba3143 f36355d4ff31b86a1d7a058715aa1ae09c2f837d M	client/tomcatconf/components.xml.in
+:000000 100644 0000000000000000000000000000000000000000 a3f5d12a4c8be6eeba143a3dedb6900c73516006 A	plugins/network-elements/elastic-loadbalancer/.classpath
+:000000 100644 0000000000000000000000000000000000000000 6165661a65024761bffee76de21ac1eb18491143 A	plugins/network-elements/elastic-loadbalancer/.project
+:000000 100755 0000000000000000000000000000000000000000 66e42cedbd2257eed4c56ef94c33e752c501677c A	plugins/network-elements/elastic-loadbalancer/build.xml
+:100644 100644 024dcdc09e0ec00e819be29e2fa7cc3d6a82e52a 024dcdc09e0ec00e819be29e2fa7cc3d6a82e52a R100	server/src/com/cloud/network/ElasticLbVmMapVO.java	plugins/network-elements/elastic-loadbalancer/src/com/cloud/network/ElasticLbVmMapVO.java
+:100644 100644 1f9356f7ea8c77b31f25aa33ebc1f49601b8efcd 1f9356f7ea8c77b31f25aa33ebc1f49601b8efcd R100	server/src/com/cloud/network/element/ElasticLoadBalancerElement.java	plugins/network-elements/elastic-loadbalancer/src/com/cloud/network/element/ElasticLoadBalancerElement.java
+:100644 100644 0dc5b14a1a510a08d61f7e5f512c55913d57bed3 0dc5b14a1a510a08d61f7e5f512c55913d57bed3 R100	server/src/com/cloud/network/lb/ElasticLoadBalancerManager.java	plugins/network-elements/elastic-loadbalancer/src/com/cloud/network/lb/ElasticLoadBalancerManager.java
+:100644 100644 3985c516d30cd6ace8e9308d75e3af288535489c 3985c516d30cd6ace8e9308d75e3af288535489c R100	server/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java	plugins/network-elements/elastic-loadbalancer/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java
+:100644 100644 725377c1d966a2f5f61972777cc030c0fe3a54b8 725377c1d966a2f5f61972777cc030c0fe3a54b8 R100	server/src/com/cloud/network/lb/dao/ElasticLbVmMapDao.java	plugins/network-elements/elastic-loadbalancer/src/com/cloud/network/lb/dao/ElasticLbVmMapDao.java
+:100644 100644 08c1efbd563a02c39d9e494f2c3c95e7c2f853a1 08c1efbd563a02c39d9e494f2c3c95e7c2f853a1 R100	server/src/com/cloud/network/lb/dao/ElasticLbVmMapDaoImpl.java	plugins/network-elements/elastic-loadbalancer/src/com/cloud/network/lb/dao/ElasticLbVmMapDaoImpl.java
+:100755 100755 821c6ed520563eb5698b27f7c787226de9d4db8f f6db30bf7b71029261fb1e94c94dd978623a6b6b M	server/src/com/cloud/configuration/DefaultComponentLibrary.java
+:100755 100755 17a8cdc6ad7cdee3588542b3c63828ee53b8f285 29d6f392391b9a1a7c2cdbba2eb8a13780eeeccb M	server/src/com/cloud/network/lb/LoadBalancingRulesManagerImpl.java

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 9876d34ea4a7ac79a0c38b35a249dce20295d391 and 0449ae37f1112c680956a8ce5979f433456cbcb9
+commit 0449ae37f1112c680956a8ce5979f433456cbcb9
+tree 7c15aedfd7dda3d0b9a5f933b5b08aa0b6932cd2
+parent 9876d34ea4a7ac79a0c38b35a249dce20295d391
+author Jason Bausewein <jason.bausewein@tier3.com> 1341266723 -0700
+committer Sheng Yang <sheng.yang@citrix.com> 1341266757 -0700
+
+    CS-15274: Fix NPE on CreateVlanIpRangeCmd()
+    
+    Signed-off-by: Sheng Yang <sheng.yang@citrix.com>
+
+:100755 100755 d64de24f534e43321dfd981b00f42458a442f5d6 a02c3be9e7f804cbaa7de06422f0dd3953adb9e3 M	server/src/com/cloud/configuration/ConfigurationManagerImpl.java

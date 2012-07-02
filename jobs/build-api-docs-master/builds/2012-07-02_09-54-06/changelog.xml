@@ -1,0 +1,45 @@
+Changes in branch origin/master, between e87558256c1616552139c1ed07c4b3acf4b0317a and 9aa0edf7a41d1a400fde06ece0783d4778183125
+commit 9aa0edf7a41d1a400fde06ece0783d4778183125
+tree 0e1c9b6df425777c61b566723b36b8c2251a3242
+parent e87558256c1616552139c1ed07c4b3acf4b0317a
+author David Nalley <david@gnsa.us> 1341237175 -0400
+committer David Nalley <david@gnsa.us> 1341237175 -0400
+
+    License header updates for the ovm folder from Chip Childers
+    https://reviews.apache.org/r/5706/
+
+:100755 100755 c8bffe2bdba4d9baddd3b2652ead29ac4cdf336c 62d09fcd62e2d19f29c583907c60c7ffa10bcec5 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/ConfigFileOps.py
+:100755 100755 aae6f714cf3c6e0e1b2c5f596cd30cd58bb83042 558e58a2dad0b5610464fa5cec18f08603eaec7f M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmCommonModule.py
+:100755 100755 7ae6c725ed0c119a09d5276041eccfac00e2ec68 b3214ec9b1f2047abb37b90c1c4f09f7b6471c86 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmDiskModule.py
+:100755 100755 8db558ed107d0e1d9286d68ca5872862b8bf8e47 78d1faeaba21836fd1d4a5b863a83a4e8df81b97 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmDispatcher.py
+:100755 100755 9c3c7b9992b85692c83783265e158e68ab2bdbe7 d929d814da59da8c470618b4c97c021969c3317d M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmFaultConstants.py
+:100755 100755 eeee35ac8caf0a28c64ae1d3d67ad894d972c61f 02ad816f0693c46697b568eed83e6501933c2c84 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmHaHeartBeatModule.py
+:100755 100755 9cfbd4698793f6ed8ab740cc212979da97c3307e 3c61500630d7aef191c5cc95d41a5be784740748 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmHostModule.py
+:100755 100755 07fe78f5d858134e956f32de116908fb47dbca0f 94f3a81aa4aebc5ce5bb6ebaa7a74ed7ec1d525c M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmLoggerModule.py
+:100755 100755 5813fcd489a7fd53d231038b38ff2051185af73e c60b1ecbd36a297ca814eaa688dc3627a80c95ae M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmNetworkModule.py
+:100755 100755 9a8f0eba1acaac84c0125f2e4dbaa4b76b400e0a bf330f22885c3de99d8c8a9405d6e9476fad4f90 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmOCFS2Module.py
+:100755 100755 0d21dae0e836466b4671b53c1c13a7a564c8f453 d5d652cb9cf8c602c6056a2fb5c200ca73592b48 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmObjectModule.py
+:100755 100755 98163149b2b900bac68d43be3f0d7b484ea364af d04d1044ac261b0287a3c5f3076a410ee844daa4 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmSecurityGroupModule.py
+:100755 100755 9d83037d7811606de584423055d22004529a2426 f4933eccaa90a57d92f7ffccbedd2d27ca2788f8 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmStoragePoolModule.py
+:100755 100755 3405c5ae59f24b0a7892557cb045eb32f22ca820 66c703aff6629041deedc16cc232c90b737777b7 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmVifModule.py
+:100755 100755 12c32064eda39ef7e7b01022f8e47062a29dee38 fc223d6e3918ff2751d542aabb0f396a9e724402 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmVmModule.py
+:100755 100755 8daa846549a97cb82ed6323736db46cab206bfca 583d460e7985801dcf9b9229996af23ea9d52a90 M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/OvmVolumeModule.py
+:100755 100755 1fffd5a8a57ed04d3d4f4317c6dfd2e4a86849ed 4ed8aa9d1bf01a9c0bfadbcdc8b5c409668687cd M	plugins/hypervisors/ovm/scripts/vm/hypervisor/ovm/configureOvm.sh
+:100755 100755 3523562b77993d91c5ccf5837a6fcaacb02ff704 cd15d8fbd6365934c70ffe7eacfbc48fb18b3805 M	plugins/hypervisors/ovm/src/com/cloud/ovm/hypervisor/OvmDiscoverer.java
+:100755 100755 fe336773559d887b8c11a59328d35e5d77c5da95 cceb7fe969bf9f99fd1e89845add04faa92cb7a2 M	plugins/hypervisors/ovm/src/com/cloud/ovm/hypervisor/OvmFencer.java
+:100755 100755 b24be714e9c392893016b36871d3e7cca722497c 20221c3d335227aa9bd868eec8e4f7fb39babaca M	plugins/hypervisors/ovm/src/com/cloud/ovm/hypervisor/OvmGuru.java
+:100755 100755 63300583f92b0e89d968f63db429464986275c4d f92fc784b1615676641b828795d9ab027243ecfd M	plugins/hypervisors/ovm/src/com/cloud/ovm/hypervisor/OvmHelper.java
+:100755 100755 8232112ab5a6998a6e1ae6e56130e18d3293d2ce c48b13f66bb10e52d216a89a7af4adc1a1ea9290 M	plugins/hypervisors/ovm/src/com/cloud/ovm/hypervisor/OvmResourceBase.java
+:100755 100755 ceced51c20898cd156582381bcb20e6595de0a84 da4aa4dce1ae73d4373cbdad1009b27276464508 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/Coder.java
+:100755 100755 9d0c906945b7b40fd3211b806b46ae81ba88a0df 3a107c27d0c0db6136b0a408b97bb7a42fcd1685 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/Connection.java
+:100755 100755 31986ff315da2b2517685c2d8c6b0be11ae36ba5 49d09f46238c84a8aaff5221870860bc78208e27 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmBridge.java
+:100755 100755 3e199cca97e53e6a6ba287be793a37db41178cf4 cb90b7a3fa3eb186099fa180146183d09eb5b172 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmDisk.java
+:100755 100755 abbe539eddcd6fdcb7bb9decdfbf02d944efcdb2 9b293909cee6a7f1b011eaf7db624ff57f958eb8 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmHost.java
+:100755 100755 7676856e4a5c293f74c54878f2c268426b07f441 eeea491c9f614b5490d680c4338f932c6b18bb68 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmObject.java
+:100755 100755 33bb133057c227c444d79a1bb28154cdec9547ea 8a318498cd09c0bc5340e150925f45bf095506d6 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmSecurityGroup.java
+:100755 100755 30246b89bdc01f50fbccd4fca91bf3650869b953 d182b0ca3623e36f7876e9854ee097d91e6385e6 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmStoragePool.java
+:100755 100755 9df214f268b29d6b876d809129eceb0cc214996f 8a3bd7fd4fcf2b246442668b0338d32e46ab7b67 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmVif.java
+:100755 100755 d95dfb925a91ad53bf2a6e07aae25be1f4c43248 947545c45960904809f502ed9d13a31c6465691d M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmVlan.java
+:100755 100755 2b538331292414f7fd8bf627603b500ae7217b0b 24a8f4abb0e4f04180bf5ca10cc936a82e92feac M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmVm.java
+:100755 100755 a64c963e1d238ba0514abdbdc41f90027e4a1a9f c25eb3f7fe806228b31ecd702be719c4be871aa9 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmVolume.java
+:100755 100755 9d56f7d99f2648714c20685c961e2be06d63b9cb 2efbbbe915a435ff1ad9c3a9180af7b896a0df97 M	plugins/hypervisors/ovm/src/com/cloud/ovm/object/Test.java

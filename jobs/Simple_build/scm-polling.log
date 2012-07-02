@@ -1,9 +1,42 @@
-Started on Jul 2, 2012 11:26:04 AM
+Started on Jul 2, 2012 11:56:04 AM
 Using strategy: Default
-[poll] Last Build : #604
-[poll] Last Built Revision: Revision 1581d65c9906400e072671adaaa8755b8b536458 (origin/master)
+[poll] Last Build : #605
+[poll] Last Built Revision: Revision 8aa2b55dd62cf488b63b7377610e1d8aa14a2fc6 (origin/master)
 Fetching changes from the remote Git repositories
 Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+ERROR: Problem fetching from origin / origin - could be unavailable. Continuing anyway
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Error performing command: git fetch -t https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git +refs/heads/*:refs/remotes/origin/*
+Command "git fetch -t https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git +refs/heads/*:refs/remotes/origin/*" returned status code 128: error: Failed connect to git-wip-us.apache.org:443; Connection timed out while accessing https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git/info/refs
+fatal: HTTP request failed
+
+	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:776)
+	at hudson.plugins.git.GitAPI.launchCommand(GitAPI.java:741)
+	at hudson.plugins.git.GitAPI.fetch(GitAPI.java:190)
+	at hudson.plugins.git.GitAPI.fetch(GitAPI.java:978)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:765)
+	at hudson.plugins.git.GitSCM.access$100(GitSCM.java:80)
+	at hudson.plugins.git.GitSCM$1.invoke(GitSCM.java:695)
+	at hudson.plugins.git.GitSCM$1.invoke(GitSCM.java:682)
+	at hudson.FilePath.act(FilePath.java:784)
+	at hudson.FilePath.act(FilePath.java:766)
+	at hudson.plugins.git.GitSCM.compareRemoteRevisionWith(GitSCM.java:682)
+	at hudson.scm.SCM._compareRemoteRevisionWith(SCM.java:356)
+	at hudson.scm.SCM.poll(SCM.java:373)
+	at hudson.model.AbstractProject.poll(AbstractProject.java:1310)
+	at hudson.triggers.SCMTrigger$Runner.runPolling(SCMTrigger.java:420)
+	at hudson.triggers.SCMTrigger$Runner.run(SCMTrigger.java:449)
+	at hudson.util.SequentialExecutionQueue$QueueEntry.run(SequentialExecutionQueue.java:118)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: hudson.plugins.git.GitException: Command "git fetch -t https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git +refs/heads/*:refs/remotes/origin/*" returned status code 128: error: Failed connect to git-wip-us.apache.org:443; Connection timed out while accessing https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git/info/refs
+fatal: HTTP request failed
+
+	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:771)
+	... 22 more
 Polling for changes in
-Done. Took 4.2 sec
+Done. Took 2 min 7 sec
 No changes

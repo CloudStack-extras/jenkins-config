@@ -16,7 +16,7 @@
       <hudson.plugins.git.UserRemoteConfig>
         <name></name>
         <refspec>+refs/heads/3.0.x:refs/remotes/origin/3.0.x</refspec>
-        <url>git://github.com/CloudStack/CloudStack</url>
+        <url>https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>

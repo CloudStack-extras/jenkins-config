@@ -16,7 +16,7 @@
       <hudson.plugins.git.UserRemoteConfig>
         <name></name>
         <refspec></refspec>
-        <url>git://github.com/CloudStack/CloudStack.git</url>
+        <url>https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -45,7 +45,7 @@
     <scmName></scmName>
   </scm>
   <canRoam>true</canRoam>
-  <disabled>true</disabled>
+  <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector">
@@ -61,7 +61,7 @@
   </builders>
   <publishers>
     <hudson.tasks.Mailer>
-      <recipients>cloudstack-devel@lists.sourceforge.net</recipients>
+      <recipients>Prasanna.Santhanam@citrix.com</recipients>
       <dontNotifyEveryUnstableBuild>true</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>true</sendToIndividuals>
     </hudson.tasks.Mailer>

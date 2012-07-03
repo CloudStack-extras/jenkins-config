@@ -1,0 +1,12 @@
+Changes in branch origin/master, between c8bbf04c81649919e3c128be42a9500ba47a8766 and 217fdd24973cf1eff478c7c19fa2b3020b2fa654
+commit 217fdd24973cf1eff478c7c19fa2b3020b2fa654
+tree ae2324e1fd6472c27f898e1e4cb1478fcae7fb48
+parent c8bbf04c81649919e3c128be42a9500ba47a8766
+author Edison Su <sudison@gmail.com> 1341345402 -0700
+committer Edison Su <sudison@gmail.com> 1341345402 -0700
+
+    From: jason.bausewein@tier3.com
+    Fixed deployDataCenter.py to select the correct network offering based on if security groups are enabled.  Also added default value to configGenerator.py for basic setup.
+
+:100644 100644 1e84f900573de56198fdb46b5d98258e64e4f423 60526a89f8a67ca16627ad54727db27a89e508f7 M	tools/marvin/marvin/configGenerator.py
+:100644 100644 5c7880e60ae1bf00cb3ec50bad1087265cf17d54 d48380724325003a8a57b417e0fec1fb8541b7dc M	tools/marvin/marvin/deployDataCenter.py

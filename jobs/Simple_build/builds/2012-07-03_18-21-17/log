@@ -1,0 +1,1418 @@
+Started by an SCM change
+Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@2cef66
+Using strategy: Default
+Last Built Revision: Revision 217fdd24973cf1eff478c7c19fa2b3020b2fa654 (origin/master)
+Checkout:Simple_build / /var/lib/jenkins/workspace/Simple_build - hudson.remoting.LocalChannel@2cef66
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+Commencing build of Revision 57927c9f2365d2696e5b7e312bbe5e35204cbcb9 (origin/master)
+Checking out Revision 57927c9f2365d2696e5b7e312bbe5e35204cbcb9 (origin/master)
+[Simple_build] $ ant clean-all build-all
+Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] deploy home: /var/lib/jenkins/workspace/Simple_build/build/deploy
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean:
+   [delete] Deleting: /var/lib/jenkins/workspace/Simple_build/target/ant_verbose.txt
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/target/classes
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/target/jar
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/dist
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean-plugins:
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/target/dist-files
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/target
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean-awsapi:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mclean-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-03T22:21:28Z
+     [echo] Build number is 3.0.3.2012-07-03T22:21:28Z
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/docs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dep-cache
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-utils.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/utils/src
+    [javac] Compiling 212 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-utils.jar
+    [javac] Note: /var/lib/jenkins/workspace/Simple_build/utils/src/com/cloud/utils/UriUtils.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-api.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/api/src
+    [javac] Compiling 706 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-api.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-vmware-base.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/vmware-base/src
+    [javac] Compiling 35 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-vmware-base.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-core.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/core/src
+    [javac] Compiling 156 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-core.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-core.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-agent.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/agent/src
+    [javac] Compiling 40 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-agent.jar
+    [javac] Note: /var/lib/jenkins/workspace/Simple_build/agent/src/com/cloud/agent/resource/computing/LibvirtVMDef.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-agent.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/server/src
+    [javac] Compiling 738 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-server.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-server.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/client
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/client/lib
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/client/conf
+     [copy] Copying 39 files to /var/lib/jenkins/workspace/Simple_build/target/jar
+     [copy] Copying 25 files to /var/lib/jenkins/workspace/Simple_build/dist/client/conf
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] Copying 59 files to /var/lib/jenkins/workspace/Simple_build/target/db
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-agent:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/agent
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/agent/scripts
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/agent/conf
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/agent/logs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/agent/db
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/agent/storagehdpatch
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist/agent/conf
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist/agent/conf
+     [copy] java.io.FileNotFoundException: /var/lib/jenkins/workspace/Simple_build/build/replace.properties (No such file or directory)
+     [copy] 	at java.io.FileInputStream.open(Native Method)
+     [copy] 	at java.io.FileInputStream.<init>(FileInputStream.java:137)
+     [copy] 	at org.apache.tools.ant.types.resources.FileResource.getInputStream(FileResource.java:204)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.getProperties(ReplaceTokens.java:252)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.makeTokensFromProperties(ReplaceTokens.java:341)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.initialize(ReplaceTokens.java:332)
+     [copy] 	at org.apache.tools.ant.filters.ReplaceTokens.read(ReplaceTokens.java:124)
+     [copy] 	at org.apache.tools.ant.filters.BaseFilterReader.read(BaseFilterReader.java:83)
+     [copy] 	at java.io.BufferedReader.read1(BufferedReader.java:202)
+     [copy] 	at java.io.BufferedReader.read(BufferedReader.java:278)
+     [copy] 	at org.apache.tools.ant.util.ResourceUtils.copyResource(ResourceUtils.java:494)
+     [copy] 	at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:559)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.doFileOperations(Copy.java:875)
+     [copy] 	at org.apache.tools.ant.taskdefs.Copy.execute(Copy.java:549)
+     [copy] 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+     [copy] 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+     [copy] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+     [copy] 	at java.lang.reflect.Method.invoke(Method.java:616)
+     [copy] 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+     [copy] 	at org.apache.tools.ant.Task.perform(Task.java:348)
+     [copy] 	at org.apache.tools.ant.Target.execute(Target.java:390)
+     [copy] 	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+     [copy] 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+     [copy] 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+     [copy] 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+     [copy] 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+     [copy] 	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+     [copy] 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+     [copy] 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Simple_build/dist/agent
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
+     [copy] Copying 169 files to /var/lib/jenkins/workspace/Simple_build/target/scripts
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/target/scripts
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/ui
+     [copy] Copying 76 files to /var/lib/jenkins/workspace/Simple_build/target/ui
+     [copy] Copying 94 files to /var/lib/jenkins/workspace/Simple_build/target/ui
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/target/ui
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-proxy:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-console-proxy.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/console-proxy/src
+    [javac] Compiling 55 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-console-proxy.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-console-proxy.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcopy-console-proxy:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/conf
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/logs
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/applet
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/images
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/js
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/ui
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/css
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/certs
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/conf
+     [copy] Copying 22 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/images
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/js
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/ui
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/css
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/certs
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-console-proxy:
+     [copy] Copying 8 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy
+     [copy] Copying 2 files to /var/lib/jenkins/workspace/Simple_build/dist/console-proxy/conf
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; ovm.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/ovm
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-ovm.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/ovm/src
+    [javac] Compiling 18 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-ovm.jar
+    [javac] Note: /var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/ovm/src/com/cloud/ovm/object/OvmStoragePool.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-ovm.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ovm:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-package:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm:
+      [zip] Building zip: /var/lib/jenkins/workspace/Simple_build/dist/systemvm.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-systemvm-patch:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/build-patch
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/dist/build-patch/usr/sbin
+     [copy] Copying 75 files to /var/lib/jenkins/workspace/Simple_build/dist/build-patch
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/Simple_build/dist/build-patch/usr/sbin
+      [tar] Building tar: /var/lib/jenkins/workspace/Simple_build/dist/patch.tar
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/Simple_build/dist
+     [gzip] Building: /var/lib/jenkins/workspace/Simple_build/dist/cloud-scripts.tgz
+   [delete] Deleting: /var/lib/jenkins/workspace/Simple_build/dist/patch.tar
+   [delete] Deleting directory /var/lib/jenkins/workspace/Simple_build/dist/build-patch
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm-iso:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netscaler:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; netscaler.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/network-elements/netscaler
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-netscaler.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netscaler:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/network-elements/netscaler/src
+    [javac] Compiling 12 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-netscaler.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-plugin-netscaler.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-netscaler:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-f5:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; f5.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/network-elements/f5
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-f5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-f5:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/network-elements/f5/src
+    [javac] Compiling 12 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-f5.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-plugin-f5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-f5:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-srx:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; srx.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/network-elements/juniper-srx
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-srx.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-srx:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/network-elements/juniper-srx/src
+    [javac] Compiling 12 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-srx.jar
+    [javac] Note: /var/lib/jenkins/workspace/Simple_build/plugins/network-elements/juniper-srx/src/com/cloud/network/element/JuniperSRXExternalFirewallElement.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-plugin-srx.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-srx:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-dispersing:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; dp-user-dispersing.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/deployment-planners/user-dispersing
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-dp-user-dispersing.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-dispersing:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/deployment-planners/user-dispersing/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-dp-user-dispersing.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-dp-user-dispersing.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-dp-user-dispersing:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-concentrated-pod:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; dp-user-concentrated-pod.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/deployment-planners/user-concentrated-pod
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/${user-concentrated-pod.jar}
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-concentrated-pod:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-dp-user-concentrated-pod.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/deployment-planners/user-concentrated-pod/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-dp-user-concentrated-pod.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-dp-user-concentrated-pod.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-dp-user-concentrated-pod:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-host-allocator-random:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; host-allocator-random.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/host-allocators/random
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-host-allocator-random.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-host-allocator-random:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/host-allocators/random/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-host-allocator-random.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-host-allocator-random.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-host-allocator-random:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-ldap:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; user-authenticator-ldap.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/ldap
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-ldap.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-ldap:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/ldap/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-ldap.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-user-authenticator-ldap.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-ldap:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-opensource:
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/dist
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/Simple_build/target/jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovs:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; ovs.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/network-elements/ovs
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-ovs.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovs:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/network-elements/ovs/src
+    [javac] Compiling 23 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-ovs.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-plugin-ovs.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-xen:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; xen.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/xen
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-xen.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-xen:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/xen/src
+    [javac] Compiling 14 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-xen.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-xen.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-xen:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; vmware.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/vmware
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-vmware.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/vmware/src
+    [javac] Compiling 28 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-vmware.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /var/lib/jenkins/workspace/Simple_build/plugins/hypervisors/vmware/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-vmware.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-vmware:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-hypervisors:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ovs:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-elb:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; elb.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/network-elements/elastic-loadbalancer
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-elb.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-elb:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/network-elements/elastic-loadbalancer/src
+    [javac] Compiling 6 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-elb.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-plugin-elb.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-elb:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-network-elements:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-deployment-planners:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-host-allocators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocator-random:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; storage-allocator-random.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/storage-allocators/random
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-storage-allocator-random.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocator-random:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/storage-allocators/random/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-storage-allocator-random.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-storage-allocator-random.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-storage-allocator-random:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-storage-allocators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; user-authenticator-md5.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/md5
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-md5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/md5/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-md5.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-user-authenticator-md5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-md5:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; user-authenticator-plaintext.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/plain-text
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-plaintext.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/plain-text/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-plaintext.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-user-authenticator-plaintext.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-plaintext:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; netapp.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/file-systems/netapp
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-netapp.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/file-systems/netapp/src
+    [javac] Compiling 25 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-netapp.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-plugin-netapp.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-netapp:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-file-systems:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-plugins:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-war-oss:
+      [war] Building war: /var/lib/jenkins/workspace/Simple_build/dist/client/client.war
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-test:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/test/classes
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-testclient:
+     [echo] src is /var/lib/jenkins/workspace/Simple_build/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-test.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/test/src
+    [javac] Compiling 37 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-test.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-test.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-usage:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-usage.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/usage/src
+    [javac] Compiling 16 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-usage.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-usage.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-awsapi:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dist-files
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-03T22:21:28Z
+     [echo] Build number is 3.0.3.2012-07-03T22:21:28Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-awsapi:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-awsapi.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/awsapi/src
+    [javac] Compiling 939 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-awsapi.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-awsapi.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-jar:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-awsapi.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-s3:
+      [jar] Building MANIFEST-only jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-s3.aar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-ec2:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-ec2.aar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-s3:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-auth-s3.mar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-ec2:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-auth-ec2.mar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 3 minutes 21 seconds
+Finished: SUCCESS

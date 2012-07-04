@@ -1,0 +1,17 @@
+Changes in branch origin/master, between 54d7a10b99591c735f0c57eb9947fcbb8ed5fa73 and 6fe595f3d3de62b550905ee7ed7d27164b031b0a
+commit 6fe595f3d3de62b550905ee7ed7d27164b031b0a
+tree 21fbd75f439f9c353cc8fdf079935e46f9f9c2ff
+parent 54d7a10b99591c735f0c57eb9947fcbb8ed5fa73
+author David Nalley <david@gnsa.us> 1341442249 -0400
+committer David Nalley <david@gnsa.us> 1341442249 -0400
+
+    committing some more changes to marvins license headers
+
+:100644 100644 fa64b4a85d057a1df9cb7b378883ab41118646d5 00ae6c00d2e4f15b36f16e8c0405fad711402aa1 M	tools/marvin/LICENSE.txt
+:100644 100644 63728eff1d3e107475c0d813ddd1a899b884a465 5438e40d6c814779cee9b1c169b6f9b0cb8c9f49 M	tools/marvin/marvin/sandbox/demo/live/testSshDeployVM.py
+:100644 100644 ee800761df947fce0094370ebda1cad22a5c068c 0b9c01da9f40ddc91d3136d90e66eb443d3b08e9 M	tools/marvin/marvin/sandbox/demo/simulator/simulator_setup.py
+:100644 100644 e2fd5d74c81b3d20e93c0d8b1ae1748bd7c78463 0b5da5c162fe1d57e0c78111edf470198b376f9e M	tools/marvin/marvin/sandbox/demo/simulator/testcase/libs/base.py
+:100644 100644 5b2b096743e83873994b3b5011dfd9d6be037fa0 fc184016d4314e96bfaf1a5dc57e5a3ddbaea489 M	tools/marvin/marvin/sandbox/demo/simulator/testcase/libs/common.py
+:100644 100644 69d524deea071f92870c919e09433497a1df57e0 8abed18b99d2476d309fe732af62040e3a99c719 M	tools/marvin/marvin/sandbox/demo/simulator/testcase/libs/utils.py
+:100644 100644 176f4ae870f090b49a09e24963793f44a7106630 9bc7e149f971891703fd20e13e404f20cf2d282a M	tools/marvin/marvin/sandbox/demo/simulator/testcase/test_vm_life_cycle.py
+:100644 100644 af40771d6a446681f86216a9d0c8f440fd4a668b b2d6a40cd4bbb3292b7b1db7fa92881bef78090c M	tools/marvin/setup.py

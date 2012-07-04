@@ -1,9 +1,9 @@
-Started on Jul 4, 2012 6:51:04 PM
+Started on Jul 4, 2012 6:46:04 PM
 Using strategy: Default
-[poll] Last Build : #54201
-[poll] Last Built Revision: Revision 496929b3f87c7dfe702fb39431b7d59dd475db49 (origin/3.0.x)
+[poll] Last Build : #4642
+[poll] Last Built Revision: Revision 27e9cdbece932bae9a68d5ec28bf2941f4fc7545 (origin/master)
 Fetching changes from the remote Git repositories
 Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
 Polling for changes in
-Done. Took 15 sec
-No changes
+Done. Took 10 sec
+Changes found

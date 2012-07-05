@@ -45,7 +45,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>1a29422c086bc45c31c5b427e4053b45f11e2213</sha1>
+              <sha1>a77b6756fc5b1eec5648d10ddf92c5188a79d4de</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -53,7 +53,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>4545</hudsonBuildNumber>
+            <hudsonBuildNumber>4645</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -103,12 +103,12 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
     <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
-      <result>SUCCESS</result>
+      <result>FAILURE</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>4545</number>
-  <result>SUCCESS</result>
-  <duration>88923</duration>
+  <number>4645</number>
+  <result>FAILURE</result>
+  <duration>20402</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -118,6 +118,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>sheng.yang</string>
+    <string>david</string>
   </culprits>
 </build>

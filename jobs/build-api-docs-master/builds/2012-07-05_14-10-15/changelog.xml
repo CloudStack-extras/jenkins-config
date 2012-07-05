@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 471924ff11631f40885b52c922e77f0740dc5c7e and 81afcabdb276acd6918b0742be08d6d6e6e40144
+commit 81afcabdb276acd6918b0742be08d6d6e6e40144
+tree dfd1fd6aba38610299c6d1ebbc486cfbbc54f49d
+parent 471924ff11631f40885b52c922e77f0740dc5c7e
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1341511922 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1341511922 -0700
+
+    Added missing package name mistakenly removed by headers cleanup checkin
+
+:100644 100644 f3100509133870e8c8f61d60598a148c06cf6285 e57b884f90315609a41d0f9c7e988267f0f42507 M	api/src/com/cloud/server/TaggedResourceService.java

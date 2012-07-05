@@ -22,7 +22,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>**</name>
+        <name>master</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <disableSubmodules>false</disableSubmodules>
@@ -49,7 +49,11 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers class="vector"/>
+  <triggers class="vector">
+    <hudson.triggers.SCMTrigger>
+      <spec>*/5 * * * * </spec>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Ant>

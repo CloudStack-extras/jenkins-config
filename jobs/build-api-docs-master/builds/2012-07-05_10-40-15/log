@@ -1,0 +1,59 @@
+Started by an SCM change
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@2cef66
+Using strategy: Default
+Last Built Revision: Revision a77b6756fc5b1eec5648d10ddf92c5188a79d4de (origin/master)
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@2cef66
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+Commencing build of Revision 27a23b2e2a3e4b50ae32f6245f7d715ecb721a2c (origin/master)
+Checking out Revision 27a23b2e2a3e4b50ae32f6245f7d715ecb721a2c (origin/master)
+[build-api-docs-master] $ ant build-apidocs-zip
+Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] deploy home: /var/lib/jenkins/workspace/build-api-docs-master/build/deploy
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-05T14:40:27Z
+     [echo] Build number is 3.0.3.2012-07-05T14:40:27Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/api/src
+    [javac] Compiling 7 source files to /var/lib/jenkins/workspace/build-api-docs-master/target/classes/cloud-api.jar
+    [javac] /var/lib/jenkins/workspace/build-api-docs-master/api/src/com/cloud/server/TaggedResourceService.java:38: cannot find symbol
+    [javac] symbol  : class ResourceTag
+    [javac] location: interface TaggedResourceService
+    [javac]     List<ResourceTag> createTags(List<String> resourceIds, TaggedResourceType resourceType, Map<String, String> tags, String customer);
+    [javac]          ^
+    [javac] /var/lib/jenkins/workspace/build-api-docs-master/api/src/com/cloud/server/TaggedResourceService.java:51: cannot find symbol
+    [javac] symbol  : class ResourceTag
+    [javac] location: interface TaggedResourceService
+    [javac]     List<? extends ResourceTag> listTags(ListTagsCmd listTagsCmd);
+    [javac]                    ^
+    [javac] /var/lib/jenkins/workspace/build-api-docs-master/api/src/com/cloud/server/TaggedResourceService.java:27: duplicate class: TaggedResourceService
+    [javac] public interface TaggedResourceService {
+    [javac]        ^
+    [javac] /var/lib/jenkins/workspace/build-api-docs-master/api/src/com/cloud/api/commands/CreateTagsCmd.java:73: cannot access com.cloud.server.TaggedResourceService
+    [javac] bad class file: RegularFileObject[/var/lib/jenkins/workspace/build-api-docs-master/api/src/com/cloud/server/TaggedResourceService.java]
+    [javac] file does not contain class com.cloud.server.TaggedResourceService
+    [javac] Please remove or make sure it appears in the correct subdirectory of the classpath.
+    [javac]         return _taggedResourceService.getResourceType(resourceType);
+    [javac]                                      ^
+    [javac] 4 errors
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.xml:203: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/build-api-docs-master/build/build-common.xml:65: Compile failed; see the compiler error output for details.
+
+Total time: 11 seconds
+Build step 'Invoke Ant' marked build as failure
+Archiving artifacts
+Finished: FAILURE

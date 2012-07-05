@@ -1,0 +1,11 @@
+Changes in branch origin/master, between a77b6756fc5b1eec5648d10ddf92c5188a79d4de and 27a23b2e2a3e4b50ae32f6245f7d715ecb721a2c
+commit 27a23b2e2a3e4b50ae32f6245f7d715ecb721a2c
+tree f4d8d708a27259ddf56ad1c81070ecdce29f5aab
+parent a77b6756fc5b1eec5648d10ddf92c5188a79d4de
+author David Nalley <david@gnsa.us> 1341499135 -0400
+committer David Nalley <david@gnsa.us> 1341499135 -0400
+
+    committing some bugfixes to runbook - thanks to Watnuss for pointing them out on IRC
+
+:100644 100644 df7a471e0f58d08ebc2213471e8f44a67aab17c1 9048e1aa0a215d78cba8e394114dfa57660e21c6 M	docs/runbook/en-US/Environment.xml
+:100644 100644 6001c283c74a6f3604e962aeb7f501371d7a10e8 d95108e2ee1513e121a67aa9512d6bbcf65bbf6a M	docs/runbook/en-US/Management.xml

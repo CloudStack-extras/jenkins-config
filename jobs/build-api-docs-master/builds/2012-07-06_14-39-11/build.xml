@@ -3,11 +3,12 @@
   <actions>
     <hudson.model.CauseAction>
       <causes>
-        <hudson.model.Cause_-UserIdCause>
-          <userId>prasanna</userId>
-        </hudson.model.Cause_-UserIdCause>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
       </causes>
     </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
     <hudson.plugins.git.util.BuildData>
       <buildsByBranchName>
         <entry>
@@ -22,22 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>2</hudsonBuildNumber>
-          </hudson.plugins.git.util.Build>
-        </entry>
-        <entry>
-          <string>origin/master</string>
-          <hudson.plugins.git.util.Build>
-            <revision>
-              <sha1>1a2f354f4dd0b9491dfd24c92776da2f442b454e</sha1>
-              <branches class="list">
-                <hudson.plugins.git.Branch>
-                  <sha1 reference="../../../sha1"/>
-                  <name>origin/master</name>
-                </hudson.plugins.git.Branch>
-              </branches>
-            </revision>
-            <hudsonBuildNumber>602</hudsonBuildNumber>
+            <hudsonBuildNumber>5</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -56,48 +42,18 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
-          <string>origin/2.1.vanilla</string>
+          <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>b89beda6f5ff0e0141d506dcb31e9ae8ac6e8444</sha1>
+              <sha1>7349842c4227721cc9ae5c34fc5672ae4342acc7</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
-                  <name>origin/2.1.vanilla</name>
+                  <name>origin/master</name>
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>7</hudsonBuildNumber>
-          </hudson.plugins.git.util.Build>
-        </entry>
-        <entry>
-          <string>origin/2.2.beta1</string>
-          <hudson.plugins.git.util.Build>
-            <revision>
-              <sha1>0dd7816906a857297d1b402d550af9150d4d8b97</sha1>
-              <branches class="list">
-                <hudson.plugins.git.Branch>
-                  <sha1 reference="../../../sha1"/>
-                  <name>origin/2.2.beta1</name>
-                </hudson.plugins.git.Branch>
-              </branches>
-            </revision>
-            <hudsonBuildNumber>5</hudsonBuildNumber>
-          </hudson.plugins.git.util.Build>
-        </entry>
-        <entry>
-          <string>origin/2.1.4.kumquat</string>
-          <hudson.plugins.git.util.Build>
-            <revision>
-              <sha1>5bfe349783b60d7729e409f5054c1dfb0b3fcce7</sha1>
-              <branches class="list">
-                <hudson.plugins.git.Branch>
-                  <sha1 reference="../../../sha1"/>
-                  <name>origin/2.1.4.kumquat</name>
-                </hudson.plugins.git.Branch>
-              </branches>
-            </revision>
-            <hudsonBuildNumber>6</hudsonBuildNumber>
+            <hudsonBuildNumber>4653</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -112,7 +68,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>3</hudsonBuildNumber>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -127,11 +83,11 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>4</hudsonBuildNumber>
+            <hudsonBuildNumber>7</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
+      <lastBuild reference="../buildsByBranchName/entry[3]/hudson.plugins.git.util.Build"/>
       <scmName></scmName>
     </hudson.plugins.git.util.BuildData>
     <hudson.plugins.git.GitTagAction>
@@ -143,49 +99,25 @@
           <list/>
         </entry>
       </tags>
-      <ws>/var/lib/jenkins/workspace/Simple_build</ws>
+      <ws>/var/lib/jenkins/workspace/build-api-docs-master</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+      <result>SUCCESS</result>
+    </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>602</number>
+  <number>4653</number>
   <result>SUCCESS</result>
-  <duration>575261</duration>
+  <duration>85407</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/Simple_build</workspace>
+  <workspace>/var/lib/jenkins/workspace/build-api-docs-master</workspace>
   <hudsonVersion>1.447</hudsonVersion>
   <scm class="hudson.plugins.git.GitChangeLogParser">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>aprateek</string>
-    <string>frank</string>
-    <string>nitin.mehta</string>
-    <string>chirag</string>
-    <string>Prasanna.Santhanam</string>
-    <string>vijayendra.bhamidipati</string>
-    <string>sam</string>
-    <string>salvatore.orlando</string>
-    <string>alex.huang</string>
-    <string>abhinandan.prateek</string>
-    <string>kelven</string>
-    <string>prachi</string>
-    <string>pranav.saxena</string>
-    <string>anthony</string>
-    <string>brian.federle</string>
-    <string>wido</string>
-    <string>alena.prokharchyk</string>
-    <string>sudison</string>
-    <string>sanjay.tripathi</string>
-    <string>bfederle</string>
-    <string>ewan.mellor</string>
-    <string>kishan</string>
-    <string>Murali.Reddy</string>
-    <string>jessica.wang</string>
-    <string>jayapalreddy.uradi</string>
-    <string>jessica</string>
-    <string>david</string>
     <string>sheng.yang</string>
   </culprits>
 </build>

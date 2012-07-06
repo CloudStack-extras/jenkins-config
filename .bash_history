@@ -407,3 +407,13 @@ w
 cd
 ls
 tail /var/log/mail/statistics 
+cd
+mutt
+mutt
+m
+mutt
+pwd
+whoami
+mutt
+tail -f /var/log/mail
+tail -f /var/log/maillog

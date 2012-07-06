@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>prasanna</userId>
+        </hudson.model.Cause_-UserIdCause>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.tasks.MailMessageIdAction>
+      <messageId>&lt;4156907.201341570516701.JavaMail.jenkins@domU-12-31-39-15-22-2D&gt;</messageId>
+    </hudson.tasks.MailMessageIdAction>
+  </actions>
+  <number>622</number>
+  <result>FAILURE</result>
+  <duration>37903</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/Simple_build</workspace>
+  <hudsonVersion>1.447</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits>
+    <string>alena.prokharchyk</string>
+    <string>sudison</string>
+    <string>david</string>
+  </culprits>
+</build>

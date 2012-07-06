@@ -1,0 +1,18 @@
+Changes in branch origin/master, between 85677b71febe514fac85a9d1d2d179dd052617f5 and ca231fe8bee96c06287310cfbb31c263128c63a2
+commit ca231fe8bee96c06287310cfbb31c263128c63a2
+tree e1725a837dc0436bea34791ed84db7324661afa1
+parent 85677b71febe514fac85a9d1d2d179dd052617f5
+author Brian Federle <brian.federle@citrix.com> 1341608541 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341608648 -0700
+
+    CS-15401: Fix arrow BG for PF/LB UI for Japanese language
+    
+    When opening Network screen, arrows to the right side of "show all"
+    for firewall, load balancer and port forwarding are divided in
+    Japanese localized environment. This fix adjusts the CSS to fit longer
+    characters in this condition.
+    
+    Original patch by: Pranav Saxena <pranav.saxena@citrix.com>
+    Reviewed by: Brian Federle <brian.federle@citrix.com>
+
+:100644 100644 232784dd1f3fdbe6b18faf3e02ba220c06f1862d f2d1a0d1558c4cc2296a792389c1022907341a0a M	ui/css/cloudstack3.css

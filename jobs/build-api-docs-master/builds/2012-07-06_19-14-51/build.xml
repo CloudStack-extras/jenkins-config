@@ -4,6 +4,9 @@
     <hudson.model.CauseAction>
       <causes>
         <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
       </causes>
     </hudson.model.CauseAction>
     <hudson.triggers.SCMTrigger_-BuildAction>
@@ -45,7 +48,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>c961fb11a687327c0479b9413ca7f234fcdba072</sha1>
+              <sha1>8d38f4e051c6ba114d3841f4aeb29b700aa0c81e</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -53,7 +56,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>4557</hudsonBuildNumber>
+            <hudsonBuildNumber>4657</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -106,9 +109,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>4557</number>
+  <number>4657</number>
   <result>SUCCESS</result>
-  <duration>84557</duration>
+  <duration>109103</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -118,6 +121,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>Murali.Reddy</string>
+    <string>prachi</string>
   </culprits>
 </build>

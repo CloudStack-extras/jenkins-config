@@ -27,6 +27,21 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>6cc8896f965981be5815d009a0317d8568d7c543</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>4650</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
           <string>origin/master.lime</string>
           <hudson.plugins.git.util.Build>
             <revision>
@@ -39,21 +54,6 @@
               </branches>
             </revision>
             <hudsonBuildNumber>1</hudsonBuildNumber>
-          </hudson.plugins.git.util.Build>
-        </entry>
-        <entry>
-          <string>origin/master</string>
-          <hudson.plugins.git.util.Build>
-            <revision>
-              <sha1>28de42e21d1f289266231608907cdac09ce1affd</sha1>
-              <branches class="list">
-                <hudson.plugins.git.Branch>
-                  <sha1 reference="../../../sha1"/>
-                  <name>origin/master</name>
-                </hudson.plugins.git.Branch>
-              </branches>
-            </revision>
-            <hudsonBuildNumber>4551</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -87,7 +87,7 @@
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry[3]/hudson.plugins.git.util.Build"/>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
       <scmName></scmName>
     </hudson.plugins.git.util.BuildData>
     <hudson.plugins.git.GitTagAction>
@@ -106,9 +106,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>4551</number>
+  <number>4650</number>
   <result>SUCCESS</result>
-  <duration>82368</duration>
+  <duration>118217</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -118,6 +118,8 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>bfederle</string>
+    <string>alena.prokharchyk</string>
+    <string>sudison</string>
+    <string>david</string>
   </culprits>
 </build>

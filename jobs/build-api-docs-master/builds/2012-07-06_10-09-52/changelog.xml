@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 6cc8896f965981be5815d009a0317d8568d7c543 and 54203f08adbc66dc171ad382c66f2e8dae885c1e
+commit 54203f08adbc66dc171ad382c66f2e8dae885c1e
+tree 864b4f8bfcbee9d7c10981fcea6b4f885b18dd0a
+parent 6cc8896f965981be5815d009a0317d8568d7c543
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1341583606 -0400
+committer David Nalley <david@gnsa.us> 1341583606 -0400
+
+    Small stop-gap fix to include cloud-elb.jar and cloud-netapp.jar in the rpms
+
+:100644 100644 f4ca068e6446b9804878bc8c5d3f1191563ea60b 773a729ae067af724622b73b37b0b154d43326c9 M	cloud.spec

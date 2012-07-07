@@ -1,13 +1,13 @@
 Started by timer
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@2cef66
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@15ba1ef
 Using strategy: Default
 Last Built Revision: Revision 92e509b07cad9065adb6dae4fba43cdf83a62bb6 (origin/master)
-Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@2cef66
+Checkout:Automated Test Runs / /var/lib/jenkins/workspace/Automated Test Runs - hudson.remoting.LocalChannel@15ba1ef
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from git@github.com:CloudStack/CloudStack.git
 Commencing build of Revision 92e509b07cad9065adb6dae4fba43cdf83a62bb6 (origin/master)
 Checking out Revision 92e509b07cad9065adb6dae4fba43cdf83a62bb6 (origin/master)
-[Automated Test Runs] $ /bin/sh -xe /tmp/hudson7479189318333493448.sh
+[Automated Test Runs] $ /bin/sh -xe /tmp/hudson7718991080219377093.sh
 + sh tools/testClient/automated/automated.sh
 Copying /usr/share/tomcat6/conf files to /var/lib/jenkins/automated/conf...
 Copying /usr/share/tomcat6/bin files to /var/lib/jenkins/automated/bin...
@@ -38,7 +38,7 @@ clean-awsapi:
 clean-all:
 
 BUILD SUCCESSFUL
-Total time: 2 seconds
+Total time: 3 seconds
 Buildfile: /var/lib/jenkins/workspace/Automated Test Runs/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/Automated Test Runs/build/build-cloud.properties
      [echo] Using company info from /var/lib/jenkins/workspace/Automated Test Runs/build/cloud.properties
@@ -54,8 +54,8 @@ automated-test-run:
 -init:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/dist
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-02T04:01:22Z
-     [echo] Build number is 3.0.3.2012-07-02T04:01:22Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-07T04:01:40Z
+     [echo] Build number is 3.0.3.2012-07-07T04:01:40Z
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/jar
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/docs
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dep-cache
@@ -199,8 +199,8 @@ compile-usage:
 
 -init-awsapi:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/dist-files
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-02T04:01:22Z
-     [echo] Build number is 3.0.3.2012-07-02T04:01:22Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-07T04:01:40Z
+     [echo] Build number is 3.0.3.2012-07-07T04:01:40Z
 
 compile-awsapi:
     [mkdir] Created dir: /var/lib/jenkins/workspace/Automated Test Runs/target/classes/cloud-awsapi.jar
@@ -253,7 +253,7 @@ deploy-ovm:
      [copy] Copying 20 files to /var/lib/jenkins/automated/webapps/client/WEB-INF/lib/scripts
 
 -init-awsapi:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-02T04:03:49.364Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-07T04:04:16.335Z
      [echo] Build number is 3.0.3
 
 deploy-axis:
@@ -283,9 +283,9 @@ deploy-server:
 deploy-cloudstack-db:
      [echo] deploydb server-setup.xml templates.sql ${DBROOTPW}
      [exec] Recreating Database cloud.
+     [exec] Enter password: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
      [exec] Please enter root password for MySQL.
      [exec] Error: Cannot execute create-database.sql
-     [exec] Enter password: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
      [exec] Result: 10
 
 deploy-awsapi-db:
@@ -398,5 +398,5 @@ clean-tomcat:
    [delete] Deleting directory /var/lib/jenkins/automated/logs
 
 BUILD SUCCESSFUL
-Total time: 2 minutes 41 seconds
+Total time: 2 minutes 54 seconds
 Finished: SUCCESS

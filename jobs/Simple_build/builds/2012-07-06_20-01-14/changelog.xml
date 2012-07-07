@@ -1,0 +1,21 @@
+Changes in branch origin/master, between 8d38f4e051c6ba114d3841f4aeb29b700aa0c81e and 63d6941bdc65859f17e0641288fe6d3190193e8b
+commit 63d6941bdc65859f17e0641288fe6d3190193e8b
+tree 9cad5b472e15f9970fb4093a46cf0fc24b894494
+parent 8d38f4e051c6ba114d3841f4aeb29b700aa0c81e
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1341617836 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1341619154 -0700
+
+    ResourceTags: respect tag parameter in listTemplates/listIsos commands
+    
+    Conflicts:
+    
+    	server/src/com/cloud/storage/dao/VMTemplateDao.java
+    	server/src/com/cloud/storage/dao/VMTemplateDaoImpl.java
+
+:100755 100755 c1002b8b458d5ae6600018e186e469d8d1cf88c3 6e1e0b4b75491fb1aa1fac7b1fed588177f09f34 M	api/src/com/cloud/api/commands/ListTemplatesCmd.java
+:100755 100755 305fdeb6eb813a84179d35225b845eaf68035a8a 4c88e2b2be6f7a96e587bdba949666913e226ebd M	server/src/com/cloud/api/ApiResponseHelper.java
+:100755 100755 ddcf75147669b2b8bf3a2cb45b83e5693f7f99cd 93c2f4ca2a957dc27bd3a80966302c08eac398a7 M	server/src/com/cloud/server/ManagementServerImpl.java
+:100755 100755 8f18b04de4e454dda0777261a3a24da24a1a354f baea54c663c836535c8de41538c4c489b20acd42 M	server/src/com/cloud/storage/StorageManagerImpl.java
+:100755 100755 42f8147cff42a29430e7eabebea820b58ee13d56 ed80aae649bf1b981b848173ac41c8e0e3086a49 M	server/src/com/cloud/storage/dao/VMTemplateDao.java
+:100755 100755 6f513a34b904eae5803f6efe3ebbd20f5ccd01be 1db12aa641fb63481b7e443c476916949e40af92 M	server/src/com/cloud/storage/dao/VMTemplateDaoImpl.java
+:100755 100755 bc8c90606d32a97c2fd7c2300e521dc8877c1785 c2efb2723e1bf53ff7d83683a3cada893ff7f25b M	setup/db/create-schema.sql

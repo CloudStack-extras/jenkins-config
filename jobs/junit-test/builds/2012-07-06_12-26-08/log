@@ -497,3 +497,8 @@ Buildfile: /var/lib/jenkins/workspace/junit-test/build.xml
     [junit] 	at com.cloud.utils.nio.NioClient.init(NioClient.java:83)
     [junit] 	at com.cloud.utils.nio.NioConnection.run(NioConnection.java:108)
     [junit] 	at java.lang.Thread.run(Thread.java:679)
+Build was aborted
+Aborted by [8mha:AAAAjB+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADLYShh49EuLU4v0s1NNCgsLAaqaTTuRAAAA[0mke4qqq
+Recording test results
+None of the test reports contained any result
+Finished: ABORTED

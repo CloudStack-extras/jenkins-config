@@ -1,0 +1,34 @@
+Started by an SCM change
+Started by an SCM change
+Checkout:junit-test / /var/lib/jenkins/workspace/junit-test - hudson.remoting.LocalChannel@15ba1ef
+Using strategy: Default
+Last Built Revision: Revision 54203f08adbc66dc171ad382c66f2e8dae885c1e (origin/master)
+Checkout:junit-test / /var/lib/jenkins/workspace/junit-test - hudson.remoting.LocalChannel@15ba1ef
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+Commencing build of Revision 63d6941bdc65859f17e0641288fe6d3190193e8b (origin/master)
+Checking out Revision 63d6941bdc65859f17e0641288fe6d3190193e8b (origin/master)
+[junit-test] $ ant unittest
+Buildfile: /var/lib/jenkins/workspace/junit-test/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] deploy home: /var/lib/jenkins/workspace/junit-test/build/deploy
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-07T02:59:19Z
+     [echo] Build number is 3.0.3.2012-07-07T02:59:19Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/utils/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/junit-test/target/jar/cloud-utils.jar
+Build was aborted
+Aborted by [8mha:AAAAjB+LCAAAAAAAAABb85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyT1dMUiOWdZ/mImBiZPBrac1Lz0kgwfBubSopwSBiGfrMSyRP2cxLx0/eCSosy8dOuKIgYpNOOcITTIMAYIYGRiYKgoADLYShh49EuLU4v0s1NNCgsLAaqaTTuRAAAA[0mke4qqq
+Recording test results
+Test reports were found but none of them are new. Did tests run? 
+For example, /var/lib/jenkins/workspace/junit-test/unittest/TESTS-TestSuites.xml is 10 hr old
+
+Finished: ABORTED

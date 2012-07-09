@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 63d6941bdc65859f17e0641288fe6d3190193e8b and f157b702e4c6821fc4af4c27e085dea097b79101
+commit f157b702e4c6821fc4af4c27e085dea097b79101
+tree fbb0ef2953c482de054106e2de2cf7a3e28266e9
+parent 63d6941bdc65859f17e0641288fe6d3190193e8b
+author David Nalley <david@gnsa.us> 1341800060 -0400
+committer David Nalley <david@gnsa.us> 1341800060 -0400
+
+    removing unneeded password from cloud-dev setup-script
+
+:100644 100644 4aa544ba81e622ad2f23f5d41f4fb7fd4087aeae 7d1ef70396a771c78c180a78355a33126c04f3c7 M	setup/db/deploy-db-clouddev.sh

@@ -1,0 +1,23 @@
+Changes in branch origin/master, between f157b702e4c6821fc4af4c27e085dea097b79101 and fa414bbf0a405b3187aef2dfddf85766551c53dd
+commit fa414bbf0a405b3187aef2dfddf85766551c53dd
+tree 0b8ff88d37e288d2a33a12b6ca225be5348f2e10
+parent fe15da5e3e5ee08948bcf16aa5851dfae71fecb8
+author Edison Su <sudison@gmail.com> 1341859723 -0700
+committer Edison Su <sudison@gmail.com> 1341859723 -0700
+
+    It's due to replace.properties is missing, by default the password is cloud for user cloud
+    Revert "removing unneeded password from cloud-dev setup-script"
+    
+    This reverts commit f157b702e4c6821fc4af4c27e085dea097b79101.
+
+:100644 100644 7d1ef70396a771c78c180a78355a33126c04f3c7 4aa544ba81e622ad2f23f5d41f4fb7fd4087aeae M	setup/db/deploy-db-clouddev.sh
+
+commit fe15da5e3e5ee08948bcf16aa5851dfae71fecb8
+tree aa2b143115a837abe30d2d71e766afe7e4dba701
+parent f157b702e4c6821fc4af4c27e085dea097b79101
+author Edison Su <sudison@gmail.com> 1341859630 -0700
+committer Edison Su <sudison@gmail.com> 1341859630 -0700
+
+    add replace.properties back
+
+:000000 100644 0000000000000000000000000000000000000000 5296a7754074cc0689db9c4ef8f92666ab83df1a A	build/replace.properties

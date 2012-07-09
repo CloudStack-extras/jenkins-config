@@ -30,7 +30,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>c8bbf04c81649919e3c128be42a9500ba47a8766</sha1>
+              <sha1>10e70bcb9c1ff5c1aa09172dfc6be5c83fde242d</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -38,7 +38,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>610</hudsonBuildNumber>
+            <hudsonBuildNumber>635</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -148,9 +148,9 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>610</number>
+  <number>635</number>
   <result>SUCCESS</result>
-  <duration>215976</duration>
+  <duration>305708</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -160,6 +160,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>nitin</string>
+    <string>brian.federle</string>
   </culprits>
 </build>

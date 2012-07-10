@@ -1,0 +1,11 @@
+Changes in branch origin/master, between ccf2851ca6037f2562f70dc1412cb106abad8168 and 29e90f8358a0c4d2efc708a55ae3178bc2f88393
+commit 29e90f8358a0c4d2efc708a55ae3178bc2f88393
+tree 68891a017f5ceaed7fdf7f032386a04cea5031a2
+parent ccf2851ca6037f2562f70dc1412cb106abad8168
+author Deepti Dohare <deepti.dohare@citrix.com> 1341880262 +0530
+committer U-nitin-PC\nitin <nitin@nitin-PC.(none)> 1341880350 +0530
+
+    CS-15429: When an instance is created with data volume, account limit for this data volume was not checked against. Adding a check for that.
+    Signed-off-by: Nitin Mehta<nitin.mehta@citrix.com>
+
+:100755 100755 b3fac7076f5c1a3910a65b2772bb0895d7261323 635a943f67633b69a1dcff4398098648c4c5dcea M	server/src/com/cloud/vm/UserVmManagerImpl.java

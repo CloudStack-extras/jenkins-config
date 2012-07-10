@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 10e70bcb9c1ff5c1aa09172dfc6be5c83fde242d and ccf2851ca6037f2562f70dc1412cb106abad8168
+commit ccf2851ca6037f2562f70dc1412cb106abad8168
+tree 7b9c2abb934b0555f2902e8dad79f9685dcc837c
+parent 10e70bcb9c1ff5c1aa09172dfc6be5c83fde242d
+author Brian Federle <brian.federle@citrix.com> 1341877238 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341877274 -0700
+
+    CS-12739: VM wizard: add asterisk next to network 'name' field
+    
+    Original patch by: Pranav Saxena <pranav.saxena@citrix.com>
+    Reviewed by: Brian Federle <brian.federle@citrix.com>
+
+:100644 100644 fb3327f5466cfa7002ccfc6d51e92ba5afaf32b3 af05f4a652d967292162f6c45432a6311c658485 M	ui/index.jsp

@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 3bbb69441371d939d23fe755b2c95c738bbaa5f3 and b000b8047e33073fb79811daa362be7527034152
+commit b000b8047e33073fb79811daa362be7527034152
+tree b6fa7add6933742d443dff8bedd60ba08825c8c1
+parent 3bbb69441371d939d23fe755b2c95c738bbaa5f3
+author Brian Federle <brian.federle@citrix.com> 1341944598 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341944647 -0700
+
+    CS-15475: Fix missing 'add guest network' action from network list
+    
+    Original patch by: Pranav Saxena <pranav.saxena@citrix.com>
+    Reviewed by: Brian Federle <brian.federle@citrix.com>
+
+:100644 100644 150ade278463492a57e6dc4f962895d2f64a00ab baeb9722b5aa6c53b174a1bfd1e3946973c47657 M	ui/scripts/network.js

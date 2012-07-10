@@ -1,0 +1,77 @@
+Changes in branch origin/master, between b000b8047e33073fb79811daa362be7527034152 and c87501d8aea2196c082024392b89fdcf18c2a931
+commit c87501d8aea2196c082024392b89fdcf18c2a931
+tree 9aea39b449d91ab9f85cee1cc5f11f335f9a7d1c
+parent 5b8f5d6ae3c2c04323aefae08d42c025221e94d9
+author Brian Federle <brian.federle@citrix.com> 1341952812 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341957486 -0700
+
+    Fix placement of header
+
+:100644 100644 2a25a0acfb2dd563979a2b024ff37d86e75c1ca7 8e924bb08dee612441bcb11522915552ea99ac7b M	ui/css/cloudstack3.css
+
+commit 5b8f5d6ae3c2c04323aefae08d42c025221e94d9
+tree 68d991516f6469c5f79b2857aa0b8fa0cea2c8ba
+parent dd52157f0927da18b2eb4fba5173b79fd43f0da9
+author Brian Federle <brian.federle@citrix.com> 1341957250 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341957427 -0700
+
+    multiEdit: Correctly pass context to header fields
+
+:100644 100644 cc793d3396ef5146bef69476d339981fedcfbdd8 64d94f6dd900ec457d644ccbedeac38d9ae00620 M	ui/scripts/ui/widgets/multiEdit.js
+
+commit dd52157f0927da18b2eb4fba5173b79fd43f0da9
+tree 134bc5107993ff975939f31d4de29a36919e3c28
+parent 5fa4f4cf3703c7343e1ca8ea6a6625de4a54a18b
+author Brian Federle <brian.federle@citrix.com> 1341955058 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341957427 -0700
+
+    Add code to show/hide 'tiers' header fields
+
+:100644 100644 005d999f8f471ca641be65f2e22f3ddccbf43d37 4e0be67b80fb18d479a7e75021e737bad7f897ff M	ui/scripts/network.js
+:100644 100644 e77901edd192e794642ac98a2d3818cb6d0b9b27 cc793d3396ef5146bef69476d339981fedcfbdd8 M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 5fa4f4cf3703c7343e1ca8ea6a6625de4a54a18b
+tree 724add0b03d898053afcfca3766835a01d72ac84
+parent 04ac28202fdec381ec8284c7d49c55edea39ad5f
+author Brian Federle <brian.federle@citrix.com> 1341954116 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341957426 -0700
+
+    Pass mulit-edit form data to add VM dialogs, as part of context
+
+:100644 100644 e5278db9a3a37b2dd7eb6f6b326b1c9aeb14ffe9 e77901edd192e794642ac98a2d3818cb6d0b9b27 M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 04ac28202fdec381ec8284c7d49c55edea39ad5f
+tree a250198023b14ba0c3597f33b6a49ae98656a669
+parent 7de02b6d5ce612bb9b119075f6ab90b883d0af67
+author Brian Federle <brian.federle@citrix.com> 1341954098 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341957426 -0700
+
+    Multi-edit: refactor form serialization
+    
+    To support header-level form items, serialize every form within the
+    multi-edit div (not just the main table form). For reusability, make
+    data serialization handled in separate 'getMultiData' function.
+
+:100644 100644 8eac50646dfc681ab0394a9b02a21ed251d94450 e5278db9a3a37b2dd7eb6f6b326b1c9aeb14ffe9 M	ui/scripts/ui/widgets/multiEdit.js
+
+commit 7de02b6d5ce612bb9b119075f6ab90b883d0af67
+tree 36147318fbb04641ce62d34020c756b1f8acd9b2
+parent 081f1e335dadaf1a0c79d79dbf042b3482aad123
+author Brian Federle <brian.federle@citrix.com> 1341953991 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341957425 -0700
+
+    Update dummy tier data
+
+:100644 100644 d12fa30831f2cdbce46e767db6eac5c263c444b6 005d999f8f471ca641be65f2e22f3ddccbf43d37 M	ui/scripts/network.js
+
+commit 081f1e335dadaf1a0c79d79dbf042b3482aad123
+tree 9764fb8396553482f250b65324927366dfc8629c
+parent b000b8047e33073fb79811daa362be7527034152
+author Brian Federle <brian.federle@citrix.com> 1341952300 -0700
+committer Brian Federle <brian.federle@citrix.com> 1341957425 -0700
+
+    Add header fields
+
+:100644 100644 f2d1a0d1558c4cc2296a792389c1022907341a0a 2a25a0acfb2dd563979a2b024ff37d86e75c1ca7 M	ui/css/cloudstack3.css
+:100644 100644 baeb9722b5aa6c53b174a1bfd1e3946973c47657 d12fa30831f2cdbce46e767db6eac5c263c444b6 M	ui/scripts/network.js
+:100644 100644 0481dda7c51527956a0602901205de5255bfd086 8eac50646dfc681ab0394a9b02a21ed251d94450 M	ui/scripts/ui/widgets/multiEdit.js

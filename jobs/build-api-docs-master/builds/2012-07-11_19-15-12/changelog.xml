@@ -1,0 +1,20 @@
+Changes in branch origin/master, between ed4b6a517bb984c3e0a38b04a5096332bebc51c4 and 8b7b838c8a689e777a9c1ed321b225631762283e
+commit 8b7b838c8a689e777a9c1ed321b225631762283e
+tree 15aec5dbe734266d7d7e39a5f8e91247e7ede49c
+parent ed4b6a517bb984c3e0a38b04a5096332bebc51c4
+author Edison Su <sudison@gmail.com> 1342048468 -0700
+committer Edison Su <sudison@gmail.com> 1342048468 -0700
+
+    CS-15544: recreate router if router filesystem is crashed
+
+:100644 100644 3985c516d30cd6ace8e9308d75e3af288535489c 8d1963d303aa40a675bc27c3c8257ce2662ede11 M	plugins/network-elements/elastic-loadbalancer/src/com/cloud/network/lb/ElasticLoadBalancerManagerImpl.java
+:100755 100755 d892957a50bc32baf6de503da0f4abb48e942189 6d20fb2fc31815915d9e962644eb91ecd4eb13b4 M	server/src/com/cloud/consoleproxy/AgentBasedConsoleProxyManager.java
+:100755 100755 6fef240d69db76ec6243a2923f82b87c29781316 ec4f685f3a73b25bdb741d7fe4fec83e4cd74fc7 M	server/src/com/cloud/consoleproxy/ConsoleProxyManagerImpl.java
+:100755 100755 dea411484ff7576868523483d5014ffd0a5b385e 766c7690ee837e0e03cd6b8b9b7f3554c13a2814 M	server/src/com/cloud/network/router/VirtualNetworkApplianceManagerImpl.java
+:100755 100755 9acc702e61b89b2194b73f513bf1485f22ce7862 67ad97c204b6f47efb68240f4337121dfe43ce2d M	server/src/com/cloud/storage/StorageManager.java
+:100755 100755 baea54c663c836535c8de41538c4c489b20acd42 27d8cb71e8368fb6015f1ceea330de1fb2218ca0 M	server/src/com/cloud/storage/StorageManagerImpl.java
+:100755 100755 bb7fa02ef227cd80227e98b758a35507b35389ac 1121bb19f610bffe238370319c291130b4d4685e M	server/src/com/cloud/storage/secondary/SecondaryStorageManagerImpl.java
+:100755 100755 635a943f67633b69a1dcff4398098648c4c5dcea 649e215acf08de5c02d5111a0ee51cd513652993 M	server/src/com/cloud/vm/UserVmManagerImpl.java
+:100644 100644 d779485b3b65ce053da56f4f93a491c8db10ba21 b92982c7b313bf8aaafaddc09a2d5210748ed7b8 M	server/src/com/cloud/vm/VirtualMachineGuru.java
+:100755 100755 561e5b290c8bf5e9e319e3588535041426530c5f ac8fd2ab46b0965e71c5317dc2d02e22ad7f87ad M	server/src/com/cloud/vm/VirtualMachineManagerImpl.java
+:100644 100644 5241eb216a6ce6cb2e8a5596f34cae3955e48169 31065fe48a61a61305b3ed98faf2ef0bbe999df2 M	server/test/com/cloud/vm/MockUserVmManagerImpl.java

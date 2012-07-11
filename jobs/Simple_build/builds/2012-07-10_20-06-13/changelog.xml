@@ -1,0 +1,15 @@
+Changes in branch origin/master, between fb59fc5c8a5114ca0c7da8c602a806dc77735c2e and d3c0110d0e45b7e02cfe7067f9a5097d7be699de
+commit d3c0110d0e45b7e02cfe7067f9a5097d7be699de
+tree 0a6905075f9fbafc1a744f5c6facde4c75dd2672
+parent fb59fc5c8a5114ca0c7da8c602a806dc77735c2e
+author Edison Su <sudison@gmail.com> 1341965110 -0700
+committer Edison Su <sudison@gmail.com> 1341965110 -0700
+
+    add trust="yes" option to ssh tasks
+    
+    ant r* targets would error out if you haven't added a host entry
+    for devcloud. This fixes the problem by trusting it.
+    
+    Signed-off-by: Tomoe Sugihara <tomoe@midokura.com>
+
+:100644 100644 b65e9e4d8aec1ee990ed6a22c0e56b415d579d53 a001dc2dd9c085bd43b93a79d3df4dcf6ce293cf M	build/build-devcloud.xml

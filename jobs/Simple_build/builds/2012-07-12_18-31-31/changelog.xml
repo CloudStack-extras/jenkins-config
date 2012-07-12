@@ -1,0 +1,41 @@
+Changes in branch origin/master, between 9b039d9a8d0f46861e79901482b81e1dd441b115 and 50373b99d66775f421bc63a5343deb83e60576f8
+commit 50373b99d66775f421bc63a5343deb83e60576f8
+tree df221263ab84f157a425c75115b43896a6c9b3aa
+parent 2a971d7c1bf5dc3c3dbdfaa104df1690d2ee703b
+author Brian Federle <brian.federle@citrix.com> 1342131967 -0700
+committer Brian Federle <brian.federle@citrix.com> 1342132155 -0700
+
+    Detail view: Fix layout of text actions
+
+:100644 100644 2af3c47311a62ecc1323b038d38859cb1a4dff71 ef81697e4647b1f439729eac8f7713487f59bb87 M	ui/css/cloudstack3.css
+:100644 100644 f703395102eea9d27fa9da57fbfe65da80b34c71 b1e9a68c8a94d01b9333e856cc4ad1a910da4344 M	ui/scripts/ui/widgets/detailView.js
+
+commit 2a971d7c1bf5dc3c3dbdfaa104df1690d2ee703b
+tree cb33b9534dce4f849e38b4cf445c07c8f0e25da2
+parent 9b039d9a8d0f46861e79901482b81e1dd441b115
+author Brian Federle <brian.federle@citrix.com> 1342131297 -0700
+committer Brian Federle <brian.federle@citrix.com> 1342132155 -0700
+
+    Detail view UI: Support for text action buttons
+    
+    Currently, only icons are rendered on detail view actions. This change
+    adds support for showing a text label next to specified actions, which
+    has a button appearance. This is to allow certain actions to be more
+    visible, in the case where an icon isn't clear enough.
+    
+    To make an action have a text label, add a 'textLabel' attribute to
+    the action properties:
+    
+    editVpc: {
+      label: 'Edit VPC',
+    
+      // textLabel property
+      textLabel: 'label.configure',
+    
+      action: {
+        ...
+      }
+    }
+
+:100644 100644 caf225f7d35c58b7b0f624a68f852c14d034fe2f 2af3c47311a62ecc1323b038d38859cb1a4dff71 M	ui/css/cloudstack3.css
+:100644 100644 1ac609f2745641eee88514ee241dfd72d2b01ff0 f703395102eea9d27fa9da57fbfe65da80b34c71 M	ui/scripts/ui/widgets/detailView.js

@@ -1,0 +1,70 @@
+Changes in branch origin/master, between 8b7b838c8a689e777a9c1ed321b225631762283e and 79c7da07abd4294f150851aa0c2d06a28564c5a9
+commit 79c7da07abd4294f150851aa0c2d06a28564c5a9
+tree 0d0ad70cfbe0a3d9a1f4672114d9a69c715d967b
+parent 8b7b838c8a689e777a9c1ed321b225631762283e
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1342048468 -0700
+committer Murali Reddy <Murali.Reddy@citrix.com> 1342052166 -0700
+
+    Phase 1 of Nicira integration
+
+:100644 100644 b65c61ee47c03bf33bcbf2ee10a2f8d6405538f0 79a43d2e6253a312e109bc851b79a44c2fa56749 M	api/src/com/cloud/agent/api/to/NicTO.java
+:100644 100644 42d91626e35d20c960561ca1101aad17dc19febb a93c242b7c1be33eb7c34df1f8a3d67d8d9ef101 M	api/src/com/cloud/agent/api/to/VirtualMachineTO.java
+:100755 100755 00ec392d7b930a1ec0d2d77c2cccd035bc9f3321 e41057690842110860e1182845f59235e6ae3b15 M	api/src/com/cloud/api/ApiConstants.java
+:100755 100755 0c9d06d48bfdaf1f491c71cda6e1d878214a2dd1 1bac0d20a40bf026af0b1439c23d1c2f819c46fb M	api/src/com/cloud/host/Host.java
+:100644 100644 0443a0f41cc112105b48bb80dae58f6f3adc4b8d 459b05bc6abe61765974804e43fc4dbae819e20f M	api/src/com/cloud/network/Network.java
+:100755 100755 84135b8ee45489fb6c284c6cf3ae0356596cbc83 b96eaa2ff6c4161ab31f9453b2e3fc535a3b59bc M	api/src/com/cloud/network/Networks.java
+:100644 100644 e54fe00bef0846ec96a3b3dde43ba433bab6f1ac be4b1d0d3525a19f3c95cb5385e1cbe3865c487e M	api/src/com/cloud/network/PhysicalNetwork.java
+:100755 100755 61b0e6249015e856655306b8888e58e815d94a8e c16474d3fbf0a24df3cebfc68426a79f0fbcc02d M	build/build-cloud-plugins.xml
+:100755 100755 2b5a74b123aa28684a268ecc3b1e5317faa9b4ab d61c698360912c34a36a92cdbdf269a2e952a7f5 M	build/package.xml
+:100755 100755 f36355d4ff31b86a1d7a058715aa1ae09c2f837d 16d7b198367d5bd9cfb99a2f26e7d0a4e7381af7 M	client/tomcatconf/components.xml.in
+:000000 100644 0000000000000000000000000000000000000000 8e749d6bf29dfcc911f488dba0fb29786c76f4bb A	client/tomcatconf/nicira-nvp_commands.properties.in
+:100644 100644 773a729ae067af724622b73b37b0b154d43326c9 7233f0150e2fed34fb77bc8ecd369fed54d6af7f M	cloud.spec
+:100644 100644 496aeb33020c471d152230a6280015e7e3cd1a87 c81d46135091eaf262d490b43521dd8053ecb866 M	plugins/hypervisors/xen/src/com/cloud/hypervisor/xen/resource/CitrixResourceBase.java
+:000000 100644 0000000000000000000000000000000000000000 edbcfa2399f5d250f7185b2f5d50fc68a51bfa1b A	plugins/network-elements/nicira-nvp/.classpath
+:000000 100644 0000000000000000000000000000000000000000 15d5c676eb41df94247e2ce77b2fbfe5cc5b6031 A	plugins/network-elements/nicira-nvp/.project
+:000000 100644 0000000000000000000000000000000000000000 4ab74cdb53215b2e1ac7ad60a5768c3c6715e364 A	plugins/network-elements/nicira-nvp/README.NiciraIntegration
+:000000 100644 0000000000000000000000000000000000000000 2d84c5c455fad1875aa6c2b844351cded88ffbc9 A	plugins/network-elements/nicira-nvp/build.xml
+:000000 100644 0000000000000000000000000000000000000000 c9a2f8c62f31775226da52b96e0cf0cf5405851a A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/CreateLogicalSwitchAnswer.java
+:000000 100644 0000000000000000000000000000000000000000 acc347d08187f1771d1466cff0ee9c05e9b530ad A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/CreateLogicalSwitchCommand.java
+:000000 100644 0000000000000000000000000000000000000000 88522af4909bddb84c1b59ba5bec0b8c3fab4886 A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/CreateLogicalSwitchPortAnswer.java
+:000000 100644 0000000000000000000000000000000000000000 af6f52921b7cbb2d11a505fcd24b5509630307e5 A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/CreateLogicalSwitchPortCommand.java
+:000000 100644 0000000000000000000000000000000000000000 cec44bcf3324e84c1a67a643b4930bdf83c12e18 A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/DeleteLogicalSwitchAnswer.java
+:000000 100644 0000000000000000000000000000000000000000 04c7630b8f5ba8ca85793e9186f1b6d09d2569f6 A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/DeleteLogicalSwitchCommand.java
+:000000 100644 0000000000000000000000000000000000000000 008d44c1ad8d0d593331ec668604b8906d41471b A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/DeleteLogicalSwitchPortAnswer.java
+:000000 100644 0000000000000000000000000000000000000000 b3a7d6474fc0b6557826ea03916ce150113adc42 A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/DeleteLogicalSwitchPortCommand.java
+:000000 100644 0000000000000000000000000000000000000000 a57c2fd6d03c3053916f31b25bd896399285dc94 A	plugins/network-elements/nicira-nvp/src/com/cloud/agent/api/StartupNiciraNvpCommand.java
+:000000 100644 0000000000000000000000000000000000000000 e32d7d2b84e42b8d58640eaa5fe3001fc95032be A	plugins/network-elements/nicira-nvp/src/com/cloud/api/commands/AddNiciraNvpDeviceCmd.java
+:000000 100644 0000000000000000000000000000000000000000 181a74792b8e5db38b17f6d9978a28c79dcef399 A	plugins/network-elements/nicira-nvp/src/com/cloud/api/commands/DeleteNiciraNvpDeviceCmd.java
+:000000 100644 0000000000000000000000000000000000000000 b4c1f88d1f8c80173d6b8a35fa32973cdcf215c6 A	plugins/network-elements/nicira-nvp/src/com/cloud/api/commands/ListNiciraNvpDeviceNetworksCmd.java
+:000000 100644 0000000000000000000000000000000000000000 a521f0e7643ee7bb4df862995dd691609629870c A	plugins/network-elements/nicira-nvp/src/com/cloud/api/commands/ListNiciraNvpDevicesCmd.java
+:000000 100644 0000000000000000000000000000000000000000 e134bed1c9d2d7e3cdf14e1375e69a3b33654b1d A	plugins/network-elements/nicira-nvp/src/com/cloud/api/response/NiciraNvpDeviceResponse.java
+:000000 100644 0000000000000000000000000000000000000000 550479bd3fe374c207f009db5fa2ed480060bfb8 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/NiciraNvpDeviceVO.java
+:000000 100644 0000000000000000000000000000000000000000 2b5f8bad451ddfae7c7b3b18953874ef45556b8b A	plugins/network-elements/nicira-nvp/src/com/cloud/network/NiciraNvpNicMappingVO.java
+:000000 100644 0000000000000000000000000000000000000000 fddb75ecc50fbce1397468f4e2c5dc048c557593 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/dao/NiciraNvpDao.java
+:000000 100644 0000000000000000000000000000000000000000 916d1ffa1d1a176413a1f11edae8842b37ac0aaa A	plugins/network-elements/nicira-nvp/src/com/cloud/network/dao/NiciraNvpDaoImpl.java
+:000000 100644 0000000000000000000000000000000000000000 a51f5214f68288c213c5e94ca75693d3d660d237 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/dao/NiciraNvpNicMappingDao.java
+:000000 100644 0000000000000000000000000000000000000000 b3223d3df1e1e8474ca4563866551052abfabad4 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/dao/NiciraNvpNicMappingDaoImpl.java
+:000000 100644 0000000000000000000000000000000000000000 ba4b9614520f5c1a440056314f366b76618f6145 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/element/NiciraNvpElement.java
+:000000 100644 0000000000000000000000000000000000000000 0f503e7e8f91237a9106ed9ca1edca1376d9cbe7 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/element/NiciraNvpElementService.java
+:000000 100644 0000000000000000000000000000000000000000 3bac88b6b97110c7bffb1b7eccf87bbf87358b04 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/guru/NiciraNvpGuestNetworkGuru.java
+:000000 100644 0000000000000000000000000000000000000000 f70d0a174da0a36e404924897a1cfd8f8b366f56 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/Attachment.java
+:000000 100644 0000000000000000000000000000000000000000 55024421fbcfb74e2ec78e905537338aa270eebb A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/LogicalSwitch.java
+:000000 100644 0000000000000000000000000000000000000000 e74fda248b755de4ba08643a1f5cba7a1b2e747c A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/LogicalSwitchPort.java
+:000000 100644 0000000000000000000000000000000000000000 c2cf9c5b362582573bba179d5fb883544402b133 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/NiciraNvpApi.java
+:000000 100644 0000000000000000000000000000000000000000 2a09cc0b3e130f097e93a265b2c91c32c2acddc4 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/NiciraNvpApiException.java
+:000000 100644 0000000000000000000000000000000000000000 79f582af9312f89acdafc2825b4b137de748afeb A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/NiciraNvpList.java
+:000000 100644 0000000000000000000000000000000000000000 de0b40f708da95862781cfa592e58050e2d94880 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/NiciraNvpTag.java
+:000000 100644 0000000000000000000000000000000000000000 530352eebcb52b79d9cd54aca0a027df659b551d A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/TransportZoneBinding.java
+:000000 100644 0000000000000000000000000000000000000000 a5f0de77fb49130bca5b8b91fb0a83fadb988da9 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/nicira/VifAttachment.java
+:000000 100644 0000000000000000000000000000000000000000 ae7b37e6edbb45055472f1d7556a1a10e97fdb62 A	plugins/network-elements/nicira-nvp/src/com/cloud/network/resource/NiciraNvpResource.java
+:100644 100644 d031feeb6ebb40155234d6b856746c8a5eab80de 7bfa7151fba17a2e8e6d701f11f88b01a213d429 M	plugins/network-elements/ovs/src/com/cloud/network/guru/OvsGuestNetworkGuru.java
+:100755 100755 a6d794d4e383a746c0dc397937c1dad2fd03018b ab1e77eb7f42b491bc615f790e627a519c5121d3 M	server/src/com/cloud/host/dao/HostDaoImpl.java
+:100644 100644 a5151948044dd3e7d16bebcca88ef0b3063f70f4 bd547abd239659e8bacfda2541adbb59724ded07 M	server/src/com/cloud/hypervisor/HypervisorGuruBase.java
+:100644 100644 115de1baeb4b38b2511a44151b82a30456b1a84f dec0608c8df8193781c057ae32f71c4a504d41d1 M	server/src/com/cloud/network/ExternalNetworkDeviceManager.java
+:100755 100755 f26d40d92f022f9271a20c7e2899b17971539e53 d04a14018e716eb46d4beb011f309e710c928f22 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 daa35e367958bb466d50674086e6170e29ff37fd 24d24f85521af8f631b74c9cca431a4244b48d2a M	server/src/com/cloud/network/guru/ExternalGuestNetworkGuru.java
+:100755 100755 33cfb2d1af55335cd3a6e1602330f8750fbf5641 cd5f551abce9b16e797877dee9c6e88977b34fce M	server/src/com/cloud/network/guru/GuestNetworkGuru.java
+:100755 100755 389b728bc75fd082bed8ea8a78661c9b049e1acd 29e423322e159ec82653b912fc109a5db532c43d M	server/src/com/cloud/server/StatsCollector.java
+:100755 100755 c2efb2723e1bf53ff7d83683a3cada893ff7f25b a15222aa203b0a7e92f3698195202c42d20093cd M	setup/db/create-schema.sql
+:100644 100644 3928619565cacbbf08214dfef2b226763d954105 a94bf5b8c9e4a53b60c1036641982a88fbe95369 M	ui/scripts/ui-custom/zoneWizard.js
+:100644 100644 0ccf40ac321bdb0d73560aa268b94790aa589fbe 70fb163a61db919dbab2210c0dc1302925345bef M	wscript_configure

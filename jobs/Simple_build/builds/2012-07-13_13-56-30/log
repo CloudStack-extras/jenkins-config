@@ -466,3 +466,136 @@ Buildfile: /var/lib/jenkins/workspace/Simple_build/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocator-random:
      [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/storage-allocators/random/src
     [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-storage-allocator-random.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-storage-allocator-random.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-storage-allocator-random:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-storage-allocators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; user-authenticator-md5.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/md5
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-md5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/md5/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-md5.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-user-authenticator-md5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-md5:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; user-authenticator-plaintext.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/plain-text
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-plaintext.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/user-authenticators/plain-text/src
+    [javac] Compiling 1 source file to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-user-authenticator-plaintext.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-user-authenticator-plaintext.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-plaintext:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] build.dir=/var/lib/jenkins/workspace/Simple_build/build; top.dir=/var/lib/jenkins/workspace/Simple_build; netapp.base.dir=/var/lib/jenkins/workspace/Simple_build/plugins/file-systems/netapp
+     [echo] Using build parameters from /var/lib/jenkins/workspace/Simple_build/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/Simple_build/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/Simple_build/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+     [echo] target.dir=/var/lib/jenkins/workspace/Simple_build/target; top.dir=/var/lib/jenkins/workspace/Simple_build
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-netapp.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/plugins/file-systems/netapp/src
+    [javac] Compiling 25 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-plugin-netapp.jar
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-plugin-netapp.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-netapp:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-file-systems:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-plugins:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-war-oss:
+      [war] Building war: /var/lib/jenkins/workspace/Simple_build/dist/client/client.war
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-test:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/test/classes
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-testclient:
+     [echo] src is /var/lib/jenkins/workspace/Simple_build/test
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-test.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/test/src
+    [javac] Compiling 37 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-test.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-test.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-usage:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-usage.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/usage/src
+    [javac] Compiling 16 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-usage.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-usage.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-awsapi:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/dist-files
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-13T17:56:52Z
+     [echo] Build number is 3.0.3.2012-07-13T17:56:52Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-awsapi:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-awsapi.jar
+     [echo] Compiling /var/lib/jenkins/workspace/Simple_build/awsapi/src
+    [javac] Compiling 939 source files to /var/lib/jenkins/workspace/Simple_build/target/classes/cloud-awsapi.jar
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/jar/cloud-awsapi.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-jar:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-awsapi.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-s3:
+      [jar] Building MANIFEST-only jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-s3.aar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-ec2:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-ec2.aar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-s3:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-auth-s3.mar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-ec2:
+      [jar] Building jar: /var/lib/jenkins/workspace/Simple_build/target/dist-files/cloud-auth-ec2.mar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 4 minutes 48 seconds
+Finished: SUCCESS

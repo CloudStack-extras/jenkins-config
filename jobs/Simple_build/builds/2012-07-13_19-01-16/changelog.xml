@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 3d7f6a35ad2ab1e335b3beeb52d278bfd355a791 and 7a5efcc2e8abf17d4d57d2cf889097f6b1960800
+commit 7a5efcc2e8abf17d4d57d2cf889097f6b1960800
+tree f4b16fd81f283f18647c4c25efe9ea02f608972c
+parent 3d7f6a35ad2ab1e335b3beeb52d278bfd355a791
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342220211 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342220355 -0700
+
+    CS-15579 - perform check when account/domainId is passed to list call by the regular user
+
+:100755 100755 2338f05adcab950feca205e6b0cc67f023a141e5 e66b886839dee788a4e60ea0f3389af2e4def927 M	server/src/com/cloud/user/AccountManagerImpl.java

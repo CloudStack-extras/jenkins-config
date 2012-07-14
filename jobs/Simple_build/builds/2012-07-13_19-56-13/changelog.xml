@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 7a5efcc2e8abf17d4d57d2cf889097f6b1960800 and 829acf6e27b6f000d72715fedd69e885a1537501
+commit 829acf6e27b6f000d72715fedd69e885a1537501
+tree 96f8788f7a01077b935780ac98764ddbec6256a6
+parent 7a5efcc2e8abf17d4d57d2cf889097f6b1960800
+author anthony <anthony@cloud.com> 1342116963 -0700
+committer anthony <anthony@cloud.com> 1342223157 -0700
+
+    CS-15551 : if 'xen.check.hvm' is false, don't check template hvm in allocator
+
+:100755 100755 27892316469ac0eaea8d93d813156d877e5b2455 ac2e92b665f20cc4052bef7f55cb42876abe1dd9 M	server/src/com/cloud/agent/manager/allocator/impl/FirstFitAllocator.java

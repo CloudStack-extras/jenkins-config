@@ -1,12 +1,12 @@
 Started by an SCM change
 Checkout:junit-test / /var/lib/jenkins/workspace/junit-test - hudson.remoting.LocalChannel@15ba1ef
 Using strategy: Default
-Last Built Revision: Revision ed4b6a517bb984c3e0a38b04a5096332bebc51c4 (origin/master)
+Last Built Revision: Revision 829acf6e27b6f000d72715fedd69e885a1537501 (origin/master)
 Checkout:junit-test / /var/lib/jenkins/workspace/junit-test - hudson.remoting.LocalChannel@15ba1ef
 Fetching changes from 1 remote Git repository
 Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
-Commencing build of Revision 8b7b838c8a689e777a9c1ed321b225631762283e (origin/master)
-Checking out Revision 8b7b838c8a689e777a9c1ed321b225631762283e (origin/master)
+Commencing build of Revision ca4309283059864d307778fab7f5df2a8858768a (origin/master)
+Checking out Revision ca4309283059864d307778fab7f5df2a8858768a (origin/master)
 [junit-test] $ ant unittest
 Buildfile: /var/lib/jenkins/workspace/junit-test/build.xml
      [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
@@ -18,8 +18,8 @@ Buildfile: /var/lib/jenkins/workspace/junit-test/build.xml
      [echo] deploy home: /var/lib/jenkins/workspace/junit-test/build/deploy
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
-     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-11T23:16:27Z
-     [echo] Build number is 3.0.3.2012-07-11T23:16:27Z
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-14T15:51:26Z
+     [echo] Build number is 3.0.3.2012-07-14T15:51:26Z
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
      [echo] Compiling /var/lib/jenkins/workspace/junit-test/utils/src

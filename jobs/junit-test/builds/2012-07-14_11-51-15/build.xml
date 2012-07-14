@@ -15,7 +15,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>8b7b838c8a689e777a9c1ed321b225631762283e</sha1>
+              <sha1>ca4309283059864d307778fab7f5df2a8858768a</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -23,7 +23,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>18</hudsonBuildNumber>
+            <hudsonBuildNumber>25</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -43,9 +43,9 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>18</number>
+  <number>25</number>
   <result>FAILURE</result>
-  <duration>15622</duration>
+  <duration>13972</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -56,7 +56,9 @@
   </scm>
   <culprits>
     <string>edison</string>
+    <string>Murali.Reddy</string>
     <string>brian.federle</string>
+    <string>anthony</string>
     <string>alena.prokharchyk</string>
     <string>sudison</string>
     <string>david</string>

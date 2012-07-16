@@ -4,8 +4,8 @@
   <description>Checks the build against a suite of unit tests.&#xd;
 </description>
   <logRotator>
-    <daysToKeep>7</daysToKeep>
-    <numToKeep>7</numToKeep>
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>50</numToKeep>
     <artifactDaysToKeep>-1</artifactDaysToKeep>
     <artifactNumToKeep>-1</artifactNumToKeep>
   </logRotator>

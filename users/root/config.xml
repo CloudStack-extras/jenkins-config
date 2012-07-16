@@ -17,7 +17,7 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>root@nitin-OptiPlex-780.(none)</emailAddress>
+      <emailAddress>root@mgmt-srv.ovs-demo</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

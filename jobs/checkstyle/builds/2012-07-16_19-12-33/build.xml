@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
+    <hudson.plugins.git.util.BuildData>
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <revision>
+              <sha1>88205a7a83ed27c115aca4800068a89468979165</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>30</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction>
+      <build class="build" reference="../../.."/>
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <no-comparator/>
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/checkstyle</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.plugins.checkstyle.CheckStyleResultAction>
+      <owner class="build" reference="../../.."/>
+      <healthDescriptor class="hudson.plugins.checkstyle.CheckStyleHealthDescriptor">
+        <priority>LOW</priority>
+        <healthy></healthy>
+        <unHealthy></unHealthy>
+        <thresholds>
+          <unstableTotalAll></unstableTotalAll>
+          <unstableTotalHigh></unstableTotalHigh>
+          <unstableTotalNormal></unstableTotalNormal>
+          <unstableTotalLow></unstableTotalLow>
+          <failedTotalAll></failedTotalAll>
+          <failedTotalHigh></failedTotalHigh>
+          <failedTotalNormal></failedTotalNormal>
+          <failedTotalLow></failedTotalLow>
+        </thresholds>
+      </healthDescriptor>
+      <result class="hudson.plugins.checkstyle.CheckStyleResult">
+        <projectLock/>
+        <owner class="build" reference="../../../.."/>
+        <modules>
+          <string></string>
+        </modules>
+        <numberOfModules>1</numberOfModules>
+        <defaultEncoding></defaultEncoding>
+        <numberOfWarnings>386</numberOfWarnings>
+        <numberOfNewWarnings>0</numberOfNewWarnings>
+        <numberOfFixedWarnings>0</numberOfFixedWarnings>
+        <delta>0</delta>
+        <lowDelta>0</lowDelta>
+        <normalDelta>0</normalDelta>
+        <highDelta>0</highDelta>
+        <lowWarnings>0</lowWarnings>
+        <normalWarnings>0</normalWarnings>
+        <highWarnings>386</highWarnings>
+        <zeroWarningsSinceBuild>0</zeroWarningsSinceBuild>
+        <zeroWarningsSinceDate>0</zeroWarningsSinceDate>
+        <zeroWarningsHighScore>0</zeroWarningsHighScore>
+        <isZeroWarningsHighscore>false</isZeroWarningsHighscore>
+        <highScoreGap>0</highScoreGap>
+        <errors/>
+        <pluginResult>SUCCESS</pluginResult>
+        <successfulSinceBuild>0</successfulSinceBuild>
+        <successfulSinceDate>0</successfulSinceDate>
+        <successfulHighscore>0</successfulHighscore>
+        <isSuccessfulHighscore>false</isSuccessfulHighscore>
+        <successfulHighScoreGap>0</successfulHighScoreGap>
+        <isSuccessfulStateTouched>false</isSuccessfulStateTouched>
+        <referenceBuild>29</referenceBuild>
+      </result>
+    </hudson.plugins.checkstyle.CheckStyleResultAction>
+  </actions>
+  <number>30</number>
+  <result>SUCCESS</result>
+  <duration>21197</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/checkstyle</workspace>
+  <hudsonVersion>1.447</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser">
+    <authorOrCommitter>true</authorOrCommitter>
+  </scm>
+  <culprits>
+    <string>kishan</string>
+  </culprits>
+</build>

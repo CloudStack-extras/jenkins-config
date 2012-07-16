@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 097c260690509d3d84cd6265699c2481fb18232d and 88205a7a83ed27c115aca4800068a89468979165
+commit 88205a7a83ed27c115aca4800068a89468979165
+tree 3a05760e9988cd8c8fc0364827303d94f51db82f
+parent 09e4b1683f5fbe65c654413d8de4ca32d38c7ec9
+author kishan <kishan@cloud.com> 1342480280 -0700
+committer kishan <kishan@cloud.com> 1342480304 -0700
+
+    Added ant target deploy-server-encrypt to enable encryption in dev setup
+
+:000000 100644 0000000000000000000000000000000000000000 4cdea827a5a7c4962835ebe578fa2c6c1d1eb8ee A	client/tomcatconf/db-enc.properties.in
+
+commit 09e4b1683f5fbe65c654413d8de4ca32d38c7ec9
+tree 75cfc98bfb513f134d6c4e1a16500759182b62db
+parent 097c260690509d3d84cd6265699c2481fb18232d
+author kishan <kishan@cloud.com> 1342480256 -0700
+committer kishan <kishan@cloud.com> 1342480304 -0700
+
+    Added ant target deploy-server-encrypt to enable encryption in dev setup
+
+:100755 100755 4d466b76478297ff0041e77b3377e776967c4fca ecd6939b9889f3a85ceab53b40a808f0347c928d M	build/developer.xml

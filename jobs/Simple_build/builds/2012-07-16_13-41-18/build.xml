@@ -27,18 +27,18 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
-          <string>origin/2.1.vanilla</string>
+          <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>b89beda6f5ff0e0141d506dcb31e9ae8ac6e8444</sha1>
+              <sha1>b627f5a85bb0d44f247a46b14d1df91a079d823d</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
-                  <name>origin/2.1.vanilla</name>
+                  <name>origin/master</name>
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>7</hudsonBuildNumber>
+            <hudsonBuildNumber>655</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -57,18 +57,18 @@
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
-          <string>origin/master</string>
+          <string>origin/2.1.vanilla</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>47ea9f254c402978e7eec38834d1f7b211b4ecfa</sha1>
+              <sha1>b89beda6f5ff0e0141d506dcb31e9ae8ac6e8444</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
-                  <name>origin/master</name>
+                  <name>origin/2.1.vanilla</name>
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>630</hudsonBuildNumber>
+            <hudsonBuildNumber>7</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -132,7 +132,7 @@
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry[4]/hudson.plugins.git.util.Build"/>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
       <scmName></scmName>
     </hudson.plugins.git.util.BuildData>
     <hudson.plugins.git.GitTagAction>
@@ -148,9 +148,9 @@
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
   </actions>
-  <number>630</number>
+  <number>655</number>
   <result>SUCCESS</result>
-  <duration>211160</duration>
+  <duration>230604</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -160,6 +160,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>david</string>
+    <string>sudison</string>
   </culprits>
 </build>

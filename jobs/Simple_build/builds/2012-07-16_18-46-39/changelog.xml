@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 8a3a788d720a3d491034b58ff02d1a919355a7bb and 097c260690509d3d84cd6265699c2481fb18232d
+commit 097c260690509d3d84cd6265699c2481fb18232d
+tree 3ec821653501129f6d744eeb712230d260fda580
+parent 8a3a788d720a3d491034b58ff02d1a919355a7bb
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342474573 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342478586 -0700
+
+    Resource tags: CS-15591 - delete tags for template/iso when corresponding vo object is removed
+
+:100755 100755 1db12aa641fb63481b7e443c476916949e40af92 3c30076295cd7705f8db18564dc915bfdc6b27fe M	server/src/com/cloud/storage/dao/VMTemplateDaoImpl.java

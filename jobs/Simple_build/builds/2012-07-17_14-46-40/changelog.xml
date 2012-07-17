@@ -1,0 +1,14 @@
+Changes in branch origin/master, between dfb0eed5a42ead051283229b2a58652f80d9ab3a and 2b2e491f27a1485338557a775e5c21179a19b32b
+commit 2b2e491f27a1485338557a775e5c21179a19b32b
+tree 427a9e9f6f6f2658b7538c1d2b15815e2e80980b
+parent dfb0eed5a42ead051283229b2a58652f80d9ab3a
+author bfederle <bfederle@gmail.com> 1342550336 -0700
+committer bfederle <bfederle@gmail.com> 1342550513 -0700
+
+    CS-15572: Fix page index for list view filters
+    
+    This fixes an issue where the page index is not reset back 1 when
+    activating the search or filter functionality, causing truncation when
+    trying to scroll down to later pages.
+
+:100644 100644 b01d01e18b07c7f12e3906a435ebf7b3862a233d 087f5401d3dfd2344d7643d2f437c2f02a9a7513 M	ui/scripts/ui/widgets/listView.js

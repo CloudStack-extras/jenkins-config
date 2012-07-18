@@ -1,0 +1,10 @@
+Changes in branch origin/master, between f2bbf62d9d5d87149b5db729b902e6ba6364718a and 8e648e4a98d8eaa3d8475220e53fb83c07968cc8
+commit 8e648e4a98d8eaa3d8475220e53fb83c07968cc8
+tree 4769b11209ebebcfaf0e6b28094f296b4e14b346
+parent f2bbf62d9d5d87149b5db729b902e6ba6364718a
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342651516 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342651657 -0700
+
+    Fixed update endpointe.url global config var
+
+:100755 100755 df2fc9ec7412487b41587837de2c81d3d6bc1701 6c0af1b05287b58cbb63d744b4da0f659c9324e3 M	server/src/com/cloud/configuration/Config.java

@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 152b17b7f399acc0667845a137f3a4610292f774 and 9b4c578e0d10afb600c7aa1e63bddb93a7a02de8
+commit 9b4c578e0d10afb600c7aa1e63bddb93a7a02de8
+tree d66dcfcfc5a8e5951dc08f7168542b23d5788ce5
+parent 152b17b7f399acc0667845a137f3a4610292f774
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342634347 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1342827864 -0700
+
+    More logging on nic release
+
+:100755 100755 6cbed8dffc2844c7dae1a7d066463daf8e648bb3 ec8887f340cf0660d9209e7b082aa205776b7faf M	server/src/com/cloud/network/guru/ControlNetworkGuru.java
+:100755 100755 12f23cca99ba2605488ee16a580bf72be0c7b6a5 b513325d5eea7a3b81b35a87db15dd69355815ca M	server/src/com/cloud/network/guru/PodBasedNetworkGuru.java
+:100755 100755 46477f375d4e0562f7fc3a35b01fc8fe67d078e7 f23ff9af950656cef450c9465bdf0a17770c9ec8 M	server/src/com/cloud/network/guru/PublicNetworkGuru.java

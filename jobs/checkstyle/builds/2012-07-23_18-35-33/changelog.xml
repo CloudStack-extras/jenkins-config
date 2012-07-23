@@ -1,0 +1,42 @@
+Changes in branch origin/master, between 642c667a757e2fe0a817cdb7e6dc9dfb3cbe1f36 and b80c3dc9c6439879d6901b3225bc8705a8e5cc8c
+commit 59462cd825e99d844d1d88ce92b134b3760745d6
+tree 5780b5200c307c27511c6460c0a8827d5cd48a4b
+parent aef09e1b20b1675b5ae85483de3df39b339d1cc3
+author Likitha Shetty <likitha.shetty@citrix.com> 1343082268 -0700
+committer prachi <prachi@cloud.com> 1343082281 -0700
+
+    Modifying filter support in 3 EC2 Describe* API's(DescribeInstances, DescribeVolumes and DescribeSnapshots) to include tags. Component: AWSAPI.
+    
+    Tags support has been added to 3 EC2Describe* API's(DescribeInstances, DescribeVolumes and DescribeSnapshots). Hence for the same 3 EC2Describe* API's filter support has been modified to included 3 tag related filters: tag-key,
+    tag-value and tag:key.
+
+:100644 100644 aa048b2058d1d63016a39ff7e4f7ee9268875923 38f80c815fcc720169ae12d0d6362f96f369dad9 M	awsapi/src/com/cloud/bridge/service/EC2SoapServiceImpl.java
+:100644 100644 e79cd9da870294199a9ef66ca02741059f427389 145342fb8b042db4f8f52575fce015833379d0b5 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2DescribeInstances.java
+:100644 100644 1bf6e3783e1c503c18e0c2108bbcade87bb9ce33 cd77fde854a6acdf352db30392a23031c8ae4870 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2DescribeSnapshots.java
+:100644 100644 04145fa36c7a47a845ca2e6ab4278088b31997b6 3bfd2a41027d26324311fb959deaadf3ab9620c2 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2DescribeVolumes.java
+:100644 100644 29060934778c3c725d2b5da27c6c1b305c73b42c c64a0732f67527e59c5153f5a1f39eb98cfe910a M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Engine.java
+:100644 100644 6d5255ab2d87be52128b945b4fffa9d0082050ef 449d89e2180cfc0836d6dedb297ae8ba2db8b053 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2InstanceFilterSet.java
+:100644 100644 1c428f029cc95dd5870ca40b9ee5422b4a17c954 c2bed3ce1613a3708b12f7b774e3c20b26ea969e M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2SnapshotFilterSet.java
+:100644 100644 95d306f7c00a4350acfa325f6f0c4834d98883c0 0594231413e0af748ff72b06a438399878d31129 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2VolumeFilterSet.java
+:100644 100644 50b2b25af40527811b7d04fca289691caffe31a0 52c2459e072f40d8ca73c3f8df727329d002ec92 M	awsapi/src/com/cloud/stack/CloudStackApi.java
+
+commit aef09e1b20b1675b5ae85483de3df39b339d1cc3
+tree c1b536222fab2661dec961f525739c6a4d32e03f
+parent 88f7872b81c824d2a547d6ca03b95261188c2857
+author Likitha Shetty <likitha.shetty@citrix.com> 1343081469 -0700
+committer prachi <prachi@cloud.com> 1343082158 -0700
+
+    Adding tags support to the 4 EC2 Describe* API's (DescribeImages, DescribeInstances, DescribeVolumes, DescribeSnapshots) in AWSAPI
+    
+    - List* APIs in CloudStack have tags support. Adding the corresponding support to EC2Decsribe* APIs in the AWSAPI component.
+
+:100644 100644 9a8e777f6dd1fd575dfe5cd1ce8f96d3c4618306 aa048b2058d1d63016a39ff7e4f7ee9268875923 M	awsapi/src/com/cloud/bridge/service/EC2SoapServiceImpl.java
+:100644 100644 36d2b6869098a6480b4e01150adb8aa27279bcc9 29060934778c3c725d2b5da27c6c1b305c73b42c M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Engine.java
+:100644 100644 75e792b1a1b42851edf51b6097ca981a8d5f3c54 1c30b674f6011911114d1699ec71f30777b41ab9 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Image.java
+:100644 100644 064d7e077a608125e662f062ed17d62b7ddca3d7 6e2d696aeac97da25e0d94a4fb658c46bf04b379 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Instance.java
+:100644 100644 339506deda0ad97b67f8ffd01a8360131fe306e1 9e09b7171b3d4382a40afee4278781efb79ee71f M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Snapshot.java
+:100644 100644 009c17aa687cb7b398919f89ed72f8233a4c3302 23d6d701646d9d5e81a21a3e862464df60d3d763 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Volume.java
+:100644 100644 73dc4cd13ae3c77ee08d7b65f6ad3eb9d3559984 1273cc1d3fcc23f58cb18d9413331199193091e8 M	awsapi/src/com/cloud/stack/models/CloudStackSnapshot.java
+:100644 100644 14d6e823cd42ac7ef642c4a0944c6470ca39d92e f0390ac03a7ca0ca8081a430a24e8aef639d1383 M	awsapi/src/com/cloud/stack/models/CloudStackTemplate.java
+:100644 100644 f72e1b62b2220276cf064b7c867d88f07def9700 e1db2d9ae65e8591d36ceb188202e3e47fe6ac48 M	awsapi/src/com/cloud/stack/models/CloudStackUserVm.java
+:100644 100644 13d87f4bec88216459b72a797ba1216acb21fa7e ff0b717c72b2353a90bcd6aacc75fc5342985b09 M	awsapi/src/com/cloud/stack/models/CloudStackVolume.java

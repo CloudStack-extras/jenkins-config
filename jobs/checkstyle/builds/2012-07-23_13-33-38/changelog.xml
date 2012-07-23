@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 4c6e547e701790e8f0330fb872f6d18ec76ba7b3 and 65551cff82b646911bccdb3764951e65a9684e42
+commit 65551cff82b646911bccdb3764951e65a9684e42
+tree 39b4aa61ee295c967cb8a07102809c12a72b26ce
+parent 4c6e547e701790e8f0330fb872f6d18ec76ba7b3
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343064776 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343064839 -0700
+
+    Resource tags: CS-15647 - delete resource tags when SG is expunged
+
+:100644 100644 0c9bdc57995a3946e794caf0b496f0d4c4feb29e 81c20e3ccdbebfb0d80f5b45a30a992f5fe3db65 M	server/src/com/cloud/network/security/dao/SecurityGroupDaoImpl.java

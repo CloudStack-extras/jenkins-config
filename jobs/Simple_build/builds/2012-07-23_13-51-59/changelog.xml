@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 65551cff82b646911bccdb3764951e65a9684e42 and 7bef9a961d968e4187d1bf843404b29992c21a67
+commit 7bef9a961d968e4187d1bf843404b29992c21a67
+tree d7f59b9ab1a29563aa41f25f6a58ca4a1c30b69d
+parent 65551cff82b646911bccdb3764951e65a9684e42
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343065821 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343065880 -0700
+
+    Resource tags: CS-15661 - don't accept NULL or empty key value when create resource tag
+
+:100644 100644 f87ae6e96d84263118099797c4d629e20c73ac7b a981363cc89ded5ae74eef9063ebc433c7271969 M	api/src/com/cloud/api/commands/CreateTagsCmd.java
+:100644 100644 f79eba4a17f8f9acc71b78c7d4bd1756213a72bc 84a26924a71c6c087ccba5eca26387f3aae8a6d9 M	server/src/com/cloud/tags/TaggedResourceManagerImpl.java

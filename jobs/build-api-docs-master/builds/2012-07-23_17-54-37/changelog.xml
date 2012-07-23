@@ -1,0 +1,38 @@
+Changes in branch origin/master, between 9e5fb17e3d1caed094dd962029b206294618303d and 88f7872b81c824d2a547d6ca03b95261188c2857
+commit 88f7872b81c824d2a547d6ca03b95261188c2857
+tree 1c5cf20ff0463f9476256e2700a214a109a27030
+parent c60e4b4a9e3b7403b8e04b2e2223f12a04463133
+author Koushik Das <koushik.das@citrix.com> 1343080016 -0700
+committer prachi <prachi@cloud.com> 1343080144 -0700
+
+    CS-15279
+    
+    Issue happens when ROOT volume gets created and there is subsequent failure in starting the VM. During retry if allocator assigns a different storage pool the scenario was not handled. Now in case of local storage the volume get recreated on the newly assigned pool and old one gets cleaned up. In case of shared storage the existing volume is migrated to new storage pool.
+
+:100755 100755 27d8cb71e8368fb6015f1ceea330de1fb2218ca0 d94bada2866bb00b357a24b1eb135119da0b4435 M	server/src/com/cloud/storage/StorageManagerImpl.java
+
+commit c60e4b4a9e3b7403b8e04b2e2223f12a04463133
+tree fa5b44243db336ce2f608d5bce13d9dd3df61b56
+parent 9e5fb17e3d1caed094dd962029b206294618303d
+author Likitha Shetty <likitha.shetty@citrix.com> 1342138343 -0700
+committer prachi <prachi@cloud.com> 1343068277 -0700
+
+    Adding support in AWSAPI for CloudStack API's that implement the tags feature.
+    
+    Verified the output of,
+    1. ec2-create-tags for all 4 supported ec2 resources(image, instance, volume and snapshot) with and without tag-value.
+    2. ec2-delete-tags for all types of created tags.
+    3. ec2-describe-tags with and without all supported filter.
+
+:100644 100644 9e10e0929a3c5ea06e717c9f9a9f0eaf7a76d43b 9a8e777f6dd1fd575dfe5cd1ce8f96d3c4618306 M	awsapi/src/com/cloud/bridge/service/EC2SoapServiceImpl.java
+:000000 100644 0000000000000000000000000000000000000000 1ce65277c75595b7977bf028ba3526af95056f49 A	awsapi/src/com/cloud/bridge/service/core/ec2/EC2DescribeTags.java
+:000000 100644 0000000000000000000000000000000000000000 9559e65a373d03fce4a720dfca8af1b8d75de257 A	awsapi/src/com/cloud/bridge/service/core/ec2/EC2DescribeTagsResponse.java
+:100644 100644 5f4584759f9a197f2e6c720ae0ed4e332b57269d 36d2b6869098a6480b4e01150adb8aa27279bcc9 M	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Engine.java
+:000000 100644 0000000000000000000000000000000000000000 e3c5881909a8b25bb60565637a4e093d280856f2 A	awsapi/src/com/cloud/bridge/service/core/ec2/EC2ResourceTag.java
+:000000 100644 0000000000000000000000000000000000000000 beb2af9d99fb4ad065f0397aae6981d994fb26a3 A	awsapi/src/com/cloud/bridge/service/core/ec2/EC2TagKeyValue.java
+:000000 100644 0000000000000000000000000000000000000000 3a0666edf823cba7183cbef68e31ecf742cf7cb0 A	awsapi/src/com/cloud/bridge/service/core/ec2/EC2TagTypeId.java
+:000000 100644 0000000000000000000000000000000000000000 80c9f8a5afc1a6d9ce7c6a19990edb67913ff2ee A	awsapi/src/com/cloud/bridge/service/core/ec2/EC2Tags.java
+:000000 100644 0000000000000000000000000000000000000000 c2d33c39ea15a7774c7c95947fe5bda1b3158250 A	awsapi/src/com/cloud/bridge/service/core/ec2/EC2TagsFilterSet.java
+:100644 100644 e46ebddb5469ce8d3f6a8207f804c95855d7274c 50b2b25af40527811b7d04fca289691caffe31a0 M	awsapi/src/com/cloud/stack/CloudStackApi.java
+:100644 100644 e00a9b90859ff0ef7f7711e62fc74732c0185df0 2097ab6f13579251b9f7cbd1302e9feb731c17bd M	awsapi/src/com/cloud/stack/models/ApiConstants.java
+:000000 100644 0000000000000000000000000000000000000000 8dd75c5a41b5447f10fef005b3f931ee461ad7e5 A	awsapi/src/com/cloud/stack/models/CloudStackResourceTag.java

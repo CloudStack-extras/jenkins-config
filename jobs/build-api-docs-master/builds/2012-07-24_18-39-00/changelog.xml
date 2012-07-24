@@ -1,0 +1,10 @@
+Changes in branch origin/master, between d7d9b341c88e65783ca4574a4302543409605ff8 and 71fddd09575daccdb1752192cecc5e26c11b38ad
+commit 71fddd09575daccdb1752192cecc5e26c11b38ad
+tree 5d4eb0b0df1b064a4456c4e04b38ddc98ce8e082
+parent d7d9b341c88e65783ca4574a4302543409605ff8
+author Brian Federle <brian.federle@citrix.com> 1343169318 -0700
+committer Brian Federle <brian.federle@citrix.com> 1343169318 -0700
+
+    Fix sprite sheet, which was out of date
+
+:100644 100644 71674d13b775d451e35456549754799538cbc9b7 f1f5b8c5820a483a28780ccc6342fb3cf1dbe1fa M	ui/images/sprites.png

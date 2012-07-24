@@ -1,0 +1,16 @@
+Changes in branch origin/master, between 003c62583cafa05e260f0d0aad32c653554ea6e7 and d7d9b341c88e65783ca4574a4302543409605ff8
+commit d7d9b341c88e65783ca4574a4302543409605ff8
+tree cc786334e6e9175a91e9a88bcd869b9205601b43
+parent 003c62583cafa05e260f0d0aad32c653554ea6e7
+author Brian Federle <brian.federle@citrix.com> 1343163766 -0700
+committer Brian Federle <brian.federle@citrix.com> 1343169047 -0700
+
+    Notifications widget: support custom interval
+    
+    If 'interval' attribute is passed in notification object, use that
+    interval instead of the default.
+    
+    Conflicts:
+    	ui/scripts/ui/widgets/notifications.js
+
+:100644 100644 5ab5fcc444b3adfbb4d34a02d3d48625f8bbe18a 007e40590f5ff07b2082e662515d0d6a01128094 M	ui/scripts/ui/widgets/notifications.js

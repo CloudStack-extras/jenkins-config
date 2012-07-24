@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 71050bb37f10e2413bfe2835829bbbd425666cc1 and 576d093e9cf267c01d43f845a715bb2fd685f43f
+commit 576d093e9cf267c01d43f845a715bb2fd685f43f
+tree 94b0852866ff4531bbe149ec65c5697889a05d7d
+parent 71050bb37f10e2413bfe2835829bbbd425666cc1
+author Edison Su <sudison@gmail.com> 1343162695 -0700
+committer Edison Su <sudison@gmail.com> 1343162695 -0700
+
+    fix CS-15432 Failed to detach VMware tools ISO after VMware tools
+    installation
+    RB: https://reviews.apache.org/r/5738/
+    Send-by: mice_xia@tcloudcomputing.com
+
+:100755 100755 a8c61f6fad84710d6eb64d1b5f2a1d362bb19ef7 685a321bcca8cb3649a03505720cd304eefe8945 M	plugins/hypervisors/vmware/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java

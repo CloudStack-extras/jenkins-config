@@ -1,0 +1,40 @@
+Changes in branch origin/master, between a1d53f288b56d2852b698b9ee49488fed6b5d231 and 5ba20b328da73b563f089fb93d1e77081767830a
+commit dade14aab13b7f308ad2f6f739f9b400a42f9570
+tree e295a99ca71ba01fe4f5004647087827b3b59d89
+parent 018a243ca1e01674a538487ac94870d55acefa4f
+author Pranav Saxena <pranav.saxena@citrix.com> 1343073305 +0530
+committer Pranav Saxena <pranav.saxena@citrix.com> 1343073305 +0530
+
+    CS-15540: Shared Networks IPs in Advanced Zone appear as 'Direct IP' in System-Wide-Capacity Dashboard
+
+:100644 100644 35fe56849d980a7bf1b8de15ba3013792a294e78 0ce3d4442c4f0f069b97f3b37b4af83c06b404e8 M	client/WEB-INF/classes/resources/messages.properties
+
+commit 374be31b63f6ea0f835495933730358380745a56
+tree 7f90620e79a2dc893dbe2dae611603c60b543ca2
+parent 64cfdc5254091255812c0bf36b00c870aa5b0732
+author Pranav Saxena <pranav.saxena@citrix.com> 1342162958 +0530
+committer Pranav Saxena <pranav.saxena@citrix.com> 1342162958 +0530
+
+    CS-15572 : StartIndex handled incorrectly when switching between the various Filter by options while listing ISOs in the UI
+
+:100644 100644 b01d01e18b07c7f12e3906a435ebf7b3862a233d 60f701bcec9dfe2670260c26f187638efae1c753 M	ui/scripts/ui/widgets/listView.js
+
+commit 9eebdd808d6b48e9b8d573cd4c337a3c55f17d8c
+tree bd3b01ec84c067e11dd1e2add1987b02ceb713e2
+parent 692e8fb98c208c2aa1edfc30782a4ee4eccb547d
+author Pranav Saxena <pranav.saxena@citrix.com> 1341915014 +0530
+committer Pranav Saxena <pranav.saxena@citrix.com> 1341915014 +0530
+
+    CS-15475:Not showing Add GuestNetwork Tab in Network in multi zone setup of advanced and basic zones together
+
+:100644 100644 150ade278463492a57e6dc4f962895d2f64a00ab baeb9722b5aa6c53b174a1bfd1e3946973c47657 M	ui/scripts/network.js
+
+commit e91dd3e653a23a357c9d1932eba94b11879b717e
+tree a0870669210defcb95efd8fa6558366a94835cd9
+parent fa414bbf0a405b3187aef2dfddf85766551c53dd
+author Pranav Saxena <pranav.saxena@citrix.com> 1341875581 +0530
+committer Pranav Saxena <pranav.saxena@citrix.com> 1341875581 +0530
+
+    CS-12739:DeployvM wizard when choosing to Add a new network if user does not provide the network name then clicking on Next does nothing
+
+:100644 100644 fb3327f5466cfa7002ccfc6d51e92ba5afaf32b3 af05f4a652d967292162f6c45432a6311c658485 M	ui/index.jsp

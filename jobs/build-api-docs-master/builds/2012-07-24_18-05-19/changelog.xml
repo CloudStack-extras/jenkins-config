@@ -1,0 +1,24 @@
+Changes in branch origin/master, between 5c5a4e3a10b9ab2c54ce507962cdf73fa62957d1 and e5f0799b7a9dcc635480d3f58f4332ebfbf77492
+commit e5f0799b7a9dcc635480d3f58f4332ebfbf77492
+tree 4b6e7ec09a78c15430ec5215c61839072133eaae
+parent fb16545510a8664920fa6e35a18b4526d4bd39d4
+author Edison Su <sudison@gmail.com> 1343167438 -0700
+committer Edison Su <sudison@gmail.com> 1343167482 -0700
+
+    CS-15048: Log rotation functionality in system VMs is broken resuting in
+    100% of disk space getting consumed.
+    RB: https://reviews.apache.org/r/5907/
+    Send-by: saksham.srivastava@citrix.com
+
+:100755 100755 1b5639641e88c5683e2b2ed8312462b0a9f098c6 83692bbbbd6a9c15361e50493ccb1d56cd66eb56 M	build/deploy/production/server/conf/log4j-cloud.xml
+
+commit fb16545510a8664920fa6e35a18b4526d4bd39d4
+tree 2e45d0d3ffa40979bd18f8e7a3d0e13a292e8c85
+parent 5c5a4e3a10b9ab2c54ce507962cdf73fa62957d1
+author Wido den Hollander <wido@widodh.nl> 1343167362 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343167362 +0200
+
+    Fix include location for the SUSE init script.
+
+:100644 100644 4f6f04dd4d788c98276edb3d72993255308cef87 01606c72a0dd5e6b34337737b3d644d57df26d5a M	agent/distro/opensuse/sles/SYSCONFDIR/init.d/cloud-agent.in
+:100644 100644 4f6f04dd4d788c98276edb3d72993255308cef87 01606c72a0dd5e6b34337737b3d644d57df26d5a M	agent/distro/sles/SYSCONFDIR/init.d/cloud-agent.in

@@ -1,0 +1,20 @@
+Changes in branch origin/master, between 3129d0c8e5df2dd2e92c881e602fde16c3e2ddfe and 003c62583cafa05e260f0d0aad32c653554ea6e7
+commit 003c62583cafa05e260f0d0aad32c653554ea6e7
+tree 012fff0e89244046451a5ab8c6fb24d27baeb419
+parent 50322b4762d5ea6e5488329ee763427a6145ad26
+author Brian Federle <brian.federle@citrix.com> 1343168514 -0700
+committer Brian Federle <brian.federle@citrix.com> 1343168557 -0700
+
+    Add tags to FW rule multi-edit
+
+:100644 100644 cbfa4ec6ca20774170530d99fff471c1e60e101c 0a8f970f8f7d22c205e9d8e7e28749f10b2452c6 M	ui/scripts/network.js
+
+commit 50322b4762d5ea6e5488329ee763427a6145ad26
+tree 912cd54ef239445da59d8861e7e56fa290e13ff9
+parent 3129d0c8e5df2dd2e92c881e602fde16c3e2ddfe
+author Brian Federle <brian.federle@citrix.com> 1343168207 -0700
+committer Brian Federle <brian.federle@citrix.com> 1343168557 -0700
+
+    Fix tagger UI wrapping in some browsers
+
+:100644 100644 e405fbf4fcbbc50ecc4ec9dcd10301521a4502a9 51663cf59e19399d22d3d3673226f47fd4a98314 M	ui/css/cloudstack3.css

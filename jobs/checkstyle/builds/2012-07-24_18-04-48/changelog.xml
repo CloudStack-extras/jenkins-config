@@ -1,0 +1,11 @@
+Changes in branch origin/master, between 5c5a4e3a10b9ab2c54ce507962cdf73fa62957d1 and fb16545510a8664920fa6e35a18b4526d4bd39d4
+commit fb16545510a8664920fa6e35a18b4526d4bd39d4
+tree 2e45d0d3ffa40979bd18f8e7a3d0e13a292e8c85
+parent 5c5a4e3a10b9ab2c54ce507962cdf73fa62957d1
+author Wido den Hollander <wido@widodh.nl> 1343167362 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343167362 +0200
+
+    Fix include location for the SUSE init script.
+
+:100644 100644 4f6f04dd4d788c98276edb3d72993255308cef87 01606c72a0dd5e6b34337737b3d644d57df26d5a M	agent/distro/opensuse/sles/SYSCONFDIR/init.d/cloud-agent.in
+:100644 100644 4f6f04dd4d788c98276edb3d72993255308cef87 01606c72a0dd5e6b34337737b3d644d57df26d5a M	agent/distro/sles/SYSCONFDIR/init.d/cloud-agent.in

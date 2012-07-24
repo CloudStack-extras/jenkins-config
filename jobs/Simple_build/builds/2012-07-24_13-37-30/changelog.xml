@@ -1,0 +1,20 @@
+Changes in branch origin/master, between c99b1d104a455f8ecc1adc7bc09b2e3e76870fff and eab3e4783e0f8aba7dab889bdfcc441a028b387a
+commit eab3e4783e0f8aba7dab889bdfcc441a028b387a
+tree 18e058628435404ceba6dfc36b8c870113fa6128
+parent c99b1d104a455f8ecc1adc7bc09b2e3e76870fff
+author Wido den Hollander <wido@widodh.nl> 1343135912 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343151159 +0200
+
+    Remove cloud-daemonize and use JSVC
+    
+    We now use JSVC for daemonizing our agent and usage server.
+
+:100644 100644 c38e2b8137b91ea7f6a20fd29ad2563ba2dfe6e9 7fcf570538fdc7de0e9b180ba1d35897c2001f3f M	agent/conf/environment.properties.in
+:100755 100755 c4607cbb7993c78da831d56446951df5bf890c19 e2bbdb68a791838a63c414e57715a9c23aa04d5a M	agent/distro/ubuntu/SYSCONFDIR/init.d/cloud-agent.in
+:100755 000000 8e548ae78b375aed32f91e947ccb80270c50d2ac 0000000000000000000000000000000000000000 D	agent/libexec/agent-runner.in
+:100644 100644 941f09498b4aafc3c6340e483df0e23c541f4f09 ca3f7de02f4a4de46e5c3487c008a433f843d850 M	agent/src/com/cloud/agent/AgentShell.java
+:100644 000000 0d3e392fd0f167820b75fa0595348f4b9b8ad3f3 0000000000000000000000000000000000000000 D	daemonize/daemonize.c
+:100644 100644 db717a48114fd7d5a8a53d156ba537098b3c2eb5 56696108448b0c454e3a6d4e1d6ffc1975b71581 M	debian/control
+:100755 100755 e59fc2acecb070fb6856248fa3217ab3b96cb6f6 13876b94407857f20c4bb4b24bcec7f4648df6d3 M	usage/distro/ubuntu/SYSCONFDIR/init.d/cloud-usage.in
+:100755 000000 a5d57efc9e3830f45251fb1bc7482baf3ace9135 0000000000000000000000000000000000000000 D	usage/libexec/usage-runner.in
+:100644 100644 c03f7f0efa17596412331138e24288ba7f9675d7 4cdca7986c24bdfb438ca7230dcbddb8a4afd1b4 M	usage/src/com/cloud/usage/UsageServer.java

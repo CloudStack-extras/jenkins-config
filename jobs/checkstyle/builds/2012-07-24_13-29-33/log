@@ -1,0 +1,18 @@
+Started by an SCM change
+Checkout:checkstyle / /var/lib/jenkins/workspace/checkstyle - hudson.remoting.LocalChannel@1d4fe75
+Using strategy: Default
+Last Built Revision: Revision 4421cd9dee68f54e11256b5de33c51d7c3c7c6fe (origin/master)
+Checkout:checkstyle / /var/lib/jenkins/workspace/checkstyle - hudson.remoting.LocalChannel@1d4fe75
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+Commencing build of Revision c99b1d104a455f8ecc1adc7bc09b2e3e76870fff (origin/master)
+Checking out Revision c99b1d104a455f8ecc1adc7bc09b2e3e76870fff (origin/master)
+Cleaning workspace
+[checkstyle] $ /bin/sh -xe /tmp/hudson8600668471663772840.sh
++ checkstyle -f xml -o ./checkstyle_errors.xml -c /var/lib/jenkins/cs_checks.xml -r agent/src/com/cloud/agent
++ exit 0
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Parsing 1 files in /var/lib/jenkins/workspace/checkstyle
+[CHECKSTYLE] Successfully parsed file /var/lib/jenkins/workspace/checkstyle/checkstyle_errors.xml of module  with 387 warnings.
+[CHECKSTYLE] Computing warning deltas based on reference build #49
+Finished: SUCCESS

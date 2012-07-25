@@ -447,3 +447,20 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
      [echo] build-apidocs
+     [exec] Traceback (most recent call last):
+     [exec]   File "/var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py", line 153, in <module>
+     [exec]     category = choose_category(fn)
+     [exec]   File "/var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py", line 134, in choose_category
+     [exec]     (fn, __file__))
+     [exec] Exception: Need to add a category for getCiscoVSMDetails.xml to /var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py:known_categories
+     [exec] Result: 1
+     [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-master/dist/commands.xml
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
+   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
+      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 1 minute 12 seconds
+Archiving artifacts
+Finished: SUCCESS

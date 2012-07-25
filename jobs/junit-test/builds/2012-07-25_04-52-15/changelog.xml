@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 63f6308f039fc7c0ee8c0516c11bc6ddbc5cd05a and 2b1758b2338e9da31f282c869842525ac604553a
+commit 2b1758b2338e9da31f282c869842525ac604553a
+tree 5585399169901e8a6887e640070825a87c35a623
+parent 63f6308f039fc7c0ee8c0516c11bc6ddbc5cd05a
+author olgasmola <olya.smola@gmail.com> 1340960359 +0300
+committer olgasmola <olya.smola@gmail.com> 1343206105 +0300
+
+    CS-15391: Add required fields validation when Edit on the Details tab for Infrastructure/Zones, Infrastructure/Pods.
+
+:100644 100644 6d3b765871a7acaaba39a4e141296b78201f7909 712c122f68a4b8991d34dfe1414d391c2abde84c M	ui/scripts/system.js

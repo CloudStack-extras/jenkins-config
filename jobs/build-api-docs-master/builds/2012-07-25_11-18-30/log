@@ -1,0 +1,466 @@
+Started by an SCM change
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@1d4fe75
+Using strategy: Default
+Last Built Revision: Revision ae60cd7b87c38058d6bbfafc4ffe1d41a89fb63a (origin/master)
+Checkout:build-api-docs-master / /var/lib/jenkins/workspace/build-api-docs-master - hudson.remoting.LocalChannel@1d4fe75
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+Commencing build of Revision b6b2dc78407fa3549248693517188f16761bef4e (origin/master)
+Checking out Revision b6b2dc78407fa3549248693517188f16761bef4e (origin/master)
+[build-api-docs-master] $ ant build-apidocs-zip
+Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] deploy home: /var/lib/jenkins/workspace/build-api-docs-master/build/deploy
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-25T15:19:27Z
+     [echo] Build number is 3.0.3.2012-07-25T15:19:27Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-utils:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/utils/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-utils.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-api:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/api/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-api.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/vmware-base/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-vmware-base.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/core/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-core.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/agent/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-agent.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/server/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-server.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-server:
+     [copy] Copying 27 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/client/conf
+     [copy] Copying 59 files to /var/lib/jenkins/workspace/build-api-docs-master/target/db
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-agent:
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/dist/agent/conf
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/dist/agent/conf
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-scripts:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ui:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-console-proxy:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/console-proxy/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-console-proxy.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcopy-console-proxy:
+     [copy] Copying 1 file to /var/lib/jenkins/workspace/build-api-docs-master/dist/console-proxy
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-console-proxy:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; ovm.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/hypervisors/ovm
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/hypervisors/ovm/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-ovm.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ovm:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-package:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm:
+      [zip] Updating zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/systemvm.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-systemvm-patch:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch
+    [mkdir] Created dir: /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch/usr/sbin
+     [copy] Copying 75 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch
+     [copy] Copying 5 files to /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch/usr/sbin
+      [tar] Building tar: /var/lib/jenkins/workspace/build-api-docs-master/dist/patch.tar
+     [gzip] Building: /var/lib/jenkins/workspace/build-api-docs-master/dist/cloud-scripts.tgz
+   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/patch.tar
+   [delete] Deleting directory /var/lib/jenkins/workspace/build-api-docs-master/dist/build-patch
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mpackage-oss-systemvm-iso:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netscaler:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; netscaler.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/netscaler
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netscaler:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/netscaler/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-plugin-netscaler.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-netscaler:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-f5:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; f5.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/f5
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-f5:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/f5/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-plugin-f5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-f5:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-srx:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; srx.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/juniper-srx
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-srx:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/juniper-srx/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-plugin-srx.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-srx:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-dispersing:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; dp-user-dispersing.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/deployment-planners/user-dispersing
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-dispersing:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/deployment-planners/user-dispersing/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-dp-user-dispersing.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-dp-user-dispersing:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-concentrated-pod:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; dp-user-concentrated-pod.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/deployment-planners/user-concentrated-pod
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-concentrated-pod:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/deployment-planners/user-concentrated-pod/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-dp-user-concentrated-pod.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-dp-user-concentrated-pod:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-host-allocator-random:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; host-allocator-random.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/host-allocators/random
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-host-allocator-random:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/host-allocators/random/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-host-allocator-random.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-host-allocator-random:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-ldap:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; user-authenticator-ldap.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/user-authenticators/ldap
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-ldap:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/user-authenticators/ldap/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-user-authenticator-ldap.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-ldap:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-opensource:
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/build-api-docs-master/dist
+     [copy] Copying 4 files to /var/lib/jenkins/workspace/build-api-docs-master/target/jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovs:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; ovs.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/ovs
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovs:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/ovs/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-plugin-ovs.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-xen:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; xen.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/hypervisors/xen
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-xen:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/hypervisors/xen/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-xen.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-xen:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; vmware.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/hypervisors/vmware
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/hypervisors/vmware/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-vmware.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-vmware:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-hypervisors:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-ovs:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-elb:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; elb.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/elastic-loadbalancer
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-elb:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/elastic-loadbalancer/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-plugin-elb.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-elb:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-nicira-nvp:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; nicira-nvp.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/nicira-nvp
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-nicira-nvp:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/network-elements/nicira-nvp/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-plugin-nicira-nvp.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-nicira-nvp:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-network-elements:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-deployment-planners:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-host-allocators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocator-random:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; storage-allocator-random.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/storage-allocators/random
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocator-random:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/storage-allocators/random/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-storage-allocator-random.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-storage-allocator-random:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-storage-allocators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; user-authenticator-md5.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/user-authenticators/md5
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/user-authenticators/md5/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-user-authenticator-md5.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-md5:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; user-authenticator-plaintext.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/user-authenticators/plain-text
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/user-authenticators/plain-text/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-user-authenticator-plaintext.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticator-plaintext:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-user-authenticators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] build.dir=/var/lib/jenkins/workspace/build-api-docs-master/build; top.dir=/var/lib/jenkins/workspace/build-api-docs-master; netapp.base.dir=/var/lib/jenkins/workspace/build-api-docs-master/plugins/file-systems/netapp
+     [echo] Using build parameters from /var/lib/jenkins/workspace/build-api-docs-master/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/build-api-docs-master/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/build-api-docs-master/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+     [echo] target.dir=/var/lib/jenkins/workspace/build-api-docs-master/target; top.dir=/var/lib/jenkins/workspace/build-api-docs-master
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/plugins/file-systems/netapp/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-plugin-netapp.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-netapp:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-file-systems:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-plugins:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-war-oss:
+      [war] Updating war: /var/lib/jenkins/workspace/build-api-docs-master/dist/client/client.war
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-test:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-testclient:
+     [echo] src is /var/lib/jenkins/workspace/build-api-docs-master/test
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/test/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-test.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-usage:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/usage/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-usage.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0m-init-awsapi:
+     [echo] builder: jenkins at domU-12-31-39-15-22-2D, on 2012-07-25T15:19:27Z
+     [echo] Build number is 3.0.3.2012-07-25T15:19:27Z
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-awsapi:
+     [echo] Compiling /var/lib/jenkins/workspace/build-api-docs-master/awsapi/src
+      [jar] Updating jar: /var/lib/jenkins/workspace/build-api-docs-master/target/jar/cloud-awsapi.jar
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-jar:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-s3:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi-ec2:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-s3:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-cloud-auth-ec2:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-awsapi:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
+     [echo] build-apidocs
+     [exec] Traceback (most recent call last):
+     [exec]   File "/var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py", line 153, in <module>
+     [exec]     category = choose_category(fn)
+     [exec]   File "/var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py", line 134, in choose_category
+     [exec]     (fn, __file__))
+     [exec] Exception: Need to add a category for getCiscoVSMDetails.xml to /var/lib/jenkins/workspace/build-api-docs-master/setup/apidoc/gen_toc.py:known_categories
+     [exec] Result: 1
+     [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-master/dist/commands.xml
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
+   [delete] Deleting: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
+      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 1 minute 32 seconds
+Archiving artifacts
+Finished: SUCCESS

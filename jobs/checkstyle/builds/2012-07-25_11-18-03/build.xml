@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction>
+      <build class="build" reference="../../.."/>
+    </hudson.triggers.SCMTrigger_-BuildAction>
+  </actions>
+  <number>78</number>
+  <result>FAILURE</result>
+  <duration>811</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/checkstyle</workspace>
+  <hudsonVersion>1.447</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits/>
+</build>

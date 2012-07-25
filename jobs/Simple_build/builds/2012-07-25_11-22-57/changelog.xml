@@ -1,0 +1,10 @@
+Changes in branch origin/master, between ae60cd7b87c38058d6bbfafc4ffe1d41a89fb63a and b6b2dc78407fa3549248693517188f16761bef4e
+commit b6b2dc78407fa3549248693517188f16761bef4e
+tree 496138bbdcb7af70da643e4e11835b1481738b20
+parent ae60cd7b87c38058d6bbfafc4ffe1d41a89fb63a
+author Wido den Hollander <wido@widodh.nl> 1343229328 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343229328 +0200
+
+    build: Remove some last traces of daemonize
+
+:100644 100644 e8e9c3658ce7042b82201d9dd02cde7edca978f3 89e5903cec11d181d774d6136bef702964860ca7 M	wscript_build

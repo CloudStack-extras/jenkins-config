@@ -1,0 +1,31 @@
+Changes in branch origin/master, between f497c7c031b580919ada45209e690f3983f509b0 and 216a44882eaaa44a7bac3fefe063e172a4d5cb4d
+commit 216a44882eaaa44a7bac3fefe063e172a4d5cb4d
+tree e4203c06c3c8882c8f0ce206d00e11f792f9b887
+parent 8ddb6272faae9490bf18e50591371fd4b8a397ce
+author Wido den Hollander <wido@widodh.nl> 1343250572 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343250572 +0200
+
+    waf: Generate sccs-info file
+    
+    This has been broken for a long time right now, this is a quick fix to get the generation working again.
+    
+    This enables us to build the Debian packages again with:
+    
+    $ dpkg-buildpackage
+    
+    WAF still needs to go though :)
+
+:100644 100644 89e5903cec11d181d774d6136bef702964860ca7 a257122a58c02bc114bc2acbf21993a151225639 M	wscript_build
+
+commit 8ddb6272faae9490bf18e50591371fd4b8a397ce
+tree bd316aef3c91aa1bd6f1d63eed2c7570792210cb
+parent f497c7c031b580919ada45209e690f3983f509b0
+author Wido den Hollander <wido@widodh.nl> 1343250550 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343250550 +0200
+
+    debian: Do not include the runners
+    
+    Agent and Usage no longer use these runners as they run with JSVC
+
+:100644 100644 5ef72ce9d75a595d3a4a342c830a8b852e5b03fc aecba304d8b09c0d9b0e75d5f66e6549026872e7 M	debian/cloud-agent.install
+:100644 100644 902f42910ff86040bcdd566c7db70bee6b7fd386 ce4cb4dc5fe45f60bd2bcdf3c6fa758fea548437 M	debian/cloud-usage.install

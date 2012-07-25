@@ -1,0 +1,27 @@
+Changes in branch origin/master, between 3fedd56adbe83a89f1b0a06c0ebdeccef25f2d7d and f497c7c031b580919ada45209e690f3983f509b0
+commit f497c7c031b580919ada45209e690f3983f509b0
+tree ae17c7a46ccf994a7efda33a2722064b48bfa0a0
+parent 3fedd56adbe83a89f1b0a06c0ebdeccef25f2d7d
+author Edison Su <sudison@gmail.com> 1343236573 -0700
+committer Edison Su <sudison@gmail.com> 1343236629 -0700
+
+    Bug: HA takes a lot of time to migrate VMs (trigger HA) to another KVM
+    host if there are multiple storage pools in a cluster.
+    
+    The issue is as follows:
+    1. When CloudStack detects that a host is not responding to ping
+    requests it'll send a fence command for this host to another host in the
+    cluster.
+    2. The agent takes a long time to respond to this check if the storage
+    is fenced. This is because the agent checks if the first host is writing
+    to its heartbeat file on all pools in the cluster. It is doing this in a
+    sequential manner on all storage pool.
+    
+    Making a fix to get rid of sleep, wait during HA. The behavior is now
+    similar to Xenserver.
+    
+    RB: https://reviews.apache.org/r/6133/
+    Send-by:devdeep.singh@citrix.com
+
+:100644 100644 b2df8c1736a3567f25742241932d74f0a7c4b27f f5b8a32bceea6357450523c3a7888404fc23eb71 M	agent/src/com/cloud/agent/resource/computing/KVMHAChecker.java
+:100755 100755 c63465554c1be0043756c1a52bb910d97ee2b351 7293b14a531bed9e55cbb29e8301d1e9e551a7eb M	scripts/vm/hypervisor/kvm/kvmheartbeat.sh

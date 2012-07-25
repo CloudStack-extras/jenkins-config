@@ -1,0 +1,11 @@
+Changes in branch origin/master, between b6b2dc78407fa3549248693517188f16761bef4e and 3fedd56adbe83a89f1b0a06c0ebdeccef25f2d7d
+commit 3fedd56adbe83a89f1b0a06c0ebdeccef25f2d7d
+tree 1982d48dbcf463ead10a6e254e4af594242808df
+parent b6b2dc78407fa3549248693517188f16761bef4e
+author Pranav Saxena <pranav.saxena@citrix.com> 1343234124 +0530
+committer Pranav Saxena <pranav.saxena@citrix.com> 1343234124 +0530
+
+    CS-12707: UI/API - templates> select view: ISOs filter by: featured or mine> provides unending pages of 2 ISO entries, DB contains only 19 ISO entrie- reviewed by Alena
+
+:100755 100755 ed80aae649bf1b981b848173ac41c8e0e3086a49 f5b6913df8a4ffa544e64fb8d4888bedb5f91b83 M	server/src/com/cloud/storage/dao/VMTemplateDao.java
+:100755 100755 3c30076295cd7705f8db18564dc915bfdc6b27fe 2a0dfc85559473485addd7310c4bc9884bad7002 M	server/src/com/cloud/storage/dao/VMTemplateDaoImpl.java

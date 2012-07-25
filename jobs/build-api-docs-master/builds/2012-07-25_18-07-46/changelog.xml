@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 8b1f7bcdc60d1615ed00903d47e3fa856a0d557f and 58a9b94dfb130f670ffa8cee575d8ecd712d04ae
+commit 58a9b94dfb130f670ffa8cee575d8ecd712d04ae
+tree c838579e400ea097694f49d5f587e5d586b7022d
+parent 8b1f7bcdc60d1615ed00903d47e3fa856a0d557f
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343252888 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343253056 -0700
+
+     Fixed listNetworks by domainId/aclType=Domain
+
+:100755 100755 d04a14018e716eb46d4beb011f309e710c928f22 c96ea52b29923778bf8731f423012c7c9a8e593f M	server/src/com/cloud/network/NetworkManagerImpl.java

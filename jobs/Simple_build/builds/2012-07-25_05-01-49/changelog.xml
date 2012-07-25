@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 2b1758b2338e9da31f282c869842525ac604553a and 1075344f03e836de5b11222aaf68b90bdd4a9531
+commit 1075344f03e836de5b11222aaf68b90bdd4a9531
+tree 82a3687b61dd3d21be44435934e4722d1a591ce9
+parent 2b1758b2338e9da31f282c869842525ac604553a
+author olgasmola <olya.smola@gmail.com> 1341397967 +0300
+committer olgasmola <olya.smola@gmail.com> 1343206485 +0300
+
+    CS-15353: Larger click boxes in UI.
+
+:100644 100644 51663cf59e19399d22d3d3673226f47fd4a98314 a60e4807ca22ff290951f39b02581345b21779ef M	ui/css/cloudstack3.css
+:100644 100644 e10a8f16f3ae889cbc499243862a4040f0e9f4e1 221d834d29f30c3c20f73d4b97a106d78429e6e4 M	ui/scripts/ui-custom/projects.js
+:100644 100644 a94bf5b8c9e4a53b60c1036641982a88fbe95369 3f26cda53c3a8abcc4dc9977062c956698abe6e8 M	ui/scripts/ui-custom/zoneWizard.js
+:100644 100644 a1c58a7d9f95daea166d5a1075936cf94ba22b97 b7ffdba232818c771400beca601f19bd61b513eb M	ui/scripts/ui/core.js
+:100644 100644 fe3cbf2e338fcb0ea40ea0cacc6ce03c9d7baebe de44eb0ccf45e22d378264416d7d1c3f8664def4 M	ui/scripts/ui/dialog.js

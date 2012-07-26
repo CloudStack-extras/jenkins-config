@@ -1,0 +1,48 @@
+Changes in branch origin/master, between 764678f558d9a1aade2c10b8f57fb7ea93ecd5c6 and 406fd95d87bfcdbb282d65589ab1fb6e9fd0018a
+commit 406fd95d87bfcdbb282d65589ab1fb6e9fd0018a
+tree fa95800fb1029e84dd7d670161fc445234cf78b4
+parent 764678f558d9a1aade2c10b8f57fb7ea93ecd5c6
+author Wido den Hollander <wido@widodh.nl> 1340983939 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343334146 +0200
+
+    Add RBD support for primary storage
+    
+    This patch adds RBD (RADOS Block Device) support for primary storage in combination with KVM.
+    
+    To get this patch working you need:
+    - libvirt-java 0.4.8
+    - libvirt with RBD storage pool support (>0.9.13)
+    - Qemu with RBD support (>0.14)
+    
+    The primary storage does not support all the functions of CloudStack yet, for example snapshotting is disabled
+    due to the fact that backupping up a RBD snapshot is not possible in the way CloudStack wants to do it.
+    
+    Creating templates from RBD volumes goes well, creating a VM from a template however is still a hit-and-miss.
+    
+    NFS primary storage is also still required, you are not able to run your System VM's from RBD, they will need
+    to run on NFS.
+    
+    Other then these points you can run instances with RBD backed disks.
+
+:100755 100755 112ab61e50b3e5bae08256edd9eb25195b225bcf 347ff87ac9dc6c26aef8f7c4b75fd98b58b2c325 M	agent/src/com/cloud/agent/resource/computing/LibvirtComputingResource.java
+:000000 100644 0000000000000000000000000000000000000000 f7e10c38ddf3e522f72d618e26af88c34192965d A	agent/src/com/cloud/agent/resource/computing/LibvirtSecretDef.java
+:100644 100644 582cd2e2e6d915e2521ef2d5737a5f0da5cd59f2 9c28528456316861158fbd760858be828bbb1892 M	agent/src/com/cloud/agent/resource/computing/LibvirtStoragePoolDef.java
+:100644 100644 5c45d76e82d65e2c1e43ec71f1a656ed28a9545b cff4c2b74aaf2c1739b789a5ddfb8a05f422a615 M	agent/src/com/cloud/agent/resource/computing/LibvirtStoragePoolXMLParser.java
+:100644 100644 8fd7815bf692db6928eaefa246ea22564338cab1 3b07bcd16b7f7e9a6ef6be2a76f2b44a5b9784c3 M	agent/src/com/cloud/agent/resource/computing/LibvirtVMDef.java
+:100644 100644 d0e43df9e615bd24bb7970c19004b0494cab8ce7 cb790d9462082af746844ea0f9c63bfd21a86291 M	agent/src/com/cloud/agent/storage/KVMPhysicalDisk.java
+:100644 100644 9961088bc027798004d123e2ed949ac475c1a0b7 f1192ede940c1dbbcf4351d0282085a9da20988c M	agent/src/com/cloud/agent/storage/KVMStoragePool.java
+:100644 100644 53373e50b45a05bca0adddadc5e090878c5f5383 a82318d2c2de52ee21a45e054cb3900594108232 M	agent/src/com/cloud/agent/storage/KVMStoragePoolManager.java
+:100644 100644 e1e050f75d54e7e0d3a2df22d4a4341146307a65 da000aaff19f5556f9747776caa2f3349fb3c27c M	agent/src/com/cloud/agent/storage/LibvirtStorageAdaptor.java
+:100644 100644 d638bb99c599013cb06c67afb7e92d15cd6aa95f 943b8b268fd60b74fcaa8da181986c1f78502e72 M	agent/src/com/cloud/agent/storage/LibvirtStoragePool.java
+:100644 100644 9cc5d14d87546105d14d9dd571f0fc011e12409a 82386772ba44f7892b669defbb7994d3dbc80bb3 M	agent/src/com/cloud/agent/storage/StorageAdaptor.java
+:100644 100644 c0be269b11ffa49374f58025d5bc6ba25e79b8b0 26344daaeb644b92b35c3f8f1d0d9924b3b739b9 M	api/src/com/cloud/agent/api/to/StorageFilerTO.java
+:100755 100755 856f79dd390e8fcdd0623c92940f98450057373d d6bd04ea61eeaae7881ba2f003369f8479e29053 M	api/src/com/cloud/storage/Storage.java
+:100644 100644 582898608e08445510a11e63543239a39d646f7e ff38c54da058a6215c9254ef097394cdb42940f0 M	api/src/com/cloud/storage/StoragePool.java
+:100644 100644 b1f02019af10c0b2c3e67ffcbb7471f7fa74cd85 3ca4e6c1434680bfe724752cc553c32f18c829c2 M	core/src/com/cloud/storage/StoragePoolVO.java
+:100755 100755 ed9df3069ffcc31cdde0084cd022624234289fe1 a2ea98d872bd4daf78575807239dd7924df31a78 M	server/src/com/cloud/storage/StorageManagerImpl.java
+:100644 100644 18c8cdeb46668ee9971c1b7798b5f98e9e4e58aa 006931d48145fda1e02c8e7185bf439ea390f8d9 M	server/src/com/cloud/storage/allocator/FirstFitStoragePoolAllocator.java
+:100755 100755 50dcf384205f99e678d9fe78f410a5cce2995906 6e3f9c141167c8553daa3abad85f01514b694ffe M	server/src/com/cloud/storage/snapshot/SnapshotManagerImpl.java
+:100755 100755 a15222aa203b0a7e92f3698195202c42d20093cd ae5f58160a48e616b85d4b4c1870d87599243d85 M	setup/db/create-schema.sql
+:100644 100644 1ee8f0bc1b97097abdc83359ff466936b1c63641 94fbdde88bddc972d74106633241e9200e884b9f M	ui/index.jsp
+:100644 100644 12d3498350cc32341ef764aa8616b536c07b6565 c4cf58c86e5ed594b1f4041a87f177220d4a524b M	ui/scripts/sharedFunctions.js
+:100644 100644 712c122f68a4b8991d34dfe1414d391c2abde84c 59d2d8703d92c5fe9500bf055a188972f1598943 M	ui/scripts/system.js

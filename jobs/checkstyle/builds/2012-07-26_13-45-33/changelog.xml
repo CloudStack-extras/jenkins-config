@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 50ffa95f63c100271e40fa11add3e440545db918 and 764678f558d9a1aade2c10b8f57fb7ea93ecd5c6
+commit 764678f558d9a1aade2c10b8f57fb7ea93ecd5c6
+tree aaef80e6452af1221e811ba42ac951f2c1253279
+parent 50ffa95f63c100271e40fa11add3e440545db918
+author Edison Su <sudison@gmail.com> 1343324613 -0700
+committer Edison Su <sudison@gmail.com> 1343324613 -0700
+
+    CS-15521 Xenserver based User VM failed to HA when vrouter runs on ESXi
+    return false as an answer when executing PingTestCommand in
+    VMwareResource
+    RB:https://reviews.apache.org/r/5903/
+    Send-by: mice_xia@tcloudcomputing.com
+
+:100755 100755 685a321bcca8cb3649a03505720cd304eefe8945 208cbbea8ceda73d03d6e601639ed24753220da7 M	plugins/hypervisors/vmware/src/com/cloud/hypervisor/vmware/resource/VmwareResource.java

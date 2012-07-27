@@ -1,0 +1,74 @@
+Started by an SCM change
+Checkout:checkstyle / /var/lib/jenkins/workspace/checkstyle - hudson.remoting.LocalChannel@1d4fe75
+Using strategy: Default
+Last Built Revision: Revision 3f4b7602f45b7cd2b797ae9826aac5deb81b6ed6 (origin/master)
+Checkout:checkstyle / /var/lib/jenkins/workspace/checkstyle - hudson.remoting.LocalChannel@1d4fe75
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+Commencing build of Revision bf2e3d6ae1906ddeac82672232430b8d6c967a6b (origin/master)
+Checking out Revision bf2e3d6ae1906ddeac82672232430b8d6c967a6b (origin/master)
+Cleaning workspace
+[checkstyle] $ /bin/sh -xe /tmp/hudson8366555368433726318.sh
++ checkstyle -f xml -o ./checkstyle_errors.xml -c /var/lib/jenkins/cs_checks.xml -r agent/src/com/cloud/agent
++ exit 0
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Parsing 1 files in /var/lib/jenkins/workspace/checkstyle
+[CHECKSTYLE] Successfully parsed file /var/lib/jenkins/workspace/checkstyle/checkstyle_errors.xml of module  with 412 warnings.
+ERROR: Publisher hudson.plugins.checkstyle.CheckStylePublisher aborted due to exception
+[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.lang.RuntimeException: Failed to serialize hudson.plugins.analysis.util.model.AbstractAnnotation#contextHashCode for class hudson.plugins.checkstyle.parser.Warning
+	at hudson.util.RobustReflectionConverter$2.writeField(RobustReflectionConverter.java:167)
+	at hudson.util.RobustReflectionConverter$2.visit(RobustReflectionConverter.java:135)
+	at com.thoughtworks.xstream.converters.reflection.PureJavaReflectionProvider.visitSerializableFields(PureJavaReflectionProvider.java:130)
+	at hudson.util.RobustReflectionConverter.doMarshal(RobustReflectionConverter.java:120)
+	at hudson.util.RobustReflectionConverter.marshal(RobustReflectionConverter.java:94)
+	at com.thoughtworks.xstream.core.AbstractReferenceMarshaller.convert(AbstractReferenceMarshaller.java:68)
+	at com.thoughtworks.xstream.core.TreeMarshaller.convertAnother(TreeMarshaller.java:78)
+	at com.thoughtworks.xstream.core.TreeMarshaller.convertAnother(TreeMarshaller.java:63)
+	at com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter.writeItem(AbstractCollectionConverter.java:64)
+	at com.thoughtworks.xstream.converters.collections.ArrayConverter.marshal(ArrayConverter.java:45)
+	at com.thoughtworks.xstream.core.AbstractReferenceMarshaller.convert(AbstractReferenceMarshaller.java:68)
+	at com.thoughtworks.xstream.core.TreeMarshaller.convertAnother(TreeMarshaller.java:78)
+	at com.thoughtworks.xstream.core.TreeMarshaller.convertAnother(TreeMarshaller.java:63)
+	at com.thoughtworks.xstream.core.TreeMarshaller.start(TreeMarshaller.java:98)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.marshal(AbstractTreeMarshallingStrategy.java:38)
+	at com.thoughtworks.xstream.XStream.marshal(XStream.java:840)
+	at com.thoughtworks.xstream.XStream.marshal(XStream.java:829)
+	at com.thoughtworks.xstream.XStream.toXML(XStream.java:804)
+	at hudson.XmlFile.write(XmlFile.java:173)
+	at hudson.plugins.analysis.core.BuildResult.serializeAnnotations(BuildResult.java:628)
+	at hudson.plugins.analysis.core.BuildResult.initialize(BuildResult.java:275)
+	at hudson.plugins.analysis.core.BuildResult.<init>(BuildResult.java:218)
+	at hudson.plugins.checkstyle.CheckStyleResult.<init>(CheckStyleResult.java:33)
+	at hudson.plugins.checkstyle.CheckStylePublisher.perform(CheckStylePublisher.java:142)
+	at hudson.plugins.analysis.core.HealthAwarePublisher.perform(HealthAwarePublisher.java:338)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:19)
+	at hudson.model.AbstractBuild$AbstractRunner.perform(AbstractBuild.java:697)
+	at hudson.model.AbstractBuild$AbstractRunner.performAllBuildSteps(AbstractBuild.java:672)
+	at hudson.model.AbstractBuild$AbstractRunner.performAllBuildSteps(AbstractBuild.java:650)
+	at hudson.model.Build$RunnerImpl.post2(Build.java:162)
+	at hudson.model.AbstractBuild$AbstractRunner.post(AbstractBuild.java:619)
+	at hudson.model.Run.run(Run.java:1429)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:238)
+Caused by: com.thoughtworks.xstream.io.StreamException:  : No space left on device
+	at com.thoughtworks.xstream.core.util.QuickWriter.flush(QuickWriter.java:73)
+	at com.thoughtworks.xstream.core.util.QuickWriter.write(QuickWriter.java:57)
+	at com.thoughtworks.xstream.io.xml.PrettyPrintWriter.endNode(PrettyPrintWriter.java:282)
+	at com.thoughtworks.xstream.io.WriterWrapper.endNode(WriterWrapper.java:37)
+	at com.thoughtworks.xstream.io.path.PathTrackingWriter.endNode(PathTrackingWriter.java:48)
+	at hudson.util.RobustReflectionConverter$2.writeField(RobustReflectionConverter.java:164)
+	... 34 more
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:297)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:220)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:290)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:294)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:140)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at java.io.BufferedWriter.flush(BufferedWriter.java:253)
+	at hudson.util.AtomicFileWriter.flush(AtomicFileWriter.java:90)
+	at com.thoughtworks.xstream.core.util.QuickWriter.flush(QuickWriter.java:71)
+	... 39 more
+Finished: FAILURE

@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 406fd95d87bfcdbb282d65589ab1fb6e9fd0018a and 3f4b7602f45b7cd2b797ae9826aac5deb81b6ed6
+commit 3f4b7602f45b7cd2b797ae9826aac5deb81b6ed6
+tree 860724fa8e07048743b66dba277a49d8bf0697f7
+parent 406fd95d87bfcdbb282d65589ab1fb6e9fd0018a
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343334637 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343334995 -0700
+
+    CS-15628: ip address id is required by createFirewallRule command
+
+:100644 100644 81817dcfdf34279340eb8353ec8eb3d95eaff491 b437568311fdc58a66c7b9a555037fb06e88809e M	api/src/com/cloud/api/commands/CreateFirewallRuleCmd.java

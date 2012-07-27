@@ -1,0 +1,14 @@
+Changes in branch origin/master, between 3f4b7602f45b7cd2b797ae9826aac5deb81b6ed6 and bf2e3d6ae1906ddeac82672232430b8d6c967a6b
+commit bf2e3d6ae1906ddeac82672232430b8d6c967a6b
+tree 834c6385543355cdcc14ea8930cfe5efd93d7dfa
+parent 3f4b7602f45b7cd2b797ae9826aac5deb81b6ed6
+author Wido den Hollander <wido@widodh.nl> 1343336614 +0200
+committer Wido den Hollander <wido@widodh.nl> 1343336614 +0200
+
+    setup: Initiate SQL upgrade file from 3.0.3 to 4.0.0
+    
+    This only adds the user_info column to the storage_pool table, but we'll probably have more SQL changes coming up.
+    
+    They can all go into this file.
+
+:000000 100644 0000000000000000000000000000000000000000 87dd1d3c789e4d58a2c42b68f92e7f775016f6c9 A	setup/db/db/schema-303to40.sql

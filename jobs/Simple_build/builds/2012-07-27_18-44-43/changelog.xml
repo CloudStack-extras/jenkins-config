@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 468f2720eb3897a98ed33b5194218c4b89a8e7db and dabd85e153e2a46e243cba4b06dd13c5674a84b5
+commit dabd85e153e2a46e243cba4b06dd13c5674a84b5
+tree 9644b5888f7de3eb4213eef897f33ac1117305b6
+parent 468f2720eb3897a98ed33b5194218c4b89a8e7db
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343426856 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343428433 -0700
+
+    CS-15717: fail to delete the network when corresponding network elements fail to be destroyed
+
+:100755 100755 c96ea52b29923778bf8731f423012c7c9a8e593f 83acc9b9c352141cf7e7ac1e76dbba9fcf7ad089 M	server/src/com/cloud/network/NetworkManagerImpl.java

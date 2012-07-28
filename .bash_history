@@ -417,3 +417,4 @@ whoami
 mutt
 tail -f /var/log/mail
 tail -f /var/log/maillog
+echo $CATALINA_HOME

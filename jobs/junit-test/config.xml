@@ -56,8 +56,16 @@
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
+    <hudson.tasks.Shell>
+      <command>cp -R -L /usr/share/tomcat6 .
+</command>
+    </hudson.tasks.Shell>
     <hudson.tasks.Ant>
-      <targets>build-all deploydb unittest</targets>
+      <targets>build-all
+deploy-server
+deploydb
+unittest</targets>
+      <properties>env.CATALINA_HOME=tomcat6</properties>
     </hudson.tasks.Ant>
   </builders>
   <publishers>

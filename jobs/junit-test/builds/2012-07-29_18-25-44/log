@@ -663,3 +663,312 @@ Buildfile: /var/lib/jenkins/workspace/junit-test/build.xml
      [echo] Compiling /var/lib/jenkins/workspace/junit-test/api/src
 
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware-base:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/vmware-base/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-core:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/core/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-agent:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/agent/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-server:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/server/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; ovm.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/hypervisors/ovm
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovm:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/hypervisors/ovm/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovs:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; ovs.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/network-elements/ovs
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-ovs:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/network-elements/ovs/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-xen:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; xen.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/hypervisors/xen
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-xen:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/hypervisors/xen/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; vmware.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/hypervisors/vmware
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-vmware:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/hypervisors/vmware/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-hypervisors:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-dispersing:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; dp-user-dispersing.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/deployment-planners/user-dispersing
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-dispersing:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/deployment-planners/user-dispersing/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-concentrated-pod:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; dp-user-concentrated-pod.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/deployment-planners/user-concentrated-pod
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-dp-user-concentrated-pod:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/deployment-planners/user-concentrated-pod/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-deployment-planners:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-host-allocator-random:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; host-allocator-random.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/host-allocators/random
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-host-allocator-random:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/host-allocators/random/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-host-allocators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netscaler:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; netscaler.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/network-elements/netscaler
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netscaler:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/network-elements/netscaler/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-f5:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; f5.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/network-elements/f5
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-f5:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/network-elements/f5/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-srx:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; srx.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/network-elements/juniper-srx
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-srx:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/network-elements/juniper-srx/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-elb:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; elb.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/network-elements/elastic-loadbalancer
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-elb:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/network-elements/elastic-loadbalancer/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-nicira-nvp:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; nicira-nvp.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/network-elements/nicira-nvp
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-nicira-nvp:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/network-elements/nicira-nvp/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-network-elements:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-ldap:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; user-authenticator-ldap.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/user-authenticators/ldap
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-ldap:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/user-authenticators/ldap/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; user-authenticator-md5.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/user-authenticators/md5
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-md5:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/user-authenticators/md5/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; user-authenticator-plaintext.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/user-authenticators/plain-text
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticator-plaintext:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/user-authenticators/plain-text/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-user-authenticators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocator-random:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; storage-allocator-random.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/storage-allocators/random
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocator-random:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/storage-allocators/random/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-storage-allocators:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] build.dir=/var/lib/jenkins/workspace/junit-test/build; top.dir=/var/lib/jenkins/workspace/junit-test; netapp.base.dir=/var/lib/jenkins/workspace/junit-test/plugins/file-systems/netapp
+     [echo] Using build parameters from /var/lib/jenkins/workspace/junit-test/build/build-cloud.properties
+     [echo] Using company info from /var/lib/jenkins/workspace/junit-test/build/cloud.properties
+     [echo] Using override file from /var/lib/jenkins/workspace/junit-test/build/replace.properties
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+     [echo] target.dir=/var/lib/jenkins/workspace/junit-test/target; top.dir=/var/lib/jenkins/workspace/junit-test
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0minit:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-netapp:
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/plugins/file-systems/netapp/src
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-file-systems:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-plugins:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-all:
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mcompile-tests:
+    [mkdir] Created dir: /var/lib/jenkins/workspace/junit-test/unittest
+    [mkdir] Created dir: /var/lib/jenkins/workspace/junit-test/unittest/classes
+    [mkdir] Created dir: /var/lib/jenkins/workspace/junit-test/unittest/jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/junit-test/unittest/classes/utils-test.jar
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/utils/test
+    [javac] Compiling 12 source files to /var/lib/jenkins/workspace/junit-test/unittest/classes/utils-test.jar
+      [jar] Building jar: /var/lib/jenkins/workspace/junit-test/unittest/jar/utils-test.jar
+    [mkdir] Created dir: /var/lib/jenkins/workspace/junit-test/unittest/classes/server-test.jar
+     [echo] Compiling /var/lib/jenkins/workspace/junit-test/server/test
+    [javac] Compiling 36 source files to /var/lib/jenkins/workspace/junit-test/unittest/classes/server-test.jar
+    [javac] /var/lib/jenkins/workspace/junit-test/server/test/com/cloud/vm/MockUserVmManagerImpl.java:69: com.cloud.vm.MockUserVmManagerImpl is not abstract and does not override abstract method prepareStop(com.cloud.vm.VirtualMachineProfile<com.cloud.vm.UserVmVO>) in com.cloud.vm.VirtualMachineGuru
+    [javac] public class MockUserVmManagerImpl implements UserVmManager, UserVmService, Manager {
+    [javac]        ^
+    [javac] 1 error
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD FAILED
+/var/lib/jenkins/workspace/junit-test/build/developer.xml:307: The following error occurred while executing this line:
+/var/lib/jenkins/workspace/junit-test/build/developer.xml:60: Compile failed; see the compiler error output for details.
+
+Total time: 4 minutes 42 seconds
+Build step 'Invoke Ant' marked build as failure
+Archiving artifacts
+Recording test results
+Finished: FAILURE

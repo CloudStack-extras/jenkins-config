@@ -3,19 +3,18 @@
   <actions>
     <hudson.model.CauseAction>
       <causes>
-        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.model.Cause_-UserIdCause>
+          <userId>ewanm</userId>
+        </hudson.model.Cause_-UserIdCause>
       </causes>
     </hudson.model.CauseAction>
-    <hudson.triggers.SCMTrigger_-BuildAction>
-      <build class="build" reference="../../.."/>
-    </hudson.triggers.SCMTrigger_-BuildAction>
     <hudson.plugins.git.util.BuildData>
       <buildsByBranchName>
         <entry>
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>44f289e0a6e156fca459c693ab80d13acc4b339c</sha1>
+              <sha1>3d866c4bbb8fec8e9580278429a2d94b31ec9570</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -23,7 +22,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>35</hudsonBuildNumber>
+            <hudsonBuildNumber>86</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -42,10 +41,13 @@
       <ws>/var/lib/jenkins/workspace/junit-test</ws>
     </hudson.plugins.git.GitTagAction>
     <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
+      <result>FAILURE</result>
+    </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>35</number>
+  <number>86</number>
   <result>FAILURE</result>
-  <duration>17095</duration>
+  <duration>289819</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -56,18 +58,22 @@
   </scm>
   <culprits>
     <string>edison</string>
-    <string>anthony</string>
     <string>brian.federle</string>
+    <string>anthony</string>
     <string>wido</string>
     <string>alena.prokharchyk</string>
     <string>sudison</string>
+    <string>olya.smola</string>
     <string>bfederle</string>
     <string>kishan</string>
+    <string>chiradeep</string>
     <string>Murali.Reddy</string>
+    <string>chip.childers</string>
     <string>david</string>
     <string>sheng.yang</string>
     <string>nitin</string>
     <string>prachi</string>
+    <string>pranav.saxena</string>
     <string>ediosn.su</string>
   </culprits>
 </build>

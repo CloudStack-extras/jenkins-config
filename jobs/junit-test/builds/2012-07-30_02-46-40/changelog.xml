@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 3d866c4bbb8fec8e9580278429a2d94b31ec9570 and 3313cc4a86461908421865ddb745c3d3d6169989
+commit 3313cc4a86461908421865ddb745c3d3d6169989
+tree 8860fa6a1cfd8579203e96b8f4a04650c1f41168
+parent 3d866c4bbb8fec8e9580278429a2d94b31ec9570
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343630330 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343630330 +0200
+
+    rrq 5834: fix for broken attachVolume command
+
+:100755 100755 b221ef1eac908061d915dc6c90c69f88d3e5152d ab92c6b1585ad4bd460737e4ff8d4ab7a05c28b6 M	server/src/com/cloud/vm/UserVmManagerImpl.java

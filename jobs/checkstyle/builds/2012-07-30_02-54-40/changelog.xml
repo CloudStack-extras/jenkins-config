@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 3313cc4a86461908421865ddb745c3d3d6169989 and 894407caa97ecd5b4f034de6b3b0e4deadd253e4
+commit 894407caa97ecd5b4f034de6b3b0e4deadd253e4
+tree 25f3ddbcc74c5e055d6bbdf41567a192a2cd5954
+parent 3313cc4a86461908421865ddb745c3d3d6169989
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343630816 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343630816 +0200
+
+    rrq 5839: This table should not have a contraint on device and physical network id. This is dealt with in the code and by using the removed field.
+
+:100755 100755 ae5f58160a48e616b85d4b4c1870d87599243d85 dc9e7b0c7489e9508ba8ef3d157b458a3b94679f M	setup/db/create-schema.sql

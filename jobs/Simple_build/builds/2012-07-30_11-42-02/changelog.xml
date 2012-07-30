@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 0829ee164afb8abd7932541104ed1d0defd96b36 and 10e4a5ae4847ec7052d620b96f3fcd2263207c8e
+commit 10e4a5ae4847ec7052d620b96f3fcd2263207c8e
+tree 9da13398690a17150db930a5e50cb853fa612bf0
+parent 0829ee164afb8abd7932541104ed1d0defd96b36
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343661993 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343662589 +0200
+
+    Disable IPv6 in XenServer if it is enabled. The cloud support pack apparently enables IPv6 support at the moment, but wihtout proper security.
+
+:100755 100755 d3ade09c7575c397288f0e69f939f811acf7750c 57456b3926cfa2d392a8ce31fd8ede182e1d7042 M	scripts/vm/hypervisor/xenserver/setupxenserver.sh

@@ -4,6 +4,11 @@
     <hudson.model.CauseAction>
       <causes>
         <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+        <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
       </causes>
     </hudson.model.CauseAction>
     <hudson.triggers.SCMTrigger_-BuildAction>
@@ -45,7 +50,7 @@
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <revision>
-              <sha1>ae60cd7b87c38058d6bbfafc4ffe1d41a89fb63a</sha1>
+              <sha1>894407caa97ecd5b4f034de6b3b0e4deadd253e4</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -53,7 +58,7 @@
                 </hudson.plugins.git.Branch>
               </branches>
             </revision>
-            <hudsonBuildNumber>4731</hudsonBuildNumber>
+            <hudsonBuildNumber>5823</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
         <entry>
@@ -106,9 +111,9 @@
       <result>SUCCESS</result>
     </org.jenkinsci.plugins.emotional__jenkins.EmotionalJenkinsAction>
   </actions>
-  <number>4731</number>
+  <number>5823</number>
   <result>SUCCESS</result>
-  <duration>89175</duration>
+  <duration>511901</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -118,6 +123,6 @@
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
   <culprits>
-    <string>wido</string>
+    <string>htrippaers</string>
   </culprits>
 </build>

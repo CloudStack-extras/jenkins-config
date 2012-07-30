@@ -1,0 +1,34 @@
+Changes in branch origin/master, between 969b94e7dbc1033993e6991b97f64c38b0aef1e0 and 5d31b58c1b54d0d496f36d710bd04a3a17d40124
+commit 5d31b58c1b54d0d496f36d710bd04a3a17d40124
+tree 57f042d8ce49084180152cd04f583f9bb61d5e4c
+parent b4bcd7f3fe1ade1e4db745ad959b9e1e3493e585
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343653863 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343654276 +0200
+
+    Disable IPv6 in the systemvm
+
+:100644 100644 71b90f08d2a83d5029258359f14b708bd39870fb 7f945b0d4b1115156c490a673290c4a2a4c3219e M	patches/systemvm/debian/config/etc/sysctl.conf
+
+commit b4bcd7f3fe1ade1e4db745ad959b9e1e3493e585
+tree a59901b8bc389b228f0bb290c9a83a466db456d3
+parent 236f63fd34a66eb6025731bad4def4c6f0f1ab5f
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343653668 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343654266 +0200
+
+    Use the name of the network (or uuid) as display text of the nicira logical switch.
+
+:100644 100644 3bac88b6b97110c7bffb1b7eccf87bbf87358b04 6cafe36b65580e9405dc7a1b771211d2dac6a050 M	plugins/network-elements/nicira-nvp/src/com/cloud/network/guru/NiciraNvpGuestNetworkGuru.java
+:100644 100644 ae7b37e6edbb45055472f1d7556a1a10e97fdb62 69fd26f0d86d2732163b814431bc3c735875349d M	plugins/network-elements/nicira-nvp/src/com/cloud/network/resource/NiciraNvpResource.java
+
+commit 236f63fd34a66eb6025731bad4def4c6f0f1ab5f
+tree 2a350cc62e31d1f12db1c5d535a204b4bb952956
+parent 969b94e7dbc1033993e6991b97f64c38b0aef1e0
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343653623 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343654255 +0200
+
+    When cleaning up or setting ip associations the NiciraNvpElement should be ignored.
+    Implemented a generic ConnectivyProvider interface work around the dependency from server to nicira-plugin.
+
+:000000 100644 0000000000000000000000000000000000000000 81cac03ace794e76e32c50b3cf9fe99c22101ac8 A	api/src/com/cloud/network/element/ConnectivityProvider.java
+:100644 100644 ba4b9614520f5c1a440056314f366b76618f6145 ff9d020d7f351840f349d03506718aae36051597 M	plugins/network-elements/nicira-nvp/src/com/cloud/network/element/NiciraNvpElement.java
+:100755 100755 83acc9b9c352141cf7e7ac1e76dbba9fcf7ad089 25565884728fc7b2f6bc1985d1d90bafdeba8281 M	server/src/com/cloud/network/NetworkManagerImpl.java

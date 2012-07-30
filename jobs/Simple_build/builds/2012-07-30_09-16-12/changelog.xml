@@ -1,0 +1,13 @@
+Changes in branch origin/master, between 90de18138df2a677df4f7f1d1e2158e1d35309f0 and 969b94e7dbc1033993e6991b97f64c38b0aef1e0
+commit 969b94e7dbc1033993e6991b97f64c38b0aef1e0
+tree 16993cb89f8fb5a5ccd4960fe688f3edf8c7acfc
+parent 90de18138df2a677df4f7f1d1e2158e1d35309f0
+author chip.childers@gmail.com <chip.childers@gmail.com> 1343653849 -0400
+committer chip.childers@gmail.com <chip.childers@gmail.com> 1343653849 -0400
+
+    Adding license headers to puppet manifest files
+
+:100644 100644 bf70cec2580f638fcd19de491eaa6d9b258d7a9f 213ef59700860a2c6693f2960a1413908f9bccdb M	tools/devcloud/basebuild/puppet-devcloudinitial/init.pp
+:100644 100644 8a0a9d011dc3166d7012d119803ca7ef23bff8ee a3c5c3d88559fdf1a962c24aa8d9f6574fe994b1 M	tools/devcloud/basebuild/puppet-devcloudinitial/manifests/init.pp
+:100644 100644 c3922e39d305076df3fd30a242a56b9bebf72c0b 2574392251a164d45148949dc21d157c0a9e4569 M	tools/devcloud/devcloudbox/puppet-devcloud/init.pp
+:100644 100644 9e1024d4b853d5b6402b2ff9bb315577c8ed7d85 720927d1793a65e6e7489b5ee9c378cbc3bae725 M	tools/devcloud/devcloudbox/puppet-devcloud/manifests/init.pp

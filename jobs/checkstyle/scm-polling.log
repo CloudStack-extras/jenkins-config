@@ -1,30 +1,6 @@
-Started on Jul 30, 2012 7:29:27 AM
+Started on Jul 30, 2012 7:59:27 AM
 Using strategy: Default
 [poll] Last Build : #1003
 [poll] Last Built Revision: Revision 60713b7a419a5f79a62a9315957b49ccfb2adbe6 (origin/master)
-ERROR: Failed to record SCM polling
-[8mha:AAAAWB+LCAAAAAAAAABb85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Error performing command: git ls-remote -h https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git master
-Command "git ls-remote -h https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git master" returned status code 128: error: SSL connect error while accessing https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git/info/refs
-fatal: HTTP request failed
-
-	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:776)
-	at hudson.plugins.git.GitAPI.launchCommand(GitAPI.java:741)
-	at hudson.plugins.git.GitAPI.getHeadRev(GitAPI.java:1055)
-	at hudson.plugins.git.GitSCM.compareRemoteRevisionWith(GitSCM.java:641)
-	at hudson.scm.SCM._compareRemoteRevisionWith(SCM.java:356)
-	at hudson.scm.SCM.poll(SCM.java:373)
-	at hudson.model.AbstractProject.poll(AbstractProject.java:1323)
-	at hudson.triggers.SCMTrigger$Runner.runPolling(SCMTrigger.java:420)
-	at hudson.triggers.SCMTrigger$Runner.run(SCMTrigger.java:449)
-	at hudson.util.SequentialExecutionQueue$QueueEntry.run(SequentialExecutionQueue.java:118)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
-	at java.lang.Thread.run(Thread.java:679)
-Caused by: hudson.plugins.git.GitException: Command "git ls-remote -h https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git master" returned status code 128: error: SSL connect error while accessing https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git/info/refs
-fatal: HTTP request failed
-
-	at hudson.plugins.git.GitAPI.launchCommandIn(GitAPI.java:771)
-	... 15 more
+Done. Took 1.1 sec
+No changes

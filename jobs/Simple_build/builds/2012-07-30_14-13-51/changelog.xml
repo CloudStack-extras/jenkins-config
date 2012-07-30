@@ -1,0 +1,17 @@
+Changes in branch origin/master, between 4507df088d9b3b280298f16d13921e3c9498a7e8 and 372568cb9a394179d3f5d116a23f43e68e04dc6a
+commit 372568cb9a394179d3f5d116a23f43e68e04dc6a
+tree e95cf642465620aad71144bf6b194f78e1abad28
+parent 4507df088d9b3b280298f16d13921e3c9498a7e8
+author Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343670369 -0700
+committer Alena Prokharchyk <alena.prokharchyk@citrix.com> 1343671713 -0700
+
+    CS-15743: disable static nat as a part of network resources cleanup
+    
+    Conflicts:
+    
+    	server/src/com/cloud/network/NetworkManagerImpl.java
+    	server/src/com/cloud/network/rules/RulesManagerImpl.java
+
+:100755 100755 25565884728fc7b2f6bc1985d1d90bafdeba8281 5a2b0176cff9ebd74162d46f17361c315e0fe9c3 M	server/src/com/cloud/network/NetworkManagerImpl.java
+:100644 100644 072cfc9f2d58325d31c0b385394b8f8ea557a52f 4b83e04eb2880ac1129f991a5c3946723ef22571 M	server/src/com/cloud/network/rules/RulesManager.java
+:100755 100755 b45443e467c96319a673c6b82c8555b1f045b3f7 d00835e0e645d56bab4c67f9d9c3e83baccfc351 M	server/src/com/cloud/network/rules/RulesManagerImpl.java

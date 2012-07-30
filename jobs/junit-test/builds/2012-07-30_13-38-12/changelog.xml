@@ -1,0 +1,329 @@
+Changes in branch origin/master, between 7026822e205b99ce9e6ca2a011a1a4cb1a3717cc and 10e4a5ae4847ec7052d620b96f3fcd2263207c8e
+commit 10e4a5ae4847ec7052d620b96f3fcd2263207c8e
+tree 9da13398690a17150db930a5e50cb853fa612bf0
+parent 0829ee164afb8abd7932541104ed1d0defd96b36
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343661993 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343662589 +0200
+
+    Disable IPv6 in XenServer if it is enabled. The cloud support pack apparently enables IPv6 support at the moment, but wihtout proper security.
+
+:100755 100755 d3ade09c7575c397288f0e69f939f811acf7750c 57456b3926cfa2d392a8ce31fd8ede182e1d7042 M	scripts/vm/hypervisor/xenserver/setupxenserver.sh
+
+commit 0829ee164afb8abd7932541104ed1d0defd96b36
+tree e7e75c500cda727b535f86a330e3923683d51f91
+parent 048bd2e498d6856f0919ec48013422f9551940dd
+author David Nalley <david@gnsa.us> 1343659373 -0400
+committer David Nalley <david@gnsa.us> 1343659373 -0400
+
+    removing lots of web tracking stuff from apidocs stylesheets
+
+:100644 100644 daaf010c2c03f359b49fa9b686a722ef0cb740b9 73872a32102b375615db9138148684b0cca693e7 M	setup/apidoc/generateadmincommands.xsl
+:100644 100644 1e44bc609daa185dfacb9d5dc6e68d7492ec9920 0d2e86227115607fe030c8242a2b3b0ad9719921 M	setup/apidoc/generatecommand.xsl
+:100644 100644 7e1b5e858b4caaef7d0bfe22ac135b7df63a9305 f7e560c76802ed2f027ff9384e98d4c8c81fe05f M	setup/apidoc/generatedomainadmincommands.xsl
+:100644 100644 6ebf1eef953ca295c8675046cfe00828e85c1dfa 5bc2cf46659b1a6882a8d8fed1b6ce39872ef6db M	setup/apidoc/generatetoc_footer.xsl
+:100644 100644 9baf1b82f2f659a3514c0d14e200b06b2001975a 3ec3a62c425a15ce8d4fb598f9d09576ea1b1ec9 M	setup/apidoc/generateusercommands.xsl
+
+commit 048bd2e498d6856f0919ec48013422f9551940dd
+tree 12e0817fb30b6d642d20eb7aa60264cf8018e539
+parent 5d31b58c1b54d0d496f36d710bd04a3a17d40124
+author David Nalley <david@gnsa.us> 1343658727 -0400
+committer David Nalley <david@gnsa.us> 1343658727 -0400
+
+    fixing copyright notices on apidocs
+
+:100644 100644 cf617190689a55222a8e505f164534621b859003 daaf010c2c03f359b49fa9b686a722ef0cb740b9 M	setup/apidoc/generateadmincommands.xsl
+:100644 100644 ad39788dc2812973c655c814460eec178d7c72c6 1e44bc609daa185dfacb9d5dc6e68d7492ec9920 M	setup/apidoc/generatecommand.xsl
+:100644 100644 d59f1837962866cfdd938583464e470478cb9fe8 7e1b5e858b4caaef7d0bfe22ac135b7df63a9305 M	setup/apidoc/generatedomainadmincommands.xsl
+:100644 100644 fc5bd3937068a3edace7285bff3a43ba1f77ac9d 6ebf1eef953ca295c8675046cfe00828e85c1dfa M	setup/apidoc/generatetoc_footer.xsl
+:100644 100644 fff5d826e90c735f9e859d54ce9f7b6745252856 9baf1b82f2f659a3514c0d14e200b06b2001975a M	setup/apidoc/generateusercommands.xsl
+
+commit 5d31b58c1b54d0d496f36d710bd04a3a17d40124
+tree 57f042d8ce49084180152cd04f583f9bb61d5e4c
+parent b4bcd7f3fe1ade1e4db745ad959b9e1e3493e585
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343653863 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343654276 +0200
+
+    Disable IPv6 in the systemvm
+
+:100644 100644 71b90f08d2a83d5029258359f14b708bd39870fb 7f945b0d4b1115156c490a673290c4a2a4c3219e M	patches/systemvm/debian/config/etc/sysctl.conf
+
+commit b4bcd7f3fe1ade1e4db745ad959b9e1e3493e585
+tree a59901b8bc389b228f0bb290c9a83a466db456d3
+parent 236f63fd34a66eb6025731bad4def4c6f0f1ab5f
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343653668 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343654266 +0200
+
+    Use the name of the network (or uuid) as display text of the nicira logical switch.
+
+:100644 100644 3bac88b6b97110c7bffb1b7eccf87bbf87358b04 6cafe36b65580e9405dc7a1b771211d2dac6a050 M	plugins/network-elements/nicira-nvp/src/com/cloud/network/guru/NiciraNvpGuestNetworkGuru.java
+:100644 100644 ae7b37e6edbb45055472f1d7556a1a10e97fdb62 69fd26f0d86d2732163b814431bc3c735875349d M	plugins/network-elements/nicira-nvp/src/com/cloud/network/resource/NiciraNvpResource.java
+
+commit 236f63fd34a66eb6025731bad4def4c6f0f1ab5f
+tree 2a350cc62e31d1f12db1c5d535a204b4bb952956
+parent 969b94e7dbc1033993e6991b97f64c38b0aef1e0
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343653623 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343654255 +0200
+
+    When cleaning up or setting ip associations the NiciraNvpElement should be ignored.
+    Implemented a generic ConnectivyProvider interface work around the dependency from server to nicira-plugin.
+
+:000000 100644 0000000000000000000000000000000000000000 81cac03ace794e76e32c50b3cf9fe99c22101ac8 A	api/src/com/cloud/network/element/ConnectivityProvider.java
+:100644 100644 ba4b9614520f5c1a440056314f366b76618f6145 ff9d020d7f351840f349d03506718aae36051597 M	plugins/network-elements/nicira-nvp/src/com/cloud/network/element/NiciraNvpElement.java
+:100755 100755 83acc9b9c352141cf7e7ac1e76dbba9fcf7ad089 25565884728fc7b2f6bc1985d1d90bafdeba8281 M	server/src/com/cloud/network/NetworkManagerImpl.java
+
+commit 969b94e7dbc1033993e6991b97f64c38b0aef1e0
+tree 16993cb89f8fb5a5ccd4960fe688f3edf8c7acfc
+parent 90de18138df2a677df4f7f1d1e2158e1d35309f0
+author chip.childers@gmail.com <chip.childers@gmail.com> 1343653849 -0400
+committer chip.childers@gmail.com <chip.childers@gmail.com> 1343653849 -0400
+
+    Adding license headers to puppet manifest files
+
+:100644 100644 bf70cec2580f638fcd19de491eaa6d9b258d7a9f 213ef59700860a2c6693f2960a1413908f9bccdb M	tools/devcloud/basebuild/puppet-devcloudinitial/init.pp
+:100644 100644 8a0a9d011dc3166d7012d119803ca7ef23bff8ee a3c5c3d88559fdf1a962c24aa8d9f6574fe994b1 M	tools/devcloud/basebuild/puppet-devcloudinitial/manifests/init.pp
+:100644 100644 c3922e39d305076df3fd30a242a56b9bebf72c0b 2574392251a164d45148949dc21d157c0a9e4569 M	tools/devcloud/devcloudbox/puppet-devcloud/init.pp
+:100644 100644 9e1024d4b853d5b6402b2ff9bb315577c8ed7d85 720927d1793a65e6e7489b5ee9c378cbc3bae725 M	tools/devcloud/devcloudbox/puppet-devcloud/manifests/init.pp
+
+commit 90de18138df2a677df4f7f1d1e2158e1d35309f0
+tree 751b05aa8a2f03794020d43ac82b9d7522aabf97
+parent 11c839ab1d5c7a4e3e8731612117a237d2b5640e
+author chip.childers@gmail.com <chip.childers@gmail.com> 1343653255 -0400
+committer chip.childers@gmail.com <chip.childers@gmail.com> 1343653605 -0400
+
+    Added storage configuration to the devcloud puppet module.
+
+:000000 100644 0000000000000000000000000000000000000000 55fdcfe94682b60c71d6385762d6f9ed1b7a0e9a A	tools/devcloud/devcloudbox/puppet-devcloud/files/exports
+:100644 100644 b5d75b164253574c6f030113eb4413a9ac1b3ad9 9e1024d4b853d5b6402b2ff9bb315577c8ed7d85 M	tools/devcloud/devcloudbox/puppet-devcloud/manifests/init.pp
+
+commit 11c839ab1d5c7a4e3e8731612117a237d2b5640e
+tree 3869d84c2b435a18505067e25dec0ceeda8f761b
+parent 60713b7a419a5f79a62a9315957b49ccfb2adbe6
+author David Nalley <david@gnsa.us> 1343653358 -0400
+committer David Nalley <david@gnsa.us> 1343653358 -0400
+
+    adding config file for docs
+
+:100644 100644 7d89223ac657e827bf6995aa7fd1ebca70d69950 b067d85024eee67ecd4e91ca4597a495400432d4 M	.gitignore
+:000000 100644 0000000000000000000000000000000000000000 fb5a16f6dc551bfe305ed7732e101db69a83a9ee A	docs/publican.cfg
+
+commit 60713b7a419a5f79a62a9315957b49ccfb2adbe6
+tree a97b999bbf671da9ca3852aee60fe5a5f698a69f
+parent 8a2135e3faede9739eac3c728c90e7fc6578db38
+author Rohit Yadav <rohit.yadav@citrix.com> 1343646113 +0530
+committer kishan <kishan@cloud.com> 1343646134 +0530
+
+    Delete old cloud-usage script file
+
+:100755 000000 fe467a66a9ca6adc6fa127b178099012ecce32c9 0000000000000000000000000000000000000000 D	usage/scripts/usageserver.sh
+
+commit 8a2135e3faede9739eac3c728c90e7fc6578db38
+tree 528986d7d311d6a90ebbfee8f77a5b6e87bb2534
+parent 046f2d786f864cc0a5d28451117c7ea462679eee
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343312873 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642558 +0530
+
+    VpcVirtualRouter is not enabled always.
+
+:100644 100644 bd0217f8cabef227ab178872eca68696e8d8b177 4284d12a542fe87910652b053da5fc6e08fc5b23 M	tools/marvin/marvin/deployDataCenter.py
+:100644 100644 ace6f6cb181d38bbb77aef58faf7bd1dc44d66e7 5e0c6dadb327140fc6d0784e6aa7b808343fc51b M	tools/marvin/marvin/marvinPlugin.py
+
+commit 046f2d786f864cc0a5d28451117c7ea462679eee
+tree 13a957cc7d237986d34d71421a3a12d2da8cb8ba
+parent ed7f72b629e4e95db0871ab0c571d0caa48ed34e
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343300624 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642555 +0530
+
+    License headers for the marvin plugin and the setup checker
+
+:100644 100644 b99c14fa04151b93afa9385de2c8e5d98e66dcac ace6f6cb181d38bbb77aef58faf7bd1dc44d66e7 M	tools/marvin/marvin/marvinPlugin.py
+:100644 100644 83977f4b78f3de44865a720c83da26d69a4316b5 dea67df8f8945c71b1926a72bfea8dbe30514163 M	tools/marvin/marvin/setup.py
+:100644 100644 ed167a17f2036c9d284e99d500395fed0e286621 8a0034cfa9bc58037dedf9d0b781fe074ec7aba1 M	tools/marvin/marvin/testSetupSuccess.py
+
+commit ed7f72b629e4e95db0871ab0c571d0caa48ed34e
+tree 0834ac98ca691d03b659e5d8e12d7c034888458b
+parent 766242676947a0ec308ae4192f8d81763a361251
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343222464 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642555 +0530
+
+    Enable VpcVirtualRouter when deploying advanced zone
+
+:100644 100644 91045cd741f0940209d2432c758541d9b1480972 bd0217f8cabef227ab178872eca68696e8d8b177 M	tools/marvin/marvin/deployDataCenter.py
+
+commit 766242676947a0ec308ae4192f8d81763a361251
+tree 290a8cc6db0fd6677f5b640cffb6caeba0ad29bd
+parent 13857700d38ed8a221f2353e927c8cd2d2df56c9
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343051707 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642554 +0530
+
+    All responsibilty for running through nose belongs to the marvin-nose plugin
+    
+    Conflicts:
+    
+    	tools/marvin/marvin/NoseTestExecuteEngine.py
+
+:100644 000000 5304afeeb91a96114c84d8647e44922c6c3ae80c 0000000000000000000000000000000000000000 D	tools/marvin/marvin/NoseTestExecuteEngine.py
+
+commit 13857700d38ed8a221f2353e927c8cd2d2df56c9
+tree 39bcd9430c9899f79909f0605df8021c50c3dbab
+parent ed113ca8445199a6adc246d3cbd5a249bb4b190e
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343051584 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642554 +0530
+
+    Plugin-izing the testcase runner
+    
+    * setup.py is the installer for marvin-nose plugin
+    * marvin-nose drive all tests using nose with other plugins like xunit, coverage, multiprocess execution etc
+    * -n option deprecated. All tests driven by nosetests --with-marvin
+
+:100644 100644 31faa09c389555707b28943cd1f63a277a448e2c 1c82d9fcc2e7d9515f70eb527b9fe0b037d9e707 M	tools/marvin/marvin/deployAndRun.py
+:100644 100644 9d5236215643fd254ad3a4762e298f42cdd0b2bf b99c14fa04151b93afa9385de2c8e5d98e66dcac M	tools/marvin/marvin/marvinPlugin.py
+:000000 100644 0000000000000000000000000000000000000000 83977f4b78f3de44865a720c83da26d69a4316b5 A	tools/marvin/marvin/setup.py
+
+commit ed113ca8445199a6adc246d3cbd5a249bb4b190e
+tree dad4d698255815503b5aeeae1c33ddccfe90bf03
+parent 9af88ad44d4465e3704fdb8917542a70f003b318
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343020668 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642554 +0530
+
+    Correcting the imports for HTTPException
+
+:100644 100644 37919c082fead72e07a7a9e7ec05fc403768d89f d70c192406e179ceb1c937a74bc1e3933125516d M	tools/marvin/marvin/cloudstackConnection.py
+
+commit 9af88ad44d4465e3704fdb8917542a70f003b318
+tree bd6f509852d7a4a2c61065492a3f509bdd558843
+parent 0ab7a9289f52acc3f25f92984c9508684c1321fd
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1342720638 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642554 +0530
+
+    Plugin support to pick test cases using marvin.
+    
+    Using this plugin Nose will drive tests and this also allows using other
+    nose plugins. Cmd Line plugin support to be added
+    
+    Conflicts:
+    
+    	tools/marvin/marvin/NoseTestExecuteEngine.py
+
+:100644 100644 25d5c9343e9fc1759a6883fcfd7d718bff51dc15 5304afeeb91a96114c84d8647e44922c6c3ae80c M	tools/marvin/marvin/NoseTestExecuteEngine.py
+:100644 100644 52a6dacc7263ccdefaade2536d44dae0650294f0 44a44aa141cfe69058e58ea872d34c51ba4a436d M	tools/marvin/marvin/TestCaseExecuteEngine.py
+:100644 100644 5b9e4dc59f1cb31b49c144a092d9ebeed2c2a8d6 31faa09c389555707b28943cd1f63a277a448e2c M	tools/marvin/marvin/deployAndRun.py
+:000000 100644 0000000000000000000000000000000000000000 9d5236215643fd254ad3a4762e298f42cdd0b2bf A	tools/marvin/marvin/marvinPlugin.py
+
+commit 0ab7a9289f52acc3f25f92984c9508684c1321fd
+tree dac29774bbddb6494094b1f929bfe09f4904f52a
+parent 84b69e6e0a8fc99ac57d3024acadc3cd35ec3f79
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1342785402 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642554 +0530
+
+    Support added for attrib, multiprocess and Xunit coverage plugins
+    
+    Conflicts:
+    
+    	tools/marvin/marvin/NoseTestExecuteEngine.py
+
+:100644 100644 9499c9032a4f03247fc68afe91e1f00563298842 25d5c9343e9fc1759a6883fcfd7d718bff51dc15 M	tools/marvin/marvin/NoseTestExecuteEngine.py
+:100644 100644 a85eef7e1ddde0b47040cdc905a770d4994bcffe 4ec764c58bf6abb5f15a83f99a9190559da4f894 M	tools/marvin/marvin/cloudstackTestCase.py
+
+commit 84b69e6e0a8fc99ac57d3024acadc3cd35ec3f79
+tree acfa5ab963963f12727c498469e9b874c2506b27
+parent db5687d69182574ae439e4caa4e4181eb38c03a4
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1341678068 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642553 +0530
+
+    injecting the testclient during Test Loader process
+    
+    Without this the tests do not have access to the client APIs
+
+:100644 100644 9d7944a139981496c161dc6f633e56ad7af589bc 9499c9032a4f03247fc68afe91e1f00563298842 M	tools/marvin/marvin/NoseTestExecuteEngine.py
+
+commit db5687d69182574ae439e4caa4e4181eb38c03a4
+tree 0b7483b12b21c6e8ec874e84c44b0ca83121510c
+parent 91b6e09e6d46edf9484423bb1e2b36a5ec8fa74f
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1341817754 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642544 +0530
+
+    enhancement related to -x to take directory name/path to store xml reports
+    
+    Conflicts:
+    
+    	tools/marvin/marvin/TestCaseExecuteEngine.py
+
+:100644 100644 07df5633c992af3976d661d13af5c3b781a91dd1 52a6dacc7263ccdefaade2536d44dae0650294f0 M	tools/marvin/marvin/TestCaseExecuteEngine.py
+:100644 100644 80d74e4b63e50e77e8c92ce48b4f7fdf6363c328 5b9e4dc59f1cb31b49c144a092d9ebeed2c2a8d6 M	tools/marvin/marvin/deployAndRun.py
+
+commit 91b6e09e6d46edf9484423bb1e2b36a5ec8fa74f
+tree 4245cdc399b7526340fb2f3191a5a06f4288699e
+parent 9443734f1ddc4aa0cc38e4dad0e44325ffedcf84
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1341664179 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642275 +0530
+
+    The NoseTestLoader to pick cloudStackTestCase as tests
+
+:100644 100644 ca1afb4f52844e204ea852e3baaf615acc43b549 9d7944a139981496c161dc6f633e56ad7af589bc M	tools/marvin/marvin/NoseTestExecuteEngine.py
+
+commit 9443734f1ddc4aa0cc38e4dad0e44325ffedcf84
+tree 79d7087de2a080ea564f44da927a88138aff0e4c
+parent aa4ff878127f94ef125d8db1d32e988610209b80
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1341576612 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642275 +0530
+
+    setup.properties for basic zone environments
+
+:100644 100644 08cdb79abea851b18e2a05b3e51cce2258fa54d9 2cde465440b20d671148c5c08a505b8a6395440b M	tools/marvin/marvin/sandbox/basic/setup.properties
+
+commit aa4ff878127f94ef125d8db1d32e988610209b80
+tree 1b01ebccadd7756dade63779982a30e95eb669ef
+parent 326655d8c682673f66f1ad3c94a3e57a90513514
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340957344 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642275 +0530
+
+    Post configuration tests to check
+    
+    - if system VMs are up and running
+    - if built-in template is downloaded and ready to launch
+
+:000000 100644 0000000000000000000000000000000000000000 ed167a17f2036c9d284e99d500395fed0e286621 A	tools/marvin/marvin/testSetupSuccess.py
+
+commit 326655d8c682673f66f1ad3c94a3e57a90513514
+tree 577edc765170e6da2668dc71e0ef2ee897c25310
+parent 85c5b5656d15f3e1efe69dabcbb4561f9f38f6e7
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340882267 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642275 +0530
+
+    xml reports for TestCaseEngine
+    
+    Conflicts:
+    
+    	tools/marvin/marvin/TestCaseExecuteEngine.py
+
+:100644 100644 79089ab41d7c5b6bd9fca2510686ddb1e1b66c6d 07df5633c992af3976d661d13af5c3b781a91dd1 M	tools/marvin/marvin/TestCaseExecuteEngine.py
+
+commit 85c5b5656d15f3e1efe69dabcbb4561f9f38f6e7
+tree 96b132fb37ff54745f43eec2fc015e9dece42c0d
+parent ba33a25c575897654fd8200b40596709be24a907
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340250966 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642275 +0530
+
+    adding unittest-xml-reporting as a dependency to marvin
+
+:100644 100644 211011d9885eaab1ca94a1ca601736f018bd6c77 c0e4af42d4c424eb460b1390e3c583ed8159540e M	tools/marvin/setup.py
+
+commit ba33a25c575897654fd8200b40596709be24a907
+tree 4e239a363c54295d2ed39bf838438eda4587428f
+parent 7026822e205b99ce9e6ca2a011a1a4cb1a3717cc
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1340956497 +0530
+committer Prasanna Santhanam <tsp@apache.org> 1343642275 +0530
+
+    Sandbox scripts for generating one host configuration
+    
+    - marvin/sandbox/advanced
+    - marvin/sandbox/basic
+    
+    * supports generating configurations for cloudstack deployment with
+    properties files. The format of the config, properties files and the
+    process is explained in the tutorial:
+    
+    http://wiki.cloudstack.org/display/QA/Testing+with+python#Testingwithpython-DeploymentConfiguration
+
+:000000 100644 0000000000000000000000000000000000000000 08cdb79abea851b18e2a05b3e51cce2258fa54d9 A	tools/marvin/marvin/sandbox/basic/setup.properties
+:100644 100644 b2d6a40cd4bbb3292b7b1db7fa92881bef78090c 211011d9885eaab1ca94a1ca601736f018bd6c77 M	tools/marvin/setup.py

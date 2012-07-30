@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 10e4a5ae4847ec7052d620b96f3fcd2263207c8e and 4507df088d9b3b280298f16d13921e3c9498a7e8
+commit 4507df088d9b3b280298f16d13921e3c9498a7e8
+tree ab20becb47cb8e99262cc9f837d6eb837de69381
+parent 10e4a5ae4847ec7052d620b96f3fcd2263207c8e
+author Brian Federle <brian.federle@citrix.com> 1343670197 -0700
+committer Brian Federle <brian.federle@citrix.com> 1343670242 -0700
+
+    Fix positioning of tags error labels
+
+:100644 100644 876d66335303bd1f1118d7aa32d5a88f8e31dcc4 378c715cd24192d80396bd2e90d29daac547c11b M	ui/css/cloudstack3.css

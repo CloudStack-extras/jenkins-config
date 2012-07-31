@@ -1,0 +1,12 @@
+Changes in branch origin/master, between 3610401edcbaca7718688c9aa068a17eea9d63da and 1bad242f7bfe7bc273388a0db9e2e2c4d59eed1c
+commit 1bad242f7bfe7bc273388a0db9e2e2c4d59eed1c
+tree e449a7af15cb12c379bd52de981faf33e30a1997
+parent 3610401edcbaca7718688c9aa068a17eea9d63da
+author chip.childers@gmail.com <chip.childers@gmail.com> 1343738595 -0400
+committer chip.childers@gmail.com <chip.childers@gmail.com> 1343738630 -0400
+
+    Adding management server startup to puppet config.
+
+:000000 100644 0000000000000000000000000000000000000000 f496891d40f57d79b9bb678999d3984c19fa5708 A	tools/devcloud/devcloudbox/puppet-devcloud/files/startdevcloud.sh
+:100644 100644 96f931db68ec43a63d5b04d0cc4a99c791daeab6 b84ec265ddf4fd18ef3da1022fb949dd7aed9c31 M	tools/devcloud/devcloudbox/puppet-devcloud/manifests/init.pp
+:100644 100644 b5a97cb091a9b73e58937fef216288cc240a3bbb f8b69faa92e67c3c3f09530d1ebdc854f0304837 M	tools/devcloud/devcloudsetup.sh

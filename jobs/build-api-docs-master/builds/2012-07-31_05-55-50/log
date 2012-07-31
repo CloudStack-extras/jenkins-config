@@ -607,3 +607,11 @@ Buildfile: /var/lib/jenkins/workspace/build-api-docs-master/build.xml
 [8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs:
      [echo] build-apidocs
      [echo] Result locates at /var/lib/jenkins/workspace/build-api-docs-master/dist/commands.xml
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQT6jNKU4P0+vJLE4u1gvPjGvRM8xryQksSg9tcQvvyTVvqNr/s+Vl9uYGBgqihikoKqT8/OK83NS9ZwhNEghAwQwghQWAADROOumXQAAAA==[0mbuild-apidocs-zip:
+      [zip] Building zip: /var/lib/jenkins/workspace/build-api-docs-master/dist/apidocs-3.0.3.zip
+
+[8mha:AAAAYB+LCAAAAAAAAABb85aBtbiIQSGjNKU4P0+vJLE4u1gvPjGvRM8xr8S/tCQ5PzfVL78ktUuDM0uMry+HiYGhoohBCqo8OT+vOD8nVc8ZQoMUMkAAI0hhAQAUXUdTXgAAAA==[0mBUILD SUCCESSFUL
+Total time: 4 minutes 3 seconds
+Archiving artifacts
+Finished: SUCCESS

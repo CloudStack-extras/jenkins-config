@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 7288eca12977c926ff0e726ef42f334410f8d088 and 420f08ab4a37fa485e6318a5c2683732b5744d7e
+commit 420f08ab4a37fa485e6318a5c2683732b5744d7e
+tree c48fa1818cf40b20222ac10bebfdc4993715e10e
+parent 7288eca12977c926ff0e726ef42f334410f8d088
+author Hugo Trippaers <htrippaers@schubergphilis.com> 1343719989 +0200
+committer Hugo Trippaers <htrippaers@schubergphilis.com> 1343720474 +0200
+
+    Add changes in rrq 5839 to the update script
+
+:100644 100644 01710b1073692a7a2b1966fb670980ee5b362470 746c4964f0b465340c81c6496d23913814f2221e M	setup/db/db/schema-303to40.sql

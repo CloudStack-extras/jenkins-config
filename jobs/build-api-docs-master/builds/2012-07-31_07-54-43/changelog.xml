@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 911261a2ce6481a2bbf22c2e3b82387610b42788 and 3610401edcbaca7718688c9aa068a17eea9d63da
+commit 3610401edcbaca7718688c9aa068a17eea9d63da
+tree 9e10dede7c894e25cb3f4727dbde954f23e65055
+parent 911261a2ce6481a2bbf22c2e3b82387610b42788
+author Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343735445 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343735621 +0530
+
+    Fail with non-zero exit code when toc category missing
+
+:100644 100644 f7a34eb63416ec99d93e122db0d02265aa252f1b 9c84e1eaaa76a6399ae9c000cd9423fb0038b77d M	setup/apidoc/gen_toc.py

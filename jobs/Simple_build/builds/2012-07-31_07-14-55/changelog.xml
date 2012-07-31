@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 05c9e0bb36cc9606b50ddd9b682ad4c7b6f4b0aa and 911261a2ce6481a2bbf22c2e3b82387610b42788
+commit b4b1a38f7e86eb83a7b791a800b43682a2bf0c3d
+tree dd9a5082675a1d9819acaf98f87e0880fed804b9
+parent 7288eca12977c926ff0e726ef42f334410f8d088
+author Rohit Yadav <Rohit.Yadav@citrix.com> 1343732933 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343732990 +0530
+
+    Fix typo in create-schema.sql. comma at EOL
+
+:100755 100755 dc9e7b0c7489e9508ba8ef3d157b458a3b94679f 64c81a3dc68050c07497fd11f559471a5814e0c4 M	setup/db/create-schema.sql

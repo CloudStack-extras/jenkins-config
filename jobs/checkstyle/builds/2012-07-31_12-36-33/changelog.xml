@@ -1,0 +1,10 @@
+Changes in branch origin/master, between 1bad242f7bfe7bc273388a0db9e2e2c4d59eed1c and 90785500735874c8faaee43252399362778563cf
+commit 90785500735874c8faaee43252399362778563cf
+tree 0c8cfcda5b78734cd5738b0046a6b421604e7ffd
+parent 1bad242f7bfe7bc273388a0db9e2e2c4d59eed1c
+author Tomoe Sugihara <tomoe@midokura.com> 1343752390 +0530
+committer Prasanna Santhanam <Prasanna.Santhanam@citrix.com> 1343752504 +0530
+
+    Fix the agent path according to 7a0a9231c355fee42c67799abe111edcd79998bb
+
+:100755 100755 539e26ae7322934de08576918a376c0487157d97 b4ada22dff2fa7a1645f89c0cf15d91b94740222 M	python/lib/cloudutils/serviceConfig.py

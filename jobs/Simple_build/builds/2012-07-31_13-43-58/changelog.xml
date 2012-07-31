@@ -1,0 +1,23 @@
+Changes in branch origin/master, between 721d3ef3dcd773d3e5b638f703e91456915393e6 and 9a9c96df6472546e2e78b799601ed51e14978b43
+commit 9a9c96df6472546e2e78b799601ed51e14978b43
+tree 2247f63f38282f7c81e06c80340a44bdd36a6699
+parent 721d3ef3dcd773d3e5b638f703e91456915393e6
+author Edison Su <sudison@gmail.com> 1343756291 -0700
+committer Edison Su <sudison@gmail.com> 1343756291 -0700
+
+    Patch fixes file names and imports wherever used, in files introduced in
+    73be77a4c1877ae7e3613c7562d562ad96cde7ee
+    I've renamed discover to discoverer to fix the issue. My ant debug fails
+    with:
+         [java] ERROR [utils.component.ComponentLocator] (main:) Unable to
+    load configuration for management-server from components.xml
+         [java] com.cloud.utils.exception.CloudRuntimeException: Unable to
+    find class: com.cloud.hypervisor.kvm.discoverer.KvmServerDiscoverer
+    
+    RB: https://reviews.apache.org/r/6239/
+    Send-by: rohit.yadav@citrix.com
+
+:100755 100755 9fb902745581f6816d694b0bc7093f4b22f04e3d 62e8acb0642be35b0f5dc4862a374f76cd6ae2b0 M	server/src/com/cloud/agent/manager/AgentManagerImpl.java
+:100644 100644 4069f551abe30b6535150b9e92550184235e2039 3386ff792bb3a11d0d87794fd6b9455ef772c723 R098	server/src/com/cloud/hypervisor/kvm/discover/KvmDummyResourceBase.java	server/src/com/cloud/hypervisor/kvm/discoverer/KvmDummyResourceBase.java
+:100755 100644 7b2492bdff91b22af54ee7164787566fb62a15ec 03746e7b35b270684e9b91c5b1d171afa4b38363 R099	server/src/com/cloud/hypervisor/kvm/discover/KvmServerDiscoverer.java	server/src/com/cloud/hypervisor/kvm/discoverer/KvmServerDiscoverer.java
+:100755 100755 7f00da989c4e21bd16382245d81ef18d704ea424 14b5df57a4bbc6671002658c8161af676c45d83a M	server/src/com/cloud/resource/ResourceManagerImpl.java

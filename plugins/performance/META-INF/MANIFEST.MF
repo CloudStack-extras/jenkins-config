@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: manolo
+Build-Jdk: 1.6.0_22
+Extension-Name: performance
+Implementation-Title: performance
+Implementation-Version: 1.8
+Group-Id: org.jvnet.hudson.plugins
+Short-Name: performance
+Long-Name: Performance plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Performance+Plugin
+Plugin-Version: 1.8
+Hudson-Version: 1.388
+Plugin-Developers: Manuel Carrasco Monino:manolo:manolo@apache.org,Ver
+ gnes:vergnes:vergnes@dev.java.net,Arnaud Espy:aespy:aespy@dev.java.net
+

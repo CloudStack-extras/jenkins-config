@@ -1,0 +1,5 @@
+<l:dependencies xmlns:l='licenses'>
+  <l:dependency name='JUnit Attachments Plugin' groupId='org.jenkins-ci.plugins' artifactId='junit-attachments' version='1.2' url='http://wiki.jenkins-ci.org/display/JENKINS/JUnit+Attachments+Plugin'>
+    <l:description />
+  </l:dependency>
+</l:dependencies>

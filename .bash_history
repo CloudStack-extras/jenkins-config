@@ -418,3 +418,15 @@ mutt
 tail -f /var/log/mail
 tail -f /var/log/maillog
 echo $CATALINA_HOME
+cd workspace/junit-test/
+export CATALINA_BASE="/var/lib/jenkins/workspace/junit-test/tomcat6"\
+export CATALINA_BASE="/var/lib/jenkins/workspace/junit-test/tomcat6"
+export CATALINA_HOME="/var/lib/jenkins/workspace/junit-test/tomcat6"
+ant deploydb
+rm tomcat6/conf/logging.properties 
+rm tomcat6/conf/log4j.properties 
+ant deploydb
+cp /usr/share/tomcat6/conf/logging.properties tomcat6/conf/
+ant deploydb
+ls
+cat tomcat6/conf/db.properties 

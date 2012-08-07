@@ -1,11 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <user>
   <fullName>Ahmad Emneina</fullName>
+  <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
       <apiToken>2vd0KV+BdsADmVog0k21XG9pDDtBWo6EE1rHBp0RybsUVLZc6P1xLpmJqbn5OKsW</apiToken>
     </jenkins.security.ApiTokenProperty>
+    <hudson.tasks.Mailer_-UserProperty>
+      <emailAddress>Ahmad.Emneina@citrix.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
     <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
@@ -17,10 +22,10 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.security.HudsonPrivateSecurityRealm_-Details>
-      <passwordHash>qfSxQz:1a7cc3c3a8655485c4760950dc6d84d8321cd7722ee2ef2ad4b5e8d2b8c74bcd</passwordHash>
+      <passwordHash>pAPrjy:05b769351ac2417c38d83a282e4f28d664b932028f295652bec30d9cadb3e0c9</passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
-    <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>Ahmad.Emneina@citrix.com</emailAddress>
-    </hudson.tasks.Mailer_-UserProperty>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys></authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
   </properties>
 </user>

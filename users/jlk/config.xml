@@ -17,7 +17,7 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>jlk@stratosec.com</emailAddress>
+      <emailAddress>jlk@stratosec.co</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

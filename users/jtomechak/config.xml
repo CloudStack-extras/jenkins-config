@@ -1,11 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <user>
-  <fullName>jtomechak</fullName>
+  <fullName>Jessica Tomechak</fullName>
+  <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
       <apiToken>9Ygf4poRUL9Zx+/bGQagkUOuzKE/R2qcyVVgw986oHQUVLZc6P1xLpmJqbn5OKsW</apiToken>
     </jenkins.security.ApiTokenProperty>
+    <hudson.tasks.Mailer_-UserProperty>
+      <emailAddress>jessica.tomechak@gmail.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
     <hudson.model.MyViewsProperty>
+      <primaryViewName></primaryViewName>
       <views>
         <hudson.model.AllView>
           <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
@@ -16,8 +21,11 @@
         </hudson.model.AllView>
       </views>
     </hudson.model.MyViewsProperty>
-    <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>jtomechak@cloud.com</emailAddress>
-    </hudson.tasks.Mailer_-UserProperty>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>nagUOI:7313c33e19cf62489c006849684f727d0aee3371a7431446f78492dbc4f982c3</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
+      <authorizedKeys></authorizedKeys>
+    </org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl>
   </properties>
 </user>

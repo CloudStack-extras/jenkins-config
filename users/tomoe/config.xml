@@ -17,7 +17,7 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>tomoe@midokura.com</emailAddress>
+      <emailAddress>tomoe@midokura.jp</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

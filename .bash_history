@@ -430,3 +430,4 @@ cp /usr/share/tomcat6/conf/logging.properties tomcat6/conf/
 ant deploydb
 ls
 cat tomcat6/conf/db.properties 
+mail

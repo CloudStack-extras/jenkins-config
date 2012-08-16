@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <user>
-  <fullName>root</fullName>
+  <fullName>Ewan.Mellor</fullName>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>aWdkbM4roUqsMaibNZpw+0u6gz8JJhdrVXPIs8WAEYAUVLZc6P1xLpmJqbn5OKsW</apiToken>
+      <apiToken>OHu1rF10dYYQTXDfDt4+B22o05BkVwBongkxmAhJ1zAUVLZc6P1xLpmJqbn5OKsW</apiToken>
     </jenkins.security.ApiTokenProperty>
     <hudson.model.MyViewsProperty>
       <views>
@@ -17,7 +17,7 @@
       </views>
     </hudson.model.MyViewsProperty>
     <hudson.tasks.Mailer_-UserProperty>
-      <emailAddress>root@aprateek-laptop.(none)</emailAddress>
+      <emailAddress>ewan.mellor@citrix.com</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
   </properties>
 </user>

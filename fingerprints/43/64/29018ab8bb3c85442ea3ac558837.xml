@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2012-08-17 20:48:10.751 EDT</timestamp>
+  <original>
+    <name>build-marvin-master</name>
+    <number>13</number>
+  </original>
+  <md5sum>436429018ab8bb3c85442ea3ac558837</md5sum>
+  <fileName>Marvin-0.1.0.tar.gz</fileName>
+  <usages>
+    <entry>
+      <string>build-marvin-master</string>
+      <ranges>13</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

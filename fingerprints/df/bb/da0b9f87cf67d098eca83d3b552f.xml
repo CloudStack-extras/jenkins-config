@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2012-08-17 20:16:01.236 EDT</timestamp>
+  <original>
+    <name>build-cloudstack-master</name>
+    <number>1173</number>
+  </original>
+  <md5sum>dfbbda0b9f87cf67d098eca83d3b552f</md5sum>
+  <fileName>systemvm.zip</fileName>
+  <usages>
+    <entry>
+      <string>build-cloudstack-master</string>
+      <ranges>1173</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

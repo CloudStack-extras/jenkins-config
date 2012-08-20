@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2012-08-20 14:36:26.502 EDT</timestamp>
+  <original>
+    <name>build-cloudstack-master</name>
+    <number>1180</number>
+  </original>
+  <md5sum>d9feb313a19b0b0d687cc46a30a42a88</md5sum>
+  <fileName>agent-simulator.zip</fileName>
+  <usages>
+    <entry>
+      <string>build-cloudstack-master</string>
+      <ranges>1180</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

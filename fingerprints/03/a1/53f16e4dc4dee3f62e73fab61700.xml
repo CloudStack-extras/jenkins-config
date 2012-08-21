@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2012-08-21 12:38:00.307 EDT</timestamp>
+  <original>
+    <name>build-cloudstack-master</name>
+    <number>1190</number>
+  </original>
+  <md5sum>03a153f16e4dc4dee3f62e73fab61700</md5sum>
+  <fileName>docs.zip</fileName>
+  <usages>
+    <entry>
+      <string>build-cloudstack-master</string>
+      <ranges>1190</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

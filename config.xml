@@ -12,6 +12,7 @@
     <permission>hudson.model.Computer.Configure:frank</permission>
     <permission>hudson.model.Computer.Configure:jtomechak</permission>
     <permission>hudson.model.Computer.Configure:ke4qqq</permission>
+    <permission>hudson.model.Computer.Configure:olamy</permission>
     <permission>hudson.model.Computer.Configure:pradeep</permission>
     <permission>hudson.model.Computer.Configure:prasanna</permission>
     <permission>hudson.model.Computer.Configure:radhika</permission>
@@ -22,6 +23,7 @@
     <permission>hudson.model.Computer.Connect:frank</permission>
     <permission>hudson.model.Computer.Connect:jtomechak</permission>
     <permission>hudson.model.Computer.Connect:ke4qqq</permission>
+    <permission>hudson.model.Computer.Connect:olamy</permission>
     <permission>hudson.model.Computer.Connect:pradeep</permission>
     <permission>hudson.model.Computer.Connect:prasanna</permission>
     <permission>hudson.model.Computer.Connect:radhika</permission>
@@ -32,6 +34,7 @@
     <permission>hudson.model.Computer.Create:frank</permission>
     <permission>hudson.model.Computer.Create:jtomechak</permission>
     <permission>hudson.model.Computer.Create:ke4qqq</permission>
+    <permission>hudson.model.Computer.Create:olamy</permission>
     <permission>hudson.model.Computer.Create:pradeep</permission>
     <permission>hudson.model.Computer.Create:prasanna</permission>
     <permission>hudson.model.Computer.Create:radhika</permission>
@@ -42,6 +45,7 @@
     <permission>hudson.model.Computer.Delete:frank</permission>
     <permission>hudson.model.Computer.Delete:jtomechak</permission>
     <permission>hudson.model.Computer.Delete:ke4qqq</permission>
+    <permission>hudson.model.Computer.Delete:olamy</permission>
     <permission>hudson.model.Computer.Delete:pradeep</permission>
     <permission>hudson.model.Computer.Delete:prasanna</permission>
     <permission>hudson.model.Computer.Delete:radhika</permission>
@@ -52,6 +56,7 @@
     <permission>hudson.model.Computer.Disconnect:frank</permission>
     <permission>hudson.model.Computer.Disconnect:jtomechak</permission>
     <permission>hudson.model.Computer.Disconnect:ke4qqq</permission>
+    <permission>hudson.model.Computer.Disconnect:olamy</permission>
     <permission>hudson.model.Computer.Disconnect:pradeep</permission>
     <permission>hudson.model.Computer.Disconnect:prasanna</permission>
     <permission>hudson.model.Computer.Disconnect:radhika</permission>
@@ -62,6 +67,7 @@
     <permission>hudson.model.Hudson.Administer:frank</permission>
     <permission>hudson.model.Hudson.Administer:jtomechak</permission>
     <permission>hudson.model.Hudson.Administer:ke4qqq</permission>
+    <permission>hudson.model.Hudson.Administer:olamy</permission>
     <permission>hudson.model.Hudson.Administer:pradeep</permission>
     <permission>hudson.model.Hudson.Administer:prasanna</permission>
     <permission>hudson.model.Hudson.Administer:radhika</permission>
@@ -73,6 +79,7 @@
     <permission>hudson.model.Hudson.Read:frank</permission>
     <permission>hudson.model.Hudson.Read:jtomechak</permission>
     <permission>hudson.model.Hudson.Read:ke4qqq</permission>
+    <permission>hudson.model.Hudson.Read:olamy</permission>
     <permission>hudson.model.Hudson.Read:pradeep</permission>
     <permission>hudson.model.Hudson.Read:prasanna</permission>
     <permission>hudson.model.Hudson.Read:radhika</permission>
@@ -83,6 +90,7 @@
     <permission>hudson.model.Hudson.RunScripts:frank</permission>
     <permission>hudson.model.Hudson.RunScripts:jtomechak</permission>
     <permission>hudson.model.Hudson.RunScripts:ke4qqq</permission>
+    <permission>hudson.model.Hudson.RunScripts:olamy</permission>
     <permission>hudson.model.Hudson.RunScripts:pradeep</permission>
     <permission>hudson.model.Hudson.RunScripts:prasanna</permission>
     <permission>hudson.model.Hudson.RunScripts:radhika</permission>
@@ -93,6 +101,7 @@
     <permission>hudson.model.Item.Build:frank</permission>
     <permission>hudson.model.Item.Build:jtomechak</permission>
     <permission>hudson.model.Item.Build:ke4qqq</permission>
+    <permission>hudson.model.Item.Build:olamy</permission>
     <permission>hudson.model.Item.Build:pradeep</permission>
     <permission>hudson.model.Item.Build:prasanna</permission>
     <permission>hudson.model.Item.Build:radhika</permission>
@@ -103,6 +112,7 @@
     <permission>hudson.model.Item.Configure:frank</permission>
     <permission>hudson.model.Item.Configure:jtomechak</permission>
     <permission>hudson.model.Item.Configure:ke4qqq</permission>
+    <permission>hudson.model.Item.Configure:olamy</permission>
     <permission>hudson.model.Item.Configure:pradeep</permission>
     <permission>hudson.model.Item.Configure:prasanna</permission>
     <permission>hudson.model.Item.Configure:radhika</permission>
@@ -113,6 +123,7 @@
     <permission>hudson.model.Item.Create:frank</permission>
     <permission>hudson.model.Item.Create:jtomechak</permission>
     <permission>hudson.model.Item.Create:ke4qqq</permission>
+    <permission>hudson.model.Item.Create:olamy</permission>
     <permission>hudson.model.Item.Create:pradeep</permission>
     <permission>hudson.model.Item.Create:prasanna</permission>
     <permission>hudson.model.Item.Create:radhika</permission>
@@ -123,6 +134,7 @@
     <permission>hudson.model.Item.Delete:frank</permission>
     <permission>hudson.model.Item.Delete:jtomechak</permission>
     <permission>hudson.model.Item.Delete:ke4qqq</permission>
+    <permission>hudson.model.Item.Delete:olamy</permission>
     <permission>hudson.model.Item.Delete:pradeep</permission>
     <permission>hudson.model.Item.Delete:prasanna</permission>
     <permission>hudson.model.Item.Delete:radhika</permission>
@@ -134,6 +146,7 @@
     <permission>hudson.model.Item.Read:frank</permission>
     <permission>hudson.model.Item.Read:jtomechak</permission>
     <permission>hudson.model.Item.Read:ke4qqq</permission>
+    <permission>hudson.model.Item.Read:olamy</permission>
     <permission>hudson.model.Item.Read:pradeep</permission>
     <permission>hudson.model.Item.Read:prasanna</permission>
     <permission>hudson.model.Item.Read:radhika</permission>
@@ -144,6 +157,7 @@
     <permission>hudson.model.Item.Workspace:frank</permission>
     <permission>hudson.model.Item.Workspace:jtomechak</permission>
     <permission>hudson.model.Item.Workspace:ke4qqq</permission>
+    <permission>hudson.model.Item.Workspace:olamy</permission>
     <permission>hudson.model.Item.Workspace:pradeep</permission>
     <permission>hudson.model.Item.Workspace:prasanna</permission>
     <permission>hudson.model.Item.Workspace:radhika</permission>
@@ -154,6 +168,7 @@
     <permission>hudson.model.Run.Delete:frank</permission>
     <permission>hudson.model.Run.Delete:jtomechak</permission>
     <permission>hudson.model.Run.Delete:ke4qqq</permission>
+    <permission>hudson.model.Run.Delete:olamy</permission>
     <permission>hudson.model.Run.Delete:pradeep</permission>
     <permission>hudson.model.Run.Delete:prasanna</permission>
     <permission>hudson.model.Run.Delete:radhika</permission>
@@ -164,6 +179,7 @@
     <permission>hudson.model.Run.Update:frank</permission>
     <permission>hudson.model.Run.Update:jtomechak</permission>
     <permission>hudson.model.Run.Update:ke4qqq</permission>
+    <permission>hudson.model.Run.Update:olamy</permission>
     <permission>hudson.model.Run.Update:pradeep</permission>
     <permission>hudson.model.Run.Update:prasanna</permission>
     <permission>hudson.model.Run.Update:radhika</permission>
@@ -174,6 +190,7 @@
     <permission>hudson.model.View.Configure:frank</permission>
     <permission>hudson.model.View.Configure:jtomechak</permission>
     <permission>hudson.model.View.Configure:ke4qqq</permission>
+    <permission>hudson.model.View.Configure:olamy</permission>
     <permission>hudson.model.View.Configure:pradeep</permission>
     <permission>hudson.model.View.Configure:prasanna</permission>
     <permission>hudson.model.View.Configure:radhika</permission>
@@ -184,6 +201,7 @@
     <permission>hudson.model.View.Create:frank</permission>
     <permission>hudson.model.View.Create:jtomechak</permission>
     <permission>hudson.model.View.Create:ke4qqq</permission>
+    <permission>hudson.model.View.Create:olamy</permission>
     <permission>hudson.model.View.Create:pradeep</permission>
     <permission>hudson.model.View.Create:prasanna</permission>
     <permission>hudson.model.View.Create:radhika</permission>
@@ -194,6 +212,7 @@
     <permission>hudson.model.View.Delete:frank</permission>
     <permission>hudson.model.View.Delete:jtomechak</permission>
     <permission>hudson.model.View.Delete:ke4qqq</permission>
+    <permission>hudson.model.View.Delete:olamy</permission>
     <permission>hudson.model.View.Delete:pradeep</permission>
     <permission>hudson.model.View.Delete:prasanna</permission>
     <permission>hudson.model.View.Delete:radhika</permission>
@@ -204,6 +223,7 @@
     <permission>hudson.scm.SCM.Tag:frank</permission>
     <permission>hudson.scm.SCM.Tag:jtomechak</permission>
     <permission>hudson.scm.SCM.Tag:ke4qqq</permission>
+    <permission>hudson.scm.SCM.Tag:olamy</permission>
     <permission>hudson.scm.SCM.Tag:pradeep</permission>
     <permission>hudson.scm.SCM.Tag:prasanna</permission>
     <permission>hudson.scm.SCM.Tag:radhika</permission>

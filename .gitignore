@@ -1,4 +1,10 @@
 identity.key
 secret.key
 .ssh/*
+fingerprints/*
+plugins/*
+updates/*
+userContent/*
+users/*
+war/*
 workspace/*

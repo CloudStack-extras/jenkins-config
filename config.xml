@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
   <temporaryOfflineCause class="hudson.node_monitors.DiskSpaceMonitorDescriptor$DiskSpace">
-    <size>108773376</size>
+    <size>113922048</size>
     <triggered>true</triggered>
   </temporaryOfflineCause>
   <disabledAdministrativeMonitors/>

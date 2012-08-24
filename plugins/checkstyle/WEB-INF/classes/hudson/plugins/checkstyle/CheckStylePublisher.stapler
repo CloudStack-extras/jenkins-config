@@ -1,2 +1,0 @@
-#Tue Dec 13 16:06:29 CET 2011
-constructor=healthy,unHealthy,thresholdLimit,defaultEncoding,useDeltaValues,unstableTotalAll,unstableTotalHigh,unstableTotalNormal,unstableTotalLow,unstableNewAll,unstableNewHigh,unstableNewNormal,unstableNewLow,failedTotalAll,failedTotalHigh,failedTotalNormal,failedTotalLow,failedNewAll,failedNewHigh,failedNewNormal,failedNewLow,canRunOnFailed,shouldDetectModules,canComputeNew,pattern

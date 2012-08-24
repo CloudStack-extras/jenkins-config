@@ -1,4 +1,5 @@
 .bash*
+.owner
 identity.key
 secret.key
 .ssh/*

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.cloud</groupId>
+  <artifactId>cloud-usage</artifactId>
+  <versioning>
+    <versions>
+      <version>4.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120825000939</lastUpdated>
+  </versioning>
+</metadata>

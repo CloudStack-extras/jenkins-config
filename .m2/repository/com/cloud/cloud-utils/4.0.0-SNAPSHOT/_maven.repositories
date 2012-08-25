@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Aug 24 20:08:32 EDT 2012
+cloud-utils-4.0.0-SNAPSHOT.jar>=
+cloud-utils-4.0.0-SNAPSHOT-tests.jar>=
+cloud-utils-4.0.0-SNAPSHOT.pom>=

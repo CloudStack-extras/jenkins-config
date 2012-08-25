@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.cloud</groupId>
+  <artifactId>cloud-plugin-network-nvp</artifactId>
+  <versioning>
+    <versions>
+      <version>4.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120825001031</lastUpdated>
+  </versioning>
+</metadata>

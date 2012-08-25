@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Aug 24 20:09:04 EDT 2012
+cloud-agent-4.0.0-SNAPSHOT-tests.jar>=
+cloud-agent-4.0.0-SNAPSHOT.jar>=
+cloud-agent-4.0.0-SNAPSHOT.pom>=

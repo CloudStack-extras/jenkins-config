@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.cloud</groupId>
+  <artifactId>cloud-agent</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20120825000904</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <classifier>tests</classifier>
+        <extension>jar</extension>
+        <value>4.0.0-SNAPSHOT</value>
+        <updated>20120825000904</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>4.0.0-SNAPSHOT</value>
+        <updated>20120825000904</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>4.0.0-SNAPSHOT</value>
+        <updated>20120825000904</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

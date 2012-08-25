@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.cloudstack</groupId>
+  <artifactId>cloud-plugin-network-netscaler</artifactId>
+  <versioning>
+    <versions>
+      <version>4.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120825072649</lastUpdated>
+  </versioning>
+</metadata>

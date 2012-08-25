@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.cloudstack</groupId>
+  <artifactId>xapi</artifactId>
+  <versioning>
+    <versions>
+      <version>5.6.100-1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120825072353</lastUpdated>
+  </versioning>
+</metadata>

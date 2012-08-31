@@ -29,6 +29,11 @@
   </parent>
   <dependencies>
     <dependency>
+      <groupId>org.apache.cloudstack</groupId>
+      <artifactId>cloud-utils</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.axis2</groupId>
       <artifactId>axis2</artifactId>
       <version>${cs.axis2.version}</version>

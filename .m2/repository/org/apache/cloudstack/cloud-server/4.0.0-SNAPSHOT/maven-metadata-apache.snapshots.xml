@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.cloudstack</groupId>
+  <artifactId>cloud-server</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20120825.123316</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20120825123316</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>4.0.0-20120825.123316-1</value>
+        <updated>20120825123316</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>4.0.0-20120825.123316-1</value>
+        <updated>20120825123316</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

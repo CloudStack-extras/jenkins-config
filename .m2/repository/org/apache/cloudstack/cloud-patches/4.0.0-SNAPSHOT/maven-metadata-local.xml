@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.cloudstack</groupId>
+  <artifactId>cloud-patches</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20120903123358</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>tar.gz</extension>
+        <value>4.0.0-SNAPSHOT</value>
+        <updated>20120903123358</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>4.0.0-SNAPSHOT</value>
+        <updated>20120903123358</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>4.0.0-SNAPSHOT</value>
+        <updated>20120903123358</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -7,22 +7,22 @@
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
-    <lastUpdated>20120904185955</lastUpdated>
+    <lastUpdated>20120904204441</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>tar.gz</extension>
         <value>4.0.0-SNAPSHOT</value>
-        <updated>20120904185955</updated>
+        <updated>20120904204441</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
         <value>4.0.0-SNAPSHOT</value>
-        <updated>20120904185955</updated>
+        <updated>20120904204441</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
         <value>4.0.0-SNAPSHOT</value>
-        <updated>20120904185955</updated>
+        <updated>20120904204441</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

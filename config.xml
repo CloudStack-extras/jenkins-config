@@ -9,6 +9,7 @@
     <permission>hudson.model.Computer.Configure:alena</permission>
     <permission>hudson.model.Computer.Configure:chip.childers</permission>
     <permission>hudson.model.Computer.Configure:devdeep</permission>
+    <permission>hudson.model.Computer.Configure:edison</permission>
     <permission>hudson.model.Computer.Configure:ewanm</permission>
     <permission>hudson.model.Computer.Configure:frank</permission>
     <permission>hudson.model.Computer.Configure:jtomechak</permission>
@@ -21,6 +22,7 @@
     <permission>hudson.model.Computer.Connect:alena</permission>
     <permission>hudson.model.Computer.Connect:chip.childers</permission>
     <permission>hudson.model.Computer.Connect:devdeep</permission>
+    <permission>hudson.model.Computer.Connect:edison</permission>
     <permission>hudson.model.Computer.Connect:ewanm</permission>
     <permission>hudson.model.Computer.Connect:frank</permission>
     <permission>hudson.model.Computer.Connect:jtomechak</permission>
@@ -33,6 +35,7 @@
     <permission>hudson.model.Computer.Create:alena</permission>
     <permission>hudson.model.Computer.Create:chip.childers</permission>
     <permission>hudson.model.Computer.Create:devdeep</permission>
+    <permission>hudson.model.Computer.Create:edison</permission>
     <permission>hudson.model.Computer.Create:ewanm</permission>
     <permission>hudson.model.Computer.Create:frank</permission>
     <permission>hudson.model.Computer.Create:jtomechak</permission>
@@ -45,6 +48,7 @@
     <permission>hudson.model.Computer.Delete:alena</permission>
     <permission>hudson.model.Computer.Delete:chip.childers</permission>
     <permission>hudson.model.Computer.Delete:devdeep</permission>
+    <permission>hudson.model.Computer.Delete:edison</permission>
     <permission>hudson.model.Computer.Delete:ewanm</permission>
     <permission>hudson.model.Computer.Delete:frank</permission>
     <permission>hudson.model.Computer.Delete:jtomechak</permission>
@@ -57,6 +61,7 @@
     <permission>hudson.model.Computer.Disconnect:alena</permission>
     <permission>hudson.model.Computer.Disconnect:chip.childers</permission>
     <permission>hudson.model.Computer.Disconnect:devdeep</permission>
+    <permission>hudson.model.Computer.Disconnect:edison</permission>
     <permission>hudson.model.Computer.Disconnect:ewanm</permission>
     <permission>hudson.model.Computer.Disconnect:frank</permission>
     <permission>hudson.model.Computer.Disconnect:jtomechak</permission>
@@ -69,6 +74,7 @@
     <permission>hudson.model.Hudson.Administer:alena</permission>
     <permission>hudson.model.Hudson.Administer:chip.childers</permission>
     <permission>hudson.model.Hudson.Administer:devdeep</permission>
+    <permission>hudson.model.Hudson.Administer:edison</permission>
     <permission>hudson.model.Hudson.Administer:ewanm</permission>
     <permission>hudson.model.Hudson.Administer:frank</permission>
     <permission>hudson.model.Hudson.Administer:jtomechak</permission>
@@ -82,6 +88,7 @@
     <permission>hudson.model.Hudson.Read:anonymous</permission>
     <permission>hudson.model.Hudson.Read:chip.childers</permission>
     <permission>hudson.model.Hudson.Read:devdeep</permission>
+    <permission>hudson.model.Hudson.Read:edison</permission>
     <permission>hudson.model.Hudson.Read:ewanm</permission>
     <permission>hudson.model.Hudson.Read:frank</permission>
     <permission>hudson.model.Hudson.Read:jtomechak</permission>
@@ -94,6 +101,7 @@
     <permission>hudson.model.Hudson.RunScripts:alena</permission>
     <permission>hudson.model.Hudson.RunScripts:chip.childers</permission>
     <permission>hudson.model.Hudson.RunScripts:devdeep</permission>
+    <permission>hudson.model.Hudson.RunScripts:edison</permission>
     <permission>hudson.model.Hudson.RunScripts:ewanm</permission>
     <permission>hudson.model.Hudson.RunScripts:frank</permission>
     <permission>hudson.model.Hudson.RunScripts:jtomechak</permission>
@@ -106,6 +114,7 @@
     <permission>hudson.model.Item.Build:alena</permission>
     <permission>hudson.model.Item.Build:chip.childers</permission>
     <permission>hudson.model.Item.Build:devdeep</permission>
+    <permission>hudson.model.Item.Build:edison</permission>
     <permission>hudson.model.Item.Build:ewanm</permission>
     <permission>hudson.model.Item.Build:frank</permission>
     <permission>hudson.model.Item.Build:jtomechak</permission>
@@ -118,6 +127,7 @@
     <permission>hudson.model.Item.Configure:alena</permission>
     <permission>hudson.model.Item.Configure:chip.childers</permission>
     <permission>hudson.model.Item.Configure:devdeep</permission>
+    <permission>hudson.model.Item.Configure:edison</permission>
     <permission>hudson.model.Item.Configure:ewanm</permission>
     <permission>hudson.model.Item.Configure:frank</permission>
     <permission>hudson.model.Item.Configure:jtomechak</permission>
@@ -130,6 +140,7 @@
     <permission>hudson.model.Item.Create:alena</permission>
     <permission>hudson.model.Item.Create:chip.childers</permission>
     <permission>hudson.model.Item.Create:devdeep</permission>
+    <permission>hudson.model.Item.Create:edison</permission>
     <permission>hudson.model.Item.Create:ewanm</permission>
     <permission>hudson.model.Item.Create:frank</permission>
     <permission>hudson.model.Item.Create:jtomechak</permission>
@@ -142,6 +153,7 @@
     <permission>hudson.model.Item.Delete:alena</permission>
     <permission>hudson.model.Item.Delete:chip.childers</permission>
     <permission>hudson.model.Item.Delete:devdeep</permission>
+    <permission>hudson.model.Item.Delete:edison</permission>
     <permission>hudson.model.Item.Delete:ewanm</permission>
     <permission>hudson.model.Item.Delete:frank</permission>
     <permission>hudson.model.Item.Delete:jtomechak</permission>
@@ -155,6 +167,7 @@
     <permission>hudson.model.Item.Read:anonymous</permission>
     <permission>hudson.model.Item.Read:chip.childers</permission>
     <permission>hudson.model.Item.Read:devdeep</permission>
+    <permission>hudson.model.Item.Read:edison</permission>
     <permission>hudson.model.Item.Read:ewanm</permission>
     <permission>hudson.model.Item.Read:frank</permission>
     <permission>hudson.model.Item.Read:jtomechak</permission>
@@ -167,6 +180,7 @@
     <permission>hudson.model.Item.Workspace:alena</permission>
     <permission>hudson.model.Item.Workspace:chip.childers</permission>
     <permission>hudson.model.Item.Workspace:devdeep</permission>
+    <permission>hudson.model.Item.Workspace:edison</permission>
     <permission>hudson.model.Item.Workspace:ewanm</permission>
     <permission>hudson.model.Item.Workspace:frank</permission>
     <permission>hudson.model.Item.Workspace:jtomechak</permission>
@@ -179,6 +193,7 @@
     <permission>hudson.model.Run.Delete:alena</permission>
     <permission>hudson.model.Run.Delete:chip.childers</permission>
     <permission>hudson.model.Run.Delete:devdeep</permission>
+    <permission>hudson.model.Run.Delete:edison</permission>
     <permission>hudson.model.Run.Delete:ewanm</permission>
     <permission>hudson.model.Run.Delete:frank</permission>
     <permission>hudson.model.Run.Delete:jtomechak</permission>
@@ -191,6 +206,7 @@
     <permission>hudson.model.Run.Update:alena</permission>
     <permission>hudson.model.Run.Update:chip.childers</permission>
     <permission>hudson.model.Run.Update:devdeep</permission>
+    <permission>hudson.model.Run.Update:edison</permission>
     <permission>hudson.model.Run.Update:ewanm</permission>
     <permission>hudson.model.Run.Update:frank</permission>
     <permission>hudson.model.Run.Update:jtomechak</permission>
@@ -203,6 +219,7 @@
     <permission>hudson.model.View.Configure:alena</permission>
     <permission>hudson.model.View.Configure:chip.childers</permission>
     <permission>hudson.model.View.Configure:devdeep</permission>
+    <permission>hudson.model.View.Configure:edison</permission>
     <permission>hudson.model.View.Configure:ewanm</permission>
     <permission>hudson.model.View.Configure:frank</permission>
     <permission>hudson.model.View.Configure:jtomechak</permission>
@@ -215,6 +232,7 @@
     <permission>hudson.model.View.Create:alena</permission>
     <permission>hudson.model.View.Create:chip.childers</permission>
     <permission>hudson.model.View.Create:devdeep</permission>
+    <permission>hudson.model.View.Create:edison</permission>
     <permission>hudson.model.View.Create:ewanm</permission>
     <permission>hudson.model.View.Create:frank</permission>
     <permission>hudson.model.View.Create:jtomechak</permission>
@@ -227,6 +245,7 @@
     <permission>hudson.model.View.Delete:alena</permission>
     <permission>hudson.model.View.Delete:chip.childers</permission>
     <permission>hudson.model.View.Delete:devdeep</permission>
+    <permission>hudson.model.View.Delete:edison</permission>
     <permission>hudson.model.View.Delete:ewanm</permission>
     <permission>hudson.model.View.Delete:frank</permission>
     <permission>hudson.model.View.Delete:jtomechak</permission>
@@ -239,6 +258,7 @@
     <permission>hudson.scm.SCM.Tag:alena</permission>
     <permission>hudson.scm.SCM.Tag:chip.childers</permission>
     <permission>hudson.scm.SCM.Tag:devdeep</permission>
+    <permission>hudson.scm.SCM.Tag:edison</permission>
     <permission>hudson.scm.SCM.Tag:ewanm</permission>
     <permission>hudson.scm.SCM.Tag:frank</permission>
     <permission>hudson.scm.SCM.Tag:jtomechak</permission>
